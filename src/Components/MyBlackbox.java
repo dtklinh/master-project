@@ -62,7 +62,7 @@ public class MyBlackbox {
                 k.LoadingFromPDBFile();
             }
             String fasta = k.getName() + "_" + k.getChain() + ".fasta.msa";
-            ArrayList<String> msa = MsaFilterer.filter("MSA_file\\Collection\\" + fasta);
+            ArrayList<String> msa = MsaFilterer.filter("MSA_file/Collection/" + fasta);
             if (msa.size() < 10) {
                 System.out.println("Skip protein: " + k.getName() + "_" + k.getChain());
             }
@@ -76,11 +76,11 @@ public class MyBlackbox {
             ArrayList<String> ColumnPair = PoP_signal.RetrieveColumnPair();
             System.out.println("Finish retrieved Column pair");
             MyMatrix tmp = PoP_signal.CalculatePoP(ColumnPair, PairIndex);
-            MyIO.WritePoPToFile("SignalMatrix\\"+ k.getName()+"_"+k.getChain()+".txt", tmp.getElement());
+            MyIO.WritePoPToFile("SignalMatrix/"+ k.getName()+"_"+k.getChain()+".txt", tmp.getElement());
             //SignalMat = SignalMat.AddMatrix(tmp);
             System.out.println("Signal matrix was calculated: " + k.getName());
             tmp = PoP_null.CalculatePoP(ColumnPair, PairIndex);
-            MyIO.WritePoPToFile("NullMatrix\\"+k.getName()+"_"+k.getChain()+".txt", tmp.getElement());
+            MyIO.WritePoPToFile("NullMatrix/"+k.getName()+"_"+k.getChain()+".txt", tmp.getElement());
             //NullMat = NullMat.AddMatrix(tmp);
             System.out.println("Null matrix was calculated: "+ k.getName());
         }
@@ -104,7 +104,7 @@ public class MyBlackbox {
                 }
                 try {
                     
-                    String name = "MSA_file\\Collection\\" + tmp.trim() + ".fasta.msa";
+                    String name = "MSA_file/Collection/" + tmp.trim() + ".fasta.msa";
                     FileInputStream fstream2 = new FileInputStream(name);
                     DataInputStream in2 = new DataInputStream(fstream2);
                     BufferedReader br2 = new BufferedReader(new InputStreamReader(in2));
