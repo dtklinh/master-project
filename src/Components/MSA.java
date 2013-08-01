@@ -4,6 +4,7 @@
  */
 package Components;
 
+import MyDivergence.MyEntropy;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.File;
@@ -20,8 +21,8 @@ import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import javax.naming.spi.DirStateFactory;
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.util.PDFTextStripper;
+//import org.apache.pdfbox.pdmodel.PDDocument;
+//import org.apache.pdfbox.util.PDFTextStripper;
 
 /**
  *
@@ -277,42 +278,42 @@ public class MSA {
     }
     // find position which bind to DNA
 
-    public static KeyProtein FindBindingPosition(String filename, String chain, int offset) throws FileNotFoundException, IOException {
-        // parse PDF file
-        KeyProtein key = new KeyProtein();
-        key.setName(filename.substring(0, filename.length() - 4));
-        key.setOffset(offset);
-        key.setChain(chain);
-        //
-        HashSet<Integer> set = new HashSet<Integer>();
-        ArrayList<Integer> binding_idx = new ArrayList<Integer>();
-        AminoAcid amino = new AminoAcid();
-        PDDocument pddDocument = PDDocument.load(new File(filename));
-        PDFTextStripper textStripper = new PDFTextStripper();
-        String str = textStripper.getText(pddDocument);
-        String[] lst_token = str.split("\n");
-        for (int i = 0; i < lst_token.length; i++) {
-            String token = lst_token[i].trim();
-            String[] lst_word = token.split(" ");
-            for (int j = 0; j < lst_word.length; j++) {
-                String word = lst_word[j].trim();
-                if (word.length() >= 7) {
-              //      String[] chain_word = new String[chain.length()];
-                    for (int k = 0; k < chain.length(); k++) {
-                        int idx = amino.MatchPattern(word, chain.substring(k, k+1));
-                        if (idx > 0) {
-                            set.add(idx - offset);
-                        }
-                    }
-                }
-            }
-            //   token.ind
-        }
-        key.getBindingIndex().addAll(set);
-        pddDocument.close();
-        return key;
-
-    }
+//    public static KeyProtein FindBindingPosition(String filename, String chain, int offset) throws FileNotFoundException, IOException {
+//        // parse PDF file
+//        KeyProtein key = new KeyProtein();
+//        key.setName(filename.substring(0, filename.length() - 4));
+//        key.setOffset(offset);
+//        key.setChain(chain);
+//        //
+//        HashSet<Integer> set = new HashSet<Integer>();
+//        ArrayList<Integer> binding_idx = new ArrayList<Integer>();
+//        AminoAcid amino = new AminoAcid();
+//        PDDocument pddDocument = PDDocument.load(new File(filename));
+//        PDFTextStripper textStripper = new PDFTextStripper();
+//        String str = textStripper.getText(pddDocument);
+//        String[] lst_token = str.split("\n");
+//        for (int i = 0; i < lst_token.length; i++) {
+//            String token = lst_token[i].trim();
+//            String[] lst_word = token.split(" ");
+//            for (int j = 0; j < lst_word.length; j++) {
+//                String word = lst_word[j].trim();
+//                if (word.length() >= 7) {
+//              //      String[] chain_word = new String[chain.length()];
+//                    for (int k = 0; k < chain.length(); k++) {
+//                        int idx = amino.MatchPattern(word, chain.substring(k, k+1));
+//                        if (idx > 0) {
+//                            set.add(idx - offset);
+//                        }
+//                    }
+//                }
+//            }
+//            //   token.ind
+//        }
+//        key.getBindingIndex().addAll(set);
+//        pddDocument.close();
+//        return key;
+//
+//    }
 
     /**
      * @return the Chain

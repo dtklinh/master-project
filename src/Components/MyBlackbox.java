@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
-import org.apache.pdfbox.util.Matrix;
+//import org.apache.pdfbox.util.Matrix;
 
 /**
  *
@@ -62,7 +62,7 @@ public class MyBlackbox {
                 k.LoadingFromPDBFile();
             }
             String fasta = k.getName() + "_" + k.getChain() + ".fasta.msa";
-            ArrayList<String> msa = MsaFilterer.filter("MSA_file/Collection/" + fasta);
+            ArrayList<String> msa = MsaFilterer.filter("MSA_file\\Collection\\" + fasta);
             if (msa.size() < 10) {
                 System.out.println("Skip protein: " + k.getName() + "_" + k.getChain());
             }
@@ -76,13 +76,13 @@ public class MyBlackbox {
             ArrayList<String> ColumnPair = PoP_signal.RetrieveColumnPair();
             System.out.println("Finish retrieved Column pair");
             MyMatrix tmp = PoP_signal.CalculatePoP(ColumnPair, PairIndex);
-            MyIO.WritePoPToFile("SignalMatrix/"+ k.getName()+"_"+k.getChain()+".txt", tmp.getElement());
+            MyIO.WritePoPToFile("SignalMatrix\\" + k.getName() + "_" + k.getChain() + ".txt", tmp.getElement());
             //SignalMat = SignalMat.AddMatrix(tmp);
             System.out.println("Signal matrix was calculated: " + k.getName());
             tmp = PoP_null.CalculatePoP(ColumnPair, PairIndex);
-            MyIO.WritePoPToFile("NullMatrix/"+k.getName()+"_"+k.getChain()+".txt", tmp.getElement());
+            MyIO.WritePoPToFile("NullMatrix\\" + k.getName() + "_" + k.getChain() + ".txt", tmp.getElement());
             //NullMat = NullMat.AddMatrix(tmp);
-            System.out.println("Null matrix was calculated: "+ k.getName());
+            System.out.println("Null matrix was calculated: " + k.getName());
         }
         //MyIO.WritePoPToFile(Signal_filename, SignalMat.getElement());
         //MyIO.WritePoPToFile(Null_filename, NullMat.getElement());
@@ -103,8 +103,8 @@ public class MyBlackbox {
                     continue;
                 }
                 try {
-                    
-                    String name = "MSA_file/Collection/" + tmp.trim() + ".fasta.msa";
+
+                    String name = "MSA_file\\Collection\\" + tmp.trim() + ".fasta.msa";
                     FileInputStream fstream2 = new FileInputStream(name);
                     DataInputStream in2 = new DataInputStream(fstream2);
                     BufferedReader br2 = new BufferedReader(new InputStreamReader(in2));
@@ -118,6 +118,47 @@ public class MyBlackbox {
             br.close();
         } catch (IOException e) {
             System.err.println("Err: " + e.toString());
+        }
+    }
+
+    public static void CalculateSum(String filename, String signal) {
+        try {
+            int[] vec = new int[160000];
+            for(int i=0;i<160000;i++){
+                vec[i] = 0;
+            }
+            FileInputStream fstream = new FileInputStream(filename);
+            DataInputStream in = new DataInputStream(fstream);
+            BufferedReader br = new BufferedReader(new InputStreamReader(in));
+            String line = "";
+            while (true) {
+                line = br.readLine();
+                if (line == null) {
+                    break;
+                }
+                if (line.trim().equalsIgnoreCase("")) {
+                    continue;
+                }
+                line = line.trim();
+                // read file
+                FileInputStream fstream2 = new FileInputStream(signal+"\\"+line+".txt");
+                DataInputStream in2 = new DataInputStream(fstream2);
+                BufferedReader br2 = new BufferedReader(new InputStreamReader(in2));
+                String str = "";
+                int count = 0;
+                while(true){
+                    str = br2.readLine();
+                    if(str==null){
+                        break;
+                    }
+                    int tmp = Integer.parseInt(str.trim());
+                    vec[count] = vec[count] + tmp;
+                    count++;
+                }
+            }
+            MyIO.WritePoPToFile(signal+"\\Sum.txt", vec);
+        } catch (Exception e) {
+            System.err.println(e.toString());
         }
     }
 }

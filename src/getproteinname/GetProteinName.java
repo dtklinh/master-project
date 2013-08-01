@@ -11,7 +11,7 @@ import Components.KeyProtein;
 import Components.MSA;
 import Components.MyBlackbox;
 import Components.MyDraw;
-import Components.MyEntropy;
+import MyDivergence.MyEntropy;
 import Components.Transformation;
 import Method.MyPair;
 import PDBFile.Test;
@@ -28,8 +28,8 @@ import java.awt.Graphics2D;
 import java.io.File;
 import java.util.ArrayList;
 import javax.swing.DebugGraphics;
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.util.PDFTextStripper;
+//import org.apache.pdfbox.pdmodel.PDDocument;
+//import org.apache.pdfbox.util.PDFTextStripper;
 import Components.MsaFilterer;
 
 /**
@@ -106,7 +106,8 @@ public class GetProteinName {
 //        k.PrintToScreen();
 //        System.out.println(MyPair.ConvertFromStringToNum("ARMN"));
         
-        MyBlackbox.CalculateSig_NullMatrix("CompletePosList_3.txt");
+//        MyBlackbox.CalculateSig_NullMatrix("CompletePosList_2.txt");
+        MyBlackbox.CalculateSum("CompletePosList_2.txt", "SignalMatrix");
 //        MyBlackbox.TestSync("CompletePosList_2.txt");
 //        System.out.println("1: "+MyPair.ConvertFromNumToString2(1));
         
