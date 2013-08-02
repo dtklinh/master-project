@@ -148,6 +148,7 @@ public class DSM {
         double[][] MatSig = this.SignalMat.getArrayCopy();
         double[][] MatNull = this.NullMat.getArrayCopy();
         // step 2
+        System.out.println("Begin to step 2");
         double sumsignal = 0.0;
         double sumnull = 0.0;
         for (int i = 0; i < row; i++) {
@@ -173,6 +174,7 @@ public class DSM {
         // end step 3
         // step 4
         // calculate the marginal distribution
+        System.out.println("Begin to step 4");
         tmp = DSM.Nornalize(tmp);
         double[] MarginX = new double[row];
         double[] MarginY = new double[col];
@@ -205,6 +207,7 @@ public class DSM {
         
         // end step 4
         // step 5
+        System.out.println("Begin to step 5");
         s4 = DSM.DSM_Iteration(s4);
         // end step 5
         return new Matrix(s4);

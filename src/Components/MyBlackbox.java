@@ -169,7 +169,9 @@ public class MyBlackbox {
             String nullfie = "NullMatrix\\Sum.txt";
             DSM d = new DSM();
             d.LoadFromFile(signalfile, nullfie, 400);
+            System.out.println("Finish loading file");
             Matrix m = d.CreateDSM();
+            System.out.println("Finish calculating dsm \n Now writting to file");
             MyIO.WritePoPToFile(filename, m.getArrayCopy());
         } catch (Exception e) {
             System.err.println(e.toString());
