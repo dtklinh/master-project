@@ -23,13 +23,16 @@ public class MyIO {
     public static void WritePoPToFile(String filename, double[][] val) throws IOException {
 //        FileWriter writer = new FileWriter(filename);
         BufferedWriter writer = new BufferedWriter(new FileWriter(filename), 32768);
-        String tmp = "";
+    //    String tmp = "";
         for (int i = 0; i < val.length; i++) {
             for (int j = 0; j < val[0].length; j++) {
-                tmp = tmp + val[i][j];
+                //         tmp = tmp + val[i][j] + "\n";
+                writer.write(val[i][j] + "\n");
             }
         }
-        writer.write(tmp);
+        writer.flush();
+        //    System.out.println("Loading finish: "+ filename);
+        //    writer.write(tmp);
         writer.close();
     }
 
