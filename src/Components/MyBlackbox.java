@@ -4,6 +4,7 @@
  */
 package Components;
 
+import Jama.Matrix;
 import Method.PairOfPair;
 import Support.MyMatrix;
 import java.io.BufferedReader;
@@ -124,7 +125,7 @@ public class MyBlackbox {
     public static void CalculateSum(String filename, String signal) {
         try {
             int[] vec = new int[160000];
-            for(int i=0;i<160000;i++){
+            for (int i = 0; i < 160000; i++) {
                 vec[i] = 0;
             }
             FileInputStream fstream = new FileInputStream(filename);
@@ -141,14 +142,14 @@ public class MyBlackbox {
                 }
                 line = line.trim();
                 // read file
-                FileInputStream fstream2 = new FileInputStream(signal+"\\"+line+".txt");
+                FileInputStream fstream2 = new FileInputStream(signal + "\\" + line + ".txt");
                 DataInputStream in2 = new DataInputStream(fstream2);
                 BufferedReader br2 = new BufferedReader(new InputStreamReader(in2));
                 String str = "";
                 int count = 0;
-                while(true){
+                while (true) {
                     str = br2.readLine();
-                    if(str==null){
+                    if (str == null) {
                         break;
                     }
                     int tmp = Integer.parseInt(str.trim());
@@ -156,7 +157,20 @@ public class MyBlackbox {
                     count++;
                 }
             }
-            MyIO.WritePoPToFile(signal+"\\Sum.txt", vec);
+            MyIO.WritePoPToFile(signal + "\\Sum.txt", vec);
+        } catch (Exception e) {
+            System.err.println(e.toString());
+        }
+    }
+
+    public static void CalculateDSM(String filename) {
+        try {
+            String signalfile = "SignalMatrix\\Sum.txt";
+            String nullfie = "NullMatrix\\Sum.txt";
+            DSM d = new DSM();
+            d.LoadFromFile(signalfile, nullfie, 400);
+            Matrix m = d.CreateDSM();
+            MyIO.WritePoPToFile(filename, m.getArrayCopy());
         } catch (Exception e) {
             System.err.println(e.toString());
         }

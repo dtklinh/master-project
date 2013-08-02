@@ -73,6 +73,19 @@ public class MyDivergence {
         return 2*(ex+ey-exy)/(ex+ey);
     }
     public double JSD(){
-        
+        double[] X = this.MatX.getColumnPackedCopy();
+        double[] Y = this.MatY.getColumnPackedCopy();
+        if(X.length != Y.length){
+            System.err.println("X and Y not equal size");
+            return -1.0;
+        }
+        double[] M = new double[X.length];
+        for(int i=0;i<X.length;i++){
+            M[i] = (X[i]+Y[i])/2;
+        }
+        MyEntropy m = new MyEntropy(M);
+        MyEntropy x = new MyEntropy(X);
+        MyEntropy y = new MyEntropy(Y);
+        return m.CalculateEntropy() -(x.CalculateEntropy()+y.CalculateEntropy())/2;
     }
 }

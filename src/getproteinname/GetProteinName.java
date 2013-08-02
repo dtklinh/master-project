@@ -112,22 +112,8 @@ public class GetProteinName {
 //        MyBlackbox.TestSync("CompletePosList_2.txt");
 //        System.out.println("1: "+MyPair.ConvertFromNumToString2(1));
         
-        double[] a = new double[5]; for(int i=0;i<5;i++) a[i] = (double)i;
-        Matrix m = new Matrix(a, 5);
-        m = m.times(m.transpose());
-        System.out.println("Row:Col --> "+ m.getRowDimension()+":"+ m.getColumnDimension());
-        System.out.println();
-        double[][] tmp = m.getArrayCopy();
-        for(int i=0;i<tmp.length;i++){
-            for(int j=0;j<tmp[0].length;j++){
-                System.out.print(tmp[i][j] + " ");
-            }
-            System.out.println();
-        }
-        double[] d = m.getColumnPackedCopy();
-        for(int i=0;i<d.length;i++){
-            System.out.print(d[i] + " ");
-        }
+        MyBlackbox.CalculateDSM("DSM.txt");
+        
   /*      
         PDDocument pddDocument = PDDocument.load(new File("2FQZ.pdf"));
         PDFTextStripper textStripper = new PDFTextStripper();
