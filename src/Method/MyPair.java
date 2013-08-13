@@ -105,6 +105,9 @@ public class MyPair {
                         //int id4 = ConvertFromStringToNum(c4 + c3);
                         int id4 = PairIndex.get(c4+c3);
                         int kq = tmp[i] * tmp[j];
+                        if(kq <0){
+                            System.err.println("Negative freq: "+tmp[i] + " "+ tmp[j]);
+                        }
                         res[id1][id3] = kq;
                         res[id3][id1] = kq;
                         res[id2][id4] = kq;
