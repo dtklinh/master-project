@@ -165,8 +165,8 @@ public class MyBlackbox {
 
     public static void CalculateDSM(String filename) {
         try {
-            String signalfile = "SignalMatrix\\Sum.txt";
-            String nullfie = "NullMatrix\\Sum.txt";
+            String signalfile = "SignalMatrix/Sum.txt";
+            String nullfie = "NullMatrix/Sum.txt";
             DSM d = new DSM();
             d.LoadFromFile(signalfile, nullfie, 400);
             System.out.println("Finish loading file");
