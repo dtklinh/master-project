@@ -108,11 +108,11 @@ public class GetProteinName {
 //        System.out.println(MyPair.ConvertFromStringToNum("ARMN"));
         
 //        MyBlackbox.CalculateSig_NullMatrix("CompletePosList_2.txt");
-//        MyBlackbox.CalculateSum("CompletePosList_2.txt", "SignalMatrix");
+        MyBlackbox.CalculateSum("CompletePosList_2.txt", "SignalMatrix");
 //        MyBlackbox.TestSync("CompletePosList_2.txt");
 //        System.out.println("1: "+MyPair.ConvertFromNumToString2(1));
         
-        MyBlackbox.CalculateDSM("DSM.txt");
+//        MyBlackbox.CalculateDSM("DSM.txt");
         
   /*      
         PDDocument pddDocument = PDDocument.load(new File("2FQZ.pdf"));

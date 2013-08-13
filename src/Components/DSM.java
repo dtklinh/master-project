@@ -8,6 +8,7 @@ import Jama.Matrix;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
@@ -104,6 +105,7 @@ public class DSM {
                     j = 0;
                 }
                 Mat[i][j] = tmp;
+                j++;
             }
             if (signal.equalsIgnoreCase("signal")) {
                 this.SignalMat = new Matrix(Mat);
@@ -136,7 +138,7 @@ public class DSM {
         return res;
     }
 
-    public Matrix CreateDSM() {
+    public Matrix CreateDSM() throws IOException {
         int row = this.SignalMat.getRowDimension();
         int col = this.SignalMat.getColumnDimension();
         if (row != this.NullMat.getRowDimension() || col != this.NullMat.getColumnDimension()) {
@@ -168,6 +170,7 @@ public class DSM {
                 }
             }
         }
+        
         // end step 2
         // step 3
         /// skip this step b.c we don't care about dissimlarity right now.
@@ -213,7 +216,7 @@ public class DSM {
         return new Matrix(s4);
     }
     public static double[][] DSM_Iteration(double[][] m){
-        double thres = 0.0000001;
+        double thres = 0.0000000001;
         boolean not_dsm = true;
         int nrow = m.length;
         int ncol = m[0].length;
@@ -246,6 +249,7 @@ public class DSM {
             }
             not_dsm = DSM.TestDSM(m, thres);
         }
+        System.out.println("Number of iteration to create DSM: "+ count);
         return m;
     }
     public static boolean TestDSM(double[][] m, double thres){
