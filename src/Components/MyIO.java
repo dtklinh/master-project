@@ -43,6 +43,10 @@ public class MyIO {
         for (int i = 0; i < val.length; i++) {
             for (int j = 0; j < val[0].length; j++) {
                 //         tmp = tmp + val[i][j] + "\n";
+                if(val[i][j]<0){
+                    System.err.println("Error: val: "+ i+ ":"+j);
+                    System.exit(1);
+                }
                 writer.write(val[i][j] + "\n");
             }
         }
@@ -53,6 +57,21 @@ public class MyIO {
     }
 
     public static void WritePoPToFile(String filename, int[] val) throws IOException {
+        //    FileWriter writer = new FileWriter(filename);
+        BufferedWriter writer = new BufferedWriter(new FileWriter(filename), 32768);
+        String tmp = "";
+        for (int i = 0; i < val.length; i++) {
+
+            //         tmp = tmp + val[i][j] + "\n";
+            writer.write(val[i] + "\n");
+
+        }
+        writer.flush();
+        //    System.out.println("Loading finish: "+ filename);
+        //    writer.write(tmp);
+        writer.close();
+    }
+    public static void WritePoPToFile(String filename, double[] val) throws IOException {
         //    FileWriter writer = new FileWriter(filename);
         BufferedWriter writer = new BufferedWriter(new FileWriter(filename), 32768);
         String tmp = "";

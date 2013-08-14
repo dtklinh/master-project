@@ -48,6 +48,17 @@
 /*      */     }
 /*  119 */     this.A = paramArrayOfDouble;
 /*      */   }
+            public Matrix(int[][] paramArrayOfDouble){
+                this.m = paramArrayOfDouble.length;
+/*  113 */     this.n = paramArrayOfDouble[0].length;
+                double[][] tmp = new double[m][n];
+/*  114 */     for (int i = 0; i < this.m; i++) {
+/*  115 */       for(int j=0;j<n;j++){
+                    tmp[i][j] = (double)paramArrayOfDouble[i][j];
+                }
+/*      */     }
+/*  119 */     this.A = tmp;
+            }
 /*      */ 
 /*      */   public Matrix(double[][] paramArrayOfDouble, int paramInt1, int paramInt2)
 /*      */   {

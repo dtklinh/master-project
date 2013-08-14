@@ -52,10 +52,10 @@ public class MyBlackbox {
 
     public static void CalculateSig_NullMatrix(String filename) throws FileNotFoundException, IOException {
         ArrayList<KeyProtein> lst_prot = MyIO.LoadKeyProteins(filename);
-//        String Signal_filename = "SignalMatrix.txt";
-//        String Null_filename = "NullMatrix.txt";
-//        MyMatrix SignalMat = new MyMatrix(400, 400);
-//        MyMatrix NullMat = new MyMatrix(400, 400);
+        String Signal_filename = "SignalMatrix.txt";
+        String Null_filename = "NullMatrix.txt";
+        Matrix SignalMat = new Matrix(new double[400][400]);
+        Matrix NullMat = new Matrix(new double[400][400]);
         int distance = 2;
         HashMap<String, Integer> PairIndex = AminoAcid.GetPairIndex();
         for (KeyProtein k : lst_prot) {
@@ -63,7 +63,7 @@ public class MyBlackbox {
                 k.LoadingFromPDBFile();
             }
             String fasta = k.getName() + "_" + k.getChain() + ".fasta.msa";
-            ArrayList<String> msa = MsaFilterer.filter("MSA_file\\Collection\\" + fasta);
+            ArrayList<String> msa = MsaFilterer.filter("MSA_file/Collection/" + fasta);
             if (msa.size() < 10) {
                 System.out.println("Skip protein: " + k.getName() + "_" + k.getChain());
             }
@@ -76,17 +76,17 @@ public class MyBlackbox {
             PairOfPair PoP_null = new PairOfPair(m, null_indicator);
             ArrayList<String> ColumnPair = PoP_signal.RetrieveColumnPair();
             System.out.println("Finish retrieved Column pair");
-            MyMatrix tmp = PoP_signal.CalculatePoP(ColumnPair, PairIndex);
-            MyIO.WritePoPToFile("SignalMatrix\\" + k.getName() + "_" + k.getChain() + ".txt", tmp.getElement());
-            //SignalMat = SignalMat.AddMatrix(tmp);
+            Matrix tmp = PoP_signal.CalculatePoP(ColumnPair, PairIndex);
+            MyIO.WritePoPToFile("SignalMatrix/" + k.getName() + "_" + k.getChain() + ".txt", tmp.getArray());
+            SignalMat = SignalMat.plus(tmp);
             System.out.println("Signal matrix was calculated: " + k.getName());
             tmp = PoP_null.CalculatePoP(ColumnPair, PairIndex);
-            MyIO.WritePoPToFile("NullMatrix\\" + k.getName() + "_" + k.getChain() + ".txt", tmp.getElement());
-            //NullMat = NullMat.AddMatrix(tmp);
+            MyIO.WritePoPToFile("NullMatrix/" + k.getName() + "_" + k.getChain() + ".txt", tmp.getArray());
+            NullMat = NullMat.plus(tmp);
             System.out.println("Null matrix was calculated: " + k.getName());
         }
-        //MyIO.WritePoPToFile(Signal_filename, SignalMat.getElement());
-        //MyIO.WritePoPToFile(Null_filename, NullMat.getElement());
+        MyIO.WritePoPToFile(Signal_filename, SignalMat.getArray());
+        MyIO.WritePoPToFile(Null_filename, NullMat.getArray());
     }
 
     public static void TestSync(String filename) {
@@ -124,9 +124,9 @@ public class MyBlackbox {
 
     public static void CalculateSum(String filename, String signal) {
         try {
-            int[] vec = new int[160000];
+            double[] vec = new double[160000];
             for (int i = 0; i < 160000; i++) {
-                vec[i] = 0;
+                vec[i] = 0.0;
             }
             FileInputStream fstream = new FileInputStream(filename);
             DataInputStream in = new DataInputStream(fstream);
@@ -142,7 +142,7 @@ public class MyBlackbox {
                 }
                 line = line.trim();
                 // read file
-                FileInputStream fstream2 = new FileInputStream(signal + "\\" + line + ".txt");
+                FileInputStream fstream2 = new FileInputStream(signal + "/" + line + ".txt");
                 DataInputStream in2 = new DataInputStream(fstream2);
                 BufferedReader br2 = new BufferedReader(new InputStreamReader(in2));
                 String str = "";
@@ -152,7 +152,7 @@ public class MyBlackbox {
                     if (str == null) {
                         break;
                     }
-                    int tmp = Integer.parseInt(str.trim());
+                    double tmp = Double.parseDouble(str.trim());
                     if(tmp<0){
                         System.err.println(line);
                     }
@@ -160,7 +160,7 @@ public class MyBlackbox {
                     count++;
                 }
             }
-            MyIO.WritePoPToFile(signal + "\\Sum.txt", vec);
+            MyIO.WritePoPToFile(signal + "/Sum.txt", vec);
         } catch (Exception e) {
             System.err.println(e.toString());
         }

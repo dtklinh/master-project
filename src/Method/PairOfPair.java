@@ -6,6 +6,7 @@ package Method;
 
 import Components.AminoAcid;
 import Components.MSA;
+import Jama.Matrix;
 import Support.MyMatrix;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -75,14 +76,15 @@ public class PairOfPair {
         
         return res;
     }
-    public MyMatrix CalculatePoP(ArrayList<String> ColumnString, HashMap<String, Integer> PairIndex){
+    public Matrix CalculatePoP(ArrayList<String> ColumnString, HashMap<String, Integer> PairIndex){
     //    int[][] res = new int[400][400];
     //    HashMap<String, Integer> PairIndex = AminoAcid.GetPairIndex();
-        MyMatrix m = new MyMatrix(400, 400);
+        Matrix m = new Matrix(new double[400][400]);
         for(int[] idx: this.Indicator){
             MyPair p = new MyPair(ColumnString.get(idx[0]), ColumnString.get(idx[1]));
             int[][] tmp = p.CalculatePoP2(PairIndex);
-            m = m.AddMatrix(new MyMatrix(tmp));
+        //    m = m.AddMatrix(new MyMatrix(tmp));
+            m = m.plus(new Matrix(tmp));
         }
         //res = m.Normalize();
         return m;
