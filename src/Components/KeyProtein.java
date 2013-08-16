@@ -231,7 +231,7 @@ public class KeyProtein {
         return res;
     }
 
-    public ArrayList<int[]> RetrieveNullIndex(int distance) {
+    public ArrayList<int[]> RetrieveNullIndex(int distance, boolean neighbor) {
 
         ArrayList<int[]> res = new ArrayList<int[]>();
         // adjust the offset
@@ -252,6 +252,14 @@ public class KeyProtein {
             }
         }
         res = Combination(lst);
+        if(neighbor){
+            for(int i=res.size()-1;i>=0;i--){
+                int[] a = res.get(i);
+                if(Math.abs(a[1]-a[0])>2*distance){
+                    res.remove(i);
+                }
+            }
+        }
         return res;
     }
 
@@ -273,7 +281,7 @@ public class KeyProtein {
         if (indicator) {
             tmp = this.RetrieveIndicatorPair(distance);
         } else {
-            tmp = this.RetrieveNullIndex(distance);
+            tmp = this.RetrieveNullIndex(distance, false);
         }
         for (int[] i : tmp) {
             System.out.println("[" + i[0] + ":" + i[1] + "]");

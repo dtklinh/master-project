@@ -14,6 +14,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 //import org.apache.pdfbox.util.Matrix;
 
@@ -70,7 +71,14 @@ public class MyBlackbox {
             MSA m = new MSA(k, msa);
             m.AdjustLength();
             ArrayList<int[]> signal_indicator = k.RetrieveIndicatorPair(distance);
-            ArrayList<int[]> null_indicator = k.RetrieveNullIndex(distance);
+            ArrayList<int[]> null_indicator = k.RetrieveNullIndex(distance, false);
+            Collections.shuffle(null_indicator);
+            Collections.shuffle(null_indicator);
+            if(signal_indicator.size()<null_indicator.size()){
+                for(int i=null_indicator.size()-1;i>=signal_indicator.size();i--){
+                    null_indicator.remove(i);
+                }
+            }
             System.out.println("Finish calculating indicator and null pair index");
             PairOfPair PoP_signal = new PairOfPair(m, signal_indicator);
             PairOfPair PoP_null = new PairOfPair(m, null_indicator);
