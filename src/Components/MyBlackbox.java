@@ -53,10 +53,12 @@ public class MyBlackbox {
 
     public static void CalculateSig_NullMatrix(String filename) throws FileNotFoundException, IOException {
         ArrayList<KeyProtein> lst_prot = MyIO.LoadKeyProteins(filename);
-        String Signal_filename = "SignalMatrix.txt";
-        String Null_filename = "NullMatrix.txt";
+        String Signal_filename = "SumSignalMatrix.txt";
+        String Null_filename = "SumNullMatrix.txt";
+        String Null_filename2 = "SumNullMatrix2.txt";
         Matrix SignalMat = new Matrix(new double[400][400]);
         Matrix NullMat = new Matrix(new double[400][400]);
+        Matrix NullMat2 = new Matrix(new double[400][400]);
         int distance = 2;
         HashMap<String, Integer> PairIndex = AminoAcid.GetPairIndex();
         for (KeyProtein k : lst_prot) {
@@ -72,29 +74,43 @@ public class MyBlackbox {
             m.AdjustLength();
             ArrayList<int[]> signal_indicator = k.RetrieveIndicatorPair(distance);
             ArrayList<int[]> null_indicator = k.RetrieveNullIndex(distance, false);
+            ArrayList<int[]> null_indicator2 = k.RetrieveNullIndex(distance, true);
             Collections.shuffle(null_indicator);
             Collections.shuffle(null_indicator);
+            Collections.shuffle(null_indicator2);
             if(signal_indicator.size()<null_indicator.size()){
                 for(int i=null_indicator.size()-1;i>=signal_indicator.size();i--){
                     null_indicator.remove(i);
                 }
             }
+            if(signal_indicator.size()<null_indicator2.size()){
+                for(int i=null_indicator2.size()-1;i>=signal_indicator.size();i--){
+                    null_indicator2.remove(i);
+                }
+            }
             System.out.println("Finish calculating indicator and null pair index");
             PairOfPair PoP_signal = new PairOfPair(m, signal_indicator);
             PairOfPair PoP_null = new PairOfPair(m, null_indicator);
+            PairOfPair PoP_null2 = new PairOfPair(m, null_indicator2);
             ArrayList<String> ColumnPair = PoP_signal.RetrieveColumnPair();
             System.out.println("Finish retrieved Column pair");
-            Matrix tmp = PoP_signal.CalculatePoP(ColumnPair, PairIndex);
-            MyIO.WritePoPToFile("SignalMatrix/" + k.getName() + "_" + k.getChain() + ".txt", tmp.getArray());
-            SignalMat = SignalMat.plus(tmp);
-            System.out.println("Signal matrix was calculated: " + k.getName());
-            tmp = PoP_null.CalculatePoP(ColumnPair, PairIndex);
+            //Matrix tmp = PoP_signal.CalculatePoP(ColumnPair, PairIndex);
+            //MyIO.WritePoPToFile("SignalMatrix/" + k.getName() + "_" + k.getChain() + ".txt", tmp.getArray());
+            //SignalMat = SignalMat.plus(tmp);
+            //System.out.println("Signal matrix was calculated: " + k.getName());
+            Matrix tmp = PoP_null.CalculatePoP(ColumnPair, PairIndex);
             MyIO.WritePoPToFile("NullMatrix/" + k.getName() + "_" + k.getChain() + ".txt", tmp.getArray());
             NullMat = NullMat.plus(tmp);
             System.out.println("Null matrix was calculated: " + k.getName());
+            //
+            tmp = PoP_null2.CalculatePoP(ColumnPair, PairIndex);
+            MyIO.WritePoPToFile("NullMatrix2/" + k.getName() + "_" + k.getChain() + ".txt", tmp.getArray());
+            NullMat2 = NullMat2.plus(tmp);
+            System.out.println("Null matrix 2 was calculated: " + k.getName());
         }
-        MyIO.WritePoPToFile(Signal_filename, SignalMat.getArray());
-        MyIO.WritePoPToFile(Null_filename, NullMat.getArray());
+    //    MyIO.WritePoPToFile(Signal_filename, SignalMat.getArray());
+        MyIO.WritePoPToFile("NullMatrix/"+Null_filename, NullMat.getArray());
+        MyIO.WritePoPToFile("NullMatrix2/"+Null_filename2, NullMat2.getArray());
     }
 
     public static void TestSync(String filename) {
