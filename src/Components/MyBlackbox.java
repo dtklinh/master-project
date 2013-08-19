@@ -9,6 +9,7 @@ import Method.PairOfPair;
 import Support.MyMatrix;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -16,6 +17,8 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import org.apache.commons.io.FileUtils;
+//import org.jfree.io.FileUtilities;
 //import org.apache.pdfbox.util.Matrix;
 
 /**
@@ -203,6 +206,64 @@ public class MyBlackbox {
             MyIO.WritePoPToFile(filename, m.getArrayCopy());
         } catch (Exception e) {
             System.err.println(e.toString());
+        }
+    }
+    public static void PrepareDataSet(String filename){
+        
+        try{
+            FileInputStream fstream = new FileInputStream(filename);
+            DataInputStream in = new DataInputStream(fstream);
+            BufferedReader br = new BufferedReader(new InputStreamReader(in));
+            String line = "";
+            ArrayList<String> lst = new ArrayList<String>();
+            while(true){
+                line = br.readLine();
+                if(line==null){
+                    break;
+                }
+                if(line.equalsIgnoreCase("")){
+                    continue;
+                }
+                lst.add(line.trim());
+            }
+            br.close();
+            Collections.shuffle(lst);
+            Collections.shuffle(lst);
+            Collections.shuffle(lst);
+            // copy train
+            for(int i=0;i<300;i++){
+                File src = new File("SignalMatrix/"+lst.get(i)+".txt");
+                File des = new File("Train/SignalMatrix/"+lst.get(i)+".txt");
+                FileUtils.copyFile(src, des);
+    //            Thread.sleep(1000);
+                src = new File("NullMatrix/"+lst.get(i)+".txt");
+                des = new File("Train/NullMatrix/"+lst.get(i)+".txt");
+                FileUtils.copyFile(src, des);
+                //
+                src = new File("NullMatrix2/"+lst.get(i)+".txt");
+                des = new File("Train/NullMatrix2/"+lst.get(i)+".txt");
+                FileUtils.copyFile(src, des);
+            }
+            for(int i=300;i<lst.size();i++){
+                File src = new File("SignalMatrix/"+lst.get(i)+".txt");
+                File des = new File("Test/SignalMatrix/"+lst.get(i)+".txt");
+                FileUtils.copyFile(src, des);
+                //
+                src = new File("NullMatrix/"+lst.get(i)+".txt");
+                des = new File("Test/NullMatrix/"+lst.get(i)+".txt");
+                FileUtils.copyFile(src, des);
+                //
+                src = new File("NullMatrix2/"+lst.get(i)+".txt");
+                des = new File("Test/NullMatrix2/"+lst.get(i)+".txt");
+                FileUtils.copyFile(src, des);
+            }
+//            File src = new File("str");
+//            File des = new File("str2");
+//            FileUtils.copyFile(src, des);
+        }
+        catch(IOException e){
+            System.err.println(e.toString());
+            System.exit(1);
         }
     }
 }
