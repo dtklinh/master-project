@@ -5,8 +5,13 @@
 package Components;
 
 import PDBFile.DistanceFinder;
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 import org.biojava.bio.structure.Atom;
@@ -145,7 +150,7 @@ public class KeyProtein {
         for (int i = 0; i < this.BindingIndex.size(); i++) {
             tmp = tmp + this.BindingIndex.get(i) + "\t";
         }
-        tmp = tmp + "\n Size: "+ this.BindingIndex.size();
+        tmp = tmp + "\n Size: " + this.BindingIndex.size();
         tmp = tmp + "\n";
         tmp = tmp + this.Offset + "\n";
         tmp = tmp + this.Name + "\n";
@@ -244,18 +249,18 @@ public class KeyProtein {
         for (int i = 0; i < this.Sequence.length(); i++) {
             lst.add(i);
         }
-        for(int i=Binding_Offset.size()-1;i>=0;i--){
-            for(int k = Binding_Offset.get(i)+distance; k>=Binding_Offset.get(i)-distance;k--){
-                if(k>=0 && k <lst.size()){
+        for (int i = Binding_Offset.size() - 1; i >= 0; i--) {
+            for (int k = Binding_Offset.get(i) + distance; k >= Binding_Offset.get(i) - distance; k--) {
+                if (k >= 0 && k < lst.size()) {
                     lst.remove(k);
                 }
             }
         }
         res = Combination(lst);
-        if(neighbor){
-            for(int i=res.size()-1;i>=0;i--){
+        if (neighbor) {
+            for (int i = res.size() - 1; i >= 0; i--) {
                 int[] a = res.get(i);
-                if(Math.abs(a[1]-a[0])>2*distance){
+                if (Math.abs(a[1] - a[0]) > 2 * distance) {
                     res.remove(i);
                 }
             }
@@ -286,5 +291,72 @@ public class KeyProtein {
         for (int[] i : tmp) {
             System.out.println("[" + i[0] + ":" + i[1] + "]");
         }
+    }
+
+    public ArrayList<Integer> FindHelixIndex() throws FileNotFoundException, IOException {
+        ArrayList<Integer> res = new ArrayList<Integer>();
+        String filename = "pdb_file/" + this.Name + ".pdb";
+        String filename2 = "pdb_file/pdb" + this.Name.toLowerCase() + ".ent";
+        FileInputStream fstream;
+        try {
+            fstream = new FileInputStream(filename);
+        } catch (FileNotFoundException e) {
+            fstream = new FileInputStream(filename2);
+        }
+        DataInputStream in = new DataInputStream(fstream);
+        BufferedReader br = new BufferedReader(new InputStreamReader(in));
+        String line = "";
+        while (true) {
+            line = br.readLine();
+            if (line == null) {
+                break;
+            }
+            //         line = line.trim();
+            if (line.substring(0, 5).equalsIgnoreCase("HELIX")
+                    && line.substring(19, 20).equalsIgnoreCase(this.Chain)) {
+                String idx1 = line.substring(21, 25).trim();
+                String idx2 = line.substring(33, 37).trim();
+                int init = Integer.parseInt(idx1);
+                int end = Integer.parseInt(idx2);
+                for (int i = init; i <= end; i++) {
+                    res.add(i);
+                }
+            }
+        }
+        return res;
+    }
+
+    public ArrayList<Integer> FindStrandIndex() throws FileNotFoundException, IOException {
+        ArrayList<Integer> res = new ArrayList<Integer>();
+        String filename = "pdb_file/" + this.Name + ".pdb";
+//        FileInputStream fstream = new FileInputStream(filename);
+        String filename2 = "pdb_file/pdb" + this.Name.toLowerCase() + ".ent";
+        FileInputStream fstream;
+        try {
+            fstream = new FileInputStream(filename);
+        } catch (FileNotFoundException e) {
+            fstream = new FileInputStream(filename2);
+        }
+        DataInputStream in = new DataInputStream(fstream);
+        BufferedReader br = new BufferedReader(new InputStreamReader(in));
+        String line = "";
+        while (true) {
+            line = br.readLine();
+            if (line == null) {
+                break;
+            }
+            //         line = line.trim();
+            if (line.substring(0, 5).equalsIgnoreCase("SHEET")
+                    && line.substring(21, 22).equalsIgnoreCase(this.Chain)) {
+                String idx1 = line.substring(22, 26).trim();
+                String idx2 = line.substring(33, 37).trim();
+                int init = Integer.parseInt(idx1);
+                int end = Integer.parseInt(idx2);
+                for (int i = init; i <= end; i++) {
+                    res.add(i);
+                }
+            }
+        }
+        return res;
     }
 }

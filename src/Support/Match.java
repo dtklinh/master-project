@@ -19,11 +19,11 @@ public class Match {
             for (String pairTwo : indeces.keySet()) {
                 placeOne = indeces.get(pairOne);
                 placeTwo = indeces.get(pairTwo);
-                if (!(placeOne == placeTwo)) {
+ //               if (!(placeOne == placeTwo)) {
                     if (matrixOne[placeOne][placeTwo] > matrixTwo[placeOne][placeTwo]) {
                         matrixTwo[placeOne][placeTwo] = 0.0;
                     } 
-                }
+   //             }
             }
         }
 

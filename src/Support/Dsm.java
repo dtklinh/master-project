@@ -123,8 +123,9 @@ public class Dsm {
 
     }
 
-    public static double[][] CalcDSM(double[][] SignalMat, double[][] NullMat, ParseBlosumMatrix blossum,
+    public static double[][] CalcDSM(double[][] SignalMatO, double[][] NullMat, ParseBlosumMatrix blossum,
             HashMap<String, Integer> pairIndex, boolean useBLOS) {
+        double[][] SignalMat = SignalMatO.clone();
         SignalMat = NormalizeMatrix.normalize(SignalMat);
         NullMat = NormalizeMatrix.normalize(NullMat);
         SignalMat = Match.match(NullMat, SignalMat, pairIndex);
@@ -132,6 +133,6 @@ public class Dsm {
             SignalMat = blossum.parseBlosumMatrix(pairIndex, SignalMat);
         }
         SignalMat=Dsm.processMatrix(CalculateSimMatrix.process((SignalMat), pairIndex));
-        return null;
+        return SignalMat;
     }
 }

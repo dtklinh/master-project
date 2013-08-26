@@ -108,10 +108,17 @@ public class GetProteinName {
 //        System.out.println(MyPair.ConvertFromStringToNum("ARMN"));
         
 //        MyBlackbox.CalculateSig_NullMatrix("CompletePosList_2.txt");
-//        MyBlackbox.CalculateSum("CompletePosList_2.txt", "SignalMatrix");
-//        MyBlackbox.TestSync("CompletePosList_2.txt");
+//        String path = "Train/NullMatrix2";
+//        MyBlackbox.CalculateSum(path+"/list.txt", path);
+//        MyBlackbox.TestSync("Train/SignalMatrix/list.txt");
 //        System.out.println("1: "+MyPair.ConvertFromNumToString2(1));
-        MyBlackbox.PrepareDataSet("CompletePosList_2.txt");
+//        MyBlackbox.PrepareDataSet("CompletePosList_2.txt");
+//        MyBlackbox.CalculateDSM2();
+//        MyBlackbox.Test();
+        MyBlackbox.TongHop();
+//        Matrix m = new Matrix(10, 10, 1.0);
+//        m = m.getMatrix(0, 1, 2, 4);
+//        m.PrintToScreen();
         
 //        MyBlackbox.CalculateDSM("DSM.txt");
         

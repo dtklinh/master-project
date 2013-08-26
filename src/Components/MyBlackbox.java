@@ -6,7 +6,9 @@ package Components;
 
 import Jama.Matrix;
 import Method.PairOfPair;
+import Support.Dsm;
 import Support.MyMatrix;
+import Support.ParseBlosumMatrix;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.File;
@@ -18,6 +20,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import org.apache.commons.io.FileUtils;
+import org.biojava.bio.structure.Structure;
+import org.biojava.bio.structure.io.PDBFileParser;
+import org.biojava.bio.structure.io.PDBFileReader;
 //import org.jfree.io.FileUtilities;
 //import org.apache.pdfbox.util.Matrix;
 
@@ -81,13 +86,13 @@ public class MyBlackbox {
             Collections.shuffle(null_indicator);
             Collections.shuffle(null_indicator);
             Collections.shuffle(null_indicator2);
-            if(signal_indicator.size()<null_indicator.size()){
-                for(int i=null_indicator.size()-1;i>=signal_indicator.size();i--){
+            if (signal_indicator.size() < null_indicator.size()) {
+                for (int i = null_indicator.size() - 1; i >= signal_indicator.size(); i--) {
                     null_indicator.remove(i);
                 }
             }
-            if(signal_indicator.size()<null_indicator2.size()){
-                for(int i=null_indicator2.size()-1;i>=signal_indicator.size();i--){
+            if (signal_indicator.size() < null_indicator2.size()) {
+                for (int i = null_indicator2.size() - 1; i >= signal_indicator.size(); i--) {
                     null_indicator2.remove(i);
                 }
             }
@@ -111,9 +116,9 @@ public class MyBlackbox {
             NullMat2 = NullMat2.plus(tmp);
             System.out.println("Null matrix 2 was calculated: " + k.getName());
         }
-    //    MyIO.WritePoPToFile(Signal_filename, SignalMat.getArray());
-        MyIO.WritePoPToFile("NullMatrix/"+Null_filename, NullMat.getArray());
-        MyIO.WritePoPToFile("NullMatrix2/"+Null_filename2, NullMat2.getArray());
+        //    MyIO.WritePoPToFile(Signal_filename, SignalMat.getArray());
+        MyIO.WritePoPToFile("NullMatrix/" + Null_filename, NullMat.getArray());
+        MyIO.WritePoPToFile("NullMatrix2/" + Null_filename2, NullMat2.getArray());
     }
 
     public static void TestSync(String filename) {
@@ -132,8 +137,15 @@ public class MyBlackbox {
                 }
                 try {
 
-                    String name = "MSA_file\\Collection\\" + tmp.trim() + ".fasta.msa";
-                    FileInputStream fstream2 = new FileInputStream(name);
+          //          String name = "MSA_file\\Collection\\" + tmp.trim() + ".fasta.msa";
+                    String name = "pdb_file/pdb" + tmp.trim().substring(0,4).toLowerCase()+".ent";
+                    String name2 = "pdb_file/" + tmp.trim().substring(0,4).toUpperCase()+".pdb";
+                    FileInputStream fstream2;
+                    try{
+                    fstream2 = new FileInputStream(name);
+                    } catch(FileNotFoundException e){
+                        fstream2 = new FileInputStream(name2);
+                    }
                     DataInputStream in2 = new DataInputStream(fstream2);
                     BufferedReader br2 = new BufferedReader(new InputStreamReader(in2));
                     br2.readLine();
@@ -169,7 +181,7 @@ public class MyBlackbox {
                 }
                 line = line.trim();
                 // read file
-                FileInputStream fstream2 = new FileInputStream(signal + "/" + line + ".txt");
+                FileInputStream fstream2 = new FileInputStream(signal + "/" + line);
                 DataInputStream in2 = new DataInputStream(fstream2);
                 BufferedReader br2 = new BufferedReader(new InputStreamReader(in2));
                 String str = "";
@@ -180,7 +192,7 @@ public class MyBlackbox {
                         break;
                     }
                     double tmp = Double.parseDouble(str.trim());
-                    if(tmp<0){
+                    if (tmp < 0) {
                         System.err.println(line);
                     }
                     vec[count] = vec[count] + tmp;
@@ -208,20 +220,21 @@ public class MyBlackbox {
             System.err.println(e.toString());
         }
     }
-    public static void PrepareDataSet(String filename){
-        
-        try{
+
+    public static void PrepareDataSet(String filename) {
+
+        try {
             FileInputStream fstream = new FileInputStream(filename);
             DataInputStream in = new DataInputStream(fstream);
             BufferedReader br = new BufferedReader(new InputStreamReader(in));
             String line = "";
             ArrayList<String> lst = new ArrayList<String>();
-            while(true){
+            while (true) {
                 line = br.readLine();
-                if(line==null){
+                if (line == null) {
                     break;
                 }
-                if(line.equalsIgnoreCase("")){
+                if (line.equalsIgnoreCase("")) {
                     continue;
                 }
                 lst.add(line.trim());
@@ -231,39 +244,111 @@ public class MyBlackbox {
             Collections.shuffle(lst);
             Collections.shuffle(lst);
             // copy train
-            for(int i=0;i<300;i++){
-                File src = new File("SignalMatrix/"+lst.get(i)+".txt");
-                File des = new File("Train/SignalMatrix/"+lst.get(i)+".txt");
+            for (int i = 0; i < 300; i++) {
+                File src = new File("SignalMatrix/" + lst.get(i) + ".txt");
+                File des = new File("Train/SignalMatrix/" + lst.get(i) + ".txt");
                 FileUtils.copyFile(src, des);
-    //            Thread.sleep(1000);
-                src = new File("NullMatrix/"+lst.get(i)+".txt");
-                des = new File("Train/NullMatrix/"+lst.get(i)+".txt");
+                //            Thread.sleep(1000);
+                src = new File("NullMatrix/" + lst.get(i) + ".txt");
+                des = new File("Train/NullMatrix/" + lst.get(i) + ".txt");
                 FileUtils.copyFile(src, des);
                 //
-                src = new File("NullMatrix2/"+lst.get(i)+".txt");
-                des = new File("Train/NullMatrix2/"+lst.get(i)+".txt");
+                src = new File("NullMatrix2/" + lst.get(i) + ".txt");
+                des = new File("Train/NullMatrix2/" + lst.get(i) + ".txt");
                 FileUtils.copyFile(src, des);
             }
-            for(int i=300;i<lst.size();i++){
-                File src = new File("SignalMatrix/"+lst.get(i)+".txt");
-                File des = new File("Test/SignalMatrix/"+lst.get(i)+".txt");
+            for (int i = 300; i < lst.size(); i++) {
+                File src = new File("SignalMatrix/" + lst.get(i) + ".txt");
+                File des = new File("Test/SignalMatrix/" + lst.get(i) + ".txt");
                 FileUtils.copyFile(src, des);
                 //
-                src = new File("NullMatrix/"+lst.get(i)+".txt");
-                des = new File("Test/NullMatrix/"+lst.get(i)+".txt");
+                src = new File("NullMatrix/" + lst.get(i) + ".txt");
+                des = new File("Test/NullMatrix/" + lst.get(i) + ".txt");
                 FileUtils.copyFile(src, des);
                 //
-                src = new File("NullMatrix2/"+lst.get(i)+".txt");
-                des = new File("Test/NullMatrix2/"+lst.get(i)+".txt");
+                src = new File("NullMatrix2/" + lst.get(i) + ".txt");
+                des = new File("Test/NullMatrix2/" + lst.get(i) + ".txt");
                 FileUtils.copyFile(src, des);
             }
 //            File src = new File("str");
 //            File des = new File("str2");
 //            FileUtils.copyFile(src, des);
-        }
-        catch(IOException e){
+        } catch (IOException e) {
             System.err.println(e.toString());
             System.exit(1);
         }
+    }
+
+    public static void CalculateDSM2() throws IOException {
+        String signal = "Train/SignalMatrix/Sum.txt";
+        String nul = "Train/NullMatrix/Sum.txt";
+        String nul2 = "Train/NullMatrix2/Sum.txt";
+        ParseBlosumMatrix pbm = new ParseBlosumMatrix();
+        HashMap<String, Integer> PairIndex = AminoAcid.GetPairIndex();
+        DSM d = new DSM();
+        d.LoadFromFile(signal, nul, 400);
+        double[][] m = Dsm.CalcDSM(d.getSignalMat().getArrayCopy(), d.getNullMat().getArrayCopy(),
+                pbm, PairIndex, true);
+        MyIO.WritePoPToFile("DSM_0_0", m);
+        m = Dsm.CalcDSM(d.getSignalMat().getArrayCopy(), d.getNullMat().getArrayCopy(),
+                pbm, PairIndex, false);
+        MyIO.WritePoPToFile("DSM_0_1", m);
+        //
+        d.LoadFromFile(signal, nul2, 400);
+        m = Dsm.CalcDSM(d.getSignalMat().getArrayCopy(), d.getNullMat().getArrayCopy(),
+                pbm, PairIndex, true);
+        MyIO.WritePoPToFile("DSM_1_0", m);
+        m = Dsm.CalcDSM(d.getSignalMat().getArrayCopy(), d.getNullMat().getArrayCopy(),
+                pbm, PairIndex, false);
+        MyIO.WritePoPToFile("DSM_1_1", m);
+    }
+
+    static public void Test() throws FileNotFoundException, IOException {
+        String filename = "pdb_file/2HAN.pdb";
+        FileInputStream fstream = new FileInputStream(filename);
+        DataInputStream in = new DataInputStream(fstream);
+        BufferedReader br = new BufferedReader(new InputStreamReader(in));
+        PDBFileParser parser = new PDBFileParser();
+        Structure s = null;
+        s = parser.parsePDBFile(br);
+        //       s.
+
+        //System.out.println("");
+
+    }
+
+    public static void TongHop() throws FileNotFoundException, IOException {
+//        String pdb_dir = "pdb_file";
+        String list_dir = "Train/SignalMatrix/list.txt";
+//        String signal_dir = "Train/SignalMatrix";
+//        String null_dir = "Train/NullMatrix";
+//        String null_dir2 = "Train/NullMatrix2";
+        ArrayList<double[]> Pos = new ArrayList<double[]>();
+        ArrayList<double[]> Neg = new ArrayList<double[]>();
+        Matrix DSM1 = MyIO.ReadDSM("DSM_0_0");
+        Matrix DSM2 = MyIO.ReadDSM("DSM_0_1");
+        Matrix DSM3 = MyIO.ReadDSM("DSM_1_0");
+        Matrix DSM4 = MyIO.ReadDSM("DSM_1_1");
+        ArrayList<String> amino = AminoAcid.getAA();
+
+        ArrayList<KeyProtein> lst_prot = MyIO.LoadKeyProteins(list_dir);
+        for (KeyProtein k : lst_prot) {
+            if (k.getSequence().equalsIgnoreCase("")) {
+                k.LoadingFromPDBFile();
+            }
+            String fasta = k.getName() + "_" + k.getChain() + ".fasta.msa";
+            ArrayList<String> msa = MsaFilterer.filter("MSA_file/Collection/" + fasta);
+            if (msa.size() < 10) {
+                System.out.println("Skip protein: " + k.getName() + "_" + k.getChain());
+                continue;
+            }
+            MSA m = new MSA(k, msa);
+            m.AdjustLength();
+//            Pos.addAll(m.RetrieveSlidingWindow(5, true, DSM1, DSM2, DSM3, DSM4));
+//            Neg.addAll(m.RetrieveSlidingWindow(5, false, DSM1, DSM2, DSM3, DSM4));
+            Pos.addAll(m.CalculatePSSMAndSS(amino, 11, true));
+            Neg.addAll(m.CalculatePSSMAndSS(amino, 11, false));
+        }
+        ARRF_Template.WriteToArrfFile("PSSM_SS_OBV_Train.arff", "SlidingWindows", Pos, Neg);
     }
 }

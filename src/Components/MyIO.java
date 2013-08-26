@@ -4,6 +4,7 @@
  */
 package Components;
 
+import Jama.Matrix;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.DataInputStream;
@@ -101,12 +102,40 @@ public class MyIO {
             if (line.equalsIgnoreCase("")) {
                 continue;
             }
-            String[] lst_tmp = line.trim().split("_");
-            KeyProtein k = new KeyProtein(lst_tmp[0], lst_tmp[1]);
+            String name = line.substring(0, 4);
+            String chain = line.substring(5, 6);
+      //      String[] lst_tmp = line.trim().split("_");
+      //      KeyProtein k = new KeyProtein(lst_tmp[0], lst_tmp[1]);
+            KeyProtein k = new KeyProtein(name, chain);
             k.LoadingFromPDBFile();
             res.add(k);
         }
         br.close();
         return res;
+    }
+    public static Matrix ReadDSM(String filename) throws FileNotFoundException, IOException{
+        FileInputStream fstream = new FileInputStream(filename);
+        DataInputStream in = new DataInputStream(fstream);
+        BufferedReader br = new BufferedReader(new InputStreamReader(in));
+        String line = "";
+        double[][] tmp = new double[400][400];
+        int row = 0, col = 0;
+        while(true){
+            line = br.readLine();
+            if(line==null){
+                break;
+            }
+            if(line.equalsIgnoreCase("")){
+                continue;
+            }
+            double v = Double.parseDouble(line.trim());
+            tmp[row][col] = v;
+            col++;
+            if(col>=400){
+                col = 0;
+                row++;
+            }
+        }
+        return new Matrix(tmp);
     }
 }

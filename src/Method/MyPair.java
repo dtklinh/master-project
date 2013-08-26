@@ -5,6 +5,7 @@
 package Method;
 
 import Components.AminoAcid;
+import Jama.Matrix;
 import Support.MyMatrix;
 //import components.ColumnPair;
 import java.util.ArrayList;
@@ -55,10 +56,10 @@ public class MyPair {
 
     }
 
-    public int[][] CalculatePoP2(HashMap<String, Integer> PairIndex) {
+    public double[][] CalculatePoP2(HashMap<String, Integer> PairIndex) {
         // hopefully faster
         //HashMap<String, Integer> a = AminoAcid.GetPairIndex();
-        int[][] res = new int[400][400];
+        double[][] res = new double[400][400];
         int[] tmp = new int[400];
         for (int i = 0; i < 400; i++) {
             tmp[i] = 0;
@@ -104,7 +105,7 @@ public class MyPair {
                         int id3 = PairIndex.get(c3+c4);
                         //int id4 = ConvertFromStringToNum(c4 + c3);
                         int id4 = PairIndex.get(c4+c3);
-                        int kq = tmp[i] * tmp[j];
+                        double kq = (double)tmp[i] * tmp[j];
                         if(kq <0){
                             System.err.println("Negative freq: "+tmp[i] + " "+ tmp[j]);
                         }
@@ -165,9 +166,9 @@ public class MyPair {
         return matrix;
     }
 
-    public int[][] CalculatePoP() {
+    public double[][] CalculatePoP() {
         try {
-            int[][] res = new int[400][400];
+            double[][] res = new double[400][400];
             String s1 = this.Sequences[0];
             String s2 = this.Sequences[1];
             int len = s1.length();
@@ -278,10 +279,10 @@ public class MyPair {
         return idx;
     }
 
-    public MyMatrix CalculatePair() {
+    public Matrix CalculatePair() {
         try {
-            MyMatrix res = new MyMatrix(20, 20);
-            int[][] mat = new int[20][20];
+         //   Matrix res = new Matrix(new double[20][20]);
+            double[][] mat = new double[20][20];
             ArrayList<String> lst_amino = AminoAcid.getAA();
             int len = this.Sequences[0].length();
             String str1 = Sequences[0];
@@ -307,17 +308,54 @@ public class MyPair {
                     if (i == j) {
                         mat[i][j] *= 2;
                     } else {
-                        int tmp = mat[i][j] + mat[j][i];
+                        double tmp = mat[i][j] + mat[j][i];
                         mat[i][j] = tmp;
                         mat[j][i] = tmp;
                     }
                 }
             }
-            res.setElement(mat);
-            return res;
+        //    res.setElement(mat);
+            return new Matrix(mat);
         } catch (Error e) {
             System.err.println(e.toString());
             return null;
         }
+    }
+    public double CalculateUValue(){
+        return this.CalculatePair().CalculateUValue();
+    }
+    public static Matrix ConverToVector(Matrix m){
+        double[][] freqMatrix = m.getArrayCopy();
+        double[] vector = new double[freqMatrix.length * freqMatrix.length];
+        int position = 0;
+        for (int i = 0; i < freqMatrix.length; ++i) {
+            for (int j = 0; j < freqMatrix.length; ++j) {
+                vector[position] = freqMatrix[i][j];
+                ++position;
+            }
+        }
+        return new Matrix(vector, vector.length);
+    }
+    public static Matrix ConvertToMatrix(Matrix m, int row, int column){
+        if((row*column - m.getRowDimension())!=0){
+            System.err.println("Dimension disagreement");
+            System.exit(1);
+        }
+        int position = 0;
+        double[][] tmp = m.getArrayCopy();
+        double[][] freqMatrix = new double[row][column];
+        for (int i = 0; i < row; ++i) {
+            for (int j = 0; j < column; ++j) {
+                freqMatrix[i][j] = tmp[position][0];
+                
+                ++position;
+            }
+        }
+        return new Matrix(freqMatrix);
+    }
+    public static double CalculateUAlphaValue(Matrix Vec, Matrix DSMMat){
+        Matrix tmp = DSMMat.times(Vec);
+        tmp = ConvertToMatrix(tmp, 20, 20);
+        return tmp.CalculateUValue();
     }
 }

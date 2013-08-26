@@ -82,18 +82,18 @@ public class PairOfPair {
         Matrix m = new Matrix(new double[400][400]);
         for(int[] idx: this.Indicator){
             MyPair p = new MyPair(ColumnString.get(idx[0]), ColumnString.get(idx[1]));
-            int[][] tmp = p.CalculatePoP2(PairIndex);
+            double[][] tmp = p.CalculatePoP2(PairIndex);
         //    m = m.AddMatrix(new MyMatrix(tmp));
             m = m.plus(new Matrix(tmp));
         }
         //res = m.Normalize();
         return m;
     }
-    public MyMatrix CalculatePair(ArrayList<String> ColumnString){
-        MyMatrix m = new MyMatrix(20, 20);
+    public Matrix CalculatePair(ArrayList<String> ColumnString){
+        Matrix m = new Matrix(new double[20][20]);
         for(int[] idx: this.Indicator){
             MyPair p = new MyPair(ColumnString.get(idx[0]), ColumnString.get(idx[1]));
-            m = m.AddMatrix(p.CalculatePair());
+            m = m.plus(p.CalculatePair());
         }
         return m;
     }
