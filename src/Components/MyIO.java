@@ -87,6 +87,15 @@ public class MyIO {
         //    writer.write(tmp);
         writer.close();
     }
+    public static void WriteToFile(String filename, ArrayList<String> lst) throws IOException{
+        BufferedWriter writer = new BufferedWriter(new FileWriter(filename), 32768);
+        String tmp = "";
+        for(String s:lst){
+            writer.write(s+"\n");
+        }
+        writer.flush();
+        writer.close();
+    }
 
     public static ArrayList<KeyProtein> LoadKeyProteins(String filename) throws FileNotFoundException, IOException {
         ArrayList<KeyProtein> res = new ArrayList<KeyProtein>();
@@ -102,6 +111,7 @@ public class MyIO {
             if (line.equalsIgnoreCase("")) {
                 continue;
             }
+            line = line.trim();
             String name = line.substring(0, 4);
             String chain = line.substring(5, 6);
       //      String[] lst_tmp = line.trim().split("_");
@@ -127,6 +137,9 @@ public class MyIO {
             }
             if(line.equalsIgnoreCase("")){
                 continue;
+            }
+            if(Character.isLetter(line.charAt(0))){
+                line = line.substring(7);
             }
             double v = Double.parseDouble(line.trim());
             tmp[row][col] = v;

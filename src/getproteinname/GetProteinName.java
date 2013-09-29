@@ -32,6 +32,7 @@ import javax.swing.DebugGraphics;
 //import org.apache.pdfbox.util.PDFTextStripper;
 import Components.MsaFilterer;
 import Jama.Matrix;
+import Support.StaticSupportMethod;
 
 /**
  *
@@ -42,7 +43,7 @@ public class GetProteinName {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws FileNotFoundException, IOException {
+    public static void main(String[] args) throws FileNotFoundException, IOException, Exception {
         // TODO code application logic here
         //////////////// main part //////////////////////
 /*        
@@ -115,10 +116,16 @@ public class GetProteinName {
 //        MyBlackbox.PrepareDataSet("CompletePosList_2.txt");
 //        MyBlackbox.CalculateDSM2();
 //        MyBlackbox.Test();
-        MyBlackbox.TongHop();
+//        MyBlackbox.TongHop();
 //        Matrix m = new Matrix(10, 10, 1.0);
 //        m = m.getMatrix(0, 1, 2, 4);
 //        m.PrintToScreen();
+//        MyBlackbox.FindSafeNeg("PSSM_Uvalue_DSM_1_Train.arff", "DownNeg_PSSM_Uvalue_DSM_1_Train.arff");
+//        MyBlackbox.GetProteinSequence("Train/AminoList374.txt", "Train/AminoList374_Sequence.txt");
+//        MyBlackbox.EachProteinEachFile("Train/AminoList374_Sequence.txt");
+        StaticSupportMethod.PSIBlast("Train/AminoList374.txt");
+//        Runtime rt = Runtime.getRuntime();
+//        Process pr = rt.exec("powershell.exe mkdir D:\\khanhlinh");
         
 //        MyBlackbox.CalculateDSM("DSM.txt");
         

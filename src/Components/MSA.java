@@ -443,8 +443,28 @@ public class MSA {
         return res;
     }
 
+    public double[] CalculateUvalueForSlidingWin(ArrayList<String> ColumnPairs, int begin, int end, Matrix dsm) {
+        int width = end - begin;
+        double[] res = new double[width * (width - 1) / 2];
+        int position = 0;
+        for (int i = begin; i < end - 1; i++) {
+            for (int j = i + 1; j < end; j++) {
+                MyPair p = new MyPair(ColumnPairs.get(i), ColumnPairs.get(j));
+                Matrix freq = p.CalculatePair();
+                Matrix vec = MyPair.ConverToVector(freq);
+                if (dsm != null) {
+                    res[position] = MyPair.CalculateUAlphaValue(vec, dsm);
+                } else {
+                    res[position] = freq.CalculateUValue();
+                }
+                position++;
+            }
+        }
+        return res;
+    }
+
     public ArrayList<double[]> CalculatePSSMAndSS(ArrayList<String> amino, int width, boolean pos) throws FileNotFoundException, IOException {
-       
+
         ArrayList<double[]> res = new ArrayList<double[]>();
         this.AdjustLength();
         ArrayList<Integer> BindingIdx = this.MyKeyProtein.getBindingIndex();
@@ -452,12 +472,12 @@ public class MSA {
             System.err.println("No binding index");
             System.exit(1);
         }
-        System.out.println("Protein length: "+ this.MyKeyProtein.getSequence().length());
-        int radius = (width-1)/2;
+        System.out.println("Protein length: " + this.MyKeyProtein.getSequence().length());
+        int radius = (width - 1) / 2;
 //        double[][] m = new double[20][this.MyKeyProtein.getSequence().length()];
 //        int[] TotalCount = new int[20];
         ArrayList<String> Lst_ColumnPair = this.RetrieveColumnPair();
-        System.out.println("Lst_Column: "+ Lst_ColumnPair.size());
+        System.out.println("Lst_Column: " + Lst_ColumnPair.size());
 //        for(int i=0;i<ColumnStr.size();i++){
 //            String str = ColumnStr.get(i);
 //            ArrayList<Character> char_lst = new ArrayList<Character>();
@@ -468,8 +488,9 @@ public class MSA {
 //        }
         Matrix MatOBV = CreateOBVList(this.MyKeyProtein.getSequence());
         Matrix MatSS = CreateSSList();
-        System.out.println("MatOBV: "+MatOBV.getRowDimension()+":"+ MatOBV.getColumnDimension());
-        System.out.println("MatSS: "+MatSS.getRowDimension()+":"+ MatSS.getColumnDimension());
+        Matrix MatPSSM = CreatePSSMList(Lst_ColumnPair, amino);
+        System.out.println("MatOBV: " + MatOBV.getRowDimension() + ":" + MatOBV.getColumnDimension());
+        System.out.println("MatSS: " + MatSS.getRowDimension() + ":" + MatSS.getColumnDimension());
         for (int i = (width - 1) / 2; i < Lst_ColumnPair.size() - (width - 1) / 2 - 1; i++) {
             if (pos) {
                 if (BindingIdx.indexOf(i) < 0) {
@@ -481,33 +502,41 @@ public class MSA {
                 }
             }
             // PSSM
-            double[] feature = new double[width*29];
+            double[] feature = new double[width * 29];
 //            ArrayList<String> tmp = (ArrayList<String>)Lst_ColumnPair.subList(i-radius, i+radius+1);
             ArrayList<String> tmp = new ArrayList<String>();
-            for(int j=i-radius; j<i+radius+1; j++){
+            for (int j = i - radius; j < i + radius + 1; j++) {
                 tmp.add(Lst_ColumnPair.get(j));
             }
-            double[] pssm = CreatePSSM(tmp, amino);
+//            double[] pssm = CreatePSSM(tmp, amino);
+            Matrix pssm = MatPSSM.getMatrix(0, 19, i - radius, i + radius);
+            double[][] VecPSSM = pssm.getArrayCopy();
             // Secondary Structure
-            System.out.println("i: "+ i + "  // Radius: "+ radius);
-            Matrix ss = MatSS.getMatrix(0, 2, i-radius, i+radius);
+            System.out.println("i: " + i + "  // Radius: " + radius);
+            Matrix ss = MatSS.getMatrix(0, 2, i - radius, i + radius);
             double[][] VecSS = ss.getArrayCopy();
             // OBV
-            Matrix obv = MatOBV.getMatrix(0, 5, i-radius, i+ radius);
+            Matrix obv = MatOBV.getMatrix(0, 5, i - radius, i + radius);
             double[][] VecOBV = obv.getArrayCopy();
             int position = 0;
-            for(int j=0; j<pssm.length;j++){
-                feature[position] = pssm[j];
-                position++;
+//            for(int j=0; j<pssm.length;j++){
+//                feature[position] = pssm[j];
+//                position++;
+//            }
+            for (int j = 0; j < VecPSSM[0].length; j++) {
+                for (int k = 0; k < VecPSSM.length; k++) {
+                    feature[position] = VecPSSM[k][j];
+                    position++;
+                }
             }
-            for(int j=0;j<VecSS[0].length;j++){
-                for(int k=0;k<VecSS.length;k++){
+            for (int j = 0; j < VecSS[0].length; j++) {
+                for (int k = 0; k < VecSS.length; k++) {
                     feature[position] = VecSS[k][j];
                     position++;
                 }
             }
-            for(int j=0;j<VecOBV[0].length;j++){
-                for(int k=0;k<VecOBV.length;k++){
+            for (int j = 0; j < VecOBV[0].length; j++) {
+                for (int k = 0; k < VecOBV.length; k++) {
                     feature[position] = VecOBV[k][j];
                     position++;
                 }
@@ -515,7 +544,67 @@ public class MSA {
             res.add(feature);
         }
         return res;
+
+    }
+    public ArrayList<double[]> CalculatePSSMandUvalue(ArrayList<String> amino, int width, boolean pos,
+            Matrix dsm) throws FileNotFoundException, IOException{
+        ArrayList<double[]> res = new ArrayList<double[]>();
+        this.AdjustLength();
+        ArrayList<Integer> BindingIdx = this.MyKeyProtein.getBindingIndex();
+        if (BindingIdx == null) {
+            System.err.println("No binding index");
+            System.exit(1);
+        }
+        System.out.println("Protein length: " + this.MyKeyProtein.getSequence().length());
+        int radius = (width - 1) / 2;
+//        double[][] m = new double[20][this.MyKeyProtein.getSequence().length()];
+//        int[] TotalCount = new int[20];
+        ArrayList<String> Lst_ColumnPair = this.RetrieveColumnPair();
+        System.out.println("Lst_Column: " + Lst_ColumnPair.size());      
         
+        Matrix MatPSSM = CreatePSSMList(Lst_ColumnPair, amino);
+        
+        for (int i = (width - 1) / 2; i < Lst_ColumnPair.size() - (width - 1) / 2 - 1; i++) {
+            if (pos) {
+                if (BindingIdx.indexOf(i) < 0) {
+                    continue;
+                }
+            } else {
+                if (BindingIdx.indexOf(i) >= 0) {
+                    continue;
+                }
+            }
+            // PSSM
+            int len = width*20 + width*(width-1)/2;
+            double[] feature = new double[len];
+
+           
+            Matrix pssm = MatPSSM.getMatrix(0, 19, i - radius, i + radius);
+            double[][] VecPSSM = pssm.getArrayCopy();
+       //     double[] uvalue_null = this.CalculateUvalueForSlidingWin(Lst_ColumnPair, i-radius, i+radius+1, null);
+            double[] uvalue = this.CalculateUvalueForSlidingWin(Lst_ColumnPair, i-radius, i+radius+1, dsm);
+            int position = 0;
+//            for(int j=0; j<pssm.length;j++){
+//                feature[position] = pssm[j];
+//                position++;
+//            }
+            for (int j = 0; j < VecPSSM[0].length; j++) {
+                for (int k = 0; k < VecPSSM.length; k++) {
+                    feature[position] = VecPSSM[k][j];
+                    position++;
+                }
+            }
+            for(int j=0;j<uvalue.length;j++){
+                feature[position] = uvalue[j];
+                position++;
+            }
+//            for(int j=0;j<uvalue_null.length;j++){
+//                feature[position] = uvalue_null[j];
+//                position++;
+//            }
+            res.add(feature);
+        }
+        return res;
     }
 
     public static double[] CreatePSSM(ArrayList<String> ColumnStr, ArrayList<String> amino) {
@@ -543,107 +632,192 @@ public class MSA {
         int count = 0;
         for (int i = 0; i < 20; i++) {
             for (int j = 0; j < len; j++) {
-                m[i][j] = m[i][j] * len / total[j];
+                m[i][j] = m[i][j] * len / total[i];
                 m[i][j] = m[i][j] / (m[i][j] + 1);
                 res[count] = m[i][j];
+                if (Double.isNaN(res[count])) {
+                    System.err.println("NaN");
+                    res[count] = 0.0;
+                }
                 count++;
             }
 
         }
         return res;
     }
-    public static double[] CreateOBV(String str){
+
+    public Matrix CreatePSSMList(ArrayList<String> ColumnStr, ArrayList<String> amino) {
+        try {
+            int len = ColumnStr.size();
+//        double[] res = new double[20 * len];
+            double[][] m = new double[20][len];
+            double[] total = new double[20];
+            for (int i = 0; i < ColumnStr.size(); i++) {
+                String str = ColumnStr.get(i);
+                ArrayList<Character> char_lst = new ArrayList<Character>();
+                for (int j = 0; j < str.length(); j++) {
+                    char_lst.add(str.charAt(j));
+                }
+                int sum = 0;
+                for (int j = 0; j < 20; j++) {
+                    int count = Collections.frequency(char_lst, amino.get(j).charAt(0));
+                    m[j][i] = (double) count;
+                    sum += count;
+                }
+                for (int j = 0; j < 20; j++) {
+                    m[j][i] = m[j][i] / sum;
+                    total[j] += m[j][i];
+                }
+            }
+//        int count = 0;
+            for (int i = 0; i < 20; i++) {
+                for (int j = 0; j < len; j++) {
+   //                 System.out.println("i/j: " + i + " / " + j);
+                    m[i][j] = m[i][j] * len / total[i];
+                    m[i][j] = m[i][j] / (m[i][j] + 1);
+//                res[count] = m[i][j];
+                    if (Double.isNaN(m[i][j])) {
+                        System.err.println("NaN");
+//                    res[count] = 0.0;
+                        m[i][j] = 0.0;
+                    }
+//                count++;
+                }
+
+            }
+            return new Matrix(m);
+        } catch (Exception e) {
+            System.err.println(e.toString());
+            return null;
+        }
+    }
+
+    public static double[] CreateOBV(String str) {
         ArrayList<String> type1 = new ArrayList<String>();
         ArrayList<String> type2 = new ArrayList<String>();
         ArrayList<String> type3 = new ArrayList<String>();
         ArrayList<String> type4 = new ArrayList<String>();
         ArrayList<String> type5 = new ArrayList<String>();
         ArrayList<String> type6 = new ArrayList<String>();
-        type1.add("A"); type1.add("G"); type1.add("V");
-        type2.add("I"); type2.add("L"); type2.add("F"); type2.add("P");
-        type3.add("Y");type3.add("M");type3.add("T");type3.add("S");type3.add("C");
-        type4.add("H"); type4.add("N"); type4.add("Q"); type4.add("W");
-        type5.add("K"); type5.add("R");
-        type6.add("D"); type6.add("E");
-        double[] res = new double[6*str.length()];
-        int position =-1;
-        for(int i=0; i<str.length(); i++){
-            String c = str.substring(i, i+1);
-            if(type1.indexOf(c)>=0){
-                res[position+1] = 1.0;
+        type1.add("A");
+        type1.add("G");
+        type1.add("V");
+        type2.add("I");
+        type2.add("L");
+        type2.add("F");
+        type2.add("P");
+        type3.add("Y");
+        type3.add("M");
+        type3.add("T");
+        type3.add("S");
+        type3.add("C");
+        type4.add("H");
+        type4.add("N");
+        type4.add("Q");
+        type4.add("W");
+        type5.add("K");
+        type5.add("R");
+        type6.add("D");
+        type6.add("E");
+        double[] res = new double[6 * str.length()];
+        int position = -1;
+        for (int i = 0; i < str.length(); i++) {
+            String c = str.substring(i, i + 1);
+            if (type1.indexOf(c) >= 0) {
+                res[position + 1] = 1.0;
+            } else if (type2.indexOf(c) >= 0) {
+                res[position + 2] = 1.0;
+            } else if (type3.indexOf(c) >= 0) {
+                res[position + 3] = 1.0;
+            } else if (type4.indexOf(c) >= 0) {
+                res[position + 4] = 1.0;
+            } else if (type5.indexOf(c) >= 0) {
+                res[position + 5] = 1.0;
+            } else if (type6.indexOf(c) >= 0) {
+                res[position + 6] = 1.0;
             }
-            else if(type2.indexOf(c)>=0){
-                res[position+2] = 1.0;
-            }
-            else if(type3.indexOf(c)>=0){
-                res[position+3] = 1.0;
-            }
-            else if(type4.indexOf(c)>=0){
-                res[position+4] = 1.0;
-            }
-            else if(type5.indexOf(c)>=0){
-                res[position+5] = 1.0;
-            }
-            else if(type6.indexOf(c)>=0){
-                res[position+6] = 1.0;
-            }
-            position = position+6;
+            position = position + 6;
         }
         return res;
     }
-    public static Matrix CreateOBVList(String str){
+
+    public static Matrix CreateOBVList(String str) {
         ArrayList<String> type1 = new ArrayList<String>();
         ArrayList<String> type2 = new ArrayList<String>();
         ArrayList<String> type3 = new ArrayList<String>();
         ArrayList<String> type4 = new ArrayList<String>();
         ArrayList<String> type5 = new ArrayList<String>();
         ArrayList<String> type6 = new ArrayList<String>();
-        type1.add("A"); type1.add("G"); type1.add("V");
-        type2.add("I"); type2.add("L"); type2.add("F"); type2.add("P");
-        type3.add("Y");type3.add("M");type3.add("T");type3.add("S");type3.add("C");
-        type4.add("H"); type4.add("N"); type4.add("Q"); type4.add("W");
-        type5.add("K"); type5.add("R");
-        type6.add("D"); type6.add("E");
+        type1.add("A");
+        type1.add("G");
+        type1.add("V");
+        type2.add("I");
+        type2.add("L");
+        type2.add("F");
+        type2.add("P");
+        type3.add("Y");
+        type3.add("M");
+        type3.add("T");
+        type3.add("S");
+        type3.add("C");
+        type4.add("H");
+        type4.add("N");
+        type4.add("Q");
+        type4.add("W");
+        type5.add("K");
+        type5.add("R");
+        type6.add("D");
+        type6.add("E");
         double[][] mat = new double[6][str.length()];
-        for(int i=0;i<str.length();i++){
-            String c = str.substring(i, i+1);
-            if(type1.indexOf(c)>=0){
+        for (int i = 0; i < str.length(); i++) {
+            String c = str.substring(i, i + 1);
+            if (type1.indexOf(c) >= 0) {
                 mat[0][i] = 1.0;
-            }
-            else if(type2.indexOf(c)>=0){
+            } else if (type2.indexOf(c) >= 0) {
                 mat[1][i] = 1.0;
-            }
-            else if(type3.indexOf(c)>=0){
+            } else if (type3.indexOf(c) >= 0) {
                 mat[2][i] = 1.0;
-            }
-            else if(type4.indexOf(c)>=0){
+            } else if (type4.indexOf(c) >= 0) {
                 mat[3][i] = 1.0;
-            }
-            else if(type5.indexOf(c)>=0){
+            } else if (type5.indexOf(c) >= 0) {
                 mat[4][i] = 1.0;
-            }
-            else if(type6.indexOf(c)>=0){
+            } else if (type6.indexOf(c) >= 0) {
                 mat[5][i] = 1.0;
             }
         }
         return new Matrix(mat);
     }
-    public Matrix CreateSSList() throws FileNotFoundException, IOException{
+
+    public Matrix CreateSSList() throws FileNotFoundException, IOException {
         ArrayList<Integer> helix = this.MyKeyProtein.FindHelixIndex();
         ArrayList<Integer> strand = this.MyKeyProtein.FindStrandIndex();
         String prot = this.MyKeyProtein.getSequence();
         double[][] mat = new double[3][prot.length()];
-        for(int i=0;i<prot.length();i++){
-            if(helix.indexOf(i)>=0){
+        for (int i = 0; i < prot.length(); i++) {
+            if (helix.indexOf(i) >= 0) {
                 mat[0][i] = 1.0;
-            }
-            else if(strand.indexOf(i)>=0){
+            } else if (strand.indexOf(i) >= 0) {
                 mat[1][i] = 1.0;
-            }
-            else{
+            } else {
                 mat[2][i] = 1.0;
             }
         }
         return new Matrix(mat);
+    }
+
+    public static double[] ConcatFeature(double[] a, double[] b) {
+        int len_a = a.length;
+        int len_b = b.length;
+        int position = 0;
+        double[] res = new double[len_a + len_b];
+        for (int i = 0; i < len_a; i++) {
+            res[position] = a[i];
+            position++;
+        }
+        for (int i = 0; i < len_b; i++) {
+            res[position] = b[i];
+            position++;
+        }
+        return res;
     }
 }

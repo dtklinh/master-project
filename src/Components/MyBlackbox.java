@@ -5,6 +5,7 @@
 package Components;
 
 import Jama.Matrix;
+import Method.MyRandomForest;
 import Method.PairOfPair;
 import Support.Dsm;
 import Support.MyMatrix;
@@ -23,6 +24,7 @@ import org.apache.commons.io.FileUtils;
 import org.biojava.bio.structure.Structure;
 import org.biojava.bio.structure.io.PDBFileParser;
 import org.biojava.bio.structure.io.PDBFileReader;
+import weka.core.Instances;
 //import org.jfree.io.FileUtilities;
 //import org.apache.pdfbox.util.Matrix;
 
@@ -75,9 +77,13 @@ public class MyBlackbox {
             }
             String fasta = k.getName() + "_" + k.getChain() + ".fasta.msa";
             ArrayList<String> msa = MsaFilterer.filter("MSA_file/Collection/" + fasta);
-            if (msa.size() < 10) {
-                System.out.println("Skip protein: " + k.getName() + "_" + k.getChain());
+//            if (msa.size() < 10) {
+//                System.out.println("Skip protein: " + k.getName() + "_" + k.getChain());
+//            }
+            if(msa.size()>=100){
+                System.out.println(k.getName()+" : "+ msa.size());
             }
+            /*
             MSA m = new MSA(k, msa);
             m.AdjustLength();
             ArrayList<int[]> signal_indicator = k.RetrieveIndicatorPair(distance);
@@ -115,10 +121,11 @@ public class MyBlackbox {
             MyIO.WritePoPToFile("NullMatrix2/" + k.getName() + "_" + k.getChain() + ".txt", tmp.getArray());
             NullMat2 = NullMat2.plus(tmp);
             System.out.println("Null matrix 2 was calculated: " + k.getName());
+            */
         }
         //    MyIO.WritePoPToFile(Signal_filename, SignalMat.getArray());
-        MyIO.WritePoPToFile("NullMatrix/" + Null_filename, NullMat.getArray());
-        MyIO.WritePoPToFile("NullMatrix2/" + Null_filename2, NullMat2.getArray());
+//        MyIO.WritePoPToFile("NullMatrix/" + Null_filename, NullMat.getArray());
+//        MyIO.WritePoPToFile("NullMatrix2/" + Null_filename2, NullMat2.getArray());
     }
 
     public static void TestSync(String filename) {
@@ -303,23 +310,62 @@ public class MyBlackbox {
         MyIO.WritePoPToFile("DSM_1_1", m);
     }
 
-    static public void Test() throws FileNotFoundException, IOException {
-        String filename = "pdb_file/2HAN.pdb";
-        FileInputStream fstream = new FileInputStream(filename);
-        DataInputStream in = new DataInputStream(fstream);
-        BufferedReader br = new BufferedReader(new InputStreamReader(in));
-        PDBFileParser parser = new PDBFileParser();
-        Structure s = null;
-        s = parser.parsePDBFile(br);
+    static public void Test() throws FileNotFoundException, IOException, Exception {
+//        String filename = "pdb_file/2HAN.pdb";
+//        FileInputStream fstream = new FileInputStream(filename);
+//        DataInputStream in = new DataInputStream(fstream);
+//        BufferedReader br = new BufferedReader(new InputStreamReader(in));
+//        PDBFileParser parser = new PDBFileParser();
+//        Structure s = null;
+//        s = parser.parsePDBFile(br);
         //       s.
 
         //System.out.println("");
-
+//        MyRandomForest rf = new MyRandomForest("PSSM_SS_OBV_Train.arff");
+//        Instances neg = rf.GetNegIns();
+//        double[][] result = rf.Predict(neg);
+//        for(int i=0;i<result.length;i++){
+//            System.out.println("#: "+i+": "+ result[i][0]+ " / "+ result[i][1]);
+//        }
+        /// count frequency of 20 amino acid with binding site and non-binding
+        String list_dir = "Train/SignalMatrix/list.txt";
+        ArrayList<KeyProtein> lst_prot = MyIO.LoadKeyProteins(list_dir);
+        ArrayList<String> amino = AminoAcid.getAA();
+        
+        double[] binding = new double[20];
+        double[] non_binding = new double[20];
+        for(KeyProtein k: lst_prot){
+            int offset = k.getOffset();
+            ArrayList<Integer> lst_indx = k.getBindingIndex();
+            String sequence = k.getSequence();
+            for(int i=0;i<lst_indx.size();i++){
+                int tmp = lst_indx.get(i) - offset;
+                lst_indx.set(i, tmp);
+            }
+            for(int i=0;i<sequence.length();i++){
+                String ch = sequence.substring(i, i+1);
+                int idx = amino.indexOf(ch);
+                if(lst_indx.indexOf(i)>=0){
+                    binding[idx]++;
+                }
+                else{
+                    non_binding[idx]++;
+                }
+            }
+        }
+        double sum_binding=0, sum_non=0;
+        for(int i=0;i<20;i++){
+            sum_binding += binding[i];
+            sum_non += non_binding[i];
+        }
+        for(int i=0;i<20;i++){
+            System.out.println(amino.get(i)+": "+binding[i]/sum_binding+" / "+non_binding[i]/sum_non);
+        }
     }
 
     public static void TongHop() throws FileNotFoundException, IOException {
 //        String pdb_dir = "pdb_file";
-        String list_dir = "Train/SignalMatrix/list.txt";
+        String list_dir = "Test/SignalMatrix/list.txt";
 //        String signal_dir = "Train/SignalMatrix";
 //        String null_dir = "Train/NullMatrix";
 //        String null_dir2 = "Train/NullMatrix2";
@@ -329,6 +375,7 @@ public class MyBlackbox {
         Matrix DSM2 = MyIO.ReadDSM("DSM_0_1");
         Matrix DSM3 = MyIO.ReadDSM("DSM_1_0");
         Matrix DSM4 = MyIO.ReadDSM("DSM_1_1");
+        Matrix DSM5 = MyIO.ReadDSM("newDSM.out");
         ArrayList<String> amino = AminoAcid.getAA();
 
         ArrayList<KeyProtein> lst_prot = MyIO.LoadKeyProteins(list_dir);
@@ -344,11 +391,53 @@ public class MyBlackbox {
             }
             MSA m = new MSA(k, msa);
             m.AdjustLength();
+            
 //            Pos.addAll(m.RetrieveSlidingWindow(5, true, DSM1, DSM2, DSM3, DSM4));
 //            Neg.addAll(m.RetrieveSlidingWindow(5, false, DSM1, DSM2, DSM3, DSM4));
-            Pos.addAll(m.CalculatePSSMAndSS(amino, 11, true));
-            Neg.addAll(m.CalculatePSSMAndSS(amino, 11, false));
+//            Pos.addAll(m.CalculatePSSMAndSS(amino, 11, true));
+//            Neg.addAll(m.CalculatePSSMAndSS(amino, 11, false));
+            Pos.addAll(m.CalculatePSSMandUvalue(amino, 11, true, DSM5));
+            Neg.addAll(m.CalculatePSSMandUvalue(amino, 11, false, DSM5));
         }
-        ARRF_Template.WriteToArrfFile("PSSM_SS_OBV_Train.arff", "SlidingWindows", Pos, Neg);
+        ARRF_Template.WriteToArrfFile("PSSM_Uvalue_DSM_5_Test.arff", "SlidingWindows", Pos, Neg);
+    }
+    public static void FindSafeNeg(String filename, String file_output) throws FileNotFoundException, IOException, Exception{
+        MyRandomForest rf = new MyRandomForest(filename);
+        
+        Instances neg = rf.DownNeg((double)1/20, (double)5/10);
+        Instances set = rf.GetPosIns();
+        set.addAll(neg);
+        ARRF_Template.WriteToArffFile(set, file_output);
+    }
+    public static void GetProteinSequence(String filename, String fileout) throws FileNotFoundException, IOException{
+        ArrayList<KeyProtein> lst_protein = MyIO.LoadKeyProteins(filename);
+        ArrayList<String> lst_str = new ArrayList<String>();
+        for(KeyProtein k:lst_protein){
+            String str = ">" + k.getName() + "_" + k.getChain() + "\n";
+            str += k.getSequence() + "\n";
+            lst_str.add(str);
+        }
+        MyIO.WriteToFile(fileout, lst_str);
+    }
+    public static void EachProteinEachFile(String filename) throws FileNotFoundException, IOException{
+        FileInputStream fstream = new FileInputStream(filename);
+        DataInputStream in = new DataInputStream(fstream);
+        BufferedReader br = new BufferedReader(new InputStreamReader(in));
+        String line = "";
+        while(true){
+            line = br.readLine();
+            if(line==null){
+                break;
+            }
+            line = line.trim();
+            if(line.indexOf(">")>=0){
+                String name = line.substring(1);
+                String seq = br.readLine().trim();
+                ArrayList<String> lst_str = new ArrayList<String>();
+                lst_str.add(">"+name);
+                lst_str.add(seq);
+                MyIO.WriteToFile("Train/"+name+".txt", lst_str);
+            }
+        }
     }
 }

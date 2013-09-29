@@ -8,6 +8,8 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import weka.core.Instance;
+import weka.core.Instances;
 
 /**
  *
@@ -46,6 +48,21 @@ public class ARRF_Template {
             str = "";
         }
    //     writer.write(str);
+        writer.flush();
+        writer.close();
+    }
+    public static void WriteToArffFile(Instances ins, String filename) throws IOException{
+        BufferedWriter writer = new BufferedWriter(new FileWriter(filename), 32768);
+        String str = "";
+        writer.write("@relation "+ ins.relationName()+"\n");
+        for(int i=0;i<ins.numAttributes();i++){
+            writer.write(ins.attribute(i).toString()+ "\n");
+        }
+        writer.write("@data" + "\n");
+        for(int i=0;i<ins.numInstances();i++){
+            Instance in = ins.instance(i);
+            writer.write(in.toString()+ "\n");
+        }
         writer.flush();
         writer.close();
     }
