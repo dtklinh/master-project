@@ -1,0 +1,431 @@
+PSIBLAST 2.2.25+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: All non-redundant GenBank CDS translations+PDB+SwissProt+PIR+PRF
+excluding environmental samples from WGS projects
+           32,814,121 sequences; 11,431,176,125 total letters
+
+Results from round 1
+
+
+Query= 2FO1_D
+
+Length=63
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+ref|NP_001021194.1|  Protein SEL-8, isoform a [Caenorhabditis ele...   103    2e-20
+ref|NP_001021195.1|  Protein SEL-8, isoform b [Caenorhabditis ele...   102    6e-20
+pdb|2FO1|D  Chain D, Crystal Structure Of The Csl-Notch-Mastermin...  89.0    5e-16
+ref|XP_003113282.1|  CRE-SEL-8 protein [Caenorhabditis remanei] >...  68.9    5e-10
+gb|EGT53295.1|  hypothetical protein CAEBREN_30843 [Caenorhabditi...  68.2    8e-10
+gb|EGT32710.1|  hypothetical protein CAEBREN_21633 [Caenorhabditi...  64.7    1e-08
+gb|EGT32703.1|  hypothetical protein CAEBREN_25492 [Caenorhabditi...  62.8    3e-08
+ref|XP_002641477.1|  C. briggsae CBR-SEL-8 protein [Caenorhabditi...  58.9    5e-07
+gb|EGT49314.1|  hypothetical protein CAEBREN_16499 [Caenorhabditi...  55.1    8e-06
+gb|EGT49309.1|  hypothetical protein CAEBREN_02998 [Caenorhabditi...  52.8    4e-05
+
+
+>ref|NP_001021194.1| Protein SEL-8, isoform a [Caenorhabditis elegans]
+ sp|Q09260.2|LAG3_CAEEL RecName: Full=Protein lag-3; AltName: Full=Abnormal cell lineage 
+protein 3; AltName: Full=Abnormal germline proliferation 
+protein 3
+ gb|AAF71522.1|AF241846_1 LAG-3A [Caenorhabditis elegans]
+ emb|CAC42265.1| Protein SEL-8, isoform a [Caenorhabditis elegans]
+Length=490
+
+ Score =  103 bits (256),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 63/63 (100%), Positives = 63/63 (100%), Gaps = 0/63 (0%)
+
+Query  1    EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  60
+            EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR
+Sbjct  52   EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  111
+
+Query  61   VEQ  63
+            VEQ
+Sbjct  112  VEQ  114
+
+
+>ref|NP_001021195.1| Protein SEL-8, isoform b [Caenorhabditis elegans]
+ gb|AAF71523.1|AF241847_1 LAG-3B [Caenorhabditis elegans]
+ emb|CAA88284.1| Protein SEL-8, isoform b [Caenorhabditis elegans]
+Length=468
+
+ Score =  102 bits (253),  Expect = 6e-20, Method: Composition-based stats.
+ Identities = 63/63 (100%), Positives = 63/63 (100%), Gaps = 0/63 (0%)
+
+Query  1   EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  60
+           EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR
+Sbjct  30  EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  89
+
+Query  61  VEQ  63
+           VEQ
+Sbjct  90  VEQ  92
+
+
+>pdb|2FO1|D Chain D, Crystal Structure Of The Csl-Notch-Mastermind Ternary 
+Complex Bound To Dna
+Length=85
+
+ Score = 89.0 bits (219),  Expect = 5e-16, Method: Composition-based stats.
+ Identities = 63/63 (100%), Positives = 63/63 (100%), Gaps = 0/63 (0%)
+
+Query  1   EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  60
+           EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR
+Sbjct  5   EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  64
+
+Query  61  VEQ  63
+           VEQ
+Sbjct  65  VEQ  67
+
+
+>ref|XP_003113282.1| CRE-SEL-8 protein [Caenorhabditis remanei]
+ gb|EFP09536.1| CRE-SEL-8 protein [Caenorhabditis remanei]
+Length=429
+
+ Score = 68.9 bits (167),  Expect = 5e-10, Method: Composition-based stats.
+ Identities = 36/63 (58%), Positives = 48/63 (77%), Gaps = 0/63 (0%)
+
+Query  1   EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  60
+           E+EP + D++ F  GEE HRQ+S+ A   Y +  P ++A+QRAVT HLF+RYTEDEERKR
+Sbjct  33  ENEPCVSDISLFELGEERHRQKSKQAAEKYGRIIPALVADQRAVTGHLFHRYTEDEERKR  92
+
+Query  61  VEQ  63
+           +EQ
+Sbjct  93  LEQ  95
+
+
+>gb|EGT53295.1| hypothetical protein CAEBREN_30843 [Caenorhabditis brenneri]
+Length=470
+
+ Score = 68.2 bits (165),  Expect = 8e-10, Method: Composition-based stats.
+ Identities = 34/62 (55%), Positives = 46/62 (75%), Gaps = 0/62 (0%)
+
+Query  1   EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  60
+           +DEP + D+  + +GEELHRQ+S+LA+  Y +A PEM+   R VTA LF R+TEDEERK+
+Sbjct  31  DDEPFVSDMRDYLAGEELHRQQSQLAKERYARALPEMVNANRTVTAELFTRFTEDEERKK  90
+
+Query  61  VE  62
+            E
+Sbjct  91  AE  92
+
+
+>gb|EGT32710.1| hypothetical protein CAEBREN_21633 [Caenorhabditis brenneri]
+Length=627
+
+ Score = 64.7 bits (156),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 31/62 (50%), Positives = 44/62 (71%), Gaps = 0/62 (0%)
+
+Query  1    EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  60
+            +DEP + D++ + +GEELH Q+S+LA+  Y  A PEMI   R V A LF R+TED++RK+
+Sbjct  275  DDEPYVSDMHNYQAGEELHCQQSQLAKERYTIALPEMIDANRGVFAELFTRFTEDDKRKK  334
+
+Query  61   VE  62
+             E
+Sbjct  335  AE  336
+
+
+>gb|EGT32703.1| hypothetical protein CAEBREN_25492 [Caenorhabditis brenneri]
+Length=380
+
+ Score = 62.8 bits (151),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 32/62 (52%), Positives = 45/62 (73%), Gaps = 0/62 (0%)
+
+Query  1   EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  60
+           +DEP + D+  + +GEELHR++S+LA+  Y  A PEMI   R V+A LF R+TEDE+RK+
+Sbjct  30  DDEPYVSDMRNYQAGEELHREQSQLAKEKYTIALPEMINANRGVSAELFTRFTEDEKRKK  89
+
+Query  61  VE  62
+            E
+Sbjct  90  AE  91
+
+
+>ref|XP_002641477.1| C. briggsae CBR-SEL-8 protein [Caenorhabditis briggsae]
+ emb|CAP29323.1| Protein CBR-SEL-8 [Caenorhabditis briggsae]
+Length=409
+
+ Score = 58.9 bits (141),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 30/63 (48%), Positives = 46/63 (74%), Gaps = 0/63 (0%)
+
+Query  1   EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  60
+           +DEP + ++  ++ G+E  R RS+ A   ++K R E I++QRAVTA L++R+TEDEERKR
+Sbjct  33  DDEPLVSEMTVYNKGQEEARLRSQEAYEKFQKTRQESISSQRAVTAQLYHRFTEDEERKR  92
+
+Query  61  VEQ  63
+           +E 
+Sbjct  93  MEH  95
+
+
+>gb|EGT49314.1| hypothetical protein CAEBREN_16499 [Caenorhabditis brenneri]
+Length=396
+
+ Score = 55.1 bits (131),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 31/62 (50%), Positives = 42/62 (68%), Gaps = 0/62 (0%)
+
+Query  1   EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  60
+           +DEP + ++    + EEL+RQ+S+LA+  Y  A PEMI   R  TA LF R+TEDEERK+
+Sbjct  30  DDEPYVSEIRDDQAVEELYRQQSQLAKERYAIALPEMINVNREGTAELFTRFTEDEERKK  89
+
+Query  61  VE  62
+            E
+Sbjct  90  AE  91
+
+
+>gb|EGT49309.1| hypothetical protein CAEBREN_02998 [Caenorhabditis brenneri]
+Length=386
+
+ Score = 52.8 bits (125),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 31/62 (50%), Positives = 42/62 (68%), Gaps = 0/62 (0%)
+
+Query  1   EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  60
+           +DEP + ++    + EEL+RQ+S+LA+  Y  A PEMI   R  TA LF R+TEDEERK+
+Sbjct  30  DDEPYVSEIRDDQAVEELYRQQSQLAKERYAIALPEMINVNREGTAELFTRFTEDEERKK  89
+
+Query  61  VE  62
+            E
+Sbjct  90  AE  91
+
+
+
+Lambda     K      H
+   0.312    0.127    0.349 
+
+Gapped
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+Effective search space used: 287915092920
+Results from round 2
+
+
+Query= 2FO1_D
+
+Length=63
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+gb|EGT32710.1|  hypothetical protein CAEBREN_21633 [Caenorhabditi...   112    3e-23
+gb|EGT53295.1|  hypothetical protein CAEBREN_30843 [Caenorhabditi...   107    1e-21
+gb|EGT32703.1|  hypothetical protein CAEBREN_25492 [Caenorhabditi...   102    4e-20
+ref|XP_003113282.1|  CRE-SEL-8 protein [Caenorhabditis remanei] >...  98.3    8e-19
+gb|EGT49314.1|  hypothetical protein CAEBREN_16499 [Caenorhabditi...  97.2    2e-18
+ref|XP_002641477.1|  C. briggsae CBR-SEL-8 protein [Caenorhabditi...  94.5    9e-18
+gb|EGT49309.1|  hypothetical protein CAEBREN_02998 [Caenorhabditi...  90.6    2e-16
+ref|NP_001021194.1|  Protein SEL-8, isoform a [Caenorhabditis ele...  86.4    3e-15
+ref|NP_001021195.1|  Protein SEL-8, isoform b [Caenorhabditis ele...  84.8    8e-15
+pdb|2FO1|D  Chain D, Crystal Structure Of The Csl-Notch-Mastermin...  76.4    3e-12
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>gb|EGT32710.1| hypothetical protein CAEBREN_21633 [Caenorhabditis brenneri]
+Length=627
+
+ Score =  112 bits (280),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 31/62 (50%), Positives = 44/62 (71%), Gaps = 0/62 (0%)
+
+Query  1    EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  60
+            +DEP + D++ + +GEELH Q+S+LA+  Y  A PEMI   R V A LF R+TED++RK+
+Sbjct  275  DDEPYVSDMHNYQAGEELHCQQSQLAKERYTIALPEMIDANRGVFAELFTRFTEDDKRKK  334
+
+Query  61   VE  62
+             E
+Sbjct  335  AE  336
+
+
+>gb|EGT53295.1| hypothetical protein CAEBREN_30843 [Caenorhabditis brenneri]
+Length=470
+
+ Score =  107 bits (267),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 34/62 (55%), Positives = 46/62 (75%), Gaps = 0/62 (0%)
+
+Query  1   EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  60
+           +DEP + D+  + +GEELHRQ+S+LA+  Y +A PEM+   R VTA LF R+TEDEERK+
+Sbjct  31  DDEPFVSDMRDYLAGEELHRQQSQLAKERYARALPEMVNANRTVTAELFTRFTEDEERKK  90
+
+Query  61  VE  62
+            E
+Sbjct  91  AE  92
+
+
+>gb|EGT32703.1| hypothetical protein CAEBREN_25492 [Caenorhabditis brenneri]
+Length=380
+
+ Score =  102 bits (254),  Expect = 4e-20, Method: Composition-based stats.
+ Identities = 32/62 (52%), Positives = 45/62 (73%), Gaps = 0/62 (0%)
+
+Query  1   EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  60
+           +DEP + D+  + +GEELHR++S+LA+  Y  A PEMI   R V+A LF R+TEDE+RK+
+Sbjct  30  DDEPYVSDMRNYQAGEELHREQSQLAKEKYTIALPEMINANRGVSAELFTRFTEDEKRKK  89
+
+Query  61  VE  62
+            E
+Sbjct  90  AE  91
+
+
+>ref|XP_003113282.1| CRE-SEL-8 protein [Caenorhabditis remanei]
+ gb|EFP09536.1| CRE-SEL-8 protein [Caenorhabditis remanei]
+Length=429
+
+ Score = 98.3 bits (243),  Expect = 8e-19, Method: Composition-based stats.
+ Identities = 36/63 (58%), Positives = 48/63 (77%), Gaps = 0/63 (0%)
+
+Query  1   EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  60
+           E+EP + D++ F  GEE HRQ+S+ A   Y +  P ++A+QRAVT HLF+RYTEDEERKR
+Sbjct  33  ENEPCVSDISLFELGEERHRQKSKQAAEKYGRIIPALVADQRAVTGHLFHRYTEDEERKR  92
+
+Query  61  VEQ  63
+           +EQ
+Sbjct  93  LEQ  95
+
+
+>gb|EGT49314.1| hypothetical protein CAEBREN_16499 [Caenorhabditis brenneri]
+Length=396
+
+ Score = 97.2 bits (240),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 31/62 (50%), Positives = 42/62 (68%), Gaps = 0/62 (0%)
+
+Query  1   EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  60
+           +DEP + ++    + EEL+RQ+S+LA+  Y  A PEMI   R  TA LF R+TEDEERK+
+Sbjct  30  DDEPYVSEIRDDQAVEELYRQQSQLAKERYAIALPEMINVNREGTAELFTRFTEDEERKK  89
+
+Query  61  VE  62
+            E
+Sbjct  90  AE  91
+
+
+>ref|XP_002641477.1| C. briggsae CBR-SEL-8 protein [Caenorhabditis briggsae]
+ emb|CAP29323.1| Protein CBR-SEL-8 [Caenorhabditis briggsae]
+Length=409
+
+ Score = 94.5 bits (233),  Expect = 9e-18, Method: Composition-based stats.
+ Identities = 30/63 (48%), Positives = 46/63 (74%), Gaps = 0/63 (0%)
+
+Query  1   EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  60
+           +DEP + ++  ++ G+E  R RS+ A   ++K R E I++QRAVTA L++R+TEDEERKR
+Sbjct  33  DDEPLVSEMTVYNKGQEEARLRSQEAYEKFQKTRQESISSQRAVTAQLYHRFTEDEERKR  92
+
+Query  61  VEQ  63
+           +E 
+Sbjct  93  MEH  95
+
+
+>gb|EGT49309.1| hypothetical protein CAEBREN_02998 [Caenorhabditis brenneri]
+Length=386
+
+ Score = 90.6 bits (223),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 31/62 (50%), Positives = 42/62 (68%), Gaps = 0/62 (0%)
+
+Query  1   EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  60
+           +DEP + ++    + EEL+RQ+S+LA+  Y  A PEMI   R  TA LF R+TEDEERK+
+Sbjct  30  DDEPYVSEIRDDQAVEELYRQQSQLAKERYAIALPEMINVNREGTAELFTRFTEDEERKK  89
+
+Query  61  VE  62
+            E
+Sbjct  90  AE  91
+
+
+>ref|NP_001021194.1| Protein SEL-8, isoform a [Caenorhabditis elegans]
+ sp|Q09260.2|LAG3_CAEEL RecName: Full=Protein lag-3; AltName: Full=Abnormal cell lineage 
+protein 3; AltName: Full=Abnormal germline proliferation 
+protein 3
+ gb|AAF71522.1|AF241846_1 LAG-3A [Caenorhabditis elegans]
+ emb|CAC42265.1| Protein SEL-8, isoform a [Caenorhabditis elegans]
+Length=490
+
+ Score = 86.4 bits (212),  Expect = 3e-15, Method: Composition-based stats.
+ Identities = 63/63 (100%), Positives = 63/63 (100%), Gaps = 0/63 (0%)
+
+Query  1    EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  60
+            EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR
+Sbjct  52   EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  111
+
+Query  61   VEQ  63
+            VEQ
+Sbjct  112  VEQ  114
+
+
+>ref|NP_001021195.1| Protein SEL-8, isoform b [Caenorhabditis elegans]
+ gb|AAF71523.1|AF241847_1 LAG-3B [Caenorhabditis elegans]
+ emb|CAA88284.1| Protein SEL-8, isoform b [Caenorhabditis elegans]
+Length=468
+
+ Score = 84.8 bits (208),  Expect = 8e-15, Method: Composition-based stats.
+ Identities = 63/63 (100%), Positives = 63/63 (100%), Gaps = 0/63 (0%)
+
+Query  1   EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  60
+           EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR
+Sbjct  30  EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  89
+
+Query  61  VEQ  63
+           VEQ
+Sbjct  90  VEQ  92
+
+
+>pdb|2FO1|D Chain D, Crystal Structure Of The Csl-Notch-Mastermind Ternary 
+Complex Bound To Dna
+Length=85
+
+ Score = 76.4 bits (186),  Expect = 3e-12, Method: Composition-based stats.
+ Identities = 63/63 (100%), Positives = 63/63 (100%), Gaps = 0/63 (0%)
+
+Query  1   EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  60
+           EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR
+Sbjct  5   EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKR  64
+
+Query  61  VEQ  63
+           VEQ
+Sbjct  65  VEQ  67
+
+
+
+Lambda     K      H
+   0.296    0.124    0.317 
+
+Gapped
+Lambda     K      H
+   0.267   0.0376    0.140 
+
+Effective search space used: 287915092920
+
+Search has CONVERGED!
+
+
+  Database: All non-redundant GenBank CDS translations+PDB+SwissProt+PIR+PRF
+excluding environmental samples from WGS projects
+    Posted date:  Sep 26, 2013  6:53 AM
+  Number of letters in database: 11,431,176,125
+  Number of sequences in database:  32,814,121
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

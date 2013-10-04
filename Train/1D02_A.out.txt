@@ -1,0 +1,1245 @@
+PSIBLAST 2.2.25+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: All non-redundant GenBank CDS translations+PDB+SwissProt+PIR+PRF
+excluding environmental samples from WGS projects
+           32,814,121 sequences; 11,431,176,125 total letters
+
+Results from round 1
+
+
+Query= 1D02_A
+
+Length=197
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+pdb|1D02|A  Chain A, Crystal Structure Of Muni Restriction Endonu...   408    6e-112
+sp|P43642.1|T2MU_MYCSP  RecName: Full=Type-2 restriction enzyme M...   405    3e-111
+ref|YP_003821414.1|  type II site-specific deoxyribonuclease [Clo...   257    2e-66 
+ref|WP_007686624.1|  type II restriction endonuclease MunI [Sphin...   206    2e-51 
+ref|YP_003205743.1|  type-2 restriction enzyme MunI (R.MunI) (Typ...   201    8e-50 
+emb|CDE86384.1|  type II restriction enzyme MunI [Prevotella sp. ...   192    4e-47 
+ref|WP_006849509.1|  type II restriction endonuclease MunI [Prevo...   189    4e-46 
+ref|WP_009443276.1|  type II restriction enzyme MunI [Streptococc...   184    1e-44 
+ref|YP_875533.1|  MunI restriction endonuclease [Cenarchaeum symb...   151    1e-34 
+ref|WP_005612389.1|  hypothetical protein [Ruminococcus lactaris]...   127    1e-27 
+ref|YP_003691747.1|  hypothetical protein DaAHT2_2464 [Desulfuriv...   121    1e-25 
+ref|WP_005612392.1|  hypothetical protein [Ruminococcus lactaris]...  73.6    3e-11 
+ref|YP_006916553.1|  Restriction endonuclease, type I, R subunit/...  36.6    4.5   
+ref|WP_016438076.1|  hypothetical protein [Streptomyces sp. HGB00...  36.2    4.7   
+emb|CCM04566.1|  predicted protein [Fibroporia radiculosa]            35.4    8.4   
+
+
+>pdb|1D02|A Chain A, Crystal Structure Of Muni Restriction Endonuclease In 
+Complex With Cognate Dna
+ pdb|1D02|B Chain B, Crystal Structure Of Muni Restriction Endonuclease In 
+Complex With Cognate Dna
+Length=202
+
+ Score =  408 bits (1048),  Expect = 6e-112, Method: Composition-based stats.
+ Identities = 197/197 (100%), Positives = 197/197 (100%), Gaps = 0/197 (0%)
+
+Query  1    LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE  60
+            LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE
+Sbjct  6    LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE  65
+
+Query  61   IFNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL  120
+            IFNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL
+Sbjct  66   IFNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL  125
+
+Query  121  FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES  180
+            FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES
+Sbjct  126  FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES  185
+
+Query  181  GEKLVQHFNEKLKKYLD  197
+            GEKLVQHFNEKLKKYLD
+Sbjct  186  GEKLVQHFNEKLKKYLD  202
+
+
+>sp|P43642.1|T2MU_MYCSP RecName: Full=Type-2 restriction enzyme MunI; Short=R.MunI; AltName: 
+Full=Endonuclease MunI; AltName: Full=Type II restriction 
+enzyme MunI
+ emb|CAA53788.1| MunI restriction endonuclease [Mycoplasma sp.]
+Length=202
+
+ Score =  405 bits (1041),  Expect = 3e-111, Method: Composition-based stats.
+ Identities = 196/197 (99%), Positives = 196/197 (99%), Gaps = 0/197 (0%)
+
+Query  1    LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE  60
+            LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE
+Sbjct  6    LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE  65
+
+Query  61   IFNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL  120
+            IFNPLIDLSTTQWGVSP FAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL
+Sbjct  66   IFNPLIDLSTTQWGVSPDFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL  125
+
+Query  121  FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES  180
+            FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES
+Sbjct  126  FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES  185
+
+Query  181  GEKLVQHFNEKLKKYLD  197
+            GEKLVQHFNEKLKKYLD
+Sbjct  186  GEKLVQHFNEKLKKYLD  202
+
+
+>ref|YP_003821414.1| type II site-specific deoxyribonuclease [Clostridium saccharolyticum 
+WM1]
+ ref|WP_013271886.1| type II restriction endonuclease MunI [Clostridium saccharolyticum]
+ gb|ADL03791.1| Type II site-specific deoxyribonuclease [Clostridium saccharolyticum 
+WM1]
+Length=208
+
+ Score =  257 bits (656),  Expect = 2e-66, Method: Composition-based stats.
+ Identities = 127/203 (63%), Positives = 147/203 (73%), Gaps = 6/203 (2%)
+
+Query  1    LSGRLNWQALAGLK--ASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVI  58
+            LSGR NWQ  +G    A  AE++LY+ F   FEGT Y + + P  LK+LY  V LP   +
+Sbjct  6    LSGRENWQTESGPGGLAGTAEKDLYSAFEKAFEGTIYKISDHPNDLKHLYEHVNLPKQTL  65
+
+Query  59   KEIFNP----LIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAH  114
+             +I+ P    +++     WGVSP F+I NT+T KILFGEIKRQDGWVEGKDPSAGRGNAH
+Sbjct  66   SQIYCPNEATMLNAQKRGWGVSPDFSITNTKTGKILFGEIKRQDGWVEGKDPSAGRGNAH  125
+
+Query  115  ERSCKLFTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFM  174
+            ER CKLFTPGL+K YR I GI DEEILPFWVV EGDITRDPKR REI+FW+D Y  NYFM
+Sbjct  126  ERMCKLFTPGLIKTYRNISGIEDEEILPFWVVLEGDITRDPKRNREISFWFDTYDKNYFM  185
+
+Query  175  WRPNESGEKLVQHFNEKLKKYLD  197
+            WRPN + + LV HFN  LK YLD
+Sbjct  186  WRPNMTEQDLVDHFNMYLKPYLD  208
+
+
+>ref|WP_007686624.1| type II restriction endonuclease MunI [Sphingobium indicum]
+ gb|EIM67222.1| type II site-specific deoxyribonuclease [Sphingobium indicum 
+B90A]
+Length=199
+
+ Score =  206 bits (525),  Expect = 2e-51, Method: Composition-based stats.
+ Identities = 103/196 (53%), Positives = 128/196 (66%), Gaps = 3/196 (1%)
+
+Query  1    LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE  60
+            L GR  WQ  +G  A  AEQ+ + VF   F GT+  +  KP+  K++Y  V L DDVI E
+Sbjct  6    LRGRAVWQDYSGANAGFAEQSFFAVFTEAFRGTELSIRAKPQEFKHIYVDVPLADDVIAE  65
+
+Query  61   IFNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL  120
+            I+NP  +   T+ G++P +AI+N    K L+ E+KRQDGWVEGK  SAGRGNAHERS K 
+Sbjct  66   IYNP--ECGITKHGITPDYAIDNKGAGKTLYVEVKRQDGWVEGKPRSAGRGNAHERSNKF  123
+
+Query  121  FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES  180
+            FTPGLLK  R  G +  +  LPFW VF+GDI RDP RVREIT WYD Y  +YFMWR N  
+Sbjct  124  FTPGLLKTLRKRGNLGPDA-LPFWTVFQGDIARDPCRVREITLWYDGYPGHYFMWRDNSD  182
+
+Query  181  GEKLVQHFNEKLKKYL  196
+               L++HF+E L+  L
+Sbjct  183  PTALLRHFDEHLRPLL  198
+
+
+>ref|YP_003205743.1| type-2 restriction enzyme MunI (R.MunI) (Type II restriction 
+enzyme MunI) (Endonuclease MunI) [Candidatus Methylomirabilis 
+oxyfera]
+ ref|WP_015743415.1| type II restriction endonuclease MunI [Candidatus Methylomirabilis 
+oxyfera]
+ emb|CBE67904.1| Type-2 restriction enzyme MunI (R.MunI) (Type II restriction 
+enzyme MunI) (Endonuclease MunI) [Candidatus Methylomirabilis 
+oxyfera]
+Length=199
+
+ Score =  201 bits (512),  Expect = 8e-50, Method: Composition-based stats.
+ Identities = 101/196 (52%), Positives = 128/196 (66%), Gaps = 3/196 (1%)
+
+Query  1    LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE  60
+            L GR  WQ  +G  A  AE++ Y VF   F+ T + +  KPK  KN+Y  V+L   V  E
+Sbjct  6    LKGRAVWQDQSGANAKVAEKDFYAVFETAFQNTSFRIRSKPKEFKNIYTNVILDPSVSAE  65
+
+Query  61   IFNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL  120
+            I+NP       + G+SP +AI+N +T K L+ E+KRQDGWVEG   S GRGNAHERSCK 
+Sbjct  66   IYNP--KEGIKRHGISPDYAIDNLDTKKTLYVEVKRQDGWVEGGKRSDGRGNAHERSCKF  123
+
+Query  121  FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES  180
+            FTPGLL+  R  G + D ++LPFW VF GDITRDP RVREIT WY  Y+D++F WR  + 
+Sbjct  124  FTPGLLEVMRHQGRLGD-KVLPFWTVFLGDITRDPCRVREITLWYKGYEDHFFFWRNPKD  182
+
+Query  181  GEKLVQHFNEKLKKYL  196
+             + L++HF EKLK  L
+Sbjct  183  EKSLLKHFQEKLKHLL  198
+
+
+>emb|CDE86384.1| type II restriction enzyme MunI [Prevotella sp. CAG:891]
+Length=200
+
+ Score =  192 bits (489),  Expect = 4e-47, Method: Composition-based stats.
+ Identities = 97/194 (50%), Positives = 123/194 (64%), Gaps = 3/194 (1%)
+
+Query  4    RLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKEIFN  63
+            R  WQ   G KA+ AE +   VF+ +F+ T+Y +  KP   KNLY  V L ++ +  I+ 
+Sbjct  9    RRKWQDYGGSKATVAEHSFIEVFSELFKDTEYEVVSKPTDFKNLYVDVELSEEELAAIYT  68
+
+Query  64   PLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKLFTP  123
+            P  D   T+ G+ P  AI NT T K ++ EIKRQDGWVEGK  SAGRGNAHER CK FTP
+Sbjct  69   P--DEPITKHGIQPDGAIRNTRTGKTIYVEIKRQDGWVEGKSRSAGRGNAHERLCKYFTP  126
+
+Query  124  GLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNESGEK  183
+            GLL   RT G I+    LPFW+VF+GDITRDP RVREIT+W++ ++ NYF WR     E 
+Sbjct  127  GLLNKLRTTGKISAPN-LPFWIVFQGDITRDPCRVREITYWFNDFKSNYFFWRNTTKAED  185
+
+Query  184  LVQHFNEKLKKYLD  197
+            L+ HF   +   L+
+Sbjct  186  LIDHFETYIAPLLE  199
+
+
+>ref|WP_006849509.1| type II restriction endonuclease MunI [Prevotella copri]
+ gb|EFB33700.1| hypothetical protein PREVCOP_06851 [Prevotella copri DSM 18205]
+Length=200
+
+ Score =  189 bits (480),  Expect = 4e-46, Method: Composition-based stats.
+ Identities = 94/194 (49%), Positives = 125/194 (65%), Gaps = 3/194 (1%)
+
+Query  4    RLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKEIFN  63
+            R  WQ   G KA+ AE +   VF+ +F+ T+Y +  +P   K+LY  V L    ++ I+ 
+Sbjct  9    RRKWQDYGGSKATVAEHSFIEVFSELFKDTEYEVISQPTEFKDLYVNVQLSAKELEAIYT  68
+
+Query  64   PLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKLFTP  123
+            P  D+  T+ G+ P  AI NT T K ++ EIKRQDGWVEGK  SAGRGNAHER CK FTP
+Sbjct  69   P--DVPITKHGIQPDGAIRNTRTGKTIYVEIKRQDGWVEGKPRSAGRGNAHERLCKYFTP  126
+
+Query  124  GLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNESGEK  183
+            GL++  R+ G I  E  LPFW+VF+GDITRDP RVREIT+W+  ++ NYF WR  +  E 
+Sbjct  127  GLMQKLRSAGKIK-EPNLPFWIVFQGDITRDPCRVREITYWFSDFKANYFFWRNTKEAES  185
+
+Query  184  LVQHFNEKLKKYLD  197
+            L++HF   +   L+
+Sbjct  186  LIEHFETYIAPLLE  199
+
+
+>ref|WP_009443276.1| type II restriction enzyme MunI [Streptococcus sp. oral taxon 
+056]
+ gb|EGP65835.1| type II restriction enzyme MunI [Streptococcus sp. oral taxon 
+056 str. F0418]
+Length=210
+
+ Score =  184 bits (467),  Expect = 1e-44, Method: Composition-based stats.
+ Identities = 97/207 (47%), Positives = 128/207 (62%), Gaps = 14/207 (6%)
+
+Query  1    LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGT---KYVLYEKPKHLKNLYAQVVLPDDV  57
+            L  R NWQ ++G  A  AE   +    +  +     K+++   PK   ++Y++  LP +V
+Sbjct  6    LRKRANWQTVSGAAALDAESKFHLALQSALDEVYPNKFLVDRHPKEFGDIYSKYGLPQEV  65
+
+Query  58   IKEIFNPLIDLSTTQ--------WGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAG  109
+            ++EI+N  ID++  +        WG+S  FAI N E  KILFGEIKRQDGW+EG   SAG
+Sbjct  66   LEEIYN--IDVTEIKRNGKPRYSWGISMDFAIRNLENGKILFGEIKRQDGWIEGTKSSAG  123
+
+Query  110  RGNAHERSCKLFTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQ  169
+            RGNAHERS K FTPGL +A R +  ++ EEILPFW+V+ GDITRDPKR REI FW+  Y 
+Sbjct  124  RGNAHERSTKYFTPGLSRAIRQLSNLS-EEILPFWIVYIGDITRDPKRNREIAFWFQEYT  182
+
+Query  170  DNYFMWRPNESGEKLVQHFNEKLKKYL  196
+             NYFMWR  ++   L+  F   L  YL
+Sbjct  183  KNYFMWRDTDNVASLLDFFENNLLPYL  209
+
+
+>ref|YP_875533.1| MunI restriction endonuclease [Cenarchaeum symbiosum A]
+ ref|WP_013481857.1| MunI restriction endonuclease [Cenarchaeum symbiosum]
+ gb|ABK77229.1| MunI restriction endonuclease [Cenarchaeum symbiosum A]
+Length=182
+
+ Score =  151 bits (381),  Expect = 1e-34, Method: Composition-based stats.
+ Identities = 86/198 (44%), Positives = 117/198 (60%), Gaps = 22/198 (11%)
+
+Query  1    LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE  60
+            L  R  WQ  +GL    AE     VF A F GT+YV+ ++PK LK++Y++          
+Sbjct  6    LRDRDVWQKKSGLMGKKAEDEFEAVFLAEFTGTEYVIRKEPKELKDIYSK----------  55
+
+Query  61   IFNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKD-PSAGRGNAHERSCK  119
+              NP       + GVS  +AI N +T K L+ EIK Q+G+V G+  P  GRGNAHERSCK
+Sbjct  56   --NP-------KHGVSIDYAITNKKTKKTLYVEIKSQEGYVPGETLPKDGRGNAHERSCK  106
+
+Query  120  LFTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNE  179
+             FTPGLLK    +  +     LPFW+V++G ITRD KR REIT+W+D Y  ++F+W+ + 
+Sbjct  107  FFTPGLLKVMCKLSNL-PVGTLPFWIVYQGRITRDAKRTREITYWFDEYGAHFFLWK-SS  164
+
+Query  180  SGEKLVQHFNEKLKKYLD  197
+            S   L+ HF + L+  LD
+Sbjct  165  SSTPLINHFKKNLRHILD  182
+
+
+>ref|WP_005612389.1| hypothetical protein [Ruminococcus lactaris]
+ gb|EDY32023.1| hypothetical protein RUMLAC_02186 [Ruminococcus lactaris ATCC 
+29176]
+Length=81
+
+ Score =  127 bits (320),  Expect = 1e-27, Method: Composition-based stats.
+ Identities = 57/80 (72%), Positives = 63/80 (79%), Gaps = 0/80 (0%)
+
+Query  118  CKLFTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRP  177
+            CKLFTPGL+KAYR I  I+D  ILPFWVV EGDITRDPKR REI FW+D Y  NYFMWRP
+Sbjct  2    CKLFTPGLMKAYRQISKISDPSILPFWVVLEGDITRDPKRNREIAFWFDEYDKNYFMWRP  61
+
+Query  178  NESGEKLVQHFNEKLKKYLD  197
+               G  LV+HFN+ LKK+LD
+Sbjct  62   GVDGSALVEHFNKYLKKFLD  81
+
+
+>ref|YP_003691747.1| hypothetical protein DaAHT2_2464 [Desulfurivibrio alkaliphilus 
+AHT2]
+ ref|WP_013164639.1| hypothetical protein [Desulfurivibrio alkaliphilus]
+ gb|ADH87128.1| hypothetical protein DaAHT2_2464 [Desulfurivibrio alkaliphilus 
+AHT2]
+Length=135
+
+ Score =  121 bits (303),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 62/124 (50%), Positives = 78/124 (63%), Gaps = 2/124 (1%)
+
+Query  4    RLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKEIFN  63
+            R  WQ  +G  A  AE N Y+ F AVFE T+Y +  KPK   N+Y  V L +  + +I+ 
+Sbjct  9    RKKWQDYSGKNAGKAESNFYDAFKAVFEDTEYQIRAKPKEFSNIYVSVQLSEPEMSQIYT  68
+
+Query  64   PLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKLFTP  123
+            P      T+ GV   +AI+NT T K ++ E+KRQDGWVEG   S GRGNAHERSCK FTP
+Sbjct  69   P--QEPITKHGVYLDYAIDNTRTGKTIYVEVKRQDGWVEGGKRSDGRGNAHERSCKFFTP  126
+
+Query  124  GLLK  127
+            GLL+
+Sbjct  127  GLLE  130
+
+
+>ref|WP_005612392.1| hypothetical protein [Ruminococcus lactaris]
+ gb|EDY32024.1| hypothetical protein RUMLAC_02187 [Ruminococcus lactaris ATCC 
+29176]
+Length=104
+
+ Score = 73.6 bits (179),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 45/96 (47%), Positives = 56/96 (59%), Gaps = 10/96 (10%)
+
+Query  1   LSGRLNWQALAGL--KASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVI  58
+           L GR NWQ  +G   KA  AEQNL +VF   F+ T YV+ + P +LK+LY  V LP   I
+Sbjct  6   LQGRDNWQTESGPGGKAGVAEQNLISVFKEAFKDTDYVISDHPTNLKHLYENVELPAKTI  65
+
+Query  59  KEIFNPLIDLSTTQ------WGVSPAFAIENTETHK  88
+             IFNP  DL+T +      WGVSP F+I N +  K
+Sbjct  66  AAIFNP--DLATMKNAQKRGWGVSPDFSITNKKREK  99
+
+
+>ref|YP_006916553.1| Restriction endonuclease, type I, R subunit/Type III, Res subunit 
+[Simiduia agarivorans SA1 = DSM 21679]
+ ref|WP_015046988.1| Restriction endonuclease, type I, R subunit/Type III, Res subunit 
+[Simiduia agarivorans]
+ gb|AFU98823.1| Restriction endonuclease, type I, R subunit/Type III, Res subunit 
+[Simiduia agarivorans SA1 = DSM 21679]
+Length=900
+
+ Score = 36.6 bits (83),  Expect = 4.5, Method: Composition-based stats.
+ Identities = 24/75 (32%), Positives = 36/75 (48%), Gaps = 8/75 (10%)
+
+Query  5    LNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVV------LPDDVI  58
+            + +QAL    ASG EQ +    NA   G K  + ++  HLKN + Q +      L   V+
+Sbjct  103  VTYQALHSAMASGDEQVIIGALNAA--GVKVFVLDEAHHLKNAWWQALMQVKSALKPRVV  160
+
+Query  59   KEIFNPLIDLSTTQW  73
+                 P  D+S+T+W
+Sbjct  161  GLTATPPYDVSSTEW  175
+
+
+>ref|WP_016438076.1| hypothetical protein [Streptomyces sp. HGB0020]
+ gb|EPD54794.1| hypothetical protein HMPREF1211_08328 [Streptomyces sp. HGB0020]
+Length=292
+
+ Score = 36.2 bits (82),  Expect = 4.7, Method: Composition-based stats.
+ Identities = 26/88 (30%), Positives = 39/88 (45%), Gaps = 1/88 (1%)
+
+Query  63   NPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKLFT  122
+            +P+ DL+ T     PA   +    H  +  +I     +    +P+AGRGNA+  S  + T
+Sbjct  174  DPVADLAQTGAHPDPAIPFQGYALHGDVIYQIA-GSAYDARTNPAAGRGNAYLSSLSVAT  232
+
+Query  123  PGLLKAYRTIGGINDEEILPFWVVFEGD  150
+              LL+  RT+ G       P  V   GD
+Sbjct  233  GELLQQTRTVAGHQLSHREPEGVAVRGD  260
+
+
+>emb|CCM04566.1| predicted protein [Fibroporia radiculosa]
+Length=1808
+
+ Score = 35.4 bits (80),  Expect = 8.4, Method: Composition-based stats.
+ Identities = 15/44 (35%), Positives = 26/44 (60%), Gaps = 0/44 (0%)
+
+Query  151   ITRDPKRVREITFWYDHYQDNYFMWRPNESGEKLVQHFNEKLKK  194
+             ITR P  +R+I  + +   D +F+ R  E  EK++ H NE +++
+Sbjct  1625  ITRYPLLIRQILHYTESTDDRHFIERSLEGAEKILDHINESIRE  1668
+
+
+
+Lambda     K      H
+   0.319    0.139    0.434 
+
+Gapped
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+Effective search space used: 416138492880
+Results from round 2
+
+
+Query= 1D02_A
+
+Length=197
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P43642.1|T2MU_MYCSP  RecName: Full=Type-2 restriction enzyme M...   342    3e-92
+pdb|1D02|A  Chain A, Crystal Structure Of Muni Restriction Endonu...   340    1e-91
+ref|WP_007686624.1|  type II restriction endonuclease MunI [Sphin...   324    1e-86
+ref|YP_003821414.1|  type II site-specific deoxyribonuclease [Clo...   322    4e-86
+ref|YP_003205743.1|  type-2 restriction enzyme MunI (R.MunI) (Typ...   310    1e-82
+emb|CDE86384.1|  type II restriction enzyme MunI [Prevotella sp. ...   310    1e-82
+ref|WP_006849509.1|  type II restriction endonuclease MunI [Prevo...   310    2e-82
+ref|WP_009443276.1|  type II restriction enzyme MunI [Streptococc...   280    2e-73
+ref|YP_875533.1|  MunI restriction endonuclease [Cenarchaeum symb...   256    2e-66
+ref|YP_003691747.1|  hypothetical protein DaAHT2_2464 [Desulfuriv...   202    3e-50
+ref|WP_005612389.1|  hypothetical protein [Ruminococcus lactaris]...   144    1e-32
+ref|WP_005612392.1|  hypothetical protein [Ruminococcus lactaris]...   118    9e-25
+
+Sequences not found previously or not previously below threshold:
+
+emb|CAK48823.1|  Sse9I restriction endonuclease [Sporosarcina sp.]    50.8    2e-04
+ref|YP_007820523.1|  hypothetical protein CIY_29210 [Butyrivibrio...  36.9    3.4  
+ref|WP_008270461.1|  methyltransferase type 11 [Flavobacteriales ...  35.4    8.5  
+
+
+>sp|P43642.1|T2MU_MYCSP RecName: Full=Type-2 restriction enzyme MunI; Short=R.MunI; AltName: 
+Full=Endonuclease MunI; AltName: Full=Type II restriction 
+enzyme MunI
+ emb|CAA53788.1| MunI restriction endonuclease [Mycoplasma sp.]
+Length=202
+
+ Score =  342 bits (878),  Expect = 3e-92, Method: Composition-based stats.
+ Identities = 196/197 (99%), Positives = 196/197 (99%), Gaps = 0/197 (0%)
+
+Query  1    LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE  60
+            LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE
+Sbjct  6    LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE  65
+
+Query  61   IFNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL  120
+            IFNPLIDLSTTQWGVSP FAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL
+Sbjct  66   IFNPLIDLSTTQWGVSPDFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL  125
+
+Query  121  FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES  180
+            FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES
+Sbjct  126  FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES  185
+
+Query  181  GEKLVQHFNEKLKKYLD  197
+            GEKLVQHFNEKLKKYLD
+Sbjct  186  GEKLVQHFNEKLKKYLD  202
+
+
+>pdb|1D02|A Chain A, Crystal Structure Of Muni Restriction Endonuclease In 
+Complex With Cognate Dna
+ pdb|1D02|B Chain B, Crystal Structure Of Muni Restriction Endonuclease In 
+Complex With Cognate Dna
+Length=202
+
+ Score =  340 bits (873),  Expect = 1e-91, Method: Composition-based stats.
+ Identities = 197/197 (100%), Positives = 197/197 (100%), Gaps = 0/197 (0%)
+
+Query  1    LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE  60
+            LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE
+Sbjct  6    LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE  65
+
+Query  61   IFNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL  120
+            IFNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL
+Sbjct  66   IFNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL  125
+
+Query  121  FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES  180
+            FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES
+Sbjct  126  FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES  185
+
+Query  181  GEKLVQHFNEKLKKYLD  197
+            GEKLVQHFNEKLKKYLD
+Sbjct  186  GEKLVQHFNEKLKKYLD  202
+
+
+>ref|WP_007686624.1| type II restriction endonuclease MunI [Sphingobium indicum]
+ gb|EIM67222.1| type II site-specific deoxyribonuclease [Sphingobium indicum 
+B90A]
+Length=199
+
+ Score =  324 bits (830),  Expect = 1e-86, Method: Composition-based stats.
+ Identities = 103/196 (53%), Positives = 128/196 (66%), Gaps = 3/196 (1%)
+
+Query  1    LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE  60
+            L GR  WQ  +G  A  AEQ+ + VF   F GT+  +  KP+  K++Y  V L DDVI E
+Sbjct  6    LRGRAVWQDYSGANAGFAEQSFFAVFTEAFRGTELSIRAKPQEFKHIYVDVPLADDVIAE  65
+
+Query  61   IFNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL  120
+            I+NP  +   T+ G++P +AI+N    K L+ E+KRQDGWVEGK  SAGRGNAHERS K 
+Sbjct  66   IYNP--ECGITKHGITPDYAIDNKGAGKTLYVEVKRQDGWVEGKPRSAGRGNAHERSNKF  123
+
+Query  121  FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES  180
+            FTPGLLK  R  G +  +  LPFW VF+GDI RDP RVREIT WYD Y  +YFMWR N  
+Sbjct  124  FTPGLLKTLRKRGNLGPDA-LPFWTVFQGDIARDPCRVREITLWYDGYPGHYFMWRDNSD  182
+
+Query  181  GEKLVQHFNEKLKKYL  196
+               L++HF+E L+  L
+Sbjct  183  PTALLRHFDEHLRPLL  198
+
+
+>ref|YP_003821414.1| type II site-specific deoxyribonuclease [Clostridium saccharolyticum 
+WM1]
+ ref|WP_013271886.1| type II restriction endonuclease MunI [Clostridium saccharolyticum]
+ gb|ADL03791.1| Type II site-specific deoxyribonuclease [Clostridium saccharolyticum 
+WM1]
+Length=208
+
+ Score =  322 bits (825),  Expect = 4e-86, Method: Composition-based stats.
+ Identities = 127/203 (63%), Positives = 147/203 (73%), Gaps = 6/203 (2%)
+
+Query  1    LSGRLNWQALAGLK--ASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVI  58
+            LSGR NWQ  +G    A  AE++LY+ F   FEGT Y + + P  LK+LY  V LP   +
+Sbjct  6    LSGRENWQTESGPGGLAGTAEKDLYSAFEKAFEGTIYKISDHPNDLKHLYEHVNLPKQTL  65
+
+Query  59   KEIFNP----LIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAH  114
+             +I+ P    +++     WGVSP F+I NT+T KILFGEIKRQDGWVEGKDPSAGRGNAH
+Sbjct  66   SQIYCPNEATMLNAQKRGWGVSPDFSITNTKTGKILFGEIKRQDGWVEGKDPSAGRGNAH  125
+
+Query  115  ERSCKLFTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFM  174
+            ER CKLFTPGL+K YR I GI DEEILPFWVV EGDITRDPKR REI+FW+D Y  NYFM
+Sbjct  126  ERMCKLFTPGLIKTYRNISGIEDEEILPFWVVLEGDITRDPKRNREISFWFDTYDKNYFM  185
+
+Query  175  WRPNESGEKLVQHFNEKLKKYLD  197
+            WRPN + + LV HFN  LK YLD
+Sbjct  186  WRPNMTEQDLVDHFNMYLKPYLD  208
+
+
+>ref|YP_003205743.1| type-2 restriction enzyme MunI (R.MunI) (Type II restriction 
+enzyme MunI) (Endonuclease MunI) [Candidatus Methylomirabilis 
+oxyfera]
+ ref|WP_015743415.1| type II restriction endonuclease MunI [Candidatus Methylomirabilis 
+oxyfera]
+ emb|CBE67904.1| Type-2 restriction enzyme MunI (R.MunI) (Type II restriction 
+enzyme MunI) (Endonuclease MunI) [Candidatus Methylomirabilis 
+oxyfera]
+Length=199
+
+ Score =  310 bits (794),  Expect = 1e-82, Method: Composition-based stats.
+ Identities = 101/196 (52%), Positives = 128/196 (66%), Gaps = 3/196 (1%)
+
+Query  1    LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE  60
+            L GR  WQ  +G  A  AE++ Y VF   F+ T + +  KPK  KN+Y  V+L   V  E
+Sbjct  6    LKGRAVWQDQSGANAKVAEKDFYAVFETAFQNTSFRIRSKPKEFKNIYTNVILDPSVSAE  65
+
+Query  61   IFNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL  120
+            I+NP       + G+SP +AI+N +T K L+ E+KRQDGWVEG   S GRGNAHERSCK 
+Sbjct  66   IYNP--KEGIKRHGISPDYAIDNLDTKKTLYVEVKRQDGWVEGGKRSDGRGNAHERSCKF  123
+
+Query  121  FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES  180
+            FTPGLL+  R  G + D ++LPFW VF GDITRDP RVREIT WY  Y+D++F WR  + 
+Sbjct  124  FTPGLLEVMRHQGRLGD-KVLPFWTVFLGDITRDPCRVREITLWYKGYEDHFFFWRNPKD  182
+
+Query  181  GEKLVQHFNEKLKKYL  196
+             + L++HF EKLK  L
+Sbjct  183  EKSLLKHFQEKLKHLL  198
+
+
+>emb|CDE86384.1| type II restriction enzyme MunI [Prevotella sp. CAG:891]
+Length=200
+
+ Score =  310 bits (794),  Expect = 1e-82, Method: Composition-based stats.
+ Identities = 97/196 (50%), Positives = 123/196 (63%), Gaps = 3/196 (1%)
+
+Query  2    SGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKEI  61
+              R  WQ   G KA+ AE +   VF+ +F+ T+Y +  KP   KNLY  V L ++ +  I
+Sbjct  7    RFRRKWQDYGGSKATVAEHSFIEVFSELFKDTEYEVVSKPTDFKNLYVDVELSEEELAAI  66
+
+Query  62   FNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKLF  121
+            + P  D   T+ G+ P  AI NT T K ++ EIKRQDGWVEGK  SAGRGNAHER CK F
+Sbjct  67   YTP--DEPITKHGIQPDGAIRNTRTGKTIYVEIKRQDGWVEGKSRSAGRGNAHERLCKYF  124
+
+Query  122  TPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNESG  181
+            TPGLL   RT G I+    LPFW+VF+GDITRDP RVREIT+W++ ++ NYF WR     
+Sbjct  125  TPGLLNKLRTTGKISAPN-LPFWIVFQGDITRDPCRVREITYWFNDFKSNYFFWRNTTKA  183
+
+Query  182  EKLVQHFNEKLKKYLD  197
+            E L+ HF   +   L+
+Sbjct  184  EDLIDHFETYIAPLLE  199
+
+
+>ref|WP_006849509.1| type II restriction endonuclease MunI [Prevotella copri]
+ gb|EFB33700.1| hypothetical protein PREVCOP_06851 [Prevotella copri DSM 18205]
+Length=200
+
+ Score =  310 bits (793),  Expect = 2e-82, Method: Composition-based stats.
+ Identities = 94/196 (48%), Positives = 125/196 (64%), Gaps = 3/196 (1%)
+
+Query  2    SGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKEI  61
+              R  WQ   G KA+ AE +   VF+ +F+ T+Y +  +P   K+LY  V L    ++ I
+Sbjct  7    RFRRKWQDYGGSKATVAEHSFIEVFSELFKDTEYEVISQPTEFKDLYVNVQLSAKELEAI  66
+
+Query  62   FNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKLF  121
+            + P  D+  T+ G+ P  AI NT T K ++ EIKRQDGWVEGK  SAGRGNAHER CK F
+Sbjct  67   YTP--DVPITKHGIQPDGAIRNTRTGKTIYVEIKRQDGWVEGKPRSAGRGNAHERLCKYF  124
+
+Query  122  TPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNESG  181
+            TPGL++  R+ G I  E  LPFW+VF+GDITRDP RVREIT+W+  ++ NYF WR  +  
+Sbjct  125  TPGLMQKLRSAGKIK-EPNLPFWIVFQGDITRDPCRVREITYWFSDFKANYFFWRNTKEA  183
+
+Query  182  EKLVQHFNEKLKKYLD  197
+            E L++HF   +   L+
+Sbjct  184  ESLIEHFETYIAPLLE  199
+
+
+>ref|WP_009443276.1| type II restriction enzyme MunI [Streptococcus sp. oral taxon 
+056]
+ gb|EGP65835.1| type II restriction enzyme MunI [Streptococcus sp. oral taxon 
+056 str. F0418]
+Length=210
+
+ Score =  280 bits (716),  Expect = 2e-73, Method: Composition-based stats.
+ Identities = 97/207 (47%), Positives = 128/207 (62%), Gaps = 14/207 (6%)
+
+Query  1    LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGT---KYVLYEKPKHLKNLYAQVVLPDDV  57
+            L  R NWQ ++G  A  AE   +    +  +     K+++   PK   ++Y++  LP +V
+Sbjct  6    LRKRANWQTVSGAAALDAESKFHLALQSALDEVYPNKFLVDRHPKEFGDIYSKYGLPQEV  65
+
+Query  58   IKEIFNPLIDLSTTQ--------WGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAG  109
+            ++EI+N  ID++  +        WG+S  FAI N E  KILFGEIKRQDGW+EG   SAG
+Sbjct  66   LEEIYN--IDVTEIKRNGKPRYSWGISMDFAIRNLENGKILFGEIKRQDGWIEGTKSSAG  123
+
+Query  110  RGNAHERSCKLFTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQ  169
+            RGNAHERS K FTPGL +A R +  ++ EEILPFW+V+ GDITRDPKR REI FW+  Y 
+Sbjct  124  RGNAHERSTKYFTPGLSRAIRQLSNLS-EEILPFWIVYIGDITRDPKRNREIAFWFQEYT  182
+
+Query  170  DNYFMWRPNESGEKLVQHFNEKLKKYL  196
+             NYFMWR  ++   L+  F   L  YL
+Sbjct  183  KNYFMWRDTDNVASLLDFFENNLLPYL  209
+
+
+>ref|YP_875533.1| MunI restriction endonuclease [Cenarchaeum symbiosum A]
+ ref|WP_013481857.1| MunI restriction endonuclease [Cenarchaeum symbiosum]
+ gb|ABK77229.1| MunI restriction endonuclease [Cenarchaeum symbiosum A]
+Length=182
+
+ Score =  256 bits (655),  Expect = 2e-66, Method: Composition-based stats.
+ Identities = 86/198 (44%), Positives = 117/198 (60%), Gaps = 22/198 (11%)
+
+Query  1    LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE  60
+            L  R  WQ  +GL    AE     VF A F GT+YV+ ++PK LK++Y++          
+Sbjct  6    LRDRDVWQKKSGLMGKKAEDEFEAVFLAEFTGTEYVIRKEPKELKDIYSK----------  55
+
+Query  61   IFNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKD-PSAGRGNAHERSCK  119
+              NP       + GVS  +AI N +T K L+ EIK Q+G+V G+  P  GRGNAHERSCK
+Sbjct  56   --NP-------KHGVSIDYAITNKKTKKTLYVEIKSQEGYVPGETLPKDGRGNAHERSCK  106
+
+Query  120  LFTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNE  179
+             FTPGLLK    +  +     LPFW+V++G ITRD KR REIT+W+D Y  ++F+W+ + 
+Sbjct  107  FFTPGLLKVMCKLSNL-PVGTLPFWIVYQGRITRDAKRTREITYWFDEYGAHFFLWK-SS  164
+
+Query  180  SGEKLVQHFNEKLKKYLD  197
+            S   L+ HF + L+  LD
+Sbjct  165  SSTPLINHFKKNLRHILD  182
+
+
+>ref|YP_003691747.1| hypothetical protein DaAHT2_2464 [Desulfurivibrio alkaliphilus 
+AHT2]
+ ref|WP_013164639.1| hypothetical protein [Desulfurivibrio alkaliphilus]
+ gb|ADH87128.1| hypothetical protein DaAHT2_2464 [Desulfurivibrio alkaliphilus 
+AHT2]
+Length=135
+
+ Score =  202 bits (515),  Expect = 3e-50, Method: Composition-based stats.
+ Identities = 62/128 (49%), Positives = 78/128 (61%), Gaps = 2/128 (1%)
+
+Query  2    SGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKEI  61
+              R  WQ  +G  A  AE N Y+ F AVFE T+Y +  KPK   N+Y  V L +  + +I
+Sbjct  7    RLRKKWQDYSGKNAGKAESNFYDAFKAVFEDTEYQIRAKPKEFSNIYVSVQLSEPEMSQI  66
+
+Query  62   FNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKLF  121
+            + P      T+ GV   +AI+NT T K ++ E+KRQDGWVEG   S GRGNAHERSCK F
+Sbjct  67   YTP--QEPITKHGVYLDYAIDNTRTGKTIYVEVKRQDGWVEGGKRSDGRGNAHERSCKFF  124
+
+Query  122  TPGLLKAY  129
+            TPGLL+  
+Sbjct  125  TPGLLEIL  132
+
+
+>ref|WP_005612389.1| hypothetical protein [Ruminococcus lactaris]
+ gb|EDY32023.1| hypothetical protein RUMLAC_02186 [Ruminococcus lactaris ATCC 
+29176]
+Length=81
+
+ Score =  144 bits (364),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 57/81 (71%), Positives = 63/81 (78%), Gaps = 0/81 (0%)
+
+Query  117  SCKLFTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWR  176
+             CKLFTPGL+KAYR I  I+D  ILPFWVV EGDITRDPKR REI FW+D Y  NYFMWR
+Sbjct  1    MCKLFTPGLMKAYRQISKISDPSILPFWVVLEGDITRDPKRNREIAFWFDEYDKNYFMWR  60
+
+Query  177  PNESGEKLVQHFNEKLKKYLD  197
+            P   G  LV+HFN+ LKK+LD
+Sbjct  61   PGVDGSALVEHFNKYLKKFLD  81
+
+
+>ref|WP_005612392.1| hypothetical protein [Ruminococcus lactaris]
+ gb|EDY32024.1| hypothetical protein RUMLAC_02187 [Ruminococcus lactaris ATCC 
+29176]
+Length=104
+
+ Score =  118 bits (296),  Expect = 9e-25, Method: Composition-based stats.
+ Identities = 42/99 (43%), Positives = 54/99 (55%), Gaps = 6/99 (6%)
+
+Query  1    LSGRLNWQALAGL--KASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVI  58
+            L GR NWQ  +G   KA  AEQNL +VF   F+ T YV+ + P +LK+LY  V LP   I
+Sbjct  6    LQGRDNWQTESGPGGKAGVAEQNLISVFKEAFKDTDYVISDHPTNLKHLYENVELPAKTI  65
+
+Query  59   KEIFNP----LIDLSTTQWGVSPAFAIENTETHKILFGE  93
+              IFNP    + +     WGVSP F+I N +  K    +
+Sbjct  66   AAIFNPDLATMKNAQKRGWGVSPDFSITNKKREKFYLVK  104
+
+
+>emb|CAK48823.1| Sse9I restriction endonuclease [Sporosarcina sp.]
+Length=178
+
+ Score = 50.8 bits (120),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 29/158 (19%), Positives = 59/158 (38%), Gaps = 36/158 (22%)
+
+Query  18   AEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKEIFNPLIDLSTTQWGVSP  77
+            +E N       + +  ++ + + P  L+ +                        ++GV P
+Sbjct  24   SESNFVEALEMILDPDEWRVEDHPPELRRIIGG---------------------RYGVVP  62
+
+Query  78   AFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKLFTPGLLKAYRTIGGIND  137
+              +IE   T +  F E+K+Q             GNA ER+CK  T   ++ Y+ +  +  
+Sbjct  63   EASIEYLPTGRKFFFEVKKQ----------GPAGNADERACKHHT---VQFYKELHALFG  109
+
+Query  138  EEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMW  175
+             +  PF  +    +    +   +  F+++    +YF W
+Sbjct  110  YDYHPFATIMCESLATLERYTVKHPFYFEE--GHYFCW  145
+
+
+>ref|YP_007820523.1| hypothetical protein CIY_29210 [Butyrivibrio fibrisolvens 16/4]
+ ref|WP_015550550.1| hypothetical protein [Butyrivibrio fibrisolvens]
+ emb|CBK75457.1| hypothetical protein CIY_29210 [Butyrivibrio fibrisolvens 16/4]
+Length=269
+
+ Score = 36.9 bits (84),  Expect = 3.4, Method: Composition-based stats.
+ Identities = 15/60 (25%), Positives = 29/60 (49%), Gaps = 6/60 (10%)
+
+Query  34   KYVLYEKPKHLKNLYAQVVLPDDVIKEIFNPLIDLSTTQWGVSPAFAIENTETHKILFGE  93
+            ++V  +  K L +L+ +  +P      ++ P++ L      VSP F + NT   K ++ E
+Sbjct  159  EHVRSKSEKILADLFEKYDIP-----YVYEPMLKL-KNGHVVSPDFVLLNTRQRKTIYWE  212
+
+
+>ref|WP_008270461.1| methyltransferase type 11 [Flavobacteriales bacterium ALC-1]
+ gb|EDP71377.1| Cyclopropane-fatty-acyl-phospholipid synthase [Flavobacteriales 
+bacterium ALC-1]
+Length=254
+
+ Score = 35.4 bits (80),  Expect = 8.5, Method: Composition-based stats.
+ Identities = 12/46 (27%), Positives = 20/46 (44%), Gaps = 4/46 (8%)
+
+Query  155  PKRVRE----ITFWYDHYQDNYFMWRPNESGEKLVQHFNEKLKKYL  196
+            P  +RE    I  W + +  N+F    +    K++ H  E L+  L
+Sbjct  186  PTELRENNNGIKDWLEMFAKNFFFNVNSSDKAKILDHIQEDLRPRL  231
+
+
+
+Lambda     K      H
+   0.309    0.138    0.426 
+
+Gapped
+Lambda     K      H
+   0.267   0.0424    0.140 
+
+Effective search space used: 416138492880
+Results from round 3
+
+
+Query= 1D02_A
+
+Length=197
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+sp|P43642.1|T2MU_MYCSP  RecName: Full=Type-2 restriction enzyme M...   324    7e-87
+pdb|1D02|A  Chain A, Crystal Structure Of Muni Restriction Endonu...   322    3e-86
+ref|YP_003821414.1|  type II site-specific deoxyribonuclease [Clo...   310    1e-82
+ref|WP_007686624.1|  type II restriction endonuclease MunI [Sphin...   308    5e-82
+emb|CDE86384.1|  type II restriction enzyme MunI [Prevotella sp. ...   297    2e-78
+ref|WP_006849509.1|  type II restriction endonuclease MunI [Prevo...   296    3e-78
+ref|YP_003205743.1|  type-2 restriction enzyme MunI (R.MunI) (Typ...   295    5e-78
+ref|WP_009443276.1|  type II restriction enzyme MunI [Streptococc...   268    7e-70
+ref|YP_875533.1|  MunI restriction endonuclease [Cenarchaeum symb...   239    4e-61
+ref|YP_003691747.1|  hypothetical protein DaAHT2_2464 [Desulfuriv...   196    3e-48
+emb|CAK48823.1|  Sse9I restriction endonuclease [Sporosarcina sp.]     152    4e-35
+ref|WP_005612389.1|  hypothetical protein [Ruminococcus lactaris]...   137    2e-30
+ref|WP_005612392.1|  hypothetical protein [Ruminococcus lactaris]...   123    2e-26
+
+Sequences not found previously or not previously below threshold:
+
+ref|WP_010455630.1|  pentapeptide repeat-containing protein [Succ...  38.5    0.94 
+ref|WP_019080009.1|  23S rRNA methyltransferase [Yersinia enteroc...  37.4    2.1  
+emb|CDD19583.1|  polyphosphate kinase [Prevotella sp. CAG:732]        37.0    3.1  
+gb|EFQ32748.1|  hypothetical protein GLRG_07892 [Colletotrichum g...  36.6    3.7  
+emb|CDA67400.1|  polyphosphate kinase [Prevotella copri CAG:164]      36.2    4.7  
+ref|WP_020530279.1|  hypothetical protein [Flexithrix dorotheae]      36.2    4.8  
+
+
+>sp|P43642.1|T2MU_MYCSP RecName: Full=Type-2 restriction enzyme MunI; Short=R.MunI; AltName: 
+Full=Endonuclease MunI; AltName: Full=Type II restriction 
+enzyme MunI
+ emb|CAA53788.1| MunI restriction endonuclease [Mycoplasma sp.]
+Length=202
+
+ Score =  324 bits (831),  Expect = 7e-87, Method: Composition-based stats.
+ Identities = 196/197 (99%), Positives = 196/197 (99%), Gaps = 0/197 (0%)
+
+Query  1    LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE  60
+            LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE
+Sbjct  6    LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE  65
+
+Query  61   IFNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL  120
+            IFNPLIDLSTTQWGVSP FAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL
+Sbjct  66   IFNPLIDLSTTQWGVSPDFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL  125
+
+Query  121  FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES  180
+            FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES
+Sbjct  126  FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES  185
+
+Query  181  GEKLVQHFNEKLKKYLD  197
+            GEKLVQHFNEKLKKYLD
+Sbjct  186  GEKLVQHFNEKLKKYLD  202
+
+
+>pdb|1D02|A Chain A, Crystal Structure Of Muni Restriction Endonuclease In 
+Complex With Cognate Dna
+ pdb|1D02|B Chain B, Crystal Structure Of Muni Restriction Endonuclease In 
+Complex With Cognate Dna
+Length=202
+
+ Score =  322 bits (826),  Expect = 3e-86, Method: Composition-based stats.
+ Identities = 197/197 (100%), Positives = 197/197 (100%), Gaps = 0/197 (0%)
+
+Query  1    LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE  60
+            LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE
+Sbjct  6    LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE  65
+
+Query  61   IFNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL  120
+            IFNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL
+Sbjct  66   IFNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL  125
+
+Query  121  FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES  180
+            FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES
+Sbjct  126  FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES  185
+
+Query  181  GEKLVQHFNEKLKKYLD  197
+            GEKLVQHFNEKLKKYLD
+Sbjct  186  GEKLVQHFNEKLKKYLD  202
+
+
+>ref|YP_003821414.1| type II site-specific deoxyribonuclease [Clostridium saccharolyticum 
+WM1]
+ ref|WP_013271886.1| type II restriction endonuclease MunI [Clostridium saccharolyticum]
+ gb|ADL03791.1| Type II site-specific deoxyribonuclease [Clostridium saccharolyticum 
+WM1]
+Length=208
+
+ Score =  310 bits (794),  Expect = 1e-82, Method: Composition-based stats.
+ Identities = 127/203 (63%), Positives = 147/203 (73%), Gaps = 6/203 (2%)
+
+Query  1    LSGRLNWQALAGLK--ASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVI  58
+            LSGR NWQ  +G    A  AE++LY+ F   FEGT Y + + P  LK+LY  V LP   +
+Sbjct  6    LSGRENWQTESGPGGLAGTAEKDLYSAFEKAFEGTIYKISDHPNDLKHLYEHVNLPKQTL  65
+
+Query  59   KEIFNP----LIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAH  114
+             +I+ P    +++     WGVSP F+I NT+T KILFGEIKRQDGWVEGKDPSAGRGNAH
+Sbjct  66   SQIYCPNEATMLNAQKRGWGVSPDFSITNTKTGKILFGEIKRQDGWVEGKDPSAGRGNAH  125
+
+Query  115  ERSCKLFTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFM  174
+            ER CKLFTPGL+K YR I GI DEEILPFWVV EGDITRDPKR REI+FW+D Y  NYFM
+Sbjct  126  ERMCKLFTPGLIKTYRNISGIEDEEILPFWVVLEGDITRDPKRNREISFWFDTYDKNYFM  185
+
+Query  175  WRPNESGEKLVQHFNEKLKKYLD  197
+            WRPN + + LV HFN  LK YLD
+Sbjct  186  WRPNMTEQDLVDHFNMYLKPYLD  208
+
+
+>ref|WP_007686624.1| type II restriction endonuclease MunI [Sphingobium indicum]
+ gb|EIM67222.1| type II site-specific deoxyribonuclease [Sphingobium indicum 
+B90A]
+Length=199
+
+ Score =  308 bits (790),  Expect = 5e-82, Method: Composition-based stats.
+ Identities = 103/196 (53%), Positives = 128/196 (66%), Gaps = 3/196 (1%)
+
+Query  1    LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE  60
+            L GR  WQ  +G  A  AEQ+ + VF   F GT+  +  KP+  K++Y  V L DDVI E
+Sbjct  6    LRGRAVWQDYSGANAGFAEQSFFAVFTEAFRGTELSIRAKPQEFKHIYVDVPLADDVIAE  65
+
+Query  61   IFNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL  120
+            I+NP  +   T+ G++P +AI+N    K L+ E+KRQDGWVEGK  SAGRGNAHERS K 
+Sbjct  66   IYNP--ECGITKHGITPDYAIDNKGAGKTLYVEVKRQDGWVEGKPRSAGRGNAHERSNKF  123
+
+Query  121  FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES  180
+            FTPGLLK  R  G +   + LPFW VF+GDI RDP RVREIT WYD Y  +YFMWR N  
+Sbjct  124  FTPGLLKTLRKRGNL-GPDALPFWTVFQGDIARDPCRVREITLWYDGYPGHYFMWRDNSD  182
+
+Query  181  GEKLVQHFNEKLKKYL  196
+               L++HF+E L+  L
+Sbjct  183  PTALLRHFDEHLRPLL  198
+
+
+>emb|CDE86384.1| type II restriction enzyme MunI [Prevotella sp. CAG:891]
+Length=200
+
+ Score =  297 bits (759),  Expect = 2e-78, Method: Composition-based stats.
+ Identities = 97/196 (50%), Positives = 123/196 (63%), Gaps = 3/196 (1%)
+
+Query  2    SGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKEI  61
+              R  WQ   G KA+ AE +   VF+ +F+ T+Y +  KP   KNLY  V L ++ +  I
+Sbjct  7    RFRRKWQDYGGSKATVAEHSFIEVFSELFKDTEYEVVSKPTDFKNLYVDVELSEEELAAI  66
+
+Query  62   FNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKLF  121
+            + P  D   T+ G+ P  AI NT T K ++ EIKRQDGWVEGK  SAGRGNAHER CK F
+Sbjct  67   YTP--DEPITKHGIQPDGAIRNTRTGKTIYVEIKRQDGWVEGKSRSAGRGNAHERLCKYF  124
+
+Query  122  TPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNESG  181
+            TPGLL   RT G I+    LPFW+VF+GDITRDP RVREIT+W++ ++ NYF WR     
+Sbjct  125  TPGLLNKLRTTGKISAPN-LPFWIVFQGDITRDPCRVREITYWFNDFKSNYFFWRNTTKA  183
+
+Query  182  EKLVQHFNEKLKKYLD  197
+            E L+ HF   +   L+
+Sbjct  184  EDLIDHFETYIAPLLE  199
+
+
+>ref|WP_006849509.1| type II restriction endonuclease MunI [Prevotella copri]
+ gb|EFB33700.1| hypothetical protein PREVCOP_06851 [Prevotella copri DSM 18205]
+Length=200
+
+ Score =  296 bits (757),  Expect = 3e-78, Method: Composition-based stats.
+ Identities = 94/196 (48%), Positives = 125/196 (64%), Gaps = 3/196 (1%)
+
+Query  2    SGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKEI  61
+              R  WQ   G KA+ AE +   VF+ +F+ T+Y +  +P   K+LY  V L    ++ I
+Sbjct  7    RFRRKWQDYGGSKATVAEHSFIEVFSELFKDTEYEVISQPTEFKDLYVNVQLSAKELEAI  66
+
+Query  62   FNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKLF  121
+            + P  D+  T+ G+ P  AI NT T K ++ EIKRQDGWVEGK  SAGRGNAHER CK F
+Sbjct  67   YTP--DVPITKHGIQPDGAIRNTRTGKTIYVEIKRQDGWVEGKPRSAGRGNAHERLCKYF  124
+
+Query  122  TPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNESG  181
+            TPGL++  R+ G I  E  LPFW+VF+GDITRDP RVREIT+W+  ++ NYF WR  +  
+Sbjct  125  TPGLMQKLRSAGKIK-EPNLPFWIVFQGDITRDPCRVREITYWFSDFKANYFFWRNTKEA  183
+
+Query  182  EKLVQHFNEKLKKYLD  197
+            E L++HF   +   L+
+Sbjct  184  ESLIEHFETYIAPLLE  199
+
+
+>ref|YP_003205743.1| type-2 restriction enzyme MunI (R.MunI) (Type II restriction 
+enzyme MunI) (Endonuclease MunI) [Candidatus Methylomirabilis 
+oxyfera]
+ ref|WP_015743415.1| type II restriction endonuclease MunI [Candidatus Methylomirabilis 
+oxyfera]
+ emb|CBE67904.1| Type-2 restriction enzyme MunI (R.MunI) (Type II restriction 
+enzyme MunI) (Endonuclease MunI) [Candidatus Methylomirabilis 
+oxyfera]
+Length=199
+
+ Score =  295 bits (755),  Expect = 5e-78, Method: Composition-based stats.
+ Identities = 101/196 (52%), Positives = 128/196 (66%), Gaps = 3/196 (1%)
+
+Query  1    LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE  60
+            L GR  WQ  +G  A  AE++ Y VF   F+ T + +  KPK  KN+Y  V+L   V  E
+Sbjct  6    LKGRAVWQDQSGANAKVAEKDFYAVFETAFQNTSFRIRSKPKEFKNIYTNVILDPSVSAE  65
+
+Query  61   IFNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKL  120
+            I+NP       + G+SP +AI+N +T K L+ E+KRQDGWVEG   S GRGNAHERSCK 
+Sbjct  66   IYNP--KEGIKRHGISPDYAIDNLDTKKTLYVEVKRQDGWVEGGKRSDGRGNAHERSCKF  123
+
+Query  121  FTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNES  180
+            FTPGLL+  R  G + D ++LPFW VF GDITRDP RVREIT WY  Y+D++F WR  + 
+Sbjct  124  FTPGLLEVMRHQGRLGD-KVLPFWTVFLGDITRDPCRVREITLWYKGYEDHFFFWRNPKD  182
+
+Query  181  GEKLVQHFNEKLKKYL  196
+             + L++HF EKLK  L
+Sbjct  183  EKSLLKHFQEKLKHLL  198
+
+
+>ref|WP_009443276.1| type II restriction enzyme MunI [Streptococcus sp. oral taxon 
+056]
+ gb|EGP65835.1| type II restriction enzyme MunI [Streptococcus sp. oral taxon 
+056 str. F0418]
+Length=210
+
+ Score =  268 bits (684),  Expect = 7e-70, Method: Composition-based stats.
+ Identities = 95/205 (47%), Positives = 124/205 (61%), Gaps = 10/205 (4%)
+
+Query  1    LSGRLNWQALAGLKASGAEQNLYNVFNAVFE---GTKYVLYEKPKHLKNLYAQVVLPDDV  57
+            L  R NWQ ++G  A  AE   +    +  +     K+++   PK   ++Y++  LP +V
+Sbjct  6    LRKRANWQTVSGAAALDAESKFHLALQSALDEVYPNKFLVDRHPKEFGDIYSKYGLPQEV  65
+
+Query  58   IKEIFNPLIDL------STTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRG  111
+            ++EI+N  +            WG+S  FAI N E  KILFGEIKRQDGW+EG   SAGRG
+Sbjct  66   LEEIYNIDVTEIKRNGKPRYSWGISMDFAIRNLENGKILFGEIKRQDGWIEGTKSSAGRG  125
+
+Query  112  NAHERSCKLFTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDN  171
+            NAHERS K FTPGL +A R +  ++ EEILPFW+V+ GDITRDPKR REI FW+  Y  N
+Sbjct  126  NAHERSTKYFTPGLSRAIRQLSNLS-EEILPFWIVYIGDITRDPKRNREIAFWFQEYTKN  184
+
+Query  172  YFMWRPNESGEKLVQHFNEKLKKYL  196
+            YFMWR  ++   L+  F   L  YL
+Sbjct  185  YFMWRDTDNVASLLDFFENNLLPYL  209
+
+
+>ref|YP_875533.1| MunI restriction endonuclease [Cenarchaeum symbiosum A]
+ ref|WP_013481857.1| MunI restriction endonuclease [Cenarchaeum symbiosum]
+ gb|ABK77229.1| MunI restriction endonuclease [Cenarchaeum symbiosum A]
+Length=182
+
+ Score =  239 bits (609),  Expect = 4e-61, Method: Composition-based stats.
+ Identities = 86/198 (44%), Positives = 117/198 (60%), Gaps = 22/198 (11%)
+
+Query  1    LSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKE  60
+            L  R  WQ  +GL    AE     VF A F GT+YV+ ++PK LK++Y++          
+Sbjct  6    LRDRDVWQKKSGLMGKKAEDEFEAVFLAEFTGTEYVIRKEPKELKDIYSK----------  55
+
+Query  61   IFNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKD-PSAGRGNAHERSCK  119
+              NP       + GVS  +AI N +T K L+ EIK Q+G+V G+  P  GRGNAHERSCK
+Sbjct  56   --NP-------KHGVSIDYAITNKKTKKTLYVEIKSQEGYVPGETLPKDGRGNAHERSCK  106
+
+Query  120  LFTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNE  179
+             FTPGLLK    +  +     LPFW+V++G ITRD KR REIT+W+D Y  ++F+W+ + 
+Sbjct  107  FFTPGLLKVMCKLSNL-PVGTLPFWIVYQGRITRDAKRTREITYWFDEYGAHFFLWK-SS  164
+
+Query  180  SGEKLVQHFNEKLKKYLD  197
+            S   L+ HF + L+  LD
+Sbjct  165  SSTPLINHFKKNLRHILD  182
+
+
+>ref|YP_003691747.1| hypothetical protein DaAHT2_2464 [Desulfurivibrio alkaliphilus 
+AHT2]
+ ref|WP_013164639.1| hypothetical protein [Desulfurivibrio alkaliphilus]
+ gb|ADH87128.1| hypothetical protein DaAHT2_2464 [Desulfurivibrio alkaliphilus 
+AHT2]
+Length=135
+
+ Score =  196 bits (498),  Expect = 3e-48, Method: Composition-based stats.
+ Identities = 62/128 (49%), Positives = 78/128 (61%), Gaps = 2/128 (1%)
+
+Query  2    SGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKEI  61
+              R  WQ  +G  A  AE N Y+ F AVFE T+Y +  KPK   N+Y  V L +  + +I
+Sbjct  7    RLRKKWQDYSGKNAGKAESNFYDAFKAVFEDTEYQIRAKPKEFSNIYVSVQLSEPEMSQI  66
+
+Query  62   FNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKLF  121
+            + P      T+ GV   +AI+NT T K ++ E+KRQDGWVEG   S GRGNAHERSCK F
+Sbjct  67   YTP--QEPITKHGVYLDYAIDNTRTGKTIYVEVKRQDGWVEGGKRSDGRGNAHERSCKFF  124
+
+Query  122  TPGLLKAY  129
+            TPGLL+  
+Sbjct  125  TPGLLEIL  132
+
+
+>emb|CAK48823.1| Sse9I restriction endonuclease [Sporosarcina sp.]
+Length=178
+
+ Score =  152 bits (385),  Expect = 4e-35, Method: Composition-based stats.
+ Identities = 29/158 (19%), Positives = 59/158 (38%), Gaps = 36/158 (22%)
+
+Query  18   AEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKEIFNPLIDLSTTQWGVSP  77
+            +E N       + +  ++ + + P  L+ +                        ++GV P
+Sbjct  24   SESNFVEALEMILDPDEWRVEDHPPELRRIIGG---------------------RYGVVP  62
+
+Query  78   AFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKLFTPGLLKAYRTIGGIND  137
+              +IE   T +  F E+K+Q             GNA ER+CK  T   ++ Y+ +  +  
+Sbjct  63   EASIEYLPTGRKFFFEVKKQ----------GPAGNADERACKHHT---VQFYKELHALFG  109
+
+Query  138  EEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMW  175
+             +  PF  +    +    +   +  F+++    +YF W
+Sbjct  110  YDYHPFATIMCESLATLERYTVKHPFYFEE--GHYFCW  145
+
+
+>ref|WP_005612389.1| hypothetical protein [Ruminococcus lactaris]
+ gb|EDY32023.1| hypothetical protein RUMLAC_02186 [Ruminococcus lactaris ATCC 
+29176]
+Length=81
+
+ Score =  137 bits (344),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 57/81 (71%), Positives = 63/81 (78%), Gaps = 0/81 (0%)
+
+Query  117  SCKLFTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWR  176
+             CKLFTPGL+KAYR I  I+D  ILPFWVV EGDITRDPKR REI FW+D Y  NYFMWR
+Sbjct  1    MCKLFTPGLMKAYRQISKISDPSILPFWVVLEGDITRDPKRNREIAFWFDEYDKNYFMWR  60
+
+Query  177  PNESGEKLVQHFNEKLKKYLD  197
+            P   G  LV+HFN+ LKK+LD
+Sbjct  61   PGVDGSALVEHFNKYLKKFLD  81
+
+
+>ref|WP_005612392.1| hypothetical protein [Ruminococcus lactaris]
+ gb|EDY32024.1| hypothetical protein RUMLAC_02187 [Ruminococcus lactaris ATCC 
+29176]
+Length=104
+
+ Score =  123 bits (309),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 42/99 (43%), Positives = 54/99 (55%), Gaps = 6/99 (6%)
+
+Query  1    LSGRLNWQALAGL--KASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVI  58
+            L GR NWQ  +G   KA  AEQNL +VF   F+ T YV+ + P +LK+LY  V LP   I
+Sbjct  6    LQGRDNWQTESGPGGKAGVAEQNLISVFKEAFKDTDYVISDHPTNLKHLYENVELPAKTI  65
+
+Query  59   KEIFNP----LIDLSTTQWGVSPAFAIENTETHKILFGE  93
+              IFNP    + +     WGVSP F+I N +  K    +
+Sbjct  66   AAIFNPDLATMKNAQKRGWGVSPDFSITNKKREKFYLVK  104
+
+
+>ref|WP_010455630.1| pentapeptide repeat-containing protein [Succinivibrionaceae bacterium 
+WG-1]
+Length=827
+
+ Score = 38.5 bits (88),  Expect = 0.94, Method: Composition-based stats.
+ Identities = 28/121 (24%), Positives = 47/121 (39%), Gaps = 16/121 (13%)
+
+Query  7    WQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKEI---FN  63
+            +QA  G     +E+N  +  +A+   T+++  E+    + L A   L    +K     +N
+Sbjct  79   YQAYTG-NILDSEKNFNSALSALLSKTEFLSEEENATFEKLVADADLQPYTVKRYLLGYN  137
+
+Query  64   PLIDLSTTQ-WGV-------SPAFAIENTETHKILFGEIKRQDGWVEGKD----PSAGRG  111
+            P   + T + WGV        P   I  T   K     + R  G++  +D    P  G  
+Sbjct  138  PKEYVDTYRNWGVDQDGEFIVPKGVIIPTFIEKTFVSGVIRPHGFMSSQDEFYLPGGGEV  197
+
+Query  112  N  112
+            N
+Sbjct  198  N  198
+
+
+>ref|WP_019080009.1| 23S rRNA methyltransferase [Yersinia enterocolitica]
+Length=396
+
+ Score = 37.4 bits (85),  Expect = 2.1, Method: Composition-based stats.
+ Identities = 28/103 (28%), Positives = 40/103 (39%), Gaps = 3/103 (2%)
+
+Query  11   AGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNL-YAQVVLPDDVIKEIFNPLIDLS  69
+            AG K+     +   +F  +   TK  L  K   L +   A + L +D  + I  PL +  
+Sbjct  141  AGAKSRDVHNSTLQLFEKILGPTKTTLAWKKARLIHCEVADIPLAEDAPETIDWPLANTE  200
+
+Query  70   TTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGN  112
+                  +  F+  N +     F EI   D  VEGK    G GN
+Sbjct  201  YVIHNHANVFSRNNLDIGARFFMEILPYD--VEGKIADLGCGN  241
+
+
+>emb|CDD19583.1| polyphosphate kinase [Prevotella sp. CAG:732]
+Length=407
+
+ Score = 37.0 bits (84),  Expect = 3.1, Method: Composition-based stats.
+ Identities = 32/131 (25%), Positives = 50/131 (39%), Gaps = 21/131 (16%)
+
+Query  28   AVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIK--EIFNPLIDLSTTQW-------GVSPA  78
+               + T Y L +  K +K L         V    E+     + S  +W       GV+  
+Sbjct  98   KAIKTTLYRLAKDSKVVKALITAARNGKKVTAVVELLARFDEESNIKWSKRMQEEGVNVI  157
+
+Query  79   FAIENTETH-KILFGEIKRQDGWVEGKDPSAGRGNAHERSCKLFTPGLLKAYR-----TI  132
+            F +E  + H K+L+ E K+      G     G GN HE + K++T  L+   R      +
+Sbjct  158  FGVEGLKIHSKLLYIESKK------GNIACIGTGNFHEGNAKIYTDYLMMTARPKIVNEV  211
+
+Query  133  GGINDEEILPF  143
+              + D    PF
+Sbjct  212  AKVFDFIDRPF  222
+
+
+>gb|EFQ32748.1| hypothetical protein GLRG_07892 [Colletotrichum graminicola M1.001]
+Length=1136
+
+ Score = 36.6 bits (83),  Expect = 3.7, Method: Composition-based stats.
+ Identities = 11/65 (17%), Positives = 21/65 (33%), Gaps = 0/65 (0%)
+
+Query  7    WQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKEIFNPLI  66
+            W+      AS  + NL N         +Y     P++  ++     + D      + P  
+Sbjct  843  WKTWLSANASKTDANLVNARAQALTEVRYSKPSMPRNFGHVRENAEIEDSPSPMSYKPTC  902
+
+Query  67   DLSTT  71
+              +T 
+Sbjct  903  PKTTR  907
+
+
+>emb|CDA67400.1| polyphosphate kinase [Prevotella copri CAG:164]
+Length=674
+
+ Score = 36.2 bits (82),  Expect = 4.7, Method: Composition-based stats.
+ Identities = 32/131 (25%), Positives = 50/131 (39%), Gaps = 21/131 (16%)
+
+Query  28   AVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIK--EIFNPLIDLSTTQW-------GVSPA  78
+               + T Y L +  K +K L         V    E+     + S  +W       GV+  
+Sbjct  366  KAIKTTLYRLAKDSKVVKALITAARNGKKVTAVVELLARFDEESNIKWSKRMQEEGVNVI  425
+
+Query  79   FAIENTETH-KILFGEIKRQDGWVEGKDPSAGRGNAHERSCKLFTPGLLKAYR-----TI  132
+            F +E  + H K+L+ E K+      G     G GN HE + K++T  L+   R      +
+Sbjct  426  FGVEGLKIHSKLLYIESKK------GNIACVGTGNFHEGNAKIYTDYLMMTARTKLVNEV  479
+
+Query  133  GGINDEEILPF  143
+              + D    PF
+Sbjct  480  AKVFDFIDRPF  490
+
+
+>ref|WP_020530279.1| hypothetical protein [Flexithrix dorotheae]
+Length=847
+
+ Score = 36.2 bits (82),  Expect = 4.8, Method: Composition-based stats.
+ Identities = 22/106 (21%), Positives = 44/106 (42%), Gaps = 13/106 (12%)
+
+Query  96   RQDGWVEGKDPSAGRGNAHERSCKLFTPGLLKAYRT------IGGINDEEILPFWVVFEG  149
+            +++ + E  +P   R N +ERS    T G  + ++          +  +   P   VF+ 
+Sbjct  375  QEEFFDEWDNPKDKRLNQNERSVDYITRGYTRFFQEWAERDLKTTMLRDRNHP--SVFQW  432
+
+Query  150  DITRD-----PKRVREITFWYDHYQDNYFMWRPNESGEKLVQHFNE  190
+             I  +     P+      ++   +Q NYF  +P  S E++ + + E
+Sbjct  433  SIGNEIEWTYPRYAHASGYFNMSWQGNYFWEKPPISPEEIRRRYEE  478
+
+
+
+Lambda     K      H
+   0.306    0.130    0.368 
+
+Gapped
+Lambda     K      H
+   0.267   0.0401    0.140 
+
+Effective search space used: 416138492880
+
+Search has CONVERGED!
+
+
+  Database: All non-redundant GenBank CDS translations+PDB+SwissProt+PIR+PRF
+excluding environmental samples from WGS projects
+    Posted date:  Sep 26, 2013  6:53 AM
+  Number of letters in database: 11,431,176,125
+  Number of sequences in database:  32,814,121
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

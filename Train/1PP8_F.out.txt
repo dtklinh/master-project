@@ -1,0 +1,1457 @@
+PSIBLAST 2.2.25+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: All non-redundant GenBank CDS translations+PDB+SwissProt+PIR+PRF
+excluding environmental samples from WGS projects
+           32,814,121 sequences; 11,431,176,125 total letters
+
+Results from round 1
+
+
+Query= 1PP8_F
+
+Length=113
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+ref|XP_001306668.1|  39 kDa initiator binding protein [Trichomona...   220    1e-55
+pdb|1PP8|U  Chain U, Crystal Structure Of The T. Vaginalis Ibp39 ...   217    1e-54
+pdb|1PP7|U  Chain U, Crystal Structure Of The T. Vaginalis Initia...   216    2e-54
+ref|XP_001303060.1|  39 kDa initiator binding protein [Trichomona...   149    3e-34
+ref|XP_001580872.1|  39 kDa initiator binding protein [Trichomona...   130    2e-28
+ref|XP_001324877.1|  39 kDa initiator binding protein [Trichomona...   112    4e-23
+ref|XP_001302525.1|  hypothetical protein [Trichomonas vaginalis ...  77.8    1e-12
+ref|XP_001307691.1|  hypothetical protein [Trichomonas vaginalis ...  70.1    2e-10
+ref|XP_001322448.1|  hypothetical protein [Trichomonas vaginalis ...  60.1    3e-07
+ref|XP_001310393.1|  hypothetical protein [Trichomonas vaginalis ...  42.7    0.035
+ref|XP_001327615.1|  hypothetical protein [Trichomonas vaginalis ...  38.1    0.95 
+ref|XP_001581809.1|  hypothetical protein [Trichomonas vaginalis ...  38.1    0.99 
+ref|XP_001322899.1|  hypothetical protein [Trichomonas vaginalis ...  37.7    1.1  
+ref|XP_001583090.1|  hypothetical protein [Trichomonas vaginalis ...  36.2    3.8  
+pdb|3NOX|A  Chain A, Crystal Structure Of Human Dpp-Iv In Complex...  34.7    9.5  
+
+
+>ref|XP_001306668.1| 39 kDa initiator binding protein [Trichomonas vaginalis G3]
+ gb|AAK97660.1|AF409099_1 39 kDa initiator binding protein [Trichomonas vaginalis]
+ gb|EAX93738.1| 39 kDa initiator binding protein [Trichomonas vaginalis G3]
+Length=341
+
+ Score =  220 bits (561),  Expect = 1e-55, Method: Composition-based stats.
+ Identities = 113/113 (100%), Positives = 113/113 (100%), Gaps = 0/113 (0%)
+
+Query  1    DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS  60
+            DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS
+Sbjct  2    DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS  61
+
+Query  61   DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+            DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS
+Sbjct  62   DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  114
+
+
+>pdb|1PP8|U Chain U, Crystal Structure Of The T. Vaginalis Ibp39 Initiator 
+Binding Domain (ibd) Bound To The Alpha-scs Inr Element
+ pdb|1PP8|P Chain P, Crystal Structure Of The T. Vaginalis Ibp39 Initiator 
+Binding Domain (ibd) Bound To The Alpha-scs Inr Element
+ pdb|1PP8|F Chain F, Crystal Structure Of The T. Vaginalis Ibp39 Initiator 
+Binding Domain (ibd) Bound To The Alpha-scs Inr Element
+ pdb|1PP8|V Chain V, Crystal Structure Of The T. Vaginalis Ibp39 Initiator 
+Binding Domain (ibd) Bound To The Alpha-scs Inr Element
+ pdb|1PP8|M Chain M, Crystal Structure Of The T. Vaginalis Ibp39 Initiator 
+Binding Domain (ibd) Bound To The Alpha-scs Inr Element
+ pdb|1PP8|O Chain O, Crystal Structure Of The T. Vaginalis Ibp39 Initiator 
+Binding Domain (ibd) Bound To The Alpha-scs Inr Element
+Length=132
+
+ Score =  217 bits (552),  Expect = 1e-54, Method: Composition-based stats.
+ Identities = 113/113 (100%), Positives = 113/113 (100%), Gaps = 0/113 (0%)
+
+Query  1    DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS  60
+            DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS
+Sbjct  2    DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS  61
+
+Query  61   DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+            DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS
+Sbjct  62   DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  114
+
+
+>pdb|1PP7|U Chain U, Crystal Structure Of The T. Vaginalis Initiator Binding 
+Protein Bound To The Ferredoxin Inr
+Length=131
+
+ Score =  216 bits (551),  Expect = 2e-54, Method: Composition-based stats.
+ Identities = 113/113 (100%), Positives = 113/113 (100%), Gaps = 0/113 (0%)
+
+Query  1    DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS  60
+            DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS
+Sbjct  2    DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS  61
+
+Query  61   DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+            DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS
+Sbjct  62   DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  114
+
+
+>ref|XP_001303060.1| 39 kDa initiator binding protein [Trichomonas vaginalis G3]
+ gb|EAX90130.1| 39 kDa initiator binding protein, putative [Trichomonas vaginalis 
+G3]
+Length=327
+
+ Score =  149 bits (376),  Expect = 3e-34, Method: Composition-based stats.
+ Identities = 68/106 (65%), Positives = 88/106 (84%), Gaps = 0/106 (0%)
+
+Query  6    EASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFK  65
+            ++   ++LP +IV ALKRK+SRDP+SRFP+KLH+LLT+L + PQL++E GL WI+D+EF+
+Sbjct  8    DSPLLAKLPSDIVTALKRKASRDPSSRFPKKLHILLTFLETEPQLQDEFGLGWINDSEFR  67
+
+Query  66   MKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTR  111
+            M KK V+ +MGIKLNTLNVNLRDL F QLQHDK GWT+W R GF +
+Sbjct  68   MNKKIVSEIMGIKLNTLNVNLRDLEFVQLQHDKNGWTRWCRDGFNK  113
+
+
+>ref|XP_001580872.1| 39 kDa initiator binding protein [Trichomonas vaginalis G3]
+ gb|EAY19886.1| 39 kDa initiator binding protein, putative [Trichomonas vaginalis 
+G3]
+Length=353
+
+ Score =  130 bits (326),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 62/101 (62%), Positives = 76/101 (76%), Gaps = 0/101 (0%)
+
+Query  13   LPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVA  72
+            LPP+I   +KRKSSRDP+SRF  KLH+LL +  S+P++ E IG  WISDT+F++ KK + 
+Sbjct  16   LPPDIHEMIKRKSSRDPSSRFANKLHILLKFAGSDPKMIEYIGAGWISDTQFRINKKRLG  75
+
+Query  73   LVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+             VM IKLNTLNVNLRDL F+QLQ DK GWT+W R  FT  S
+Sbjct  76   AVMEIKLNTLNVNLRDLGFQQLQQDKNGWTEWTREKFTITS  116
+
+
+>ref|XP_001324877.1| 39 kDa initiator binding protein [Trichomonas vaginalis G3]
+ gb|EAY12654.1| 39 kDa initiator binding protein, putative [Trichomonas vaginalis 
+G3]
+Length=326
+
+ Score =  112 bits (280),  Expect = 4e-23, Method: Composition-based stats.
+ Identities = 51/99 (52%), Positives = 69/99 (70%), Gaps = 0/99 (0%)
+
+Query  13   LPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVA  72
+            LP  I   LK +S++ PN+RF RKLH+LL+Y+ + P  E  +GL+WISD EFKM KK + 
+Sbjct  6    LPNYIQEILKARSTKSPNARFVRKLHVLLSYVDTKPDKENSVGLAWISDDEFKMHKKTLC  65
+
+Query  73   LVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTR  111
+             ++ +K+N+LNVNL+ L F Q + DK GWT W R GF R
+Sbjct  66   QLLDVKINSLNVNLKKLQFTQTETDKAGWTTWTRKGFNR  104
+
+
+>ref|XP_001302525.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAX89595.1| conserved hypothetical protein [Trichomonas vaginalis G3]
+Length=313
+
+ Score = 77.8 bits (190),  Expect = 1e-12, Method: Composition-based stats.
+ Identities = 39/101 (39%), Positives = 59/101 (59%), Gaps = 0/101 (0%)
+
+Query  13   LPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVA  72
+            +P EI   + ++S++  NS+FP KL  LL ++  N   +++ G SW+ D  F + K  ++
+Sbjct  4    IPEEIRNIILKRSNKSQNSKFPFKLKTLLDWVGENENRKKKCGCSWVDDRIFSLDKAKIS  63
+
+Query  73   LVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+             +M +KLNTLN NLRDL F Q    K G T W+     +NS
+Sbjct  64   EIMDLKLNTLNSNLRDLGFTQALPRKEGITFWQHPNVRKNS  104
+
+
+>ref|XP_001307691.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAX94761.1| conserved hypothetical protein [Trichomonas vaginalis G3]
+Length=328
+
+ Score = 70.1 bits (170),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 38/103 (37%), Positives = 62/103 (61%), Gaps = 3/103 (2%)
+
+Query  13   LPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDT--EFKMKKKN  70
+            +P E++  L+++S+R  +SRFP K+  LL ++  +       G  W+SD+  EF + K  
+Sbjct  16   IPDELINHLRKRSNRKEDSRFPYKVFALLKWVGYDQNRANLAGCGWVSDSQNEFYIHKPR  75
+
+Query  71   VALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+            +  V+ +KLNTLNVNL+ L FEQ +   G  + +K   F++NS
+Sbjct  76   LCEVLNVKLNTLNVNLKTLGFEQTR-KVGEHSYFKNDIFSKNS  117
+
+
+>ref|XP_001322448.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY10225.1| conserved hypothetical protein [Trichomonas vaginalis G3]
+Length=384
+
+ Score = 60.1 bits (144),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 33/105 (32%), Positives = 51/105 (49%), Gaps = 0/105 (0%)
+
+Query  9    FTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKK  68
+            F +++PPE++   + K     +  F  +L  LL + +++P     +G  W S  EF + K
+Sbjct  18   FRTQIPPELLDNQRTKGKAPVSQGFAYRLWHLLKWASNDPMRMNNLGARWTSPNEFALDK  77
+
+Query  69   KNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+               A V+  + NT+N  LR   F Q Q     +T WK  GFT  S
+Sbjct  78   SRYAEVIKSQPNTINFKLRSCKFNQSQPRTSTYTFWKCEGFTAQS  122
+
+
+>ref|XP_001310393.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAX97463.1| hypothetical protein TVAG_135160 [Trichomonas vaginalis G3]
+Length=261
+
+ Score = 42.7 bits (99),  Expect = 0.035, Method: Composition-based stats.
+ Identities = 20/54 (38%), Positives = 32/54 (60%), Gaps = 0/54 (0%)
+
+Query  24   KSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMGI  77
+            +   + N RFP KL+  L  + +NP++   +GL WI+DT FK+ K     ++GI
+Sbjct  138  QKKNNSNCRFPHKLYNGLVLVEANPEMYPLVGLKWITDTVFKVDKYIFGRLLGI  191
+
+
+>ref|XP_001327615.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY15392.1| hypothetical protein TVAG_224680 [Trichomonas vaginalis G3]
+Length=235
+
+ Score = 38.1 bits (87),  Expect = 0.95, Method: Composition-based stats.
+ Identities = 36/113 (32%), Positives = 53/113 (47%), Gaps = 17/113 (15%)
+
+Query  11   SRLPPEIVAALKRKSS----RDPNSR-FPRKLHMLLTYLASNPQLEEEIGLSWISDTEFK  65
+            S   P  V+  + KSS    R+  SR F  KL+  L    SNP   + IG++WI +T FK
+Sbjct  99   SEWSPRPVSLEEIKSSYFTRRNGTSRSFDVKLYNALCITKSNPAAYKFIGVAWIDETHFK  158
+
+Query  66   MKKKNVALVMGIKLNTLNV-----NLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+            + +K  +  +G K + + +      +    FEQ+   KG         FTRNS
+Sbjct  159  IDEKKFSQFLGTKSDYMTLFDQQGPISKYGFEQIF--KGA-----NPAFTRNS  204
+
+
+>ref|XP_001581809.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY20823.1| hypothetical protein TVAG_436470 [Trichomonas vaginalis G3]
+Length=336
+
+ Score = 38.1 bits (87),  Expect = 0.99, Method: Composition-based stats.
+ Identities = 30/88 (35%), Positives = 43/88 (49%), Gaps = 7/88 (7%)
+
+Query  17   IVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMG  76
+            I+   +RKS  + N RF  KL+  L  +   P L+E IG+ WIS    K++K   A ++G
+Sbjct  204  ILDFFQRKS--NINCRFIHKLYNALRIVQIYPMLKELIGIEWISPNILKVRKCCFARLLG  261
+
+Query  77   IK-----LNTLNVNLRDLAFEQLQHDKG  99
+            IK     L     N   L F +L  D+ 
+Sbjct  262  IKSIDGGLFHKQGNFPSLGFRELTMDEA  289
+
+
+>ref|XP_001322899.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY10676.1| hypothetical protein TVAG_157530 [Trichomonas vaginalis G3]
+Length=379
+
+ Score = 37.7 bits (86),  Expect = 1.1, Method: Composition-based stats.
+ Identities = 20/78 (26%), Positives = 39/78 (50%), Gaps = 2/78 (2%)
+
+Query  16  EIVAALKRKSSRDPNSRF--PRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVAL  73
+           +++  L +  S   ++R   P KL   + +  ++P+L E IG+ W+ D  F +     + 
+Sbjct  5   QLIDELDKTLSNKKSNRLSVPGKLLYAMKFTTAHPELREIIGIYWLDDYTFMVNNSIASK  64
+
+Query  74  VMGIKLNTLNVNLRDLAF  91
+            + IK +++N N  D  F
+Sbjct  65  HLDIKTSSMNKNFSDFGF  82
+
+
+>ref|XP_001583090.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY22104.1| hypothetical protein TVAG_457390 [Trichomonas vaginalis G3]
+Length=278
+
+ Score = 36.2 bits (82),  Expect = 3.8, Method: Composition-based stats.
+ Identities = 21/57 (37%), Positives = 30/57 (53%), Gaps = 3/57 (5%)
+
+Query  22   KRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMGIK  78
+            KR SS   NS+FP KL   L      P L   IG+ WI+D    + ++  A ++G+K
+Sbjct  156  KRNSS---NSKFPIKLFNALKITEHCPDLFPHIGVKWITDDVIWVDREAFACLIGVK  209
+
+
+>pdb|3NOX|A Chain A, Crystal Structure Of Human Dpp-Iv In Complex With Sa-(+)-(6- 
+(Aminomethyl)-5-(2,4-Dichlorophenyl)-7-Methylimidazo[1,2-A]pyrimidin- 
+2-Yl)(Morpholino)methanone
+ pdb|3NOX|B Chain B, Crystal Structure Of Human Dpp-Iv In Complex With Sa-(+)-(6- 
+(Aminomethyl)-5-(2,4-Dichlorophenyl)-7-Methylimidazo[1,2-A]pyrimidin- 
+2-Yl)(Morpholino)methanone
+ pdb|3SWW|A Chain A, Crystal Structure Of Human Dpp-Iv In Complex With Sa-(+)-3- 
+(Aminomethyl)-4-(2,4-Dichlorophenyl)-6-(2-Methoxyphenyl)- 
+2-Methyl- 5h-Pyrrolo[3,4-B]pyridin-7(6h)-One
+ pdb|3SWW|B Chain B, Crystal Structure Of Human Dpp-Iv In Complex With Sa-(+)-3- 
+(Aminomethyl)-4-(2,4-Dichlorophenyl)-6-(2-Methoxyphenyl)- 
+2-Methyl- 5h-Pyrrolo[3,4-B]pyridin-7(6h)-One
+ pdb|3SX4|A Chain A, Crystal Structure Of Human Dpp-Iv In Complex With Sa-(+)-3- 
+(Aminomethyl)-4-(2,4-Dichlorophenyl)-6-(2-Methoxyphenyl)- 
+2-Methyl- 5h-Pyrrolo[3,4-B]pyridin-7(6h)-One
+ pdb|3SX4|B Chain B, Crystal Structure Of Human Dpp-Iv In Complex With Sa-(+)-3- 
+(Aminomethyl)-4-(2,4-Dichlorophenyl)-6-(2-Methoxyphenyl)- 
+2-Methyl- 5h-Pyrrolo[3,4-B]pyridin-7(6h)-One
+ pdb|3Q0T|A Chain A, Crystal Structure Of Human Dpp-iv In Complex Withsa-(+)- 
+Methyl2-(3- (aminomethyl)-4-(2,4-dichlorophenyl)-2-methyl- 
+7-oxo-5h-pyrrolo[3,4- B]pyridin-6(7h)-yl)acetate
+ pdb|3Q0T|B Chain B, Crystal Structure Of Human Dpp-iv In Complex Withsa-(+)- 
+Methyl2-(3- (aminomethyl)-4-(2,4-dichlorophenyl)-2-methyl- 
+7-oxo-5h-pyrrolo[3,4- B]pyridin-6(7h)-yl)acetate
+Length=753
+
+ Score = 34.7 bits (78),  Expect = 9.5, Method: Composition-based stats.
+ Identities = 21/64 (33%), Positives = 33/64 (52%), Gaps = 1/64 (1%)
+
+Query  33  FPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMGIKLNTLNVNLRDLAFE  92
+           F RK + L  YL +  +L+    L WISD E+  K++N  LV   +    +V L +  F+
+Sbjct  2   FSRKTYTLTDYLKNTYRLKL-YSLRWISDHEYLYKQENNILVFNAEYGNSSVFLENSTFD  60
+
+Query  93  QLQH  96
+           +  H
+Sbjct  61  EFGH  64
+
+
+
+Lambda     K      H
+   0.315    0.131    0.382 
+
+Gapped
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+Effective search space used: 280743434368
+Results from round 2
+
+
+Query= 1PP8_F
+
+Length=113
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+ref|XP_001306668.1|  39 kDa initiator binding protein [Trichomona...   176    2e-42
+pdb|1PP8|U  Chain U, Crystal Structure Of The T. Vaginalis Ibp39 ...   174    6e-42
+pdb|1PP7|U  Chain U, Crystal Structure Of The T. Vaginalis Initia...   174    8e-42
+ref|XP_001303060.1|  39 kDa initiator binding protein [Trichomona...   164    8e-39
+ref|XP_001580872.1|  39 kDa initiator binding protein [Trichomona...   157    7e-37
+ref|XP_001322448.1|  hypothetical protein [Trichomonas vaginalis ...   157    8e-37
+ref|XP_001324877.1|  39 kDa initiator binding protein [Trichomona...   150    1e-34
+ref|XP_001307691.1|  hypothetical protein [Trichomonas vaginalis ...   150    1e-34
+ref|XP_001302525.1|  hypothetical protein [Trichomonas vaginalis ...   149    2e-34
+
+Sequences not found previously or not previously below threshold:
+
+ref|XP_001324097.1|  hypothetical protein [Trichomonas vaginalis ...  50.9    1e-04
+ref|XP_001581198.1|  hypothetical protein [Trichomonas vaginalis ...  49.7    3e-04
+ref|XP_001306623.1|  hypothetical protein [Trichomonas vaginalis ...  47.8    0.001
+ref|XP_001322899.1|  hypothetical protein [Trichomonas vaginalis ...  45.8    0.004
+ref|XP_001581809.1|  hypothetical protein [Trichomonas vaginalis ...  45.8    0.005
+ref|XP_001310393.1|  hypothetical protein [Trichomonas vaginalis ...  45.1    0.008
+ref|XP_001584109.1|  hypothetical protein [Trichomonas vaginalis ...  45.1    0.009
+ref|XP_001581458.1|  hypothetical protein [Trichomonas vaginalis ...  44.7    0.010
+ref|XP_001304584.1|  hypothetical protein [Trichomonas vaginalis ...  44.3    0.012
+ref|XP_001293270.1|  hypothetical protein [Trichomonas vaginalis ...  43.9    0.017
+ref|XP_001583090.1|  hypothetical protein [Trichomonas vaginalis ...  42.8    0.039
+ref|XP_001327615.1|  hypothetical protein [Trichomonas vaginalis ...  42.0    0.065
+ref|XP_001301445.1|  hypothetical protein [Trichomonas vaginalis ...  40.5    0.19 
+ref|XP_001584404.1|  hypothetical protein [Trichomonas vaginalis ...  40.1    0.27 
+ref|XP_001581884.1|  hypothetical protein [Trichomonas vaginalis ...  38.9    0.51 
+ref|XP_001320292.1|  hypothetical protein [Trichomonas vaginalis ...  38.9    0.59 
+ref|XP_001308233.1|  hypothetical protein [Trichomonas vaginalis ...  38.5    0.62 
+ref|XP_001308191.1|  hypothetical protein [Trichomonas vaginalis ...  37.0    2.2  
+ref|XP_001329139.1|  hypothetical protein [Trichomonas vaginalis ...  37.0    2.2  
+gb|EMS23179.1|  transcription factor [Rhodosporidium toruloides N...  36.2    3.2  
+
+
+>ref|XP_001306668.1| 39 kDa initiator binding protein [Trichomonas vaginalis G3]
+ gb|AAK97660.1|AF409099_1 39 kDa initiator binding protein [Trichomonas vaginalis]
+ gb|EAX93738.1| 39 kDa initiator binding protein [Trichomonas vaginalis G3]
+Length=341
+
+ Score =  176 bits (446),  Expect = 2e-42, Method: Composition-based stats.
+ Identities = 113/113 (100%), Positives = 113/113 (100%), Gaps = 0/113 (0%)
+
+Query  1    DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS  60
+            DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS
+Sbjct  2    DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS  61
+
+Query  61   DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+            DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS
+Sbjct  62   DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  114
+
+
+>pdb|1PP8|U Chain U, Crystal Structure Of The T. Vaginalis Ibp39 Initiator 
+Binding Domain (ibd) Bound To The Alpha-scs Inr Element
+ pdb|1PP8|P Chain P, Crystal Structure Of The T. Vaginalis Ibp39 Initiator 
+Binding Domain (ibd) Bound To The Alpha-scs Inr Element
+ pdb|1PP8|F Chain F, Crystal Structure Of The T. Vaginalis Ibp39 Initiator 
+Binding Domain (ibd) Bound To The Alpha-scs Inr Element
+ pdb|1PP8|V Chain V, Crystal Structure Of The T. Vaginalis Ibp39 Initiator 
+Binding Domain (ibd) Bound To The Alpha-scs Inr Element
+ pdb|1PP8|M Chain M, Crystal Structure Of The T. Vaginalis Ibp39 Initiator 
+Binding Domain (ibd) Bound To The Alpha-scs Inr Element
+ pdb|1PP8|O Chain O, Crystal Structure Of The T. Vaginalis Ibp39 Initiator 
+Binding Domain (ibd) Bound To The Alpha-scs Inr Element
+Length=132
+
+ Score =  174 bits (442),  Expect = 6e-42, Method: Composition-based stats.
+ Identities = 113/113 (100%), Positives = 113/113 (100%), Gaps = 0/113 (0%)
+
+Query  1    DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS  60
+            DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS
+Sbjct  2    DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS  61
+
+Query  61   DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+            DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS
+Sbjct  62   DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  114
+
+
+>pdb|1PP7|U Chain U, Crystal Structure Of The T. Vaginalis Initiator Binding 
+Protein Bound To The Ferredoxin Inr
+Length=131
+
+ Score =  174 bits (441),  Expect = 8e-42, Method: Composition-based stats.
+ Identities = 113/113 (100%), Positives = 113/113 (100%), Gaps = 0/113 (0%)
+
+Query  1    DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS  60
+            DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS
+Sbjct  2    DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS  61
+
+Query  61   DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+            DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS
+Sbjct  62   DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  114
+
+
+>ref|XP_001303060.1| 39 kDa initiator binding protein [Trichomonas vaginalis G3]
+ gb|EAX90130.1| 39 kDa initiator binding protein, putative [Trichomonas vaginalis 
+G3]
+Length=327
+
+ Score =  164 bits (415),  Expect = 8e-39, Method: Composition-based stats.
+ Identities = 68/106 (65%), Positives = 88/106 (84%), Gaps = 0/106 (0%)
+
+Query  6    EASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFK  65
+            ++   ++LP +IV ALKRK+SRDP+SRFP+KLH+LLT+L + PQL++E GL WI+D+EF+
+Sbjct  8    DSPLLAKLPSDIVTALKRKASRDPSSRFPKKLHILLTFLETEPQLQDEFGLGWINDSEFR  67
+
+Query  66   MKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTR  111
+            M KK V+ +MGIKLNTLNVNLRDL F QLQHDK GWT+W R GF +
+Sbjct  68   MNKKIVSEIMGIKLNTLNVNLRDLEFVQLQHDKNGWTRWCRDGFNK  113
+
+
+>ref|XP_001580872.1| 39 kDa initiator binding protein [Trichomonas vaginalis G3]
+ gb|EAY19886.1| 39 kDa initiator binding protein, putative [Trichomonas vaginalis 
+G3]
+Length=353
+
+ Score =  157 bits (398),  Expect = 7e-37, Method: Composition-based stats.
+ Identities = 62/101 (62%), Positives = 76/101 (76%), Gaps = 0/101 (0%)
+
+Query  13   LPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVA  72
+            LPP+I   +KRKSSRDP+SRF  KLH+LL +  S+P++ E IG  WISDT+F++ KK + 
+Sbjct  16   LPPDIHEMIKRKSSRDPSSRFANKLHILLKFAGSDPKMIEYIGAGWISDTQFRINKKRLG  75
+
+Query  73   LVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+             VM IKLNTLNVNLRDL F+QLQ DK GWT+W R  FT  S
+Sbjct  76   AVMEIKLNTLNVNLRDLGFQQLQQDKNGWTEWTREKFTITS  116
+
+
+>ref|XP_001322448.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY10225.1| conserved hypothetical protein [Trichomonas vaginalis G3]
+Length=384
+
+ Score =  157 bits (398),  Expect = 8e-37, Method: Composition-based stats.
+ Identities = 33/105 (32%), Positives = 51/105 (49%), Gaps = 0/105 (0%)
+
+Query  9    FTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKK  68
+            F +++PPE++   + K     +  F  +L  LL + +++P     +G  W S  EF + K
+Sbjct  18   FRTQIPPELLDNQRTKGKAPVSQGFAYRLWHLLKWASNDPMRMNNLGARWTSPNEFALDK  77
+
+Query  69   KNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+               A V+  + NT+N  LR   F Q Q     +T WK  GFT  S
+Sbjct  78   SRYAEVIKSQPNTINFKLRSCKFNQSQPRTSTYTFWKCEGFTAQS  122
+
+
+>ref|XP_001324877.1| 39 kDa initiator binding protein [Trichomonas vaginalis G3]
+ gb|EAY12654.1| 39 kDa initiator binding protein, putative [Trichomonas vaginalis 
+G3]
+Length=326
+
+ Score =  150 bits (379),  Expect = 1e-34, Method: Composition-based stats.
+ Identities = 51/99 (52%), Positives = 69/99 (70%), Gaps = 0/99 (0%)
+
+Query  13   LPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVA  72
+            LP  I   LK +S++ PN+RF RKLH+LL+Y+ + P  E  +GL+WISD EFKM KK + 
+Sbjct  6    LPNYIQEILKARSTKSPNARFVRKLHVLLSYVDTKPDKENSVGLAWISDDEFKMHKKTLC  65
+
+Query  73   LVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTR  111
+             ++ +K+N+LNVNL+ L F Q + DK GWT W R GF R
+Sbjct  66   QLLDVKINSLNVNLKKLQFTQTETDKAGWTTWTRKGFNR  104
+
+
+>ref|XP_001307691.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAX94761.1| conserved hypothetical protein [Trichomonas vaginalis G3]
+Length=328
+
+ Score =  150 bits (379),  Expect = 1e-34, Method: Composition-based stats.
+ Identities = 38/108 (36%), Positives = 61/108 (57%), Gaps = 3/108 (2%)
+
+Query  8    SFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISD--TEFK  65
+                 +P E++  L+++S+R  +SRFP K+  LL ++  +       G  W+SD   EF 
+Sbjct  11   PGLDGIPDELINHLRKRSNRKEDSRFPYKVFALLKWVGYDQNRANLAGCGWVSDSQNEFY  70
+
+Query  66   MKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+            + K  +  V+ +KLNTLNVNL+ L FEQ +   G  + +K   F++NS
+Sbjct  71   IHKPRLCEVLNVKLNTLNVNLKTLGFEQTR-KVGEHSYFKNDIFSKNS  117
+
+
+>ref|XP_001302525.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAX89595.1| conserved hypothetical protein [Trichomonas vaginalis G3]
+Length=313
+
+ Score =  149 bits (377),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 39/102 (39%), Positives = 59/102 (58%), Gaps = 0/102 (0%)
+
+Query  12   RLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNV  71
+             +P EI   + ++S++  NS+FP KL  LL ++  N   +++ G SW+ D  F + K  +
+Sbjct  3    EIPEEIRNIILKRSNKSQNSKFPFKLKTLLDWVGENENRKKKCGCSWVDDRIFSLDKAKI  62
+
+Query  72   ALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+            + +M +KLNTLN NLRDL F Q    K G T W+     +NS
+Sbjct  63   SEIMDLKLNTLNSNLRDLGFTQALPRKEGITFWQHPNVRKNS  104
+
+
+>ref|XP_001324097.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY11874.1| hypothetical protein TVAG_362540 [Trichomonas vaginalis G3]
+Length=348
+
+ Score = 50.9 bits (120),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 18/82 (22%), Positives = 38/82 (47%), Gaps = 1/82 (1%)
+
+Query  15  PEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISD-TEFKMKKKNVAL  73
+            +++  L    +      FP +L + L ++  +P   +++G  W  D  +F +    +  
+Sbjct  8   DDVLQELIDSLNGTRQMNFPERLFLCLEFIDRHPDYFDQVGAIWSDDGNDFVVYSDKLCH  67
+
+Query  74  VMGIKLNTLNVNLRDLAFEQLQ  95
+           ++ IK N+LN N     F++L 
+Sbjct  68  ILRIKRNSLNKNFNMYGFKKLL  89
+
+
+>ref|XP_001581198.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY20212.1| hypothetical protein TVAG_021590 [Trichomonas vaginalis G3]
+Length=488
+
+ Score = 49.7 bits (117),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 23/85 (28%), Positives = 40/85 (48%), Gaps = 1/85 (1%)
+
+Query  15  PEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTE-FKMKKKNVAL  73
+           PE +  LK         +F  K+   L +  ++P+  E+IG  W  D E F +    +  
+Sbjct  5   PESIEELKSIVCAASRLKFVTKVLYCLRFTQNHPEYNEQIGCCWYLDGESFLVNSGALGA  64
+
+Query  74  VMGIKLNTLNVNLRDLAFEQLQHDK  98
+            + +K N++N N R+  F+  + DK
+Sbjct  65  FLDLKSNSINTNFREHGFQVQKGDK  89
+
+
+>ref|XP_001306623.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAX93693.1| hypothetical protein TVAG_473620 [Trichomonas vaginalis G3]
+Length=437
+
+ Score = 47.8 bits (112),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 19/75 (26%), Positives = 33/75 (44%), Gaps = 0/75 (0%)
+
+Query  18   VAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMGI  77
+            +  L+++ + +    F  K+ M+L Y  ++    +  GL W     F      +A     
+Sbjct  59   LEELRKRITSNKKLLFKHKIWMMLNYSRTHQADGKHFGLYWHDSMNFMCNTGLLAEFCKK  118
+
+Query  78   KLNTLNVNLRDLAFE  92
+            K NT+N NLR+  F 
+Sbjct  119  KKNTINRNLRNDGFN  133
+
+
+>ref|XP_001322899.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY10676.1| hypothetical protein TVAG_157530 [Trichomonas vaginalis G3]
+Length=379
+
+ Score = 45.8 bits (107),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 20/78 (26%), Positives = 39/78 (50%), Gaps = 2/78 (2%)
+
+Query  16  EIVAALKRKSSRDPNSRF--PRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVAL  73
+           +++  L +  S   ++R   P KL   + +  ++P+L E IG+ W+ D  F +     + 
+Sbjct  5   QLIDELDKTLSNKKSNRLSVPGKLLYAMKFTTAHPELREIIGIYWLDDYTFMVNNSIASK  64
+
+Query  74  VMGIKLNTLNVNLRDLAF  91
+            + IK +++N N  D  F
+Sbjct  65  HLDIKTSSMNKNFSDFGF  82
+
+
+>ref|XP_001581809.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY20823.1| hypothetical protein TVAG_436470 [Trichomonas vaginalis G3]
+Length=336
+
+ Score = 45.8 bits (107),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 30/88 (35%), Positives = 43/88 (49%), Gaps = 7/88 (7%)
+
+Query  17   IVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMG  76
+            I+   +RKS+   N RF  KL+  L  +   P L+E IG+ WIS    K++K   A ++G
+Sbjct  204  ILDFFQRKSN--INCRFIHKLYNALRIVQIYPMLKELIGIEWISPNILKVRKCCFARLLG  261
+
+Query  77   IK-----LNTLNVNLRDLAFEQLQHDKG  99
+            IK     L     N   L F +L  D+ 
+Sbjct  262  IKSIDGGLFHKQGNFPSLGFRELTMDEA  289
+
+
+>ref|XP_001310393.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAX97463.1| hypothetical protein TVAG_135160 [Trichomonas vaginalis G3]
+Length=261
+
+ Score = 45.1 bits (105),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 20/54 (38%), Positives = 32/54 (60%), Gaps = 0/54 (0%)
+
+Query  24   KSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMGI  77
+            +   + N RFP KL+  L  + +NP++   +GL WI+DT FK+ K     ++GI
+Sbjct  138  QKKNNSNCRFPHKLYNGLVLVEANPEMYPLVGLKWITDTVFKVDKYIFGRLLGI  191
+
+
+>ref|XP_001584109.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY23123.1| hypothetical protein TVAG_183600 [Trichomonas vaginalis G3]
+Length=228
+
+ Score = 45.1 bits (105),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 16/62 (26%), Positives = 30/62 (49%), Gaps = 2/62 (3%)
+
+Query  17   IVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMG  76
+            +    +R++S    S+FP KL   L      P+    IG+ W+ D    + ++  A ++G
+Sbjct  99   VQNFFRRRNSS--ASKFPYKLFNALRITEVQPEYFPHIGVKWVDDNIIWVNREAFASLIG  156
+
+Query  77   IK  78
+            +K
+Sbjct  157  VK  158
+
+
+>ref|XP_001581458.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY20472.1| hypothetical protein TVAG_110850 [Trichomonas vaginalis G3]
+Length=438
+
+ Score = 44.7 bits (104),  Expect = 0.010, Method: Composition-based stats.
+ Identities = 17/76 (23%), Positives = 33/76 (44%), Gaps = 4/76 (5%)
+
+Query  21  LKRKSSRDPNSR---FPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKM-KKKNVALVMG  76
+           LK   +   N R   F  ++  +L +  S+P+  ++ G  W  +  + +     +   + 
+Sbjct  22  LKEFLNSSQNERRMKFAVRVFYVLQWTTSHPEAVQDTGAIWCKNGYYFICNSTLIGEFLN  81
+
+Query  77  IKLNTLNVNLRDLAFE  92
+           I+ NT+N N R   F 
+Sbjct  82  IRPNTINTNFRSHLFT  97
+
+
+>ref|XP_001304584.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAX91654.1| hypothetical protein TVAG_323700 [Trichomonas vaginalis G3]
+Length=318
+
+ Score = 44.3 bits (103),  Expect = 0.012, Method: Composition-based stats.
+ Identities = 16/62 (26%), Positives = 34/62 (55%), Gaps = 2/62 (3%)
+
+Query  17   IVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMG  76
+            +    ++K++   NSRF  KL+  L    S+    + +G+ W++D   +++K   A ++G
+Sbjct  184  VQNFFQKKNNA--NSRFSHKLYNALKIAESDRLYADLLGVEWLNDRVLRVEKNRFARLLG  241
+
+Query  77   IK  78
+            I+
+Sbjct  242  IR  243
+
+
+>ref|XP_001293270.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAX80340.1| hypothetical protein TVAG_085870 [Trichomonas vaginalis G3]
+Length=284
+
+ Score = 43.9 bits (102),  Expect = 0.017, Method: Composition-based stats.
+ Identities = 18/90 (20%), Positives = 39/90 (44%), Gaps = 1/90 (1%)
+
+Query  13   LPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVA  72
+            +PP + + L  K+       F +K+ + L ++  +P    +IG+         +     +
+Sbjct  7    IPPGLASRLLSKTKGPNKLDFGQKVQLSLDWVGEHPAGRLKIGIFRNDQGNIVVNASVFS  66
+
+Query  73   LVMGIKLNTLNVNLRDLAFEQLQH-DKGGW  101
+             V+ +K  +L  N     F +++  +KG W
+Sbjct  67   AVIDVKPRSLQKNFSIFGFHKIEVLEKGKW  96
+
+
+>ref|XP_001583090.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY22104.1| hypothetical protein TVAG_457390 [Trichomonas vaginalis G3]
+Length=278
+
+ Score = 42.8 bits (99),  Expect = 0.039, Method: Composition-based stats.
+ Identities = 18/59 (31%), Positives = 31/59 (53%), Gaps = 2/59 (3%)
+
+Query  20   ALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMGIK  78
+              ++++S   NS+FP KL   L      P L   IG+ WI+D    + ++  A ++G+K
+Sbjct  153  HFRKRNSS--NSKFPIKLFNALKITEHCPDLFPHIGVKWITDDVIWVDREAFACLIGVK  209
+
+
+>ref|XP_001327615.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY15392.1| hypothetical protein TVAG_224680 [Trichomonas vaginalis G3]
+Length=235
+
+ Score = 42.0 bits (97),  Expect = 0.065, Method: Composition-based stats.
+ Identities = 28/104 (27%), Positives = 46/104 (45%), Gaps = 13/104 (12%)
+
+Query  15   PEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALV  74
+             EI ++   + +    S F  KL+  L    SNP   + IG++WI +T FK+ +K  +  
+Sbjct  109  EEIKSSYFTRRNGTSRS-FDVKLYNALCITKSNPAAYKFIGVAWIDETHFKIDEKKFSQF  167
+
+Query  75   MGIKLNTLNV-----NLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+            +G K + + +      +    FEQ+              FTRNS
+Sbjct  168  LGTKSDYMTLFDQQGPISKYGFEQIFKGAN-------PAFTRNS  204
+
+
+>ref|XP_001301445.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAX88515.1| hypothetical protein TVAG_428240 [Trichomonas vaginalis G3]
+Length=455
+
+ Score = 40.5 bits (93),  Expect = 0.19, Method: Composition-based stats.
+ Identities = 21/84 (25%), Positives = 37/84 (45%), Gaps = 6/84 (7%)
+
+Query  15  PEIVAALKRKSSRDPNS-----RFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKM-KK  68
+            EI      KS    +      +F  K+  LL Y   +P+  + IG+ W  D +  +   
+Sbjct  5   DEIDDIALMKSKVCNDEQIKRIKFTVKIIALLRYTLKHPEHIKTIGIGWFPDGKTIVSNA  64
+
+Query  69  KNVALVMGIKLNTLNVNLRDLAFE  92
+           K +   +G++ N++N N R   F+
+Sbjct  65  KILGNFLGLRSNSINTNFRAHNFQ  88
+
+
+>ref|XP_001584404.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY23418.1| hypothetical protein TVAG_070820 [Trichomonas vaginalis G3]
+Length=303
+
+ Score = 40.1 bits (92),  Expect = 0.27, Method: Composition-based stats.
+ Identities = 16/63 (26%), Positives = 33/63 (53%), Gaps = 1/63 (1%)
+
+Query  16   EIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVM  75
+            E+V    ++ +   + RF  KL+  L   A N +    +G+ W+++   ++ K+  A ++
+Sbjct  170  ELVTDFFQRKNHA-SCRFSYKLYNALKLSAINDKFAFLVGVRWLNEQIIRVDKRAFARLL  228
+
+Query  76   GIK  78
+            GIK
+Sbjct  229  GIK  231
+
+
+>ref|XP_001581884.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY20898.1| hypothetical protein TVAG_437240 [Trichomonas vaginalis G3]
+Length=300
+
+ Score = 38.9 bits (89),  Expect = 0.51, Method: Composition-based stats.
+ Identities = 15/55 (28%), Positives = 29/55 (53%), Gaps = 0/55 (0%)
+
+Query  24   KSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMGIK  78
+            ++   PNSRF  KL+  L  +  +P      G+ W+++T  K+     + V+G++
+Sbjct  173  RADPSPNSRFSHKLYNALQIVKKDPFYFLLFGVEWMNETVLKVNGPLFSCVLGLQ  227
+
+
+>ref|XP_001320292.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY08069.1| hypothetical protein TVAG_463490 [Trichomonas vaginalis G3]
+Length=277
+
+ Score = 38.9 bits (89),  Expect = 0.59, Method: Composition-based stats.
+ Identities = 15/62 (25%), Positives = 31/62 (50%), Gaps = 2/62 (3%)
+
+Query  17   IVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMG  76
+            + +  +R++S    S+FP KL   L      P+    IG+ W+ D    + ++  A ++G
+Sbjct  148  VQSFFRRRNSS--ASKFPYKLFNALRITELYPEYFPHIGVKWVDDNIIWVSREPFARLIG  205
+
+Query  77   IK  78
+            ++
+Sbjct  206  VR  207
+
+
+>ref|XP_001308233.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAX95303.1| hypothetical protein TVAG_270940 [Trichomonas vaginalis G3]
+Length=304
+
+ Score = 38.5 bits (88),  Expect = 0.62, Method: Composition-based stats.
+ Identities = 15/62 (25%), Positives = 31/62 (50%), Gaps = 2/62 (3%)
+
+Query  17   IVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMG  76
+            +    ++K++   + RF  KL+  L     + + +  +G+ WI+D    + K   A ++G
+Sbjct  169  VAEFFQKKNNA--SCRFSYKLYNALKLSTLDSKFDSLVGVKWINDYVLHVDKIKFAHLLG  226
+
+Query  77   IK  78
+            IK
+Sbjct  227  IK  228
+
+
+>ref|XP_001308191.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAX95261.1| hypothetical protein TVAG_149810 [Trichomonas vaginalis G3]
+Length=264
+
+ Score = 37.0 bits (84),  Expect = 2.2, Method: Composition-based stats.
+ Identities = 18/56 (33%), Positives = 30/56 (54%), Gaps = 2/56 (3%)
+
+Query  22   KRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMGI  77
+            KR+SS+     F  KL+  L     +P+L    G  W++DT FK+ +   A ++G+
+Sbjct  139  KRRSSKKMP--FHYKLYNALQITTQHPELVPVFGAQWVTDTVFKIYRLPFANLLGV  192
+
+
+>ref|XP_001329139.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY16916.1| hypothetical protein TVAG_150670 [Trichomonas vaginalis G3]
+Length=241
+
+ Score = 37.0 bits (84),  Expect = 2.2, Method: Composition-based stats.
+ Identities = 10/77 (13%), Positives = 32/77 (42%), Gaps = 5/77 (6%)
+
+Query  24   KSSRDPNSRFPRKLHMLLTY-----LASNPQLEEEIGLSWISDTEFKMKKKNVALVMGIK  78
+            +  R+ + +    L  ++ +       ++ +     G+ W+ D+   +    +  + G+ 
+Sbjct  32   RHKRNVSVKLFTDLLEVIKFFCVKNTEADEKRYLVCGICWLDDSNIAINTNQLKALFGVS  91
+
+Query  79   LNTLNVNLRDLAFEQLQ  95
+             + +N + + + FE  Q
+Sbjct  92   KSMINNSFKSMGFENEQ  108
+
+
+>gb|EMS23179.1| transcription factor [Rhodosporidium toruloides NP11]
+Length=460
+
+ Score = 36.2 bits (82),  Expect = 3.2, Method: Composition-based stats.
+ Identities = 19/69 (28%), Positives = 34/69 (50%), Gaps = 10/69 (14%)
+
+Query  27  RDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMGIKL----NTL  82
+           R P S+F +KLH LL          +  GL W++D  F++  K+   +  +      N+L
+Sbjct  10  RAPRSQFLQKLHGLL------EHPLDSTGLRWVTDDSFEVSSKDAVAIHALSPAFEFNSL  63
+
+Query  83  NVNLRDLAF  91
+           +  +R L++
+Sbjct  64  SSFIRQLSY  72
+
+
+
+Lambda     K      H
+   0.303    0.132    0.350 
+
+Gapped
+Lambda     K      H
+   0.267   0.0409    0.140 
+
+Effective search space used: 280743434368
+Results from round 3
+
+
+Query= 1PP8_F
+
+Length=113
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+ref|XP_001306668.1|  39 kDa initiator binding protein [Trichomona...   160    1e-37
+pdb|1PP8|U  Chain U, Crystal Structure Of The T. Vaginalis Ibp39 ...   157    8e-37
+pdb|1PP7|U  Chain U, Crystal Structure Of The T. Vaginalis Initia...   157    9e-37
+ref|XP_001303060.1|  39 kDa initiator binding protein [Trichomona...   149    3e-34
+ref|XP_001580872.1|  39 kDa initiator binding protein [Trichomona...   144    1e-32
+ref|XP_001322448.1|  hypothetical protein [Trichomonas vaginalis ...   139    2e-31
+ref|XP_001324877.1|  39 kDa initiator binding protein [Trichomona...   137    2e-30
+ref|XP_001307691.1|  hypothetical protein [Trichomonas vaginalis ...   136    2e-30
+ref|XP_001302525.1|  hypothetical protein [Trichomonas vaginalis ...   133    2e-29
+ref|XP_001581198.1|  hypothetical protein [Trichomonas vaginalis ...   101    1e-19
+ref|XP_001324097.1|  hypothetical protein [Trichomonas vaginalis ...  98.6    6e-19
+ref|XP_001306623.1|  hypothetical protein [Trichomonas vaginalis ...  95.9    4e-18
+
+Sequences not found previously or not previously below threshold:
+
+ref|XP_001581458.1|  hypothetical protein [Trichomonas vaginalis ...  63.1    3e-08
+ref|XP_001322899.1|  hypothetical protein [Trichomonas vaginalis ...  58.9    5e-07
+ref|XP_001301445.1|  hypothetical protein [Trichomonas vaginalis ...  56.2    3e-06
+ref|XP_001293270.1|  hypothetical protein [Trichomonas vaginalis ...  55.4    6e-06
+ref|XP_001584109.1|  hypothetical protein [Trichomonas vaginalis ...  48.5    7e-04
+ref|XP_001310393.1|  hypothetical protein [Trichomonas vaginalis ...  45.0    0.008
+ref|XP_001320292.1|  hypothetical protein [Trichomonas vaginalis ...  43.5    0.021
+ref|XP_001327615.1|  hypothetical protein [Trichomonas vaginalis ...  43.1    0.033
+ref|XP_001583090.1|  hypothetical protein [Trichomonas vaginalis ...  42.7    0.036
+ref|XP_001581809.1|  hypothetical protein [Trichomonas vaginalis ...  42.3    0.055
+ref|XP_001319403.1|  hypothetical protein [Trichomonas vaginalis ...  42.0    0.067
+ref|XP_001329139.1|  hypothetical protein [Trichomonas vaginalis ...  41.6    0.083
+ref|XP_001304584.1|  hypothetical protein [Trichomonas vaginalis ...  41.6    0.090
+gb|EJK72245.1|  hypothetical protein THAOC_06237 [Thalassiosira o...  38.9    0.49 
+ref|YP_780522.1|  hypothetical protein RPE_1593 [Rhodopseudomonas...  38.1    0.88 
+ref|XP_001315638.1|  hypothetical protein [Trichomonas vaginalis ...  37.7    1.3  
+ref|XP_001581884.1|  hypothetical protein [Trichomonas vaginalis ...  37.3    1.4  
+gb|EJK44083.1|  hypothetical protein THAOC_37408 [Thalassiosira o...  37.3    1.5  
+ref|XP_001308191.1|  hypothetical protein [Trichomonas vaginalis ...  37.3    1.8  
+ref|XP_001308233.1|  hypothetical protein [Trichomonas vaginalis ...  35.8    4.3  
+gb|EDM43318.1|  DNA-directed RNA polymerase subunit beta [unident...  35.8    4.6  
+ref|XP_001323180.1|  hypothetical protein [Trichomonas vaginalis ...  35.0    9.2  
+
+
+>ref|XP_001306668.1| 39 kDa initiator binding protein [Trichomonas vaginalis G3]
+ gb|AAK97660.1|AF409099_1 39 kDa initiator binding protein [Trichomonas vaginalis]
+ gb|EAX93738.1| 39 kDa initiator binding protein [Trichomonas vaginalis G3]
+Length=341
+
+ Score =  160 bits (405),  Expect = 1e-37, Method: Composition-based stats.
+ Identities = 113/113 (100%), Positives = 113/113 (100%), Gaps = 0/113 (0%)
+
+Query  1    DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS  60
+            DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS
+Sbjct  2    DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS  61
+
+Query  61   DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+            DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS
+Sbjct  62   DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  114
+
+
+>pdb|1PP8|U Chain U, Crystal Structure Of The T. Vaginalis Ibp39 Initiator 
+Binding Domain (ibd) Bound To The Alpha-scs Inr Element
+ pdb|1PP8|P Chain P, Crystal Structure Of The T. Vaginalis Ibp39 Initiator 
+Binding Domain (ibd) Bound To The Alpha-scs Inr Element
+ pdb|1PP8|F Chain F, Crystal Structure Of The T. Vaginalis Ibp39 Initiator 
+Binding Domain (ibd) Bound To The Alpha-scs Inr Element
+ pdb|1PP8|V Chain V, Crystal Structure Of The T. Vaginalis Ibp39 Initiator 
+Binding Domain (ibd) Bound To The Alpha-scs Inr Element
+ pdb|1PP8|M Chain M, Crystal Structure Of The T. Vaginalis Ibp39 Initiator 
+Binding Domain (ibd) Bound To The Alpha-scs Inr Element
+ pdb|1PP8|O Chain O, Crystal Structure Of The T. Vaginalis Ibp39 Initiator 
+Binding Domain (ibd) Bound To The Alpha-scs Inr Element
+Length=132
+
+ Score =  157 bits (398),  Expect = 8e-37, Method: Composition-based stats.
+ Identities = 113/113 (100%), Positives = 113/113 (100%), Gaps = 0/113 (0%)
+
+Query  1    DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS  60
+            DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS
+Sbjct  2    DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS  61
+
+Query  61   DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+            DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS
+Sbjct  62   DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  114
+
+
+>pdb|1PP7|U Chain U, Crystal Structure Of The T. Vaginalis Initiator Binding 
+Protein Bound To The Ferredoxin Inr
+Length=131
+
+ Score =  157 bits (398),  Expect = 9e-37, Method: Composition-based stats.
+ Identities = 113/113 (100%), Positives = 113/113 (100%), Gaps = 0/113 (0%)
+
+Query  1    DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS  60
+            DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS
+Sbjct  2    DSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWIS  61
+
+Query  61   DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+            DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS
+Sbjct  62   DTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  114
+
+
+>ref|XP_001303060.1| 39 kDa initiator binding protein [Trichomonas vaginalis G3]
+ gb|EAX90130.1| 39 kDa initiator binding protein, putative [Trichomonas vaginalis 
+G3]
+Length=327
+
+ Score =  149 bits (375),  Expect = 3e-34, Method: Composition-based stats.
+ Identities = 68/106 (65%), Positives = 88/106 (84%), Gaps = 0/106 (0%)
+
+Query  6    EASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFK  65
+            ++   ++LP +IV ALKRK+SRDP+SRFP+KLH+LLT+L + PQL++E GL WI+D+EF+
+Sbjct  8    DSPLLAKLPSDIVTALKRKASRDPSSRFPKKLHILLTFLETEPQLQDEFGLGWINDSEFR  67
+
+Query  66   MKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTR  111
+            M KK V+ +MGIKLNTLNVNLRDL F QLQHDK GWT+W R GF +
+Sbjct  68   MNKKIVSEIMGIKLNTLNVNLRDLEFVQLQHDKNGWTRWCRDGFNK  113
+
+
+>ref|XP_001580872.1| 39 kDa initiator binding protein [Trichomonas vaginalis G3]
+ gb|EAY19886.1| 39 kDa initiator binding protein, putative [Trichomonas vaginalis 
+G3]
+Length=353
+
+ Score =  144 bits (362),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 62/101 (62%), Positives = 76/101 (76%), Gaps = 0/101 (0%)
+
+Query  13   LPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVA  72
+            LPP+I   +KRKSSRDP+SRF  KLH+LL +  S+P++ E IG  WISDT+F++ KK + 
+Sbjct  16   LPPDIHEMIKRKSSRDPSSRFANKLHILLKFAGSDPKMIEYIGAGWISDTQFRINKKRLG  75
+
+Query  73   LVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+             VM IKLNTLNVNLRDL F+QLQ DK GWT+W R  FT  S
+Sbjct  76   AVMEIKLNTLNVNLRDLGFQQLQQDKNGWTEWTREKFTITS  116
+
+
+>ref|XP_001322448.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY10225.1| conserved hypothetical protein [Trichomonas vaginalis G3]
+Length=384
+
+ Score =  139 bits (351),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 33/105 (32%), Positives = 51/105 (49%), Gaps = 0/105 (0%)
+
+Query  9    FTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKK  68
+            F +++PPE++   + K     +  F  +L  LL + +++P     +G  W S  EF + K
+Sbjct  18   FRTQIPPELLDNQRTKGKAPVSQGFAYRLWHLLKWASNDPMRMNNLGARWTSPNEFALDK  77
+
+Query  69   KNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+               A V+  + NT+N  LR   F Q Q     +T WK  GFT  S
+Sbjct  78   SRYAEVIKSQPNTINFKLRSCKFNQSQPRTSTYTFWKCEGFTAQS  122
+
+
+>ref|XP_001324877.1| 39 kDa initiator binding protein [Trichomonas vaginalis G3]
+ gb|EAY12654.1| 39 kDa initiator binding protein, putative [Trichomonas vaginalis 
+G3]
+Length=326
+
+ Score =  137 bits (344),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 51/99 (52%), Positives = 69/99 (70%), Gaps = 0/99 (0%)
+
+Query  13   LPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVA  72
+            LP  I   LK +S++ PN+RF RKLH+LL+Y+ + P  E  +GL+WISD EFKM KK + 
+Sbjct  6    LPNYIQEILKARSTKSPNARFVRKLHVLLSYVDTKPDKENSVGLAWISDDEFKMHKKTLC  65
+
+Query  73   LVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTR  111
+             ++ +K+N+LNVNL+ L F Q + DK GWT W R GF R
+Sbjct  66   QLLDVKINSLNVNLKKLQFTQTETDKAGWTTWTRKGFNR  104
+
+
+>ref|XP_001307691.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAX94761.1| conserved hypothetical protein [Trichomonas vaginalis G3]
+Length=328
+
+ Score =  136 bits (342),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 38/108 (36%), Positives = 61/108 (57%), Gaps = 3/108 (2%)
+
+Query  8    SFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISD--TEFK  65
+                 +P E++  L+++S+R  +SRFP K+  LL ++  +       G  W+SD   EF 
+Sbjct  11   PGLDGIPDELINHLRKRSNRKEDSRFPYKVFALLKWVGYDQNRANLAGCGWVSDSQNEFY  70
+
+Query  66   MKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+            + K  +  V+ +KLNTLNVNL+ L FEQ +   G  + +K   F++NS
+Sbjct  71   IHKPRLCEVLNVKLNTLNVNLKTLGFEQTR-KVGEHSYFKNDIFSKNS  117
+
+
+>ref|XP_001302525.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAX89595.1| conserved hypothetical protein [Trichomonas vaginalis G3]
+Length=313
+
+ Score =  133 bits (335),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 39/104 (38%), Positives = 59/104 (57%), Gaps = 0/104 (0%)
+
+Query  10   TSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKK  69
+               +P EI   + ++S++  NS+FP KL  LL ++  N   +++ G SW+ D  F + K 
+Sbjct  1    MDEIPEEIRNIILKRSNKSQNSKFPFKLKTLLDWVGENENRKKKCGCSWVDDRIFSLDKA  60
+
+Query  70   NVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+             ++ +M +KLNTLN NLRDL F Q    K G T W+     +NS
+Sbjct  61   KISEIMDLKLNTLNSNLRDLGFTQALPRKEGITFWQHPNVRKNS  104
+
+
+>ref|XP_001581198.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY20212.1| hypothetical protein TVAG_021590 [Trichomonas vaginalis G3]
+Length=488
+
+ Score =  101 bits (251),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 23/85 (28%), Positives = 40/85 (48%), Gaps = 1/85 (1%)
+
+Query  15  PEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTE-FKMKKKNVAL  73
+           PE +  LK         +F  K+   L +  ++P+  E+IG  W  D E F +    +  
+Sbjct  5   PESIEELKSIVCAASRLKFVTKVLYCLRFTQNHPEYNEQIGCCWYLDGESFLVNSGALGA  64
+
+Query  74  VMGIKLNTLNVNLRDLAFEQLQHDK  98
+            + +K N++N N R+  F+  + DK
+Sbjct  65  FLDLKSNSINTNFREHGFQVQKGDK  89
+
+
+>ref|XP_001324097.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY11874.1| hypothetical protein TVAG_362540 [Trichomonas vaginalis G3]
+Length=348
+
+ Score = 98.6 bits (244),  Expect = 6e-19, Method: Composition-based stats.
+ Identities = 18/82 (22%), Positives = 38/82 (47%), Gaps = 1/82 (1%)
+
+Query  15  PEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISD-TEFKMKKKNVAL  73
+            +++  L    +      FP +L + L ++  +P   +++G  W  D  +F +    +  
+Sbjct  8   DDVLQELIDSLNGTRQMNFPERLFLCLEFIDRHPDYFDQVGAIWSDDGNDFVVYSDKLCH  67
+
+Query  74  VMGIKLNTLNVNLRDLAFEQLQ  95
+           ++ IK N+LN N     F++L 
+Sbjct  68  ILRIKRNSLNKNFNMYGFKKLL  89
+
+
+>ref|XP_001306623.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAX93693.1| hypothetical protein TVAG_473620 [Trichomonas vaginalis G3]
+Length=437
+
+ Score = 95.9 bits (237),  Expect = 4e-18, Method: Composition-based stats.
+ Identities = 19/76 (25%), Positives = 33/76 (44%), Gaps = 0/76 (0%)
+
+Query  17   IVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMG  76
+             +  L+++ + +    F  K+ M+L Y  ++    +  GL W     F      +A    
+Sbjct  58   SLEELRKRITSNKKLLFKHKIWMMLNYSRTHQADGKHFGLYWHDSMNFMCNTGLLAEFCK  117
+
+Query  77   IKLNTLNVNLRDLAFE  92
+             K NT+N NLR+  F 
+Sbjct  118  KKKNTINRNLRNDGFN  133
+
+
+>ref|XP_001581458.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY20472.1| hypothetical protein TVAG_110850 [Trichomonas vaginalis G3]
+Length=438
+
+ Score = 63.1 bits (152),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 15/76 (20%), Positives = 31/76 (41%), Gaps = 1/76 (1%)
+
+Query  18  VAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTE-FKMKKKNVALVMG  76
+           +      S  +   +F  ++  +L +  S+P+  ++ G  W  +   F      +   + 
+Sbjct  22  LKEFLNSSQNERRMKFAVRVFYVLQWTTSHPEAVQDTGAIWCKNGYYFICNSTLIGEFLN  81
+
+Query  77  IKLNTLNVNLRDLAFE  92
+           I+ NT+N N R   F 
+Sbjct  82  IRPNTINTNFRSHLFT  97
+
+
+>ref|XP_001322899.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY10676.1| hypothetical protein TVAG_157530 [Trichomonas vaginalis G3]
+Length=379
+
+ Score = 58.9 bits (141),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 20/78 (26%), Positives = 39/78 (50%), Gaps = 2/78 (2%)
+
+Query  16  EIVAALKRKSSRDPNSRF--PRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVAL  73
+           +++  L +  S   ++R   P KL   + +  ++P+L E IG+ W+ D  F +     + 
+Sbjct  5   QLIDELDKTLSNKKSNRLSVPGKLLYAMKFTTAHPELREIIGIYWLDDYTFMVNNSIASK  64
+
+Query  74  VMGIKLNTLNVNLRDLAF  91
+            + IK +++N N  D  F
+Sbjct  65  HLDIKTSSMNKNFSDFGF  82
+
+
+>ref|XP_001301445.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAX88515.1| hypothetical protein TVAG_428240 [Trichomonas vaginalis G3]
+Length=455
+
+ Score = 56.2 bits (134),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 21/81 (26%), Positives = 39/81 (49%), Gaps = 4/81 (4%)
+
+Query  16  EIVAALKRKSSRD---PNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKM-KKKNV  71
+           + +A +K K   D      +F  K+  LL Y   +P+  + IG+ W  D +  +   K +
+Sbjct  8   DDIALMKSKVCNDEQIKRIKFTVKIIALLRYTLKHPEHIKTIGIGWFPDGKTIVSNAKIL  67
+
+Query  72  ALVMGIKLNTLNVNLRDLAFE  92
+              +G++ N++N N R   F+
+Sbjct  68  GNFLGLRSNSINTNFRAHNFQ  88
+
+
+>ref|XP_001293270.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAX80340.1| hypothetical protein TVAG_085870 [Trichomonas vaginalis G3]
+Length=284
+
+ Score = 55.4 bits (132),  Expect = 6e-06, Method: Composition-based stats.
+ Identities = 18/90 (20%), Positives = 39/90 (44%), Gaps = 1/90 (1%)
+
+Query  13   LPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVA  72
+            +PP + + L  K+       F +K+ + L ++  +P    +IG+         +     +
+Sbjct  7    IPPGLASRLLSKTKGPNKLDFGQKVQLSLDWVGEHPAGRLKIGIFRNDQGNIVVNASVFS  66
+
+Query  73   LVMGIKLNTLNVNLRDLAFEQLQH-DKGGW  101
+             V+ +K  +L  N     F +++  +KG W
+Sbjct  67   AVIDVKPRSLQKNFSIFGFHKIEVLEKGKW  96
+
+
+>ref|XP_001584109.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY23123.1| hypothetical protein TVAG_183600 [Trichomonas vaginalis G3]
+Length=228
+
+ Score = 48.5 bits (114),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 16/62 (26%), Positives = 30/62 (49%), Gaps = 2/62 (3%)
+
+Query  17   IVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMG  76
+            +    +R++S    S+FP KL   L      P+    IG+ W+ D    + ++  A ++G
+Sbjct  99   VQNFFRRRNSSA--SKFPYKLFNALRITEVQPEYFPHIGVKWVDDNIIWVNREAFASLIG  156
+
+Query  77   IK  78
+            +K
+Sbjct  157  VK  158
+
+
+>ref|XP_001310393.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAX97463.1| hypothetical protein TVAG_135160 [Trichomonas vaginalis G3]
+Length=261
+
+ Score = 45.0 bits (105),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 24/76 (32%), Positives = 39/76 (52%), Gaps = 9/76 (11%)
+
+Query  26   SRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMGIKLNTLN--  83
+              + N RFP KL+  L  + +NP++   +GL WI+DT FK+ K     ++GI   ++N  
+Sbjct  140  KNNSNCRFPHKLYNGLVLVEANPEMYPLVGLKWITDTVFKVDKYIFGRLLGI--TSINGG  197
+
+Query  84   -----VNLRDLAFEQL  94
+                  N     F++L
+Sbjct  198  LVHSQGNFPSHGFKEL  213
+
+
+>ref|XP_001320292.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY08069.1| hypothetical protein TVAG_463490 [Trichomonas vaginalis G3]
+Length=277
+
+ Score = 43.5 bits (101),  Expect = 0.021, Method: Composition-based stats.
+ Identities = 17/78 (22%), Positives = 31/78 (40%), Gaps = 9/78 (11%)
+
+Query  24   KSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMGIKLNTL-  82
+            +      S+FP KL   L      P+    IG+ W+ D    + ++  A ++G++  T+ 
+Sbjct  153  RRRNSSASKFPYKLFNALRITELYPEYFPHIGVKWVDDNIIWVSREPFARLIGVR--TIE  210
+
+Query  83   ------NVNLRDLAFEQL  94
+                    N     F +L
+Sbjct  211  GGLFHQQGNFPSHGFVEL  228
+
+
+>ref|XP_001327615.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY15392.1| hypothetical protein TVAG_224680 [Trichomonas vaginalis G3]
+Length=235
+
+ Score = 43.1 bits (100),  Expect = 0.033, Method: Composition-based stats.
+ Identities = 28/104 (27%), Positives = 46/104 (45%), Gaps = 13/104 (12%)
+
+Query  15   PEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALV  74
+             EI ++   + +    S F  KL+  L    SNP   + IG++WI +T FK+ +K  +  
+Sbjct  109  EEIKSSYFTRRNGTSRS-FDVKLYNALCITKSNPAAYKFIGVAWIDETHFKIDEKKFSQF  167
+
+Query  75   MGIKLNTLNV-----NLRDLAFEQLQHDKGGWTQWKRSGFTRNS  113
+            +G K + + +      +    FEQ+              FTRNS
+Sbjct  168  LGTKSDYMTLFDQQGPISKYGFEQIFKGAN-------PAFTRNS  204
+
+
+>ref|XP_001583090.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY22104.1| hypothetical protein TVAG_457390 [Trichomonas vaginalis G3]
+Length=278
+
+ Score = 42.7 bits (99),  Expect = 0.036, Method: Composition-based stats.
+ Identities = 21/81 (26%), Positives = 35/81 (44%), Gaps = 5/81 (6%)
+
+Query  24   KSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMGIK-----  78
+            +     NS+FP KL   L      P L   IG+ WI+D    + ++  A ++G+K     
+Sbjct  155  RKRNSSNSKFPIKLFNALKITEHCPDLFPHIGVKWITDDVIWVDREAFACLIGVKTVEGG  214
+
+Query  79   LNTLNVNLRDLAFEQLQHDKG  99
+            L     N     F +L +++ 
+Sbjct  215  LFHQQGNFPSHGFVELSYEES  235
+
+
+>ref|XP_001581809.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY20823.1| hypothetical protein TVAG_436470 [Trichomonas vaginalis G3]
+Length=336
+
+ Score = 42.3 bits (98),  Expect = 0.055, Method: Composition-based stats.
+ Identities = 31/92 (34%), Positives = 44/92 (48%), Gaps = 7/92 (7%)
+
+Query  13   LPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVA  72
+            L   I+   +RKS+   N RF  KL+  L  +   P L+E IG+ WIS    K++K   A
+Sbjct  200  LGDIILDFFQRKSN--INCRFIHKLYNALRIVQIYPMLKELIGIEWISPNILKVRKCCFA  257
+
+Query  73   LVMGIK-----LNTLNVNLRDLAFEQLQHDKG  99
+             ++GIK     L     N   L F +L  D+ 
+Sbjct  258  RLLGIKSIDGGLFHKQGNFPSLGFRELTMDEA  289
+
+
+>ref|XP_001319403.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY07180.1| hypothetical protein TVAG_197940 [Trichomonas vaginalis G3]
+Length=214
+
+ Score = 42.0 bits (97),  Expect = 0.067, Method: Composition-based stats.
+ Identities = 14/53 (27%), Positives = 21/53 (40%), Gaps = 0/53 (0%)
+
+Query  26   SRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMGIK  78
+                  RF  KL   L      P L + IG+ W+ +   K+ K   A  + I+
+Sbjct  69   KNSVTRRFEHKLWNCLRITQVFPSLTKIIGVCWVDNRIIKVYKHPFAKFLSIQ  121
+
+
+>ref|XP_001329139.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY16916.1| hypothetical protein TVAG_150670 [Trichomonas vaginalis G3]
+Length=241
+
+ Score = 41.6 bits (96),  Expect = 0.083, Method: Composition-based stats.
+ Identities = 8/58 (14%), Positives = 24/58 (42%), Gaps = 0/58 (0%)
+
+Query  38   HMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQ  95
+               +    ++ +     G+ W+ D+   +    +  + G+  + +N + + + FE  Q
+Sbjct  51   FFCVKNTEADEKRYLVCGICWLDDSNIAINTNQLKALFGVSKSMINNSFKSMGFENEQ  108
+
+
+>ref|XP_001304584.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAX91654.1| hypothetical protein TVAG_323700 [Trichomonas vaginalis G3]
+Length=318
+
+ Score = 41.6 bits (96),  Expect = 0.090, Method: Composition-based stats.
+ Identities = 19/81 (24%), Positives = 37/81 (46%), Gaps = 9/81 (11%)
+
+Query  26   SRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMGIKLNTLN--  83
+              + NSRF  KL+  L    S+    + +G+ W++D   +++K   A ++GI+  T++  
+Sbjct  191  KNNANSRFSHKLYNALKIAESDRLYADLLGVEWLNDRVLRVEKNRFARLLGIR--TIDGS  248
+
+Query  84   -----VNLRDLAFEQLQHDKG  99
+                  N     F +L  +  
+Sbjct  249  FFHQQGNFPSHGFIELDPNTA  269
+
+
+>gb|EJK72245.1| hypothetical protein THAOC_06237 [Thalassiosira oceanica]
+Length=303
+
+ Score = 38.9 bits (89),  Expect = 0.49, Method: Composition-based stats.
+ Identities = 21/95 (23%), Positives = 33/95 (35%), Gaps = 15/95 (15%)
+
+Query  25   SSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTE-F-KMKKKNVAL------VMG  76
+            S     S FP KL+ +L Y + +        + W+ D E F  +    +           
+Sbjct  31   SRGADRSTFPFKLYDMLEYASDH----GHSSIVWVHDGEAFEIIDADALMDGVASLFFKQ  86
+
+Query  77   IKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTR  111
+             K  +    L    F +L+  K G   W+   F R
+Sbjct  87   SKFRSFTRQLNIWGFNRLEDSKKG---WRHDNFIR  118
+
+
+>ref|YP_780522.1| hypothetical protein RPE_1593 [Rhodopseudomonas palustris BisA53]
+ ref|WP_011663028.1| hypothetical protein [Rhodopseudomonas palustris]
+ gb|ABJ05542.1| conserved hypothetical protein [Rhodopseudomonas palustris BisA53]
+Length=405
+
+ Score = 38.1 bits (87),  Expect = 0.88, Method: Composition-based stats.
+ Identities = 18/53 (34%), Positives = 29/53 (55%), Gaps = 3/53 (5%)
+
+Query  2    SNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEI  54
+            +ND+     +RL P ++  L+RK+ RD   R  RKL  +LT    +P+L +  
+Sbjct  284  TNDI---IYARLAPAVLEELRRKTPRDEKGRLKRKLFQMLTPETGHPKLIDHF  333
+
+
+>ref|XP_001315638.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY03415.1| hypothetical protein TVAG_043610 [Trichomonas vaginalis G3]
+Length=203
+
+ Score = 37.7 bits (86),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 15/52 (29%), Positives = 23/52 (45%), Gaps = 0/52 (0%)
+
+Query  26   SRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMGI  77
+              + N RF  KL   L      P     +G+ W+S+   K+ K   A ++GI
+Sbjct  61   KNNVNRRFEHKLWNALRITQLYPNYLPVVGVEWVSNEVIKVYKHPFAHLLGI  112
+
+
+>ref|XP_001581884.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY20898.1| hypothetical protein TVAG_437240 [Trichomonas vaginalis G3]
+Length=300
+
+ Score = 37.3 bits (85),  Expect = 1.4, Method: Composition-based stats.
+ Identities = 19/76 (25%), Positives = 36/76 (48%), Gaps = 5/76 (6%)
+
+Query  24   KSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMGIK-----  78
+            ++   PNSRF  KL+  L  +  +P      G+ W+++T  K+     + V+G++     
+Sbjct  173  RADPSPNSRFSHKLYNALQIVKKDPFYFLLFGVEWMNETVLKVNGPLFSCVLGLQNYKYN  232
+
+Query  79   LNTLNVNLRDLAFEQL  94
+            L + N  +    F +L
+Sbjct  233  LFSQNGQMSIHGFIEL  248
+
+
+>gb|EJK44083.1| hypothetical protein THAOC_37408 [Thalassiosira oceanica]
+Length=307
+
+ Score = 37.3 bits (85),  Expect = 1.5, Method: Composition-based stats.
+ Identities = 22/97 (23%), Positives = 33/97 (35%), Gaps = 15/97 (15%)
+
+Query  23   RKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTE-F-KMKKKNVAL------V  74
+              S     S FP KL+ LL Y +++        + W  D E F  +    +         
+Sbjct  31   DASRGPDRSTFPFKLYELLEYASNH----GLASIVWTHDGEAFEIIDADALMDDVAPLFF  86
+
+Query  75   MGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTR  111
+               K  +    L    F +++  K GW  W    F R
+Sbjct  87   KQTKFRSFTRQLNLWGFNRVEDSKRGW--W-HDNFIR  120
+
+
+>ref|XP_001308191.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAX95261.1| hypothetical protein TVAG_149810 [Trichomonas vaginalis G3]
+Length=264
+
+ Score = 37.3 bits (85),  Expect = 1.8, Method: Composition-based stats.
+ Identities = 18/59 (31%), Positives = 30/59 (51%), Gaps = 2/59 (3%)
+
+Query  19   AALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMGI  77
+               KR+SS+     F  KL+  L     +P+L    G  W++DT FK+ +   A ++G+
+Sbjct  136  QYFKRRSSK--KMPFHYKLYNALQITTQHPELVPVFGAQWVTDTVFKIYRLPFANLLGV  192
+
+
+>ref|XP_001308233.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAX95303.1| hypothetical protein TVAG_270940 [Trichomonas vaginalis G3]
+Length=304
+
+ Score = 35.8 bits (81),  Expect = 4.3, Method: Composition-based stats.
+ Identities = 18/64 (29%), Positives = 33/64 (52%), Gaps = 1/64 (1%)
+
+Query  16   EIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVM  75
+            E+VA   +K + + + RF  KL+  L     + + +  +G+ WI+D    + K   A ++
+Sbjct  167  ELVAEFFQKKN-NASCRFSYKLYNALKLSTLDSKFDSLVGVKWINDYVLHVDKIKFAHLL  225
+
+Query  76   GIKL  79
+            GIK 
+Sbjct  226  GIKS  229
+
+
+>gb|EDM43318.1| DNA-directed RNA polymerase subunit beta [unidentified eubacterium 
+SCB49]
+Length=1270
+
+ Score = 35.8 bits (81),  Expect = 4.6, Method: Composition-based stats.
+ Identities = 25/109 (23%), Positives = 35/109 (33%), Gaps = 12/109 (11%)
+
+Query  1     DSNDLEASFTSR---LPPEIVAALKRKSSRDPNSR---------FPRKLHMLLTYLASNP  48
+             D   LEA F ++   L   ++  L    S               FP+     L  L S  
+Sbjct  915   DIEILEAKFDAKFEALQDTLIEKLFTIVSGKTAQGVSNDLGEVVFPKGKKFTLKMLNSVD  974
+
+Query  49    QLEEEIGLSWISDTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHD  97
+                   G +W +D    +   ++     IK N L  NLR   F     D
+Sbjct  975   DYTHLTGGTWTTDDATNLLVADLMHNYKIKENDLQGNLRRDKFTISVGD  1023
+
+
+>ref|XP_001323180.1| hypothetical protein [Trichomonas vaginalis G3]
+ gb|EAY10957.1| hypothetical protein TVAG_446590 [Trichomonas vaginalis G3]
+Length=236
+
+ Score = 35.0 bits (79),  Expect = 9.2, Method: Composition-based stats.
+ Identities = 20/84 (24%), Positives = 34/84 (41%), Gaps = 6/84 (7%)
+
+Query  15   PEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALV  74
+             EI A+   + +    S F  KL+  L    +     + +G+ WI    FK+ +K  +  
+Sbjct  110  EEIKASYFTRRNGTARS-FDLKLYNALCITKNYESAYKFVGVMWIDSKHFKINEKIFSQF  168
+
+Query  75   MGIKLNTLNVN-----LRDLAFEQ  93
+            +G K   L +      +    FEQ
+Sbjct  169  LGNKSEFLTLFDKQGLINKYGFEQ  192
+
+
+
+Lambda     K      H
+   0.311    0.135    0.372 
+
+Gapped
+Lambda     K      H
+   0.267   0.0409    0.140 
+
+Effective search space used: 280743434368
+
+
+  Database: All non-redundant GenBank CDS translations+PDB+SwissProt+PIR+PRF
+excluding environmental samples from WGS projects
+    Posted date:  Sep 26, 2013  6:53 AM
+  Number of letters in database: 11,431,176,125
+  Number of sequences in database:  32,814,121
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

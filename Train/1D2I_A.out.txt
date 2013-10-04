@@ -1,0 +1,3564 @@
+PSIBLAST 2.2.25+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: All non-redundant GenBank CDS translations+PDB+SwissProt+PIR+PRF
+excluding environmental samples from WGS projects
+           32,814,121 sequences; 11,431,176,125 total letters
+
+Results from round 1
+
+
+Query= 1D2I_A
+
+Length=223
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+ref|YP_003975464.1|  hypothetical protein BATR1942_18080 [Bacillu...   431    6e-119
+pdb|1D2I|A  Chain A, Crystal Structure Of Restriction Endonucleas...   418    6e-115
+ref|WP_008276391.1|  type II restriction endonuclease BglII [Cyan...   214    1e-53 
+ref|YP_001868075.1|  hypothetical protein Npun_F4783 [Nostoc punc...   208    7e-52 
+ref|WP_016949621.1|  type II restriction endonuclease BglII [Anab...   200    3e-49 
+ref|WP_017305696.1|  hypothetical protein [Spirulina subsalsa]         164    3e-38 
+ref|WP_017716967.1|  hypothetical protein [Oscillatoria sp. PCC 1...   114    3e-23 
+ref|WP_017716968.1|  hypothetical protein [Oscillatoria sp. PCC 1...  69.3    8e-10 
+ref|YP_001814844.1|  restriction endonuclease BglII [Exiguobacter...  47.4    0.003 
+emb|CCM11528.1|  hypothetical protein BN341_12160 [Helicobacter h...  42.4    0.097 
+ref|WP_006600442.1|  Restriction endonuclease BglII [Haloferax al...  40.4    0.35  
+ref|WP_006683169.1|  restriction endonuclease BglII [Candidatus G...  40.0    0.48  
+pdb|1SDO|A  Chain A, Crystal Structure Of Restriction Endonucleas...  39.7    0.65  
+ref|WP_002690143.1|  restriction endonuclease BglII [Beggiatoa al...  38.9    1.1   
+ref|YP_006589969.1|  restriction endonuclease [Burkholderia phage...  38.9    1.1   
+ref|WP_009433545.1|  PF04357 family protein [Porphyromonas sp. or...  38.5    1.5   
+gb|EMP36488.1|  Cytochrome P450 2J2 [Chelonia mydas]                  38.1    1.7   
+ref|WP_007699426.1|  hypothetical protein [Cronobacter universali...  37.4    3.0   
+gb|AFI81985.1|  Wzy [Cronobacter universalis NCTC 9529]               37.4    3.0   
+ref|XP_003884020.1|  hypothetical protein NCLIV_037700 [Neospora ...  37.4    3.6   
+ref|XP_005423070.1|  PREDICTED: cytochrome P450 2J2-like [Geospiz...  37.0    3.9   
+ref|XP_005284979.1|  PREDICTED: cytochrome P450 2J2-like [Chrysem...  37.0    4.2   
+ref|YP_001741874.1|  putative BstYI [Candidatus Cloacamonas acida...  37.0    4.5   
+ref|XP_005492359.1|  PREDICTED: cytochrome P450 2J2-like [Zonotri...  37.0    4.6   
+ref|WP_006419590.1|  conserved hypothetical protein [delta proteo...  36.2    8.2   
+ref|WP_006774558.1|  restriction endonuclease BglII [Clostridium ...  36.2    8.3   
+
+
+>ref|YP_003975464.1| hypothetical protein BATR1942_18080 [Bacillus atrophaeus 1942]
+ ref|WP_003326162.1| type II restriction endonuclease BglII [Bacillus atrophaeus]
+ sp|Q45488.1|T2B2_BACSU RecName: Full=Type-2 restriction enzyme BglII; Short=R.BglII; 
+AltName: Full=Endonuclease BglII; AltName: Full=Type II restriction 
+enzyme BglII
+ gb|AAC45060.1| BglII endonuclease [Bacillus subtilis]
+ gb|ADP34533.1| hypothetical protein BATR1942_18080 [Bacillus atrophaeus 1942]
+ gb|EIM11425.1| hypothetical protein UY9_06735 [Bacillus atrophaeus C89]
+Length=223
+
+ Score =  431 bits (1109),  Expect = 6e-119, Method: Composition-based stats.
+ Identities = 223/223 (100%), Positives = 223/223 (100%), Gaps = 0/223 (0%)
+
+Query  1    MKIDITDYNHADEILNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDE  60
+            MKIDITDYNHADEILNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDE
+Sbjct  1    MKIDITDYNHADEILNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDE  60
+
+Query  61   LVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDID  120
+            LVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDID
+Sbjct  61   LVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDID  120
+
+Query  121  EEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDI  180
+            EEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDI
+Sbjct  121  EEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDI  180
+
+Query  181  VSTTYADKRYSRTITKRDTVKGKVIDTNTPNTRRRKRGTIVTY  223
+            VSTTYADKRYSRTITKRDTVKGKVIDTNTPNTRRRKRGTIVTY
+Sbjct  181  VSTTYADKRYSRTITKRDTVKGKVIDTNTPNTRRRKRGTIVTY  223
+
+
+>pdb|1D2I|A Chain A, Crystal Structure Of Restriction Endonuclease Bglii 
+Complexed With Dna 16-Mer
+ pdb|1D2I|B Chain B, Crystal Structure Of Restriction Endonuclease Bglii 
+Complexed With Dna 16-Mer
+ pdb|1DFM|A Chain A, Crystal Structure Of Restriction Endonuclease Bglii 
+Complexed With Dna 16-Mer
+ pdb|1DFM|B Chain B, Crystal Structure Of Restriction Endonuclease Bglii 
+Complexed With Dna 16-Mer
+ pdb|1ES8|A Chain A, Crystal Structure Of Free Bglii
+Length=223
+
+ Score =  418 bits (1074),  Expect = 6e-115, Method: Composition-based stats.
+ Identities = 218/222 (99%), Positives = 218/222 (99%), Gaps = 0/222 (0%)
+
+Query  2    KIDITDYNHADEILNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDEL  61
+            KIDITDYNHADEILNPQLWKEIEETLLK PLHVKASDQASKVGSLIFDPVGTNQYIKDEL
+Sbjct  2    KIDITDYNHADEILNPQLWKEIEETLLKXPLHVKASDQASKVGSLIFDPVGTNQYIKDEL  61
+
+Query  62   VPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDE  121
+            VPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSN DIDE
+Sbjct  62   VPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNXDIDE  121
+
+Query  122  EGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDIV  181
+            EG KVAIIITKGH FPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDIV
+Sbjct  122  EGXKVAIIITKGHXFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDIV  181
+
+Query  182  STTYADKRYSRTITKRDTVKGKVIDTNTPNTRRRKRGTIVTY  223
+            STTYADKRYSRTITKRDTVKGKVIDTNTPNTRRRKRGTIVTY
+Sbjct  182  STTYADKRYSRTITKRDTVKGKVIDTNTPNTRRRKRGTIVTY  223
+
+
+>ref|WP_008276391.1| type II restriction endonuclease BglII [Cyanothece sp. CCY0110]
+ gb|EAZ90458.1| hypothetical protein CY0110_26562 [Cyanothece sp. CCY0110]
+Length=224
+
+ Score =  214 bits (545),  Expect = 1e-53, Method: Composition-based stats.
+ Identities = 110/218 (51%), Positives = 156/218 (72%), Gaps = 6/218 (2%)
+
+Query  1    MKIDITDYNHADEILNPQL---WKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYI  57
+            ++I++TD+N+++ ++N Q    W  I+ TL  MPLH+KAS Q+   G+ IFDP+GTN++I
+Sbjct  4    IQIEVTDFNNSNFLINSQFNNEWNVIQTTLTSMPLHLKASSQSGIEGNPIFDPIGTNEFI  63
+
+Query  58   KDELVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNM  117
+            ++ LV + W ++IPIPK + FLG DID GK   ++E QFSNYPFLLNN +RSELF KS +
+Sbjct  64   ENNLVREGWSSHIPIPKAYQFLGKDIDCGKSGVILEFQFSNYPFLLNNLLRSELFFKSKI  123
+
+Query  118  DIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETD  177
+             ++ +   + IIITKG MFPASNS+LYYEQA +QL +L +Y VF VPIRLVGL E+FE +
+Sbjct  124  HLNSQVTNLVIIITKGKMFPASNSTLYYEQAVSQLTALTKYKVFHVPIRLVGLFEEFEQN  183
+
+Query  178  IDIVSTTYADKRYSRTITKRDTVKGKVIDTNTPNTRRR  215
+            I+IV + Y +K+ SR I ++   +G+ I +      RR
+Sbjct  184  INIVWSIY-EKQRSRNIIEQK--QGQCIISQGIKPTRR  218
+
+
+>ref|YP_001868075.1| hypothetical protein Npun_F4783 [Nostoc punctiforme PCC 73102]
+ ref|WP_012411088.1| type II restriction endonuclease BglII [Nostoc punctiforme]
+ gb|ACC83132.1| hypothetical protein Npun_F4783 [Nostoc punctiforme PCC 73102]
+Length=190
+
+ Score =  208 bits (530),  Expect = 7e-52, Method: Composition-based stats.
+ Identities = 102/184 (56%), Positives = 130/184 (71%), Gaps = 0/184 (0%)
+
+Query  30   MPLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKNNIPIPKRFDFLGTDIDFGKRD  89
+            MPLH+KASDQA   G+ IFDPVGTN+YIK   +   W++NIPIP  + FLGTD+DF K  
+Sbjct  1    MPLHIKASDQAGIQGNAIFDPVGTNEYIKAAFIHDSWQSNIPIPAPYRFLGTDVDFAKAG  60
+
+Query  90   TLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQ  149
+             ++E+QFSNYPFLLNNT+RSELF K+  +       + II+TK  MFPASNS+LYYEQA 
+Sbjct  61   IIIEIQFSNYPFLLNNTLRSELFFKAKTEFVGYPTNLIIIVTKALMFPASNSTLYYEQAV  120
+
+Query  150  NQLNSLAEYNVFDVPIRLVGLIEDFETDIDIVSTTYADKRYSRTITKRDTVKGKVIDTNT  209
+            NQL +LA+  VFDVPIRLVGL E   T + I+ T Y  KRYSRT+  R + + ++I   +
+Sbjct  121  NQLTALAKNKVFDVPIRLVGLFEQQNTIVPIIWTEYLSKRYSRTVNTRVSRECEIIAGRS  180
+
+Query  210  PNTR  213
+              +R
+Sbjct  181  ARSR  184
+
+
+>ref|WP_016949621.1| type II restriction endonuclease BglII [Anabaena sp. PCC 7108]
+Length=190
+
+ Score =  200 bits (508),  Expect = 3e-49, Method: Composition-based stats.
+ Identities = 96/188 (52%), Positives = 130/188 (70%), Gaps = 0/188 (0%)
+
+Query  30   MPLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKNNIPIPKRFDFLGTDIDFGKRD  89
+            MPLH+KASDQA   G+ IFDPVGTN+YIK  L+   W++NIPIP  + FLG ++DF K  
+Sbjct  1    MPLHIKASDQAGIQGNPIFDPVGTNEYIKAALIQSGWQSNIPIPIPYRFLGKEVDFCKSG  60
+
+Query  90   TLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQ  149
+             ++E+QFSNYPFLLNNT+RSELF K+  +       + I++TK  MFPASNS+LYYEQA 
+Sbjct  61   IIIEIQFSNYPFLLNNTLRSELFFKAKTEFAGHPTNILILVTKALMFPASNSTLYYEQAV  120
+
+Query  150  NQLNSLAEYNVFDVPIRLVGLIEDFETDIDIVSTTYADKRYSRTITKRDTVKGKVIDTNT  209
+            NQL +L    VFD+PIRL+GL E   T + ++ + Y  +RYSRT+  R T + ++I   +
+Sbjct  121  NQLTALVINKVFDIPIRLIGLFEQKNTTVPVIWSQYLSERYSRTVNNRITRQCEIIAGLS  180
+
+Query  210  PNTRRRKR  217
+              +R + R
+Sbjct  181  SRSRCQLR  188
+
+
+>ref|WP_017305696.1| hypothetical protein [Spirulina subsalsa]
+Length=219
+
+ Score =  164 bits (414),  Expect = 3e-38, Method: Composition-based stats.
+ Identities = 82/195 (43%), Positives = 123/195 (64%), Gaps = 3/195 (1%)
+
+Query  1    MKIDITDYNHADEILNPQL---WKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYI  57
+            M I+ TD+N+ +E L+ +    W E+E+TL  MPL+VK S+Q    G+++FDP+ TN YI
+Sbjct  1    MLIEYTDFNNQNEDLSRKFASEWMEVEQTLCSMPLYVKGSNQQGIKGNMVFDPIATNAYI  60
+
+Query  58   KDELVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNM  117
+            K+ L  K W  N  IP+  + LG D+DF K   L+E+QFS+Y FLLNN +RSE+F KS  
+Sbjct  61   KNSLQSKGWIANAAIPEHINPLGKDVDFTKNTVLLEIQFSHYAFLLNNIIRSEVFFKSRS  120
+
+Query  118  DIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETD  177
+             ++   + + +++TK  + P++NSSL+Y QA  QL  +   N+F +P R+VGL  D E +
+Sbjct  121  ALNSHSVALMVLVTKFDILPSANSSLHYTQAVEQLLVIETANIFSLPTRIVGLNVDIENE  180
+
+Query  178  IDIVSTTYADKRYSR  192
+            I  + T Y   +  R
+Sbjct  181  IQAIFTQYQSPQSRR  195
+
+
+>ref|WP_017716967.1| hypothetical protein [Oscillatoria sp. PCC 10802]
+Length=101
+
+ Score =  114 bits (284),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 56/101 (56%), Positives = 69/101 (69%), Gaps = 3/101 (2%)
+
+Query  1    MKIDITDYNHADEILNPQL---WKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYI  57
+            M I  TD+N+AD ++N      W +IE  L  MPLH+KAS QA   G+ +FDPVGTNQYI
+Sbjct  1    MLIQFTDFNNADLVINTHCNAEWNDIESVLTAMPLHLKASRQAGIEGNPVFDPVGTNQYI  60
+
+Query  58   KDELVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSN  98
+            K  LV   W++N+PIP  + FLGTDID GK   LVEVQFS+
+Sbjct  61   KAALVKIGWQSNLPIPAPYRFLGTDIDLGKSGVLVEVQFSH  101
+
+
+>ref|WP_017716968.1| hypothetical protein [Oscillatoria sp. PCC 10802]
+Length=107
+
+ Score = 69.3 bits (168),  Expect = 8e-10, Method: Composition-based stats.
+ Identities = 34/88 (39%), Positives = 50/88 (57%), Gaps = 1/88 (1%)
+
+Query  111  LFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGL  170
+            +F  +   +  +  ++ ++I K  MFPASNSSLYYE A  QL +LA Y  F VP+R+VGL
+Sbjct  1    MFFNAQTLLTGQPTRLVVLIAKAQMFPASNSSLYYETAVQQLTALAGY-AFKVPMRVVGL  59
+
+Query  171  IEDFETDIDIVSTTYADKRYSRTITKRD  198
+             E   T + +  T Y      + +T+ D
+Sbjct  60   FEPKNTTVQVKCTVYEQATSRKIVTQED  87
+
+
+>ref|YP_001814844.1| restriction endonuclease BglII [Exiguobacterium sibiricum 255-15]
+ ref|WP_012371243.1| restriction endonuclease BglII [Exiguobacterium sibiricum]
+ gb|ACB61827.1| Restriction endonuclease BglII [Exiguobacterium sibiricum 255-15]
+Length=184
+
+ Score = 47.4 bits (111),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 48/188 (26%), Positives = 81/188 (44%), Gaps = 19/188 (10%)
+
+Query  1    MKID-ITDYNHADEILNPQLWKEIEETLLKMP------LHVKASDQASKVGSLIFDPVGT  53
+            MKID I  +N+ + ++      E+ E L  +          K S + + +G +++ PV  
+Sbjct  1    MKIDAIYSFNNGNSVIKESYSNELNEILSAIKSIDASKFKTKISKEKTSLGKMLYSPVAL  60
+
+Query  54   NQYIKDELVPKHWKN-------NIPIPKRFDFLG-TDIDFGKRDTLVEVQFSNYPFLLNN  105
+            N+ +K  L P  WK        +   P   D L   ++DF K +  VEVQF  Y F+  +
+Sbjct  61   NKELKKILNPLGWKELKHEAIYSSDNPDISDTLAHREMDFVKNEVGVEVQFGKYAFMAYD  120
+
+Query  106  TVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPI  165
+                    K+   I+   + + I+  K      S    YYEQ    L +    N+ D+P+
+Sbjct  121  ICSKMPIFKNKGYIE---VGIEIVPMKAFAKYMSTGVSYYEQITWDLENRGVSNL-DIPV  176
+
+Query  166  RLVGLIED  173
+             ++G+  D
+Sbjct  177  IVIGIDAD  184
+
+
+>emb|CCM11528.1| hypothetical protein BN341_12160 [Helicobacter heilmannii ASB1.4]
+Length=203
+
+ Score = 42.4 bits (98),  Expect = 0.097, Method: Composition-based stats.
+ Identities = 49/190 (26%), Positives = 76/190 (40%), Gaps = 37/190 (19%)
+
+Query  13   EILNPQLWKEIEETLLKMPLHV---KASDQASKVGSLIFDPVGTNQYIKDELVPKHW---  66
+            ++ +P LW+EI+  +L +  +V   K S +  + G+ +F PV  N+  K  L    W   
+Sbjct  17   QVHHPNLWQEIQSVILNINAYVCQTKISQEKGRQGNCLFSPVEINKAFKVSLNALGWLEN  76
+
+Query  67   ------------------------KNNIPIPKRFDFLGTD-IDFGKRDTLVEVQFSNYPF  101
+                                    K  I    +  +L  +  DF K    +EVQF  Y F
+Sbjct  77   RQTYYLTPHQSLAFETMYLNPEMQKQAIEAQGQTAYLSYNQTDFLKSRIAIEVQFGKYAF  136
+
+Query  102  LLNNT-VRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNV  160
+            +  +  V+   F+ +N  ID   + V II TK      S+   YYE     L      N 
+Sbjct  137  VAYDLFVKHMAFYVANA-ID---VGVEIIPTKAMCAQMSSGIAYYESEVYNLYRQGR-NT  191
+
+Query  161  FDVPIRLVGL  170
+              VP+ L+G+
+Sbjct  192  PAVPLVLIGI  201
+
+
+>ref|WP_006600442.1| Restriction endonuclease BglII [Haloferax alexandrinus]
+ gb|ELZ92828.1| Restriction endonuclease BglII [Haloferax alexandrinus JCM 10717]
+Length=201
+
+ Score = 40.4 bits (93),  Expect = 0.35, Method: Composition-based stats.
+ Identities = 33/121 (28%), Positives = 59/121 (49%), Gaps = 11/121 (9%)
+
+Query  13   EILNPQLWKEIEETL--LKMPLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKN--  68
+            E+  P+L +EI E +  ++ P   K S++A+  G  +F P   N+  +++L P  W+N  
+Sbjct  17   ELRYPELNEEINEAIEAIENPGRGKISEEATNKGEELFSPKDLNEAFENQLEPLGWENER  76
+
+Query  69   ---NIPIPK-RFDFLGT--DIDFGKRDTLVEVQFSNYPFLLNNTVR-SELFHKSNMDIDE  121
+                  IP    +  G+  + DF K +  VEVQ   Y  +  +  +   LF+K  +++  
+Sbjct  77   KYYTTSIPDYEHEVTGSYNEYDFKKEEIFVEVQMGKYFAMFYDLAKFQNLFNKGELEVGI  136
+
+Query  122  E  122
+            E
+Sbjct  137  E  137
+
+
+>ref|WP_006683169.1| restriction endonuclease BglII [Candidatus Glomeribacter gigasporarum]
+ emb|CCD30092.1| Restriction endonuclease BglII [Candidatus Glomeribacter gigasporarum 
+BEG34]
+Length=192
+
+ Score = 40.0 bits (92),  Expect = 0.48, Method: Composition-based stats.
+ Identities = 42/158 (27%), Positives = 67/158 (43%), Gaps = 31/158 (19%)
+
+Query  35   KASDQASKVGSLIFDPVGTNQYIKDELVPKHWKN--------------------NIPIP-  73
+            K S + + +G ++F P+  N+  + E     W N                    NI    
+Sbjct  42   KRSTEKTMMGKMLFAPIEINKAFRREFNKIGWSNYRVVCEYRYGEFLEGYLPSKNISSKP  101
+
+Query  74   -KRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITK  132
+             +  DF+  DI  G     VEVQF  Y F++ N V +++   SNM I + G  V I+  K
+Sbjct  102  FRDMDFIKPDIKLG-----VEVQFGKYAFMVYN-VCAKMTIFSNMGIIDTG--VEIVPVK  153
+
+Query  133  GHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGL  170
+              +   S    Y+EQ    L      N+ D+P+ ++G+
+Sbjct  154  HFVDRMSTGVSYFEQFAWDLAHRGISNI-DIPVLILGI  190
+
+
+>pdb|1SDO|A Chain A, Crystal Structure Of Restriction Endonuclease Bstyi
+ pdb|1VRR|A Chain A, Crystal Structure Of The Restriction Endonuclease Bstyi 
+Complex With Dna
+ pdb|1VRR|B Chain B, Crystal Structure Of The Restriction Endonuclease Bstyi 
+Complex With Dna
+ pdb|2P0J|A Chain A, Structure Of Restriction Endonuclease Bstyi Bound To 
+Non-Cognate Dna
+ pdb|2P0J|B Chain B, Structure Of Restriction Endonuclease Bstyi Bound To 
+Non-Cognate Dna
+ gb|AAO48714.1| BstYI [Geobacillus stearothermophilus]
+Length=203
+
+ Score = 39.7 bits (91),  Expect = 0.65, Method: Composition-based stats.
+ Identities = 17/56 (31%), Positives = 32/56 (58%), Gaps = 3/56 (5%)
+
+Query  17  PQLWKEIEETLLKM---PLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKNN  69
+           P +W+EI+E ++ +       K S + +K G +++ PV  N+  K++L  K WK +
+Sbjct  21  PHIWEEIQEIIVSIDAEACRTKESKEKTKQGQILYSPVALNEAFKEKLEAKGWKES  76
+
+
+>ref|WP_002690143.1| restriction endonuclease BglII [Beggiatoa alba]
+ gb|EIJ43182.1| Restriction endonuclease BglII [Beggiatoa alba B18LD]
+Length=189
+
+ Score = 38.9 bits (89),  Expect = 1.1, Method: Composition-based stats.
+ Identities = 40/151 (27%), Positives = 63/151 (42%), Gaps = 20/151 (13%)
+
+Query  35   KASDQASKVGSLIFDPVGTNQYIKDELVPKHWKN-------------NIPIPKRFDFLG-  80
+            K S++ +K+  L+F P   N   K+    K W N             N  +PK       
+Sbjct  42   KISEEQTKLDELLFSPKALNTQFKNFFALKKWSNHKIECNYSNDYYINGYVPKSMGKAPY  101
+
+Query  81   TDIDFGKRDTLVEVQFSNYPFLLNNT-VRSELFHKSNMDIDEEGMKVAIIITKGHMFPAS  139
+             D+DF K    VEVQF  Y F++ N   +  +F K    +    + V I+  K      S
+Sbjct  102  RDMDFLKEKVGVEVQFGKYAFMVYNVCAKMTIFSK----LAGITVGVEIVPIKDLADEMS  157
+
+Query  140  NSSLYYEQAQNQLNSLAEYNVFDVPIRLVGL  170
+                Y+EQ    L +    N+ D+P+ ++G+
+Sbjct  158  TGVSYFEQFVWDLENRGVSNI-DLPVLILGI  187
+
+
+>ref|YP_006589969.1| restriction endonuclease [Burkholderia phage DC1]
+ gb|AEZ50857.1| restriction endonuclease [Burkholderia phage DC1]
+Length=203
+
+ Score = 38.9 bits (89),  Expect = 1.1, Method: Composition-based stats.
+ Identities = 28/117 (24%), Positives = 46/117 (40%), Gaps = 31/117 (26%)
+
+Query  17   PQLWKEIEETLLKM---PLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHW-------  66
+            P+LWKEI+E +  +    L  K S +   +G +++ P   N+ I +      W       
+Sbjct  21   PKLWKEIQEVIKNVDATKLRTKQSKETRSMGEMLYSPRAMNKAIDEGFARHKWGERRISY  80
+
+Query  67   --KNNIPIPKRFDFLGTD-------------------IDFGKRDTLVEVQFSNYPFL  102
+               ++  + ++  F+G D                    DF K    VEVQF  Y F+
+Sbjct  81   WVTSDARLIRKTLFMGPDQQKAEIEGAGKKPLASYNQTDFVKERVAVEVQFGKYAFV  137
+
+
+>ref|WP_009433545.1| PF04357 family protein [Porphyromonas sp. oral taxon 279]
+ gb|EJU16075.1| PF04357 family protein [Porphyromonas sp. oral taxon 279 str. 
+F0450]
+Length=1597
+
+ Score = 38.5 bits (88),  Expect = 1.5, Method: Composition-based stats.
+ Identities = 22/82 (27%), Positives = 37/82 (46%), Gaps = 0/82 (0%)
+
+Query  75   RFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGH  134
+            RF    T ID       ++  FS  PF     ++    H    DID EGM++++++    
+Sbjct  224  RFQVAHTKIDAKSLRYSIDQNFSKLPFFDPQHIQLHDLHLEGEDIDSEGMRLSLLLRHAQ  283
+
+Query  135  MFPASNSSLYYEQAQNQLNSLA  156
+            +   S   L +   + Q++SLA
+Sbjct  284  LREQSGLKLLHLSGRYQMDSLA  305
+
+
+>gb|EMP36488.1| Cytochrome P450 2J2 [Chelonia mydas]
+Length=664
+
+ Score = 38.1 bits (87),  Expect = 1.7, Method: Composition-based stats.
+ Identities = 31/119 (27%), Positives = 53/119 (45%), Gaps = 15/119 (12%)
+
+Query  57   IKDELVPKHWKNNIPIPKRFDFLGTDIDF------------GKRDTLVEVQFSNYPFLLN  104
+            I D +  +  KN  P P  F F+GT +D+            G+   +  VQF N  F++ 
+Sbjct  31   IADHVKKRRPKNFPPGPLLFPFVGTIVDYKQPIHLTLQKLIGRYGNIFSVQFGNLTFVVV  90
+
+Query  105  N---TVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNV  160
+            N    V+  L H++ +  D   + +   I KG    +SN  ++ +Q +  L++L    V
+Sbjct  91   NGCQLVKEALIHQAEVFADRPHIPLLCEIFKGLGLISSNGCIWRQQRKFVLSALKSIGV  149
+
+
+>ref|WP_007699426.1| hypothetical protein [Cronobacter universalis]
+ emb|CCK15069.1| hypothetical protein BN136_1079 [Cronobacter universalis NCTC 
+9529]
+Length=373
+
+ Score = 37.4 bits (85),  Expect = 3.0, Method: Composition-based stats.
+ Identities = 26/86 (31%), Positives = 43/86 (50%), Gaps = 15/86 (17%)
+
+Query  30   MPLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKNNIPIPKRFDFL-GTDIDFGKR  88
+            M   V + +++  VGSL+ +PV   QYI D ++             FDF+ G  ID G+ 
+Sbjct  244  MSYLVYSLNRSVYVGSLLLNPVRAVQYIHDAII------------SFDFIDGDGIDVGRF  291
+
+Query  89   DTLVEVQFSNY--PFLLNNTVRSELF  112
+              + +V F  +  PF+LN+ +  E +
+Sbjct  292  KNIPQVTFLIFLSPFILNSILNYEFY  317
+
+
+>gb|AFI81985.1| Wzy [Cronobacter universalis NCTC 9529]
+Length=375
+
+ Score = 37.4 bits (85),  Expect = 3.0, Method: Composition-based stats.
+ Identities = 26/86 (31%), Positives = 43/86 (50%), Gaps = 15/86 (17%)
+
+Query  30   MPLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKNNIPIPKRFDFL-GTDIDFGKR  88
+            M   V + +++  VGSL+ +PV   QYI D ++             FDF+ G  ID G+ 
+Sbjct  246  MSYLVYSLNRSVYVGSLLLNPVRAVQYIHDAII------------SFDFIDGDGIDVGRF  293
+
+Query  89   DTLVEVQFSNY--PFLLNNTVRSELF  112
+              + +V F  +  PF+LN+ +  E +
+Sbjct  294  KNIPQVTFLIFLSPFILNSILNYEFY  319
+
+
+>ref|XP_003884020.1| hypothetical protein NCLIV_037700 [Neospora caninum Liverpool]
+ emb|CBZ53988.1| hypothetical protein NCLIV_037700 [Neospora caninum Liverpool]
+Length=920
+
+ Score = 37.4 bits (85),  Expect = 3.6, Method: Composition-based stats.
+ Identities = 30/113 (27%), Positives = 55/113 (49%), Gaps = 17/113 (15%)
+
+Query  94   VQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAII-ITKGHMFPASNSSLYYEQAQNQL  152
+            V F N   +  + + SEL  +S+ + + E +  A++ I +GH+ P              +
+Sbjct  731  VSFKNCIIIFTSNMGSELLLQSSGNTNREAVSQALMEIVRGHLRP------------ELV  778
+
+Query  153  NSLAEYNVFDVPIRLVGLIEDFETDIDIVSTTYADKRYSRTITKR---DTVKG  202
+            N + E+ VF+ P+    L+  F+ +   + T  AD+R + ++TKR   D VK 
+Sbjct  779  NRMDEFVVFN-PLSEENLLGIFDLEAAKLQTRLADRRLTLSVTKRAKADIVKA  830
+
+
+>ref|XP_005423070.1| PREDICTED: cytochrome P450 2J2-like [Geospiza fortis]
+Length=496
+
+ Score = 37.0 bits (84),  Expect = 3.9, Method: Composition-based stats.
+ Identities = 37/161 (23%), Positives = 65/161 (41%), Gaps = 27/161 (16%)
+
+Query  15   LNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKNNIPIPK  74
+            + PQ W +    L K+             G ++   +  +  I D +  +  KN  P P+
+Sbjct  1    MEPQFWPDFVSFLKKLN------------GRMLLVVLVLSLLIIDLVKKRRPKNFPPGPQ  48
+
+Query  75   RFDFLGTDIDF------------GKRDTLVEVQFSNYPFLLNN---TVRSELFHKSNMDI  119
+             F  +GT +DF            G+   +  VQF +  F++ N    VR  L H++ +  
+Sbjct  49   LFPLVGTFVDFKQPLHLALQKLTGQYGNIFSVQFGSLTFVVVNGYQMVREALVHQAEIFA  108
+
+Query  120  DEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNV  160
+            D   + +   I KG    +SN  ++ +Q +  L +L    V
+Sbjct  109  DRPNIPLLQEIFKGFGLISSNGHIWRQQRKFALATLKSLAV  149
+
+
+>ref|XP_005284979.1| PREDICTED: cytochrome P450 2J2-like [Chrysemys picta bellii]
+Length=483
+
+ Score = 37.0 bits (84),  Expect = 4.2, Method: Composition-based stats.
+ Identities = 31/117 (27%), Positives = 52/117 (45%), Gaps = 15/117 (12%)
+
+Query  59   DELVPKHWKNNIPIPKRFDFLGTDIDF------------GKRDTLVEVQFSNYPFLLNN-  105
+            D +  +  KN  P P  F F+GT +DF            G+   +  VQF N  F++ N 
+Sbjct  18   DHVKKRRPKNFPPGPLLFPFVGTVVDFKQPIHLALQKLIGRYGNIFSVQFGNLTFVVVNG  77
+
+Query  106  --TVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNV  160
+               V+  L H++ +  D   + +   I KG    +SN  ++ +Q +  L++L    V
+Sbjct  78   YQLVKEALVHQAEVFADRPHIPLLREIFKGLGLISSNGHIWRQQRKFVLSALKSIGV  134
+
+
+>ref|YP_001741874.1| putative BstYI [Candidatus Cloacamonas acidaminovorans str. Evry]
+ ref|WP_015425526.1| BstYI [Candidatus Cloacamonas acidaminovorans]
+ emb|CAO81668.1| putative BstYI [Candidatus Cloacamonas acidaminovorans str. Evry]
+Length=180
+
+ Score = 37.0 bits (84),  Expect = 4.5, Method: Composition-based stats.
+ Identities = 35/126 (28%), Positives = 53/126 (43%), Gaps = 14/126 (11%)
+
+Query  5    ITDYNHAD--EILNPQLWKEIEETLLKM----PLHVKASDQASKVGSLIFDPVGTNQYIK  58
+            + +Y+H    EIL  +  K IEE L  +    P   K S + +  G  +F P   N+  K
+Sbjct  4    VYEYSHLGGLEILLVRYPKIIEEVLTIIKDIKPHKTKISKEKTMSGKALFSPKDINKQFK  63
+
+Query  59   DELVPKHWKN-----NIPIPK---RFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSE  110
+            D+     +K      +I +P    +       IDF     LVEVQ   YPF+  +  + +
+Sbjct  64   DKFQLLGYKELRDTFSIELPNYEPKITGCYKQIDFCLGKVLVEVQLGKYPFMFYDLAKFQ  123
+
+Query  111  LFHKSN  116
+             F   N
+Sbjct  124  YFFNEN  129
+
+
+>ref|XP_005492359.1| PREDICTED: cytochrome P450 2J2-like [Zonotrichia albicollis]
+Length=498
+
+ Score = 37.0 bits (84),  Expect = 4.6, Method: Composition-based stats.
+ Identities = 31/117 (27%), Positives = 51/117 (44%), Gaps = 16/117 (13%)
+
+Query  60   ELVPKHWKNNIPI-PKRFDFLGTDIDF------------GKRDTLVEVQFSNYPFLLNN-  105
+            +LV K    N P  P+ F  +GT +DF            G+   +  VQF +  F++ N 
+Sbjct  33   DLVKKRRPRNFPPGPQLFPLVGTVVDFKQPLHLALQKLTGRYGNIFSVQFGSLTFVVVNG  92
+
+Query  106  --TVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNV  160
+               VR  L H++ +  D   + +   I KG    +SN  ++ +Q +  L +L    V
+Sbjct  93   YQMVREALVHQAEIFADRPNIPLLQEIFKGFGLISSNGHIWRQQRKFALATLKSLAV  149
+
+
+>ref|WP_006419590.1| conserved hypothetical protein [delta proteobacterium NaphS2]
+ gb|EFK11948.1| conserved hypothetical protein [delta proteobacterium NaphS2]
+Length=249
+
+ Score = 36.2 bits (82),  Expect = 8.2, Method: Composition-based stats.
+ Identities = 27/88 (31%), Positives = 43/88 (49%), Gaps = 5/88 (5%)
+
+Query  43   VGSLIFDPVGTNQYIKDELVPKHWKNNIPIPKRFDFLGTD----IDFGKRDTLVEV-QFS  97
+            VG L+ +P     +++    P   K + P+ ++F  +       ID+ K+ T+VE  Q +
+Sbjct  84   VGDLLMNPRLILIHVRGRHHPIVKKRHTPLTEQFSHMAVSREGVIDWLKKQTIVETRQQA  143
+
+Query  98   NYPFLLNNTVRSELFHKSNMDIDEEGMK  125
+              P LL     SE FH S+MD  E  +K
+Sbjct  144  LLPHLLGRMKDSETFHASHMDSIESRLK  171
+
+
+>ref|WP_006774558.1| restriction endonuclease BglII [Clostridium hathewayi]
+ gb|EFC97679.1| restriction endonuclease BglII [Clostridium hathewayi DSM 13479]
+Length=168
+
+ Score = 36.2 bits (82),  Expect = 8.3, Method: Composition-based stats.
+ Identities = 41/171 (24%), Positives = 77/171 (46%), Gaps = 22/171 (12%)
+
+Query  8    YNHADEILNPQL--WKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKH  65
+            Y  A+++ N +L    E+EE +L          +A K  +++  P   N+ + +  V K 
+Sbjct  10   YRFAEQVFNGRLNLKTEMEEVIL----------EACKDLTILSRP-NLNKILDELFVAKG  58
+
+Query  66   WKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMK  125
+            W+   P+    +     +DF K    VEVQF +  F+  + ++ ++   SN+D  + G+ 
+Sbjct  59   WQRQAPVFSSEEAAYAKMDFLKDRIGVEVQFGHASFIGIDLLKMQIASYSNLDNIDFGVY  118
+
+Query  126  VAIIITKGHMFPASN------SSLYYEQAQNQLNSLAEYNVFDVPIRLVGL  170
+            + +   K   +  SN       SL YE+    L  +   +   VPI ++G+
+Sbjct  119  I-VTTNKMQKYLKSNYRLKWDGSLSYEKVIKYLPHIK--SAIQVPIYVIGI  166
+
+
+
+Lambda     K      H
+   0.318    0.136    0.391 
+
+Gapped
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+Effective search space used: 577081117704
+Results from round 2
+
+
+Query= 1D2I_A
+
+Length=223
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+ref|YP_003975464.1|  hypothetical protein BATR1942_18080 [Bacillu...   355    4e-96
+pdb|1D2I|A  Chain A, Crystal Structure Of Restriction Endonucleas...   345    7e-93
+ref|WP_008276391.1|  type II restriction endonuclease BglII [Cyan...   318    5e-85
+ref|WP_016949621.1|  type II restriction endonuclease BglII [Anab...   318    7e-85
+ref|YP_001868075.1|  hypothetical protein Npun_F4783 [Nostoc punc...   316    3e-84
+ref|WP_017305696.1|  hypothetical protein [Spirulina subsalsa]         285    5e-75
+ref|WP_017716967.1|  hypothetical protein [Oscillatoria sp. PCC 1...   174    2e-41
+ref|WP_017716968.1|  hypothetical protein [Oscillatoria sp. PCC 1...   147    2e-33
+
+Sequences not found previously or not previously below threshold:
+
+ref|YP_001814844.1|  restriction endonuclease BglII [Exiguobacter...  61.6    2e-07
+emb|CCM11528.1|  hypothetical protein BN341_12160 [Helicobacter h...  58.1    2e-06
+dbj|BAL58609.1|  restriction endonuclease BglII [uncultured candi...  55.8    1e-05
+ref|WP_016634959.1|  restriction endonuclease BglII [Enterococcus...  50.4    4e-04
+pdb|1SDO|A  Chain A, Crystal Structure Of Restriction Endonucleas...  49.7    7e-04
+ref|YP_001741874.1|  putative BstYI [Candidatus Cloacamonas acida...  48.9    0.001
+ref|WP_002690143.1|  restriction endonuclease BglII [Beggiatoa al...  48.9    0.001
+ref|YP_002463562.1|  Restriction endonuclease BglII [Chloroflexus...  48.5    0.002
+ref|YP_006589969.1|  restriction endonuclease [Burkholderia phage...  48.1    0.002
+ref|YP_004606987.1|  hypothetical protein HBZC1_02890 [Helicobact...  47.7    0.003
+ref|WP_006683169.1|  restriction endonuclease BglII [Candidatus G...  47.4    0.003
+ref|WP_008477311.1|  hypothetical protein [Beggiatoa sp. PS] >gb|...  46.6    0.005
+ref|YP_005014986.1|  restriction endonuclease BglII [Tannerella f...  45.0    0.015
+emb|CBX28873.1|  hypothetical protein N47_B20190 [uncultured Desu...  45.0    0.015
+ref|WP_020261380.1|  restriction endonuclease BglII [unclassified...  43.9    0.037
+ref|WP_008428000.1|  hypothetical protein [Planococcus donghaensi...  43.1    0.064
+ref|WP_006774558.1|  restriction endonuclease BglII [Clostridium ...  42.7    0.079
+emb|CDC05318.1|  restriction endonuclease BglII [Clostridium lept...  42.7    0.084
+ref|YP_007880896.1|  Restriction endonuclease BglII [Meiothermus ...  42.7    0.084
+ref|YP_003508170.1|  Restriction endonuclease BglII [Meiothermus ...  42.7    0.084
+ref|WP_000394357.1|  hypothetical protein [Bacillus cereus] >gb|E...  42.0    0.13 
+ref|WP_003528270.1|  restriction endonuclease BglII [Clostridium ...  42.0    0.13 
+ref|WP_002140580.1|  hypothetical protein [Bacillus cereus] >gb|E...  41.6    0.16 
+ref|YP_001295656.1|  Protein of unknown function [Flavobacterium ...  41.6    0.19 
+ref|WP_001009462.1|  hypothetical protein [Bacillus cereus] >gb|E...  41.2    0.23 
+ref|YP_004863573.1|  Restriction endonuclease BglII [Candidatus C...  41.2    0.25 
+ref|WP_008318765.1|  Restriction endonuclease BglII [Haloferax mu...  41.2    0.26 
+ref|WP_006600442.1|  Restriction endonuclease BglII [Haloferax al...  40.8    0.28 
+ref|YP_007171340.1|  Restriction endonuclease BglII [Dactylococco...  40.8    0.32 
+ref|WP_009139978.1|  hypothetical protein [Slackia piriformis] >g...  40.0    0.48 
+ref|YP_286723.1|  hypothetical protein Daro_3524 [Dechloromonas a...  38.5    1.3  
+ref|YP_004546094.1|  Restriction endonuclease BglII [Desulfotomac...  38.1    1.8  
+emb|CAJ72399.1|  unknown protein [Candidatus Kuenenia stuttgartie...  37.7    2.3  
+ref|WP_010509547.1|  hypothetical protein [SAR324 cluster bacteri...  37.7    2.5  
+gb|ACJ85632.1|  unknown [Medicago truncatula]                         36.6    5.0  
+ref|XP_005167823.1|  PREDICTED: uncharacterized protein LOC101885...  36.6    5.9  
+ref|WP_009292102.1|  restriction endonuclease BglII [Bacteroides ...  36.2    7.1  
+gb|EHK20225.1|  putative PKS-NRPS protein [Trichoderma virens Gv2...  36.2    7.4  
+ref|XP_004388503.1|  PREDICTED: serine/threonine-protein kinase N...  35.8    8.7  
+
+
+>ref|YP_003975464.1| hypothetical protein BATR1942_18080 [Bacillus atrophaeus 1942]
+ ref|WP_003326162.1| type II restriction endonuclease BglII [Bacillus atrophaeus]
+ sp|Q45488.1|T2B2_BACSU RecName: Full=Type-2 restriction enzyme BglII; Short=R.BglII; 
+AltName: Full=Endonuclease BglII; AltName: Full=Type II restriction 
+enzyme BglII
+ gb|AAC45060.1| BglII endonuclease [Bacillus subtilis]
+ gb|ADP34533.1| hypothetical protein BATR1942_18080 [Bacillus atrophaeus 1942]
+ gb|EIM11425.1| hypothetical protein UY9_06735 [Bacillus atrophaeus C89]
+Length=223
+
+ Score =  355 bits (912),  Expect = 4e-96, Method: Composition-based stats.
+ Identities = 223/223 (100%), Positives = 223/223 (100%), Gaps = 0/223 (0%)
+
+Query  1    MKIDITDYNHADEILNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDE  60
+            MKIDITDYNHADEILNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDE
+Sbjct  1    MKIDITDYNHADEILNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDE  60
+
+Query  61   LVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDID  120
+            LVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDID
+Sbjct  61   LVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDID  120
+
+Query  121  EEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDI  180
+            EEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDI
+Sbjct  121  EEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDI  180
+
+Query  181  VSTTYADKRYSRTITKRDTVKGKVIDTNTPNTRRRKRGTIVTY  223
+            VSTTYADKRYSRTITKRDTVKGKVIDTNTPNTRRRKRGTIVTY
+Sbjct  181  VSTTYADKRYSRTITKRDTVKGKVIDTNTPNTRRRKRGTIVTY  223
+
+
+>pdb|1D2I|A Chain A, Crystal Structure Of Restriction Endonuclease Bglii 
+Complexed With Dna 16-Mer
+ pdb|1D2I|B Chain B, Crystal Structure Of Restriction Endonuclease Bglii 
+Complexed With Dna 16-Mer
+ pdb|1DFM|A Chain A, Crystal Structure Of Restriction Endonuclease Bglii 
+Complexed With Dna 16-Mer
+ pdb|1DFM|B Chain B, Crystal Structure Of Restriction Endonuclease Bglii 
+Complexed With Dna 16-Mer
+ pdb|1ES8|A Chain A, Crystal Structure Of Free Bglii
+Length=223
+
+ Score =  345 bits (884),  Expect = 7e-93, Method: Composition-based stats.
+ Identities = 218/222 (99%), Positives = 218/222 (99%), Gaps = 0/222 (0%)
+
+Query  2    KIDITDYNHADEILNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDEL  61
+            KIDITDYNHADEILNPQLWKEIEETLLK PLHVKASDQASKVGSLIFDPVGTNQYIKDEL
+Sbjct  2    KIDITDYNHADEILNPQLWKEIEETLLKXPLHVKASDQASKVGSLIFDPVGTNQYIKDEL  61
+
+Query  62   VPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDE  121
+            VPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSN DIDE
+Sbjct  62   VPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNXDIDE  121
+
+Query  122  EGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDIV  181
+            EG KVAIIITKGH FPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDIV
+Sbjct  122  EGXKVAIIITKGHXFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDIV  181
+
+Query  182  STTYADKRYSRTITKRDTVKGKVIDTNTPNTRRRKRGTIVTY  223
+            STTYADKRYSRTITKRDTVKGKVIDTNTPNTRRRKRGTIVTY
+Sbjct  182  STTYADKRYSRTITKRDTVKGKVIDTNTPNTRRRKRGTIVTY  223
+
+
+>ref|WP_008276391.1| type II restriction endonuclease BglII [Cyanothece sp. CCY0110]
+ gb|EAZ90458.1| hypothetical protein CY0110_26562 [Cyanothece sp. CCY0110]
+Length=224
+
+ Score =  318 bits (816),  Expect = 5e-85, Method: Composition-based stats.
+ Identities = 110/218 (51%), Positives = 156/218 (72%), Gaps = 6/218 (2%)
+
+Query  1    MKIDITDYNHADEILNPQL---WKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYI  57
+            ++I++TD+N+++ ++N Q    W  I+ TL  MPLH+KAS Q+   G+ IFDP+GTN++I
+Sbjct  4    IQIEVTDFNNSNFLINSQFNNEWNVIQTTLTSMPLHLKASSQSGIEGNPIFDPIGTNEFI  63
+
+Query  58   KDELVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNM  117
+            ++ LV + W ++IPIPK + FLG DID GK   ++E QFSNYPFLLNN +RSELF KS +
+Sbjct  64   ENNLVREGWSSHIPIPKAYQFLGKDIDCGKSGVILEFQFSNYPFLLNNLLRSELFFKSKI  123
+
+Query  118  DIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETD  177
+             ++ +   + IIITKG MFPASNS+LYYEQA +QL +L +Y VF VPIRLVGL E+FE +
+Sbjct  124  HLNSQVTNLVIIITKGKMFPASNSTLYYEQAVSQLTALTKYKVFHVPIRLVGLFEEFEQN  183
+
+Query  178  IDIVSTTYADKRYSRTITKRDTVKGKVIDTNTPNTRRR  215
+            I+IV + Y +K+ SR I ++   +G+ I +      RR
+Sbjct  184  INIVWSIY-EKQRSRNIIEQK--QGQCIISQGIKPTRR  218
+
+
+>ref|WP_016949621.1| type II restriction endonuclease BglII [Anabaena sp. PCC 7108]
+Length=190
+
+ Score =  318 bits (815),  Expect = 7e-85, Method: Composition-based stats.
+ Identities = 96/188 (52%), Positives = 130/188 (70%), Gaps = 0/188 (0%)
+
+Query  30   MPLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKNNIPIPKRFDFLGTDIDFGKRD  89
+            MPLH+KASDQA   G+ IFDPVGTN+YIK  L+   W++NIPIP  + FLG ++DF K  
+Sbjct  1    MPLHIKASDQAGIQGNPIFDPVGTNEYIKAALIQSGWQSNIPIPIPYRFLGKEVDFCKSG  60
+
+Query  90   TLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQ  149
+             ++E+QFSNYPFLLNNT+RSELF K+  +       + I++TK  MFPASNS+LYYEQA 
+Sbjct  61   IIIEIQFSNYPFLLNNTLRSELFFKAKTEFAGHPTNILILVTKALMFPASNSTLYYEQAV  120
+
+Query  150  NQLNSLAEYNVFDVPIRLVGLIEDFETDIDIVSTTYADKRYSRTITKRDTVKGKVIDTNT  209
+            NQL +L    VFD+PIRL+GL E   T + ++ + Y  +RYSRT+  R T + ++I   +
+Sbjct  121  NQLTALVINKVFDIPIRLIGLFEQKNTTVPVIWSQYLSERYSRTVNNRITRQCEIIAGLS  180
+
+Query  210  PNTRRRKR  217
+              +R + R
+Sbjct  181  SRSRCQLR  188
+
+
+>ref|YP_001868075.1| hypothetical protein Npun_F4783 [Nostoc punctiforme PCC 73102]
+ ref|WP_012411088.1| type II restriction endonuclease BglII [Nostoc punctiforme]
+ gb|ACC83132.1| hypothetical protein Npun_F4783 [Nostoc punctiforme PCC 73102]
+Length=190
+
+ Score =  316 bits (809),  Expect = 3e-84, Method: Composition-based stats.
+ Identities = 103/188 (55%), Positives = 131/188 (70%), Gaps = 0/188 (0%)
+
+Query  30   MPLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKNNIPIPKRFDFLGTDIDFGKRD  89
+            MPLH+KASDQA   G+ IFDPVGTN+YIK   +   W++NIPIP  + FLGTD+DF K  
+Sbjct  1    MPLHIKASDQAGIQGNAIFDPVGTNEYIKAAFIHDSWQSNIPIPAPYRFLGTDVDFAKAG  60
+
+Query  90   TLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQ  149
+             ++E+QFSNYPFLLNNT+RSELF K+  +       + II+TK  MFPASNS+LYYEQA 
+Sbjct  61   IIIEIQFSNYPFLLNNTLRSELFFKAKTEFVGYPTNLIIIVTKALMFPASNSTLYYEQAV  120
+
+Query  150  NQLNSLAEYNVFDVPIRLVGLIEDFETDIDIVSTTYADKRYSRTITKRDTVKGKVIDTNT  209
+            NQL +LA+  VFDVPIRLVGL E   T + I+ T Y  KRYSRT+  R + + ++I   +
+Sbjct  121  NQLTALAKNKVFDVPIRLVGLFEQQNTIVPIIWTEYLSKRYSRTVNTRVSRECEIIAGRS  180
+
+Query  210  PNTRRRKR  217
+              +R   R
+Sbjct  181  ARSRCLLR  188
+
+
+>ref|WP_017305696.1| hypothetical protein [Spirulina subsalsa]
+Length=219
+
+ Score =  285 bits (730),  Expect = 5e-75, Method: Composition-based stats.
+ Identities = 82/199 (42%), Positives = 125/199 (63%), Gaps = 3/199 (1%)
+
+Query  1    MKIDITDYNHADEILNPQL---WKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYI  57
+            M I+ TD+N+ +E L+ +    W E+E+TL  MPL+VK S+Q    G+++FDP+ TN YI
+Sbjct  1    MLIEYTDFNNQNEDLSRKFASEWMEVEQTLCSMPLYVKGSNQQGIKGNMVFDPIATNAYI  60
+
+Query  58   KDELVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNM  117
+            K+ L  K W  N  IP+  + LG D+DF K   L+E+QFS+Y FLLNN +RSE+F KS  
+Sbjct  61   KNSLQSKGWIANAAIPEHINPLGKDVDFTKNTVLLEIQFSHYAFLLNNIIRSEVFFKSRS  120
+
+Query  118  DIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETD  177
+             ++   + + +++TK  + P++NSSL+Y QA  QL  +   N+F +P R+VGL  D E +
+Sbjct  121  ALNSHSVALMVLVTKFDILPSANSSLHYTQAVEQLLVIETANIFSLPTRIVGLNVDIENE  180
+
+Query  178  IDIVSTTYADKRYSRTITK  196
+            I  + T Y   +  R  ++
+Sbjct  181  IQAIFTQYQSPQSRRIESQ  199
+
+
+>ref|WP_017716967.1| hypothetical protein [Oscillatoria sp. PCC 10802]
+Length=101
+
+ Score =  174 bits (441),  Expect = 2e-41, Method: Composition-based stats.
+ Identities = 56/101 (56%), Positives = 69/101 (69%), Gaps = 3/101 (2%)
+
+Query  1    MKIDITDYNHADEILNPQL---WKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYI  57
+            M I  TD+N+AD ++N      W +IE  L  MPLH+KAS QA   G+ +FDPVGTNQYI
+Sbjct  1    MLIQFTDFNNADLVINTHCNAEWNDIESVLTAMPLHLKASRQAGIEGNPVFDPVGTNQYI  60
+
+Query  58   KDELVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSN  98
+            K  LV   W++N+PIP  + FLGTDID GK   LVEVQFS+
+Sbjct  61   KAALVKIGWQSNLPIPAPYRFLGTDIDLGKSGVLVEVQFSH  101
+
+
+>ref|WP_017716968.1| hypothetical protein [Oscillatoria sp. PCC 10802]
+Length=107
+
+ Score =  147 bits (372),  Expect = 2e-33, Method: Composition-based stats.
+ Identities = 37/107 (35%), Positives = 58/107 (55%), Gaps = 2/107 (1%)
+
+Query  111  LFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGL  170
+            +F  +   +  +  ++ ++I K  MFPASNSSLYYE A  QL +LA Y  F VP+R+VGL
+Sbjct  1    MFFNAQTLLTGQPTRLVVLIAKAQMFPASNSSLYYETAVQQLTALAGY-AFKVPMRVVGL  59
+
+Query  171  IEDFETDIDIVSTTYADKRYSRTITKRDTVKGKVIDTNTPNTRRRKR  217
+             E   T + +  T Y      + +T+ D  + ++I   +  +R   R
+Sbjct  60   FEPKNTTVQVKCTVYEQATSRKIVTQED-RQCQIIAGRSARSRCLLR  105
+
+
+>ref|YP_001814844.1| restriction endonuclease BglII [Exiguobacterium sibiricum 255-15]
+ ref|WP_012371243.1| restriction endonuclease BglII [Exiguobacterium sibiricum]
+ gb|ACB61827.1| Restriction endonuclease BglII [Exiguobacterium sibiricum 255-15]
+Length=184
+
+ Score = 61.6 bits (148),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 49/188 (27%), Positives = 82/188 (44%), Gaps = 19/188 (10%)
+
+Query  1    MKID-ITDYNHADEILNPQLWKEIEETLLKMP------LHVKASDQASKVGSLIFDPVGT  53
+            MKID I  +N+ + ++      E+ E L  +          K S + + +G +++ PV  
+Sbjct  1    MKIDAIYSFNNGNSVIKESYSNELNEILSAIKSIDASKFKTKISKEKTSLGKMLYSPVAL  60
+
+Query  54   NQYIKDELVPKHWKN--NIPI-----PKRFDFLG-TDIDFGKRDTLVEVQFSNYPFLLNN  105
+            N+ +K  L P  WK   +  I     P   D L   ++DF K +  VEVQF  Y F+  +
+Sbjct  61   NKELKKILNPLGWKELKHEAIYSSDNPDISDTLAHREMDFVKNEVGVEVQFGKYAFMAYD  120
+
+Query  106  TVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPI  165
+                    K+   I+   + + I+  K      S    YYEQ    L +    N+ D+P+
+Sbjct  121  ICSKMPIFKNKGYIE---VGIEIVPMKAFAKYMSTGVSYYEQITWDLENRGVSNL-DIPV  176
+
+Query  166  RLVGLIED  173
+             ++G+  D
+Sbjct  177  IVIGIDAD  184
+
+
+>emb|CCM11528.1| hypothetical protein BN341_12160 [Helicobacter heilmannii ASB1.4]
+Length=203
+
+ Score = 58.1 bits (139),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 45/186 (25%), Positives = 65/186 (35%), Gaps = 35/186 (18%)
+
+Query  16   NPQLWKEIEETLLKMPLHV---KASDQASKVGSLIFDPVGTNQYIKDELVPKHWKNNIPI  72
+            +P LW+EI+  +L +  +V   K S +  + G+ +F PV  N+  K  L    W  N   
+Sbjct  20   HPNLWQEIQSVILNINAYVCQTKISQEKGRQGNCLFSPVEINKAFKVSLNALGWLENRQT  79
+
+Query  73   --PKRFDFLG--------------------------TDIDFGKRDTLVEVQFSNYPFLLN  104
+                    L                              DF K    +EVQF  Y F+  
+Sbjct  80   YYLTPHQSLAFETMYLNPEMQKQAIEAQGQTAYLSYNQTDFLKSRIAIEVQFGKYAFVAY  139
+
+Query  105  NTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVP  164
+            +     +       ID   + V II TK      S+   YYE     L      N   VP
+Sbjct  140  DLFVKHMAFYVANAID---VGVEIIPTKAMCAQMSSGIAYYESEVYNLYR-QGRNTPAVP  195
+
+Query  165  IRLVGL  170
+            + L+G+
+Sbjct  196  LVLIGI  201
+
+
+>dbj|BAL58609.1| restriction endonuclease BglII [uncultured candidate division 
+OP1 bacterium]
+Length=190
+
+ Score = 55.8 bits (133),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 39/187 (21%), Positives = 75/187 (41%), Gaps = 30/187 (16%)
+
+Query  3    IDITDYNHADEILNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDELV  62
+            + I + NH +E+   +++  IE  +       K S + +  G +++ P   N+  K+   
+Sbjct  13   LQILEKNHKEEL--REIYDVIES-IDAATCKTKISKEKTSRGKVLYSPGSLNKAFKEAFS  69
+
+Query  63   PKHWK-----NNIPI--------------PKRFDFLGTDIDFGKRDTLVEVQFSNYPFLL  103
+             + W+      + PI              P+ +     ++DF K    +EVQF  Y F++
+Sbjct  70   KRGWQVIKVPCDYPIQYYVDGYTPPSRHGPRPYR----EMDFVKDRVGIEVQFGKYAFMV  125
+
+Query  104  NNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDV  163
+             N         +   ID   + V I+  K      S    Y+EQ    L      ++ D+
+Sbjct  126  YNVAAKMTIFHNLSFID---VGVEIVPVKELQAQMSTGVSYFEQFVWDLEHRGTADI-DI  181
+
+Query  164  PIRLVGL  170
+            P+ ++G+
+Sbjct  182  PVLVLGV  188
+
+
+>ref|WP_016634959.1| restriction endonuclease BglII [Enterococcus faecalis]
+ gb|EPI37878.1| restriction endonuclease BglII [Enterococcus faecalis LA3B-2]
+Length=222
+
+ Score = 50.4 bits (119),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 45/203 (23%), Positives = 79/203 (39%), Gaps = 36/203 (17%)
+
+Query  5    ITDYNHADEIL--NPQLWKEIEETLLKMPL--HVKASDQASKVGSLIFDPVGTNQYIKDE  60
+             +  N  + +L    +LW EI + +  +    H K S    + G  I+D    N   KD 
+Sbjct  7    YSHLNGLEFLLIHKRELWYEIVKAIESIDADAHKKFSKAKGRDGVEIYDQKKINIAFKDY  66
+
+Query  61   LVPKHWKNN------------------IPIPKRFDFL---GTDI-------DFGKRDTLV  92
+            L+PK W+++                  +PI ++ + +   G  I       DF K    +
+Sbjct  67   LIPKGWEDHRQDYFFTPDEELARDTMSLPINEQKEMIERAGRTIFKGFNQTDFLKDGVAI  126
+
+Query  93   EVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQL  152
+            EVQF  Y F+  +     +      DI+   + + I+ TK       +    YE+    +
+Sbjct  127  EVQFGKYAFVAYDLFVKHMAFYIANDIN---VGIEILPTKAMQKKMDSGVSAYEKEVYNV  183
+
+Query  153  NSLAEYNVFDVPIRLVGLIEDFE  175
+               +  N   VP+ ++G+  D E
+Sbjct  184  YR-SGRNTPAVPLIVIGIEPDTE  205
+
+
+>pdb|1SDO|A Chain A, Crystal Structure Of Restriction Endonuclease Bstyi
+ pdb|1VRR|A Chain A, Crystal Structure Of The Restriction Endonuclease Bstyi 
+Complex With Dna
+ pdb|1VRR|B Chain B, Crystal Structure Of The Restriction Endonuclease Bstyi 
+Complex With Dna
+ pdb|2P0J|A Chain A, Structure Of Restriction Endonuclease Bstyi Bound To 
+Non-Cognate Dna
+ pdb|2P0J|B Chain B, Structure Of Restriction Endonuclease Bstyi Bound To 
+Non-Cognate Dna
+ gb|AAO48714.1| BstYI [Geobacillus stearothermophilus]
+Length=203
+
+ Score = 49.7 bits (117),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 43/185 (24%), Positives = 71/185 (39%), Gaps = 35/185 (18%)
+
+Query  17   PQLWKEIEETLLKM---PLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKNN----  69
+            P +W+EI+E ++ +       K S + +K G +++ PV  N+  K++L  K WK +    
+Sbjct  21   PHIWEEIQEIIVSIDAEACRTKESKEKTKQGQILYSPVALNEAFKEKLEAKGWKESRTNY  80
+
+Query  70   --IPIPKRFD---------------FLGTD-------IDFGKRDTLVEVQFSNYPFLLNN  105
+                 PK                    G +        DF K    +EVQF  Y F+  +
+Sbjct  81   YVTADPKLIRETLSLEPEEQKKVIEAAGKEALKSYNQTDFVKDRVAIEVQFGKYSFVAYD  140
+
+Query  106  TVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPI  165
+                 +    +  ID   + V I+  K      S+   YYE     +       V  VP+
+Sbjct  141  LFVKHMAFYVSDKID---VGVEILPMKELSKEMSSGISYYEGELYNVIR-QGRGVPAVPL  196
+
+Query  166  RLVGL  170
+             L+G+
+Sbjct  197  VLIGI  201
+
+
+>ref|YP_001741874.1| putative BstYI [Candidatus Cloacamonas acidaminovorans str. Evry]
+ ref|WP_015425526.1| BstYI [Candidatus Cloacamonas acidaminovorans]
+ emb|CAO81668.1| putative BstYI [Candidatus Cloacamonas acidaminovorans str. Evry]
+Length=180
+
+ Score = 48.9 bits (115),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 33/122 (28%), Positives = 49/122 (41%), Gaps = 14/122 (11%)
+
+Query  13   EILNPQLWKEIEETLLKM----PLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKN  68
+            EIL  +  K IEE L  +    P   K S + +  G  +F P   N+  KD+     +K 
+Sbjct  14   EILLVRYPKIIEEVLTIIKDIKPHKTKISKEKTMSGKALFSPKDINKQFKDKFQLLGYKE  73
+
+Query  69   -----NIPIPKRFDF----LGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDI  119
+                 +I +P  ++         IDF     LVEVQ   YPF+  +  + + F   N   
+Sbjct  74   LRDTFSIELPN-YEPKITGCYKQIDFCLGKVLVEVQLGKYPFMFYDLAKFQYFFNENKAD  132
+
+Query  120  DE  121
+              
+Sbjct  133  VG  134
+
+
+>ref|WP_002690143.1| restriction endonuclease BglII [Beggiatoa alba]
+ gb|EIJ43182.1| Restriction endonuclease BglII [Beggiatoa alba B18LD]
+Length=189
+
+ Score = 48.9 bits (115),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 38/154 (25%), Positives = 60/154 (39%), Gaps = 26/154 (16%)
+
+Query  35   KASDQASKVGSLIFDPVGTNQYIKDELVPKHWKN-------------NIPIPK-----RF  76
+            K S++ +K+  L+F P   N   K+    K W N             N  +PK      +
+Sbjct  42   KISEEQTKLDELLFSPKALNTQFKNFFALKKWSNHKIECNYSNDYYINGYVPKSMGKAPY  101
+
+Query  77   DFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMF  136
+                 D+DF K    VEVQF  Y F++ N             +    + V I+  K    
+Sbjct  102  R----DMDFLKEKVGVEVQFGKYAFMVYNVCAKMTIF---SKLAGITVGVEIVPIKDLAD  154
+
+Query  137  PASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGL  170
+              S    Y+EQ    L +    N+ D+P+ ++G+
+Sbjct  155  EMSTGVSYFEQFVWDLENRGVSNI-DLPVLILGI  187
+
+
+>ref|YP_002463562.1| Restriction endonuclease BglII [Chloroflexus aggregans DSM 9485]
+ ref|WP_015940984.1| restriction endonuclease BglII [Chloroflexus aggregans]
+ gb|ACL25126.1| Restriction endonuclease BglII [Chloroflexus aggregans DSM 9485]
+Length=189
+
+ Score = 48.5 bits (114),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 40/186 (22%), Positives = 75/186 (41%), Gaps = 30/186 (16%)
+
+Query  8    YNHADEILNPQL---WKEIEETLLKM---PLHVKASDQASKVGSLIFDPVGTNQYIKDEL  61
+            +N  + I+  Q      E+E+ +  +       K S + +  G +++ P   N+    E 
+Sbjct  9    FNRGEGIIRSQYSAELGEVEQVIAAVDSTQCKTKTSREKTMPGRMLYSPRALNRAFTKEF  68
+
+Query  62   VPKHWKNN-----------IP--IPK-RFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNT-  106
+              + W+             +P  +P         +IDF K    +EVQF  Y F++ N  
+Sbjct  69   GSRGWEKYKVQCDYSTEYYVPGYVPSSPSKGAFREIDFVKNRVGIEVQFGKYAFMVYNVC  128
+
+Query  107  VRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSS--LYYEQAQNQLNSLAEYNVFDVP  164
+             +  +FHK  +      + V I I    +F    S+   Y+EQ    L      ++ D+P
+Sbjct  129  AKMTIFHKLGV------IDVGIEIVPIKLFAEEMSTGVSYFEQFVWDLEHRGIADI-DIP  181
+
+Query  165  IRLVGL  170
+            + ++G+
+Sbjct  182  VLVLGV  187
+
+
+>ref|YP_006589969.1| restriction endonuclease [Burkholderia phage DC1]
+ gb|AEZ50857.1| restriction endonuclease [Burkholderia phage DC1]
+Length=203
+
+ Score = 48.1 bits (113),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 45/199 (23%), Positives = 73/199 (37%), Gaps = 37/199 (18%)
+
+Query  5    ITDYNHADEIL--NPQLWKEIEETLL---KMPLHVKASDQASKVGSLIFDPVGTNQYIKD  59
+             +  N  + +L   P+LWKEI+E +       L  K S +   +G +++ P   N+ I +
+Sbjct  7    YSHLNGLEFLLVHKPKLWKEIQEVIKNVDATKLRTKQSKETRSMGEMLYSPRAMNKAIDE  66
+
+Query  60   ELVPKHW---------KNNIPIPKRFDFLGTD-------------------IDFGKRDTL  91
+                  W          ++  + ++  F+G D                    DF K    
+Sbjct  67   GFARHKWGERRISYWVTSDARLIRKTLFMGPDQQKAEIEGAGKKPLASYNQTDFVKERVA  126
+
+Query  92   VEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQ  151
+            VEVQF  Y F+  +     L       ID   + V I+  K      S+   YYE     
+Sbjct  127  VEVQFGKYAFVAYDLFVKHLAFYVGDVID---VGVEILPMKELQQQMSSGVGYYEGELYN  183
+
+Query  152  LNSLAEYNVFDVPIRLVGL  170
+            L       V  VP+ ++G+
+Sbjct  184  LIR-EGRGVPAVPLIVIGI  201
+
+
+>ref|YP_004606987.1| hypothetical protein HBZC1_02890 [Helicobacter bizzozeronii CIII-1]
+ ref|WP_013889771.1| restriction endonuclease BglII [Helicobacter bizzozeronii]
+ emb|CCB79275.1| hypothetical protein HBZC1_02890 [Helicobacter bizzozeronii CIII-1]
+Length=203
+
+ Score = 47.7 bits (112),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 40/186 (22%), Positives = 65/186 (35%), Gaps = 35/186 (18%)
+
+Query  16   NPQLWKEIEETLLKMPLH---VKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKNN---  69
+            +  LW+EI   +  +  +    K S +  + G  +F P+  N+  ++ L    W  N   
+Sbjct  20   HSNLWQEIIGVITNINAYACQTKTSKEKGRQGIHLFSPIELNKVFQNSLNILGWLENRQS  79
+
+Query  70   ------IPIPKRFDFLGTDI-------------------DFGKRDTLVEVQFSNYPFLLN  104
+                    +     +L  +I                   DF K    +EVQF  Y F+  
+Sbjct  80   YYLTPHQSLAFETMYLNPEIQKSVIESQGQTAYYSYNQTDFLKERIAIEVQFGKYAFVAY  139
+
+Query  105  NTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVP  164
+            +     +       ID   + + II TK      S+   YYE     L      N   VP
+Sbjct  140  DLFVKHMAFYVANAID---VGIEIIPTKAMCAQMSSGIAYYESEVYNLYR-QGRNTPAVP  195
+
+Query  165  IRLVGL  170
+            + L+G+
+Sbjct  196  LILIGI  201
+
+
+>ref|WP_006683169.1| restriction endonuclease BglII [Candidatus Glomeribacter gigasporarum]
+ emb|CCD30092.1| Restriction endonuclease BglII [Candidatus Glomeribacter gigasporarum 
+BEG34]
+Length=192
+
+ Score = 47.4 bits (111),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 43/188 (23%), Positives = 74/188 (40%), Gaps = 29/188 (15%)
+
+Query  7    DYNHADEILNPQL---WKEIEETLLKMP---LHVKASDQASKVGSLIFDPVGTNQYIKDE  60
+            D+N    I+  +     ++IE  +  +       K S + + +G ++F P+  N+  + E
+Sbjct  8    DFNGGKSIVEQKYAFELRQIETVVQSIDSACYMTKRSTEKTMMGKMLFAPIEINKAFRRE  67
+
+Query  61   LVPKHWKNNIPIPKRFD---FLG-------------TDIDFGKRDTL--VEVQFSNYPFL  102
+                 W +N  +   +    FL               D+DF K D    VEVQF  Y F+
+Sbjct  68   FNKIGW-SNYRVVCEYRYGEFLEGYLPSKNISSKPFRDMDFIKPDIKLGVEVQFGKYAFM  126
+
+Query  103  LNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFD  162
+            + N         +   ID     V I+  K  +   S    Y+EQ    L      N+ D
+Sbjct  127  VYNVCAKMTIFSNMGIID---TGVEIVPVKHFVDRMSTGVSYFEQFAWDLAHRGISNI-D  182
+
+Query  163  VPIRLVGL  170
+            +P+ ++G+
+Sbjct  183  IPVLILGI  190
+
+
+>ref|WP_008477311.1| hypothetical protein [Beggiatoa sp. PS]
+ gb|EDN70145.1| conserved hypothetical protein [Beggiatoa sp. PS]
+Length=169
+
+ Score = 46.6 bits (109),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 27/132 (21%), Positives = 44/132 (34%), Gaps = 20/132 (15%)
+
+Query  8    YNHADEILNPQLWKEIEET------LLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDEL  61
+            +N   E ++    KE+ E       +       K S++ +  GSL++ P   N   K   
+Sbjct  9    FNDGKETIDSLFPKELAEVKQVIHNVDSESCKTKVSEEKTMQGSLLYSPPKLNSAFKQGF  68
+
+Query  62   VPKHW--------------KNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTV  107
+                W               +N    K       ++DF K    +EVQF  Y F++ N  
+Sbjct  69   TKLGWDSQRISCDYPTQYYVSNYTPSKTSKHAFREMDFVKNTVGIEVQFGKYAFMVYNVC  128
+
+Query  108  RSELFHKSNMDI  119
+                   +   I
+Sbjct  129  AKMTIFHNQSII  140
+
+
+>ref|YP_005014986.1| restriction endonuclease BglII [Tannerella forsythia ATCC 43037]
+ ref|WP_014225446.1| restriction endonuclease BglII [Tannerella forsythia]
+ gb|AEW21892.1| restriction endonuclease BglII [Tannerella forsythia ATCC 43037]
+Length=205
+
+ Score = 45.0 bits (105),  Expect = 0.015, Method: Composition-based stats.
+ Identities = 42/204 (21%), Positives = 75/204 (37%), Gaps = 38/204 (18%)
+
+Query  4    DITDYNHADEIL--NPQLWKEIEETLLKMP---LHVKASDQASKVGSLIFDPVGTNQYIK  58
+              +  N  + +L  + +L+KEI +T+  +       K S + +  G +++ P+  N+   
+Sbjct  6    KYSHLNGEEYLLVHHKKLYKEIIDTIRSIDASNFMTKESKEKTMRGKMLYSPIELNRTFN  65
+
+Query  59   DELVPKHWKN------------------NIPIPKRFDFL-----------GTDIDFGKRD  89
+             +     W                     +P  K+ DFL               DF K  
+Sbjct  66   KKFKELGWNECRYQYYITTDQKILPELIMLPYDKQKDFLISKGIKYPISSYKQTDFVKDQ  125
+
+Query  90   TLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQ  149
+              VEVQF  Y F+  +     L   S   I+   + + ++ TK      S+   YYE   
+Sbjct  126  IAVEVQFGKYAFVAFDLFVKHLLFYSGGVIN---LGIEVLPTKKMQAQMSSGVAYYEGEV  182
+
+Query  150  NQLNSLAEYNVFDVPIRLVGLIED  173
+              +      N   VP+ ++G+ +D
+Sbjct  183  YNVLRHGRNNP-PVPLLILGIEQD  205
+
+
+>emb|CBX28873.1| hypothetical protein N47_B20190 [uncultured Desulfobacterium 
+sp.]
+Length=203
+
+ Score = 45.0 bits (105),  Expect = 0.015, Method: Composition-based stats.
+ Identities = 44/199 (23%), Positives = 69/199 (35%), Gaps = 37/199 (18%)
+
+Query  5    ITDYNHADEIL--NPQLWKEIEETLLKMPLH---VKASDQASKVGSLIFDPVGTNQYIKD  59
+             +  N  + ++   P+LWKEI   +L +       K S + +  G L++ P+G N     
+Sbjct  7    YSHLNGLEFLIVHKPKLWKEIRNVVLSVDAENCKTKVSKEKTMKGKLLYSPIGMNSAFSK  66
+
+Query  60   ELVPKHW----------------KNNIPIPKRFD------------FLGTDIDFGKRDTL  91
+             L    W                +  + IP +              F     DF K    
+Sbjct  67   LLHANKWAESRVSYWVTKNEKLIRKTLTIPAKEQKKEIETAGEIPIFSYNQTDFVKDRVA  126
+
+Query  92   VEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQ  151
+            VEVQF  Y F+  +     L       ID   + V I+  K      S+   YYE     
+Sbjct  127  VEVQFGKYSFVAYDLFVKHLAFYVGDRID---VGVEILPMKSLQAQMSSGVDYYEGELYN  183
+
+Query  152  LNSLAEYNVFDVPIRLVGL  170
+            +       V  VP+ ++G+
+Sbjct  184  I-VRQGRGVPAVPLIIIGI  201
+
+
+>ref|WP_020261380.1| restriction endonuclease BglII [unclassified candidate division 
+OP8]
+Length=203
+
+ Score = 43.9 bits (102),  Expect = 0.037, Method: Composition-based stats.
+ Identities = 36/175 (21%), Positives = 58/175 (34%), Gaps = 36/175 (20%)
+
+Query  5    ITDYNHADEIL--NPQLWKEIEETLL---KMPLHVKASDQASKVGSLIFDPVGTNQYIKD  59
+             +  N  + ++   P LW+EI+  +          K S +    G L++ P+  N + K 
+Sbjct  7    YSHLNGLEFLMVHKPGLWREIKHVIRDVDAKACKTKVSKEKGMKGKLLYSPIDMNLHFKS  66
+
+Query  60   ELVPKHWKNNIP---IPKRFDFLGTDI-------------------------DFGKRDTL  91
+             L    WK +     + K    +   I                         DF K    
+Sbjct  67   LLTKAGWKESRVSYWVTKNEKLIRKIISMNPKEQKKEIEATGETPIYSYNQTDFVKDRVA  126
+
+Query  92   VEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYE  146
+            +EVQF  Y F+  +     L       ID   + + I+  K      S+   YYE
+Sbjct  127  IEVQFGKYSFVAYDLFVKHLAFYVGDHID---VGIEILPMKALQSQMSSGVSYYE  178
+
+
+>ref|WP_008428000.1| hypothetical protein [Planococcus donghaensis]
+ gb|EGA91389.1| hypothetical protein GPDM_00940 [Planococcus donghaensis MPA1U2]
+Length=222
+
+ Score = 43.1 bits (100),  Expect = 0.064, Method: Composition-based stats.
+ Identities = 38/174 (22%), Positives = 69/174 (40%), Gaps = 19/174 (10%)
+
+Query  19   LWKEIEETLLKMP------LHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHW--KNNI  70
+            LW EI + +  +       LH ++    +K  S        N  IKD  + K W  ++NI
+Sbjct  24   LWDEIIDVVTSISDKDIYELHTRSYQHRNKSLSS-----ALNTLIKDRFINKGWNYESNI  78
+
+Query  71   PIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIII  130
+                ++      +DF K    +EV F++   +  N ++  +  + N        ++ +II
+Sbjct  79   FNDPKYTHKSWRLDFAKEAVSLEVGFNHSGTIAWNLMKPVIASELNHVEKAIQTRIGVII  138
+
+Query  131  TKGHMFPAS----NSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDI  180
+                   +S    N+   YEQ  N LN L        P+ ++GL +     + +
+Sbjct  139  CATQELKSSGGFDNAVGTYEQYVNYLNPLRVQ--LTTPLVILGLKKPESLSVKL  190
+
+
+>ref|WP_006774558.1| restriction endonuclease BglII [Clostridium hathewayi]
+ gb|EFC97679.1| restriction endonuclease BglII [Clostridium hathewayi DSM 13479]
+Length=168
+
+ Score = 42.7 bits (99),  Expect = 0.079, Method: Composition-based stats.
+ Identities = 30/123 (25%), Positives = 55/123 (45%), Gaps = 9/123 (7%)
+
+Query  54   NQYIKDELVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFH  113
+            N+ + +  V K W+   P+    +     +DF K    VEVQF +  F+  + ++ ++  
+Sbjct  47   NKILDELFVAKGWQRQAPVFSSEEAAYAKMDFLKDRIGVEVQFGHASFIGIDLLKMQIAS  106
+
+Query  114  KSNMDIDEEGMKVAIIITKGHMFPASN------SSLYYEQAQNQLNSLAEYNVFDVPIRL  167
+             SN+D  + G+   +   K   +  SN       SL YE+    L  +   +   VPI +
+Sbjct  107  YSNLDNIDFGV-YIVTTNKMQKYLKSNYRLKWDGSLSYEKVIKYLPHIK--SAIQVPIYV  163
+
+Query  168  VGL  170
+            +G+
+Sbjct  164  IGI  166
+
+
+>emb|CDC05318.1| restriction endonuclease BglII [Clostridium leptum CAG:27]
+Length=167
+
+ Score = 42.7 bits (99),  Expect = 0.084, Method: Composition-based stats.
+ Identities = 37/175 (22%), Positives = 76/175 (44%), Gaps = 17/175 (9%)
+
+Query  1    MKIDITDYNHADEILNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDE  60
+            +++    +  A+++ N +L  ++++ + +M L  +A    S +G   F     N+ +KD 
+Sbjct  3    VQLRSFSFRFAEQVFNSRL--QLKQEINEMLL--EACKDLSVLGRPAF-----NRILKDL  53
+
+Query  61   LVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDID  120
+             V K+W +   +           DF K    VEVQF +  F+  + ++ ++   SN+D+ 
+Sbjct  54   FVEKNWISQPRVSPEMKAYSK-FDFMKERVAVEVQFGHASFIGIDLLKFQMASYSNLDLI  112
+
+Query  121  EEGMKVAIIITKGHMFPAS-----NSSLYYEQAQNQLNSLAEYNVFDVPIRLVGL  170
+            + G+ +                  + SL YE+    L      +   VPI ++G+
+Sbjct  113  DFGVYITTTKAMQKYLKTKYNRNWDGSLNYEKVVKYLPYFK--SAIQVPIYVIGI  165
+
+
+>ref|YP_007880896.1| Restriction endonuclease BglII [Meiothermus ruber DSM 1279]
+ ref|WP_015586749.1| Restriction endonuclease BglII [Meiothermus ruber]
+ gb|AGK05399.1| Restriction endonuclease BglII [Meiothermus ruber DSM 1279]
+Length=160
+
+ Score = 42.7 bits (99),  Expect = 0.084, Method: Composition-based stats.
+ Identities = 22/89 (25%), Positives = 40/89 (45%), Gaps = 9/89 (10%)
+
+Query  35   KASDQASKVGSLIFDPVGTNQYIKDELVPKHWKN-----NIPIPKRFDFL----GTDIDF  85
+            K S + +K+G  ++ P   NQ +K+    + +       +I +P + + +       IDF
+Sbjct  18   KKSKEKTKLGKELYAPKIINQRLKEAFHKRGFHELRDYYDIRLPGQEEPVVRGAYKQIDF  77
+
+Query  86   GKRDTLVEVQFSNYPFLLNNTVRSELFHK  114
+             K   LVE QF  Y F+  +  + + F  
+Sbjct  78   FKERVLVEAQFGKYAFMFYDMAKFQYFFN  106
+
+
+>ref|YP_003508170.1| Restriction endonuclease BglII [Meiothermus ruber DSM 1279]
+ ref|WP_013014648.1| BstYI [Meiothermus ruber]
+ gb|ADD29150.1| Restriction endonuclease BglII [Meiothermus ruber DSM 1279]
+Length=182
+
+ Score = 42.7 bits (99),  Expect = 0.084, Method: Composition-based stats.
+ Identities = 22/89 (25%), Positives = 40/89 (45%), Gaps = 9/89 (10%)
+
+Query  35   KASDQASKVGSLIFDPVGTNQYIKDELVPKHWKN-----NIPIPKRFDFL----GTDIDF  85
+            K S + +K+G  ++ P   NQ +K+    + +       +I +P + + +       IDF
+Sbjct  40   KKSKEKTKLGKELYAPKIINQRLKEAFHKRGFHELRDYYDIRLPGQEEPVVRGAYKQIDF  99
+
+Query  86   GKRDTLVEVQFSNYPFLLNNTVRSELFHK  114
+             K   LVE QF  Y F+  +  + + F  
+Sbjct  100  FKERVLVEAQFGKYAFMFYDMAKFQYFFN  128
+
+
+>ref|WP_000394357.1| hypothetical protein [Bacillus cereus]
+ gb|EJS52237.1| hypothetical protein ICG_04183 [Bacillus cereus BAG1X1-3]
+Length=212
+
+ Score = 42.0 bits (97),  Expect = 0.13, Method: Composition-based stats.
+ Identities = 42/172 (25%), Positives = 70/172 (41%), Gaps = 17/172 (9%)
+
+Query  13   EILNPQLWKEIEETLLK----MPLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKN  68
+            E +N   W EI++ L      M L +  +       SL       NQ IK++L    W +
+Sbjct  20   EFINT--WLEIQQVLTNITDDMILELHQTKYIGSNKSL---SKAINQLIKEQLCAIGWSS  74
+
+Query  69   NIPIPKRFDFLGT--DIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKV  126
+               I K   +      +DF K    VEV F++   +  N ++  +  + N        K+
+Sbjct  75   ESYIFKDNKYKNKAWRLDFAKDSISVEVGFNHSGTIAWNLMKPVIAGELNHVEKAVQTKI  134
+
+Query  127  AIIIT---KGHMFPASNSSL-YYEQAQNQLNSLAEYNVFDVPIRLVGLIEDF  174
+             III+   +   F   +S++  YE+    L  L   +   VP+ +VGL +  
+Sbjct  135  GIIISATNELRDFGGFDSAIGTYEKYIEHLVPL--NSQLTVPLVIVGLKKPK  184
+
+
+>ref|WP_003528270.1| restriction endonuclease BglII [Clostridium leptum]
+ gb|EDO62606.1| restriction endonuclease BglII [Clostridium leptum DSM 753]
+Length=170
+
+ Score = 42.0 bits (97),  Expect = 0.13, Method: Composition-based stats.
+ Identities = 37/175 (22%), Positives = 75/175 (43%), Gaps = 17/175 (9%)
+
+Query  1    MKIDITDYNHADEILNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDE  60
+            +++    +  A+++ N +L  ++++ + +M L  +A    S +G   F     N+ +KD 
+Sbjct  6    VQLRSFSFRFAEQVFNSRL--QLKQEINEMLL--EACKDLSVLGRPAF-----NRILKDL  56
+
+Query  61   LVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDID  120
+             V K+W +   +           DF K    VEVQF +  F+  + ++ ++   SN+D+ 
+Sbjct  57   FVEKNWISQPRVSPEMKAYSK-FDFMKERVAVEVQFGHASFIGIDLLKFQMASYSNLDLI  115
+
+Query  121  EEGMKVAIIITKGHMFPAS-----NSSLYYEQAQNQLNSLAEYNVFDVPIRLVGL  170
+            + G+ +                    SL YE+    L      +   VPI ++G+
+Sbjct  116  DFGVYITTTKAMQKYLKTKYNRNWEGSLNYEKVVKYLPYFK--SAIQVPIYVIGI  168
+
+
+>ref|WP_002140580.1| hypothetical protein [Bacillus cereus]
+ gb|EJQ73451.1| hypothetical protein IG7_00754 [Bacillus cereus HuA2-4]
+Length=212
+
+ Score = 41.6 bits (96),  Expect = 0.16, Method: Composition-based stats.
+ Identities = 41/185 (23%), Positives = 73/185 (40%), Gaps = 12/185 (6%)
+
+Query  17   PQLWKEIEETLLKMP--LHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKNNIPIPK  74
+             + W EI++ L  +   + ++   +     +        NQ IK++L    WK+   I K
+Sbjct  22   TKTWLEIQQALSNITDEMILEVHRKKYIESNKSLSK-ALNQLIKEQLAAFRWKSESYIFK  80
+
+Query  75   RFDFLGT--DIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITK  132
+               +      +DF K    VEV F++   +  N ++  +  + N        K+ III+ 
+Sbjct  81   DNRYKNKAWRLDFAKDSISVEVAFNHSGTIAWNLMKPVIASELNHVEKAVQTKIGIIISA  140
+
+Query  133  GHMFPAS---NSSL-YYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDIVSTTYADK  188
+             +    S   +S++  YE+    L  L       VP+ +VGL +     I+       DK
+Sbjct  141  TNELRDSGGFDSAIGTYEKYVEHLMPL--NTQLTVPLVIVGLKKPETFYIET-YKISKDK  197
+
+Query  189  RYSRT  193
+               R 
+Sbjct  198  TRGRI  202
+
+
+>ref|YP_001295656.1| Protein of unknown function [Flavobacterium psychrophilum JIP02/86]
+ ref|WP_011962896.1| hypothetical protein [Flavobacterium psychrophilum]
+ emb|CAL42840.1| Protein of unknown function [Flavobacterium psychrophilum JIP02/86]
+Length=208
+
+ Score = 41.6 bits (96),  Expect = 0.19, Method: Composition-based stats.
+ Identities = 39/194 (21%), Positives = 79/194 (41%), Gaps = 17/194 (8%)
+
+Query  1    MKIDITDYNHADEILN-PQL---WKEIEETLLKMPL-HVKASDQA----SKVGSLIFDPV  51
+            M+     + H+  ILN P     + EI + +  +   H+ +  Q+    +   +      
+Sbjct  1    MEFIYNSFRHSGVILNEPDFVEEFTEIIDVISSISEGHLISKHQSYGVNNIENTPKSLSK  60
+
+Query  52   GTNQYIKDELVPKHWKNNIPIPKRFDFLGTD--IDFGKRDTLVEVQFSNYPFLLNNTVRS  109
+              N  +K+ LV K W     I +  ++LG    +DF K++  +EV F++   +  N  + 
+Sbjct  61   AINDLLKEGLVSKGWTPESGIFQDENYLGDTWRLDFAKKNISIEVAFNHSSVIAWNLTKP  120
+
+Query  110  ELFHKSNMDIDEEGMKVAIIITKGHMFPAS----NSSLYYEQAQNQLNSLAEYNVFDVPI  165
+             L  + N        K+ ++IT       +     +   YE+  + L  L   N+  +P+
+Sbjct  121  VLASELNHVKKAIQTKIGVVITATEELKQNGRFDGAIGTYEKYLDYLPPL--NNILTIPL  178
+
+Query  166  RLVGLIEDFETDID  179
+             ++GL       ++
+Sbjct  179  FIIGLKSPLTFTLE  192
+
+
+>ref|WP_001009462.1| hypothetical protein [Bacillus cereus]
+ gb|EEL30164.1| hypothetical protein bcere0018_8120 [Bacillus cereus Rock1-15]
+Length=212
+
+ Score = 41.2 bits (95),  Expect = 0.23, Method: Composition-based stats.
+ Identities = 46/189 (25%), Positives = 76/189 (41%), Gaps = 15/189 (7%)
+
+Query  16   NPQL---WKEIEETLLKMP--LHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKNNI  70
+            NP+    W EI++ L  +   + ++   Q     +        NQ IK++L    WK+  
+Sbjct  18   NPEFTNTWLEIQKALSNITDEMLLQVHRQKYIGSNKSLSK-AINQLIKEQLATFGWKSES  76
+
+Query  71   PI--PKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAI  128
+             I   KR+      +DF K    VEV F++   +  N ++  +  + N        K+ I
+Sbjct  77   YIFKDKRYKNKAWRLDFAKDIISVEVAFNHSGTIAWNLMKPVIASELNHVEKAVQTKIGI  136
+
+Query  129  IITKGHMFPAS---NSSL-YYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDIVSTT  184
+            II+  +    S   +S++  YE+    L  L       VP+ +VGL +  ET        
+Sbjct  137  IISATNELRDSGGFDSAIGTYEKYIEHLMPL--NTQLTVPLVIVGLKKP-ETFFIETYKI  193
+
+Query  185  YADKRYSRT  193
+              DK   R 
+Sbjct  194  SKDKTRGRI  202
+
+
+>ref|YP_004863573.1| Restriction endonuclease BglII [Candidatus Chloracidobacterium 
+thermophilum B]
+ ref|WP_014100794.1| restriction endonuclease BglII [Candidatus Chloracidobacterium 
+thermophilum]
+ gb|AEP13056.1| Restriction endonuclease BglII [Candidatus Chloracidobacterium 
+thermophilum B]
+Length=189
+
+ Score = 41.2 bits (95),  Expect = 0.25, Method: Composition-based stats.
+ Identities = 38/185 (21%), Positives = 72/185 (39%), Gaps = 28/185 (15%)
+
+Query  8    YNHADEILNPQL---WKEIEETLLKMP---LHVKASDQASKVGSLIFDPVGTNQYIKDEL  61
+            +N+  E++  +    + EI+  +  +       K S + +  G  +++    N+   +E 
+Sbjct  9    FNNGKEVVESKYNLEFSEIKNIIHSIDSERCRTKISREKTMSGRKLYNSKELNKAFTEEF  68
+
+Query  62   VPKHWKNNI---------------PIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNT  106
+              ++WK                  P  K       +IDF K    VEVQF  Y F++ N 
+Sbjct  69   ARQNWKRYRIECTYSSEYYTEDFHPAEKPKSAF-REIDFVKNRLGVEVQFGKYAFMVYNV  127
+
+Query  107  -VRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPI  165
+              +  +FH  N+        + I+  K      S    Y+EQ    L      ++ D+P+
+Sbjct  128  CAKMTIFHNLNVIDAG----IEIVPVKSFANEMSTGVSYFEQFVWDLEHRGVSDI-DIPV  182
+
+Query  166  RLVGL  170
+             ++G+
+Sbjct  183  LVLGI  187
+
+
+>ref|WP_008318765.1| Restriction endonuclease BglII [Haloferax mucosum]
+ gb|ELZ96436.1| Restriction endonuclease BglII [Haloferax mucosum ATCC BAA-1512]
+Length=208
+
+ Score = 41.2 bits (95),  Expect = 0.26, Method: Composition-based stats.
+ Identities = 41/211 (20%), Positives = 84/211 (40%), Gaps = 25/211 (11%)
+
+Query  5    ITDYNHADEILNPQ--LWKEIEETLLKM--PLHVKASDQASKVGSLIFDPVGTNQYIKDE  60
+             + +  A+ +      L  EI ET+  +  P   K S +A+  G  +F P   N   + E
+Sbjct  7    YSHFGGAEILEARHPTLNDEINETIEAVANPGRGKISQEATNKGEKLFSPKELNTAFEKE  66
+
+Query  61   LVPKHWKN-----NIPIPK-RFDFLGT--DIDFGKRDTLVEVQFSNYPFLLNNTVRSELF  112
+               + W+       I IP    +  G+   +DF K    VEVQ   Y  +  +  + +  
+Sbjct  67   FESRGWEEVRENFTISIPDYEHEVSGSYFQVDFEKDGIFVEVQKGKYFAMYYDLAKFQFL  126
+
+Query  113  HKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIE  172
+            +    D++   + + I+ +       S+   Y E+  + L  +       VP++++ +  
+Sbjct  127  YN-RGDLE---VGIEIVPSHFLYRQMSSGVSYGEKLVHDLERIGGNFPL-VPLKVILI--  179
+
+Query  173  DFETDIDIVSTTYA--DKRYSRTITKRDTVK  201
+                D+ +  T Y   +++  R +   D+ +
+Sbjct  180  ----DMPLEGTDYMMNERKKVRGLNGEDSQQ  206
+
+
+>ref|WP_006600442.1| Restriction endonuclease BglII [Haloferax alexandrinus]
+ gb|ELZ92828.1| Restriction endonuclease BglII [Haloferax alexandrinus JCM 10717]
+Length=201
+
+ Score = 40.8 bits (94),  Expect = 0.28, Method: Composition-based stats.
+ Identities = 41/176 (24%), Positives = 77/176 (44%), Gaps = 17/176 (9%)
+
+Query  13   EILNPQLWKEIEETLLKM--PLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKNN-  69
+            E+  P+L +EI E +  +  P   K S++A+  G  +F P   N+  +++L P  W+N  
+Sbjct  17   ELRYPELNEEINEAIEAIENPGRGKISEEATNKGEELFSPKDLNEAFENQLEPLGWENER  76
+
+Query  70   ----IPIPK-RFDFLGT--DIDFGKRDTLVEVQFSNYPFLLNNTVR-SELFHKSNMDIDE  121
+                  IP    +  G+  + DF K +  VEVQ   Y  +  +  +   LF+K  ++   
+Sbjct  77   KYYTTSIPDYEHEVTGSYNEYDFKKEEIFVEVQMGKYFAMFYDLAKFQNLFNKGELE---  133
+
+Query  122  EGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETD  177
+              + + I+ +       S+   Y E+    L  +   N   VP++++ L    +  
+Sbjct  134  --VGIEIVPSHFLYRQMSSGVSYGEKLVYDLERIGG-NFPQVPVKVILLDMPLDGT  186
+
+
+>ref|YP_007171340.1| Restriction endonuclease BglII [Dactylococcopsis salina PCC 8305]
+ ref|WP_015228989.1| Restriction endonuclease BglII [Dactylococcopsis salina]
+ gb|AFZ49983.1| Restriction endonuclease BglII [Dactylococcopsis salina PCC 8305]
+Length=193
+
+ Score = 40.8 bits (94),  Expect = 0.32, Method: Composition-based stats.
+ Identities = 31/147 (22%), Positives = 51/147 (35%), Gaps = 22/147 (14%)
+
+Query  43   VGSLIFDPVGTNQYIKDELVPKHWKNNIPIP------------KRFDFLG-----TDIDF  85
+             G +++ P   N         K W +   IP            +  + +       ++DF
+Sbjct  50   QGQILYSPKCLNDQFARCFQEKSWGSY-RIPCSYSSSYYTSNYQPQNSMDHKNAYREMDF  108
+
+Query  86   GKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYY  145
+             K    VEVQF  Y F++ N             I      V I+  K      S    Y+
+Sbjct  109  IKGKVGVEVQFGKYSFMVYNVCAKMTIFSKKAGIKA---GVEIVPIKDLAVQMSTGVSYF  165
+
+Query  146  EQAQNQLNSLAEYNVFDVPIRLVGLIE  172
+            EQ    L      N+ D+P+ ++G++ 
+Sbjct  166  EQIVWDLEQRGVSNI-DIPVLIIGIMV  191
+
+
+>ref|WP_009139978.1| hypothetical protein [Slackia piriformis]
+ gb|EJZ83282.1| hypothetical protein HMPREF9451_01801 [Slackia piriformis YIT 
+12062]
+Length=251
+
+ Score = 40.0 bits (92),  Expect = 0.48, Method: Composition-based stats.
+ Identities = 51/201 (26%), Positives = 80/201 (40%), Gaps = 39/201 (19%)
+
+Query  1    MKIDITDYNHADEILNPQ-----LWKEIEETLLKMP--LHVKASDQASKVGSLIFDPVGT  53
+            MK  I  + HAD +         LW EIE+ L  +   + +K  +  ++    I   +  
+Sbjct  1    MKYRIHGHRHADFLFRELGEYACLWGEIEDALASISDDMIIKEFEGEARKAKSISQAI--  58
+
+Query  54   NQYIKDELVPKHWKNNIPIPKRFDFLGTD----------IDFGKRDTLVEVQFSNYP---  100
+            N+ +K ELV + W+     P+ + F   +          +DF K    VEV F++     
+Sbjct  59   NRLVKAELVKRAWE-----PESYIFADEEYGRAAKGTWRLDFAKDALSVEVAFNHRSDIS  113
+
+Query  101  -FLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHM----FPASNSSLYYEQAQNQLNSL  155
+              L+  T+ SEL H         G  V I  T+       F ++  +  YE     L  L
+Sbjct  114  WNLIKPTLASELNHVQKAIQTSGG--VVITATQAMKEAGGFDSAVGT--YEDYVQYLKPL  169
+
+Query  156  AEYNVFDVPIRLVGLIEDFET  176
+                +   P+ +VGL E  ET
+Sbjct  170  GT--MLPAPLVIVGL-EPPET  187
+
+
+>ref|YP_286723.1| hypothetical protein Daro_3524 [Dechloromonas aromatica RCB]
+ ref|WP_011289249.1| hypothetical protein [Dechloromonas aromatica]
+ gb|AAZ48253.1| hypothetical protein Daro_3524 [Dechloromonas aromatica RCB]
+Length=234
+
+ Score = 38.5 bits (88),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 41/188 (22%), Positives = 75/188 (40%), Gaps = 19/188 (10%)
+
+Query  1    MKIDITDYNHADEIL----NPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQY  56
+            MKI    Y  A+EI+    +   W EI+  L   PL V  +  +S     +   V    +
+Sbjct  1    MKIKTHSYRFAEEIVQHPKHQAAWNEIQAILSGAPLFVYPNKSSSNDKLDVVQQVMNTYF  60
+
+Query  57   IKDELVPKHWKNNIPIPKRFDFLGTDIDFGKR--DTLV--EVQFSNYPFLLNNTVRSELF  112
+             +   +   W+ + P+    +  G   DF K   D +V  EVQF N     ++       
+Sbjct  61   DRVMAIDHGWEYH-PLATSIENSGLAADFKKTFGDIVVQAEVQFGNMSRWYSDV------  113
+
+Query  113  HKSNMDIDEEGMKVAIIITKGHMFPA--SNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGL  170
+             K      +  + + + +   +       ++ + +E+ + +L S        +PI L+GL
+Sbjct  114  FKFQTAYSQSLINIGLSVVPMNSLAKRIDSNIVNFERTERELPSAKLS--ITLPILLIGL  171
+
+Query  171  IEDFETDI  178
+              D +T+I
+Sbjct  172  EPDVDTNI  179
+
+
+>ref|YP_004546094.1| Restriction endonuclease BglII [Desulfotomaculum ruminis DSM 
+2154]
+ ref|WP_013842564.1| restriction endonuclease BglII [Desulfotomaculum ruminis]
+ gb|AEG60808.1| Restriction endonuclease BglII [Desulfotomaculum ruminis DSM 
+2154]
+Length=169
+
+ Score = 38.1 bits (87),  Expect = 1.8, Method: Composition-based stats.
+ Identities = 29/132 (22%), Positives = 54/132 (41%), Gaps = 19/132 (14%)
+
+Query  8    YNHADEILN--PQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKH  65
+            Y  A E+LN  P + +EIE  LL   L                  V  N  +K  LV   
+Sbjct  10   YRQAHELLNARPAIKEEIERGLLSPEL-----------SPPTLSRVNFNDLLKQWLVRGG  58
+
+Query  66   WKNNIPI-PKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGM  124
+            W+++  +  +  + L   I+F K    +E+ F +   + +N ++     + +    ++ +
+Sbjct  59   WQHHPTLFYEPVNPLDK-IEFIKERVGLEIGFRHSSLIGHNLIK----FQFSSAHFQDPI  113
+
+Query  125  KVAIIITKGHMF  136
+             V ++IT    F
+Sbjct  114  DVGVLITTTRNF  125
+
+
+>emb|CAJ72399.1| unknown protein [Candidatus Kuenenia stuttgartiensis]
+Length=287
+
+ Score = 37.7 bits (86),  Expect = 2.3, Method: Composition-based stats.
+ Identities = 26/129 (21%), Positives = 50/129 (39%), Gaps = 18/129 (13%)
+
+Query  54   NQYIKDELVPKHWKNNI-PIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELF  112
+            N+ ++   +   W+     IP+    L    DF K    +EV+F N      + ++  L 
+Sbjct  160  NKKLEQAFIEYSWQKEGRAIPE----LDLKYDFRKNGIQIEVEFGNARSYYQDYIKFMLS  215
+
+Query  113  HKSNMDIDEE---GM----KVAIIITKGHMF----PASNSSLYYEQAQNQLNSLAEYNVF  161
+            + S                 +   I K         + +  ++YE+A  +   L   N+F
+Sbjct  216  YCSRQIHLGMLITPTFDFANILCEIGKQKALLRGRKSYSGMMHYEKAYKEFTYLK--NIF  273
+
+Query  162  DVPIRLVGL  170
+            D+PI ++G+
+Sbjct  274  DMPIVILGI  282
+
+
+>ref|WP_010509547.1| hypothetical protein [SAR324 cluster bacterium SCGC AAA001-C10]
+Length=167
+
+ Score = 37.7 bits (86),  Expect = 2.5, Method: Composition-based stats.
+ Identities = 28/125 (23%), Positives = 47/125 (38%), Gaps = 20/125 (16%)
+
+Query  54   NQYIKDELVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFH  113
+            N+  + E     W+    + ++   +G   DF K    VEVQF N   L  +      F+
+Sbjct  54   NKKFEIEFEKLGWEKKPLLSQKPRLIG---DFRKNLVFVEVQFGNSATLYRD------FY  104
+
+Query  114  KSNMDIDEEGMKVAIIITKG---HMFPASNSSL----YYEQAQNQLNSLAEYNVFDVPIR  166
+            K    +    + ++++I        FP    S+     Y+ A      L       VP  
+Sbjct  105  KFQYGLQNGLLSLSVLIVPANPKEFFPTRPRSISNMAEYDLALRYFTVLPI----SVPTM  160
+
+Query  167  LVGLI  171
+            ++GLI
+Sbjct  161  VIGLI  165
+
+
+>gb|ACJ85632.1| unknown [Medicago truncatula]
+Length=319
+
+ Score = 36.6 bits (83),  Expect = 5.0, Method: Composition-based stats.
+ Identities = 29/117 (25%), Positives = 47/117 (41%), Gaps = 9/117 (7%)
+
+Query  109  SELFHKSNMDIDEEGMKVAIIITKGHMFPASN--SSLYYEQAQNQLNSLAEYNVFDVPIR  166
+            +E  +K    I++EG    I++ K    P  N  ++LYYEQ   +   L ++        
+Sbjct  152  TEQDYKIAERIEKEGKGCVIVVNKWDTIPNKNQQAALYYEQDVREKLRLLDWAPVVYSTA  211
+
+Query  167  LVGLIEDFETDIDIVSTTYADKRYSR---TITKRDTVKGKVIDTNTPNTRRRKRGTI  220
+            L G   D    I + +     +R  R   +I  +   +  V     P TR  KRG +
+Sbjct  212  LAGQNVDK---IIVAAIEVEKERSRRLGTSILNQVVREA-VTFKPPPRTRGGKRGRV  264
+
+
+>ref|XP_005167823.1| PREDICTED: uncharacterized protein LOC101885868 isoform X1 [Danio 
+rerio]
+ ref|XP_005167824.1| PREDICTED: uncharacterized protein LOC101885868 isoform X2 [Danio 
+rerio]
+Length=1987
+
+ Score = 36.6 bits (83),  Expect = 5.9, Method: Composition-based stats.
+ Identities = 23/132 (18%), Positives = 47/132 (36%), Gaps = 20/132 (15%)
+
+Query  8    YNHADEILNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQY-----------  56
+            YN+A+  L     ++ E   +  P   KAS++     + + +P+ +  +           
+Sbjct  285  YNNAESCLEESCLEDDETGNVIYPERRKASNKP--QRNPVINPLPSQTFQEERKTKETEN  342
+
+Query  57   IKDELVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFL-LNNTVRSELFHKS  115
+            +   LV     + +P+P+   F G  + F      +E + S    +   +   SE     
+Sbjct  343  LAQALVNSLSISRLPVPEPTTFNGDPLKF------IEWKMSFTALIDCKSIPASEKMFYL  396
+
+Query  116  NMDIDEEGMKVA  127
+               +  E  K  
+Sbjct  397  KTYLAGEARKAV  408
+
+
+>ref|WP_009292102.1| restriction endonuclease BglII [Bacteroides sp. 2_1_56FAA]
+ gb|EGN08351.1| hypothetical protein HMPREF1018_01962 [Bacteroides sp. 2_1_56FAA]
+Length=179
+
+ Score = 36.2 bits (82),  Expect = 7.1, Method: Composition-based stats.
+ Identities = 41/177 (24%), Positives = 75/177 (43%), Gaps = 23/177 (12%)
+
+Query  4    DITDYNHADEILNPQLWKEIE---ETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDE  60
+            + T  N  D++L+   ++ IE     + +  L V    Q  K           N  +K+ 
+Sbjct  18   EYTIKNEIDDVLDRLTFENIELKFSEINQEKLSVGKKVQKGKQP-------AINFLLKEL  70
+
+Query  61   LVPKHWKNNIPIPKRFDFLGTD--IDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMD  118
+             + K W+    +   F+    D  IDF K    ++V F++  F+  + +R +   +    
+Sbjct  71   FIEKGWEAEKKV---FNDSDNDLVIDFWKNKIGIDVAFNHRSFIGGDLLRLQAGAEIKNM  127
+
+Query  119  IDEEGMKVAIIITKGHMFPASN---SSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIE  172
+            I+   + + +  TK  +   SN   S + +E+ +  L +   Y+V  VPI LVG  E
+Sbjct  128  IN---IGIYVCGTKNFLKHISNDHSSIVSFERVKWYLENF--YSVLTVPILLVGFEE  179
+
+
+>gb|EHK20225.1| putative PKS-NRPS protein [Trichoderma virens Gv29-8]
+Length=3966
+
+ Score = 36.2 bits (82),  Expect = 7.4, Method: Composition-based stats.
+ Identities = 16/70 (23%), Positives = 27/70 (39%), Gaps = 4/70 (5%)
+
+Query  21    KEIEETLLKMPLHVKASDQASKVGSLIF--DPVGTNQYIK--DELVPKHWKNNIPIPKRF  76
+              E+   L    +HVK   Q +   S +   DP+  +  I   D L    W+ +  +P + 
+Sbjct  2034  DEVRSVLRAAWIHVKTEQQRAVDTSKVVYADPISVSSEIALVDRLCLIGWEAHTKLPAQI  2093
+
+Query  77    DFLGTDIDFG  86
+               L   + F 
+Sbjct  2094  QPLEKTLTFS  2103
+
+
+>ref|XP_004388503.1| PREDICTED: serine/threonine-protein kinase NIM1-like [Trichechus 
+manatus latirostris]
+Length=435
+
+ Score = 35.8 bits (81),  Expect = 8.7, Method: Composition-based stats.
+ Identities = 18/65 (28%), Positives = 26/65 (40%), Gaps = 2/65 (3%)
+
+Query  18   QLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKNNIPIPKRFD  77
+            +L K I E    MPLHV         G  +  P+ T +Y  D ++   W   +P P   +
+Sbjct  277  KLKKSILEGTYSMPLHVSEPCHRLIRG--VLQPIPTERYGIDHIMNNEWMQGVPYPIPLE  334
+
+Query  78   FLGTD  82
+                D
+Sbjct  335  PFQLD  339
+
+
+
+Lambda     K      H
+   0.311    0.135    0.370 
+
+Gapped
+Lambda     K      H
+   0.267   0.0413    0.140 
+
+Effective search space used: 577081117704
+Results from round 3
+
+
+Query= 1D2I_A
+
+Length=223
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+ref|YP_003975464.1|  hypothetical protein BATR1942_18080 [Bacillu...   309    4e-82
+pdb|1D2I|A  Chain A, Crystal Structure Of Restriction Endonucleas...   300    2e-79
+ref|WP_016949621.1|  type II restriction endonuclease BglII [Anab...   278    8e-73
+ref|YP_001868075.1|  hypothetical protein Npun_F4783 [Nostoc punc...   275    9e-72
+ref|WP_008276391.1|  type II restriction endonuclease BglII [Cyan...   265    8e-69
+ref|WP_017305696.1|  hypothetical protein [Spirulina subsalsa]         247    2e-63
+ref|YP_001814844.1|  restriction endonuclease BglII [Exiguobacter...   185    1e-44
+ref|YP_002463562.1|  Restriction endonuclease BglII [Chloroflexus...   182    7e-44
+dbj|BAL58609.1|  restriction endonuclease BglII [uncultured candi...   181    1e-43
+emb|CCM11528.1|  hypothetical protein BN341_12160 [Helicobacter h...   177    2e-42
+ref|WP_016634959.1|  restriction endonuclease BglII [Enterococcus...   172    6e-41
+pdb|1SDO|A  Chain A, Crystal Structure Of Restriction Endonucleas...   165    1e-38
+ref|WP_002690143.1|  restriction endonuclease BglII [Beggiatoa al...   164    2e-38
+ref|WP_017716967.1|  hypothetical protein [Oscillatoria sp. PCC 1...   151    2e-34
+ref|YP_001741874.1|  putative BstYI [Candidatus Cloacamonas acida...   142    5e-32
+ref|WP_017716968.1|  hypothetical protein [Oscillatoria sp. PCC 1...   133    5e-29
+
+Sequences not found previously or not previously below threshold:
+
+ref|YP_004606987.1|  hypothetical protein HBZC1_02890 [Helicobact...   162    9e-38
+ref|YP_004863573.1|  Restriction endonuclease BglII [Candidatus C...   157    2e-36
+emb|CBX28873.1|  hypothetical protein N47_B20190 [uncultured Desu...   153    3e-35
+ref|WP_020261380.1|  restriction endonuclease BglII [unclassified...   153    5e-35
+ref|YP_002922714.1|  putative type II restriction endonuclease [B...   152    7e-35
+ref|YP_006589969.1|  restriction endonuclease [Burkholderia phage...   149    8e-34
+ref|WP_006683169.1|  restriction endonuclease BglII [Candidatus G...   148    1e-33
+ref|YP_005014986.1|  restriction endonuclease BglII [Tannerella f...   140    2e-31
+gb|AEN19717.1|  XhoII [Xanthomonas vasicola]                           137    2e-30
+ref|WP_018425766.1|  restriction endonuclease BglII [Hoeflea sp. ...   135    6e-30
+ref|YP_007171340.1|  Restriction endonuclease BglII [Dactylococco...   135    9e-30
+ref|YP_007827971.1|  Restriction endonuclease BglII. [Synergistet...   134    3e-29
+ref|YP_617343.1|  hypothetical protein Sala_2301 [Sphingopyxis al...   129    6e-28
+ref|YP_003508170.1|  Restriction endonuclease BglII [Meiothermus ...   124    2e-26
+ref|WP_006600442.1|  Restriction endonuclease BglII [Haloferax al...   121    2e-25
+ref|WP_008318765.1|  Restriction endonuclease BglII [Haloferax mu...   120    3e-25
+ref|YP_007880896.1|  Restriction endonuclease BglII [Meiothermus ...   117    3e-24
+ref|WP_008477311.1|  hypothetical protein [Beggiatoa sp. PS] >gb|...   114    2e-23
+emb|CDC36530.1|  site-specific recombinase XerD [Butyrivibrio sp....   113    5e-23
+ref|WP_008318766.1|  restriction endonuclease BglII [Haloferax mu...  79.4    7e-13
+ref|WP_006600441.1|  restriction endonuclease BglII [Haloferax al...  77.8    2e-12
+ref|WP_006774558.1|  restriction endonuclease BglII [Clostridium ...  74.3    3e-11
+emb|CDC05318.1|  restriction endonuclease BglII [Clostridium lept...  68.6    2e-09
+ref|WP_003528270.1|  restriction endonuclease BglII [Clostridium ...  68.2    2e-09
+ref|YP_286723.1|  hypothetical protein Daro_3524 [Dechloromonas a...  67.0    4e-09
+ref|WP_009292102.1|  restriction endonuclease BglII [Bacteroides ...  60.5    4e-07
+ref|WP_001009462.1|  hypothetical protein [Bacillus cereus] >gb|E...  59.7    6e-07
+ref|YP_006412093.1|  Restriction endonuclease BglII [Alistipes fi...  59.3    9e-07
+ref|WP_009139978.1|  hypothetical protein [Slackia piriformis] >g...  58.9    9e-07
+ref|WP_000862072.1|  hypothetical protein [Bacillus cereus] >gb|E...  58.6    1e-06
+ref|WP_008428000.1|  hypothetical protein [Planococcus donghaensi...  57.8    2e-06
+ref|WP_002140580.1|  hypothetical protein [Bacillus cereus] >gb|E...  57.4    3e-06
+ref|WP_010306001.1|  hypothetical protein [Kurthia sp. JC8E]          57.4    3e-06
+ref|WP_000394357.1|  hypothetical protein [Bacillus cereus] >gb|E...  55.5    1e-05
+ref|YP_695461.1|  hypothetical protein CPF_1015 [Clostridium perf...  53.5    4e-05
+ref|WP_010509547.1|  hypothetical protein [SAR324 cluster bacteri...  53.5    4e-05
+ref|YP_001295656.1|  Protein of unknown function [Flavobacterium ...  53.2    6e-05
+ref|WP_021347530.1|  hypothetical protein [Elizabethkingia mening...  52.8    8e-05
+emb|CAJ72399.1|  unknown protein [Candidatus Kuenenia stuttgartie...  52.0    1e-04
+ref|YP_004546094.1|  Restriction endonuclease BglII [Desulfotomac...  52.0    1e-04
+ref|WP_010095556.1|  hypothetical protein, partial [Ornithinibaci...  48.9    0.001
+ref|YP_004543955.1|  Restriction endonuclease BglII [Desulfotomac...  48.5    0.001
+ref|WP_009135798.1|  hypothetical protein [Odoribacter laneus] >g...  47.8    0.002
+ref|WP_018207405.1|  hypothetical protein [actinobacterium SCGC A...  46.6    0.006
+ref|WP_009394972.1|  peptidase M48 [Actinomyces sp. oral taxon 17...  44.7    0.022
+ref|YP_001112816.1|  hypothetical protein Dred_1461 [Desulfotomac...  43.5    0.043
+ref|WP_009402000.1|  peptidase M48 [Actinomyces sp. oral taxon 17...  42.4    0.089
+ref|WP_003386489.1|  Restriction endonuclease BglII [Brevibacillu...  41.2    0.23 
+ref|WP_003540330.1|  restriction endonuclease BglII [Desulfotomac...  40.5    0.42 
+ref|YP_004496741.1|  Restriction endonuclease BglII [Desulfotomac...  40.1    0.45 
+ref|YP_003168258.1|  Restriction endonuclease BglII [Candidatus A...  40.1    0.46 
+ref|WP_008031680.1|  restriction endonuclease BglII [Rhodobacter ...  38.9    1.0  
+ref|WP_010420076.1|  hypothetical protein [Anaerophaga thermohalo...  38.9    1.0  
+ref|WP_000569637.1|  hypothetical protein [Bacillus cereus] >gb|E...  38.5    1.5  
+ref|YP_002298868.1|  hypothetical protein RC1_2682 [Rhodospirillu...  38.5    1.7  
+ref|XP_004701375.1|  PREDICTED: cytochrome P450 2C23-like [Echino...  37.8    2.5  
+ref|XP_002279488.2|  PREDICTED: mitochondrial substrate carrier f...  37.8    2.8  
+emb|CBI31533.3|  unnamed protein product [Vitis vinifera]             37.8    2.8  
+ref|YP_003641850.1|  Restriction endonuclease BglII [Thiomonas in...  37.4    3.0  
+emb|CDE08133.1|  stage IV sporulation protein [Bacillus sp. CAG:988]  36.6    5.2  
+ref|WP_020598987.1|  hypothetical protein [Spirosoma panaciterrae]    36.6    5.6  
+ref|WP_010426454.1|  hypothetical protein [Enterobacter mori]         36.2    6.9  
+
+
+>ref|YP_003975464.1| hypothetical protein BATR1942_18080 [Bacillus atrophaeus 1942]
+ ref|WP_003326162.1| type II restriction endonuclease BglII [Bacillus atrophaeus]
+ sp|Q45488.1|T2B2_BACSU RecName: Full=Type-2 restriction enzyme BglII; Short=R.BglII; 
+AltName: Full=Endonuclease BglII; AltName: Full=Type II restriction 
+enzyme BglII
+ gb|AAC45060.1| BglII endonuclease [Bacillus subtilis]
+ gb|ADP34533.1| hypothetical protein BATR1942_18080 [Bacillus atrophaeus 1942]
+ gb|EIM11425.1| hypothetical protein UY9_06735 [Bacillus atrophaeus C89]
+Length=223
+
+ Score =  309 bits (792),  Expect = 4e-82, Method: Composition-based stats.
+ Identities = 223/223 (100%), Positives = 223/223 (100%), Gaps = 0/223 (0%)
+
+Query  1    MKIDITDYNHADEILNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDE  60
+            MKIDITDYNHADEILNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDE
+Sbjct  1    MKIDITDYNHADEILNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDE  60
+
+Query  61   LVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDID  120
+            LVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDID
+Sbjct  61   LVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDID  120
+
+Query  121  EEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDI  180
+            EEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDI
+Sbjct  121  EEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDI  180
+
+Query  181  VSTTYADKRYSRTITKRDTVKGKVIDTNTPNTRRRKRGTIVTY  223
+            VSTTYADKRYSRTITKRDTVKGKVIDTNTPNTRRRKRGTIVTY
+Sbjct  181  VSTTYADKRYSRTITKRDTVKGKVIDTNTPNTRRRKRGTIVTY  223
+
+
+>pdb|1D2I|A Chain A, Crystal Structure Of Restriction Endonuclease Bglii 
+Complexed With Dna 16-Mer
+ pdb|1D2I|B Chain B, Crystal Structure Of Restriction Endonuclease Bglii 
+Complexed With Dna 16-Mer
+ pdb|1DFM|A Chain A, Crystal Structure Of Restriction Endonuclease Bglii 
+Complexed With Dna 16-Mer
+ pdb|1DFM|B Chain B, Crystal Structure Of Restriction Endonuclease Bglii 
+Complexed With Dna 16-Mer
+ pdb|1ES8|A Chain A, Crystal Structure Of Free Bglii
+Length=223
+
+ Score =  300 bits (768),  Expect = 2e-79, Method: Composition-based stats.
+ Identities = 218/222 (99%), Positives = 218/222 (99%), Gaps = 0/222 (0%)
+
+Query  2    KIDITDYNHADEILNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDEL  61
+            KIDITDYNHADEILNPQLWKEIEETLLK PLHVKASDQASKVGSLIFDPVGTNQYIKDEL
+Sbjct  2    KIDITDYNHADEILNPQLWKEIEETLLKXPLHVKASDQASKVGSLIFDPVGTNQYIKDEL  61
+
+Query  62   VPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDE  121
+            VPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSN DIDE
+Sbjct  62   VPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNXDIDE  121
+
+Query  122  EGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDIV  181
+            EG KVAIIITKGH FPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDIV
+Sbjct  122  EGXKVAIIITKGHXFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDIV  181
+
+Query  182  STTYADKRYSRTITKRDTVKGKVIDTNTPNTRRRKRGTIVTY  223
+            STTYADKRYSRTITKRDTVKGKVIDTNTPNTRRRKRGTIVTY
+Sbjct  182  STTYADKRYSRTITKRDTVKGKVIDTNTPNTRRRKRGTIVTY  223
+
+
+>ref|WP_016949621.1| type II restriction endonuclease BglII [Anabaena sp. PCC 7108]
+Length=190
+
+ Score =  278 bits (711),  Expect = 8e-73, Method: Composition-based stats.
+ Identities = 96/188 (52%), Positives = 130/188 (70%), Gaps = 0/188 (0%)
+
+Query  30   MPLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKNNIPIPKRFDFLGTDIDFGKRD  89
+            MPLH+KASDQA   G+ IFDPVGTN+YIK  L+   W++NIPIP  + FLG ++DF K  
+Sbjct  1    MPLHIKASDQAGIQGNPIFDPVGTNEYIKAALIQSGWQSNIPIPIPYRFLGKEVDFCKSG  60
+
+Query  90   TLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQ  149
+             ++E+QFSNYPFLLNNT+RSELF K+  +       + I++TK  MFPASNS+LYYEQA 
+Sbjct  61   IIIEIQFSNYPFLLNNTLRSELFFKAKTEFAGHPTNILILVTKALMFPASNSTLYYEQAV  120
+
+Query  150  NQLNSLAEYNVFDVPIRLVGLIEDFETDIDIVSTTYADKRYSRTITKRDTVKGKVIDTNT  209
+            NQL +L    VFD+PIRL+GL E   T + ++ + Y  +RYSRT+  R T + ++I   +
+Sbjct  121  NQLTALVINKVFDIPIRLIGLFEQKNTTVPVIWSQYLSERYSRTVNNRITRQCEIIAGLS  180
+
+Query  210  PNTRRRKR  217
+              +R + R
+Sbjct  181  SRSRCQLR  188
+
+
+>ref|YP_001868075.1| hypothetical protein Npun_F4783 [Nostoc punctiforme PCC 73102]
+ ref|WP_012411088.1| type II restriction endonuclease BglII [Nostoc punctiforme]
+ gb|ACC83132.1| hypothetical protein Npun_F4783 [Nostoc punctiforme PCC 73102]
+Length=190
+
+ Score =  275 bits (702),  Expect = 9e-72, Method: Composition-based stats.
+ Identities = 103/188 (55%), Positives = 131/188 (70%), Gaps = 0/188 (0%)
+
+Query  30   MPLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKNNIPIPKRFDFLGTDIDFGKRD  89
+            MPLH+KASDQA   G+ IFDPVGTN+YIK   +   W++NIPIP  + FLGTD+DF K  
+Sbjct  1    MPLHIKASDQAGIQGNAIFDPVGTNEYIKAAFIHDSWQSNIPIPAPYRFLGTDVDFAKAG  60
+
+Query  90   TLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQ  149
+             ++E+QFSNYPFLLNNT+RSELF K+  +       + II+TK  MFPASNS+LYYEQA 
+Sbjct  61   IIIEIQFSNYPFLLNNTLRSELFFKAKTEFVGYPTNLIIIVTKALMFPASNSTLYYEQAV  120
+
+Query  150  NQLNSLAEYNVFDVPIRLVGLIEDFETDIDIVSTTYADKRYSRTITKRDTVKGKVIDTNT  209
+            NQL +LA+  VFDVPIRLVGL E   T + I+ T Y  KRYSRT+  R + + ++I   +
+Sbjct  121  NQLTALAKNKVFDVPIRLVGLFEQQNTIVPIIWTEYLSKRYSRTVNTRVSRECEIIAGRS  180
+
+Query  210  PNTRRRKR  217
+              +R   R
+Sbjct  181  ARSRCLLR  188
+
+
+>ref|WP_008276391.1| type II restriction endonuclease BglII [Cyanothece sp. CCY0110]
+ gb|EAZ90458.1| hypothetical protein CY0110_26562 [Cyanothece sp. CCY0110]
+Length=224
+
+ Score =  265 bits (677),  Expect = 8e-69, Method: Composition-based stats.
+ Identities = 108/218 (50%), Positives = 153/218 (71%), Gaps = 6/218 (2%)
+
+Query  1    MKIDITDYNHADEILNPQL---WKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYI  57
+            ++I++TD+N+++ ++N Q    W  I+ TL  MPLH+KAS Q+   G+ IFDP+GTN++I
+Sbjct  4    IQIEVTDFNNSNFLINSQFNNEWNVIQTTLTSMPLHLKASSQSGIEGNPIFDPIGTNEFI  63
+
+Query  58   KDELVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNM  117
+            ++ LV + W ++IPIPK + FLG DID GK   ++E QFSNYPFLLNN +RSELF KS +
+Sbjct  64   ENNLVREGWSSHIPIPKAYQFLGKDIDCGKSGVILEFQFSNYPFLLNNLLRSELFFKSKI  123
+
+Query  118  DIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETD  177
+             ++ +   + IIITKG MFPASNS+LYYEQA +QL +L +Y VF VPIRLVGL E+FE +
+Sbjct  124  HLNSQVTNLVIIITKGKMFPASNSTLYYEQAVSQLTALTKYKVFHVPIRLVGLFEEFEQN  183
+
+Query  178  IDIVSTTYADKRYSRTITKRDTVKGKVIDTNTPNTRRR  215
+            I+IV + Y  +R    I ++   +G+ I +      RR
+Sbjct  184  INIVWSIYEKQRSRNIIEQK---QGQCIISQGIKPTRR  218
+
+
+>ref|WP_017305696.1| hypothetical protein [Spirulina subsalsa]
+Length=219
+
+ Score =  247 bits (631),  Expect = 2e-63, Method: Composition-based stats.
+ Identities = 82/199 (42%), Positives = 125/199 (63%), Gaps = 3/199 (1%)
+
+Query  1    MKIDITDYNHADEILNPQL---WKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYI  57
+            M I+ TD+N+ +E L+ +    W E+E+TL  MPL+VK S+Q    G+++FDP+ TN YI
+Sbjct  1    MLIEYTDFNNQNEDLSRKFASEWMEVEQTLCSMPLYVKGSNQQGIKGNMVFDPIATNAYI  60
+
+Query  58   KDELVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNM  117
+            K+ L  K W  N  IP+  + LG D+DF K   L+E+QFS+Y FLLNN +RSE+F KS  
+Sbjct  61   KNSLQSKGWIANAAIPEHINPLGKDVDFTKNTVLLEIQFSHYAFLLNNIIRSEVFFKSRS  120
+
+Query  118  DIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETD  177
+             ++   + + +++TK  + P++NSSL+Y QA  QL  +   N+F +P R+VGL  D E +
+Sbjct  121  ALNSHSVALMVLVTKFDILPSANSSLHYTQAVEQLLVIETANIFSLPTRIVGLNVDIENE  180
+
+Query  178  IDIVSTTYADKRYSRTITK  196
+            I  + T Y   +  R  ++
+Sbjct  181  IQAIFTQYQSPQSRRIESQ  199
+
+
+>ref|YP_001814844.1| restriction endonuclease BglII [Exiguobacterium sibiricum 255-15]
+ ref|WP_012371243.1| restriction endonuclease BglII [Exiguobacterium sibiricum]
+ gb|ACB61827.1| Restriction endonuclease BglII [Exiguobacterium sibiricum 255-15]
+Length=184
+
+ Score =  185 bits (469),  Expect = 1e-44, Method: Composition-based stats.
+ Identities = 49/188 (27%), Positives = 82/188 (44%), Gaps = 19/188 (10%)
+
+Query  1    MKID-ITDYNHADEILNPQLWKEIEETLLKMP------LHVKASDQASKVGSLIFDPVGT  53
+            MKID I  +N+ + ++      E+ E L  +          K S + + +G +++ PV  
+Sbjct  1    MKIDAIYSFNNGNSVIKESYSNELNEILSAIKSIDASKFKTKISKEKTSLGKMLYSPVAL  60
+
+Query  54   NQYIKDELVPKHWKN--NIPI-----PKRFDFLG-TDIDFGKRDTLVEVQFSNYPFLLNN  105
+            N+ +K  L P  WK   +  I     P   D L   ++DF K +  VEVQF  Y F+  +
+Sbjct  61   NKELKKILNPLGWKELKHEAIYSSDNPDISDTLAHREMDFVKNEVGVEVQFGKYAFMAYD  120
+
+Query  106  TVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPI  165
+                    K+   I+   + + I+  K      S    YYEQ    L +    N+ D+P+
+Sbjct  121  ICSKMPIFKNKGYIE---VGIEIVPMKAFAKYMSTGVSYYEQITWDLENRGVSNL-DIPV  176
+
+Query  166  RLVGLIED  173
+             ++G+  D
+Sbjct  177  IVIGIDAD  184
+
+
+>ref|YP_002463562.1| Restriction endonuclease BglII [Chloroflexus aggregans DSM 9485]
+ ref|WP_015940984.1| restriction endonuclease BglII [Chloroflexus aggregans]
+ gb|ACL25126.1| Restriction endonuclease BglII [Chloroflexus aggregans DSM 9485]
+Length=189
+
+ Score =  182 bits (462),  Expect = 7e-44, Method: Composition-based stats.
+ Identities = 37/186 (20%), Positives = 68/186 (37%), Gaps = 24/186 (12%)
+
+Query  5    ITDYNHADEILNPQL---WKEIEETLLKMP---LHVKASDQASKVGSLIFDPVGTNQYIK  58
+            I  +N  + I+  Q      E+E+ +  +       K S + +  G +++ P   N+   
+Sbjct  6    IYSFNRGEGIIRSQYSAELGEVEQVIAAVDSTQCKTKTSREKTMPGRMLYSPRALNRAFT  65
+
+Query  59   DELVPKHWKNN---------IPIP-----KRFDFLGTDIDFGKRDTLVEVQFSNYPFLLN  104
+             E   + W+             +P             +IDF K    +EVQF  Y F++ 
+Sbjct  66   KEFGSRGWEKYKVQCDYSTEYYVPGYVPSSPSKGAFREIDFVKNRVGIEVQFGKYAFMVY  125
+
+Query  105  NTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVP  164
+            N             ID   + + I+  K      S    Y+EQ    L      ++ D+P
+Sbjct  126  NVCAKMTIFHKLGVID---VGIEIVPIKLFAEEMSTGVSYFEQFVWDLEHRGIADI-DIP  181
+
+Query  165  IRLVGL  170
+            + ++G+
+Sbjct  182  VLVLGV  187
+
+
+>dbj|BAL58609.1| restriction endonuclease BglII [uncultured candidate division 
+OP1 bacterium]
+Length=190
+
+ Score =  181 bits (460),  Expect = 1e-43, Method: Composition-based stats.
+ Identities = 39/187 (21%), Positives = 75/187 (41%), Gaps = 30/187 (16%)
+
+Query  3    IDITDYNHADEILNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDELV  62
+            + I + NH +E+   +++  IE  +       K S + +  G +++ P   N+  K+   
+Sbjct  13   LQILEKNHKEEL--REIYDVIES-IDAATCKTKISKEKTSRGKVLYSPGSLNKAFKEAFS  69
+
+Query  63   PKHWK-----NNIPI--------------PKRFDFLGTDIDFGKRDTLVEVQFSNYPFLL  103
+             + W+      + PI              P+ +     ++DF K    +EVQF  Y F++
+Sbjct  70   KRGWQVIKVPCDYPIQYYVDGYTPPSRHGPRPYR----EMDFVKDRVGIEVQFGKYAFMV  125
+
+Query  104  NNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDV  163
+             N         +   ID   + V I+  K      S    Y+EQ    L      ++ D+
+Sbjct  126  YNVAAKMTIFHNLSFID---VGVEIVPVKELQAQMSTGVSYFEQFVWDLEHRGTADI-DI  181
+
+Query  164  PIRLVGL  170
+            P+ ++G+
+Sbjct  182  PVLVLGV  188
+
+
+>emb|CCM11528.1| hypothetical protein BN341_12160 [Helicobacter heilmannii ASB1.4]
+Length=203
+
+ Score =  177 bits (449),  Expect = 2e-42, Method: Composition-based stats.
+ Identities = 48/207 (24%), Positives = 70/207 (34%), Gaps = 39/207 (18%)
+
+Query  1    MKIDI--TDYNHADEIL--NPQLWKEIEETLLKMP---LHVKASDQASKVGSLIFDPVGT  53
+            MKI    +  N  + +   +P LW+EI+  +L +       K S +  + G+ +F PV  
+Sbjct  1    MKIAYLHSHLNGWEFLQVHHPNLWQEIQSVILNINAYVCQTKISQEKGRQGNCLFSPVEI  60
+
+Query  54   NQYIKDELVPKHWKNNIPI--PKRFDFL--------------------------GTDIDF  85
+            N+  K  L    W  N           L                              DF
+Sbjct  61   NKAFKVSLNALGWLENRQTYYLTPHQSLAFETMYLNPEMQKQAIEAQGQTAYLSYNQTDF  120
+
+Query  86   GKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYY  145
+             K    +EVQF  Y F+  +     +       ID   + V II TK      S+   YY
+Sbjct  121  LKSRIAIEVQFGKYAFVAYDLFVKHMAFYVANAID---VGVEIIPTKAMCAQMSSGIAYY  177
+
+Query  146  EQAQNQLNSLAEYNVFDVPIRLVGLIE  172
+            E     L      N   VP+ L+G+  
+Sbjct  178  ESEVYNLY-RQGRNTPAVPLVLIGIEP  203
+
+
+>ref|WP_016634959.1| restriction endonuclease BglII [Enterococcus faecalis]
+ gb|EPI37878.1| restriction endonuclease BglII [Enterococcus faecalis LA3B-2]
+Length=222
+
+ Score =  172 bits (436),  Expect = 6e-41, Method: Composition-based stats.
+ Identities = 46/209 (23%), Positives = 80/209 (39%), Gaps = 38/209 (18%)
+
+Query  1    MKIDI--TDYNHADEIL--NPQLWKEIEETLLKMPL--HVKASDQASKVGSLIFDPVGTN  54
+            MKI    +  N  + +L    +LW EI + +  +    H K S    + G  I+D    N
+Sbjct  1    MKIRYLYSHLNGLEFLLIHKRELWYEIVKAIESIDADAHKKFSKAKGRDGVEIYDQKKIN  60
+
+Query  55   QYIKDELVPKHWKNN------------------IPIPKRFDFL----------GTDIDFG  86
+               KD L+PK W+++                  +PI ++ + +              DF 
+Sbjct  61   IAFKDYLIPKGWEDHRQDYFFTPDEELARDTMSLPINEQKEMIERAGRTIFKGFNQTDFL  120
+
+Query  87   KRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYE  146
+            K    +EVQF  Y F+  +     +      DI+   + + I+ TK       +    YE
+Sbjct  121  KDGVAIEVQFGKYAFVAYDLFVKHMAFYIANDIN---VGIEILPTKAMQKKMDSGVSAYE  177
+
+Query  147  QAQNQLNSLAEYNVFDVPIRLVGLIEDFE  175
+            +    +   +  N   VP+ ++G+  D E
+Sbjct  178  KEVYNVY-RSGRNTPAVPLIVIGIEPDTE  205
+
+
+>pdb|1SDO|A Chain A, Crystal Structure Of Restriction Endonuclease Bstyi
+ pdb|1VRR|A Chain A, Crystal Structure Of The Restriction Endonuclease Bstyi 
+Complex With Dna
+ pdb|1VRR|B Chain B, Crystal Structure Of The Restriction Endonuclease Bstyi 
+Complex With Dna
+ pdb|2P0J|A Chain A, Structure Of Restriction Endonuclease Bstyi Bound To 
+Non-Cognate Dna
+ pdb|2P0J|B Chain B, Structure Of Restriction Endonuclease Bstyi Bound To 
+Non-Cognate Dna
+ gb|AAO48714.1| BstYI [Geobacillus stearothermophilus]
+Length=203
+
+ Score =  165 bits (417),  Expect = 1e-38, Method: Composition-based stats.
+ Identities = 44/201 (22%), Positives = 73/201 (37%), Gaps = 37/201 (18%)
+
+Query  5    ITDYNHADEIL--NPQLWKEIEETLLKMP---LHVKASDQASKVGSLIFDPVGTNQYIKD  59
+             +  N  + I    P +W+EI+E ++ +       K S + +K G +++ PV  N+  K+
+Sbjct  7    YSHLNGLEYIQVHLPHIWEEIQEIIVSIDAEACRTKESKEKTKQGQILYSPVALNEAFKE  66
+
+Query  60   ELVPKHWKNNI------PIPKRFDFL----------------------GTDIDFGKRDTL  91
+            +L  K WK +         PK                               DF K    
+Sbjct  67   KLEAKGWKESRTNYYVTADPKLIRETLSLEPEEQKKVIEAAGKEALKSYNQTDFVKDRVA  126
+
+Query  92   VEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQ  151
+            +EVQF  Y F+  +     +    +  ID   + V I+  K      S+   YYE     
+Sbjct  127  IEVQFGKYSFVAYDLFVKHMAFYVSDKID---VGVEILPMKELSKEMSSGISYYEGELYN  183
+
+Query  152  LNSLAEYNVFDVPIRLVGLIE  172
+            +       V  VP+ L+G+  
+Sbjct  184  VI-RQGRGVPAVPLVLIGIAP  203
+
+
+>ref|WP_002690143.1| restriction endonuclease BglII [Beggiatoa alba]
+ gb|EIJ43182.1| Restriction endonuclease BglII [Beggiatoa alba B18LD]
+Length=189
+
+ Score =  164 bits (416),  Expect = 2e-38, Method: Composition-based stats.
+ Identities = 41/187 (22%), Positives = 70/187 (38%), Gaps = 24/187 (12%)
+
+Query  6    TDYNHADEILNPQLWK---EIEETL---LKMPLHVKASDQASKVGSLIFDPVGTNQYIKD  59
+              +N   E +  +      EI++ +     +    K S++ +K+  L+F P   N   K+
+Sbjct  7    YSFNQGKEKIEREYSSLLIEIKDVILQVDAVACKNKISEEQTKLDELLFSPKALNTQFKN  66
+
+Query  60   ELVPKHWKNN-------------IPIPKRF-DFLGTDIDFGKRDTLVEVQFSNYPFLLNN  105
+                K W N+               +PK        D+DF K    VEVQF  Y F++ N
+Sbjct  67   FFALKKWSNHKIECNYSNDYYINGYVPKSMGKAPYRDMDFLKEKVGVEVQFGKYAFMVYN  126
+
+Query  106  TVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPI  165
+                         +    + V I+  K      S    Y+EQ    L +    N+ D+P+
+Sbjct  127  VCAKMTIF---SKLAGITVGVEIVPIKDLADEMSTGVSYFEQFVWDLENRGVSNI-DLPV  182
+
+Query  166  RLVGLIE  172
+             ++G+  
+Sbjct  183  LILGIAP  189
+
+
+>ref|YP_004606987.1| hypothetical protein HBZC1_02890 [Helicobacter bizzozeronii CIII-1]
+ ref|WP_013889771.1| restriction endonuclease BglII [Helicobacter bizzozeronii]
+ emb|CCB79275.1| hypothetical protein HBZC1_02890 [Helicobacter bizzozeronii CIII-1]
+Length=203
+
+ Score =  162 bits (409),  Expect = 9e-38, Method: Composition-based stats.
+ Identities = 43/207 (21%), Positives = 67/207 (33%), Gaps = 39/207 (18%)
+
+Query  1    MKIDI--TDYNHADEIL--NPQLWKEIEETLLKMP---LHVKASDQASKVGSLIFDPVGT  53
+            MKI    +  N  + +   +  LW+EI   +  +       K S +  + G  +F P+  
+Sbjct  1    MKIAYLHSHLNGLEFLQVHHSNLWQEIIGVITNINAYACQTKTSKEKGRQGIHLFSPIEL  60
+
+Query  54   NQYIKDELVPKHWKNNI--PIPKRFDFL--------------------------GTDIDF  85
+            N+  ++ L    W  N           L                              DF
+Sbjct  61   NKVFQNSLNILGWLENRQSYYLTPHQSLAFETMYLNPEIQKSVIESQGQTAYYSYNQTDF  120
+
+Query  86   GKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYY  145
+             K    +EVQF  Y F+  +     +       ID   + + II TK      S+   YY
+Sbjct  121  LKERIAIEVQFGKYAFVAYDLFVKHMAFYVANAID---VGIEIIPTKAMCAQMSSGIAYY  177
+
+Query  146  EQAQNQLNSLAEYNVFDVPIRLVGLIE  172
+            E     L      N   VP+ L+G+  
+Sbjct  178  ESEVYNLY-RQGRNTPAVPLILIGIEP  203
+
+
+>ref|YP_004863573.1| Restriction endonuclease BglII [Candidatus Chloracidobacterium 
+thermophilum B]
+ ref|WP_014100794.1| restriction endonuclease BglII [Candidatus Chloracidobacterium 
+thermophilum]
+ gb|AEP13056.1| Restriction endonuclease BglII [Candidatus Chloracidobacterium 
+thermophilum B]
+Length=189
+
+ Score =  157 bits (397),  Expect = 2e-36, Method: Composition-based stats.
+ Identities = 41/192 (22%), Positives = 73/192 (39%), Gaps = 27/192 (14%)
+
+Query  1    MKID-ITDYNHADEILNPQL---WKEIEETLLKMP---LHVKASDQASKVGSLIFDPVGT  53
+            MKI  I  +N+  E++  +    + EI+  +  +       K S + +  G  +++    
+Sbjct  1    MKIAGIYSFNNGKEVVESKYNLEFSEIKNIIHSIDSERCRTKISREKTMSGRKLYNSKEL  60
+
+Query  54   NQYIKDELVPKHWKNNI---------------PIPKRFDFLGTDIDFGKRDTLVEVQFSN  98
+            N+   +E   ++WK                  P  K       +IDF K    VEVQF  
+Sbjct  61   NKAFTEEFARQNWKRYRIECTYSSEYYTEDFHPAEKP-KSAFREIDFVKNRLGVEVQFGK  119
+
+Query  99   YPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEY  158
+            Y F++ N         +   ID     + I+  K      S    Y+EQ    L      
+Sbjct  120  YAFMVYNVCAKMTIFHNLNVIDA---GIEIVPVKSFANEMSTGVSYFEQFVWDLEHRGVS  176
+
+Query  159  NVFDVPIRLVGL  170
+            ++ D+P+ ++G+
+Sbjct  177  DI-DIPVLVLGI  187
+
+
+>emb|CBX28873.1| hypothetical protein N47_B20190 [uncultured Desulfobacterium 
+sp.]
+Length=203
+
+ Score =  153 bits (387),  Expect = 3e-35, Method: Composition-based stats.
+ Identities = 44/199 (23%), Positives = 69/199 (35%), Gaps = 37/199 (18%)
+
+Query  5    ITDYNHADEIL--NPQLWKEIEETLLKMP---LHVKASDQASKVGSLIFDPVGTNQYIKD  59
+             +  N  + ++   P+LWKEI   +L +       K S + +  G L++ P+G N     
+Sbjct  7    YSHLNGLEFLIVHKPKLWKEIRNVVLSVDAENCKTKVSKEKTMKGKLLYSPIGMNSAFSK  66
+
+Query  60   ELVPKHWKNN----------------IPIPKRFD------------FLGTDIDFGKRDTL  91
+             L    W  +                + IP +              F     DF K    
+Sbjct  67   LLHANKWAESRVSYWVTKNEKLIRKTLTIPAKEQKKEIETAGEIPIFSYNQTDFVKDRVA  126
+
+Query  92   VEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQ  151
+            VEVQF  Y F+  +     L       ID   + V I+  K      S+   YYE     
+Sbjct  127  VEVQFGKYSFVAYDLFVKHLAFYVGDRID---VGVEILPMKSLQAQMSSGVDYYEGELYN  183
+
+Query  152  LNSLAEYNVFDVPIRLVGL  170
+            +       V  VP+ ++G+
+Sbjct  184  I-VRQGRGVPAVPLIIIGI  201
+
+
+>ref|WP_020261380.1| restriction endonuclease BglII [unclassified candidate division 
+OP8]
+Length=203
+
+ Score =  153 bits (386),  Expect = 5e-35, Method: Composition-based stats.
+ Identities = 40/201 (20%), Positives = 67/201 (34%), Gaps = 37/201 (18%)
+
+Query  5    ITDYNHADEIL--NPQLWKEIEETL---LKMPLHVKASDQASKVGSLIFDPVGTNQYIKD  59
+             +  N  + ++   P LW+EI+  +          K S +    G L++ P+  N + K 
+Sbjct  7    YSHLNGLEFLMVHKPGLWREIKHVIRDVDAKACKTKVSKEKGMKGKLLYSPIDMNLHFKS  66
+
+Query  60   ELVPKHWKNNIPI-----------------PKRFD-----------FLGTDIDFGKRDTL  91
+             L    WK +                    PK              +     DF K    
+Sbjct  67   LLTKAGWKESRVSYWVTKNEKLIRKIISMNPKEQKKEIEATGETPIYSYNQTDFVKDRVA  126
+
+Query  92   VEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQ  151
+            +EVQF  Y F+  +     L       ID   + + I+  K      S+   YYE     
+Sbjct  127  IEVQFGKYSFVAYDLFVKHLAFYVGDHID---VGIEILPMKALQSQMSSGVSYYEGEFYN  183
+
+Query  152  LNSLAEYNVFDVPIRLVGLIE  172
+            +       V  VP+ ++G++ 
+Sbjct  184  VI-RQGRGVPAVPLVILGIMP  203
+
+
+>ref|YP_002922714.1| putative type II restriction endonuclease [Burkholderia phage 
+BcepIL02]
+ gb|ACR15035.1| putative type II restriction endonuclease [Burkholderia phage 
+BcepIL02]
+Length=203
+
+ Score =  152 bits (384),  Expect = 7e-35, Method: Composition-based stats.
+ Identities = 41/202 (21%), Positives = 63/202 (32%), Gaps = 37/202 (18%)
+
+Query  4    DITDYNHADEIL--NPQLWKEIEETLLKMP---LHVKASDQASKVGSLIFDPVGTNQYIK  58
+              +  N  + +L   P LW EI++ +  +       K S +    G +++ P   N+ I 
+Sbjct  6    QYSHLNGLEYLLVHKPTLWTEIQDVITTVDASICRTKLSKEKRSEGEMLYSPRAMNKAID  65
+
+Query  59   DELVPKHWKNNI-----------------PIPKRFD-----------FLGTDIDFGKRDT  90
+                   W                       P++                   DF K   
+Sbjct  66   QGFAQHGWGERRISYWVTSDAKLIRKTLFMSPEQQKAEIEGAGQKPFSSYNQTDFVKERV  125
+
+Query  91   LVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQN  150
+             VEVQF  Y F+  +     L       ID   + V I+  K      S+   YYE    
+Sbjct  126  AVEVQFGKYAFVAYDLFVKHLAFYVGDVID---VGVEILPMKELQQQMSSGVGYYEGELY  182
+
+Query  151  QLNSLAEYNVFDVPIRLVGLIE  172
+             L       V  VP+ L+G+  
+Sbjct  183  NLI-REGRGVPAVPLILIGVAP  203
+
+
+>ref|WP_017716967.1| hypothetical protein [Oscillatoria sp. PCC 10802]
+Length=101
+
+ Score =  151 bits (380),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 56/101 (56%), Positives = 69/101 (69%), Gaps = 3/101 (2%)
+
+Query  1    MKIDITDYNHADEILNPQL---WKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYI  57
+            M I  TD+N+AD ++N      W +IE  L  MPLH+KAS QA   G+ +FDPVGTNQYI
+Sbjct  1    MLIQFTDFNNADLVINTHCNAEWNDIESVLTAMPLHLKASRQAGIEGNPVFDPVGTNQYI  60
+
+Query  58   KDELVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSN  98
+            K  LV   W++N+PIP  + FLGTDID GK   LVEVQFS+
+Sbjct  61   KAALVKIGWQSNLPIPAPYRFLGTDIDLGKSGVLVEVQFSH  101
+
+
+>ref|YP_006589969.1| restriction endonuclease [Burkholderia phage DC1]
+ gb|AEZ50857.1| restriction endonuclease [Burkholderia phage DC1]
+Length=203
+
+ Score =  149 bits (375),  Expect = 8e-34, Method: Composition-based stats.
+ Identities = 43/201 (22%), Positives = 67/201 (34%), Gaps = 37/201 (18%)
+
+Query  5    ITDYNHADEIL--NPQLWKEIEETLLKMP---LHVKASDQASKVGSLIFDPVGTNQYIKD  59
+             +  N  + +L   P+LWKEI+E +  +    L  K S +   +G +++ P   N+ I +
+Sbjct  7    YSHLNGLEFLLVHKPKLWKEIQEVIKNVDATKLRTKQSKETRSMGEMLYSPRAMNKAIDE  66
+
+Query  60   ELVPKHWKNNI---------------------PIPKRFDFLGT-------DIDFGKRDTL  91
+                  W                               +  G          DF K    
+Sbjct  67   GFARHKWGERRISYWVTSDARLIRKTLFMGPDQQKAEIEGAGKKPLASYNQTDFVKERVA  126
+
+Query  92   VEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQ  151
+            VEVQF  Y F+  +     L       ID   + V I+  K      S+   YYE     
+Sbjct  127  VEVQFGKYAFVAYDLFVKHLAFYVGDVID---VGVEILPMKELQQQMSSGVGYYEGELYN  183
+
+Query  152  LNSLAEYNVFDVPIRLVGLIE  172
+            L       V  VP+ ++G+  
+Sbjct  184  LI-REGRGVPAVPLIVIGIAP  203
+
+
+>ref|WP_006683169.1| restriction endonuclease BglII [Candidatus Glomeribacter gigasporarum]
+ emb|CCD30092.1| Restriction endonuclease BglII [Candidatus Glomeribacter gigasporarum 
+BEG34]
+Length=192
+
+ Score =  148 bits (374),  Expect = 1e-33, Method: Composition-based stats.
+ Identities = 43/190 (23%), Positives = 71/190 (38%), Gaps = 27/190 (14%)
+
+Query  6    TDYNHADEILNPQLWKE---IEETLLKMP--LH-VKASDQASKVGSLIFDPVGTNQYIKD  59
+             D+N    I+  +   E   IE  +  +    +  K S + + +G ++F P+  N+  + 
+Sbjct  7    YDFNGGKSIVEQKYAFELRQIETVVQSIDSACYMTKRSTEKTMMGKMLFAPIEINKAFRR  66
+
+Query  60   ELVPKHWKN---------------NIPIPKRFDFLGTDIDFGKRDT--LVEVQFSNYPFL  102
+            E     W N                +P          D+DF K D    VEVQF  Y F+
+Sbjct  67   EFNKIGWSNYRVVCEYRYGEFLEGYLPSKNISSKPFRDMDFIKPDIKLGVEVQFGKYAFM  126
+
+Query  103  LNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFD  162
+            + N         +   ID     V I+  K  +   S    Y+EQ    L      N+ D
+Sbjct  127  VYNVCAKMTIFSNMGIID---TGVEIVPVKHFVDRMSTGVSYFEQFAWDLAHRGISNI-D  182
+
+Query  163  VPIRLVGLIE  172
+            +P+ ++G+  
+Sbjct  183  IPVLILGIDA  192
+
+
+>ref|YP_001741874.1| putative BstYI [Candidatus Cloacamonas acidaminovorans str. Evry]
+ ref|WP_015425526.1| BstYI [Candidatus Cloacamonas acidaminovorans]
+ emb|CAO81668.1| putative BstYI [Candidatus Cloacamonas acidaminovorans str. Evry]
+Length=180
+
+ Score =  142 bits (359),  Expect = 5e-32, Method: Composition-based stats.
+ Identities = 41/176 (24%), Positives = 67/176 (39%), Gaps = 18/176 (10%)
+
+Query  4    DITDYNHADEILNPQLWKEIEETLLKM----PLHVKASDQASKVGSLIFDPVGTNQYIKD  59
+            + +     + IL  +  K IEE L  +    P   K S + +  G  +F P   N+  KD
+Sbjct  6    EYSHLGGLE-ILLVRYPKIIEEVLTIIKDIKPHKTKISKEKTMSGKALFSPKDINKQFKD  64
+
+Query  60   ELVPKHWKN-----NIPIPK---RFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSEL  111
+            +     +K      +I +P    +       IDF     LVEVQ   YPF+  +  + + 
+Sbjct  65   KFQLLGYKELRDTFSIELPNYEPKITGCYKQIDFCLGKVLVEVQLGKYPFMFYDLAKFQY  124
+
+Query  112  FHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRL  167
+            F   N       + + I+         S    Y EQ  N +  L + +   VP+ +
+Sbjct  125  FFNENKAD----VGIEIVPCYQLHKSMSTGVSYGEQLINDIERL-KRHFPSVPVAI  175
+
+
+>ref|YP_005014986.1| restriction endonuclease BglII [Tannerella forsythia ATCC 43037]
+ ref|WP_014225446.1| restriction endonuclease BglII [Tannerella forsythia]
+ gb|AEW21892.1| restriction endonuclease BglII [Tannerella forsythia ATCC 43037]
+Length=205
+
+ Score =  140 bits (354),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 45/209 (22%), Positives = 78/209 (38%), Gaps = 40/209 (19%)
+
+Query  1    MKI--DITDYNHADEIL--NPQLWKEIEETLLKMPLH---VKASDQASKVGSLIFDPVGT  53
+            MKI    +  N  + +L  + +L+KEI +T+  +       K S + +  G +++ P+  
+Sbjct  1    MKIAQKYSHLNGEEYLLVHHKKLYKEIIDTIRSIDASNFMTKESKEKTMRGKMLYSPIEL  60
+
+Query  54   NQYIKDELVPKHWKN------------------NIPIPKRFDFL-----------GTDID  84
+            N+    +     W                     +P  K+ DFL               D
+Sbjct  61   NRTFNKKFKELGWNECRYQYYITTDQKILPELIMLPYDKQKDFLISKGIKYPISSYKQTD  120
+
+Query  85   FGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLY  144
+            F K    VEVQF  Y F+  +     L   S   I+   + + ++ TK      S+   Y
+Sbjct  121  FVKDQIAVEVQFGKYAFVAFDLFVKHLLFYSGGVIN---LGIEVLPTKKMQAQMSSGVAY  177
+
+Query  145  YEQAQNQLNSLAEYNVFDVPIRLVGLIED  173
+            YE     +      N   VP+ ++G+ +D
+Sbjct  178  YEGEVYNVL-RHGRNNPPVPLLILGIEQD  205
+
+
+>gb|AEN19717.1| XhoII [Xanthomonas vasicola]
+Length=207
+
+ Score =  137 bits (346),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 37/205 (19%), Positives = 69/205 (34%), Gaps = 41/205 (20%)
+
+Query  5    ITDYNHADEIL--NPQLWKEIEETLLKMP---LHVKASDQASKVGS----LIFDPVGTNQ  55
+             +  N  + +   + ++  E++  + ++       K + +A K G     L++ PV  N+
+Sbjct  7    YSHLNGLEFLKVHHEKVILELDRVITRIDAEACRTKETKEARKAGRFADGLLYSPVALNE  66
+
+Query  56   YIKDELVPKHWKNNIPI------------------PKRFDFL----------GTDIDFGK  87
+               D L   HW  +                      ++   +              DF K
+Sbjct  67   AFNDALSQLHWYEDRYSYFVTDDARLIRATLGLDRAEQKRIIEDAGHKAIATYNQTDFVK  126
+
+Query  88   RDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQ  147
+                +EVQF  Y F+  +     +       ID   + + I+  K      S+   YYE 
+Sbjct  127  DRVAIEVQFGKYSFVAYDLFVKHMAFYVGDKID---VGIEILPMKSLQENMSSGIAYYES  183
+
+Query  148  AQNQLNSLAEYNVFDVPIRLVGLIE  172
+              + L       V  VP+ L+G+  
+Sbjct  184  ELSNL-VRQGRGVPAVPLVLMGIEP  207
+
+
+>ref|WP_018425766.1| restriction endonuclease BglII [Hoeflea sp. 108]
+Length=205
+
+ Score =  135 bits (341),  Expect = 6e-30, Method: Composition-based stats.
+ Identities = 39/205 (20%), Positives = 63/205 (31%), Gaps = 43/205 (20%)
+
+Query  5    ITDYNHADEI--LNPQLWKEIEETLLKMP---LHVKASDQASKVGSLIFDPVGTNQYIKD  59
+             +  N  + +    P+L  EI E +  +       K S +  K+   ++ P   N+  + 
+Sbjct  7    YSHLNGLEFLEARKPKLLVEIREVVAGIDVEACRTKVSKEKRKLEKRLYSPRDMNKAFEA  66
+
+Query  60   ELVPKHWKN------------------NIP-------------IPKRFDFLGTDIDFGKR  88
+                  WK+                  ++P              P          DF K 
+Sbjct  67   GFESHQWKSVQATYWVCEDARTNRKVMDLPSSEQKAAIVNAGFTPYPSR---NQTDFVKE  123
+
+Query  89   DTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQA  148
+               VEVQ   Y F+  +     +       ID   + V I+  K      S+   YYE  
+Sbjct  124  RVAVEVQLGKYAFIAYDLFVKHMAFYVADKID---VGVEIVPMKRLQEEMSSGPGYYEAE  180
+
+Query  149  QNQLNSLAEYNVFDVPIRLVGLIED  173
+               L       V  VP+ + G+  D
+Sbjct  181  LYNLI-REGRGVPPVPLVMFGIAPD  204
+
+
+>ref|YP_007171340.1| Restriction endonuclease BglII [Dactylococcopsis salina PCC 8305]
+ ref|WP_015228989.1| Restriction endonuclease BglII [Dactylococcopsis salina]
+ gb|AFZ49983.1| Restriction endonuclease BglII [Dactylococcopsis salina PCC 8305]
+Length=193
+
+ Score =  135 bits (340),  Expect = 9e-30, Method: Composition-based stats.
+ Identities = 39/188 (21%), Positives = 61/188 (33%), Gaps = 28/188 (14%)
+
+Query  6    TDYNHADEILNPQLWK---EIEETL---LKMPLHVKASDQASKVGSLIFDPVGTNQYIKD  59
+              +N   E L     +   EI+E +          K S + +K G +++ P   N     
+Sbjct  7    YSFNGGKEKLESDFSEHLREIKEVIKQCDSSLCKKKKSKEKTKQGQILYSPKCLNDQFAR  66
+
+Query  60   ELVPKHWKNNIPIP-----------------KRFDFLGTDIDFGKRDTLVEVQFSNYPFL  102
+                K W +   IP                         ++DF K    VEVQF  Y F+
+Sbjct  67   CFQEKSWGSYR-IPCSYSSSYYTSNYQPQNSMDHKNAYREMDFIKGKVGVEVQFGKYSFM  125
+
+Query  103  LNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFD  162
+            + N                    V I+  K      S    Y+EQ    L      N+ D
+Sbjct  126  VYNVCAKMTIF---SKKAGIKAGVEIVPIKDLAVQMSTGVSYFEQIVWDLEQRGVSNI-D  181
+
+Query  163  VPIRLVGL  170
+            +P+ ++G+
+Sbjct  182  IPVLIIGI  189
+
+
+>ref|YP_007827971.1| Restriction endonuclease BglII. [Synergistetes bacterium SGP1]
+ ref|WP_015556872.1| Restriction endonuclease BglII [Synergistetes bacterium SGP1]
+ emb|CBL28725.1| Restriction endonuclease BglII. [Synergistetes bacterium SGP1]
+Length=211
+
+ Score =  134 bits (336),  Expect = 3e-29, Method: Composition-based stats.
+ Identities = 45/203 (23%), Positives = 68/203 (34%), Gaps = 38/203 (18%)
+
+Query  5    ITDYNHADEIL--NPQLWKEIEETLLKMPLHV---KASDQASKVGSLIFDPVGTNQYIKD  59
+             +  N  + +L   P LW E++  +  +   +   K S + +  G  +F P   N+  K 
+Sbjct  7    YSHLNGLEFLLVHRPALWDEVKAAVQNVDASLAFNKVSREKTMTGRTLFAPKELNRLFKA  66
+
+Query  60   ELVPKHWKN------------------NIPIPKRFD-----------FLGTDIDFGKRDT  90
+            E + K W+                   +I    R                  +DF K   
+Sbjct  67   EFLSKGWRETRIDYFVNEDLETTRDTVHIRDKDRQRQAITEKGFTAYSTYNQVDFVKDRV  126
+
+Query  91   LVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQN  150
+             VEVQF  Y  +  +      F     DID     + II     M   S+   +YE    
+Sbjct  127  AVEVQFGKYFSVQYDLHVKHTFFYERGDIDA---GIEIIPMHSLMSQMSSGLAWYENELT  183
+
+Query  151  QLNSLAEYNVFDVPIRLVGLIED  173
+             +      N   VPI LVG+  D
+Sbjct  184  NIVREGRSN-PSVPIVLVGIEPD  205
+
+
+>ref|WP_017716968.1| hypothetical protein [Oscillatoria sp. PCC 10802]
+Length=107
+
+ Score =  133 bits (334),  Expect = 5e-29, Method: Composition-based stats.
+ Identities = 37/107 (35%), Positives = 58/107 (55%), Gaps = 2/107 (1%)
+
+Query  111  LFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGL  170
+            +F  +   +  +  ++ ++I K  MFPASNSSLYYE A  QL +LA Y  F VP+R+VGL
+Sbjct  1    MFFNAQTLLTGQPTRLVVLIAKAQMFPASNSSLYYETAVQQLTALAGY-AFKVPMRVVGL  59
+
+Query  171  IEDFETDIDIVSTTYADKRYSRTITKRDTVKGKVIDTNTPNTRRRKR  217
+             E   T + +  T Y      + +T+ D  + ++I   +  +R   R
+Sbjct  60   FEPKNTTVQVKCTVYEQATSRKIVTQED-RQCQIIAGRSARSRCLLR  105
+
+
+>ref|YP_617343.1| hypothetical protein Sala_2301 [Sphingopyxis alaskensis RB2256]
+ ref|WP_011542586.1| restriction endonuclease BglII [Sphingopyxis alaskensis]
+ gb|ABF54010.1| hypothetical protein Sala_2301 [Sphingopyxis alaskensis RB2256]
+Length=203
+
+ Score =  129 bits (324),  Expect = 6e-28, Method: Composition-based stats.
+ Identities = 39/201 (20%), Positives = 66/201 (33%), Gaps = 37/201 (18%)
+
+Query  5    ITDYNHADEIL--NPQLWKEIEETLLKMP---LHVKASDQASKVGSLIFDPVGTNQYIKD  59
+             +  N  + +      +W ++E  +  +       KAS +A K G L++ PV  N+    
+Sbjct  7    YSHLNGFEFLKYHKAHIWDDLEAVVAAVDAEACRTKASAEARKEGRLLYSPVDMNKEFAR  66
+
+Query  60   ELVPKHWKNNIPIPKRFD----------------------------FLGTDIDFGKRDTL  91
+                 HW          +                                  DF K    
+Sbjct  67   LFADHHWTERRVTNWLSEDTSLLRDIMSLEPQAQKEMIEARGLEPIMTYNQTDFVKDRVA  126
+
+Query  92   VEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQ  151
+            VE+QF  Y F+ ++     +    + DID   + + ++  K      S+   YYE+    
+Sbjct  127  VEIQFGKYAFVAHDLFVKHMSFFISDDID---VGIEVVPMKSMEREMSSGVPYYERDLFN  183
+
+Query  152  LNSLAEYNVFDVPIRLVGLIE  172
+            L       +  VPI LVG+  
+Sbjct  184  LM-RQGRGIPAVPIILVGVAP  203
+
+
+>ref|YP_003508170.1| Restriction endonuclease BglII [Meiothermus ruber DSM 1279]
+ ref|WP_013014648.1| BstYI [Meiothermus ruber]
+ gb|ADD29150.1| Restriction endonuclease BglII [Meiothermus ruber DSM 1279]
+Length=182
+
+ Score =  124 bits (311),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 36/182 (20%), Positives = 69/182 (38%), Gaps = 19/182 (10%)
+
+Query  4    DITDYNHADEILNPQLWKEIEETLLKMP----LHVKASDQASKVGSLIFDPVGTNQYIKD  59
+            + +      EIL  +    +EE    +     +  K S + +K+G  ++ P   NQ +K+
+Sbjct  6    EYSHL-GGREILQVRFPTVLEEIYAVIKEVSAVRGKKSKEKTKLGKELYAPKIINQRLKE  64
+
+Query  60   ELVPKHWKN-----NIPIPKRFDF----LGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSE  110
+                + +       +I +P + +         IDF K   LVE QF  Y F+  +  + +
+Sbjct  65   AFHKRGFHELRDYYDIRLPGQEEPVVRGAYKQIDFFKERVLVEAQFGKYAFMFYDMAKFQ  124
+
+Query  111  LFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGL  170
+             F           + V I+         S+   Y EQ    +  L + +   VP+ ++ +
+Sbjct  125  YFFNETRAD----VGVEIVPAYALHKEMSSGVAYGEQLIYDIERL-KRHFPAVPVHIILI  179
+
+Query  171  IE  172
+              
+Sbjct  180  DA  181
+
+
+>ref|WP_006600442.1| Restriction endonuclease BglII [Haloferax alexandrinus]
+ gb|ELZ92828.1| Restriction endonuclease BglII [Haloferax alexandrinus JCM 10717]
+Length=201
+
+ Score =  121 bits (303),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 38/185 (21%), Positives = 74/185 (40%), Gaps = 17/185 (9%)
+
+Query  5    ITDYNHAD--EILNPQLWKEIEETLLKM--PLHVKASDQASKVGSLIFDPVGTNQYIKDE  60
+             + +  ++  E+  P+L +EI E +  +  P   K S++A+  G  +F P   N+  +++
+Sbjct  7    YSHFGGSEILELRYPELNEEINEAIEAIENPGRGKISEEATNKGEELFSPKDLNEAFENQ  66
+
+Query  61   LVPKHWKNN-----IPIPK---RFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELF  112
+            L P  W+N        IP           + DF K +  VEVQ   Y  +  +  + +  
+Sbjct  67   LEPLGWENERKYYTTSIPDYEHEVTGSYNEYDFKKEEIFVEVQMGKYFAMFYDLAKFQNL  126
+
+Query  113  HKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIE  172
+                    E  + + I+ +       S+   Y E+    L  +   N   VP++++ L  
+Sbjct  127  FNKG----ELEVGIEIVPSHFLYRQMSSGVSYGEKLVYDLERIGG-NFPQVPVKVILLDM  181
+
+Query  173  DFETD  177
+              +  
+Sbjct  182  PLDGT  186
+
+
+>ref|WP_008318765.1| Restriction endonuclease BglII [Haloferax mucosum]
+ gb|ELZ96436.1| Restriction endonuclease BglII [Haloferax mucosum ATCC BAA-1512]
+Length=208
+
+ Score =  120 bits (300),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 40/185 (22%), Positives = 73/185 (40%), Gaps = 17/185 (9%)
+
+Query  5    ITDYNHAD--EILNPQLWKEIEETLLKM--PLHVKASDQASKVGSLIFDPVGTNQYIKDE  60
+             + +  A+  E  +P L  EI ET+  +  P   K S +A+  G  +F P   N   + E
+Sbjct  7    YSHFGGAEILEARHPTLNDEINETIEAVANPGRGKISQEATNKGEKLFSPKELNTAFEKE  66
+
+Query  61   LVPKHWKN-----NIPIPK---RFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELF  112
+               + W+       I IP            +DF K    VEVQ   Y  +  +  + + F
+Sbjct  67   FESRGWEEVRENFTISIPDYEHEVSGSYFQVDFEKDGIFVEVQKGKYFAMYYDLAKFQ-F  125
+
+Query  113  HKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIE  172
+              +  D++   + + I+ +       S+   Y E+  + L  +   N   VP++++ +  
+Sbjct  126  LYNRGDLE---VGIEIVPSHFLYRQMSSGVSYGEKLVHDLERIGG-NFPLVPLKVILIDM  181
+
+Query  173  DFETD  177
+              E  
+Sbjct  182  PLEGT  186
+
+
+>ref|YP_007880896.1| Restriction endonuclease BglII [Meiothermus ruber DSM 1279]
+ ref|WP_015586749.1| Restriction endonuclease BglII [Meiothermus ruber]
+ gb|AGK05399.1| Restriction endonuclease BglII [Meiothermus ruber DSM 1279]
+Length=160
+
+ Score =  117 bits (292),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 33/167 (20%), Positives = 66/167 (40%), Gaps = 17/167 (10%)
+
+Query  15   LNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKN-----N  69
+            +  +++  I+E      +  K S + +K+G  ++ P   NQ +K+    + +       +
+Sbjct  1    MLEEIYAVIKEV---SAVRGKKSKEKTKLGKELYAPKIINQRLKEAFHKRGFHELRDYYD  57
+
+Query  70   IPIPKRFDF----LGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMK  125
+            I +P + +         IDF K   LVE QF  Y F+  +  + + F           + 
+Sbjct  58   IRLPGQEEPVVRGAYKQIDFFKERVLVEAQFGKYAFMFYDMAKFQYFFNETRAD----VG  113
+
+Query  126  VAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIE  172
+            V I+         S+   Y EQ    +  L + +   VP+ ++ +  
+Sbjct  114  VEIVPAYALHKEMSSGVAYGEQLIYDIERL-KRHFPAVPVHIILIDA  159
+
+
+>ref|WP_008477311.1| hypothetical protein [Beggiatoa sp. PS]
+ gb|EDN70145.1| conserved hypothetical protein [Beggiatoa sp. PS]
+Length=169
+
+ Score =  114 bits (286),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 31/156 (20%), Positives = 55/156 (36%), Gaps = 24/156 (15%)
+
+Query  1    MKID-ITDYNHADEILNPQLWKEIEET------LLKMPLHVKASDQASKVGSLIFDPVGT  53
+            MKI  +  +N   E ++    KE+ E       +       K S++ +  GSL++ P   
+Sbjct  1    MKIAGMYSFNDGKETIDSLFPKELAEVKQVIHNVDSESCKTKVSEEKTMQGSLLYSPPKL  60
+
+Query  54   NQYIKDELVPKHWKN--------------NIPIPKRFDFLGTDIDFGKRDTLVEVQFSNY  99
+            N   K       W +              N    K       ++DF K    +EVQF  Y
+Sbjct  61   NSAFKQGFTKLGWDSQRISCDYPTQYYVSNYTPSKTSKHAFREMDFVKNTVGIEVQFGKY  120
+
+Query  100  PFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHM  135
+             F++ N         +   I+   + + + + K  +
+Sbjct  121  AFMVYNVCAKMTIFHNQSIIE---VGIEMYLLKILL  153
+
+
+>emb|CDC36530.1| site-specific recombinase XerD [Butyrivibrio sp. CAG:318]
+Length=494
+
+ Score =  113 bits (282),  Expect = 5e-23, Method: Composition-based stats.
+ Identities = 44/211 (21%), Positives = 77/211 (37%), Gaps = 38/211 (18%)
+
+Query  3    IDITDYNHADEIL---NPQLWKEIEETLLKMPL--HVKASDQASKVGSLIFDPVGTNQYI  57
+            +   ++ HA+E L     +L +E+E+ ++ +    ++K S   + +G + +D    N+ I
+Sbjct  170  VTYYNHLHAEEYLYYRKKELIEELEKCIVDIDANKYLKFSCDKTHLGEIYYDQKALNEEI  229
+
+Query  58   KDELVPKHWKN-------------NIPIPKRFD----------------FLGTDIDFGKR  88
+            +  L  K WK              +  I K  D                     +DF K 
+Sbjct  230  EKGLNSKGWKELKISYYVTEDETVSKQIVKISDKEVQKKIIEENGFEALSSHNQVDFVKD  289
+
+Query  89   DTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQA  148
+               VEVQF  Y  +  +      F     DI+   + + II T   M        ++E  
+Sbjct  290  RIAVEVQFGKYFSVAYDLHVKHTFFYLRDDIE---VGIEIIPTHKMMLCMDTGVAWFENE  346
+
+Query  149  QNQLNSLAEYNVFDVPIRLVGLIEDFETDID  179
+               +      N   VP+ ++G+  D   D D
+Sbjct  347  VTNVI-REGRNNPSVPVYILGIESDDHIDTD  376
+
+
+>ref|WP_008318766.1| restriction endonuclease BglII [Haloferax mucosum]
+ gb|ELZ96437.1| restriction endonuclease BglII [Haloferax mucosum ATCC BAA-1512]
+Length=232
+
+ Score = 79.4 bits (194),  Expect = 7e-13, Method: Composition-based stats.
+ Identities = 36/204 (18%), Positives = 71/204 (35%), Gaps = 40/204 (19%)
+
+Query  4    DITDYNHADEILNPQLWKEIEETLLKMPLHV------KASDQASKVGSLIFDPVGTNQYI  57
+            DI  +    E L      E +E +  +  +       K + +ASK G  +  P   N  I
+Sbjct  5    DIFSFGGGLETLQSDYRDEYDELVKAIESNTADEVFVKRTKEASKSGKFLASPGTMNHNI  64
+
+Query  58   KDELVPK--HW--------------------------KNNIPIPKRFDFLGTDIDFGKRD  89
+              E +     W                          +  + I     +    +D  K  
+Sbjct  65   LIEQLHDTYGWAVDHSAGRNKSEIEEIGKEPRSIGDPECEVDISPGERYGKRTVDGWKNS  124
+
+Query  90   TLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQ  149
+              VE+QF  Y F++ + +      + +  I   G+ + ++ +   +   S    YYEQ +
+Sbjct  125  CCVEIQFGKYAFMIYDVLAKFGHFQQHDKI---GLGIEVLPSNNLVQDMSTGVGYYEQLE  181
+
+Query  150  NQLNSLAEYNV---FDVPIRLVGL  170
+             +++ L    V   + +P+  +G+
+Sbjct  182  AEISHLPTDYVNEEYRIPVVGIGV  205
+
+
+>ref|WP_006600441.1| restriction endonuclease BglII [Haloferax alexandrinus]
+ gb|ELZ92827.1| restriction endonuclease BglII [Haloferax alexandrinus JCM 10717]
+Length=248
+
+ Score = 77.8 bits (190),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 40/204 (20%), Positives = 72/204 (36%), Gaps = 40/204 (19%)
+
+Query  4    DITDYNHADEILNPQL---WKEIEETLLKMPLH---VKASDQASKVGSLIFDPVGTNQYI  57
+            DI  +    E L       + E+ E +   P     VK + +ASK G  +  P   N  I
+Sbjct  21   DIFSFGGGLERLQSDFRKEYDELVEAIEANPAEEVFVKETKEASKSGKYLASPGVMNHNI  80
+
+Query  58   KDELVPK--HW--------------------------KNNIPIPKRFDFLGTDIDFGKRD  89
+              E +     W                          +  + I     +    +D  K D
+Sbjct  81   LIEQLHDEYGWAVDHSAGRNKSEISQIGKEPRSIGDSECEVDISPGERYGKRTVDAWKND  140
+
+Query  90   TLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQ  149
+              VE+QF  Y F++ + +      + +  I+   M V ++ +   +   S    YYEQ +
+Sbjct  141  FCVEIQFGKYAFMIYDVLAKFGHFQQHDKIE---MGVEVLPSNNLVRDMSTGVGYYEQLE  197
+
+Query  150  NQLNSLAEYNV---FDVPIRLVGL  170
+             ++  L +  V   +  P+  +G+
+Sbjct  198  AEIGHLPDDYVDEEYRTPVIGLGV  221
+
+
+>ref|WP_006774558.1| restriction endonuclease BglII [Clostridium hathewayi]
+ gb|EFC97679.1| restriction endonuclease BglII [Clostridium hathewayi DSM 13479]
+Length=168
+
+ Score = 74.3 bits (181),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 30/132 (23%), Positives = 52/132 (40%), Gaps = 11/132 (8%)
+
+Query  47   IFDPVGTNQYIKDELVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNT  106
+            I      N+ + +  V K W+   P+    +     +DF K    VEVQF +  F+  + 
+Sbjct  40   ILSRPNLNKILDELFVAKGWQRQAPVFSSEEAAYAKMDFLKDRIGVEVQFGHASFIGIDL  99
+
+Query  107  VRSELFHKSNMDIDEEGMKVAIIITKGHMFPASN-------SSLYYEQAQNQLNSLAEYN  159
+            ++ ++   SN  +D     V I+ T        +        SL YE+    L  +    
+Sbjct  100  LKMQIASYSN--LDNIDFGVYIVTTNKMQKYLKSNYRLKWDGSLSYEKVIKYLPHIKSA-  156
+
+Query  160  VFDVPIRLVGLI  171
+               VPI ++G+ 
+Sbjct  157  -IQVPIYVIGID  167
+
+
+>emb|CDC05318.1| restriction endonuclease BglII [Clostridium leptum CAG:27]
+Length=167
+
+ Score = 68.6 bits (166),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 44/180 (25%), Positives = 72/180 (40%), Gaps = 25/180 (13%)
+
+Query  1    MKIDITDYNHADEILNP--QLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIK  58
+            +++    +  A+++ N   QL +EI E L      ++A    S +G   F     N+ +K
+Sbjct  3    VQLRSFSFRFAEQVFNSRLQLKQEINEML------LEACKDLSVLGRPAF-----NRILK  51
+
+Query  59   DELVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMD  118
+            D  V K+W +  P         +  DF K    VEVQF +  F+  + ++ ++   SN  
+Sbjct  52   DLFVEKNWISQ-PRVSPEMKAYSKFDFMKERVAVEVQFGHASFIGIDLLKFQMASYSN--  108
+
+Query  119  IDEEGMKVAIIITKGHMFPASN-------SSLYYEQAQNQLNSLAEYNVFDVPIRLVGLI  171
+            +D     V I  TK                SL YE+    L          VPI ++G+ 
+Sbjct  109  LDLIDFGVYITTTKAMQKYLKTKYNRNWDGSLNYEKVVKYLPYFKSA--IQVPIYVIGID  166
+
+
+>ref|WP_003528270.1| restriction endonuclease BglII [Clostridium leptum]
+ gb|EDO62606.1| restriction endonuclease BglII [Clostridium leptum DSM 753]
+Length=170
+
+ Score = 68.2 bits (165),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 44/180 (25%), Positives = 72/180 (40%), Gaps = 25/180 (13%)
+
+Query  1    MKIDITDYNHADEILNP--QLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIK  58
+            +++    +  A+++ N   QL +EI E L      ++A    S +G   F     N+ +K
+Sbjct  6    VQLRSFSFRFAEQVFNSRLQLKQEINEML------LEACKDLSVLGRPAF-----NRILK  54
+
+Query  59   DELVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMD  118
+            D  V K+W +  P         +  DF K    VEVQF +  F+  + ++ ++   SN  
+Sbjct  55   DLFVEKNWISQ-PRVSPEMKAYSKFDFMKERVAVEVQFGHASFIGIDLLKFQMASYSN--  111
+
+Query  119  IDEEGMKVAIIITKGHMFPASN-------SSLYYEQAQNQLNSLAEYNVFDVPIRLVGLI  171
+            +D     V I  TK                SL YE+    L          VPI ++G+ 
+Sbjct  112  LDLIDFGVYITTTKAMQKYLKTKYNRNWEGSLNYEKVVKYLPYFKSA--IQVPIYVIGID  169
+
+
+>ref|YP_286723.1| hypothetical protein Daro_3524 [Dechloromonas aromatica RCB]
+ ref|WP_011289249.1| hypothetical protein [Dechloromonas aromatica]
+ gb|AAZ48253.1| hypothetical protein Daro_3524 [Dechloromonas aromatica RCB]
+Length=234
+
+ Score = 67.0 bits (162),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 42/187 (23%), Positives = 75/187 (41%), Gaps = 17/187 (9%)
+
+Query  1    MKIDITDYNHADEIL----NPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQY  56
+            MKI    Y  A+EI+    +   W EI+  L   PL V  +  +S     +   V  N Y
+Sbjct  1    MKIKTHSYRFAEEIVQHPKHQAAWNEIQAILSGAPLFVYPNKSSSNDKLDVVQQV-MNTY  59
+
+Query  57   IKDELVPK-HWKNNIPIPKRFDFLGTDIDFGKR----DTLVEVQFSNYPFLLNNTVRSEL  111
+                +     W+ + P+    +  G   DF K         EVQF N     ++  + + 
+Sbjct  60   FDRVMAIDHGWEYH-PLATSIENSGLAADFKKTFGDIVVQAEVQFGNMSRWYSDVFKFQT  118
+
+Query  112  FHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLI  171
+               S   I+   + ++++          ++ + +E+ + +L S        +PI L+GL 
+Sbjct  119  A-YSQSLIN---IGLSVVPMNSLAKRIDSNIVNFERTERELPSAKLS--ITLPILLIGLE  172
+
+Query  172  EDFETDI  178
+             D +T+I
+Sbjct  173  PDVDTNI  179
+
+
+>ref|WP_009292102.1| restriction endonuclease BglII [Bacteroides sp. 2_1_56FAA]
+ gb|EGN08351.1| hypothetical protein HMPREF1018_01962 [Bacteroides sp. 2_1_56FAA]
+Length=179
+
+ Score = 60.5 bits (145),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 44/185 (24%), Positives = 79/185 (43%), Gaps = 19/185 (10%)
+
+Query  1    MKIDITDYNHADEILNPQLW--KEIEETLLKMPLH---VKAS---DQASKVGSLIFDPV-  51
+            MK     + +AD ILN +     EI++ L ++      +K S    +   VG  +     
+Sbjct  1    MKCKKYAHRYADIILNSEYTIKNEIDDVLDRLTFENIELKFSEINQEKLSVGKKVQKGKQ  60
+
+Query  52   -GTNQYIKDELVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSE  110
+               N  +K+  + K W+    +    D     IDF K    ++V F++  F+  + +R +
+Sbjct  61   PAINFLLKELFIEKGWEAEKKVFNDSDNDLV-IDFWKNKIGIDVAFNHRSFIGGDLLRLQ  119
+
+Query  111  LFHKSNMDIDEEGMKVAIIITKGHMFPASN---SSLYYEQAQNQLNSLAEYNVFDVPIRL  167
+               +    I+   + + +  TK  +   SN   S + +E+ +  L +   Y+V  VPI L
+Sbjct  120  AGAEIKNMIN---IGIYVCGTKNFLKHISNDHSSIVSFERVKWYLENF--YSVLTVPILL  174
+
+Query  168  VGLIE  172
+            VG  E
+Sbjct  175  VGFEE  179
+
+
+>ref|WP_001009462.1| hypothetical protein [Bacillus cereus]
+ gb|EEL30164.1| hypothetical protein bcere0018_8120 [Bacillus cereus Rock1-15]
+Length=212
+
+ Score = 59.7 bits (143),  Expect = 6e-07, Method: Composition-based stats.
+ Identities = 49/206 (24%), Positives = 78/206 (38%), Gaps = 17/206 (8%)
+
+Query  1    MKIDITDYNHADEIL--NPQL---WKEIEETLLKMP--LHVKASDQASKVGSLIFDPVGT  53
+            M   +  + H   IL  NP+    W EI++ L  +   + ++   Q     +        
+Sbjct  1    MNFIVYSHRHGQNILETNPEFTNTWLEIQKALSNITDEMLLQVHRQKYIGSNKSLS-KAI  59
+
+Query  54   NQYIKDELVPKHWKNNIPI--PKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSEL  111
+            NQ IK++L    WK+   I   KR+      +DF K    VEV F++   +  N ++  +
+Sbjct  60   NQLIKEQLATFGWKSESYIFKDKRYKNKAWRLDFAKDIISVEVAFNHSGTIAWNLMKPVI  119
+
+Query  112  FHKSNMDIDEEGMKVAIIITKGHMFPASNS----SLYYEQAQNQLNSLAEYNVFDVPIRL  167
+              + N        K+ III+  +    S         YE+    L  L       VP+ +
+Sbjct  120  ASELNHVEKAVQTKIGIIISATNELRDSGGFDSAIGTYEKYIEHLMPLNTQ--LTVPLVI  177
+
+Query  168  VGLIEDFETDIDIVSTTYADKRYSRT  193
+            VGL +  ET          DK   R 
+Sbjct  178  VGLKKP-ETFFIETYKISKDKTRGRI  202
+
+
+>ref|YP_006412093.1| Restriction endonuclease BglII [Alistipes finegoldii DSM 17242]
+ ref|WP_014776510.1| restriction endonuclease BglII [Alistipes finegoldii]
+ gb|AFL79408.1| Restriction endonuclease BglII [Alistipes finegoldii DSM 17242]
+Length=179
+
+ Score = 59.3 bits (142),  Expect = 9e-07, Method: Composition-based stats.
+ Identities = 42/184 (23%), Positives = 77/184 (42%), Gaps = 19/184 (10%)
+
+Query  1    MKIDITDYNHADEILNPQLW--KEIEETLLKMPLHV------KASDQASKVGSLIFD--P  50
+            MK     + +AD ILN +     EI+  L ++          + + +   +G  I     
+Sbjct  1    MKCKKYAHRYADIILNSEYTIKNEIDGILDQLNFSNIELKFDEINREKENIGKKIQKGRQ  60
+
+Query  51   VGTNQYIKDELVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSE  110
+               N  +KD  + K W+    +    D     IDF K +  V+V F++  F+  + +R +
+Sbjct  61   PAINALLKDLFLEKGWEGEKKVFNDSDNDLV-IDFWKNNIGVDVAFNHRSFIGGDLLRLQ  119
+
+Query  111  LFHKSNMDIDEEGMKVAIIITKGHMFPASN---SSLYYEQAQNQLNSLAEYNVFDVPIRL  167
+               +    I+   + + +  TK  +   S    S + +E+ +  L +   Y+V  VPI L
+Sbjct  120  AGAEIKNMIN---VGIYVCGTKDFLKYVSKDHCSIVSFERVKWYLENF--YSVLTVPILL  174
+
+Query  168  VGLI  171
+            +GL 
+Sbjct  175  IGLE  178
+
+
+>ref|WP_009139978.1| hypothetical protein [Slackia piriformis]
+ gb|EJZ83282.1| hypothetical protein HMPREF9451_01801 [Slackia piriformis YIT 
+12062]
+Length=251
+
+ Score = 58.9 bits (141),  Expect = 9e-07, Method: Composition-based stats.
+ Identities = 43/201 (22%), Positives = 73/201 (37%), Gaps = 30/201 (14%)
+
+Query  1    MKIDITDYNHADEILNPQ-----LWKEIEETLLKM--PLHVKASDQASKVGSLIFDPVGT  53
+            MK  I  + HAD +         LW EIE+ L  +   + +K  +  ++    I      
+Sbjct  1    MKYRIHGHRHADFLFRELGEYACLWGEIEDALASISDDMIIKEFEGEARKAKSI--SQAI  58
+
+Query  54   NQYIKDELVPKHWKNNIPIPKRFDFLGTD----------IDFGKRDTLVEVQFSNYPFLL  103
+            N+ +K ELV + W+     P+ + F   +          +DF K    VEV F++   + 
+Sbjct  59   NRLVKAELVKRAWE-----PESYIFADEEYGRAAKGTWRLDFAKDALSVEVAFNHRSDIS  113
+
+Query  104  NNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNS----SLYYEQAQNQLNSLAEYN  159
+             N ++  L  + N           ++IT       +         YE     L  L    
+Sbjct  114  WNLIKPTLASELNHVQKAIQTSGGVVITATQAMKEAGGFDSAVGTYEDYVQYLKPLGT--  171
+
+Query  160  VFDVPIRLVGLIEDFETDIDI  180
+            +   P+ +VGL       I +
+Sbjct  172  MLPAPLVIVGLEPPETFRIAV  192
+
+
+>ref|WP_000862072.1| hypothetical protein [Bacillus cereus]
+ gb|EJQ46607.1| hypothetical protein IEI_04201 [Bacillus cereus BAG5X2-1]
+Length=222
+
+ Score = 58.6 bits (140),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 40/225 (18%), Positives = 72/225 (32%), Gaps = 28/225 (12%)
+
+Query  1    MKIDITDYNHADEIL-NPQL---WKEIEETL--LKMPLHVKASDQASKVGSLIFDPVGTN  54
+            MK++   Y +A+EIL +P+    + E+        +P++   S        L       N
+Sbjct  1    MKVETYSYRYAEEILQHPRFEAAYNELMMVCRDCPVPIYKGKS---GSQSQLEVIQQIMN  57
+
+Query  55   QYIKDELVPKHW-KNNIPIPKRFDFLGTDIDFGKR-----------DTLVEVQFSNYPFL  102
+             Y         W K     P   D      DF K               +EV+F N    
+Sbjct  58   TYFLLRFEELGWEKEPRATPNTSDDALRS-DFRKYYIDPDTGEVILKLQIEVEFGNVASS  116
+
+Query  103  LNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFD  162
+              N  + +L        D   + + I+ +        +    YE+   ++ +        
+Sbjct  117  YRNYFKFQLSF----SYDLTDICILIVPSYELCKRIDSGVSNYEKTIREIPAAKLSVT--  170
+
+Query  163  VPIRLVGLIEDFETDIDIVSTTYADKRYSRTITKRDTVKGKVIDT  207
+            VP  ++GL +D  T  ++   T   K     +        +V+  
+Sbjct  171  VPTLVIGLFDDGSTAWNVKDITEDLKVLKGALKDTYPQHCEVVKG  215
+
+
+>ref|WP_008428000.1| hypothetical protein [Planococcus donghaensis]
+ gb|EGA91389.1| hypothetical protein GPDM_00940 [Planococcus donghaensis MPA1U2]
+Length=222
+
+ Score = 57.8 bits (138),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 38/174 (22%), Positives = 69/174 (40%), Gaps = 19/174 (10%)
+
+Query  19   LWKEIEETLLKMP------LHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHW--KNNI  70
+            LW EI + +  +       LH ++    +K  S        N  IKD  + K W  ++NI
+Sbjct  24   LWDEIIDVVTSISDKDIYELHTRSYQHRNKSLSS-----ALNTLIKDRFINKGWNYESNI  78
+
+Query  71   PIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIII  130
+                ++      +DF K    +EV F++   +  N ++  +  + N        ++ +II
+Sbjct  79   FNDPKYTHKSWRLDFAKEAVSLEVGFNHSGTIAWNLMKPVIASELNHVEKAIQTRIGVII  138
+
+Query  131  TKGHMFPAS----NSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDI  180
+                   +S    N+   YEQ  N LN L        P+ ++GL +     + +
+Sbjct  139  CATQELKSSGGFDNAVGTYEQYVNYLNPLRVQ--LTTPLVILGLKKPESLSVKL  190
+
+
+>ref|WP_002140580.1| hypothetical protein [Bacillus cereus]
+ gb|EJQ73451.1| hypothetical protein IG7_00754 [Bacillus cereus HuA2-4]
+Length=212
+
+ Score = 57.4 bits (137),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 41/185 (23%), Positives = 69/185 (38%), Gaps = 12/185 (6%)
+
+Query  17   PQLWKEIEETLLKMP--LHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKNNIPI--  72
+             + W EI++ L  +   + ++   +     +        NQ IK++L    WK+   I  
+Sbjct  22   TKTWLEIQQALSNITDEMILEVHRKKYIESNKSLS-KALNQLIKEQLAAFRWKSESYIFK  80
+
+Query  73   PKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITK  132
+              R+      +DF K    VEV F++   +  N ++  +  + N        K+ III+ 
+Sbjct  81   DNRYKNKAWRLDFAKDSISVEVAFNHSGTIAWNLMKPVIASELNHVEKAVQTKIGIIISA  140
+
+Query  133  GHMFPASNS----SLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDIVSTTYADK  188
+             +    S         YE+    L  L       VP+ +VGL +  ET          DK
+Sbjct  141  TNELRDSGGFDSAIGTYEKYVEHLMPLNTQ--LTVPLVIVGLKKP-ETFYIETYKISKDK  197
+
+Query  189  RYSRT  193
+               R 
+Sbjct  198  TRGRI  202
+
+
+>ref|WP_010306001.1| hypothetical protein [Kurthia sp. JC8E]
+Length=217
+
+ Score = 57.4 bits (137),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 33/167 (20%), Positives = 61/167 (37%), Gaps = 9/167 (5%)
+
+Query  19   LWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKNNIPIPKRFDF  78
+            LW EI+  +  +       +  ++           NQ +K++ +   W    PI     +
+Sbjct  26   LWNEIKTAIENITDQDIIDNYLNRPNRGKSISASINQLLKEQFINMGWFAESPIFNDASY  85
+
+Query  79   LGTD---IDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHM  135
+               +   +D+ K D  VEV F++   +  N ++  L  + N        +V +II     
+Sbjct  86   NHNENWRLDYAKEDVSVEVAFNHSGVIAWNLLKPVLASELNHVEKAIQTRVGVIICATDD  145
+
+Query  136  FPASNS----SLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDI  178
+               +         YE+    L  L   N   VP+ ++GL      +I
+Sbjct  146  LRRAGGFDSAVGTYEKFLKHLPPL--NNQLSVPLVIIGLEAPETFEI  190
+
+
+>ref|WP_000394357.1| hypothetical protein [Bacillus cereus]
+ gb|EJS52237.1| hypothetical protein ICG_04183 [Bacillus cereus BAG1X1-3]
+Length=212
+
+ Score = 55.5 bits (132),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 33/163 (21%), Positives = 63/163 (39%), Gaps = 11/163 (6%)
+
+Query  20   WKEIEETLLKM--PLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKNNIPI--PKR  75
+            W EI++ L  +   + ++         +        NQ IK++L    W +   I    +
+Sbjct  25   WLEIQQVLTNITDDMILELHQTKYIGSNKSLS-KAINQLIKEQLCAIGWSSESYIFKDNK  83
+
+Query  76   FDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHM  135
+            +      +DF K    VEV F++   +  N ++  +  + N        K+ III+  + 
+Sbjct  84   YKNKAWRLDFAKDSISVEVGFNHSGTIAWNLMKPVIAGELNHVEKAVQTKIGIIISATNE  143
+
+Query  136  FP----ASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDF  174
+                    ++   YE+    L  L   +   VP+ +VGL +  
+Sbjct  144  LRDFGGFDSAIGTYEKYIEHLVPL--NSQLTVPLVIVGLKKPK  184
+
+
+>ref|YP_695461.1| hypothetical protein CPF_1015 [Clostridium perfringens ATCC 13124]
+ ref|WP_011590518.1| hypothetical protein [Clostridium perfringens]
+ gb|ABG82623.1| hypothetical protein CPF_1015 [Clostridium perfringens ATCC 13124]
+Length=221
+
+ Score = 53.5 bits (127),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 35/187 (19%), Positives = 65/187 (35%), Gaps = 22/187 (11%)
+
+Query  1    MKIDITDYNHADEILN----PQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQY  56
+            MKI    Y +A+EIL      Q + E+       PL V       + G  +   +  N Y
+Sbjct  1    MKIKTYSYRYAEEILQHPKYKQAYDELIYVCQNTPLPVYEGKSKKQKGKDVIQQI-MNTY  59
+
+Query  57   IKDELVPKHWKNN-IPIPKRFDFLGTDIDFGKR---------DTLVEVQFSNYPFLLNNT  106
+             +   +   W++  +  P   +      DF K             +EV+F N      N 
+Sbjct  60   FRLMFLNLGWEDEPLATPDSNEDSLRS-DFKKTFINENGEKITIQIEVEFGNVASSYRNY  118
+
+Query  107  VRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIR  166
+             +     + +   +   + V I+ +        +    +E+   ++ S        VP  
+Sbjct  119  FK----FQLSYSYNLTDICVLIVPSYSLSKRIDSGVSNFEKVLREIPSAKLS--ITVPTL  172
+
+Query  167  LVGLIED  173
+            ++GL +D
+Sbjct  173  VIGLYDD  179
+
+
+>ref|WP_010509547.1| hypothetical protein [SAR324 cluster bacterium SCGC AAA001-C10]
+Length=167
+
+ Score = 53.5 bits (127),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 32/160 (20%), Positives = 56/160 (35%), Gaps = 9/160 (5%)
+
+Query  15   LNPQLWKEIEETLLKMPLHVKASDQASK-VGSLIFDPVGTNQYIKDELVPKHWKNNIPIP  73
+            L   L  EI+E L  + L     +       S +      N+  + E     W+    + 
+Sbjct  14   LKKSLKDEIDEVLSVVNLIEWQEEFKVIKPDSTLLHQTAYNKKFEIEFEKLGWEKKPLLS  73
+
+Query  74   KRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKG  133
+            ++   +G   DF K    VEVQF N   L  +  + +   ++ +      + V I+    
+Sbjct  74   QKPRLIG---DFRKNLVFVEVQFGNSATLYRDFYKFQYGLQNGLL----SLSVLIVPANP  126
+
+Query  134  HMFPASNSSLYYEQAQNQLNSLAEYNVF-DVPIRLVGLIE  172
+              F  +        A+  L       +   VP  ++GLI 
+Sbjct  127  KEFFPTRPRSISNMAEYDLALRYFTVLPISVPTMVIGLIA  166
+
+
+>ref|YP_001295656.1| Protein of unknown function [Flavobacterium psychrophilum JIP02/86]
+ ref|WP_011962896.1| hypothetical protein [Flavobacterium psychrophilum]
+ emb|CAL42840.1| Protein of unknown function [Flavobacterium psychrophilum JIP02/86]
+Length=208
+
+ Score = 53.2 bits (126),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 38/194 (20%), Positives = 74/194 (39%), Gaps = 17/194 (8%)
+
+Query  1    MKIDITDYNHADEILNP----QLWKEIEETLLKMPLHVKASDQAS-----KVGSLIFDPV  51
+            M+     + H+  ILN     + + EI + +  +      S   S        +      
+Sbjct  1    MEFIYNSFRHSGVILNEPDFVEEFTEIIDVISSISEGHLISKHQSYGVNNIENTPKSLSK  60
+
+Query  52   GTNQYIKDELVPKHWKNNIPIPKRFDFLGTD--IDFGKRDTLVEVQFSNYPFLLNNTVRS  109
+              N  +K+ LV K W     I +  ++LG    +DF K++  +EV F++   +  N  + 
+Sbjct  61   AINDLLKEGLVSKGWTPESGIFQDENYLGDTWRLDFAKKNISIEVAFNHSSVIAWNLTKP  120
+
+Query  110  ELFHKSNMDIDEEGMKVAIIITKGHMFPA----SNSSLYYEQAQNQLNSLAEYNVFDVPI  165
+             L  + N        K+ ++IT             +   YE+  + L  L   N+  +P+
+Sbjct  121  VLASELNHVKKAIQTKIGVVITATEELKQNGRFDGAIGTYEKYLDYLPPL--NNILTIPL  178
+
+Query  166  RLVGLIEDFETDID  179
+             ++GL       ++
+Sbjct  179  FIIGLKSPLTFTLE  192
+
+
+>ref|WP_021347530.1| hypothetical protein [Elizabethkingia meningoseptica]
+ gb|EQB92433.1| hypothetical protein C874_06200 [Elizabethkingia meningoseptica 
+502]
+Length=219
+
+ Score = 52.8 bits (125),  Expect = 8e-05, Method: Composition-based stats.
+ Identities = 40/203 (20%), Positives = 79/203 (39%), Gaps = 22/203 (10%)
+
+Query  7    DYNHADEILNP----QLWKEIEETLLKM-PLHVKASDQASKVGSLIFDPVGTNQYI----  57
+             + HAD IL      + + E+   +  +    +K   ++    +++  P   ++ I    
+Sbjct  7    SFRHADVILREPEFIEQYTELLSVISNISDDDIKRKHKSYGETNVLSTPKSLSKAINDLL  66
+
+Query  58   KDELVPKHWKNNIPIPKRFDFLGTD--IDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKS  115
+            K+ L    W     I +  D+ G    +DF K+D  +EV F++   +  N ++  L  + 
+Sbjct  67   KERLGELEWNCESRIFQNPDYTGDTWRLDFAKKDISIEVAFNHSTVIAWNLIKPALASEL  126
+
+Query  116  NMDIDEEGMKVAIIITKGHMFPASNS----SLYYEQAQNQLNSLAEYNVFDVPIRLVGLI  171
+            N        K+ +IIT  +    +         YE+  + L  L   N+   P+ ++GL 
+Sbjct  127  NHVQKAIQTKIGVIITATNDMKVAGGFDSAIGTYEKFLDYLPPLQ--NMLTTPLLIIGLT  184
+
+Query  172  EDFETDIDIVSTTYADKRYSRTI  194
+                    I+ +        +TI
+Sbjct  185  PP--NTFKIIQS---SPELRKTI  202
+
+
+>emb|CAJ72399.1| unknown protein [Candidatus Kuenenia stuttgartiensis]
+Length=287
+
+ Score = 52.0 bits (123),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 34/180 (19%), Positives = 64/180 (36%), Gaps = 30/180 (16%)
+
+Query  4    DITDYNHADEILNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDELVP  63
+            D   Y   D +       EIE  +  +   +         G   +     N+ ++   + 
+Sbjct  122  DSMHYKSLDIVDKDLYLGEIESIVNSIKFQID-------EGQSYY-----NKKLEQAFIE  169
+
+Query  64   KHWK-NNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNM-----  117
+              W+     IP+    L    DF K    +EV+F N      + ++  L + S       
+Sbjct  170  YSWQKEGRAIPE----LDLKYDFRKNGIQIEVEFGNARSYYQDYIKFMLSYCSRQIHLGM  225
+
+Query  118  ----DIDEEGMKVAIIITKGHM--FPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLI  171
+                  D   +   I   K  +    + +  ++YE+A  +   L   N+FD+PI ++G+ 
+Sbjct  226  LITPTFDFANILCEIGKQKALLRGRKSYSGMMHYEKAYKEFTYL--KNIFDMPIVILGID  283
+
+
+>ref|YP_004546094.1| Restriction endonuclease BglII [Desulfotomaculum ruminis DSM 
+2154]
+ ref|WP_013842564.1| restriction endonuclease BglII [Desulfotomaculum ruminis]
+ gb|AEG60808.1| Restriction endonuclease BglII [Desulfotomaculum ruminis DSM 
+2154]
+Length=169
+
+ Score = 52.0 bits (123),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 31/169 (19%), Positives = 64/169 (38%), Gaps = 18/169 (10%)
+
+Query  15   LNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDP----VGTNQYIKDELVPKHWKNNI  70
+            L    +++  E L   P  +K   +   +   +  P    V  N  +K  LV   W+++ 
+Sbjct  5    LVKNSYRQAHELLNARPA-IKEEIERGLLSPELSPPTLSRVNFNDLLKQWLVRGGWQHHP  63
+
+Query  71   PI-PKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAII  129
+             +  +  + L   I+F K    +E+ F +   + +N ++ +    S    D   + V I 
+Sbjct  64   TLFYEPVNPLDK-IEFIKERVGLEIGFRHSSLIGHNLIKFQ--FSSAHFQDPIDVGVLIT  120
+
+Query  130  ITKGHMFPAS-------NSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLI  171
+             T+              + S+ +E+ +  L          +PI L+G+ 
+Sbjct  121  TTRNFQKWIRGDHHHNWSGSMNFEKVERYLRHFTA--TITMPIYLIGID  167
+
+
+>ref|WP_010095556.1| hypothetical protein, partial [Ornithinibacillus scapharcae]
+Length=174
+
+ Score = 48.9 bits (115),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 26/138 (19%), Positives = 47/138 (35%), Gaps = 16/138 (11%)
+
+Query  53   TNQYIKDELVPKHWKNNIPIPKRFDFLGT-DIDFGKR--------DTLVEVQFSNYPFLL  103
+             N Y +      +W    P+    DF      DF K           L+EV+F N     
+Sbjct  13   INSYFRQRFQNFNWVE-EPLTTPKDFKDELRGDFKKEFKVGEETIKILIEVEFGNVASSY  71
+
+Query  104  NNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDV  163
+             +  +     + +   D   + + I+          +    +E+   +L S        V
+Sbjct  72   RDYFK----FQLSYAYDYADICILIVPLDKLGKRIDSGVSNFEKTCKELPSAKLS--ITV  125
+
+Query  164  PIRLVGLIEDFETDIDIV  181
+            PI ++GL  + E + D+ 
+Sbjct  126  PILVIGLDPEGEKEWDVK  143
+
+
+>ref|YP_004543955.1| Restriction endonuclease BglII [Desulfotomaculum ruminis DSM 
+2154]
+ ref|WP_013840444.1| Restriction endonuclease BglII [Desulfotomaculum ruminis]
+ gb|AEG58669.1| Restriction endonuclease BglII [Desulfotomaculum ruminis DSM 
+2154]
+Length=161
+
+ Score = 48.5 bits (114),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 20/173 (12%), Positives = 57/173 (33%), Gaps = 20/173 (11%)
+
+Query  1    MKIDITDYNHADEILNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDE  60
+            M+I I  +     ++  ++  +I+  L+++ +               +      + +   
+Sbjct  1    MRIKIHSHRSGKSVVPKEILGQIQNILIEIDIKTTR-----------YAAPEIKKAVFRG  49
+
+Query  61   LVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDID  120
+            L    W  +I +  +       I     +  + VQ  N   +  + ++ +          
+Sbjct  50   LKHNGWPKDILLDDQSKI---TITSKLNEVGLCVQLGNVSRVYYDLLKLQALFTKG----  102
+
+Query  121  EEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIED  173
+                 + ++          ++   YE+   +LN      V  +P+ ++G  E+
+Sbjct  103  FISSGIIVVPILQAAKALGSNLASYERLVKELNIF--NQVITMPLVVIGFSEN  153
+
+
+>ref|WP_009135798.1| hypothetical protein [Odoribacter laneus]
+ gb|EHP50061.1| hypothetical protein HMPREF9449_00650 [Odoribacter laneus YIT 
+12061]
+Length=153
+
+ Score = 47.8 bits (112),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 18/121 (15%), Positives = 40/121 (34%), Gaps = 10/121 (8%)
+
+Query  50   PVGTNQYIKDELVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRS  109
+            P    +Y+ ++     W + I +          I+F K    V  Q  N      + ++ 
+Sbjct  41   PAKIKKYVAEKFNKMGWGDKIKVANSK----LTINFKKSGVGVCFQLGNVARTYADLLKL  96
+
+Query  110  ELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVG  169
+               +  N       + V  +           +   Y++   +L      ++  +PI ++G
+Sbjct  97   MELYSRNS----IEVGVIYVAHSIEAKKMGTNYAQYQRLVGELELF--RDIITIPIYVIG  150
+
+Query  170  L  170
+            L
+Sbjct  151  L  151
+
+
+>ref|WP_018207405.1| hypothetical protein [actinobacterium SCGC AAA024-D14]
+Length=216
+
+ Score = 46.6 bits (109),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 32/174 (19%), Positives = 62/174 (36%), Gaps = 20/174 (11%)
+
+Query  17   PQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKNNIPIPKRF  76
+              LW +I +T+  +    +  ++     + +      N  I  +L    W +   I +  
+Sbjct  22   TDLWTDITKTIDGITDQ-RIIEEYELSTNAMSISAAINNLIDLDLQNLGWTSQSAIFQGS  80
+
+Query  77   DFLGTD--IDFGK---------RDTLVEVQFSNYPFLLNNTVR----SELFHKSNMDIDE  121
+            ++ G    +DF K             +EV F++   +  N ++    +E+ H        
+Sbjct  81   EYEGKSWRLDFAKTTKVSKEEKSGIAIEVAFNHGEAIAWNLLKPVLAAEINHIDTETDIG  140
+
+Query  122  EGMKVAIIITKGH--MFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIED  173
+             G+ V I  T+          +   YE+    L+ L       VP+ +VGL   
+Sbjct  141  VGVGVYICATESLKEAGAFDGAVGEYEKVLRYLSPLFGK--LTVPMVIVGLEAP  192
+
+
+>ref|WP_009394972.1| peptidase M48 [Actinomyces sp. oral taxon 171]
+ gb|EFW27594.1| peptidase, M48 family [Actinomyces sp. oral taxon 171 str. F0337]
+Length=432
+
+ Score = 44.7 bits (104),  Expect = 0.022, Method: Composition-based stats.
+ Identities = 21/97 (22%), Positives = 36/97 (38%), Gaps = 7/97 (7%)
+
+Query  19   LWKEIEETLLKMPLHV---KASDQASKVGSLIFDPVGTNQYIKDELVP-KHWKNNIPIPK  74
+             W  +   L   P++     A    S+ G L+F P  +  +          W ++ P P+
+Sbjct  265  FWLHLSNWLSSHPINTWRAHALRDRSRPGRLMFRPPESTAWFPPSAPSGSGWSDSWPTPE  324
+
+Query  75   RFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSEL  111
+            +   +   +D        E QF  YP +     R+EL
+Sbjct  325  QMRSV---LDSTSSSVPGEEQFGRYPGVSYEIPRNEL  358
+
+
+>ref|YP_001112816.1| hypothetical protein Dred_1461 [Desulfotomaculum reducens MI-1]
+ ref|WP_011877807.1| restriction endonuclease BglII [Desulfotomaculum reducens]
+ gb|ABO49991.1| hypothetical protein Dred_1461 [Desulfotomaculum reducens MI-1]
+Length=167
+
+ Score = 43.5 bits (101),  Expect = 0.043, Method: Composition-based stats.
+ Identities = 20/128 (16%), Positives = 48/128 (38%), Gaps = 15/128 (11%)
+
+Query  54   NQYIKDELVPKHWKNNIPI-PKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELF  112
+            NQ +++      W+N+  +     + L   I+  K +  +E+ F +     +N ++ +L 
+Sbjct  45   NQLLREMFKRNGWQNSPSLFHDPVNPLAK-IELLKNNIGLEIGFRHVSLTGHNLLKFQLS  103
+
+Query  113  -HKSNMDIDEEGMKVAIIITKGHMFPAS-------NSSLYYEQAQNQLNSLAEYNVFDVP  164
+               ++  ID   + + I+ T                 ++ +E+               +P
+Sbjct  104  PLHNSDKID---VGIFIVSTNNFQKQIRKTFCHNWTGAMSFEKT--DRYLRNFKTAIQIP  158
+
+Query  165  IRLVGLIE  172
+            I L+G+  
+Sbjct  159  IYLIGIDA  166
+
+
+>ref|WP_009402000.1| peptidase M48 [Actinomyces sp. oral taxon 170]
+ gb|EGF57707.1| peptidase, M48 family [Actinomyces sp. oral taxon 170 str. F0386]
+Length=424
+
+ Score = 42.4 bits (98),  Expect = 0.089, Method: Composition-based stats.
+ Identities = 25/110 (23%), Positives = 40/110 (37%), Gaps = 5/110 (4%)
+
+Query  19   LWKEIEETLLKMPLHV---KASDQASKVGSLIFDPVGTNQYIKDELVPKHWKNNIPIPKR  75
+             W  +   L   P++     A    S+ G L+  P  +  +      P  ++ +   P  
+Sbjct  258  FWLHMSNWLSSHPINTWRAHALRDRSRPGRLMIRPPESTAWFPPS-APSGYQRSGSWPTP  316
+
+Query  76   FDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMK  125
+               L   +D      L E QF  YP +   T R+EL   S + I  E + 
+Sbjct  317  EQMLAV-LDSTTLSVLSEEQFGRYPGVSYETPRNELRWASPVPIRTEPVG  365
+
+
+>ref|WP_003386489.1| Restriction endonuclease BglII [Brevibacillus borstelensis]
+ gb|EMT54686.1| Restriction endonuclease BglII [Brevibacillus borstelensis AK1]
+Length=157
+
+ Score = 41.2 bits (95),  Expect = 0.23, Method: Composition-based stats.
+ Identities = 31/176 (18%), Positives = 64/176 (37%), Gaps = 20/176 (11%)
+
+Query  1    MKIDITDYNHADEILNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDE  60
+            MKI    +N  +  +   L + I   L ++    K S+ ++             + I   
+Sbjct  2    MKITTYSHNFGEHAVPTSLLEPIILMLRQLDFTFK-SNCST----------NLRKTIIQS  50
+
+Query  61   LVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDID  120
+            L    W     I       G  I    +   + +Q  N      + ++ +  ++     D
+Sbjct  51   LNSLGWSGKTRI---HVEKGISITSMNQRVGLCLQTGNMSRFYADLLKLQSLYQK----D  103
+
+Query  121  EEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFET  176
+            +    + I+ TK      + +   +E+  N+L+     +V  +PI ++GL E+ E 
+Sbjct  104  KATCAIYILPTKSASLKIAKNVANFERLTNELSLF--KHVITMPIYVIGLDEEEEQ  157
+
+
+>ref|WP_003540330.1| restriction endonuclease BglII [Desulfotomaculum nigrificans]
+ gb|EGB23558.1| Restriction endonuclease BglII [Desulfotomaculum nigrificans 
+DSM 574]
+Length=170
+
+ Score = 40.5 bits (93),  Expect = 0.42, Method: Composition-based stats.
+ Identities = 19/123 (16%), Positives = 45/123 (37%), Gaps = 13/123 (10%)
+
+Query  57   IKDELVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSN  116
+            +  +L+   W+  I  P  +      I+F K    +EV F +   +  + ++ ++   S 
+Sbjct  53   LSKQLLANGWRPAIFSPTEYQLA--KIEFVKDRVGLEVGFRHTSLIGPDLLKFQIA--SP  108
+
+Query  117  MDIDEEGMKVAIIITKGHMFPASN-------SSLYYEQAQNQLNSLAEYNVFDVPIRLVG  169
+              +++  + + I+ TK                ++ +E+           N   VP+ +  
+Sbjct  109  YGLNKIDLALYIVTTKNFQKYIKTTYKHNWSGAMNFEKV--DRYLRHFTNGIQVPVHVFV  166
+
+Query  170  LIE  172
+            L  
+Sbjct  167  LDV  169
+
+
+>ref|YP_004496741.1| Restriction endonuclease BglII [Desulfotomaculum carboxydivorans 
+CO-1-SRB]
+ ref|WP_013809942.1| restriction endonuclease BglII [Desulfotomaculum carboxydivorans]
+ gb|AEF93829.1| Restriction endonuclease BglII [Desulfotomaculum carboxydivorans 
+CO-1-SRB]
+Length=165
+
+ Score = 40.1 bits (92),  Expect = 0.45, Method: Composition-based stats.
+ Identities = 19/123 (16%), Positives = 45/123 (37%), Gaps = 13/123 (10%)
+
+Query  57   IKDELVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSN  116
+            +  +L+   W+  I  P  +      I+F K    +EV F +   +  + ++ ++   S 
+Sbjct  48   LSKQLLANGWRPAIFSPTEYQLA--KIEFVKDRVGLEVGFRHTSLIGPDLLKFQIA--SP  103
+
+Query  117  MDIDEEGMKVAIIITKGHMFPASN-------SSLYYEQAQNQLNSLAEYNVFDVPIRLVG  169
+              +++  + + I+ TK                ++ +E+           N   VP+ +  
+Sbjct  104  YGLNKIDLALYIVTTKNFQKYIKTTYKHNWSGAMNFEKV--DRYLRHFTNGIQVPVHVFV  161
+
+Query  170  LIE  172
+            L  
+Sbjct  162  LDV  164
+
+
+>ref|YP_003168258.1| Restriction endonuclease BglII [Candidatus Accumulibacter phosphatis 
+clade IIA str. UW-1]
+ ref|WP_015767506.1| restriction endonuclease BglII [Candidatus Accumulibacter phosphatis]
+ gb|ACV36329.1| Restriction endonuclease BglII [Candidatus Accumulibacter phosphatis 
+clade IIA str. UW-1]
+Length=195
+
+ Score = 40.1 bits (92),  Expect = 0.46, Method: Composition-based stats.
+ Identities = 32/192 (17%), Positives = 57/192 (30%), Gaps = 44/192 (22%)
+
+Query  4    DITDYNHADEILNPQL---WKEIEETLLKMPLHVK-ASDQASKVGSLIFDPVGTNQYIKD  59
+            ++ ++ HA  IL       W EI  TL          +    +           ++ I  
+Sbjct  15   EVHEWKHACAILKQDFPKEWDEIVGTLTTFRFRRSWITVGGGRKSK-------VSEAIDS  67
+
+Query  60   ELVPKHWKN------------NIPIPKRFDFLGTDIDFGKRDTLVEVQFSNY-PFLLNNT  106
+            EL    W+             +   P         +D  K    +E++++N  PF   + 
+Sbjct  68   ELYRLGWEEKQFETEIVIDKSHTATPTH------QVDCFKNRVALEIEWNNKDPFFDRDL  121
+
+Query  107  VRSELFHKSNMDIDEEGMKVAIIITKGHMFPA-----SNSSLYYEQAQNQ---LNSLAEY  158
+                L  +         + V +IIT+              S Y     +    L  +A  
+Sbjct  122  NNFRLLFELR------AVSVGVIITRCDALQEIFKEIKRGSSYGASTTHMSKLLPRIAGG  175
+
+Query  159  NVFDVPIRLVGL  170
+                 PI + G+
+Sbjct  176  GGGGCPILVFGI  187
+
+
+>ref|WP_008031680.1| restriction endonuclease BglII [Rhodobacter sp. SW2]
+ gb|EEW24421.1| Restriction endonuclease BglII [Rhodobacter sp. SW2]
+Length=197
+
+ Score = 38.9 bits (89),  Expect = 1.0, Method: Composition-based stats.
+ Identities = 33/183 (19%), Positives = 62/183 (34%), Gaps = 26/183 (14%)
+
+Query  4    DITDYNHADEILNPQLWKEIEETLLKMP-LHVKASDQASKVGSLIFDPVGTNQYIKDELV  62
+            +  D+ HA  IL+     E ++ L  +    ++ S   +  G+          +I   L 
+Sbjct  15   ECHDWKHASAILSQDFPSEWQDLLDLLTTFRLQKSWIETGGGN----KSKLASFIDHFLT  70
+
+Query  63   PKHW-----KNNIPIP-KRFDFLGTDIDFGKRDTLVEVQFSNY-PFLLNNTVRSELFHKS  115
+             + W     +  I +   R +     ID  K    +E++++N  PF   +     L    
+Sbjct  71   DRGWVEKQFQTAIEVDGARLNSPTHKIDCFKNGVALEIEWNNKDPFFDRDLNNFRLLF--  128
+
+Query  116  NMDIDEEGMKVAIIITKGHMFP-----ASNSSLYYEQAQNQ---LNSLAEYNVFDVPIRL  167
+                D   + V IIIT+              S Y     +    L  +   +    P+ +
+Sbjct  129  ----DLRAVSVGIIITRADSLQDIFNHLGRGSSYGNSTTHMSKLLPRIEGGDGAGCPLLV  184
+
+Query  168  VGL  170
+             G+
+Sbjct  185  FGI  187
+
+
+>ref|WP_010420076.1| hypothetical protein [Anaerophaga thermohalophila]
+Length=88
+
+ Score = 38.9 bits (89),  Expect = 1.0, Method: Composition-based stats.
+ Identities = 9/52 (18%), Positives = 20/52 (39%), Gaps = 1/52 (1%)
+
+Query  120  DEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLI  171
+            +    K++   TK      S+   Y+     ++      N   VP+ ++G+ 
+Sbjct  37   NGLKSKISNEKTKKMQSEMSSGIAYFAGEVYKVM-RQGRNHPAVPLLILGVE  87
+
+
+ Score = 36.6 bits (83),  Expect = 5.1, Method: Composition-based stats.
+ Identities = 10/45 (23%), Positives = 23/45 (52%), Gaps = 5/45 (11%)
+
+Query  4   DITDYNHADEIL--NPQLWKEIEETLLKMP---LHVKASDQASKV  43
+             +  N  + ++  +P+L+ EI+E +  +    L  K S++ +K 
+Sbjct  6   KYSHLNGEEFLIVHHPELYSEIKEVITAINANGLKSKISNEKTKK  50
+
+
+>ref|WP_000569637.1| hypothetical protein [Bacillus cereus]
+ gb|EJQ54826.1| hypothetical protein IEI_01295 [Bacillus cereus BAG5X2-1]
+Length=257
+
+ Score = 38.5 bits (88),  Expect = 1.5, Method: Composition-based stats.
+ Identities = 26/122 (22%), Positives = 45/122 (37%), Gaps = 13/122 (10%)
+
+Query  54   NQYIKDELVPKHWKNNIPIPKRFDFLGTDIDFGKR--DTLVEVQFSNYPFLLNNTVRSEL  111
+            N+ +K     K       +P    F G DI   K+    + EVQF N+     +      
+Sbjct  142  NRQLKRNKEWKEIVEQNQVPTT-QFQGEDIMVPKQSPTVVGEVQFGNWGLGFYDM-----  195
+
+Query  112  FHKSNMDIDEEGMKVAIIITKG--HMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVG  169
+              K     +   + + I IT         S+  + +++ +  L      +V  VPI L+G
+Sbjct  196  -FKVLHLEESMEVDLLIYITATGNLEEYLSSGIVTFDKMKQTLEQYG--SVVKVPIWLIG  252
+
+Query  170  LI  171
+            + 
+Sbjct  253  ID  254
+
+
+>ref|YP_002298868.1| hypothetical protein RC1_2682 [Rhodospirillum centenum SW]
+ ref|WP_012567837.1| restriction endonuclease BglII [Rhodospirillum centenum]
+ gb|ACJ00056.1| conserved hypothetical protein [Rhodospirillum centenum SW]
+Length=216
+
+ Score = 38.5 bits (88),  Expect = 1.7, Method: Composition-based stats.
+ Identities = 29/119 (25%), Positives = 46/119 (39%), Gaps = 11/119 (9%)
+
+Query  17   PQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDE-LVPKHWKNNIPIPK-  74
+            PQ W EI E L    LH        K  S I    G ++  +    V K ++ +I I   
+Sbjct  32   PQEWAEIMEVLRSFRLHRSDVVAPGKNRSPI--SRGMDEAFRARGWVEKKFETSIRIDSV  89
+
+Query  75   RFDFLGTDIDFGKRDTLVEVQFSNY-PFLLNNTVRSELFHKSNMDIDEEGMKVAIIITK  132
+             +      +D  K    +EV+++N  PF   +     L        D   + V +I+T+
+Sbjct  90   EYVSPTHKVDCVKGRVALEVEWNNKDPFYDRDLNNFRLLF------DLRAIDVGVIVTR  142
+
+
+>ref|XP_004701375.1| PREDICTED: cytochrome P450 2C23-like [Echinops telfairi]
+Length=484
+
+ Score = 37.8 bits (86),  Expect = 2.5, Method: Composition-based stats.
+ Identities = 25/127 (20%), Positives = 41/127 (33%), Gaps = 10/127 (7%)
+
+Query  22   EIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDE---LVPKHWKNNIPIPKRFD-  77
+            EI+  +  +P ++  S            P GT             K +    P P++FD 
+Sbjct  348  EIQRFITLLPCNLPHSVTKDTKFRTYVIPKGTTFIFTLYSLYFDDKGF----PNPEKFDP  403
+
+Query  78   --FLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHM  135
+              FL  + +F K D  V            +  R ELF      +    +K  I      +
+Sbjct  404  DHFLDKNGNFMKSDYFVPFSLGKRACAGESLARMELFLFLTTILQNFSLKSVIEPKDLPI  463
+
+Query  136  FPASNSS  142
+             P ++  
+Sbjct  464  KPITSGI  470
+
+
+>ref|XP_002279488.2| PREDICTED: mitochondrial substrate carrier family protein Q [Vitis 
+vinifera]
+Length=342
+
+ Score = 37.8 bits (86),  Expect = 2.8, Method: Composition-based stats.
+ Identities = 27/135 (20%), Positives = 46/135 (35%), Gaps = 10/135 (7%)
+
+Query  15   LNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDP-VGTNQYIKDELVPKHWKNNIPIP  73
+            +N  L   I   + +M  H K S Q+      I+ P V  N+     + P  +  +  I 
+Sbjct  124  VNVLLTNPIWVIVTRMQTHTKISKQS----KPIYSPAVAANEAAVSAIEPTPYGTSHAIQ  179
+
+Query  74   KRFDFLGTDIDFGKR--DTLVEVQFSNYPFLLNNTVRSELFHK--SNMDIDEEGMKVAII  129
+            + +   G    F K    TL+ V   +  F+L  T+  +L  +  S            I 
+Sbjct  180  EVYGEAGVR-GFWKGVLPTLIMVSNPSIQFMLYETMLKKLRKRRASQKKDSGGITASEIF  238
+
+Query  130  ITKGHMFPASNSSLY  144
+            +        +    Y
+Sbjct  239  LLGALAKLGATVVTY  253
+
+
+>emb|CBI31533.3| unnamed protein product [Vitis vinifera]
+Length=337
+
+ Score = 37.8 bits (86),  Expect = 2.8, Method: Composition-based stats.
+ Identities = 27/135 (20%), Positives = 46/135 (35%), Gaps = 10/135 (7%)
+
+Query  15   LNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDP-VGTNQYIKDELVPKHWKNNIPIP  73
+            +N  L   I   + +M  H K S Q+      I+ P V  N+     + P  +  +  I 
+Sbjct  124  VNVLLTNPIWVIVTRMQTHTKISKQS----KPIYSPAVAANEAAVSAIEPTPYGTSHAIQ  179
+
+Query  74   KRFDFLGTDIDFGKR--DTLVEVQFSNYPFLLNNTVRSELFHK--SNMDIDEEGMKVAII  129
+            + +   G    F K    TL+ V   +  F+L  T+  +L  +  S            I 
+Sbjct  180  EVYGEAGVR-GFWKGVLPTLIMVSNPSIQFMLYETMLKKLRKRRASQKKDSGGITASEIF  238
+
+Query  130  ITKGHMFPASNSSLY  144
+            +        +    Y
+Sbjct  239  LLGALAKLGATVVTY  253
+
+
+>ref|YP_003641850.1| Restriction endonuclease BglII [Thiomonas intermedia K12]
+ ref|WP_013121922.1| restriction endonuclease BglII [Thiomonas intermedia]
+ gb|ADG29520.1| Restriction endonuclease BglII [Thiomonas intermedia K12]
+Length=196
+
+ Score = 37.4 bits (85),  Expect = 3.0, Method: Composition-based stats.
+ Identities = 28/141 (20%), Positives = 52/141 (37%), Gaps = 26/141 (18%)
+
+Query  4    DITDYNHADEILN---PQLWKEIEETLLKMPLHV--------KASDQASKVGSLIFDPVG  52
+            ++ +  HA  IL    PQ W +I E L    L          + S  +  + S ++    
+Sbjct  15   EVHESKHACAILKHDFPQEWHDIVEVLSAFRLRKSWLTVGGGRKSKVSEAIDSQLYGRGW  74
+
+Query  53   TNQYIKDELVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNY-PFLLNNTVRSEL  111
+              +  + E++     N +  P         ID  K    +E++++N  PF   +     L
+Sbjct  75   VEKQFQTEILLDG--NRLESPTH------QIDCFKNRVALEIEWNNKDPFFDRDLNNFRL  126
+
+Query  112  FHKSNMDIDEEGMKVAIIITK  132
+                    D   + V +I+T+
+Sbjct  127  LF------DLRAVSVGVIVTR  141
+
+
+>emb|CDE08133.1| stage IV sporulation protein [Bacillus sp. CAG:988]
+Length=387
+
+ Score = 36.6 bits (83),  Expect = 5.2, Method: Composition-based stats.
+ Identities = 26/131 (20%), Positives = 53/131 (41%), Gaps = 19/131 (14%)
+
+Query  42   KVGSLIFD-PVGTNQYIKDELVPKH-------WKNNIPIPKRFDFLGTDIDFGKRDTLVE  93
+            K G +I    +  ++ +K+ L  K        ++ +I +P  +     + + GK   ++ 
+Sbjct  210  KQGEVILSGAIMRDEEVKNLLAAKGRVLGEVWYEAHIEVPFHY---YEEKETGKIQMVLT  266
+
+Query  94   VQFSNYPFLL----NNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQ  149
+            +QF N+   L     +T   E   K    +    + +    TK      ++ +  YE+A 
+Sbjct  267  LQFLNHTIHLGLSSYDTASREDIFKIENAMFPARVAI----TKEEEIEVTDKTYSYEEAL  322
+
+Query  150  NQLNSLAEYNV  160
+             Q + LAE  +
+Sbjct  323  EQAHRLAEEKI  333
+
+
+>ref|WP_020598987.1| hypothetical protein [Spirosoma panaciterrae]
+Length=710
+
+ Score = 36.6 bits (83),  Expect = 5.6, Method: Composition-based stats.
+ Identities = 12/52 (24%), Positives = 25/52 (49%), Gaps = 0/52 (0%)
+
+Query  14   ILNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKH  65
+            I   +L+ +I E +   P+ ++ SD+     S  + P  TN+  +   +P+ 
+Sbjct  550  IFETELYNDIYEEIFDKPVRLEISDEKGITRSFNYTPTSTNRRFEISRLPEG  601
+
+
+>ref|WP_010426454.1| hypothetical protein [Enterobacter mori]
+Length=359
+
+ Score = 36.2 bits (82),  Expect = 6.9, Method: Composition-based stats.
+ Identities = 11/44 (25%), Positives = 22/44 (50%), Gaps = 0/44 (0%)
+
+Query  4    DITDYNHADEILNPQLWKEIEETLLKMPLHVKASDQASKVGSLI  47
+              +D N A  ++N  LW  +   L ++P H+  S + +   S++
+Sbjct  278  KYSDKNSARSVINASLWDVMSVVLSEVPEHIVESRKKTIEDSVL  321
+
+
+
+Lambda     K      H
+   0.311    0.132    0.349 
+
+Gapped
+Lambda     K      H
+   0.267   0.0405    0.140 
+
+Effective search space used: 577081117704
+
+
+  Database: All non-redundant GenBank CDS translations+PDB+SwissProt+PIR+PRF
+excluding environmental samples from WGS projects
+    Posted date:  Sep 26, 2013  6:53 AM
+  Number of letters in database: 11,431,176,125
+  Number of sequences in database:  32,814,121
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

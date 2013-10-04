@@ -1,0 +1,539 @@
+PSIBLAST 2.2.25+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: All non-redundant GenBank CDS translations+PDB+SwissProt+PIR+PRF
+excluding environmental samples from WGS projects
+           32,814,121 sequences; 11,431,176,125 total letters
+
+Results from round 1
+
+
+Query= 1DMU_A
+
+Length=299
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+ref|YP_003975482.1|  Type II site-specific deoxyribonuclease (Typ...   602    4e-170
+ref|WP_003326143.1|  type II restriction endonuclease BglI [Bacil...   599    4e-169
+ref|WP_018399041.1|  hypothetical protein [filamentous cyanobacte...   245    1e-62 
+ref|WP_006103816.1|  hypothetical protein [Coleofasciculus chthon...   207    4e-51 
+ref|YP_002784853.2|  Type II site-specific deoxyribonuclease [Dei...   125    2e-26 
+ref|WP_007050177.1|  protein RecA [Anaerofustis stercorihominis] ...  38.9    2.1   
+ref|WP_005840527.1|  lipase [Mitsuokella multacida] >gb|EEX69028....  37.7    4.6   
+ref|WP_009658837.1|  lipase [Selenomonas sp. FOBRC9] >gb|EJP28863...  37.7    4.9   
+ref|WP_009439533.1|  conserved hypothetical protein [Selenomonas ...  37.4    6.1   
+ref|YP_005076721.1|  beta-xylosidase [Paenibacillus terrae HPL-00...  37.4    6.7   
+
+
+>ref|YP_003975482.1| Type II site-specific deoxyribonuclease (Type II restriction 
+enzyme) [Bacillus atrophaeus 1942]
+ ref|WP_013390710.1| type II restriction endonuclease BglI [Bacillus atrophaeus]
+ sp|O68557.1|T2B1_BACSU RecName: Full=Type-2 restriction enzyme BglI; Short=R.BglI; AltName: 
+Full=Endonuclease BglI; AltName: Full=Type II restriction 
+enzyme BglI
+ pdb|1DMU|A Chain A, Crystal Structure Of The Restriction Endonuclease Bgli 
+(E.C.3.1.21.4) Bound To Its Dna Recognition Sequence
+ gb|AAC63973.1| BglI restriction endonuclease [Bacillus subtilis]
+ gb|ADP34551.1| putative Type II site-specific deoxyribonuclease (Type II restriction 
+enzyme) [Bacillus atrophaeus 1942]
+Length=299
+
+ Score =  602 bits (1552),  Expect = 4e-170, Method: Composition-based stats.
+ Identities = 299/299 (100%), Positives = 299/299 (100%), Gaps = 0/299 (0%)
+
+Query  1    MYNLHREKIFMSYNQNKQYLEDNPEIQEKIELYGLNLLNEVISDNEEEIRADYNEANFLH  60
+            MYNLHREKIFMSYNQNKQYLEDNPEIQEKIELYGLNLLNEVISDNEEEIRADYNEANFLH
+Sbjct  1    MYNLHREKIFMSYNQNKQYLEDNPEIQEKIELYGLNLLNEVISDNEEEIRADYNEANFLH  60
+
+Query  61   PFWMNYPPLDRGKMPKGDQIPWIEVGEKAVGSKLTRLVSQREDITVREIGLPTGPDERYL  120
+            PFWMNYPPLDRGKMPKGDQIPWIEVGEKAVGSKLTRLVSQREDITVREIGLPTGPDERYL
+Sbjct  61   PFWMNYPPLDRGKMPKGDQIPWIEVGEKAVGSKLTRLVSQREDITVREIGLPTGPDERYL  120
+
+Query  121  LTSPTIYSLTNGFTDSIMMFVDIKSVGPRDSDYDLVLSPNQVSGNGDWAQLEGGIQNNQQ  180
+            LTSPTIYSLTNGFTDSIMMFVDIKSVGPRDSDYDLVLSPNQVSGNGDWAQLEGGIQNNQQ
+Sbjct  121  LTSPTIYSLTNGFTDSIMMFVDIKSVGPRDSDYDLVLSPNQVSGNGDWAQLEGGIQNNQQ  180
+
+Query  181  TIQGPRSSQIFLPTIPPLYILSDGTIAPVVHLFIKPIYAMRSLTKGDTGQSLYKIKLASV  240
+            TIQGPRSSQIFLPTIPPLYILSDGTIAPVVHLFIKPIYAMRSLTKGDTGQSLYKIKLASV
+Sbjct  181  TIQGPRSSQIFLPTIPPLYILSDGTIAPVVHLFIKPIYAMRSLTKGDTGQSLYKIKLASV  240
+
+Query  241  PNGLGLFCNPGYAFDSAYKFLFRPGKDDRTKSLLQKRVRVDLRVLDKIGPRVMTIDMDK  299
+            PNGLGLFCNPGYAFDSAYKFLFRPGKDDRTKSLLQKRVRVDLRVLDKIGPRVMTIDMDK
+Sbjct  241  PNGLGLFCNPGYAFDSAYKFLFRPGKDDRTKSLLQKRVRVDLRVLDKIGPRVMTIDMDK  299
+
+
+>ref|WP_003326143.1| type II restriction endonuclease BglI [Bacillus atrophaeus]
+ gb|EIM11408.1| putative Type II site-specific deoxyribonuclease (Type II restriction 
+enzyme) [Bacillus atrophaeus C89]
+Length=299
+
+ Score =  599 bits (1544),  Expect = 4e-169, Method: Composition-based stats.
+ Identities = 298/299 (99%), Positives = 298/299 (99%), Gaps = 0/299 (0%)
+
+Query  1    MYNLHREKIFMSYNQNKQYLEDNPEIQEKIELYGLNLLNEVISDNEEEIRADYNEANFLH  60
+            MYNLHREKIFMSYNQNKQYLEDNPEIQEKIELYGLNLLNEVISDNEEEIRADYNEANFLH
+Sbjct  1    MYNLHREKIFMSYNQNKQYLEDNPEIQEKIELYGLNLLNEVISDNEEEIRADYNEANFLH  60
+
+Query  61   PFWMNYPPLDRGKMPKGDQIPWIEVGEKAVGSKLTRLVSQREDITVREIGLPTGPDERYL  120
+            PFWMNYPPLDRGKMPKGDQIPWIEVGEKAVGSKLTRLVSQREDITVREIGLPTGPDERYL
+Sbjct  61   PFWMNYPPLDRGKMPKGDQIPWIEVGEKAVGSKLTRLVSQREDITVREIGLPTGPDERYL  120
+
+Query  121  LTSPTIYSLTNGFTDSIMMFVDIKSVGPRDSDYDLVLSPNQVSGNGDWAQLEGGIQNNQQ  180
+            LTSPTIYSLTNGFTDSIMMFVDIKSVGPRDSDYDLVLSPNQVSGNGDWAQLEGGIQNNQQ
+Sbjct  121  LTSPTIYSLTNGFTDSIMMFVDIKSVGPRDSDYDLVLSPNQVSGNGDWAQLEGGIQNNQQ  180
+
+Query  181  TIQGPRSSQIFLPTIPPLYILSDGTIAPVVHLFIKPIYAMRSLTKGDTGQSLYKIKLASV  240
+            TIQGPR SQIFLPTIPPLYILSDGTIAPVVHLFIKPIYAMRSLTKGDTGQSLYKIKLASV
+Sbjct  181  TIQGPRPSQIFLPTIPPLYILSDGTIAPVVHLFIKPIYAMRSLTKGDTGQSLYKIKLASV  240
+
+Query  241  PNGLGLFCNPGYAFDSAYKFLFRPGKDDRTKSLLQKRVRVDLRVLDKIGPRVMTIDMDK  299
+            PNGLGLFCNPGYAFDSAYKFLFRPGKDDRTKSLLQKRVRVDLRVLDKIGPRVMTIDMDK
+Sbjct  241  PNGLGLFCNPGYAFDSAYKFLFRPGKDDRTKSLLQKRVRVDLRVLDKIGPRVMTIDMDK  299
+
+
+>ref|WP_018399041.1| hypothetical protein [filamentous cyanobacterium ESFC-1]
+Length=297
+
+ Score =  245 bits (625),  Expect = 1e-62, Method: Composition-based stats.
+ Identities = 134/290 (47%), Positives = 183/290 (64%), Gaps = 6/290 (2%)
+
+Query  1    MYNLHREKIFMSYNQNKQYLEDNPEIQEKIELYGLNLLNEVISDNEEEIRADYNEANFLH  60
+            M+N  R+  +  YNQ + +   +      IE +    ++E+I+ N ++I  D+NEA+ L+
+Sbjct  1    MFNKFRKSQYSLYNQARTHFLQHYNQLINIEKFVSTKIDEIINKNLQQIVNDFNEASNLY  60
+
+Query  61   PFWMNYPPLDRGKMPKGDQIPWIEVGEKAVGSKLTRLVSQREDITVREIGLPTGPDERYL  120
+            PFW NYPP +RG+ P GDQ PWIEVGE  +G KL RL+       +R++GLP+G D R +
+Sbjct  61   PFWQNYPPDNRGRAPIGDQYPWIEVGEHTIGEKLPRLLEPY--FHIRDMGLPSGTDVRLV  118
+
+Query  121  LTSPTIYSLTNGFTDSIMMFVDIKSVGPRDSDYDLVLSPNQVSGNGDWAQLEGGIQNNQQ  180
+            LT+  I  LTN  TD+  +F+DIKSVGPRD     V+SPNQ+SGNG W   + G+ N+  
+Sbjct  119  LTNAEINKLTNRLTDTCWLFLDIKSVGPRDDQNHAVMSPNQISGNGRWDAEDNGVVNDVI  178
+
+Query  181  TIQGPRSSQIFLPTIPPLYILSDGTIAPVVHLFIKPIYAMRSLTKG--DTGQSLYKIKLA  238
+              +G R SQ F  +IPP+Y+LSDGTI PV+ L +KP+Y M SL +   D GQ L +I LA
+Sbjct  179  VAKGKRKSQDFYCSIPPIYVLSDGTILPVIILIVKPVYRMLSLEENSKDGGQPLGRISLA  238
+
+Query  239  SVPNGLGLFCNPGYAFDSAYKFLFRPGKDDRTKSLLQKRVRVDLRVLDKI  288
+            SVPNG+ L  NP Y     Y  LF PGKDD++ + L+KR R+   VL  I
+Sbjct  239  SVPNGILLQENPNYL--QQYPNLFFPGKDDQSTNPLKKRCRISFDVLKSI  286
+
+
+>ref|WP_006103816.1| hypothetical protein [Coleofasciculus chthonoplastes]
+ gb|EDX73014.1| hypothetical protein MC7420_2632 [Coleofasciculus chthonoplastes 
+PCC 7420]
+Length=295
+
+ Score =  207 bits (527),  Expect = 4e-51, Method: Composition-based stats.
+ Identities = 124/289 (43%), Positives = 173/289 (60%), Gaps = 5/289 (1%)
+
+Query  1    MYNLHREKIFMSYNQNKQYLEDNPEIQEKIELYGLNLLNEVISDNEEEIRADYNEANFLH  60
+            M+N  R+  + SY   + Y   N      +E Y L  +   +  N  EI A+YNEA++L+
+Sbjct  1    MFNQFRQFQYNSYRTARNYFIQNYNQLINLEKYVLEEVFNSVHQNLAEIIANYNEASYLY  60
+
+Query  61   PFWMNYPPLDRGKMPKGDQIPWIEVGEKAVGSKLTRLVSQREDITVREIGLPTGPDERYL  120
+            PFW NYPP +RG+ P GDQ PW+EV E  +G KL RL+    +I+  ++GLPTG D R +
+Sbjct  61   PFWQNYPPEERGRQPIGDQYPWLEVAEHTIGDKLPRLLECNFEIS--DVGLPTGSDLRLV  118
+
+Query  121  LTSPTIYSLTNGFTDSIMMFVDIKSVGPRDSDYDLVLSPNQVSGNGDWAQLEGGIQNNQQ  180
+            +++  I  +TN  T+S  +F++IKSVGPRD     V+S NQ+SG+G W     GI N+  
+Sbjct  119  ISNYRISQITNDVTNSCWLFLEIKSVGPRDDQDHAVMSHNQISGSGRWEVFSDGISNDII  178
+
+Query  181  TIQGPRSSQIFLPTIPPLYILSDGTIAPVVHLFIKPIYAMRSLTKGDT-GQSLYKIKLAS  239
+            T  G R++  F  ++PP+YILSDG I PVV + +KP+Y M SL   D  GQ L +I  AS
+Sbjct  179  TATGKRANHPFYCSLPPIYILSDGLIVPVVIIIVKPVYRMLSLEGNDDGGQPLSRISFAS  238
+
+Query  240  VPNGLGLFCNPGYAFDSAYKFLFRPGKDDRTKSLLQKRVRVDLRVLDKI  288
+            VPNGL L   P Y  +  +  LF PGKD+  K   ++R RV   +L +I
+Sbjct  239  VPNGLLLHEQPHYLMN--FPDLFFPGKDEMKKDPRKRRCRVSFEILSRI  285
+
+
+>ref|YP_002784853.2| Type II site-specific deoxyribonuclease [Deinococcus deserti 
+VCD115]
+ ref|WP_012692222.1| Type II site-specific deoxyribonuclease [Deinococcus deserti]
+ gb|ACO45099.2| putative Type II site-specific deoxyribonuclease (Type II restriction 
+enzyme) [Deinococcus deserti VCD115]
+Length=287
+
+ Score =  125 bits (314),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 94/294 (32%), Positives = 150/294 (52%), Gaps = 32/294 (10%)
+
+Query  1    MYNLHREKIFMSYNQNKQYLEDNPEIQEKIELYGLNLLNEVISDNEEEIRADYNE-ANFL  59
+            M +LH++     Y + +  L  N +   ++E   ++++  +I +  E++  D++E    L
+Sbjct  1    MNDLHQK-----YMKERASLLSNLDELIEMEQKYMSVMVNIIKEAAEDMHQDFHEFGPEL  55
+
+Query  60   HPFWMNYPPLDRGKMPKGDQIPWIEVGEKAVGSKLTRLVSQREDITVREIGLPTGPDERY  119
+             PFW NYPP  RG+  + + IP +E+GEK VGS + + V  + +  VR  GLPTG D R+
+Sbjct  56   LPFWRNYPPEQRGRAFRNEAIPMLELGEKLVGSHIIKAVCHKLE-NVRFPGLPTGGDIRF  114
+
+Query  120  LLTSPTIYSLTNGFTDSIMMFVDIKSVGPRDSDYDLVLSPNQVSGNGD-WAQLEGGIQNN  178
+            +             TD   +  DIK  GP + D ++V+ PNQVSG+G+ W     G++NN
+Sbjct  115  M-------------TDDAFIHCDIKITGPNEVDNEVVVPPNQVSGDGEHWDAF--GLRNN  159
+
+Query  179  QQTI--QGPRSSQI-FLPTIPPLYILSDGTIAPVVHLFIKPIYAMRSLTKGDTGQSLYKI  235
+               I  +G R     F P +PPLY+  D      +  +IK +Y+    T       +   
+Sbjct  160  HWPIHYRGSRGLNFNFQPKLPPLYLAGDKRRV-CLTFYIKAVYS----TVEYGVHPIRHF  214
+
+Query  236  KLASVPNGLGLFCNPGYAFDSAYKFLFRPGKDDRTKSLLQKRVRVDLRVLDKIG  289
+            ++  VPNGL +F N  +++  A   L   GKD+ TK    +R+RV L  L +I 
+Sbjct  215  EVVCVPNGLLMFSNGVHSYAKA-DGLITSGKDEVTKDSSTRRIRVKLNPLARIA  267
+
+
+>ref|WP_007050177.1| protein RecA [Anaerofustis stercorihominis]
+ gb|EDS71707.1| RecA protein [Anaerofustis stercorihominis DSM 17244]
+Length=353
+
+ Score = 38.9 bits (89),  Expect = 2.1, Method: Composition-based stats.
+ Identities = 21/47 (45%), Positives = 30/47 (64%), Gaps = 3/47 (6%)
+
+Query  2    YNLHREKIFMSYNQNKQYLEDNPEIQEKIELYGLNLLNEVISDNEEE  48
+            Y+ + EKI    ++ KQ+L DNPEI E IE     +L+EV+  N+EE
+Sbjct  298  YSYNDEKIGQGRDKAKQFLADNPEIAEHIEKL---VLDEVLGRNKEE  341
+
+
+>ref|WP_005840527.1| lipase [Mitsuokella multacida]
+ gb|EEX69028.1| hypothetical protein MITSMUL_04098 [Mitsuokella multacida DSM 
+20544]
+Length=345
+
+ Score = 37.7 bits (86),  Expect = 4.6, Method: Composition-based stats.
+ Identities = 28/117 (24%), Positives = 52/117 (45%), Gaps = 14/117 (11%)
+
+Query  20   LEDNPEIQEKIELYGLNLLNEVISDNEEEIRADYNEANFLHPFWMNYPPL----------  69
+            L+   +++  ++LYGL+ L +V SD  EE++A +  A      W+N  P+          
+Sbjct  202  LQVTSDVKAAVDLYGLSDLTQVGSDYSEEVQAKHRSAGATEALWVNGSPVFGGRDGGILA  261
+
+Query  70   DRGKMPKGDQIPWIEVGEKAV----GSKLTRLVSQREDITVREIGLPTGPDERYLLT  122
+            D+      + I +I      +    G+  T +   + D+  + +     P ERYL+T
+Sbjct  262  DKQAAEAANPIHYISKTSAPMLLMHGTADTIVSPSQTDLLYQALQQNGIPSERYLVT  318
+
+
+>ref|WP_009658837.1| lipase [Selenomonas sp. FOBRC9]
+ gb|EJP28863.1| hydrolase, alpha/beta domain protein [Selenomonas sp. FOBRC9]
+Length=348
+
+ Score = 37.7 bits (86),  Expect = 4.9, Method: Composition-based stats.
+ Identities = 15/56 (27%), Positives = 34/56 (61%), Gaps = 0/56 (0%)
+
+Query  18   QYLEDNPEIQEKIELYGLNLLNEVISDNEEEIRADYNEANFLHPFWMNYPPLDRGK  73
+            ++L+++ ++Q  +++YGL+ L +V  D  +E++A +  A      W+N  P+  G+
+Sbjct  198  EHLDESSDVQAALDMYGLSDLTKVGDDYSDEVKAAHRSAGATEALWVNGSPVFGGR  253
+
+
+>ref|WP_009439533.1| conserved hypothetical protein [Selenomonas sp. oral taxon 137]
+ gb|EFR39994.1| hypothetical protein HMPREF9162_0416 [Selenomonas sp. oral taxon 
+137 str. F0430]
+Length=200
+
+ Score = 37.4 bits (85),  Expect = 6.1, Method: Composition-based stats.
+ Identities = 15/56 (27%), Positives = 34/56 (61%), Gaps = 0/56 (0%)
+
+Query  18   QYLEDNPEIQEKIELYGLNLLNEVISDNEEEIRADYNEANFLHPFWMNYPPLDRGK  73
+            ++L+++ ++Q  +++YGL+ L +V  D  +E++A +  A      W+N  P+  G+
+Sbjct  50   EHLDESSDVQAALDMYGLSDLTKVGDDYSDEVKAVHRSAGATEELWVNGSPVFGGR  105
+
+
+>ref|YP_005076721.1| beta-xylosidase [Paenibacillus terrae HPL-003]
+ ref|WP_014281199.1| arabinanase [Paenibacillus terrae]
+ gb|AET60498.1| beta-xylosidase [Paenibacillus terrae HPL-003]
+Length=849
+
+ Score = 37.4 bits (85),  Expect = 6.7, Method: Composition-based stats.
+ Identities = 21/66 (32%), Positives = 33/66 (50%), Gaps = 2/66 (3%)
+
+Query  84   EVGEKAVGSKLTRLVSQREDITVREIGLPTGPDERYLLTSPTIYSLTNGFTDSIMMFVDI  143
+            E+GEKAV + LT  +S+ E    +   +   P E+ +LT+   Y   N   DS   F + 
+Sbjct  609  EIGEKAVSATLTATISKGESSKSKAFNITVSPYEKAMLTAQ--YKFENNLEDSEAAFANG  666
+
+Query  144  KSVGPR  149
+            + +G R
+Sbjct  667  EVIGDR  672
+
+
+
+Lambda     K      H
+   0.318    0.139    0.412 
+
+Gapped
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+Effective search space used: 1039421118655
+Results from round 2
+
+
+Query= 1DMU_A
+
+Length=299
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+ref|YP_003975482.1|  Type II site-specific deoxyribonuclease (Typ...   490    3e-136
+ref|WP_003326143.1|  type II restriction endonuclease BglI [Bacil...   489    6e-136
+ref|WP_018399041.1|  hypothetical protein [filamentous cyanobacte...   439    7e-121
+ref|WP_006103816.1|  hypothetical protein [Coleofasciculus chthon...   420    3e-115
+ref|YP_002784853.2|  Type II site-specific deoxyribonuclease [Dei...   356    6e-96 
+
+Sequences not found previously or not previously below threshold:
+
+ref|YP_005048562.1|  cellobiohydrolase A (1,4-beta-cellobiosidase...  42.0    0.25 
+ref|YP_003086631.1|  RagB/SusD domain-containing protein [Dyadoba...  39.7    1.2  
+emb|CCH41003.1|  Meiotically up-regulated protein [Wickerhamomyce...  37.0    7.5  
+
+
+>ref|YP_003975482.1| Type II site-specific deoxyribonuclease (Type II restriction 
+enzyme) [Bacillus atrophaeus 1942]
+ ref|WP_013390710.1| type II restriction endonuclease BglI [Bacillus atrophaeus]
+ sp|O68557.1|T2B1_BACSU RecName: Full=Type-2 restriction enzyme BglI; Short=R.BglI; AltName: 
+Full=Endonuclease BglI; AltName: Full=Type II restriction 
+enzyme BglI
+ pdb|1DMU|A Chain A, Crystal Structure Of The Restriction Endonuclease Bgli 
+(E.C.3.1.21.4) Bound To Its Dna Recognition Sequence
+ gb|AAC63973.1| BglI restriction endonuclease [Bacillus subtilis]
+ gb|ADP34551.1| putative Type II site-specific deoxyribonuclease (Type II restriction 
+enzyme) [Bacillus atrophaeus 1942]
+Length=299
+
+ Score =  490 bits (1260),  Expect = 3e-136, Method: Composition-based stats.
+ Identities = 299/299 (100%), Positives = 299/299 (100%), Gaps = 0/299 (0%)
+
+Query  1    MYNLHREKIFMSYNQNKQYLEDNPEIQEKIELYGLNLLNEVISDNEEEIRADYNEANFLH  60
+            MYNLHREKIFMSYNQNKQYLEDNPEIQEKIELYGLNLLNEVISDNEEEIRADYNEANFLH
+Sbjct  1    MYNLHREKIFMSYNQNKQYLEDNPEIQEKIELYGLNLLNEVISDNEEEIRADYNEANFLH  60
+
+Query  61   PFWMNYPPLDRGKMPKGDQIPWIEVGEKAVGSKLTRLVSQREDITVREIGLPTGPDERYL  120
+            PFWMNYPPLDRGKMPKGDQIPWIEVGEKAVGSKLTRLVSQREDITVREIGLPTGPDERYL
+Sbjct  61   PFWMNYPPLDRGKMPKGDQIPWIEVGEKAVGSKLTRLVSQREDITVREIGLPTGPDERYL  120
+
+Query  121  LTSPTIYSLTNGFTDSIMMFVDIKSVGPRDSDYDLVLSPNQVSGNGDWAQLEGGIQNNQQ  180
+            LTSPTIYSLTNGFTDSIMMFVDIKSVGPRDSDYDLVLSPNQVSGNGDWAQLEGGIQNNQQ
+Sbjct  121  LTSPTIYSLTNGFTDSIMMFVDIKSVGPRDSDYDLVLSPNQVSGNGDWAQLEGGIQNNQQ  180
+
+Query  181  TIQGPRSSQIFLPTIPPLYILSDGTIAPVVHLFIKPIYAMRSLTKGDTGQSLYKIKLASV  240
+            TIQGPRSSQIFLPTIPPLYILSDGTIAPVVHLFIKPIYAMRSLTKGDTGQSLYKIKLASV
+Sbjct  181  TIQGPRSSQIFLPTIPPLYILSDGTIAPVVHLFIKPIYAMRSLTKGDTGQSLYKIKLASV  240
+
+Query  241  PNGLGLFCNPGYAFDSAYKFLFRPGKDDRTKSLLQKRVRVDLRVLDKIGPRVMTIDMDK  299
+            PNGLGLFCNPGYAFDSAYKFLFRPGKDDRTKSLLQKRVRVDLRVLDKIGPRVMTIDMDK
+Sbjct  241  PNGLGLFCNPGYAFDSAYKFLFRPGKDDRTKSLLQKRVRVDLRVLDKIGPRVMTIDMDK  299
+
+
+>ref|WP_003326143.1| type II restriction endonuclease BglI [Bacillus atrophaeus]
+ gb|EIM11408.1| putative Type II site-specific deoxyribonuclease (Type II restriction 
+enzyme) [Bacillus atrophaeus C89]
+Length=299
+
+ Score =  489 bits (1258),  Expect = 6e-136, Method: Composition-based stats.
+ Identities = 298/299 (99%), Positives = 298/299 (99%), Gaps = 0/299 (0%)
+
+Query  1    MYNLHREKIFMSYNQNKQYLEDNPEIQEKIELYGLNLLNEVISDNEEEIRADYNEANFLH  60
+            MYNLHREKIFMSYNQNKQYLEDNPEIQEKIELYGLNLLNEVISDNEEEIRADYNEANFLH
+Sbjct  1    MYNLHREKIFMSYNQNKQYLEDNPEIQEKIELYGLNLLNEVISDNEEEIRADYNEANFLH  60
+
+Query  61   PFWMNYPPLDRGKMPKGDQIPWIEVGEKAVGSKLTRLVSQREDITVREIGLPTGPDERYL  120
+            PFWMNYPPLDRGKMPKGDQIPWIEVGEKAVGSKLTRLVSQREDITVREIGLPTGPDERYL
+Sbjct  61   PFWMNYPPLDRGKMPKGDQIPWIEVGEKAVGSKLTRLVSQREDITVREIGLPTGPDERYL  120
+
+Query  121  LTSPTIYSLTNGFTDSIMMFVDIKSVGPRDSDYDLVLSPNQVSGNGDWAQLEGGIQNNQQ  180
+            LTSPTIYSLTNGFTDSIMMFVDIKSVGPRDSDYDLVLSPNQVSGNGDWAQLEGGIQNNQQ
+Sbjct  121  LTSPTIYSLTNGFTDSIMMFVDIKSVGPRDSDYDLVLSPNQVSGNGDWAQLEGGIQNNQQ  180
+
+Query  181  TIQGPRSSQIFLPTIPPLYILSDGTIAPVVHLFIKPIYAMRSLTKGDTGQSLYKIKLASV  240
+            TIQGPR SQIFLPTIPPLYILSDGTIAPVVHLFIKPIYAMRSLTKGDTGQSLYKIKLASV
+Sbjct  181  TIQGPRPSQIFLPTIPPLYILSDGTIAPVVHLFIKPIYAMRSLTKGDTGQSLYKIKLASV  240
+
+Query  241  PNGLGLFCNPGYAFDSAYKFLFRPGKDDRTKSLLQKRVRVDLRVLDKIGPRVMTIDMDK  299
+            PNGLGLFCNPGYAFDSAYKFLFRPGKDDRTKSLLQKRVRVDLRVLDKIGPRVMTIDMDK
+Sbjct  241  PNGLGLFCNPGYAFDSAYKFLFRPGKDDRTKSLLQKRVRVDLRVLDKIGPRVMTIDMDK  299
+
+
+>ref|WP_018399041.1| hypothetical protein [filamentous cyanobacterium ESFC-1]
+Length=297
+
+ Score =  439 bits (1128),  Expect = 7e-121, Method: Composition-based stats.
+ Identities = 134/290 (47%), Positives = 183/290 (64%), Gaps = 6/290 (2%)
+
+Query  1    MYNLHREKIFMSYNQNKQYLEDNPEIQEKIELYGLNLLNEVISDNEEEIRADYNEANFLH  60
+            M+N  R+  +  YNQ + +   +      IE +    ++E+I+ N ++I  D+NEA+ L+
+Sbjct  1    MFNKFRKSQYSLYNQARTHFLQHYNQLINIEKFVSTKIDEIINKNLQQIVNDFNEASNLY  60
+
+Query  61   PFWMNYPPLDRGKMPKGDQIPWIEVGEKAVGSKLTRLVSQREDITVREIGLPTGPDERYL  120
+            PFW NYPP +RG+ P GDQ PWIEVGE  +G KL RL+       +R++GLP+G D R +
+Sbjct  61   PFWQNYPPDNRGRAPIGDQYPWIEVGEHTIGEKLPRLLEPY--FHIRDMGLPSGTDVRLV  118
+
+Query  121  LTSPTIYSLTNGFTDSIMMFVDIKSVGPRDSDYDLVLSPNQVSGNGDWAQLEGGIQNNQQ  180
+            LT+  I  LTN  TD+  +F+DIKSVGPRD     V+SPNQ+SGNG W   + G+ N+  
+Sbjct  119  LTNAEINKLTNRLTDTCWLFLDIKSVGPRDDQNHAVMSPNQISGNGRWDAEDNGVVNDVI  178
+
+Query  181  TIQGPRSSQIFLPTIPPLYILSDGTIAPVVHLFIKPIYAMRSLTKG--DTGQSLYKIKLA  238
+              +G R SQ F  +IPP+Y+LSDGTI PV+ L +KP+Y M SL +   D GQ L +I LA
+Sbjct  179  VAKGKRKSQDFYCSIPPIYVLSDGTILPVIILIVKPVYRMLSLEENSKDGGQPLGRISLA  238
+
+Query  239  SVPNGLGLFCNPGYAFDSAYKFLFRPGKDDRTKSLLQKRVRVDLRVLDKI  288
+            SVPNG+ L  NP Y     Y  LF PGKDD++ + L+KR R+   VL  I
+Sbjct  239  SVPNGILLQENPNYL--QQYPNLFFPGKDDQSTNPLKKRCRISFDVLKSI  286
+
+
+>ref|WP_006103816.1| hypothetical protein [Coleofasciculus chthonoplastes]
+ gb|EDX73014.1| hypothetical protein MC7420_2632 [Coleofasciculus chthonoplastes 
+PCC 7420]
+Length=295
+
+ Score =  420 bits (1080),  Expect = 3e-115, Method: Composition-based stats.
+ Identities = 124/289 (43%), Positives = 173/289 (60%), Gaps = 5/289 (1%)
+
+Query  1    MYNLHREKIFMSYNQNKQYLEDNPEIQEKIELYGLNLLNEVISDNEEEIRADYNEANFLH  60
+            M+N  R+  + SY   + Y   N      +E Y L  +   +  N  EI A+YNEA++L+
+Sbjct  1    MFNQFRQFQYNSYRTARNYFIQNYNQLINLEKYVLEEVFNSVHQNLAEIIANYNEASYLY  60
+
+Query  61   PFWMNYPPLDRGKMPKGDQIPWIEVGEKAVGSKLTRLVSQREDITVREIGLPTGPDERYL  120
+            PFW NYPP +RG+ P GDQ PW+EV E  +G KL RL+    +I+  ++GLPTG D R +
+Sbjct  61   PFWQNYPPEERGRQPIGDQYPWLEVAEHTIGDKLPRLLECNFEIS--DVGLPTGSDLRLV  118
+
+Query  121  LTSPTIYSLTNGFTDSIMMFVDIKSVGPRDSDYDLVLSPNQVSGNGDWAQLEGGIQNNQQ  180
+            +++  I  +TN  T+S  +F++IKSVGPRD     V+S NQ+SG+G W     GI N+  
+Sbjct  119  ISNYRISQITNDVTNSCWLFLEIKSVGPRDDQDHAVMSHNQISGSGRWEVFSDGISNDII  178
+
+Query  181  TIQGPRSSQIFLPTIPPLYILSDGTIAPVVHLFIKPIYAMRSLTKG-DTGQSLYKIKLAS  239
+            T  G R++  F  ++PP+YILSDG I PVV + +KP+Y M SL    D GQ L +I  AS
+Sbjct  179  TATGKRANHPFYCSLPPIYILSDGLIVPVVIIIVKPVYRMLSLEGNDDGGQPLSRISFAS  238
+
+Query  240  VPNGLGLFCNPGYAFDSAYKFLFRPGKDDRTKSLLQKRVRVDLRVLDKI  288
+            VPNGL L   P Y  +  +  LF PGKD+  K   ++R RV   +L +I
+Sbjct  239  VPNGLLLHEQPHYLMN--FPDLFFPGKDEMKKDPRKRRCRVSFEILSRI  285
+
+
+>ref|YP_002784853.2| Type II site-specific deoxyribonuclease [Deinococcus deserti 
+VCD115]
+ ref|WP_012692222.1| Type II site-specific deoxyribonuclease [Deinococcus deserti]
+ gb|ACO45099.2| putative Type II site-specific deoxyribonuclease (Type II restriction 
+enzyme) [Deinococcus deserti VCD115]
+Length=287
+
+ Score =  356 bits (913),  Expect = 6e-96, Method: Composition-based stats.
+ Identities = 94/294 (32%), Positives = 150/294 (52%), Gaps = 32/294 (10%)
+
+Query  1    MYNLHREKIFMSYNQNKQYLEDNPEIQEKIELYGLNLLNEVISDNEEEIRADYNE-ANFL  59
+            M +LH++     Y + +  L  N +   ++E   ++++  +I +  E++  D++E    L
+Sbjct  1    MNDLHQK-----YMKERASLLSNLDELIEMEQKYMSVMVNIIKEAAEDMHQDFHEFGPEL  55
+
+Query  60   HPFWMNYPPLDRGKMPKGDQIPWIEVGEKAVGSKLTRLVSQREDITVREIGLPTGPDERY  119
+             PFW NYPP  RG+  + + IP +E+GEK VGS + + V  + +  VR  GLPTG D R+
+Sbjct  56   LPFWRNYPPEQRGRAFRNEAIPMLELGEKLVGSHIIKAVCHKLE-NVRFPGLPTGGDIRF  114
+
+Query  120  LLTSPTIYSLTNGFTDSIMMFVDIKSVGPRDSDYDLVLSPNQVSGNGD-WAQLEGGIQNN  178
+            +             TD   +  DIK  GP + D ++V+ PNQVSG+G+ W     G++NN
+Sbjct  115  M-------------TDDAFIHCDIKITGPNEVDNEVVVPPNQVSGDGEHWDAF--GLRNN  159
+
+Query  179  QQTI--QGPRSSQI-FLPTIPPLYILSDGTIAPVVHLFIKPIYAMRSLTKGDTGQSLYKI  235
+               I  +G R     F P +PPLY+  D      +  +IK +Y+    T       +   
+Sbjct  160  HWPIHYRGSRGLNFNFQPKLPPLYLAGDKRRV-CLTFYIKAVYS----TVEYGVHPIRHF  214
+
+Query  236  KLASVPNGLGLFCNPGYAFDSAYKFLFRPGKDDRTKSLLQKRVRVDLRVLDKIG  289
+            ++  VPNGL +F N  +++  A   L   GKD+ TK    +R+RV L  L +I 
+Sbjct  215  EVVCVPNGLLMFSNGVHSYAKA-DGLITSGKDEVTKDSSTRRIRVKLNPLARIA  267
+
+
+>ref|YP_005048562.1| cellobiohydrolase A (1,4-beta-cellobiosidase A) [Clostridium 
+clariflavum DSM 19732]
+ ref|WP_014257133.1| cellobiohydrolase A (1,4-beta-cellobiosidase A) [Clostridium 
+clariflavum]
+ gb|AEV70638.1| cellobiohydrolase A (1,4-beta-cellobiosidase A) [Clostridium 
+clariflavum DSM 19732]
+Length=1001
+
+ Score = 42.0 bits (97),  Expect = 0.25, Method: Composition-based stats.
+ Identities = 29/108 (27%), Positives = 44/108 (41%), Gaps = 14/108 (12%)
+
+Query  145  SVGPRDSDYDLVLSPN-------QVSGNGDWAQLEGGIQNNQQTIQGPRSSQIFLPTIPP  197
+            SV   + DY+ V+           +S +G        I N+     G  +   F PT+PP
+Sbjct  254  SVTINNVDYNAVIPAGGSVTIGFNISYSGTNEAPTNFIVNSSSVNPGNPTQPPFQPTLPP  313
+
+Query  198  LYILSDGTIAPVVHLFIKPIYAMRSLTKGDTGQSLYKIKLASVP-NGL  244
+                S G I      +++      S+T     Q +  IKLA+VP NG+
+Sbjct  314  TSQPSTGPIVTGFTAYVE------SVTASAGEQVVVPIKLANVPSNGI  355
+
+
+>ref|YP_003086631.1| RagB/SusD domain-containing protein [Dyadobacter fermentans DSM 
+18053]
+ ref|WP_015811718.1| membrane protein [Dyadobacter fermentans]
+ gb|ACT93466.1| RagB/SusD domain protein [Dyadobacter fermentans DSM 18053]
+Length=532
+
+ Score = 39.7 bits (91),  Expect = 1.2, Method: Composition-based stats.
+ Identities = 13/43 (31%), Positives = 22/43 (52%), Gaps = 0/43 (0%)
+
+Query  41   VISDNEEEIRADYNEANFLHPFWMNYPPLDRGKMPKGDQIPWI  83
+             ++DN  +I AD  +A  L P +  Y P D+G+  K     ++
+Sbjct  182  SVTDNYAQIIADLQKAADLLPLFQTYGPDDQGRAHKAAAWAYM  224
+
+
+>emb|CCH41003.1| Meiotically up-regulated protein [Wickerhamomyces ciferrii]
+Length=610
+
+ Score = 37.0 bits (84),  Expect = 7.5, Method: Composition-based stats.
+ Identities = 30/138 (22%), Positives = 52/138 (38%), Gaps = 14/138 (10%)
+
+Query  44   DNEEEIRADYNEANFLHPFWMNYPPLDRGKMPKGDQIPWI--EVGEKAVGSKLTRLVSQR  101
+            D  +E+   ++E     PF    PP +  +      +  +  ++ +K     L RLV   
+Sbjct  109  DYSQELHQPFSEGPLELPFQR--PPEN-CRTFVSPAVDKVIEDLKQKIKDPDLARLVEN-  164
+
+Query  102  EDITVREIGLPTGPDERYLLTSPTIYSLTNGFTDSIMMFVDIKSVGPRDSDYDLVLSPNQ  161
+                     LP   D   L   P    L+  ++ S ++  DI +   RD+   L +  N 
+Sbjct  165  --------ALPNTLDTTILWHKPKGSDLSTKYSQSFVVTGDIHAEWLRDAARQLSIYHNF  216
+
+Query  162  VSGNGDWAQLEGGIQNNQ  179
+             + + D  +L  G  N Q
+Sbjct  217  TNQDEDLKELMRGAINTQ  234
+
+
+
+Lambda     K      H
+   0.308    0.130    0.359 
+
+Gapped
+Lambda     K      H
+   0.267   0.0395    0.140 
+
+Effective search space used: 1039421118655
+
+Search has CONVERGED!
+
+
+  Database: All non-redundant GenBank CDS translations+PDB+SwissProt+PIR+PRF
+excluding environmental samples from WGS projects
+    Posted date:  Sep 26, 2013  6:53 AM
+  Number of letters in database: 11,431,176,125
+  Number of sequences in database:  32,814,121
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40
