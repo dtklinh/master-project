@@ -1,0 +1,905 @@
+PSIBLAST 2.2.25+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: All non-redundant GenBank CDS translations+PDB+SwissProt+PIR+PRF
+excluding environmental samples from WGS projects
+           32,814,121 sequences; 11,431,176,125 total letters
+
+Results from round 1
+
+
+Query= 1MJE_B
+
+Length=42
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+gb|ERE91369.1|  26S proteasome complex subunit DSS1-like protein ...  45.1    0.009
+gb|ELK12527.1|  26S proteasome complex subunit DSS1 [Pteropus ale...  43.1    0.033
+ref|XP_003772517.1|  PREDICTED: uncharacterized protein LOC100919...  42.0    0.072
+gb|EPQ13854.1|  26S proteasome complex subunit DSS1 [Myotis brand...  41.6    0.098
+ref|XP_004323837.1|  PREDICTED: ubiquitin carboxyl-terminal hydro...  40.4    0.19 
+ref|XP_002712277.1|  PREDICTED: split hand/foot malformation type...  39.7    0.32 
+gb|EOB07657.1|  hypothetical protein Anapl_02600 [Anas platyrhync...  39.7    0.34 
+ref|XP_004650594.1|  PREDICTED: 26S proteasome complex subunit DS...  37.0    2.2  
+ref|XP_002078471.1|  GD23452 [Drosophila simulans] >gb|EDX04056.1...  37.0    2.3  
+gb|EMP33936.1|  26S proteasome complex subunit DSS1 [Chelonia mydas]  36.6    3.0  
+gb|ELR56078.1|  26S proteasome complex subunit DSS1 [Bos grunnien...  36.2    3.3  
+ref|XP_004406684.1|  PREDICTED: 26S proteasome complex subunit DS...  36.2    3.5  
+gb|EPQ27939.1|  hypothetical protein PFL1_04683 [Pseudozyma flocc...  35.4    5.6  
+
+
+>gb|ERE91369.1| 26S proteasome complex subunit DSS1-like protein [Cricetulus 
+griseus]
+Length=150
+
+ Score = 45.1 bits (105),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 27/45 (60%), Positives = 31/45 (69%), Gaps = 10/45 (22%)
+
+Query  2    VDLGLLEEDDEFEEFPAEHVWEDNWDDD----DFSNQLRAELEKH  42
+            +D   L+ED++       HVWEDNWDDD    DFSNQLRAELEKH
+Sbjct  105  LDWAGLDEDED------AHVWEDNWDDDNVEDDFSNQLRAELEKH  143
+
+
+>gb|ELK12527.1| 26S proteasome complex subunit DSS1 [Pteropus alecto]
+Length=168
+
+ Score = 43.1 bits (100),  Expect = 0.033, Method: Composition-based stats.
+ Identities = 23/27 (86%), Positives = 23/27 (86%), Gaps = 4/27 (14%)
+
+Query  20   HVWEDNWDDD----DFSNQLRAELEKH  42
+            HVWEDNWDDD    DFSNQLRAELEKH
+Sbjct  135  HVWEDNWDDDNVEDDFSNQLRAELEKH  161
+
+
+>ref|XP_003772517.1| PREDICTED: uncharacterized protein LOC100919883 [Sarcophilus 
+harrisii]
+Length=120
+
+ Score = 42.0 bits (97),  Expect = 0.072, Method: Composition-based stats.
+ Identities = 23/27 (86%), Positives = 23/27 (86%), Gaps = 4/27 (14%)
+
+Query  20   HVWEDNWDDD----DFSNQLRAELEKH  42
+            HVWEDNWDDD    DFSNQLRAELEKH
+Sbjct  87   HVWEDNWDDDNVEDDFSNQLRAELEKH  113
+
+
+>gb|EPQ13854.1| 26S proteasome complex subunit DSS1 [Myotis brandtii]
+Length=127
+
+ Score = 41.6 bits (96),  Expect = 0.098, Method: Composition-based stats.
+ Identities = 28/46 (61%), Positives = 31/46 (68%), Gaps = 10/46 (21%)
+
+Query  1    PVDLGLLEEDDEFEEFPAEHVWEDNWDDD----DFSNQLRAELEKH  42
+            P D   L+ED++       HVWEDNWDDD    DFSNQLRAELEKH
+Sbjct  81   PKDWTGLDEDED------AHVWEDNWDDDNVEDDFSNQLRAELEKH  120
+
+
+>ref|XP_004323837.1| PREDICTED: ubiquitin carboxyl-terminal hydrolase 4-like [Tursiops 
+truncatus]
+Length=224
+
+ Score = 40.4 bits (93),  Expect = 0.19, Method: Composition-based stats.
+ Identities = 22/26 (85%), Positives = 22/26 (85%), Gaps = 4/26 (15%)
+
+Query  20   HVWEDNWDDD----DFSNQLRAELEK  41
+            HVWEDNWDDD    DFSNQLRAELEK
+Sbjct  191  HVWEDNWDDDNVEDDFSNQLRAELEK  216
+
+
+>ref|XP_002712277.1| PREDICTED: split hand/foot malformation type 1-like [Oryctolagus 
+cuniculus]
+Length=121
+
+ Score = 39.7 bits (91),  Expect = 0.32, Method: Composition-based stats.
+ Identities = 40/57 (71%), Positives = 40/57 (71%), Gaps = 15/57 (26%)
+
+Query  1    PVDLGLLEEDDEFEEFPAE-----------HVWEDNWDD----DDFSNQLRAELEKH  42
+            PVDLGLLEEDDEFEEFPAE            VWEDNWDD    DDFSNQL AELEKH
+Sbjct  58   PVDLGLLEEDDEFEEFPAEDWAGLDEDEDARVWEDNWDDDNVEDDFSNQLPAELEKH  114
+
+
+>gb|EOB07657.1| hypothetical protein Anapl_02600 [Anas platyrhynchos]
+Length=540
+
+ Score = 39.7 bits (91),  Expect = 0.34, Method: Composition-based stats.
+ Identities = 19/35 (55%), Positives = 23/35 (66%), Gaps = 10/35 (28%)
+
+Query  7    LEEDDEFEEFPAEHVWEDNWDD----DDFSNQLRA  37
+            L+ED++       HVWEDNWDD    DDFSNQL +
+Sbjct  435  LDEDED------AHVWEDNWDDDNVEDDFSNQLSS  463
+
+
+>ref|XP_004650594.1| PREDICTED: 26S proteasome complex subunit DSS1-like [Jaculus 
+jaculus]
+Length=69
+
+ Score = 37.0 bits (84),  Expect = 2.2, Method: Composition-based stats.
+ Identities = 37/56 (67%), Positives = 39/56 (70%), Gaps = 14/56 (25%)
+
+Query  1   PVDLGLLEEDDEFEEFPAE----------HVWEDNWDDD----DFSNQLRAELEKH  42
+           PVDLGLLE +DEFEEF A+          HVWEDNWDDD    DFSNQL AELEKH
+Sbjct  7   PVDLGLLENNDEFEEFSADDGAGLYEEDAHVWEDNWDDDNVEDDFSNQLHAELEKH  62
+
+
+>ref|XP_002078471.1| GD23452 [Drosophila simulans]
+ gb|EDX04056.1| GD23452 [Drosophila simulans]
+Length=554
+
+ Score = 37.0 bits (84),  Expect = 2.3, Method: Composition-based stats.
+ Identities = 22/35 (63%), Positives = 24/35 (69%), Gaps = 8/35 (22%)
+
+Query  10   DDEFEEFPAEHVWEDNWDD----DDFSNQLRAELE  40
+            DDE EE    +VWEDNWDD    DDFS QL+A LE
+Sbjct  518  DDE-EEL---NVWEDNWDDDNVEDDFSQQLKAHLE  548
+
+
+>gb|EMP33936.1| 26S proteasome complex subunit DSS1 [Chelonia mydas]
+Length=154
+
+ Score = 36.6 bits (83),  Expect = 3.0, Method: Composition-based stats.
+ Identities = 23/27 (86%), Positives = 23/27 (86%), Gaps = 4/27 (14%)
+
+Query  20   HVWEDNWDDD----DFSNQLRAELEKH  42
+            HVWEDNWDDD    DFSNQLRAELEKH
+Sbjct  121  HVWEDNWDDDNVEDDFSNQLRAELEKH  147
+
+
+>gb|ELR56078.1| 26S proteasome complex subunit DSS1 [Bos grunniens mutus]
+Length=70
+
+ Score = 36.2 bits (82),  Expect = 3.3, Method: Composition-based stats.
+ Identities = 40/57 (71%), Positives = 41/57 (72%), Gaps = 15/57 (26%)
+
+Query  1   PVDLGLLEEDDEFEEFPAE-----------HVWEDNWDDD----DFSNQLRAELEKH  42
+           PVDL LLE+DDEFEEFPAE           HVWEDNWDDD    DFSNQLRAELEKH
+Sbjct  7   PVDLCLLEDDDEFEEFPAEDWAGLDEDEDAHVWEDNWDDDNVEDDFSNQLRAELEKH  63
+
+
+>ref|XP_004406684.1| PREDICTED: 26S proteasome complex subunit DSS1-like [Odobenus 
+rosmarus divergens]
+Length=86
+
+ Score = 36.2 bits (82),  Expect = 3.5, Method: Composition-based stats.
+ Identities = 34/57 (60%), Positives = 38/57 (67%), Gaps = 15/57 (26%)
+
+Query  1   PVDLGLLEEDDEFEEFPAE-----------HVWE----DNWDDDDFSNQLRAELEKH  42
+           PVDLGLLEED+EF+EFP E           HVWE    D+  DDDFSNQL AEL+KH
+Sbjct  23  PVDLGLLEEDNEFKEFPEEDWAGLDEDEGAHVWEDDWDDDSVDDDFSNQLGAELQKH  79
+
+
+>gb|EPQ27939.1| hypothetical protein PFL1_04683 [Pseudozyma flocculosa PF-1]
+Length=157
+
+ Score = 35.4 bits (80),  Expect = 5.6, Method: Composition-based stats.
+ Identities = 17/29 (59%), Positives = 21/29 (73%), Gaps = 4/29 (13%)
+
+Query  18   AEHVWEDNWDDD----DFSNQLRAELEKH  42
+             +H+W+D+WDDD    DFS  LRAELEK 
+Sbjct  121  GDHLWQDSWDDDTVEDDFSKALRAELEKQ  149
+
+
+
+Lambda     K      H
+   0.311    0.137    0.435 
+
+Gapped
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+Effective search space used: 283559904914
+Results from round 2
+
+
+Query= 1MJE_B
+
+Length=42
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+gb|ERE91369.1|  26S proteasome complex subunit DSS1-like protein ...  52.0    6e-05
+gb|ELK12527.1|  26S proteasome complex subunit DSS1 [Pteropus ale...  49.6    3e-04
+gb|EPQ13854.1|  26S proteasome complex subunit DSS1 [Myotis brand...  48.1    0.001
+ref|XP_003772517.1|  PREDICTED: uncharacterized protein LOC100919...  48.1    0.001
+ref|XP_004323837.1|  PREDICTED: ubiquitin carboxyl-terminal hydro...  46.6    0.002
+ref|XP_002712277.1|  PREDICTED: split hand/foot malformation type...  46.6    0.003
+ref|XP_004650594.1|  PREDICTED: 26S proteasome complex subunit DS...  43.5    0.025
+ref|XP_004406684.1|  PREDICTED: 26S proteasome complex subunit DS...  42.3    0.045
+ref|XP_002078471.1|  GD23452 [Drosophila simulans] >gb|EDX04056.1...  42.3    0.046
+gb|EMP33936.1|  26S proteasome complex subunit DSS1 [Chelonia mydas]  41.6    0.085
+gb|EOB07657.1|  hypothetical protein Anapl_02600 [Anas platyrhync...  41.6    0.087
+gb|EME87591.1|  hypothetical protein MYCFIDRAFT_169388 [Pseudocer...  40.8    0.14 
+gb|EPQ27939.1|  hypothetical protein PFL1_04683 [Pseudozyma flocc...  40.4    0.18 
+gb|ELR56078.1|  26S proteasome complex subunit DSS1 [Bos grunnien...  40.4    0.20 
+ref|XP_003921284.1|  PREDICTED: 26S proteasome complex subunit DS...  40.4    0.21 
+ref|XP_003986379.1|  PREDICTED: 26S proteasome complex subunit DS...  40.4    0.22 
+gb|EGG04482.1|  hypothetical protein MELLADRAFT_72399 [Melampsora...  38.5    0.79 
+dbj|GAC77282.1|  hypothetical protein PANT_25c00065 [Pseudozyma a...  38.5    0.82 
+dbj|GAC94711.1|  hypothetical protein PHSY_002284 [Pseudozyma hub...  38.5    0.82 
+gb|AAQ67367.1|  Brh2-interacting protein Dss1 [Ustilago maydis]       38.1    0.86 
+gb|EHB10091.1|  26S proteasome complex subunit DSS1 [Heterocephal...  38.1    0.91 
+ref|XP_002923893.1|  PREDICTED: myosin-Va-like [Ailuropoda melano...  38.1    0.94 
+emb|CCF49490.1|  probable Brh2-interacting protein Dss1 [Ustilago...  37.7    1.1  
+ref|XP_003207136.1|  PREDICTED: 26S proteasome complex subunit DS...  37.7    1.2  
+ref|XP_003501520.1|  PREDICTED: 26S proteasome complex subunit DS...  36.9    2.4  
+ref|XP_003327159.1|  hypothetical protein PGTG_08936 [Puccinia gr...  36.9    2.4  
+gb|EMC87728.1|  26S proteasome complex subunit DSS1 [Columba livia]   36.2    3.6  
+gb|ERE52124.1|  26S proteasome complex subunit DSS1-like protein,...  36.2    3.7  
+gb|ACC68892.1|  candidate for split hand/foot malformation type 1...  35.8    4.4  
+ref|XP_003021974.1|  hypothetical protein TRV_03922 [Trichophyton...  35.8    4.7  
+gb|EHY56226.1|  26 proteasome complex subunit DSS1 [Exophiala der...  35.8    5.2  
+gb|EON67467.1|  hypothetical protein W97_06721 [Coniosporium apol...  35.4    7.1  
+emb|CBQ69612.1|  Brh2-interacting protein Dss1 [Sporisorium reili...  35.0    7.4  
+ref|XP_001596912.1|  predicted protein [Sclerotinia sclerotiorum ...  34.6    9.6  
+ref|XP_004665101.1|  PREDICTED: 26S proteasome complex subunit DS...  34.6    9.9  
+
+
+>gb|ERE91369.1| 26S proteasome complex subunit DSS1-like protein [Cricetulus 
+griseus]
+Length=150
+
+ Score = 52.0 bits (123),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 27/45 (60%), Positives = 31/45 (69%), Gaps = 10/45 (22%)
+
+Query  2    VDLGLLEEDDEFEEFPAEHVWEDNWDDD----DFSNQLRAELEKH  42
+            +D   L+ED++       HVWEDNWDDD    DFSNQLRAELEKH
+Sbjct  105  LDWAGLDEDED------AHVWEDNWDDDNVEDDFSNQLRAELEKH  143
+
+
+>gb|ELK12527.1| 26S proteasome complex subunit DSS1 [Pteropus alecto]
+Length=168
+
+ Score = 49.6 bits (117),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 27/44 (62%), Positives = 30/44 (69%), Gaps = 10/44 (22%)
+
+Query  3    DLGLLEEDDEFEEFPAEHVWEDNWDDD----DFSNQLRAELEKH  42
+            D   L+ED++       HVWEDNWDDD    DFSNQLRAELEKH
+Sbjct  124  DWAGLDEDED------AHVWEDNWDDDNVEDDFSNQLRAELEKH  161
+
+
+>gb|EPQ13854.1| 26S proteasome complex subunit DSS1 [Myotis brandtii]
+Length=127
+
+ Score = 48.1 bits (113),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 28/46 (61%), Positives = 31/46 (68%), Gaps = 10/46 (21%)
+
+Query  1    PVDLGLLEEDDEFEEFPAEHVWEDNWDDD----DFSNQLRAELEKH  42
+            P D   L+ED++       HVWEDNWDDD    DFSNQLRAELEKH
+Sbjct  81   PKDWTGLDEDED------AHVWEDNWDDDNVEDDFSNQLRAELEKH  120
+
+
+>ref|XP_003772517.1| PREDICTED: uncharacterized protein LOC100919883 [Sarcophilus 
+harrisii]
+Length=120
+
+ Score = 48.1 bits (113),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 27/44 (62%), Positives = 30/44 (69%), Gaps = 10/44 (22%)
+
+Query  3    DLGLLEEDDEFEEFPAEHVWEDNWDDD----DFSNQLRAELEKH  42
+            D   L+ED++       HVWEDNWDDD    DFSNQLRAELEKH
+Sbjct  76   DWAGLDEDED------AHVWEDNWDDDNVEDDFSNQLRAELEKH  113
+
+
+>ref|XP_004323837.1| PREDICTED: ubiquitin carboxyl-terminal hydrolase 4-like [Tursiops 
+truncatus]
+Length=224
+
+ Score = 46.6 bits (109),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 26/43 (61%), Positives = 29/43 (68%), Gaps = 10/43 (23%)
+
+Query  3    DLGLLEEDDEFEEFPAEHVWEDNWDDD----DFSNQLRAELEK  41
+            D   L+ED++       HVWEDNWDDD    DFSNQLRAELEK
+Sbjct  180  DWAGLDEDED------AHVWEDNWDDDNVEDDFSNQLRAELEK  216
+
+
+>ref|XP_002712277.1| PREDICTED: split hand/foot malformation type 1-like [Oryctolagus 
+cuniculus]
+Length=121
+
+ Score = 46.6 bits (109),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 40/57 (71%), Positives = 40/57 (71%), Gaps = 15/57 (26%)
+
+Query  1    PVDLGLLEEDDEFEEFPAE-----------HVWEDNWDD----DDFSNQLRAELEKH  42
+            PVDLGLLEEDDEFEEFPAE            VWEDNWDD    DDFSNQL AELEKH
+Sbjct  58   PVDLGLLEEDDEFEEFPAEDWAGLDEDEDARVWEDNWDDDNVEDDFSNQLPAELEKH  114
+
+
+>ref|XP_004650594.1| PREDICTED: 26S proteasome complex subunit DSS1-like [Jaculus 
+jaculus]
+Length=69
+
+ Score = 43.5 bits (101),  Expect = 0.025, Method: Composition-based stats.
+ Identities = 37/56 (67%), Positives = 39/56 (70%), Gaps = 14/56 (25%)
+
+Query  1   PVDLGLLEEDDEFEEFPAE----------HVWEDNWDDD----DFSNQLRAELEKH  42
+           PVDLGLLE +DEFEEF A+          HVWEDNWDDD    DFSNQL AELEKH
+Sbjct  7   PVDLGLLENNDEFEEFSADDGAGLYEEDAHVWEDNWDDDNVEDDFSNQLHAELEKH  62
+
+
+>ref|XP_004406684.1| PREDICTED: 26S proteasome complex subunit DSS1-like [Odobenus 
+rosmarus divergens]
+Length=86
+
+ Score = 42.3 bits (98),  Expect = 0.045, Method: Composition-based stats.
+ Identities = 34/57 (60%), Positives = 38/57 (67%), Gaps = 15/57 (26%)
+
+Query  1   PVDLGLLEEDDEFEEFPAE-----------HVWE----DNWDDDDFSNQLRAELEKH  42
+           PVDLGLLEED+EF+EFP E           HVWE    D+  DDDFSNQL AEL+KH
+Sbjct  23  PVDLGLLEEDNEFKEFPEEDWAGLDEDEGAHVWEDDWDDDSVDDDFSNQLGAELQKH  79
+
+
+>ref|XP_002078471.1| GD23452 [Drosophila simulans]
+ gb|EDX04056.1| GD23452 [Drosophila simulans]
+Length=554
+
+ Score = 42.3 bits (98),  Expect = 0.046, Method: Composition-based stats.
+ Identities = 22/35 (63%), Positives = 24/35 (69%), Gaps = 8/35 (22%)
+
+Query  10   DDEFEEFPAEHVWEDNWDD----DDFSNQLRAELE  40
+            DDE EE    +VWEDNWDD    DDFS QL+A LE
+Sbjct  518  DDE-EEL---NVWEDNWDDDNVEDDFSQQLKAHLE  548
+
+
+>gb|EMP33936.1| 26S proteasome complex subunit DSS1 [Chelonia mydas]
+Length=154
+
+ Score = 41.6 bits (96),  Expect = 0.085, Method: Composition-based stats.
+ Identities = 23/27 (86%), Positives = 23/27 (86%), Gaps = 4/27 (14%)
+
+Query  20   HVWEDNWDDD----DFSNQLRAELEKH  42
+            HVWEDNWDDD    DFSNQLRAELEKH
+Sbjct  121  HVWEDNWDDDNVEDDFSNQLRAELEKH  147
+
+
+>gb|EOB07657.1| hypothetical protein Anapl_02600 [Anas platyrhynchos]
+Length=540
+
+ Score = 41.6 bits (96),  Expect = 0.087, Method: Composition-based stats.
+ Identities = 19/35 (55%), Positives = 23/35 (66%), Gaps = 10/35 (28%)
+
+Query  7    LEEDDEFEEFPAEHVWEDNWDD----DDFSNQLRA  37
+            L+ED++       HVWEDNWDD    DDFSNQL +
+Sbjct  435  LDEDED------AHVWEDNWDDDNVEDDFSNQLSS  463
+
+
+>gb|EME87591.1| hypothetical protein MYCFIDRAFT_169388 [Pseudocercospora fijiensis 
+CIRAD86]
+Length=172
+
+ Score = 40.8 bits (94),  Expect = 0.14, Method: Composition-based stats.
+ Identities = 25/59 (43%), Positives = 32/59 (55%), Gaps = 24/59 (40%)
+
+Query  7    LEEDDEFEEFPAE--------------------HVWEDNWDDDD----FSNQLRAELEK  41
+            LEEDDEFE+FP +                    H+WE++WDDDD    FS QL+ EL+K
+Sbjct  88   LEEDDEFEDFPRKLMHGVDWAKEEEVGQQAGNTHLWEESWDDDDTTDEFSTQLKEELKK  146
+
+
+>gb|EPQ27939.1| hypothetical protein PFL1_04683 [Pseudozyma flocculosa PF-1]
+Length=157
+
+ Score = 40.4 bits (93),  Expect = 0.18, Method: Composition-based stats.
+ Identities = 17/29 (59%), Positives = 21/29 (73%), Gaps = 4/29 (13%)
+
+Query  18   AEHVWEDNWDDD----DFSNQLRAELEKH  42
+             +H+W+D+WDDD    DFS  LRAELEK 
+Sbjct  121  GDHLWQDSWDDDTVEDDFSKALRAELEKQ  149
+
+
+>gb|ELR56078.1| 26S proteasome complex subunit DSS1 [Bos grunniens mutus]
+Length=70
+
+ Score = 40.4 bits (93),  Expect = 0.20, Method: Composition-based stats.
+ Identities = 40/57 (71%), Positives = 41/57 (72%), Gaps = 15/57 (26%)
+
+Query  1   PVDLGLLEEDDEFEEFPAE-----------HVWEDNWDD----DDFSNQLRAELEKH  42
+           PVDL LLE+DDEFEEFPAE           HVWEDNWDD    DDFSNQLRAELEKH
+Sbjct  7   PVDLCLLEDDDEFEEFPAEDWAGLDEDEDAHVWEDNWDDDNVEDDFSNQLRAELEKH  63
+
+
+>ref|XP_003921284.1| PREDICTED: 26S proteasome complex subunit DSS1 isoform 3 [Saimiri 
+boliviensis boliviensis]
+Length=118
+
+ Score = 40.4 bits (93),  Expect = 0.21, Method: Composition-based stats.
+ Identities = 37/52 (72%), Positives = 37/52 (72%), Gaps = 15/52 (28%)
+
+Query  1   PVDLGLLEEDDEFEEFPAE-----------HVWEDNWDD----DDFSNQLRA  37
+           PVDLGLLEEDDEFEEFPAE           HVWEDNWDD    DDFSNQLRA
+Sbjct  7   PVDLGLLEEDDEFEEFPAEDWAGLDEDEDAHVWEDNWDDDNVEDDFSNQLRA  58
+
+
+>ref|XP_003986379.1| PREDICTED: 26S proteasome complex subunit DSS1-like [Felis catus]
+Length=83
+
+ Score = 40.4 bits (93),  Expect = 0.22, Method: Composition-based stats.
+ Identities = 33/58 (57%), Positives = 37/58 (64%), Gaps = 17/58 (29%)
+
+Query  2   VDLGLLEEDDEFEEFPAE-------------HVWEDNWDDD----DFSNQLRAELEKH  42
+           V LGLLEED+EF+E PAE             HV EDNWDDD    DFSNQL+ EL+KH
+Sbjct  19  VGLGLLEEDEEFKEIPAEEWAGLGEDEDPDAHVSEDNWDDDSVEDDFSNQLQPELDKH  76
+
+
+>gb|EGG04482.1| hypothetical protein MELLADRAFT_72399 [Melampsora larici-populina 
+98AG31]
+Length=118
+
+ Score = 38.5 bits (88),  Expect = 0.79, Method: Composition-based stats.
+ Identities = 28/71 (40%), Positives = 34/71 (48%), Gaps = 33/71 (46%)
+
+Query  4    LGLLEEDDEFEEFPAEH-----------------------------VWEDNWDDD----D  30
+            L  L EDDEFE+FP E+                             +WEDNWDD+    D
+Sbjct  33   LDTLGEDDEFEDFPIENWTEDKSDISHLIMNSKSNKTLNQSTTMEDLWEDNWDDEVLESD  92
+
+Query  31   FSNQLRAELEK  41
+            F++QLRAELEK
+Sbjct  93   FAHQLRAELEK  103
+
+
+>dbj|GAC77282.1| hypothetical protein PANT_25c00065 [Pseudozyma antarctica T-34]
+Length=115
+
+ Score = 38.5 bits (88),  Expect = 0.82, Method: Composition-based stats.
+ Identities = 16/29 (56%), Positives = 21/29 (73%), Gaps = 4/29 (13%)
+
+Query  18   AEHVWEDNWDDD----DFSNQLRAELEKH  42
+             +H+W+D+WDDD    DFS  LRAEL+K 
+Sbjct  79   GDHLWQDSWDDDTVEDDFSKALRAELDKQ  107
+
+
+>dbj|GAC94711.1| hypothetical protein PHSY_002284 [Pseudozyma hubeiensis SY62]
+Length=119
+
+ Score = 38.5 bits (88),  Expect = 0.82, Method: Composition-based stats.
+ Identities = 16/29 (56%), Positives = 21/29 (73%), Gaps = 4/29 (13%)
+
+Query  18   AEHVWEDNWDDD----DFSNQLRAELEKH  42
+             +H+W+D+WDDD    DFS  LRAEL+K 
+Sbjct  82   GDHLWQDSWDDDTVEDDFSKALRAELDKQ  110
+
+
+>gb|AAQ67367.1| Brh2-interacting protein Dss1 [Ustilago maydis]
+Length=119
+
+ Score = 38.1 bits (87),  Expect = 0.86, Method: Composition-based stats.
+ Identities = 16/29 (56%), Positives = 21/29 (73%), Gaps = 4/29 (13%)
+
+Query  18   AEHVWEDNWDDD----DFSNQLRAELEKH  42
+             +H+W+D+WDDD    DFS  LRAEL+K 
+Sbjct  82   GDHLWQDSWDDDTVEDDFSKALRAELDKQ  110
+
+
+>gb|EHB10091.1| 26S proteasome complex subunit DSS1 [Heterocephalus glaber]
+Length=109
+
+ Score = 38.1 bits (87),  Expect = 0.91, Method: Composition-based stats.
+ Identities = 36/53 (68%), Positives = 37/53 (70%), Gaps = 15/53 (28%)
+
+Query  1   PVDLGLLEEDDEFEEFPAE-----------HVWEDNWDD----DDFSNQLRAE  38
+           PVDLGLLEEDDEFEEFPAE           HVWEDNWDD    DDFSNQLR +
+Sbjct  7   PVDLGLLEEDDEFEEFPAEDWAGLDEDEDAHVWEDNWDDDNVEDDFSNQLRCK  59
+
+
+>ref|XP_002923893.1| PREDICTED: myosin-Va-like [Ailuropoda melanoleuca]
+Length=1899
+
+ Score = 38.1 bits (87),  Expect = 0.94, Method: Composition-based stats.
+ Identities = 18/29 (63%), Positives = 20/29 (69%), Gaps = 1/29 (3%)
+
+Query  2   VDLGLLEEDDEFEEFPAEHVWEDNWDDDD  30
+           VDLGLLEEDD FEE P E  W    +D+D
+Sbjct  24  VDLGLLEEDDAFEELPEED-WAGLDEDED  51
+
+
+>emb|CCF49490.1| probable Brh2-interacting protein Dss1 [Ustilago hordei]
+Length=118
+
+ Score = 37.7 bits (86),  Expect = 1.1, Method: Composition-based stats.
+ Identities = 16/29 (56%), Positives = 21/29 (73%), Gaps = 4/29 (13%)
+
+Query  18   AEHVWEDNWDDD----DFSNQLRAELEKH  42
+             +H+W+D+WDDD    DFS  LRAEL+K 
+Sbjct  81   GDHLWQDSWDDDTVEDDFSKALRAELDKQ  109
+
+
+>ref|XP_003207136.1| PREDICTED: 26S proteasome complex subunit DSS1-like [Meleagris 
+gallopavo]
+Length=60
+
+ Score = 37.7 bits (86),  Expect = 1.2, Method: Composition-based stats.
+ Identities = 23/27 (86%), Positives = 23/27 (86%), Gaps = 4/27 (14%)
+
+Query  20  HVWEDNWDDD----DFSNQLRAELEKH  42
+           HVWEDNWDDD    DFSNQLRAELEKH
+Sbjct  27  HVWEDNWDDDNVEDDFSNQLRAELEKH  53
+
+
+>ref|XP_003501520.1| PREDICTED: 26S proteasome complex subunit DSS1-like [Cricetulus 
+griseus]
+Length=62
+
+ Score = 36.9 bits (84),  Expect = 2.4, Method: Composition-based stats.
+ Identities = 23/27 (86%), Positives = 23/27 (86%), Gaps = 4/27 (14%)
+
+Query  20  HVWEDNWDDD----DFSNQLRAELEKH  42
+           HVWEDNWDDD    DFSNQLRAELEKH
+Sbjct  29  HVWEDNWDDDNVEDDFSNQLRAELEKH  55
+
+
+>ref|XP_003327159.1| hypothetical protein PGTG_08936 [Puccinia graminis f. sp. tritici 
+CRL 75-36-700-3]
+ gb|EFP82740.1| hypothetical protein PGTG_08936 [Puccinia graminis f. sp. tritici 
+CRL 75-36-700-3]
+Length=128
+
+ Score = 36.9 bits (84),  Expect = 2.4, Method: Composition-based stats.
+ Identities = 18/27 (67%), Positives = 22/27 (82%), Gaps = 4/27 (14%)
+
+Query  19   EHVWEDNWDDD----DFSNQLRAELEK  41
+            + +WEDNWDDD    DF++QLRAELEK
+Sbjct  89   DDLWEDNWDDDVIESDFAHQLRAELEK  115
+
+
+>gb|EMC87728.1| 26S proteasome complex subunit DSS1 [Columba livia]
+Length=58
+
+ Score = 36.2 bits (82),  Expect = 3.6, Method: Composition-based stats.
+ Identities = 23/27 (86%), Positives = 23/27 (86%), Gaps = 4/27 (14%)
+
+Query  20  HVWEDNWDDD----DFSNQLRAELEKH  42
+           HVWEDNWDDD    DFSNQLRAELEKH
+Sbjct  25  HVWEDNWDDDNVEDDFSNQLRAELEKH  51
+
+
+>gb|ERE52124.1| 26S proteasome complex subunit DSS1-like protein, partial [Cricetulus 
+griseus]
+Length=71
+
+ Score = 36.2 bits (82),  Expect = 3.7, Method: Composition-based stats.
+ Identities = 22/26 (85%), Positives = 22/26 (85%), Gaps = 4/26 (15%)
+
+Query  21  VWEDNWDDD----DFSNQLRAELEKH  42
+           VWEDNWDDD    DFSNQLRAELEKH
+Sbjct  39  VWEDNWDDDSVEDDFSNQLRAELEKH  64
+
+
+>gb|ACC68892.1| candidate for split hand/foot malformation type 1 (predicted) 
+[Rhinolophus ferrumequinum]
+Length=69
+
+ Score = 35.8 bits (81),  Expect = 4.4, Method: Composition-based stats.
+ Identities = 42/56 (75%), Positives = 42/56 (75%), Gaps = 14/56 (25%)
+
+Query  1   PVDLGLLEEDDEFEEFPAE-----------HVWEDNWDDD---DFSNQLRAELEKH  42
+           PVDLGLLEEDDEFEEFPAE           HVWEDNWDDD   DFSNQLRAELEKH
+Sbjct  7   PVDLGLLEEDDEFEEFPAEDWTGLGEDEDAHVWEDNWDDDNVEDFSNQLRAELEKH  62
+
+
+>ref|XP_003021974.1| hypothetical protein TRV_03922 [Trichophyton verrucosum HKI 0517]
+ gb|EFE41356.1| hypothetical protein TRV_03922 [Trichophyton verrucosum HKI 0517]
+Length=119
+
+ Score = 35.8 bits (81),  Expect = 4.7, Method: Composition-based stats.
+ Identities = 21/50 (42%), Positives = 26/50 (52%), Gaps = 17/50 (34%)
+
+Query  7   LEEDDEFEEFPAE-----------------HVWEDNWDDDDFSNQLRAEL  39
+           LEEDDEFE+FP E                 H+WE++WDDDD S     +L
+Sbjct  31  LEEDDEFEDFPVEDWPQEEAEAPSGGSGNDHLWEESWDDDDASEDFSKQL  80
+
+
+>gb|EHY56226.1| 26 proteasome complex subunit DSS1 [Exophiala dermatitidis NIH/UT8656]
+Length=95
+
+ Score = 35.8 bits (81),  Expect = 5.2, Method: Composition-based stats.
+ Identities = 27/55 (50%), Positives = 33/55 (60%), Gaps = 18/55 (32%)
+
+Query  5   GLLEEDDEFEEFPAE--------------HVWEDNWDDD----DFSNQLRAELEK  41
+            LLEEDDEFE+FP E              H+WE++WDDD    DFS QL+ EL+K
+Sbjct  36  ALLEEDDEFEDFPVEDWAQEDTDVPGGTTHLWEESWDDDDQNEDFSKQLKEELKK  90
+
+
+>gb|EON67467.1| hypothetical protein W97_06721 [Coniosporium apollinis CBS 100218]
+Length=87
+
+ Score = 35.4 bits (80),  Expect = 7.1, Method: Composition-based stats.
+ Identities = 22/47 (47%), Positives = 28/47 (60%), Gaps = 14/47 (29%)
+
+Query  7   LEEDDEFEEFPAE--------------HVWEDNWDDDDFSNQLRAEL  39
+           LEEDDEFE+FPAE              H+WE++WDDDD +    A+L
+Sbjct  40  LEEDDEFEDFPAEDWQQEDTEIPGGNTHLWEESWDDDDTNGDFSAQL  86
+
+
+>emb|CBQ69612.1| Brh2-interacting protein Dss1 [Sporisorium reilianum SRZ2]
+Length=119
+
+ Score = 35.0 bits (79),  Expect = 7.4, Method: Composition-based stats.
+ Identities = 16/29 (56%), Positives = 21/29 (73%), Gaps = 4/29 (13%)
+
+Query  18   AEHVWEDNWDDD----DFSNQLRAELEKH  42
+             +H+W+D+WDDD    DFS  LRAEL+K 
+Sbjct  82   GDHLWQDSWDDDTVEDDFSKALRAELDKQ  110
+
+
+>ref|XP_001596912.1| predicted protein [Sclerotinia sclerotiorum 1980]
+ gb|EDN96180.1| predicted protein [Sclerotinia sclerotiorum 1980 UF-70]
+Length=94
+
+ Score = 34.6 bits (78),  Expect = 9.6, Method: Composition-based stats.
+ Identities = 26/54 (49%), Positives = 33/54 (62%), Gaps = 18/54 (33%)
+
+Query  6   LLEEDDEFEEFPAE--------------HVWEDNWDDD----DFSNQLRAELEK  41
+           +LEEDDEFE+FP E              H+WE++WDDD    DFS QL+ EL+K
+Sbjct  34  MLEEDDEFEDFPVENWSQEDTEVPGDNTHLWEESWDDDDTSEDFSAQLKEELKK  87
+
+
+>ref|XP_004665101.1| PREDICTED: 26S proteasome complex subunit DSS1-like [Jaculus 
+jaculus]
+Length=70
+
+ Score = 34.6 bits (78),  Expect = 9.9, Method: Composition-based stats.
+ Identities = 40/57 (71%), Positives = 40/57 (71%), Gaps = 15/57 (26%)
+
+Query  1   PVDLGLLEEDDEFEEFPAE-----------HVWEDNWDDD----DFSNQLRAELEKH  42
+           P DLGLLEEDDEFEEFPAE           HVWEDNWDDD    DFSNQL AELEKH
+Sbjct  7   PADLGLLEEDDEFEEFPAEAWAGSDEGEDAHVWEDNWDDDSVEGDFSNQLCAELEKH  63
+
+
+
+Lambda     K      H
+   0.311    0.137    0.435 
+
+Gapped
+Lambda     K      H
+   0.267   0.0431    0.140 
+
+Effective search space used: 283559904914
+Results from round 3
+
+
+Query= 1MJE_B
+
+Length=42
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+gb|ERE91369.1|  26S proteasome complex subunit DSS1-like protein ...  57.5    1e-06
+gb|EPQ13854.1|  26S proteasome complex subunit DSS1 [Myotis brand...  54.0    2e-05
+gb|ELK12527.1|  26S proteasome complex subunit DSS1 [Pteropus ale...  53.2    3e-05
+ref|XP_003772517.1|  PREDICTED: uncharacterized protein LOC100919...  52.4    5e-05
+
+Sequences not found previously or not previously below threshold:
+
+gb|EOB07657.1|  hypothetical protein Anapl_02600 [Anas platyrhync...  56.7    2e-06
+ref|XP_004323837.1|  PREDICTED: ubiquitin carboxyl-terminal hydro...  51.7    7e-05
+ref|XP_002712277.1|  PREDICTED: split hand/foot malformation type...  47.8    0.001
+ref|XP_003921284.1|  PREDICTED: 26S proteasome complex subunit DS...  41.3    0.12 
+gb|EMP33936.1|  26S proteasome complex subunit DSS1 [Chelonia mydas]  40.5    0.19 
+gb|EHB10091.1|  26S proteasome complex subunit DSS1 [Heterocephal...  39.3    0.41 
+ref|XP_002078471.1|  GD23452 [Drosophila simulans] >gb|EDX04056.1...  38.2    0.99 
+ref|XP_003207136.1|  PREDICTED: 26S proteasome complex subunit DS...  36.7    2.4  
+gb|EMC87728.1|  26S proteasome complex subunit DSS1 [Columba livia]   35.9    4.3  
+ref|XP_003501520.1|  PREDICTED: 26S proteasome complex subunit DS...  35.1    7.3  
+gb|ERE52124.1|  26S proteasome complex subunit DSS1-like protein,...  34.7    9.8  
+
+
+>gb|ERE91369.1| 26S proteasome complex subunit DSS1-like protein [Cricetulus 
+griseus]
+Length=150
+
+ Score = 57.5 bits (137),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 27/45 (60%), Positives = 31/45 (69%), Gaps = 10/45 (22%)
+
+Query  2    VDLGLLEEDDEFEEFPAEHVWEDNWDDD----DFSNQLRAELEKH  42
+            +D   L+ED++       HVWEDNWDDD    DFSNQLRAELEKH
+Sbjct  105  LDWAGLDEDED------AHVWEDNWDDDNVEDDFSNQLRAELEKH  143
+
+
+>gb|EOB07657.1| hypothetical protein Anapl_02600 [Anas platyrhynchos]
+Length=540
+
+ Score = 56.7 bits (135),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 20/40 (50%), Positives = 24/40 (60%), Gaps = 10/40 (25%)
+
+Query  2    VDLGLLEEDDEFEEFPAEHVWEDNWDD----DDFSNQLRA  37
+             D   L+ED++       HVWEDNWDD    DDFSNQL +
+Sbjct  430  KDWTGLDEDED------AHVWEDNWDDDNVEDDFSNQLSS  463
+
+
+>gb|EPQ13854.1| 26S proteasome complex subunit DSS1 [Myotis brandtii]
+Length=127
+
+ Score = 54.0 bits (128),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 28/46 (61%), Positives = 31/46 (68%), Gaps = 10/46 (21%)
+
+Query  1    PVDLGLLEEDDEFEEFPAEHVWEDNWDDD----DFSNQLRAELEKH  42
+            P D   L+ED++       HVWEDNWDDD    DFSNQLRAELEKH
+Sbjct  81   PKDWTGLDEDED------AHVWEDNWDDDNVEDDFSNQLRAELEKH  120
+
+
+>gb|ELK12527.1| 26S proteasome complex subunit DSS1 [Pteropus alecto]
+Length=168
+
+ Score = 53.2 bits (126),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 27/44 (62%), Positives = 30/44 (69%), Gaps = 10/44 (22%)
+
+Query  3    DLGLLEEDDEFEEFPAEHVWEDNWDDD----DFSNQLRAELEKH  42
+            D   L+ED++       HVWEDNWDDD    DFSNQLRAELEKH
+Sbjct  124  DWAGLDEDED------AHVWEDNWDDDNVEDDFSNQLRAELEKH  161
+
+
+>ref|XP_003772517.1| PREDICTED: uncharacterized protein LOC100919883 [Sarcophilus 
+harrisii]
+Length=120
+
+ Score = 52.4 bits (124),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 27/44 (62%), Positives = 30/44 (69%), Gaps = 10/44 (22%)
+
+Query  3    DLGLLEEDDEFEEFPAEHVWEDNWDDD----DFSNQLRAELEKH  42
+            D   L+ED++       HVWEDNWDDD    DFSNQLRAELEKH
+Sbjct  76   DWAGLDEDED------AHVWEDNWDDDNVEDDFSNQLRAELEKH  113
+
+
+>ref|XP_004323837.1| PREDICTED: ubiquitin carboxyl-terminal hydrolase 4-like [Tursiops 
+truncatus]
+Length=224
+
+ Score = 51.7 bits (122),  Expect = 7e-05, Method: Composition-based stats.
+ Identities = 26/43 (61%), Positives = 29/43 (68%), Gaps = 10/43 (23%)
+
+Query  3    DLGLLEEDDEFEEFPAEHVWEDNWDDD----DFSNQLRAELEK  41
+            D   L+ED++       HVWEDNWDDD    DFSNQLRAELEK
+Sbjct  180  DWAGLDEDED------AHVWEDNWDDDNVEDDFSNQLRAELEK  216
+
+
+>ref|XP_002712277.1| PREDICTED: split hand/foot malformation type 1-like [Oryctolagus 
+cuniculus]
+Length=121
+
+ Score = 47.8 bits (112),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 25/44 (57%), Positives = 28/44 (64%), Gaps = 10/44 (22%)
+
+Query  3    DLGLLEEDDEFEEFPAEHVWEDNWDDD----DFSNQLRAELEKH  42
+            D   L+ED++        VWEDNWDDD    DFSNQL AELEKH
+Sbjct  77   DWAGLDEDED------ARVWEDNWDDDNVEDDFSNQLPAELEKH  114
+
+
+>ref|XP_003921284.1| PREDICTED: 26S proteasome complex subunit DSS1 isoform 3 [Saimiri 
+boliviensis boliviensis]
+Length=118
+
+ Score = 41.3 bits (95),  Expect = 0.12, Method: Composition-based stats.
+ Identities = 22/39 (57%), Positives = 25/39 (65%), Gaps = 10/39 (25%)
+
+Query  3   DLGLLEEDDEFEEFPAEHVWEDNWDD----DDFSNQLRA  37
+           D   L+ED++       HVWEDNWDD    DDFSNQLRA
+Sbjct  26  DWAGLDEDED------AHVWEDNWDDDNVEDDFSNQLRA  58
+
+
+>gb|EMP33936.1| 26S proteasome complex subunit DSS1 [Chelonia mydas]
+Length=154
+
+ Score = 40.5 bits (93),  Expect = 0.19, Method: Composition-based stats.
+ Identities = 27/44 (62%), Positives = 30/44 (69%), Gaps = 10/44 (22%)
+
+Query  3    DLGLLEEDDEFEEFPAEHVWEDNWDDD----DFSNQLRAELEKH  42
+            D   L+ED++       HVWEDNWDDD    DFSNQLRAELEKH
+Sbjct  110  DWAGLDEDED------AHVWEDNWDDDNVEDDFSNQLRAELEKH  147
+
+
+>gb|EHB10091.1| 26S proteasome complex subunit DSS1 [Heterocephalus glaber]
+Length=109
+
+ Score = 39.3 bits (90),  Expect = 0.41, Method: Composition-based stats.
+ Identities = 21/40 (53%), Positives = 25/40 (63%), Gaps = 10/40 (25%)
+
+Query  3   DLGLLEEDDEFEEFPAEHVWEDNWDD----DDFSNQLRAE  38
+           D   L+ED++       HVWEDNWDD    DDFSNQLR +
+Sbjct  26  DWAGLDEDED------AHVWEDNWDDDNVEDDFSNQLRCK  59
+
+
+>ref|XP_002078471.1| GD23452 [Drosophila simulans]
+ gb|EDX04056.1| GD23452 [Drosophila simulans]
+Length=554
+
+ Score = 38.2 bits (87),  Expect = 0.99, Method: Composition-based stats.
+ Identities = 20/34 (59%), Positives = 23/34 (68%), Gaps = 7/34 (20%)
+
+Query  11   DEFEEFPAEHVWEDNWDD----DDFSNQLRAELE  40
+            D+ EE    +VWEDNWDD    DDFS QL+A LE
+Sbjct  518  DDEEEL---NVWEDNWDDDNVEDDFSQQLKAHLE  548
+
+
+>ref|XP_003207136.1| PREDICTED: 26S proteasome complex subunit DSS1-like [Meleagris 
+gallopavo]
+Length=60
+
+ Score = 36.7 bits (83),  Expect = 2.4, Method: Composition-based stats.
+ Identities = 27/45 (60%), Positives = 31/45 (69%), Gaps = 10/45 (22%)
+
+Query  2   VDLGLLEEDDEFEEFPAEHVWEDNWDDD----DFSNQLRAELEKH  42
+           +D   L+ED++       HVWEDNWDDD    DFSNQLRAELEKH
+Sbjct  15  LDWTGLDEDED------AHVWEDNWDDDNVEDDFSNQLRAELEKH  53
+
+
+>gb|EMC87728.1| 26S proteasome complex subunit DSS1 [Columba livia]
+Length=58
+
+ Score = 35.9 bits (81),  Expect = 4.3, Method: Composition-based stats.
+ Identities = 27/45 (60%), Positives = 31/45 (69%), Gaps = 10/45 (22%)
+
+Query  2   VDLGLLEEDDEFEEFPAEHVWEDNWDDD----DFSNQLRAELEKH  42
+           +D   L+ED++       HVWEDNWDDD    DFSNQLRAELEKH
+Sbjct  13  LDWTGLDEDED------AHVWEDNWDDDNVEDDFSNQLRAELEKH  51
+
+
+>ref|XP_003501520.1| PREDICTED: 26S proteasome complex subunit DSS1-like [Cricetulus 
+griseus]
+Length=62
+
+ Score = 35.1 bits (79),  Expect = 7.3, Method: Composition-based stats.
+ Identities = 26/45 (58%), Positives = 31/45 (69%), Gaps = 10/45 (22%)
+
+Query  2   VDLGLLEEDDEFEEFPAEHVWEDNWDDD----DFSNQLRAELEKH  42
+           ++   L+ED++       HVWEDNWDDD    DFSNQLRAELEKH
+Sbjct  17  LNWAGLDEDED------AHVWEDNWDDDNVEDDFSNQLRAELEKH  55
+
+
+>gb|ERE52124.1| 26S proteasome complex subunit DSS1-like protein, partial [Cricetulus 
+griseus]
+Length=71
+
+ Score = 34.7 bits (78),  Expect = 9.8, Method: Composition-based stats.
+ Identities = 26/44 (60%), Positives = 29/44 (66%), Gaps = 10/44 (22%)
+
+Query  3   DLGLLEEDDEFEEFPAEHVWEDNWDDD----DFSNQLRAELEKH  42
+           D   L+ED++        VWEDNWDDD    DFSNQLRAELEKH
+Sbjct  27  DWAGLDEDED------ARVWEDNWDDDSVEDDFSNQLRAELEKH  64
+
+
+
+Lambda     K      H
+   0.310    0.127    0.413 
+
+Gapped
+Lambda     K      H
+   0.267   0.0380    0.140 
+
+Effective search space used: 283559904914
+
+
+  Database: All non-redundant GenBank CDS translations+PDB+SwissProt+PIR+PRF
+excluding environmental samples from WGS projects
+    Posted date:  Sep 26, 2013  6:53 AM
+  Number of letters in database: 11,431,176,125
+  Number of sequences in database:  32,814,121
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40
