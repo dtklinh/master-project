@@ -4,7 +4,6 @@
  */
 package Components;
 
-import CreateMSA.AlignedProtein;
 import Jama.Matrix;
 import Method.MyEvaluate;
 import Method.MyRandomForest;
@@ -83,49 +82,6 @@ public class MyBlackbox {
 //            if (msa.size() < 10) {
 //                System.out.println("Skip protein: " + k.getName() + "_" + k.getChain());
 //            }
-            if (msa.size() >= 100) {
-                System.out.println(k.getName() + " : " + msa.size());
-            }
-            /*
-             MSA m = new MSA(k, msa);
-             m.AdjustLength();
-             ArrayList<int[]> signal_indicator = k.RetrieveIndicatorPair(distance);
-             ArrayList<int[]> null_indicator = k.RetrieveNullIndex(distance, false);
-             ArrayList<int[]> null_indicator2 = k.RetrieveNullIndex(distance, true);
-             Collections.shuffle(null_indicator);
-             Collections.shuffle(null_indicator);
-             Collections.shuffle(null_indicator2);
-             if (signal_indicator.size() < null_indicator.size()) {
-             for (int i = null_indicator.size() - 1; i >= signal_indicator.size(); i--) {
-             null_indicator.remove(i);
-             }
-             }
-             if (signal_indicator.size() < null_indicator2.size()) {
-             for (int i = null_indicator2.size() - 1; i >= signal_indicator.size(); i--) {
-             null_indicator2.remove(i);
-             }
-             }
-             System.out.println("Finish calculating indicator and null pair index");
-             PairOfPair PoP_signal = new PairOfPair(m, signal_indicator);
-             PairOfPair PoP_null = new PairOfPair(m, null_indicator);
-             PairOfPair PoP_null2 = new PairOfPair(m, null_indicator2);
-             ArrayList<String> ColumnPair = PoP_signal.RetrieveColumnPair();
-             System.out.println("Finish retrieved Column pair");
-             //Matrix tmp = PoP_signal.CalculatePoP(ColumnPair, PairIndex);
-             //MyIO.WritePoPToFile("SignalMatrix/" + k.getName() + "_" + k.getChain() + ".txt", tmp.getArray());
-             //SignalMat = SignalMat.plus(tmp);
-             //System.out.println("Signal matrix was calculated: " + k.getName());
-             Matrix tmp = PoP_null.CalculatePoP(ColumnPair, PairIndex);
-             MyIO.WritePoPToFile("NullMatrix/" + k.getName() + "_" + k.getChain() + ".txt", tmp.getArray());
-             NullMat = NullMat.plus(tmp);
-             System.out.println("Null matrix was calculated: " + k.getName());
-             //
-             tmp = PoP_null2.CalculatePoP(ColumnPair, PairIndex);
-             MyIO.WritePoPToFile("NullMatrix2/" + k.getName() + "_" + k.getChain() + ".txt", tmp.getArray());
-             NullMat2 = NullMat2.plus(tmp);
-             System.out.println("Null matrix 2 was calculated: " + k.getName());
-             */
-=======
 
             if (msa.size() < 100) {
                 System.err.println("Skip " + k.getName() + " : " + k.getSequence() + ": " + msa.size());
@@ -178,7 +134,6 @@ public class MyBlackbox {
             NullMat2 = NullMat2.plus(tmp);
             System.out.println("Null matrix 2 was calculated: " + k.getName());
 
->>>>>>> 0ef97e09762697d685e0c3356a115f770f2a6288
         }
         System.err.println("# skipped protein: " + num_skip);
         MyIO.WritePoPToFile("HSSP_Database/Train/SignalMatrix/" + Signal_filename, SignalMat.getArray());
@@ -202,17 +157,6 @@ public class MyBlackbox {
                 }
                 try {
 
-<<<<<<< HEAD
-                    //          String name = "MSA_file\\Collection\\" + tmp.trim() + ".fasta.msa";
-                    String name = "pdb_file/pdb" + tmp.trim().substring(0, 4).toLowerCase() + ".ent";
-                    String name2 = "pdb_file/" + tmp.trim().substring(0, 4).toUpperCase() + ".pdb";
-                    FileInputStream fstream2;
-                    try {
-                        fstream2 = new FileInputStream(name);
-                    } catch (FileNotFoundException e) {
-                        fstream2 = new FileInputStream(name2);
-                    }
-=======
                     String name = "HSSP_Database/Test/MSA/" + tmp.trim() + ".fasta.msa";
 //                    String name = "pdb_file/pdb" + tmp.trim().substring(0,4).toLowerCase()+".ent";
 //                    String name2 = "pdb_file/" + tmp.trim().substring(0,4).toUpperCase()+".pdb";
@@ -223,7 +167,6 @@ public class MyBlackbox {
 //                        fstream2 = new FileInputStream(name2);
 //                    }
 
->>>>>>> 0ef97e09762697d685e0c3356a115f770f2a6288
                     DataInputStream in2 = new DataInputStream(fstream2);
                     BufferedReader br2 = new BufferedReader(new InputStreamReader(in2));
                     br2.readLine();
@@ -457,26 +400,6 @@ public class MyBlackbox {
 //        Matrix DSM5 = MyIO.ReadDSM("newDSM.out");
         ArrayList<String> amino = AminoAcid.getAA();
 
-<<<<<<< HEAD
-        double[] binding = new double[20];
-        double[] non_binding = new double[20];
-        for (KeyProtein k : lst_prot) {
-            int offset = k.getOffset();
-            ArrayList<Integer> lst_indx = k.getBindingIndex();
-            String sequence = k.getSequence();
-            for (int i = 0; i < lst_indx.size(); i++) {
-                int tmp = lst_indx.get(i) - offset;
-                lst_indx.set(i, tmp);
-            }
-            for (int i = 0; i < sequence.length(); i++) {
-                String ch = sequence.substring(i, i + 1);
-                int idx = amino.indexOf(ch);
-                if (lst_indx.indexOf(i) >= 0) {
-                    binding[idx]++;
-                } else {
-                    non_binding[idx]++;
-                }
-=======
         ArrayList<KeyProtein> lst_prot = MyIO.LoadKeyProteins(list_dir);
         MyEvaluate me = new MyEvaluate();
         for (KeyProtein k : lst_prot) {
@@ -488,7 +411,6 @@ public class MyBlackbox {
             if (msa.size() < 100) {
                 System.out.println("Skip protein: " + k.getName() + "_" + k.getChain());
                 continue;
->>>>>>> 0ef97e09762697d685e0c3356a115f770f2a6288
             }
             MSA m = new MSA(k, msa);
             m.AdjustLength();
@@ -503,16 +425,6 @@ public class MyBlackbox {
             
 //            break;
         }
-<<<<<<< HEAD
-        double sum_binding = 0, sum_non = 0;
-        for (int i = 0; i < 20; i++) {
-            sum_binding += binding[i];
-            sum_non += non_binding[i];
-        }
-        for (int i = 0; i < 20; i++) {
-            System.out.println(amino.get(i) + ": " + binding[i] / sum_binding + " / " + non_binding[i] / sum_non);
-        }
-=======
         System.out.println("Total tp: "+ me.getTruePositive());
         System.out.println("Total tn: "+ me.getTrueNegative());
         System.out.println("Total fp: "+ me.getFalsePositive());
@@ -520,7 +432,6 @@ public class MyBlackbox {
         System.out.println("Final Sensitivity: " + me.Sensitivity());
         System.out.println("Final Specificity: " + me.Specificity());
         System.out.println("Final MCC: " + me.MCC());
->>>>>>> 0ef97e09762697d685e0c3356a115f770f2a6288
     }
 
     public static void TongHop() throws FileNotFoundException, IOException {
@@ -593,19 +504,6 @@ public class MyBlackbox {
                 break;
             }
             line = line.trim();
-<<<<<<< HEAD
-            if (!line.isEmpty()) {
-//                String pro_name = line.substring(0, 4);
-//                String pro_chain = line.substring(5, 6);
-//                KeyProtein k = new KeyProtein(pro_name, pro_chain);
-//                k.LoadingFromPDBFile();
-//                ArrayList<String> lst_str = new ArrayList<String>();
-//                lst_str.add(">"+pro_name+"_"+pro_chain);
-//                lst_str.add(k.getSequence());
-//                MyIO.WriteToFile("Test/"+line+".txt", lst_str);
-                AlignedProtein ap = new AlignedProtein(line.substring(0, 6));
-                MyIO.WriteToFile("Test/"+line+".msa", ap.CreateMSA());
-=======
             if (line.indexOf(">") >= 0) {
                 String name = line.substring(1);
                 String seq = br.readLine().trim();
@@ -613,7 +511,6 @@ public class MyBlackbox {
                 lst_str.add(">" + name);
                 lst_str.add(seq);
                 MyIO.WriteToFile("Train/" + name + ".txt", lst_str);
->>>>>>> 0ef97e09762697d685e0c3356a115f770f2a6288
             }
         }
     }

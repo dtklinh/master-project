@@ -51,7 +51,7 @@ public class AlignedProtein {
     }
 
     public AlignedProtein(String filename) throws FileNotFoundException, IOException { // filename e.g 2HAN_A
-        FileInputStream fstream = new FileInputStream("Test/"+filename + ".out.txt");
+        FileInputStream fstream = new FileInputStream(filename + ".out.txt");
         DataInputStream in = new DataInputStream(fstream);
         BufferedReader br = new BufferedReader(new InputStreamReader(in));
         this.Protein = new KeyProtein(filename.substring(0, 4), filename.substring(5, 6));
@@ -62,54 +62,38 @@ public class AlignedProtein {
         AlignedBlock b = null;
         String query = "";
         String subject = "";
-//        String ref_name = "";
         while (true) {
             line = br.readLine();
             if (line == null) {
                 break;
             }
-            if (line.startsWith(" Score =")) {
+            if (line.startsWith(">")) {
                 isblock = true;
-//                ref_name = line.trim().substring(1);
                 if (b != null) {
                     b.setQuery_str(query);
                     b.setSubject_str(subject);
-//                    b.setRefName(ref_name);
                     b.EliminateGap();
                     this.Lst_AlignedBlock.add(b);
                 }
                 b = new AlignedBlock();
                 query = "";
                 subject = "";
-//                ref_name = "";
             }
-            if (line.startsWith("Query ")) {
-//                int query_start_idx = Integer.parseInt(line.substring(7, 11).trim());
-//                if (b.getQuery_start() > query_start_idx) {
-//                    b.setQuery_start(query_start_idx);
-//                }
-//                String query_tmp = line.substring(11, 73).trim();
-//                query = query + query_tmp;
-//                int query_end_idx = Integer.parseInt(line.substring(73).trim());
-//                if (b.getQuery_end() < query_end_idx) {
-//                    b.setQuery_end(query_end_idx);
-//                }
-                String[] lst_tmp = line.trim().split("\\s+");
-                int query_start_idx = Integer.parseInt(lst_tmp[1]);
+            if (line.startsWith("Query")) {
+                int query_start_idx = Integer.parseInt(line.substring(7, 11).trim());
                 if (b.getQuery_start() > query_start_idx) {
                     b.setQuery_start(query_start_idx);
                 }
-                String query_tmp = lst_tmp[2];
+                String query_tmp = line.substring(11, 73).trim();
                 query = query + query_tmp;
-                int query_end_idx = Integer.parseInt(lst_tmp[3]);
+                int query_end_idx = Integer.parseInt(line.substring(73).trim());
                 if (b.getQuery_end() < query_end_idx) {
                     b.setQuery_end(query_end_idx);
                 }
 
             }
-            if (line.startsWith("Sbjct ")) {
-                String[] lst_tmp = line.trim().split("\\s+");
-                subject = subject + lst_tmp[2];
+            if (line.startsWith("Sbjct")) {
+                subject = subject + line.substring(11, 73).trim();
             }
         }
     }
@@ -128,26 +112,18 @@ public class AlignedProtein {
         msa.add(this.Protein.getSequence());
         int count = 1;
         for (AlignedBlock b : this.Lst_AlignedBlock) {
-            
-            
+            msa.add(">sequence_" + count);
+            count++;
             String str = "";
             for (int i = 1; i < b.getQuery_start(); i++) {
-                str = "-" + str;
+                str = str + "-";
             }
             str = str + b.getSubject_str();
             for (int i = b.getQuery_end() + 1; i <= pro_len; i++) {
                 str = str + "-";
             }
-            if(str.length()!=pro_len){
-                System.err.println("Protein: "+ pro_name+"_"+this.Protein.getChain());
-                System.err.println("Protein and sbj not same length");
-                System.err.println("Str: "+ b.getRefName()+ "  " + str.length());
-                System.err.println("Pro: " + pro_len);
-            }
             if (!str.equalsIgnoreCase(this.Protein.getSequence())) {
-                msa.add(">Sequence " + count);
                 msa.add(str);
-                count++;
             }
         }
         return msa;
