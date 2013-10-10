@@ -19,6 +19,8 @@ import java.util.HashSet;
 public class MyPair {
 
     private String[] Sequences = new String[2];
+    private int String1_Index;
+    private int String2_Index;
 
     /**
      * @return the Sequences
@@ -36,10 +38,14 @@ public class MyPair {
 
     public MyPair() {
         this.Sequences = new String[2];
+        this.String1_Index = -1;
+        this.String2_Index = -1;
     }
 
     public MyPair(String[] str) {
         this.Sequences = str;
+        this.String1_Index = -1;
+        this.String2_Index = -1;
     }
 
     public MyPair(String s1, String s2) {
@@ -47,6 +53,16 @@ public class MyPair {
         tmp[0] = s1;
         tmp[1] = s2;
         this.Sequences = tmp;
+        this.String1_Index = -1;
+        this.String2_Index = -1;
+    }
+    public MyPair(int idx1, int idx2, String s1, String s2){
+        String[] tmp = new String[2];
+        tmp[0] = s1;
+        tmp[1] = s2;
+        this.Sequences = tmp;
+        this.String1_Index = idx1;
+        this.String2_Index = idx2;
     }
 
     public void EliminateGap() {
@@ -357,5 +373,44 @@ public class MyPair {
         Matrix tmp = DSMMat.times(Vec);
         tmp = ConvertToMatrix(tmp, 20, 20);
         return tmp.CalculateUValue();
+    }
+
+    /**
+     * @return the String1_Index
+     */
+    public int getString1_Index() {
+        return String1_Index;
+    }
+
+    /**
+     * @param String1_Index the String1_Index to set
+     */
+    public void setString1_Index(int String1_Index) {
+        this.String1_Index = String1_Index;
+    }
+
+    /**
+     * @return the String2_Index
+     */
+    public int getString2_Index() {
+        return String2_Index;
+    }
+
+    /**
+     * @param String2_Index the String2_Index to set
+     */
+    public void setString2_Index(int String2_index) {
+        this.String2_Index = String2_index;
+    }
+    public double CalculateUAlphaValue(Matrix dssm){
+        Matrix freq = this.CalculatePair();
+        Matrix vec = MyPair.ConverToVector(freq);
+        if(dssm==null){
+            return this.CalculateUValue();
+        }
+        else{
+            return MyPair.CalculateUAlphaValue(vec, dssm);
+        }
+       
     }
 }

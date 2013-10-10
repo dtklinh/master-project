@@ -33,13 +33,16 @@ public class StaticSupportMethod {
                 
                 String cmd = "powershell.exe psiblast "+ "-query "+ query +" -db C:\\blast-2.2.28\\db\\nr.01\\nr.01";
                 cmd += " -out D:\\Study\\Java Code\\getProteinName\\Train\\"+line+"_out.txt";
-                cmd +=" -num_iterations 1 ";
-                cmd += "-out_ascii_pssm D:\\Study\\Java Code\\getProteinName\\Train\\"+ line + "_pssm.txt";
+                cmd +=" -num_iterations 3 ";
+                cmd += "-out_ascii_pssm D:\\Study\\Java Code\\getProteinName\\Train\\"+ line + ".pssm.txt";
                 cmd += " -comp_based_stats 1";
                 Runtime rt = Runtime.getRuntime();
                 Process pr = rt.exec(cmd);
+                pr.destroy();
+                rt.freeMemory();
             }
         }
         br.close();
     }
+    
 }
