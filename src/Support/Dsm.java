@@ -132,7 +132,8 @@ public class Dsm {
         if(useBLOS){
             SignalMat = blossum.parseBlosumMatrix(pairIndex, SignalMat);
         }
-        SignalMat=Dsm.processMatrix(CalculateSimMatrix.process((SignalMat), pairIndex));
+        SignalMat = CalculateSimMatrix.process(SignalMat, pairIndex);
+        SignalMat=Dsm.processMatrix(SignalMat);
         return SignalMat;
     }
 }

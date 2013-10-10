@@ -5,6 +5,7 @@
 package Components;
 
 import Jama.Matrix;
+import Method.MyEvaluate;
 import Method.MyPair;
 import MyDivergence.MyEntropy;
 import java.io.BufferedReader;
@@ -22,6 +23,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 import javax.naming.spi.DirStateFactory;
 //import org.apache.pdfbox.pdmodel.PDDocument;
@@ -820,4 +822,246 @@ public class MSA {
         }
         return res;
     }
+    public ArrayList<Integer> ScoreSignificantValueOfPair(ArrayList<String> amino, int width,Matrix dsm){
+//        ArrayList<String> msa = this.getLstSeqs();
+        ArrayList<String> msa = this.RetrieveColumnPair();
+        double percent_pair = 0.15;
+        double percent_index = 0.60;
+        this.AdjustLength();
+        int seq_len = this.MyKeyProtein.getSequence().length();
+        ArrayList<MyPair> lst_pair = new ArrayList<MyPair>();
+        ArrayList<Double> lst_score = new ArrayList<Double>();
+        for(int i=0;i<seq_len-1; i++){
+            for(int j=i+1; j<=i+10 && j<seq_len;j++){
+                MyPair m = new MyPair(i, j, msa.get(i), msa.get(j));
+                lst_pair.add(m);
+                lst_score.add(m.CalculateUAlphaValue(dsm));
+            }
+        }
+        // randomize
+        int c =0;
+        while(c<lst_pair.size()){
+            Random a = new Random();
+            int idx1 = a.nextInt(lst_pair.size());
+            int idx2 = a.nextInt(lst_pair.size());
+            if(idx1!=idx2){
+                Collections.swap(lst_pair, idx1, idx2);
+                Collections.swap(lst_score, idx1, idx2);
+                c++;
+            }
+        }
+        // sort lst according to its U-alpha value
+        for(int i=0;i<lst_pair.size()-1;i++){
+            for(int j=i+1; j<lst_pair.size();j++){
+                if(lst_score.get(i) < lst_score.get(j)){
+                    Collections.swap(lst_score, i, j);
+                    Collections.swap(lst_pair, i, j);
+                }
+            }
+        }
+        // take top 15%, and count the occurence of column
+        ArrayList<Integer> significant_col = new ArrayList<Integer>();
+        ArrayList<Integer> significant_count = new ArrayList<Integer>();
+        ArrayList<Double> significant_score = new ArrayList<Double>();
+        for(int i=0; i<lst_pair.size()*percent_pair; i++){
+            Integer tmp1 = lst_pair.get(i).getString1_Index();
+            Integer tmp2 = lst_pair.get(i).getString2_Index();
+            Double score = lst_score.get(i);
+            //
+            int idx1 = significant_col.indexOf(tmp1);
+            int idx2 = significant_col.indexOf(tmp2);
+            if(idx1 >= 0){
+                if(significant_score.get(idx1)<score){
+                    significant_score.set(idx1, score);
+                }
+                int count = significant_count.get(idx1) + 1;
+                significant_count.set(idx1, count);
+            } else{
+                significant_col.add(tmp1);
+                significant_score.add(score);
+                significant_count.add(1);
+            }
+            // idx 2
+            if(idx2 >= 0){
+                if(significant_score.get(idx2)<score){
+                    significant_score.set(idx2, score);
+                }
+                int count = significant_count.get(idx2) + 1;
+                significant_count.set(idx2, count);
+            } else{
+                significant_col.add(tmp2);
+                significant_score.add(score);
+                significant_count.add(1);
+            }
+            
+            
+        }
+        // sort according to the occurence
+        for(int i=0;i<significant_count.size()-1;i++){
+            for(int j=i+1 ; j<significant_count.size();j++){
+                if(significant_count.get(i) < significant_count.get(j)){
+                    Collections.swap(significant_count, i, j);
+                    Collections.swap(significant_col, i, j);
+                    Collections.swap(significant_score, i, j);
+                }
+            }
+        }
+        // print for review
+//        int offset = this.MyKeyProtein.getOffset();
+//        for(int i=0;i<significant_col.size()*percent_index;i++){
+//            int start = significant_col.get(i) + offset;
+//            int count = significant_count.get(i);
+//            double score = significant_score.get(i);
+//            System.out.println("Col idx: "+ start + " count: "+ count + " score: "+ score);
+//        }
+        // print
+        
+//        for(int i=0;i<lst_pair.size();i++){
+//            int start = lst_pair.get(i).getString1_Index() + offset;
+//            int end = lst_pair.get(i).getString2_Index() + offset;
+//            System.out.println("["+start+":"+end+"] : " + lst_score.get(i));
+//        }
+        int t = (int)(significant_col.size()*percent_index);
+        ArrayList<Integer> res = new ArrayList<Integer>();
+        for(int i=0; i<=t; i++){
+            res.add(significant_col.get(i));
+        }
+        return res;
+    }
+    public MyEvaluate Evaluate(ArrayList<Integer> lst){ // lst of index without adjusting offset
+        ArrayList<Integer> BindingIndex = this.MyKeyProtein.getBindingIndex();
+        int offset = this.MyKeyProtein.getOffset();
+        // find nearby binding sites, with distance d = 5.
+        int distance = 5;
+        ArrayList<Integer> Neighbor = new ArrayList<Integer>();
+        int len = this.MyKeyProtein.getSequence().length();
+        System.out.println("Neighbor:");
+        for(int i=0; i<len;i++){
+            if(this.MyKeyProtein.IsNearBindingResidual(i+ offset, distance)){
+                int tmp=i+ offset;
+                Neighbor.add(tmp);
+//                System.out.print(tmp + " , ");
+            }
+        }
+        System.out.println();
+        // 
+        // find true positive
+        int tp=0, tn=0, fp=0, fn=0;
+        for(int i=0;i<lst.size();i++){
+            if(Neighbor.indexOf(lst.get(i)+offset)>=0){
+                tp++;
+            } else{
+                fp++;
+            }
+        }
+        for(int i=0;i<Neighbor.size();i++){
+            if(lst.indexOf(Neighbor.get(i)-offset)<0){
+                fn++;
+            }
+        }
+        tn = this.MyKeyProtein.getSequence().length() - tp - fn - fp;
+        System.out.println("True positive: "+ tp);
+        System.out.println("True negative: "+ tn);
+        System.out.println("False positive: "+ fp);
+        System.out.println("False negative: "+ fn);
+        return new MyEvaluate(tp, tn, fp, fn);
+    }
+    public ArrayList<int[]> RetrieveIndicatorPair2(int distance) { // define the distance of neighborhood
+        ArrayList<int[]> res = new ArrayList<int[]>();
+        
+        int offset = this.MyKeyProtein.getOffset();
+        for(int i=0;i<this.MyKeyProtein.getSequence().length()-1;i++){
+            if(this.MyKeyProtein.IsNearBindingResidual(i+offset, distance)){
+                if(this.IsConservativeOrGap(i)){
+                    continue;
+                }
+                for(int j=i+1; j<=i+2*distance;j++){
+                    if(j>=this.MyKeyProtein.getSequence().length()-1){
+                        break;
+                    }
+                    if(this.MyKeyProtein.IsNearBindingResidual(j+offset, distance)){
+                        if(this.IsConservativeOrGap(j)){
+                            continue;
+                        }
+                        res.add(new int[]{i,j});
+                    }
+                }
+            }
+        }
+        // adjust the offset
+//        ArrayList<Integer> Binding_Offset = new ArrayList<Integer>();
+//        for (Integer i : this.getBindingIndex()) {
+//            Binding_Offset.add(i - this.Offset);
+//        }
+        // end
+        // find the neighbor with binding residual
+//        for (Integer index : Binding_Offset) {
+//            ArrayList<Integer> IndexAndNearby = new ArrayList<Integer>();
+//            for (int k = index - distance; k <= index + distance; k++) {
+//                if (k >= 0 && k < this.Sequence.length()) {
+//                    IndexAndNearby.add(k);
+//                }
+//            }
+//            boolean flag = true;
+//            ArrayList<int[]> IndexOfPair = Combination(IndexAndNearby);
+//            for (int[] tmp : IndexOfPair) {
+//                for (int[] v : res) {
+//                    if ((tmp[0] == v[0] && tmp[1] == v[1]) || (tmp[0] == v[1] && tmp[1] == v[0])) {
+//                        flag = false;
+//                        break;
+//                    }
+//
+//                }
+//                if (flag) {
+//                    res.add(tmp);
+//                }
+//            }
+//        }
+        return res;
+    }
+    public boolean IsConservativeOrGap(int idx){ // index of column which is tested if conservative
+        ArrayList<String> lst_cols = this.RetrieveColumnPair();
+        ArrayList<String> aa = AminoAcid.getAA_Abbr();
+        int len = lst_cols.get(0).length();
+        
+        for(String s: aa){
+            int f = Collections.frequency(lst_cols, s);
+            if((double)f/len >=0.85){
+                return true;
+            }
+        }
+        int g = Collections.frequency(lst_cols, "-");
+        if((double)g/len>=0.75){
+            return true;
+        }
+        return false;
+    }
+    public ArrayList<int[]> RetrieveNullIndex2(int distance, boolean neighbor) {
+
+        ArrayList<int[]> res = new ArrayList<int[]>();
+        int offset = this.MyKeyProtein.getOffset();
+        ArrayList<Integer> lst_idx = new ArrayList<Integer>();
+        for(int i=0;i<this.MyKeyProtein.getSequence().length();i++){
+            if(!this.MyKeyProtein.IsNearBindingResidual(i+offset, distance)){
+                if(this.IsConservativeOrGap(i)){
+                    continue;
+                }
+                lst_idx.add(i);
+            }
+        }
+        res = KeyProtein.Combination(lst_idx);
+        if (neighbor) {
+            for (int i = res.size() - 1; i >= 0; i--) {
+                int[] a = res.get(i);
+                if (Math.abs(a[1] - a[0]) > 2 * distance) {
+                    res.remove(i);
+                }
+            }
+        }
+        return res;
+    }
+
+//    public boolean IsGapped(int idx){
+        
+    
 }

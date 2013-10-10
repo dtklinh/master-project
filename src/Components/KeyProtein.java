@@ -211,6 +211,7 @@ public class KeyProtein {
             Binding_Offset.add(i - this.Offset);
         }
         // end
+        // find the neighbor with binding residual
         for (Integer index : Binding_Offset) {
             ArrayList<Integer> IndexAndNearby = new ArrayList<Integer>();
             for (int k = index - distance; k <= index + distance; k++) {
@@ -235,6 +236,52 @@ public class KeyProtein {
         }
         return res;
     }
+    public ArrayList<int[]> RetrieveIndicatorPair2(int distance) { // define the distance of neighborhood
+        ArrayList<int[]> res = new ArrayList<int[]>();
+        int offset = this.getOffset();
+        for(int i=0;i<this.getSequence().length()-1;i++){
+            if(this.IsNearBindingResidual(i+offset, distance)){
+                for(int j=i+1; j<=i+2*distance;j++){
+                    if(j>=this.getSequence().length()-1){
+                        break;
+                    }
+                    if(this.IsNearBindingResidual(j+offset, distance)){
+                        res.add(new int[]{i,j});
+                    }
+                }
+            }
+        }
+        // adjust the offset
+//        ArrayList<Integer> Binding_Offset = new ArrayList<Integer>();
+//        for (Integer i : this.getBindingIndex()) {
+//            Binding_Offset.add(i - this.Offset);
+//        }
+        // end
+        // find the neighbor with binding residual
+//        for (Integer index : Binding_Offset) {
+//            ArrayList<Integer> IndexAndNearby = new ArrayList<Integer>();
+//            for (int k = index - distance; k <= index + distance; k++) {
+//                if (k >= 0 && k < this.Sequence.length()) {
+//                    IndexAndNearby.add(k);
+//                }
+//            }
+//            boolean flag = true;
+//            ArrayList<int[]> IndexOfPair = Combination(IndexAndNearby);
+//            for (int[] tmp : IndexOfPair) {
+//                for (int[] v : res) {
+//                    if ((tmp[0] == v[0] && tmp[1] == v[1]) || (tmp[0] == v[1] && tmp[1] == v[0])) {
+//                        flag = false;
+//                        break;
+//                    }
+//
+//                }
+//                if (flag) {
+//                    res.add(tmp);
+//                }
+//            }
+//        }
+        return res;
+    }
 
     public ArrayList<int[]> RetrieveNullIndex(int distance, boolean neighbor) {
 
@@ -257,6 +304,27 @@ public class KeyProtein {
             }
         }
         res = Combination(lst);
+        if (neighbor) {
+            for (int i = res.size() - 1; i >= 0; i--) {
+                int[] a = res.get(i);
+                if (Math.abs(a[1] - a[0]) > 2 * distance) {
+                    res.remove(i);
+                }
+            }
+        }
+        return res;
+    }
+    public ArrayList<int[]> RetrieveNullIndex2(int distance, boolean neighbor) {
+
+        ArrayList<int[]> res = new ArrayList<int[]>();
+        int offset = this.getOffset();
+        ArrayList<Integer> lst_idx = new ArrayList<Integer>();
+        for(int i=0;i<this.getSequence().length();i++){
+            if(!this.IsNearBindingResidual(i+offset, distance)){
+                lst_idx.add(i);
+            }
+        }
+        res = KeyProtein.Combination(lst_idx);
         if (neighbor) {
             for (int i = res.size() - 1; i >= 0; i--) {
                 int[] a = res.get(i);
@@ -358,5 +426,15 @@ public class KeyProtein {
             }
         }
         return res;
+    }
+    public boolean IsNearBindingResidual(int idx, int distance){ // index before ajust offset
+        for(Integer i: this.getBindingIndex()){
+            int tmp = idx -i;
+            if(Math.abs(tmp)<= distance){
+                return true;
+            }
+        }
+        return false;
+        
     }
 }

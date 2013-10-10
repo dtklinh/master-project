@@ -31,6 +31,7 @@ public class StaticSupportMethod {
             }
             line = line.trim();
             if(!line.equalsIgnoreCase("")){
+<<<<<<< HEAD
                 name.add(line.substring(0, 6));
 //                String dir_target = "/home/linh/Master/master-project/Train/";
 //                String dir_db = "/home/linh/Program/ncbi-blast-2.2.28+/database/";
@@ -44,6 +45,19 @@ public class StaticSupportMethod {
 //                Runtime rt = Runtime.getRuntime();
 //                Process pr = rt.exec(cmd);
 //                rt.freeMemory();
+=======
+                String query = "D:\\Study\\Java Code\\getProteinName\\Train\\"+line+".txt";
+                
+                String cmd = "powershell.exe psiblast "+ "-query "+ query +" -db C:\\blast-2.2.28\\db\\nr.01\\nr.01";
+                cmd += " -out D:\\Study\\Java Code\\getProteinName\\Train\\"+line+"_out.txt";
+                cmd +=" -num_iterations 3 ";
+                cmd += "-out_ascii_pssm D:\\Study\\Java Code\\getProteinName\\Train\\"+ line + ".pssm.txt";
+                cmd += " -comp_based_stats 1";
+                Runtime rt = Runtime.getRuntime();
+                Process pr = rt.exec(cmd);
+                pr.destroy();
+                rt.freeMemory();
+>>>>>>> 0ef97e09762697d685e0c3356a115f770f2a6288
             }
         }
         br.close();
@@ -55,4 +69,5 @@ public class StaticSupportMethod {
             System.out.println(name.get(i));
         }
     }
+    
 }
