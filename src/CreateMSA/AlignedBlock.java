@@ -15,6 +15,7 @@ public class AlignedBlock {
     private int query_end;
     private String query_str;
     private String subject_str;
+    private String RefName;
 
     /**
      * @return the query_start
@@ -101,14 +102,33 @@ public class AlignedBlock {
             int len = this.query_str.length();
             StringBuilder qb = new StringBuilder(query_str);
             StringBuilder sb = new StringBuilder(subject_str);
-            for(int i=len-1;i>=0;i--){
-                if(qb.substring(i, i+1).equalsIgnoreCase("-")){
-                    qb.deleteCharAt(i);
-                    sb.deleteCharAt(i);
-                }
+//            for(int i=len-1;i>=0;i--){
+//                if(qb.substring(i, i+1).equalsIgnoreCase("-")){
+//                    qb.deleteCharAt(i);
+//                    sb.deleteCharAt(i);
+//                }
+//            }
+            while(qb.indexOf("-")>=0){
+                int idx = qb.indexOf("-");
+                qb.deleteCharAt(idx);
+                sb.deleteCharAt(idx);
             }
             this.query_str = qb.toString();
             this.subject_str = sb.toString();
         }
+    }
+
+    /**
+     * @return the RefName
+     */
+    public String getRefName() {
+        return RefName;
+    }
+
+    /**
+     * @param RefName the RefName to set
+     */
+    public void setRefName(String RefName) {
+        this.RefName = RefName;
     }
 }
