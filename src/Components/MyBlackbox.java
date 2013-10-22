@@ -95,9 +95,10 @@ public class MyBlackbox {
 //            ArrayList<int[]> null_indicator = k.RetrieveNullIndex2(distance, false);
 //            ArrayList<int[]> null_indicator2 = k.RetrieveNullIndex2(distance, true);
             //
-            ArrayList<int[]> signal_indicator = m.RetrieveIndicatorPair2(distance);
-            ArrayList<int[]> null_indicator = m.RetrieveNullIndex2(distance, false);
-            ArrayList<int[]> null_indicator2 = m.RetrieveNullIndex2(distance, true);
+            ArrayList<String> lst_cols = m.RetrieveColumnPair();
+            ArrayList<int[]> signal_indicator = m.RetrieveIndicatorPair2(distance,lst_cols );
+            ArrayList<int[]> null_indicator = m.RetrieveNullIndex2(distance, false, lst_cols);
+            ArrayList<int[]> null_indicator2 = m.RetrieveNullIndex2(distance, true, lst_cols);
             
             Collections.shuffle(null_indicator);
             Collections.shuffle(null_indicator);
@@ -310,19 +311,19 @@ public class MyBlackbox {
         d.LoadFromFile(signal, nul, 400);
         double[][] m = Dsm.CalcDSM(d.getSignalMat().getArrayCopy(), d.getNullMat().getArrayCopy(),
                 pbm, PairIndex, true);
-        MyIO.WritePoPToFile("BLAST_Database/Train/DSM_0_0", m);
-        System.exit(0);
+        MyIO.WritePoPToFile("HSSP_Database/Train/DSM_0_0", m);
+//        System.exit(0);
         m = Dsm.CalcDSM(d.getSignalMat().getArrayCopy(), d.getNullMat().getArrayCopy(),
                 pbm, PairIndex, false);
-        MyIO.WritePoPToFile("BLAST_Database/Train/DSM_0_1", m);
+        MyIO.WritePoPToFile("HSSP_Database/Train/DSM_0_1", m);
         //
         d.LoadFromFile(signal, nul2, 400);
         m = Dsm.CalcDSM(d.getSignalMat().getArrayCopy(), d.getNullMat().getArrayCopy(),
                 pbm, PairIndex, true);
-        MyIO.WritePoPToFile("BLAST_Database/Train/DSM_1_0", m);
+        MyIO.WritePoPToFile("HSSP_Database/Train/DSM_1_0", m);
         m = Dsm.CalcDSM(d.getSignalMat().getArrayCopy(), d.getNullMat().getArrayCopy(),
                 pbm, PairIndex, false);
-        MyIO.WritePoPToFile("BLAST_Database/Train/DSM_1_1", m);
+        MyIO.WritePoPToFile("HSSP_Database/Train/DSM_1_1", m);
     }
 
     static public void Test() throws FileNotFoundException, IOException, Exception {

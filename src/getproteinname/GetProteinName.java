@@ -108,12 +108,13 @@ public class GetProteinName {
 //        k.PrintToScreen();
 //        System.out.println(MyPair.ConvertFromStringToNum("ARMN"));
         
-        MyBlackbox.CalculateSig_NullMatrix("HSSP_Database/Train/AminoList374_modified.txt");
+//        MyBlackbox.CalculateSig_NullMatrix("HSSP_Database/Train/AminoList374_modified.txt");
 //        String path = "Train/NullMatrix2";
 //        MyBlackbox.CalculateSum(path+"/list.txt", path);
 //        MyBlackbox.TestSync("HSSP_Database/Test/TS75.txt");
 //        System.out.println("1: "+MyPair.ConvertFromNumToString2(1));
 //        MyBlackbox.PrepareDataSet("CompletePosList_2.txt");
+//        MyBlackbox.CalculateDSM2();
 //        MyBlackbox.CalculateDSM2();
 //        MyBlackbox.Test();
 //        MyBlackbox.TongHop();
@@ -123,11 +124,12 @@ public class GetProteinName {
 //        MyBlackbox.FindSafeNeg("PSSM_Uvalue_DSM_1_Train.arff", "DownNeg_PSSM_Uvalue_DSM_1_Train.arff");
 //        MyBlackbox.GetProteinSequence("Train/AminoList374.txt", "Train/AminoList374_Sequence.txt");
 //        MyBlackbox.EachProteinEachFile("Train/AminoList374_Sequence.txt");
-//        StaticSupportMethod.PSIBlast("Train/AminoList374.txt");
+        StaticSupportMethod.PSIBlast("HSSP_Database/Test62/PDNA62.txt");
 //        Runtime rt = Runtime.getRuntime();
 //        Process pr = rt.exec("powershell.exe mkdir D:\\khanhlinh");
 //        MyBlackbox.GetBindingIdx("1A6Y", "A");
 //        MyBlackbox.CalculateDSM("DSM.txt");
+//        StaticSupportMethod.ProteinNameToFile("HSSP_Database/Test62/PDNA62.txt", "HSSP_Database/Test62/");
         
   /*      
         PDDocument pddDocument = PDDocument.load(new File("2FQZ.pdf"));

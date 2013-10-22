@@ -966,13 +966,13 @@ public class MSA {
         System.out.println("False negative: "+ fn);
         return new MyEvaluate(tp, tn, fp, fn);
     }
-    public ArrayList<int[]> RetrieveIndicatorPair2(int distance) { // define the distance of neighborhood
+    public ArrayList<int[]> RetrieveIndicatorPair2(int distance, ArrayList<String> lst_cols) { // define the distance of neighborhood
         ArrayList<int[]> res = new ArrayList<int[]>();
         
         int offset = this.MyKeyProtein.getOffset();
         for(int i=0;i<this.MyKeyProtein.getSequence().length()-1;i++){
             if(this.MyKeyProtein.IsNearBindingResidual(i+offset, distance)){
-                if(this.IsConservativeOrGap(i)){
+                if(this.IsConservativeOrGap(i, lst_cols)){
                     continue;
                 }
                 for(int j=i+1; j<=i+2*distance;j++){
@@ -980,7 +980,7 @@ public class MSA {
                         break;
                     }
                     if(this.MyKeyProtein.IsNearBindingResidual(j+offset, distance)){
-                        if(this.IsConservativeOrGap(j)){
+                        if(this.IsConservativeOrGap(j, lst_cols)){
                             continue;
                         }
                         res.add(new int[]{i,j});
@@ -1019,8 +1019,8 @@ public class MSA {
 //        }
         return res;
     }
-    public boolean IsConservativeOrGap(int idx){ // index of column which is tested if conservative
-        ArrayList<String> lst_cols = this.RetrieveColumnPair();
+    public boolean IsConservativeOrGap(int idx, ArrayList<String> lst_cols){ // index of column which is tested if conservative
+//        ArrayList<String> lst_cols = this.RetrieveColumnPair();
         ArrayList<String> aa = AminoAcid.getAA_Abbr();
         int len = lst_cols.get(0).length();
         
@@ -1036,14 +1036,15 @@ public class MSA {
         }
         return false;
     }
-    public ArrayList<int[]> RetrieveNullIndex2(int distance, boolean neighbor) {
+    public ArrayList<int[]> RetrieveNullIndex2(int distance, boolean neighbor,
+            ArrayList<String> lst_cols) {
 
         ArrayList<int[]> res = new ArrayList<int[]>();
         int offset = this.MyKeyProtein.getOffset();
         ArrayList<Integer> lst_idx = new ArrayList<Integer>();
         for(int i=0;i<this.MyKeyProtein.getSequence().length();i++){
             if(!this.MyKeyProtein.IsNearBindingResidual(i+offset, distance)){
-                if(this.IsConservativeOrGap(i)){
+                if(this.IsConservativeOrGap(i, lst_cols)){
                     continue;
                 }
                 lst_idx.add(i);
