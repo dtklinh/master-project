@@ -1,0 +1,2407 @@
+run:
+HSSP_Database/Train_AdjustIndex/MSA/1A0A_A.fasta.msa
+counter deletion: 17
+msa row size :96
+Skip 1A0A : MKRESHKHAEQARRNRLAVALHELASLIPAEWKQQNVSAAPSKATTVEAACRYIRHLQQNGST: 96
+HSSP_Database/Train_AdjustIndex/MSA/1D2I_A.fasta.msa
+Skip 1D2I : MKIDITDYNHADEILNPQLWKEIEETLLKMPLHVKASDQASKVGSLIFDPVGTNQYIKDELVPKHWKNNIPIPKRFDFLGTDIDFGKRDTLVEVQFSNYPFLLNNTVRSELFHKSNMDIDEEGMKVAIIITKGHMFPASNSSLYYEQAQNQLNSLAEYNVFDVPIRLVGLIEDFETDIDIVSTTYADKRYSRTITKRDTVKGKVIDTNTPNTRRRKRGTIVTY: 4
+counter deletion: 3
+msa row size :4
+HSSP_Database/Train_AdjustIndex/MSA/1GTW_A.fasta.msa
+counter deletion: 46
+msa row size :817
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1GTW
+Null matrix was calculated: 1GTW
+Null matrix 2 was calculated: 1GTW
+HSSP_Database/Train_AdjustIndex/MSA/1IU3_C.fasta.msa
+counter deletion: 1299
+msa row size :642
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1IU3
+Null matrix was calculated: 1IU3
+Null matrix 2 was calculated: 1IU3
+HSSP_Database/Train_AdjustIndex/MSA/1OZJ_A.fasta.msa
+counter deletion: 84
+msa row size :40
+HSSP_Database/Train_AdjustIndex/MSA/1RZ9_A.fasta.msa
+Skip 1OZJ : FTPPIVKRLLGWKKGEQNGQEEKWCEKAVKSLVKKLKKTGQLDELEKAITTQNVNTKCITIPRSLDGRLQVSHRKGLPHVIYCRLWRWPDLHSHHELRAMELCEFAFNMKKDEVCVNPYHYQRVET: 40
+counter deletion: 3
+msa row size :50
+HSSP_Database/Train_AdjustIndex/MSA/1XSD_A.fasta.msa
+Skip 1RZ9 : MATFYEVIVRVPFDVEEHLPGISDSFVDWVTGQIWELPPESDLNLTLVEQPQLTVADRIRRVFLYEWNKFSKQESKFFVQFEKGSEYFHLHTLVETSGISSMVLGRYVSQIRAQLVKVVFQGIEPQINDWVAITKVKKGGANKVVDSGYIPAYLLPKVQPELQWAWTNLDEYKLAALNLEERKRLVAQFLAES: 50
+counter deletion: 428
+msa row size :710
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1XSD
+Null matrix was calculated: 1XSD
+Null matrix 2 was calculated: 1XSD
+HSSP_Database/Train_AdjustIndex/MSA/2C62_A.fasta.msa
+counter deletion: 59
+msa row size :366
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2C62
+Null matrix was calculated: 2C62
+Null matrix 2 was calculated: 2C62
+HSSP_Database/Train_AdjustIndex/MSA/2HZV_A.fasta.msa
+counter deletion: 1335
+msa row size :878
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2HZV
+Null matrix was calculated: 2HZV
+Null matrix 2 was calculated: 2HZV
+HSSP_Database/Train_AdjustIndex/MSA/1A35_A.fasta.msa
+counter deletion: 58
+msa row size :325
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1A35
+Null matrix was calculated: 1A35
+Null matrix 2 was calculated: 1A35
+HSSP_Database/Train_AdjustIndex/MSA/1D5Y_A.fasta.msa
+counter deletion: 524
+msa row size :151
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1D5Y
+Null matrix was calculated: 1D5Y
+Null matrix 2 was calculated: 1D5Y
+HSSP_Database/Train_AdjustIndex/MSA/1GXP_A.fasta.msa
+counter deletion: 129
+msa row size :2373
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1GXP
+Null matrix was calculated: 1GXP
+Null matrix 2 was calculated: 1GXP
+HSSP_Database/Train_AdjustIndex/MSA/1IV6_A.fasta.msa
+counter deletion: 38
+msa row size :246
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1IV6
+Null matrix was calculated: 1IV6
+Null matrix 2 was calculated: 1IV6
+HSSP_Database/Train_AdjustIndex/MSA/1LLM_C.fasta.msa
+counter deletion: 0
+msa row size :2501
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1LLM
+Null matrix was calculated: 1LLM
+Null matrix 2 was calculated: 1LLM
+HSSP_Database/Train_AdjustIndex/MSA/1P4E_B.fasta.msa
+counter deletion: 1
+msa row size :4
+HSSP_Database/Train_AdjustIndex/MSA/1Y1W_D.fasta.msa
+Skip 1P4E : SQFDILCKTPPKVLVRQFVERFERPSGEKIASCAAELTYLCWMITHNGTAIKRATFMSYNTIISNSLSFDIVNKSLQFKYKTQKATILEASLKKLIPAWEFTIIPYNGQKSDITDIVSSLQLQFESGNSHSKKMLKALLSEGESIWEITEKILNSFEYTSRFTKTKTLYQFLFLATFINCGRFSDIKNVDPKSFKLVQNKYLGVIIQCLVTETKTSVSRHIYFFSARGRIDPLVYLDEFLRNSEPVLKRVNRTGNSSSNKQEYQLLKDNLVRSYNKALKKNAPYPIFAIKNGPKSHIGRHLMTSFLSMKGLTELTNVVGNFSDTTYTHQITAIPDHYFALVSRYYAYDPISKEMIALKDETNPIEEWQHIEQLKGSAEGSIRYPAWNGIISQEVLDYLSSYINRRIGHHHHHH: 4
+counter deletion: 15
+msa row size :24
+HSSP_Database/Train_AdjustIndex/MSA/2C6Y_A.fasta.msa
+Skip 1Y1W : STSTFQTRRRRLKKVEEEENAATLQLGQEFQLKQINHQGEEEELIALNLSEARLVIKEALVERRRAFKRSQKKTREKELESIDVLLEQTTGGNNKDLKNTMQYLTNFSRFRDQETVGAVIQLLKSTGLHPFEVAQLGSLACDTADEAKTLIPSLNNKISDDELERILKELSNLETLY: 24
+counter deletion: 5
+msa row size :213
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2C6Y
+Null matrix was calculated: 2C6Y
+Null matrix 2 was calculated: 2C6Y
+HSSP_Database/Train_AdjustIndex/MSA/2I0Q_B.fasta.msa
+counter deletion: 1
+msa row size :14
+HSSP_Database/Train_AdjustIndex/MSA/1A36_A.fasta.msa
+Skip 2I0Q : QQQSAFKQLYTELFNNEGDFSKVSSNLKKPLKCYVKESYPHFLVTDGYFFVAPYFTKEAVNEFHAKFPNVNIVDLTDKVIVINNWSLELRRVNSAEVFTSYANLEARLIVHSFKPNLQERLNPTRYPVNLFRDDEFKTTIQHFRHTALQAAINKTVKGDNLVDISKVADAAGKKGKVDAGIVKASASKGDEFSDFSFKEGNTATLKIADIFVQEKG: 14
+counter deletion: 58
+msa row size :308
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1A36
+Null matrix was calculated: 1A36
+Null matrix 2 was calculated: 1A36
+HSSP_Database/Train_AdjustIndex/MSA/1D66_A.fasta.msa
+counter deletion: 15
+msa row size :71
+Skip 1D66 : EQACDICRLKKLKCSKEKPKCAKCLKNNWECRYSPKTKRSPLTRAHLTEVESRLERL: 71
+HSSP_Database/Train_AdjustIndex/MSA/1H0M_A.fasta.msa
+counter deletion: 4
+msa row size :45
+HSSP_Database/Train_AdjustIndex/MSA/1IXY_A.fasta.msa
+Skip 1H0M : MQHWLDKLTDLAAIEGDECILKTGLADIADHFGFTGYAYLHIQHRHITAVTNYHRQWQSTYFDKKFEALDPVVKRARSRKHIFTWSGEHERPTLSKDERAFYDHASDFGIRSGITIPIKTANGFMSMFTMASDKPVIDLDREIDAVAAAATIGQIHARISFLRTTDAAWLDPKEATYLRWIAVGKTMEEIADVEGVKYNSVRVKLREAMKRFDVRSKAHLTALAIRRKLI: 45
+counter deletion: 2
+msa row size :5
+HSSP_Database/Train_AdjustIndex/MSA/1P7D_A.fasta.msa
+Skip 1IXY : MKIAIINMGNNVINFKTVPSSETIYLFKVISEMGLNVDIISLKNGVYTKSFDEVDVNDYDRLIVVNSSINFFGGKPNLAILSAQKFMAKYKSKIYYLFTDIRLPFSQSWPNVKNRPWAYLYTEEELLIKSPIKVISQGINLDIAKAAHKKVDNVIEFEYFPIEQYKIHMNDFQLSKPTKKTLDVIYGGSFRSGQRESKMVEFLFDTGLNIEFFGNAREKQFKNPKYPWTKAPVFTGKIPMNMVSEKNSQAIAALIIGDKNYNDNFITLRVWETMASDAVMLIDEEFDTKHRIINDARFYVNNRAELIDRVNELKHSDVLRKEMLSIQHDILNKTRAKKAEWQDAFKKAIDL: 5
+counter deletion: 440
+msa row size :2062
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1P7D
+Null matrix was calculated: 1P7D
+Null matrix 2 was calculated: 1P7D
+HSSP_Database/Train_AdjustIndex/MSA/1S40_A.fasta.msa
+counter deletion: 13
+msa row size :13
+HSSP_Database/Train_AdjustIndex/MSA/1Y1W_G.fasta.msa
+Skip 1S40 : KMARKDPTIEFCQLGLDTFETKYITMFGMLVSCSFDKPAFISFVFSDFTKNDIVQNYLYDRYLIDYENKLELNEGFKAIMYKNQFETFDSKLRKIFNNGLRDLQNGRDENLSQYGIVCKMNIKVKMYNGKLNAIVRECEPVPHSQISSIASPSQCEHLRLFYQRAFKRIGESAISRYFEEYRRFFPI: 13
+counter deletion: 23
+msa row size :345
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1Y1W
+Null matrix was calculated: 1Y1W
+Null matrix 2 was calculated: 1Y1W
+HSSP_Database/Train_AdjustIndex/MSA/2C9L_Y.fasta.msa
+counter deletion: 4
+msa row size :30
+HSSP_Database/Train_AdjustIndex/MSA/2I13_A.fasta.msa
+Skip 2C9L : MLEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRTPD: 30
+counter deletion: 0
+msa row size :2152
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2I13
+Null matrix was calculated: 2I13
+Null matrix 2 was calculated: 2I13
+HSSP_Database/Train_AdjustIndex/MSA/1A6Y_B.fasta.msa
+counter deletion: 127
+msa row size :577
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1A6Y
+Null matrix was calculated: 1A6Y
+Null matrix 2 was calculated: 1A6Y
+HSSP_Database/Train_AdjustIndex/MSA/1D8Y_A.fasta.msa
+counter deletion: 565
+msa row size :1937
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1D8Y
+Null matrix was calculated: 1D8Y
+Null matrix 2 was calculated: 1D8Y
+HSSP_Database/Train_AdjustIndex/MSA/1H6F_B.fasta.msa
+counter deletion: 26
+msa row size :228
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1H6F
+Null matrix was calculated: 1H6F
+Null matrix 2 was calculated: 1H6F
+HSSP_Database/Train_AdjustIndex/MSA/1J1V_A.fasta.msa
+counter deletion: 600
+msa row size :1902
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1J1V
+Null matrix was calculated: 1J1V
+Null matrix 2 was calculated: 1J1V
+HSSP_Database/Train_AdjustIndex/MSA/1LRR_A.fasta.msa
+counter deletion: 1066
+msa row size :622
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1LRR
+Null matrix was calculated: 1LRR
+Null matrix 2 was calculated: 1LRR
+HSSP_Database/Train_AdjustIndex/MSA/1P8K_Z.fasta.msa
+counter deletion: 3
+msa row size :27
+HSSP_Database/Train_AdjustIndex/MSA/1SA3_A.fasta.msa
+Skip 1P8K : GSDLTYAYLVGLFEGDGYFSITKKGKYLTYELGIELSIKDVQLIYKIKKILGIGIVSFRKRNEIEMVALRIRDKNHLKSFILPIFEKYPMFSNKQYDYLRFRNALLSGIISLEDLPDYTRSDEPLNSIESIINTSYFSAWLVGFIEAEGCFSVYKLNKDDDYLIASFDIAQRDGDILISAIRKYLSFTTKVYLDKTNCSKLKVTSVRSVENIIKFLQNAPVKLLGNKKLQYLLWLKQLRKISRYSEKIKIPSNY: 27
+counter deletion: 1
+msa row size :4
+HSSP_Database/Train_AdjustIndex/MSA/1Y6F_A.fasta.msa
+Skip 1SA3 : MRTELLSKLYDDFGIDQLPHTQHGVTSDRLGKLYEKYILDIFKDIESLKKYNTNAFPQEKDISSKLLKALNLDLDNIIDVSSSDTDLGRTIAGGSPKTDATIRFTFHNQSSRLVPLNIKHSSKKKVSIAEYDVETICTGVGISDGELKELIRKHQNDQSAKLFTPVQKQRLTELLEPYRERFIRWCVTLRAEKSEGNILHPDLLIRFQVIDREYVDVTIKNIDDYVSDRIAEGSKARKPGFGTGLNWTYASGSKAKKMQFKG: 4
+counter deletion: 9
+msa row size :6
+HSSP_Database/Train_AdjustIndex/MSA/2CCZ_A.fasta.msa
+Skip 1Y6F : MGSMRICIFMARGLEGCGVTKFSLEQRDWFIKNGHEVTLVYAKDKSFTRTSSHDHKSFSIPVILAKEYDKALKLVNDCDILIINSVPATSVQEATINNYKKLLDNIKPSIRVVVYQHDHSVLSLRRNLGLEETVRRADVIFSHSDNGDFNKVLMKEWYPEEAPTVYNFQPPMDIVKVRSTYWKDVSEINMNINRWIGRTTTWKGFYQMFDFHEKFLKPAGKSTVMEGLERSPAFIAIKEKGIPYEYYGNREIDKMNLAPNQPAQILDCYINSEMLERMSKSGFGYQLSKLNQKYLQRSLEYTHLELGACGTIPVFWKSTGENLKFRVDNTPLTSHDSGIIWFDENDMESTFERIKELSSDRALYDREREKAYEFLYQHQDSSFCFKEQFDIITK: 6
+counter deletion: 0
+msa row size :1037
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2CCZ
+Null matrix was calculated: 2CCZ
+Null matrix 2 was calculated: 2CCZ
+HSSP_Database/Train_AdjustIndex/MSA/1A73_A.fasta.msa
+counter deletion: 1
+msa row size :3
+HSSP_Database/Train_AdjustIndex/MSA/1DC1_B.fasta.msa
+Skip 1A73 : ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTRWQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV: 3
+counter deletion: 1
+msa row size :36
+HSSP_Database/Train_AdjustIndex/MSA/1H88_C.fasta.msa
+Skip 1DC1 : QKPFENHLKSVDDLKTTYEEYRAGFIAFALEKNKRSTPYIERARALKVAASVAKTPKDLLYLEDIQDALLYASGISDKAKKFLTEDDKKESINNLIENFLEPAGEEFIDELIFRYLLFQGDSLGGTMRNIAGALAQQKLTRAIISALDIANIPYKWLDSRDKKYTNWMDKPEDDYELETFAKGISWTINGKHRTLMYNITVSLVKKNVDICLFNCEPQQPEKYLLLGELKGGIDPAGADEHWKTANTALTRIRNKFSEKGLSPKTIFIGAAIEHSMAEEIWDQLQSGSLTNSANLTKTEQVGSLCRWIINI: 36
+counter deletion: 106
+msa row size :243
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1H88
+Null matrix was calculated: 1H88
+Null matrix 2 was calculated: 1H88
+HSSP_Database/Train_AdjustIndex/MSA/1J4W_A.fasta.msa
+counter deletion: 71
+msa row size :145
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1J4W
+Null matrix was calculated: 1J4W
+Null matrix 2 was calculated: 1J4W
+HSSP_Database/Train_AdjustIndex/MSA/1LWS_A.fasta.msa
+counter deletion: 21
+msa row size :24
+HSSP_Database/Train_AdjustIndex/MSA/1PER_L.fasta.msa
+Skip 1LWS : CFAKGTNVLMADGSIECIENIEVGNKVMGKDGRPREVIKLPRGRETMYSVVQKSQHRAHKSDSSREVPELLKFTCNATHELVVRTPRSVRRLSRTIKGVFEVITFEMGQKKAPDGRIVELVKEVSKSYPISPERANELVESYRKASNKAYFEWTIEARDLSLLGSHVRKATYQTYAPILYENDHFFDYMQKSKFHLTIEGPKVLAYLLGLWIGDGLSDRATFSVDSRDTSLMERVTEYAEKLNLCAVAKTVNLYSENPLWDAIVGLGFLKDGVKNIPSFLSTDNIGTRETFLAGLIDSDGYVTDEHGIKATIKTIHTSVRDGLVSLARSLGLVVSVNAEPAKVDMNGTKHKISYAIYMSGGDVLLNVLSKCAGSKKFRPAPAAAFARECRGFYFELQELKEDDYYGITLSDDSDHQFLLANQVVVHN: 24
+counter deletion: 16
+msa row size :2486
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1PER
+Null matrix was calculated: 1PER
+Null matrix 2 was calculated: 1PER
+HSSP_Database/Train_AdjustIndex/MSA/1SFU_A.fasta.msa
+Skip 1SFU : CTVNDAEIFSLVKKEVLSLNTNDYTTAISLSNRLKINKKKINQQLYKLQKEDTVKMVPSNPPKWFKNYNC: 12
+counter deletion: 2
+msa row size :12
+HSSP_Database/Train_AdjustIndex/MSA/1YNW_B.fasta.msa
+counter deletion: 267
+msa row size :728
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1YNW
+Null matrix was calculated: 1YNW
+Null matrix 2 was calculated: 1YNW
+HSSP_Database/Train_AdjustIndex/MSA/2CGP_A.fasta.msa
+counter deletion: 1612
+msa row size :890
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2CGP
+Null matrix was calculated: 2CGP
+Null matrix 2 was calculated: 2CGP
+HSSP_Database/Train_AdjustIndex/MSA/2ISZ_A.fasta.msa
+counter deletion: 88
+msa row size :2094
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2ISZ
+Null matrix was calculated: 2ISZ
+Null matrix 2 was calculated: 2ISZ
+HSSP_Database/Train_AdjustIndex/MSA/1AKH_A.fasta.msa
+counter deletion: 7
+msa row size :823
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1AKH
+Null matrix was calculated: 1AKH
+Null matrix 2 was calculated: 1AKH
+HSSP_Database/Train_AdjustIndex/MSA/1DCT_A.fasta.msa
+counter deletion: 3
+msa row size :363
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1DCT
+Null matrix was calculated: 1DCT
+Null matrix 2 was calculated: 1DCT
+HSSP_Database/Train_AdjustIndex/MSA/1H89_A.fasta.msa
+counter deletion: 46
+msa row size :604
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1H89
+Null matrix was calculated: 1H89
+Null matrix 2 was calculated: 1H89
+HSSP_Database/Train_AdjustIndex/MSA/1J5N_A.fasta.msa
+counter deletion: 9
+msa row size :2051
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1J5N
+Null matrix was calculated: 1J5N
+Null matrix 2 was calculated: 1J5N
+HSSP_Database/Train_AdjustIndex/MSA/1M06_F.fasta.msa
+counter deletion: 4
+msa row size :701
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1M06
+Null matrix was calculated: 1M06
+Null matrix 2 was calculated: 1M06
+HSSP_Database/Train_AdjustIndex/MSA/1PH1_B.fasta.msa
+counter deletion: 1
+msa row size :14
+HSSP_Database/Train_AdjustIndex/MSA/1SKN_P.fasta.msa
+Skip 1PH1 : PQQQSAFKQLYTELFNNEGDFSKVSSNLKKPLKCYVKESYPHFLVTDGYFFVAPYFTKEAVNEFHAKFPNVNIVDLTDKVIVINNWSLELRRVNSAEVFTSYANLEARLIVHSFKPNLQERLNPTRYPVNLFRDDEFKTTIQHFRHTALQAAINKTVKGDNLVDISKVADAAGKKGKVDAGIVKASASKGDEFSDFSFKEGNTATLKIADIFVQEKG: 14
+counter deletion: 3
+msa row size :458
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1SKN
+Null matrix was calculated: 1SKN
+Null matrix 2 was calculated: 1SKN
+HSSP_Database/Train_AdjustIndex/MSA/1YO5_C.fasta.msa
+counter deletion: 49
+msa row size :387
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1YO5
+Null matrix was calculated: 1YO5
+Null matrix 2 was calculated: 1YO5
+HSSP_Database/Train_AdjustIndex/MSA/2D45_B.fasta.msa
+counter deletion: 254
+msa row size :1055
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2D45
+Null matrix was calculated: 2D45
+Null matrix 2 was calculated: 2D45
+HSSP_Database/Train_AdjustIndex/MSA/2IX1_A.fasta.msa
+counter deletion: 880
+msa row size :646
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2IX1
+Null matrix was calculated: 2IX1
+Null matrix 2 was calculated: 2IX1
+HSSP_Database/Train_AdjustIndex/MSA/1AKH_B.fasta.msa
+counter deletion: 25
+msa row size :329
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1AKH
+Null matrix was calculated: 1AKH
+Null matrix 2 was calculated: 1AKH
+HSSP_Database/Train_AdjustIndex/MSA/1DEW_B.fasta.msa
+counter deletion: 39
+msa row size :1416
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1DEW
+Null matrix was calculated: 1DEW
+Null matrix 2 was calculated: 1DEW
+HSSP_Database/Train_AdjustIndex/MSA/1H8A_C.fasta.msa
+counter deletion: 6
+msa row size :155
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1H8A
+Null matrix was calculated: 1H8A
+Null matrix 2 was calculated: 1H8A
+HSSP_Database/Train_AdjustIndex/MSA/1J5O_A.fasta.msa
+counter deletion: 1338
+msa row size :642
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1J5O
+Null matrix was calculated: 1J5O
+Null matrix 2 was calculated: 1J5O
+HSSP_Database/Train_AdjustIndex/MSA/1M06_G.fasta.msa
+counter deletion: 2
+msa row size :15
+HSSP_Database/Train_AdjustIndex/MSA/1PP8_P.fasta.msa
+Skip 1M06 : MYQNFVTKHDTAIQTSRFSVTGNVIPAAPTGNIPVINGGSITAERAVVNLYANMNVSTSSDGSFIVAMKVDTSPTDPNCVISAGVNLSFAGTSYPIVGIVRFESASEQPTSIAGSEVEHYPIEMSVGSGGVCSARDCATVDIHPRTSGNNVFVGVICSSAKWTSGRVIGTIATTQVIHEYQVLQPLK: 15
+counter deletion: 1
+msa row size :8
+HSSP_Database/Train_AdjustIndex/MSA/1SKR_B.fasta.msa
+Skip 1PP8 : MDSNDLEASFTSRLPPEIVAALKRKSSRDPNSRFPRKLHMLLTYLASNPQLEEEIGLSWISDTEFKMKKKNVALVMGIKLNTLNVNLRDLAFEQLQHDKGGWTQWKRSGFTRNSVFED: 8
+counter deletion: 362
+msa row size :2140
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1SKR
+Null matrix was calculated: 1SKR
+Null matrix 2 was calculated: 1SKR
+HSSP_Database/Train_AdjustIndex/MSA/2LKX_A.fasta.msa
+counter deletion: 0
+msa row size :2501
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2LKX
+Null matrix was calculated: 2LKX
+Null matrix 2 was calculated: 2LKX
+HSSP_Database/Train_AdjustIndex/MSA/2D5V_A.fasta.msa
+counter deletion: 53
+msa row size :49
+HSSP_Database/Train_AdjustIndex/MSA/2JEA_A.fasta.msa
+Skip 2D5V : MEEINTKEVAQRITTELKRYSIPQAIFAQRVLCRSQGTLSDLLRNPKPWSKLKSGRETFRRMWKWLQEPEFQRMSALRLPRLVFTDVQRRTLHAIFKENKRPSKELQITISQQLGLELSTVSNFFMNARRRSLDK: 49
+counter deletion: 11
+msa row size :246
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2JEA
+Null matrix was calculated: 2JEA
+Null matrix 2 was calculated: 2JEA
+HSSP_Database/Train_AdjustIndex/MSA/1AM9_C.fasta.msa
+counter deletion: 3
+msa row size :214
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1AM9
+Null matrix was calculated: 1AM9
+Null matrix 2 was calculated: 1AM9
+HSSP_Database/Train_AdjustIndex/MSA/1DIZ_A.fasta.msa
+counter deletion: 944
+msa row size :1165
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1DIZ
+Null matrix was calculated: 1DIZ
+Null matrix 2 was calculated: 1DIZ
+HSSP_Database/Train_AdjustIndex/MSA/1H9D_A.fasta.msa
+counter deletion: 228
+msa row size :195
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1H9D
+Null matrix was calculated: 1H9D
+Null matrix 2 was calculated: 1H9D
+HSSP_Database/Train_AdjustIndex/MSA/1J75_A.fasta.msa
+counter deletion: 2
+msa row size :50
+HSSP_Database/Train_AdjustIndex/MSA/1PUE_F.fasta.msa
+Skip 1J75 : NLEQKILQVLSDDGGPVKIGQLVKKCQVPKKTLNQVLYRLKKEDRVSSPEPATWSIG: 50
+counter deletion: 77
+msa row size :886
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1PUE
+Null matrix was calculated: 1PUE
+Null matrix 2 was calculated: 1PUE
+HSSP_Database/Train_AdjustIndex/MSA/1SVC_P.fasta.msa
+counter deletion: 46
+msa row size :305
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1SVC
+Null matrix was calculated: 1SVC
+Null matrix 2 was calculated: 1SVC
+HSSP_Database/Train_AdjustIndex/MSA/1Z1B_B.fasta.msa
+counter deletion: 450
+msa row size :1755
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1Z1B
+Null matrix was calculated: 1Z1B
+Null matrix 2 was calculated: 1Z1B
+HSSP_Database/Train_AdjustIndex/MSA/2D7D_A.fasta.msa
+counter deletion: 10
+msa row size :2492
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2D7D
+Null matrix was calculated: 2D7D
+Null matrix 2 was calculated: 2D7D
+HSSP_Database/Train_AdjustIndex/MSA/2JEA_B.fasta.msa
+counter deletion: 11
+msa row size :234
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2JEA
+Null matrix was calculated: 2JEA
+Null matrix 2 was calculated: 2JEA
+HSSP_Database/Train_AdjustIndex/MSA/1AN4_A.fasta.msa
+counter deletion: 53
+msa row size :395
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1AN4
+Null matrix was calculated: 1AN4
+Null matrix 2 was calculated: 1AN4
+HSSP_Database/Train_AdjustIndex/MSA/1DMU_A.fasta.msa
+counter deletion: 3
+msa row size :3
+HSSP_Database/Train_AdjustIndex/MSA/1H9T_A.fasta.msa
+Skip 1DMU : MYNLHREKIFMSYNQNKQYLEDNPEIQEKIELYGLNLLNEVISDNEEEIRADYNEANFLHPFWMNYPPLDRGKMPKGDQIPWIEVGEKAVGSKLTRLVSQREDITVREIGLPTGPDERYLLTSPTIYSLTNGFTDSIMMFVDIKSVGPRDSDYDLVLSPNQVSGNGDWAQLEGGIQNNQQTIQGPRSSQIFLPTIPPLYILSDGTIAPVVHLFIKPIYAMRSLTKGDTGQSLYKIKLASVPNGLGLFCNPGYAFDSAYKFLFRPGKDDRTKSLLQKRVRVDLRVLDKIGPRVMTIDMDK: 3
+counter deletion: 1048
+msa row size :556
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1H9T
+Null matrix was calculated: 1H9T
+Null matrix 2 was calculated: 1H9T
+HSSP_Database/Train_AdjustIndex/MSA/1JB7_A.fasta.msa
+counter deletion: 2
+msa row size :14
+HSSP_Database/Train_AdjustIndex/MSA/1M5X_A.fasta.msa
+Skip 1JB7 : YEYVELAKASLTSAQPQHFYAVVIDATFPYKTNQERYICSLKIVDPTLYLKQQKGAGDASDYATLVLYAKRFEDLPIIHRAGDIIRVHRATLRLYNGQRQFNANVFYSSSWALFSTDKRSVTQEINNQDAVSDTTPFSFSSKHATIEKNEISILQNLRKWANQYFSSYSVISSDMYTALNKAQAQKGDFDVVAKILQVHELDEYTNELKLKDASGQVFYTLSLKLKFPHVRTGEVVRIRSATYDETSTQKKVLILSHYSNIITFIQSSKLAKELRAKIQDDHSVEVASLKKNVSLNAVVLTEVDKKHAALPSTSLQDLFHHADSDKELQAQDTFRTQFYVTKIEPSDVKEWVKGYDRKTKKSSSLKGASGKGDNIFQVQFLVKDASTQLNNNTYRVLLYTQDGLGANFFNVKADNLHKNADARKKLEDSAELLTKFNSYVDAVVERRNGFYLIKDTKLIY: 14
+counter deletion: 1
+msa row size :20
+HSSP_Database/Train_AdjustIndex/MSA/1PUF_A.fasta.msa
+Skip 1M5X : TLQPTEAAYIAGFLDGDGSIYAKLIPRPDYKDIKYQVSLAISFIQRKDKFPYLQDIYDQLGKRGNLRKDRGDGIADYTIIGSTHLSIILPDLVPYLRIKKKQANRILHIINLYPQAQKNPSKFLDLVKIVDDVQNLNKRADELKSTNYDRLLEEFLKAGKI: 20
+counter deletion: 64
+msa row size :2438
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1PUF
+Null matrix was calculated: 1PUF
+Null matrix 2 was calculated: 1PUF
+HSSP_Database/Train_AdjustIndex/MSA/1T2K_D.fasta.msa
+counter deletion: 74
+msa row size :648
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1T2K
+Null matrix was calculated: 1T2K
+Null matrix 2 was calculated: 1T2K
+HSSP_Database/Train_AdjustIndex/MSA/1Z63_A.fasta.msa
+counter deletion: 0
+msa row size :583
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1Z63
+Null matrix was calculated: 1Z63
+Null matrix 2 was calculated: 1Z63
+HSSP_Database/Train_AdjustIndex/MSA/2DDG_A.fasta.msa
+counter deletion: 5
+msa row size :706
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2DDG
+Null matrix was calculated: 2DDG
+Null matrix 2 was calculated: 2DDG
+HSSP_Database/Train_AdjustIndex/MSA/2JEA_I.fasta.msa
+counter deletion: 11
+msa row size :106
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2JEA
+Null matrix was calculated: 2JEA
+Null matrix 2 was calculated: 2JEA
+HSSP_Database/Train_AdjustIndex/MSA/1DNK_A.fasta.msa
+counter deletion: 6
+msa row size :138
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1DNK
+Null matrix was calculated: 1DNK
+Null matrix 2 was calculated: 1DNK
+HSSP_Database/Train_AdjustIndex/MSA/1HAO_H.fasta.msa
+counter deletion: 26
+msa row size :595
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1HAO
+Null matrix was calculated: 1HAO
+Null matrix 2 was calculated: 1HAO
+HSSP_Database/Train_AdjustIndex/MSA/1JB7_B.fasta.msa
+counter deletion: 1
+msa row size :14
+HSSP_Database/Train_AdjustIndex/MSA/1MDM_A.fasta.msa
+Skip 1JB7 : QQQSAFKQLYTELFNNEGDFSKVSSNLKKPLKCYVKESYPHFLVTDGYFFVAPYFTKEAVNEFHAKFPNVNIVDLTDKVIVINNWSLELRRVNSAEVFTSYANLEARLIVHSFKPNLQERLNPTRYPVNLFRDDEFKTTIQHFRHTALQAAINKTVKGDNLVDISKVADAAGKKGKVDAGIVKASASKGDEFSDFSFKEGNTATLKIADIFVQEKG: 14
+counter deletion: 24
+msa row size :86
+HSSP_Database/Train_AdjustIndex/MSA/1PUF_B.fasta.msa
+Skip 1MDM : GVNQLGGVFVNGRPLPDVVRQRIVELAHQGVRPCDISRQLRVSHGCVSKILGRYYETGSIKPGVIGGSKPKVATPKVVEKIAEYKRQNPTMFAWEIRDRLLAERVCDNDTVPSVSSINRIIRTK: 86
+counter deletion: 112
+msa row size :107
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1PUF
+Null matrix was calculated: 1PUF
+Null matrix 2 was calculated: 1PUF
+HSSP_Database/Train_AdjustIndex/MSA/1T38_A.fasta.msa
+counter deletion: 11
+msa row size :1074
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1T38
+Null matrix was calculated: 1T38
+Null matrix 2 was calculated: 1T38
+HSSP_Database/Train_AdjustIndex/MSA/1Z9C_C.fasta.msa
+counter deletion: 10
+msa row size :2492
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1Z9C
+Null matrix was calculated: 1Z9C
+Null matrix 2 was calculated: 1Z9C
+HSSP_Database/Train_AdjustIndex/MSA/2DGC_A.fasta.msa
+counter deletion: 17
+msa row size :954
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2DGC
+Null matrix was calculated: 2DGC
+Null matrix 2 was calculated: 2DGC
+HSSP_Database/Train_AdjustIndex/MSA/2NLL_A.fasta.msa
+counter deletion: 11
+msa row size :190
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2NLL
+Null matrix was calculated: 2NLL
+Null matrix 2 was calculated: 2NLL
+HSSP_Database/Train_AdjustIndex/MSA/1DP7_P.fasta.msa
+counter deletion: 61
+msa row size :727
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1DP7
+Null matrix was calculated: 1DP7
+Null matrix 2 was calculated: 1DP7
+HSSP_Database/Train_AdjustIndex/MSA/1HBX_E.fasta.msa
+counter deletion: 75
+msa row size :2427
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1HBX
+Null matrix was calculated: 1HBX
+Null matrix 2 was calculated: 1HBX
+HSSP_Database/Train_AdjustIndex/MSA/1JE8_E.fasta.msa
+counter deletion: 349
+msa row size :2153
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1JE8
+Null matrix was calculated: 1JE8
+Null matrix 2 was calculated: 1JE8
+HSSP_Database/Train_AdjustIndex/MSA/1MDY_A.fasta.msa
+counter deletion: 40
+msa row size :457
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1MDY
+Null matrix was calculated: 1MDY
+Null matrix 2 was calculated: 1MDY
+HSSP_Database/Train_AdjustIndex/MSA/1PV4_A.fasta.msa
+counter deletion: 720
+msa row size :1782
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1PV4
+Null matrix was calculated: 1PV4
+Null matrix 2 was calculated: 1PV4
+HSSP_Database/Train_AdjustIndex/MSA/1TAU_A.fasta.msa
+counter deletion: 0
+msa row size :2501
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1TAU
+Null matrix was calculated: 1TAU
+Null matrix 2 was calculated: 1TAU
+HSSP_Database/Train_AdjustIndex/MSA/1ZGW_A.fasta.msa
+counter deletion: 749
+msa row size :1753
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1ZGW
+Null matrix was calculated: 1ZGW
+Null matrix 2 was calculated: 1ZGW
+HSSP_Database/Train_AdjustIndex/MSA/2DPI_A.fasta.msa
+counter deletion: 19
+msa row size :100
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2DPI
+Null matrix was calculated: 2DPI
+Null matrix 2 was calculated: 2DPI
+HSSP_Database/Train_AdjustIndex/MSA/2NOB_A.fasta.msa
+counter deletion: 24
+msa row size :73
+HSSP_Database/Train_AdjustIndex/MSA/1AOI_D.fasta.msa
+Skip 2NOB : SEFGHRTLASTPALWASIPCPRSELRLDLVLPSGQSFRWREQSPAHWSGVLADQVWTLTQTEEQLHCTVYRSQASRPTPDELEAVRKYFQLDVTLAQLYHHWGSVDSHFQEVAQKFQGVRLLRQDPIECLFSFICSSCNNIARITGMVERLCQAFGPRLIQLDDVTYHGFPSLQALAGPEVEAHLRKLGLGYRARYVSASARAILEEQGGLAWLQQLRESSYEEAHKALCILPGVGTQVADCICLMALDKPQAVPVDVAMWHIAQRDYSWHPTTSQAKGPSPQTNKELGNFFRSLWGPYAGWAQAVLFSADLRQ: 73
+counter deletion: 555
+msa row size :1129
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1AOI
+Null matrix was calculated: 1AOI
+Null matrix 2 was calculated: 1AOI
+HSSP_Database/Train_AdjustIndex/MSA/1DSZ_A.fasta.msa
+counter deletion: 27
+msa row size :276
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1DSZ
+Null matrix was calculated: 1DSZ
+Null matrix 2 was calculated: 1DSZ
+HSSP_Database/Train_AdjustIndex/MSA/1HBX_G.fasta.msa
+counter deletion: 7
+msa row size :107
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1HBX
+Null matrix was calculated: 1HBX
+Null matrix 2 was calculated: 1HBX
+HSSP_Database/Train_AdjustIndex/MSA/1JEY_A.fasta.msa
+counter deletion: 21
+msa row size :110
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1JEY
+Null matrix was calculated: 1JEY
+Null matrix 2 was calculated: 1JEY
+HSSP_Database/Train_AdjustIndex/MSA/1MJE_A.fasta.msa
+counter deletion: 3
+msa row size :75
+HSSP_Database/Train_AdjustIndex/MSA/1PYI_A.fasta.msa
+counter deletion: 8
+msa row size :244
+Finish calculating indicator and null pair index
+Skip 1MJE : KDLMSSLQSARDLQDMRIKNKERRHLRLQPGSLYLTKSSTLPRISLQAAVGDRAPSACSPKQLYIYGVSKECINVNSKNAEYFQFDIQDHFGKEDLCAGKGFQLADGGWLIPSNDGKAGKEEFYRALCDTPGVDPKLISSIWVANHYRWIVWKLAAMEFAFPKEFANRCLNPERVLLQLKYRYDVEIDNSRRSALKKILERDDTAAKTLVLCISDIVDTIELTDGWYAVRAQLDPPLMALVKSGKLTVGQKIITQGAELVGSPDACAPLEAPDSLRLKISANSTRPARWHSRLGFFRDPRPFPLPLSSLFSDGGNVGCVDIIVQRVYPLQWVEKTVSGLYIFRSEREEEKEALRFAEAQQKKLEALFTKVHTLSRDVTTVWKLRVTSYKKKEKSALLSIWRPSSDLSSLLTEGKRYRIYHLAVSKSKSKFERPSIQLTATKRTQYQQLPVSSETLLQVYQPRESLHFSRLSDPAFQPPCSEVDVVGVVVSVVKPIGLAPLVYLSDECLNLLVVKFGIDLNEDIKPRVLIAASNLQCQPESTSGVPTLFACHFSIFSASPKEAYFQEKVNNLKHAIENIDTFYKEAEKKLIHVLEGDSPKW: 75
+Finish retrieved Column pair
+Signal matrix was calculated: 1PYI
+Null matrix was calculated: 1PYI
+Null matrix 2 was calculated: 1PYI
+HSSP_Database/Train_AdjustIndex/MSA/1TEZ_A.fasta.msa
+counter deletion: 2
+msa row size :2500
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1TEZ
+Null matrix was calculated: 1TEZ
+Null matrix 2 was calculated: 1TEZ
+HSSP_Database/Train_AdjustIndex/MSA/1ZLK_A.fasta.msa
+counter deletion: 5
+msa row size :2497
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1ZLK
+Null matrix was calculated: 1ZLK
+Null matrix 2 was calculated: 1ZLK
+HSSP_Database/Train_AdjustIndex/MSA/2DRP_B.fasta.msa
+counter deletion: 8
+msa row size :600
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2DRP
+Null matrix was calculated: 2DRP
+Null matrix 2 was calculated: 2DRP
+HSSP_Database/Train_AdjustIndex/MSA/2NP2_A.fasta.msa
+counter deletion: 66
+msa row size :2153
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2NP2
+Null matrix was calculated: 2NP2
+Null matrix 2 was calculated: 2NP2
+HSSP_Database/Train_AdjustIndex/MSA/1AV6_A.fasta.msa
+counter deletion: 35
+msa row size :34
+HSSP_Database/Train_AdjustIndex/MSA/1DUX_C.fasta.msa
+Skip 1AV6 : VVSLDKPFMYFEEIDNELDYEPESANEVAKKLPYQGQLKLLLGELFFLSKLQRHGILDGATVVYIGSAPGTHIRYLRDHFYNLGVIIKWMLIDGRHHDPILNGLRDVTLVTRFVDEEYLRSIKKQLHPSKIILISDVRSPSTADLLSNYALQNVMISILNPVASSLKWRCPFPDQWIKDFYIPHGNKMLQPFAPSYSAEMRLLSIYTGENMRLTRVTKSDAVNYEKKMYYLNKIVRNKVVVNFDYPNQEYDYFHMYFMLRTVYCNKTFPTTKAKVLFLQQSIFRFLNIP: 34
+counter deletion: 5
+msa row size :29
+HSSP_Database/Train_AdjustIndex/MSA/1HHT_P.fasta.msa
+Skip 1DUX : VTLWQFLLQLLREQGNGHIISWTSRDGGEFKLVDAEEVARLWGLRKNKTNMNYDKLSRALRYYYDKNIIRKVSGQKFVYKFVSYPE: 29
+counter deletion: 10
+msa row size :3
+HSSP_Database/Train_AdjustIndex/MSA/1JEY_B.fasta.msa
+counter deletion: 11
+msa row size :77
+Skip 1HHT : PRRAPAFPLSDIKAQMLFANNIKAQQASKRSFKEGAIETYEGLLSVDPRFLSFKNELSRYLTDHFPANVDEYGRVYGNGVRTNFFGMRHMNGFPMIPATWPLASNLKKRADADLADGPVSERDNLLFRAAVRLMFSDLEPVPLKIRKGSSTCIPYFSNDMGTKIEIAERALEKAEEAGNLMLQGKFDDAYQLHQMGGAYYVVYRAQSTDAITLDPKTGKFVSKDRMVADFEYAVTGGEQGSLFAASKDASRLKEQYGIDVPDGFFCERRRTAMGGPFALNAPIMAVAQPVRNKIYSKYAYTFHHTTRLNKEEKVKEWSLCVATDVSDHDTFWPGWLRDLICDELLNMGYAPWWVKLFETSLKLPVYVGAPAPEQGHTLLGDPSNPDLEVGLSSGQGATDLMGTLLMSITYLVMQLDHTAPHLNSRIKDMPSACRFLDSYWQGHEEIRQISKSDDAMLGWTKGRALVGGHRLFEMLKEGKVNPSPYMKISYEHGGAFLGDILLYDSRREPGSAIFVGNINSMLNNQFSPEYGVQSGVRDRSKRKRPFPGLAWASMKDTYGACPIYSDVLEAIERCWWNAFGESYRAYREDMLKRDTLELSRYVASMARQAGLAELTPIDLEVLADPNKLQYKWTEADVSANIHEVLMHGVSVEKTERFLRSVMPR: 3
+HSSP_Database/Train_AdjustIndex/MSA/1MJE_B.fasta.msa
+counter deletion: 1
+msa row size :138
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Skip 1JEY : NKAAVVLCMDVGFTMSNSIPGIESPFEQAKKVITMFVQRQVFAENKDEIALVLFGTDGTDNPLSGGDQYQNITVHRHLMLPDFDLLEDIESKIQPGSQQADFLDALIVSMDVIQHETIGKKFEKRHIEIFTDLSSRFSKSQLDIIIHSLKKCDISLQFFLPFSLGGPFRLGGHGPSFPLKGITEQQKEGLEIVKMVMISLEGEDGLDEIYSFSESLRKLCVFKKIERHSIHWPCRLTIGSNLSIRIAAYKSILQERVKKTWTVVDAKTLKKEDIQKETVYCLNDDDETEVLKEDIIQGFRYGSDIVPFSKVDEEQMKYKSEGKCFSVLGFCKSSQVQRRFFMGNQVLKVFAARDDEAAAVALSSLIHALDDLDMVAIVRYAYDKRANPQVGVAFPHIKHNYECLVYVQLPFMEDLRQYMFSSLKNSKKYAPTEAQLNAVDALIDSMSLAKKDEKTDTLEDLFPTTKIPNPRFQRLFQCLLHRALHPREPLPPIQQHIWNMLNPPAEVTTKSQIPLSKIKTLFPLIEAKKK: 77
+Signal matrix was calculated: 1MJE
+Null matrix was calculated: 1MJE
+Null matrix 2 was calculated: 1MJE
+HSSP_Database/Train_AdjustIndex/MSA/1Q0T_A.fasta.msa
+counter deletion: 4
+msa row size :257
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1Q0T
+Null matrix was calculated: 1Q0T
+Null matrix 2 was calculated: 1Q0T
+HSSP_Database/Train_AdjustIndex/MSA/1TF3_A.fasta.msa
+counter deletion: 2
+msa row size :1265
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1TF3
+Null matrix was calculated: 1TF3
+Null matrix 2 was calculated: 1TF3
+HSSP_Database/Train_AdjustIndex/MSA/1ZME_C.fasta.msa
+counter deletion: 9
+msa row size :230
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1ZME
+Null matrix was calculated: 1ZME
+Null matrix 2 was calculated: 1ZME
+HSSP_Database/Train_AdjustIndex/MSA/2DWL_A.fasta.msa
+counter deletion: 581
+msa row size :1921
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2DWL
+Null matrix was calculated: 2DWL
+Null matrix 2 was calculated: 2DWL
+HSSP_Database/Train_AdjustIndex/MSA/2NRA_C.fasta.msa
+counter deletion: 4
+msa row size :88
+HSSP_Database/Train_AdjustIndex/MSA/1AWC_A.fasta.msa
+Skip 2NRA : VNKKTKIRHRNELNHTLAQLPLPAKRVMYMALALIDSKEPLERGRVFKIRAEDLAALAKITPSLAYRQLKEGGKLLGASKISLRGDDIIALAKELNSEELDLNIIEWIAYSPDEGYLSLKFTRTIEPYISSLIGKKNKFTTQLLTASLRLSSQYSSSLYQLIRKHYSNFKKKNYFIISVDELKEELIAYTFDKDGNIEYKYPDFPIFKRDVLNKAIAEIKKKTEISFVGFTVHEKEGRKISKLKFEFVVDED: 88
+counter deletion: 66
+msa row size :56
+HSSP_Database/Train_AdjustIndex/MSA/1ECR_A.fasta.msa
+Skip 1AWC : IQLWQFLLELLTDKDARDCISWVGDEGEFKLNQPELVAQKWGQRKNKPTMNYEKLSRALRYYYDGDMICKVQGKRFVYKFVCDLKTLIGYSAAELNRLVIECEQKKLARM: 56
+counter deletion: 896
+msa row size :704
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1ECR
+Null matrix was calculated: 1ECR
+Null matrix 2 was calculated: 1ECR
+HSSP_Database/Train_AdjustIndex/MSA/1HJB_D.fasta.msa
+counter deletion: 46
+msa row size :837
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1HJB
+Null matrix was calculated: 1HJB
+Null matrix 2 was calculated: 1HJB
+HSSP_Database/Train_AdjustIndex/MSA/1JFI_A.fasta.msa
+counter deletion: 44
+msa row size :338
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1JFI
+Null matrix was calculated: 1JFI
+Null matrix 2 was calculated: 1JFI
+HSSP_Database/Train_AdjustIndex/MSA/1MM8_A.fasta.msa
+counter deletion: 13
+msa row size :143
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1MM8
+Null matrix was calculated: 1MM8
+Null matrix 2 was calculated: 1MM8
+HSSP_Database/Train_AdjustIndex/MSA/1Q9Y_A.fasta.msa
+counter deletion: 1
+msa row size :65
+HSSP_Database/Train_AdjustIndex/MSA/1TF6_D.fasta.msa
+counter deletion: 2
+msa row size :991
+Skip 1Q9Y : HGSMKEFYLTVEQIGDSIFERYIDSNGRERTREVEYKPSLFAHCPESQATKYFDIYGKPCTRKLFANMRDASQWIKRMEDIGLEALGMDDFKLAYLSDTYNYEIKYDHTKIRVANFDIEVTSPDGFPEPSQAKHPIDAITHYDSIDDRFYVFDLLNSPYGNVEEWSIEIAAKLQEQGGDEVPSEIIDKIIYMPFDNEKELLMEYLNFWQQKTPVILTGWNVESFAIPYVYNRIKNIFGESTAKRLSPHRKTRVKVIENMYGSREIITLFGISVLDYIDLYKKFSFTNQPSYSLDYISEFELNVGKLKYDGPISKLRESNHQRYISYNIIAVYRVLQIDAKRQFINLSLDMGYYAKIQIQSVFSPIKTWDAIIFNSLKEQNKVIPQGRSHPVQPYPGAFVKEPIPNRYKYVMSFDLTSLYPSIIRQVNISPETIAGTFKVAPLHDYINAVAERPSDVYSCSPNGMMYYKDRDGVVPTEITKVFNQRKEHKGYMLAAQRNGEIIKEALHNPNLSVDEPLDVDYRFDFSDEIKEKIKKLSAKSLNEMLFRAQRTEVAGMTAQINRKLLINSLYGALGNVWFRYYDLRNATAITTFGQMALQWIERKVNEYLNEVCGTEGEAFVLYGDTDSIYVSADKIIDKVGESKFRDTNHWVDFLDKFARERMEPAIDRGFREMCEYMNNKQHLMFMDREAIAGPPLGSKGIGGFWTGKKRYALNVWDMEGTRYAEPKLKIMGLETQKSSTPKAVQKALKECIRRMLQEGEESLQEYFKEFEKEFRQLNYISIASVSSANNIAKYDVGGFPGPKCPFHIRGILTYNRAIKGNIDAPQVVEGEKVYVLPLREGNPFGDKCIAWPSGTEITDLIKDDVLHWMDYTVLLEKTFIKPLEGFTSAAKLDYEKKASLFD: 65
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1TF6
+Null matrix was calculated: 1TF6
+Null matrix 2 was calculated: 1TF6
+HSSP_Database/Train_AdjustIndex/MSA/1ZQ3_P.fasta.msa
+counter deletion: 20
+msa row size :2482
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1ZQ3
+Null matrix was calculated: 1ZQ3
+Null matrix 2 was calculated: 1ZQ3
+HSSP_Database/Train_AdjustIndex/MSA/2ER8_A.fasta.msa
+counter deletion: 12
+msa row size :306
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2ER8
+Null matrix was calculated: 2ER8
+Null matrix 2 was calculated: 2ER8
+HSSP_Database/Train_AdjustIndex/MSA/2NTC_A.fasta.msa
+counter deletion: 20
+msa row size :381
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2NTC
+Null matrix was calculated: 2NTC
+Null matrix 2 was calculated: 2NTC
+HSSP_Database/Train_AdjustIndex/MSA/1AWC_B.fasta.msa
+counter deletion: 33
+msa row size :755
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1AWC
+Null matrix was calculated: 1AWC
+Null matrix 2 was calculated: 1AWC
+HSSP_Database/Train_AdjustIndex/MSA/1EMH_A.fasta.msa
+counter deletion: 14
+msa row size :2488
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1EMH
+Null matrix was calculated: 1EMH
+Null matrix 2 was calculated: 1EMH
+HSSP_Database/Train_AdjustIndex/MSA/1HLO_A.fasta.msa
+counter deletion: 30
+msa row size :132
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1HLO
+Null matrix was calculated: 1HLO
+Null matrix 2 was calculated: 1HLO
+HSSP_Database/Train_AdjustIndex/MSA/1JFI_B.fasta.msa
+counter deletion: 48
+msa row size :272
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1JFI
+Null matrix was calculated: 1JFI
+Null matrix 2 was calculated: 1JFI
+HSSP_Database/Train_AdjustIndex/MSA/1MNM_A.fasta.msa
+counter deletion: 31
+msa row size :2471
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1MNM
+Null matrix was calculated: 1MNM
+Null matrix 2 was calculated: 1MNM
+HSSP_Database/Train_AdjustIndex/MSA/1QAI_A.fasta.msa
+counter deletion: 9
+msa row size :42
+HSSP_Database/Train_AdjustIndex/MSA/1TQE_P.fasta.msa
+Skip 1QAI : TWLSDFPQAWAETGGMGLAVRQAPLIIPLKATSTPVSIKQYPMSQEARLGIKPHIQRLLDQGILVPCQSPWNTPLLPVKKPGTNDYRPVQDLREVNKRVEDIHPTVPNPYNLLSGLPPSHQWYTVLDLKDAFFCLRLHPTSQPLFAFEWRDPEMGISGQLTWTRLPQGFKNSPTLFDEALHRDLADFRIQHPDLILLQYVDDLLLAATSELDCQQGTRALLQTLGNLGYRASAKKAQICQKQVKYLGYLLK: 42
+counter deletion: 45
+msa row size :2457
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1TQE
+Null matrix was calculated: 1TQE
+Null matrix 2 was calculated: 1TQE
+HSSP_Database/Train_AdjustIndex/MSA/1ZS4_A.fasta.msa
+counter deletion: 63
+msa row size :226
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1ZS4
+Null matrix was calculated: 1ZS4
+Null matrix 2 was calculated: 1ZS4
+HSSP_Database/Train_AdjustIndex/MSA/2ES2_A.fasta.msa
+counter deletion: 5
+msa row size :2497
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2ES2
+Null matrix was calculated: 2ES2
+Null matrix 2 was calculated: 2ES2
+HSSP_Database/Train_AdjustIndex/MSA/2O4I_A.fasta.msa
+counter deletion: 1
+msa row size :74
+HSSP_Database/Train_AdjustIndex/MSA/1AZP_A.fasta.msa
+Skip 2O4I : GHMQTLIFLDLEATGLPSSRPEVTELCLLAVHRRALENTSISQGHPPPVPRPPRVVDKLSLCIAPGKACSPGASEITGLSKAELEVQGRQRFDDNLAILLRAFLQRQPQPCCLVAHNGDRYDFPLLQTELARLSTPSPLDGTFCVDSIAALKALEQASKSYSLGSIYTRLYWQAPTDSATAEGDVLTLLSICQWKPQALLQWVDEHARPFSTVKPMYG: 74
+counter deletion: 6
+msa row size :35
+HSSP_Database/Train_AdjustIndex/MSA/1EO3_A.fasta.msa
+Skip 1AZP : MVKVKFKYKGEEKEVDTSKIKKVWRVGKMVSFTYDDNGKTGRGAVSEKDAPKELLDMLARAEREKK: 35
+counter deletion: 2
+msa row size :56
+HSSP_Database/Train_AdjustIndex/MSA/1HLV_A.fasta.msa
+Skip 1EO3 : SLRSDLINALYDENQKYDVCGIISAEGKIYPLGSDTKVLSTIFELFSRPIINKIAEKHGYIVEEPKQQNHYPDFTLYKPSEPNKKIAIDIKTTYTNKENEKIKFTLGGYTSFIRNNTKNIVYPFDQYIAHWIIGYVYTRVATKSSLKTYNILNEIPKPYKGVKVFLQDKWVIAGDLAGSGNTTNIGSIHAHYKDFVEGKGIFDSEDEFLDYWRNYERTSQLRNDKYNNISEYRNWIYRGRK: 56
+counter deletion: 16
+msa row size :235
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1HLV
+Null matrix was calculated: 1HLV
+Null matrix 2 was calculated: 1HLV
+HSSP_Database/Train_AdjustIndex/MSA/1JMC_A.fasta.msa
+counter deletion: 44
+msa row size :494
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1JMC
+Null matrix was calculated: 1JMC
+Null matrix 2 was calculated: 1JMC
+HSSP_Database/Train_AdjustIndex/MSA/1MNM_C.fasta.msa
+counter deletion: 28
+msa row size :101
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1MNM
+Null matrix was calculated: 1MNM
+Null matrix 2 was calculated: 1MNM
+HSSP_Database/Train_AdjustIndex/MSA/1QBJ_C.fasta.msa
+counter deletion: 19
+msa row size :49
+HSSP_Database/Train_AdjustIndex/MSA/1TRO_A.fasta.msa
+Skip 1QBJ : SIYQDQEQRILKFLEELGEGKATTAHDLSGKLGTPKKEINRVLYSLAKKGKLQKEAGTPPLWKIAV: 49
+counter deletion: 907
+msa row size :1004
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1TRO
+Null matrix was calculated: 1TRO
+Null matrix 2 was calculated: 1TRO
+HSSP_Database/Train_AdjustIndex/MSA/1ZTG_B.fasta.msa
+counter deletion: 94
+msa row size :1576
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1ZTG
+Null matrix was calculated: 1ZTG
+Null matrix 2 was calculated: 1ZTG
+HSSP_Database/Train_AdjustIndex/MSA/2ETW_A.fasta.msa
+counter deletion: 13
+msa row size :38
+HSSP_Database/Train_AdjustIndex/MSA/2OAA_B.fasta.msa
+Skip 2ETW : VILTQLNEDGTTSNYFDKRKLKIAPRSTLQFKVGPPFELVRDYCPVVESHTGRTLDLRIIPRIDRGFDHIDEEWVGYKRNYFTLVSTFETANCDLDTFLKSSFDLLVEDSSVEGRLRVQYFAIKIKAKNDDDDTEINLVQHTAKRDKGPQFCPSVCPLVPSPLPKHQTIREASNVRNITKMKKYDSTFYLHRDHVNYEEYGVDSLLFSYPEDSIQKVARYERVQFASSISVKKPSQQNKHFSLHVILGAVVDPDPGIPYDELALKNGSKGMFVYLQEMKTPPLIIRGRSPSNYASSQ: 38
+counter deletion: 1
+msa row size :22
+HSSP_Database/Train_AdjustIndex/MSA/1B2M_A.fasta.msa
+Skip 2OAA : KSMSEYLNLLKEAIQNVVDGGWHETKRKGNTGIGKTFEDLLEKEEDNLDAPDFHDIEIKTHETAAKSLLTLFTKSPTNPRGANTMLRNRYGKKDEYGNNILHQTVSGNRKTNSNSYNYDFKIDIDWESQVVRLEVFDKQDIMIDNSVYWSFDSLQNQLDKKLKYIAVISAESKIENEKKYYKYNSANLFTDLTVQSLCRGIENGDIKVDIRIGAYHSGKKKGKTHDHGTAFRINMEKLLEYGEVKVIV: 22
+counter deletion: 4
+msa row size :97
+Skip 1B2M : ACDYTCGSNCYSSSDVSTAQAAGYQLHEDGETVGSNSYPHKYNNYEGFDFSVSSPYYEWPILSSGDVYSGGSPGADRVVFNENNQLAGVITHTGASGNNFVECT: 97
+HSSP_Database/Train_AdjustIndex/MSA/1HWT_D.fasta.msa
+counter deletion: 12
+msa row size :840
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1HWT
+Null matrix was calculated: 1HWT
+Null matrix 2 was calculated: 1HWT
+HSSP_Database/Train_AdjustIndex/MSA/1JNM_B.fasta.msa
+counter deletion: 69
+msa row size :1537
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1JNM
+Null matrix was calculated: 1JNM
+Null matrix 2 was calculated: 1JNM
+HSSP_Database/Train_AdjustIndex/MSA/1QN3_B.fasta.msa
+counter deletion: 60
+msa row size :412
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1QN3
+Null matrix was calculated: 1QN3
+Null matrix 2 was calculated: 1QN3
+HSSP_Database/Train_AdjustIndex/MSA/1TSR_A.fasta.msa
+counter deletion: 56
+msa row size :327
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1TSR
+Null matrix was calculated: 1TSR
+Null matrix 2 was calculated: 1TSR
+HSSP_Database/Train_AdjustIndex/MSA/1ZX4_A.fasta.msa
+counter deletion: 60
+msa row size :471
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1ZX4
+Null matrix was calculated: 1ZX4
+Null matrix 2 was calculated: 1ZX4
+HSSP_Database/Train_AdjustIndex/MSA/2EX5_A.fasta.msa
+counter deletion: 1
+msa row size :10
+HSSP_Database/Train_AdjustIndex/MSA/2ODI_A.fasta.msa
+Skip 2EX5 : ILKPGEKLPQDKLEELKKINDAVKKTKNFSKYLIDLRKLFQIDEVQVTSESKLFLAGFLEGEASLNISTKKLATSKFGLVVDPEFNVTRHVNGVKVLYLALEVFKTGRIRHKSGSNATLVLTIDNRQSLEEKVIPFYEQYVVAFSSPEKVKRVANFKALLELFNNDAHQDLEQLVNKILPIWDQMRKQQGQSNEGFPNLEAAQDFAR: 10
+counter deletion: 1
+msa row size :3
+HSSP_Database/Train_AdjustIndex/MSA/1B3T_A.fasta.msa
+Skip 2ODI : MKIWSKEEVVNKLHEIKNKGYLSVPTDMFRTDDGVVGQILERQFGVQENNITLGDLGEFELKGMRNRKAKSNLTLFHKKPVAGQTVIQIFNRFGYVKPSSRNPEVMKKKLFTTIKGGRLNNLGLTLNAKHASEINLYYQDEYLSTWDLNLSKIEKLVLVFAETIGRANSPEEQFHFTKAYMLTEINDITSLINDGVLVMDLCIDQDLSKSKGPHDRGPHLRIPISKLDKLYRNIERLL: 3
+counter deletion: 24
+msa row size :11
+Skip 1B3T : KGGWFGKHRGQGGSNPKFENIAEGLRALLARSHVERTTDEGTWVAGVFVYGGSKTSLYNLRRGTALAIPQCRLTPLSRLPFGMAPGPGPQPGPLRESIVCYFMVFLQTHIFAEVLKDAIKDLVMTKPAPTCNIRVTVCSFDDGVDLP: 11
+HSSP_Database/Train_AdjustIndex/MSA/1I3J_A.fasta.msa
+counter deletion: 4
+msa row size :3
+HSSP_Database/Train_AdjustIndex/MSA/1JT0_A.fasta.msa
+Skip 1I3J : KFCKCGVRIQTSAYTCSKCRNRSGENNSFFNHKHSDITKSKISEKMKGKKPSNIKKISCDGVIFDCAADAARHFKISSGLVTYRVKSDKWNWFYIN: 3
+counter deletion: 59
+msa row size :41
+HSSP_Database/Train_AdjustIndex/MSA/1MSE_C.fasta.msa
+Skip 1JT0 : NLKDKILGVAKELFIKNGYNATTTGEIVKLSESSKGNLYYHFKTKENLFLEILNIEESKWQEQWKKEQIKAKTNREKFYLYNELSLTTEYYYPLQNAIIEFYTEYYKTNSINEKMNKLENKYIDAYHVIFKEGNLNGEWSINDVNAVSKIAANAVNGIVTFTHEQNINERIKLMNKFSQIFLNGLSKH: 41
+counter deletion: 3
+msa row size :110
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1MSE
+Null matrix was calculated: 1MSE
+Null matrix 2 was calculated: 1MSE
+HSSP_Database/Train_AdjustIndex/MSA/1QPI_A.fasta.msa
+counter deletion: 18
+msa row size :646
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1QPI
+Null matrix was calculated: 1QPI
+Null matrix 2 was calculated: 1QPI
+HSSP_Database/Train_AdjustIndex/MSA/1TTU_A.fasta.msa
+counter deletion: 2
+msa row size :165
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1TTU
+Null matrix was calculated: 1TTU
+Null matrix 2 was calculated: 1TTU
+HSSP_Database/Train_AdjustIndex/MSA/1ZZI_A.fasta.msa
+counter deletion: 82
+msa row size :243
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1ZZI
+Null matrix was calculated: 1ZZI
+Null matrix 2 was calculated: 1ZZI
+HSSP_Database/Train_AdjustIndex/MSA/2EZV_B.fasta.msa
+counter deletion: 1
+msa row size :3
+HSSP_Database/Train_AdjustIndex/MSA/2OFI_A.fasta.msa
+Skip 2EZV : MHQDYRELSLDELESVEKQTLRTIVQALQQYSKEAKSIFETTAADSSGEVIVLAEDITQYALEVAETYPINRRFAGFIDYKRVRWLPSPHGLLPQVLLVDAKASTEKNRDTLQRSQLPMDAEFRNTSSGEVVTMEAGVIPHLMLQSANDGVLPAVTTSIFVHFYYRELKDVEGRYRELKSIYVLSLPHARLKQRYNPDPDTSFFGAGKHSPARGEVARIRVYFDRLKEACPWRLQELHYSADSEYTQPRWRDLNDAGHEVTKEFLFLER: 3
+counter deletion: 158
+msa row size :2344
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2OFI
+Null matrix was calculated: 2OFI
+Null matrix 2 was calculated: 2OFI
+HSSP_Database/Train_AdjustIndex/MSA/1B72_A.fasta.msa
+counter deletion: 37
+msa row size :709
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1B72
+Null matrix was calculated: 1B72
+Null matrix 2 was calculated: 1B72
+HSSP_Database/Train_AdjustIndex/MSA/1EWN_A.fasta.msa
+counter deletion: 11
+msa row size :1039
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1EWN
+Null matrix was calculated: 1EWN
+Null matrix 2 was calculated: 1EWN
+HSSP_Database/Train_AdjustIndex/MSA/1I6H_A.fasta.msa
+counter deletion: 15
+msa row size :494
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1I6H
+Null matrix was calculated: 1I6H
+Null matrix 2 was calculated: 1I6H
+HSSP_Database/Train_AdjustIndex/MSA/1K61_A.fasta.msa
+counter deletion: 28
+msa row size :489
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1K61
+Null matrix was calculated: 1K61
+Null matrix 2 was calculated: 1K61
+HSSP_Database/Train_AdjustIndex/MSA/1MTL_B.fasta.msa
+counter deletion: 911
+msa row size :947
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1MTL
+Null matrix was calculated: 1MTL
+Null matrix 2 was calculated: 1MTL
+HSSP_Database/Train_AdjustIndex/MSA/1QRV_A.fasta.msa
+counter deletion: 14
+msa row size :1396
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1QRV
+Null matrix was calculated: 1QRV
+Null matrix 2 was calculated: 1QRV
+HSSP_Database/Train_AdjustIndex/MSA/1U1K_A.fasta.msa
+counter deletion: 128
+msa row size :406
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1U1K
+Null matrix was calculated: 1U1K
+Null matrix 2 was calculated: 1U1K
+HSSP_Database/Train_AdjustIndex/MSA/2A07_J.fasta.msa
+counter deletion: 5
+msa row size :293
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2A07
+Null matrix was calculated: 2A07
+Null matrix 2 was calculated: 2A07
+HSSP_Database/Train_AdjustIndex/MSA/2F8N_K.fasta.msa
+counter deletion: 794
+msa row size :904
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2F8N
+Null matrix was calculated: 2F8N
+Null matrix 2 was calculated: 2F8N
+HSSP_Database/Train_AdjustIndex/MSA/2OH2_B.fasta.msa
+counter deletion: 32
+msa row size :90
+HSSP_Database/Train_AdjustIndex/MSA/1B72_B.fasta.msa
+counter deletion: 103
+msa row size :84
+HSSP_Database/Train_AdjustIndex/MSA/1EXI_A.fasta.msa
+Skip 2OH2 : LNDNKAGMEGLDKEKINKIIMEATKGSRFYGNELKKEKQVNQRIENMMQQKAQITSQQLRKAQLQVDRFAMELEQSRNLSNTIVHIDMDAFYAAVEMRDNPELKDKPIAVGSMSMLSTSNYHARRFGVRAAMPGFIAKRLCPQLIIVPPNFDKYRAVSKEVKEILADYDPNFMAMSLDEAYLNITKHLEERQNWPEDKRRYFIKNSVVFGTSAQEVVKEIRFRIEQKTTLTASAGIAPNTMLAKVCSDKNKPNGQYQILPNRQAVMDFIKDLPIRKVSGIGKVTEKMLKALGIITCTELYQQRALLSLLFSETSWHYFLHISLGLGSTHLTRDGERKSMSVERTFSEINKAEEQYSLCQELCSELAQDLQKERLKGRTVTIKLKNVNFEVKTRASTVSSVVSTAEEIFAIAKELLKTEIDADFPHPLRLRLMGVRISSFP: 90
+counter deletion: 18
+msa row size :25
+HSSP_Database/Train_AdjustIndex/MSA/1I6H_B.fasta.msa
+Skip 1B72 : RKRRNFNKQATEILNEYFYSHLSNPYPSEEAKEELAKKCGITVSQVSNWFGNKRIRYKKNIGKFQEEANIYAA: 84
+Skip 1EXI : ESYYSIGEVSKLANVSIKALRYYDKIDLFKPAYVDPDTSYRYYTDSQLIHLDLIKSLKYIGTPLEEMKKAQDLEMEELFAFYTEQERQIREKLDFLSALEQTISLVKKRMKRQMEYPALGEVFVLDEEEIRIIQTEAEGIGPENVLNASYSKLKKFIESADGFTNNSYGATFSFQPYTSIDEMTYRHIFTPVLTNKQISSITPDMEITTIPKGRYACIAYNFSPEHYFLNLQKLIKYIADRQLTVVSDVYELIIPIHYSPKKQEEYRVEMKIRIA: 25
+counter deletion: 17
+msa row size :317
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1I6H
+Null matrix was calculated: 1I6H
+Null matrix 2 was calculated: 1I6H
+HSSP_Database/Train_AdjustIndex/MSA/1K6O_B.fasta.msa
+counter deletion: 96
+msa row size :2299
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1K6O
+Null matrix was calculated: 1K6O
+Null matrix 2 was calculated: 1K6O
+HSSP_Database/Train_AdjustIndex/MSA/1MVM_A.fasta.msa
+counter deletion: 7
+msa row size :647
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1MVM
+Null matrix was calculated: 1MVM
+Null matrix 2 was calculated: 1MVM
+HSSP_Database/Train_AdjustIndex/MSA/1QUM_A.fasta.msa
+counter deletion: 604
+msa row size :1898
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1QUM
+Null matrix was calculated: 1QUM
+Null matrix 2 was calculated: 1QUM
+HSSP_Database/Train_AdjustIndex/MSA/1U3E_M.fasta.msa
+counter deletion: 2
+msa row size :93
+HSSP_Database/Train_AdjustIndex/MSA/2A0I_A.fasta.msa
+Skip 1U3E : MEWKDIKGYEGHYQVSNTGEVYSIKSGKTLKHQIPKDGYHRIGLFKGGKGKTFQVHRLVAIHFCEGYEEGLVVDHKDGNKDNNLSTNLRWVTQKINVENQMSRGTLNVSKAQQIAKIKNQKPIIVISPDGIEKEYPSTKCACEELGLTRGKVTDVLKGHRIHHKGYTFRYKLNG: 93
+counter deletion: 221
+msa row size :506
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2A0I
+Null matrix was calculated: 2A0I
+Null matrix 2 was calculated: 2A0I
+HSSP_Database/Train_AdjustIndex/MSA/2F8X_K.fasta.msa
+counter deletion: 22
+msa row size :589
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2F8X
+Null matrix was calculated: 2F8X
+Null matrix 2 was calculated: 2F8X
+HSSP_Database/Train_AdjustIndex/MSA/2OST_A.fasta.msa
+counter deletion: 6
+msa row size :4
+HSSP_Database/Train_AdjustIndex/MSA/1B8I_A.fasta.msa
+Skip 2OST : MGSTKLKGDIAQQAAIMRALKMGWGVLKPLGDRLSYDLVFDVEGILLKVQVKSSWKSEKTGNYVVDNRRTRTNRRNIVRSPYRGNDFDFAVAYVEELELFYVFPVDVFISYGSEIHLVETDKRQRKPRSFGYREAWHLILQKGAAQKE: 4
+counter deletion: 0
+msa row size :2501
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1B8I
+Null matrix was calculated: 1B8I
+Null matrix 2 was calculated: 1B8I
+HSSP_Database/Train_AdjustIndex/MSA/1EYG_A.fasta.msa
+counter deletion: 323
+msa row size :2179
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1EYG
+Null matrix was calculated: 1EYG
+Null matrix 2 was calculated: 1EYG
+HSSP_Database/Train_AdjustIndex/MSA/1I6H_C.fasta.msa
+counter deletion: 19
+msa row size :296
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1I6H
+Null matrix was calculated: 1I6H
+Null matrix 2 was calculated: 1I6H
+HSSP_Database/Train_AdjustIndex/MSA/1K78_A.fasta.msa
+counter deletion: 24
+msa row size :86
+HSSP_Database/Train_AdjustIndex/MSA/1MW8_X.fasta.msa
+Skip 1K78 : GVNQLGGVFVNGRPLPDVVRQRIVELAHQGVRPCDISRQLRVSHGCVSKILGRYYETGSIKPGVIGGSKPKVATPKVVEKIAEYKRQNPTMFAWEIRDRLLAERVCDNDTVPSVSSINRIIRTK: 86
+counter deletion: 657
+msa row size :1845
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1MW8
+Null matrix was calculated: 1MW8
+Null matrix 2 was calculated: 1MW8
+HSSP_Database/Train_AdjustIndex/MSA/1QZG_A.fasta.msa
+counter deletion: 1
+msa row size :3
+HSSP_Database/Train_AdjustIndex/MSA/1U78_A.fasta.msa
+Skip 1QZG : VIDSLQLNELLNAGEYKIGELTFQSIRSSQELQKKNTIVNLFGIVKDFTPSRQSLHGTKDWVTTVYLWDPTCDTSSIGLQIHLFSKQGNDLPVIKQVGQPLLLHQITLRSYRDRTQGLSKDQFRYALWPDFSSNSKDTLCPQPMPRLMKTGDKEEQFALLLNKIWDEQTN: 3
+counter deletion: 1
+msa row size :124
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1U78
+Null matrix was calculated: 1U78
+Null matrix 2 was calculated: 1U78
+HSSP_Database/Train_AdjustIndex/MSA/2A1R_A.fasta.msa
+counter deletion: 38
+msa row size :54
+Skip 2A1R : MEIIRSNFKSNLHKVYQAIEEADFFAIDGEFSGISDGPSVGFDTPEERYQKLKKHSMDFLLFQFGLCTFKYDYTDSKYITKSFNFYVFPKPFNRSSPDVKFVCQSSSIDFLASQGFDFNKVFRNGIPYLNQEEERQLRHAKEQEELNDAVGFSRVIHAIANSGKLVIGHNMLLDVMHTVHQFYCPLPADLSEFKEMTTCVFPRLLDTKLMASTQPFKDIINNTSLAELEKRLKETPFNPPKVESAEGFPSYQLHEAGYDAYITGLCFISMANYLGSFLSPPKIHVSARSKLIEPFFNKLF: 54
+HSSP_Database/Train_AdjustIndex/MSA/2F8X_M.fasta.msa
+Skip 2F8X : HSAVMERLRRRIELCRRHHSTCEARYEAVSPERLELERQHTFALHQRCIQAKAKR: 35
+counter deletion: 14
+msa row size :35
+HSSP_Database/Train_AdjustIndex/MSA/2OWO_A.fasta.msa
+counter deletion: 984
+msa row size :898
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2OWO
+Null matrix was calculated: 2OWO
+Null matrix 2 was calculated: 2OWO
+HSSP_Database/Train_AdjustIndex/MSA/1B8I_B.fasta.msa
+counter deletion: 132
+msa row size :800
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1B8I
+Null matrix was calculated: 1B8I
+Null matrix 2 was calculated: 1B8I
+HSSP_Database/Train_AdjustIndex/MSA/1EYU_A.fasta.msa
+counter deletion: 1
+msa row size :26
+Skip 1EYU : SHPDLNKLLELWPHIQEYQDLALKHGINDIFQDNGGKLLQVLLITGLTVLPGREGNDAVDNAGQEYELKSINIDLTKGFSTHHHMNPVIIAKYRQVPWIFAIYRGIAIEAIYRLEPKDLEFYYDKWERKWYSDGHKDINNPKIPVKYVMEHGTKIY: 26
+HSSP_Database/Train_AdjustIndex/MSA/1I6H_E.fasta.msa
+counter deletion: 21
+msa row size :359
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1I6H
+Null matrix was calculated: 1I6H
+Null matrix 2 was calculated: 1I6H
+HSSP_Database/Train_AdjustIndex/MSA/1K8G_C.fasta.msa
+counter deletion: 2
+msa row size :14
+HSSP_Database/Train_AdjustIndex/MSA/1NFK_A.fasta.msa
+Skip 1K8G : YEYVELAKASLTSAQPQHFYAVVIDATFPYKTNQERYICSLKIVDPTLYLKQQKGASDYATLVLYAKRFEDLPIIHRAGDIIRVHRATLRLYNGQRQFNANVFYSSSWALFSTDKRSVTQEINNQDAVSDTTPFSFSSKHATIEKNEISILQNLRKWANQYFSSYSVISSDMYTALNKAQAQKGDFDVVAKILQVHELDEYTNELKLKDASGQVFYTLSLKLKFPHVRTGEVVRIRSATYDETSTQKKVLILSHYSNIITFIQSSKLAKELRAKIQDD: 14
+counter deletion: 46
+msa row size :306
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1NFK
+Null matrix was calculated: 1NFK
+Null matrix 2 was calculated: 1NFK
+HSSP_Database/Train_AdjustIndex/MSA/1R0N_B.fasta.msa
+counter deletion: 3
+msa row size :68
+HSSP_Database/Train_AdjustIndex/MSA/1U8B_A.fasta.msa
+Skip 1R0N : ELCLVCGDRASGYHYNALTCEGCKGFFRRSVTKSAVYCCKFGRACEMDMYMRRKCQECRLKKCLAVGMRPECVVPENQCAMKRREK: 68
+counter deletion: 631
+msa row size :1871
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1U8B
+Null matrix was calculated: 1U8B
+Null matrix 2 was calculated: 1U8B
+HSSP_Database/Train_AdjustIndex/MSA/2A3V_B.fasta.msa
+counter deletion: 71
+msa row size :574
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2A3V
+Null matrix was calculated: 2A3V
+Null matrix 2 was calculated: 2A3V
+HSSP_Database/Train_AdjustIndex/MSA/2FD8_A.fasta.msa
+counter deletion: 950
+msa row size :1201
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2FD8
+Null matrix was calculated: 2FD8
+Null matrix 2 was calculated: 2FD8
+HSSP_Database/Train_AdjustIndex/MSA/2PJR_F.fasta.msa
+counter deletion: 8
+msa row size :1786
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2PJR
+Null matrix was calculated: 2PJR
+Null matrix 2 was calculated: 2PJR
+HSSP_Database/Train_AdjustIndex/MSA/1BDH_A.fasta.msa
+counter deletion: 253
+msa row size :2249
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1BDH
+Null matrix was calculated: 1BDH
+Null matrix 2 was calculated: 1BDH
+HSSP_Database/Train_AdjustIndex/MSA/1F0V_A.fasta.msa
+counter deletion: 12
+msa row size :655
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1F0V
+Null matrix was calculated: 1F0V
+Null matrix 2 was calculated: 1F0V
+HSSP_Database/Train_AdjustIndex/MSA/1I6H_F.fasta.msa
+Skip 1I6H : KAIPKDQRATTPYMTKYERARILGTRALQISMNAPVFVDLEGETDPLRIAMKELAEKKIPLVIRRYLPDGSFEDWSVEELIVDL: 51
+counter deletion: 8
+msa row size :51
+HSSP_Database/Train_AdjustIndex/MSA/1KB2_A.fasta.msa
+Skip 1KB2 : RICGVCGDRATGFHFNAMTCEGCKGFFRRSMKRKALFTCPFNGDCRITKDNRRHCQACRLKRCVDIGMMKEFILTDEEVQRKREMILKR: 43
+counter deletion: 2
+msa row size :43
+HSSP_Database/Train_AdjustIndex/MSA/1NG9_A.fasta.msa
+counter deletion: 1026
+msa row size :1476
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1NG9
+Null matrix was calculated: 1NG9
+Null matrix 2 was calculated: 1NG9
+HSSP_Database/Train_AdjustIndex/MSA/1R0O_A.fasta.msa
+counter deletion: 117
+msa row size :708
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1R0O
+Null matrix was calculated: 1R0O
+Null matrix 2 was calculated: 1R0O
+HSSP_Database/Train_AdjustIndex/MSA/1U8R_H.fasta.msa
+counter deletion: 83
+msa row size :719
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1U8R
+Null matrix was calculated: 1U8R
+Null matrix 2 was calculated: 1U8R
+HSSP_Database/Train_AdjustIndex/MSA/2A66_A.fasta.msa
+counter deletion: 130
+msa row size :111
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2A66
+Null matrix was calculated: 2A66
+Null matrix 2 was calculated: 2A66
+HSSP_Database/Train_AdjustIndex/MSA/2FIO_A.fasta.msa
+counter deletion: 3
+msa row size :6
+HSSP_Database/Train_AdjustIndex/MSA/2PJR_B.fasta.msa
+Skip 2FIO : PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWNMDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPRLRERRKSM: 6
+counter deletion: 1
+msa row size :2501
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2PJR
+Null matrix was calculated: 2PJR
+Null matrix 2 was calculated: 2PJR
+HSSP_Database/Train_AdjustIndex/MSA/1BF5_A.fasta.msa
+counter deletion: 54
+msa row size :229
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1BF5
+Null matrix was calculated: 1BF5
+Null matrix 2 was calculated: 1BF5
+HSSP_Database/Train_AdjustIndex/MSA/1F2I_G.fasta.msa
+counter deletion: 0
+msa row size :1349
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1F2I
+Null matrix was calculated: 1F2I
+Null matrix 2 was calculated: 1F2I
+HSSP_Database/Train_AdjustIndex/MSA/1I6H_H.fasta.msa
+counter deletion: 17
+msa row size :270
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1I6H
+Null matrix was calculated: 1I6H
+Null matrix 2 was calculated: 1I6H
+HSSP_Database/Train_AdjustIndex/MSA/1KBU_A.fasta.msa
+counter deletion: 68
+msa row size :42
+Skip 1KBU : ATSDEVRKNLMDMFRDRQAFSEHTWKMLLSVCRSWAAWCKLNNRKWFPAEPEDVRDYLLYLQARGLAVKTIQQHLGQLNMLHRRSGLPRPSDSNAVSLVMRRIRKENVDAGERAKQALAFERTDFDQVRSLMENSDRCQDIRNLAFLGIAYNTLLRIAEIARIRVKDISRTDGGRMLIHIGRTKTLVSTAGVEKALSLGVTKLVERWISVSGVADDPNNYLFCRVRKNGVAAPSATSQLSTRALEGIFEATHRLIYGAKDDSGQRYLAWSGHSARVGAARDMARAGVSIPEIMQAGGWTNVNIVMNYIRNLDSETGAMVRLLED: 42
+HSSP_Database/Train_AdjustIndex/MSA/1NGM_B.fasta.msa
+Skip 1NGM : GSYCPRNLHLLPTTDTYLSKVSDDPDNLEDVDDEELNAHLLNEEASKLKERIWIGLNADFLLEQESKRLKQE: 37
+counter deletion: 14
+msa row size :37
+HSSP_Database/Train_AdjustIndex/MSA/1R4I_A.fasta.msa
+counter deletion: 18
+msa row size :189
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1R4I
+Null matrix was calculated: 1R4I
+Null matrix 2 was calculated: 1R4I
+HSSP_Database/Train_AdjustIndex/MSA/1UBD_C.fasta.msa
+counter deletion: 41
+msa row size :318
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1UBD
+Null matrix was calculated: 1UBD
+Null matrix 2 was calculated: 1UBD
+HSSP_Database/Train_AdjustIndex/MSA/2A6O_A.fasta.msa
+counter deletion: 28
+msa row size :1577
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2A6O
+Null matrix was calculated: 2A6O
+Null matrix 2 was calculated: 2A6O
+HSSP_Database/Train_AdjustIndex/MSA/2FKC_A.fasta.msa
+Skip 2FKC : MNLVELGSKTAKDGFKNEKDIADRFENWKENSEAQDWLVTMGHNLDEIKSVKAVVLSGYKSDINVQVLVFYKDALDIHNIQVKLVSNKRGFNQIDKHWLAHYQEMWKFDDNLLRILRHFTGELPPYHSNTKDKRRMFMTEFSQEEQNIVLNWLEKNRVLVLTDILRGRGDFAAEWVLVAQKVSNNARWILRNINEVLQHYGSGDISLSPRGSINFGRVTIQRKGGDNGRETANMLQFKIDPTELFDI: 27
+counter deletion: 2
+msa row size :27
+HSSP_Database/Train_AdjustIndex/MSA/2STT_A.fasta.msa
+counter deletion: 6
+msa row size :78
+Skip 2STT : VIPAAALAGYTGSGPIQLWQFLLELLTDKSCQSFISWTGDGWEFKLSDPDEVARRWGKRKNKPKMNYEKLSRGLRYYYDKNIIHKTAGKRYVYRFV: 78
+HSSP_Database/Train_AdjustIndex/MSA/1BG1_A.fasta.msa
+counter deletion: 85
+msa row size :231
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1BG1
+Null matrix was calculated: 1BG1
+Null matrix 2 was calculated: 1BG1
+HSSP_Database/Train_AdjustIndex/MSA/1F4K_A.fasta.msa
+counter deletion: 37
+msa row size :39
+HSSP_Database/Train_AdjustIndex/MSA/1I6H_I.fasta.msa
+Skip 1F4K : STGFLVKQRAFLKLYMITMTEQERLYGLKLLEVLRSEFKEIGFKPNHTEVYRSLHELLDDGILKQIKVKKEGAKLQEVVLYQFKDYEAAKLYKKQLKVELDRSKKLIEKALSDNF: 39
+counter deletion: 22
+msa row size :235
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1I6H
+Null matrix was calculated: 1I6H
+Null matrix 2 was calculated: 1I6H
+HSSP_Database/Train_AdjustIndex/MSA/1KC6_A.fasta.msa
+counter deletion: 4
+msa row size :12
+Skip 1KC6 : SFIKPIYQDINSILIGQKVKRPAAGEPFEKLVYKFLKENLSDLTFKQYEYLNDLFMKNPAIIGHEARYKLFNSPTLLFLLSRGKAATENWSIENLFEEKQNDTADILLVKDQFYELLDVKTRNISKSAQAPNIISAYKLAQTCAKMIDNKEFDLFDINYLEVDWELNGEDLVCVSTSFAELFKSEPSELYINWAAAMQIQFHVRDLDQGFNGTREEWAKSYLKHFVTQAEQRAISMIDKFVKPFKKYIL: 12
+HSSP_Database/Train_AdjustIndex/MSA/1NH2_C.fasta.msa
+counter deletion: 0
+msa row size :462
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1NH2
+Null matrix was calculated: 1NH2
+Null matrix 2 was calculated: 1NH2
+HSSP_Database/Train_AdjustIndex/MSA/1R4O_A.fasta.msa
+counter deletion: 3
+msa row size :114
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1R4O
+Null matrix was calculated: 1R4O
+Null matrix 2 was calculated: 1R4O
+HSSP_Database/Train_AdjustIndex/MSA/1V14_A.fasta.msa
+counter deletion: 3
+msa row size :341
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1V14
+Null matrix was calculated: 1V14
+Null matrix 2 was calculated: 1V14
+HSSP_Database/Train_AdjustIndex/MSA/2ACJ_C.fasta.msa
+counter deletion: 16
+msa row size :51
+Skip 2ACJ : SHMEQRILKFLEELGEGKATTAHDLSGKLGTPKKEINRVLYSLAKKGKLQKEAGTPPLWKIAVSTQ: 51
+HSSP_Database/Train_AdjustIndex/MSA/2FO1_D.fasta.msa
+counter deletion: 1
+msa row size :13
+HSSP_Database/Train_AdjustIndex/MSA/3CRO_L.fasta.msa
+Skip 2FO1 : EDEPTIGDLNAFHSGEELHRQRSELARANYEKARPEMIANQRAVTAHLFNRYTEDEERKRVEQ: 13
+counter deletion: 35
+msa row size :1294
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 3CRO
+Null matrix was calculated: 3CRO
+Null matrix 2 was calculated: 3CRO
+HSSP_Database/Train_AdjustIndex/MSA/1BHM_B.fasta.msa
+counter deletion: 5
+msa row size :6
+HSSP_Database/Train_AdjustIndex/MSA/1F4S_P.fasta.msa
+Skip 1BHM : MEVEKEFITDEAKELLSKDKLIQQAYNEVKTSICSPIWPATSKTFTINNTEKNCNGVVPIKELCYTLLEDTYNWYREKPLDILKLEKKKGGPIDVYKEFIENSELKRVGMEFETGNISSAHRSMNKLLLGLKHGEIDLAIILMPIKQLAYYLTDRVTNFEELEPYFELTEGQPFIFIGFNAEAYNSNVPLIPKGSDGMSKRSIKKWKD: 6
+counter deletion: 1
+msa row size :32
+HSSP_Database/Train_AdjustIndex/MSA/1I6H_J.fasta.msa
+Skip 1F4S : GSMADTRRRQNHSCDPCRKGKRRCDAPENRNEANENGWVSCSNCKRWNKDCTFNWLSSQRSKNSS: 32
+counter deletion: 23
+msa row size :552
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1I6H
+Null matrix was calculated: 1I6H
+Null matrix 2 was calculated: 1I6H
+HSSP_Database/Train_AdjustIndex/MSA/1KDH_A.fasta.msa
+counter deletion: 4
+msa row size :59
+HSSP_Database/Train_AdjustIndex/MSA/1NK2_P.fasta.msa
+Skip 1KDH : KKISQYACQRRTTLNNYNQLFTDALDILAENDELRENEGSCLAFMRASSVLKSLPFPITSMKDTEGIPCLGDKVKSIIEGIIEDGESSEAKAVLNDERYKSFKLFTSVFGVGLKTAEKWFRMGFRTLSKIQSDKSLRFTQMQKAGFLYYEDLVSCVNRPEAEAVSMLVKEAVVTFLPDALVTMTGGFRRGKMTGHDVDFLITSPEATEDEEQQLLHKVTDFWKQQGLLLYCDILESTFEKFKQPSRLDHFQKCFLILKLDHGRVHSEKSEGKGWKAIRVDLVMCPYDRRAFALLGWTGSRQFERDLRRYATHERKMMLDNHALYDRTKRVFLEAESEEEIFAHLGLDYIEPWERNA: 59
+counter deletion: 1
+msa row size :898
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1NK2
+Null matrix was calculated: 1NK2
+Null matrix 2 was calculated: 1NK2
+HSSP_Database/Train_AdjustIndex/MSA/1R71_B.fasta.msa
+counter deletion: 4
+msa row size :191
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1R71
+Null matrix was calculated: 1R71
+Null matrix 2 was calculated: 1R71
+HSSP_Database/Train_AdjustIndex/MSA/1VAS_A.fasta.msa
+counter deletion: 6
+msa row size :345
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1VAS
+Null matrix was calculated: 1VAS
+Null matrix 2 was calculated: 1VAS
+HSSP_Database/Train_AdjustIndex/MSA/2AJQ_A.fasta.msa
+counter deletion: 19
+msa row size :56
+HSSP_Database/Train_AdjustIndex/MSA/2FO1_E.fasta.msa
+counter deletion: 1
+msa row size :16
+HSSP_Database/Train_AdjustIndex/MSA/3HTS_B.fasta.msa
+Skip 2AJQ : MIVSAIAANALLESVTKFHCGVIYDYSTAEYVSYRPSDFGAYLDALEAEVARGGLIVFHNGHKYDVPALTKLAKLQLNREFHLPRENCIDTLVLSRLIHSNLKDTDMGLLRSGKLPGKRFGSHALEAWGYRLGEMKGEYKDDFKRMLEEQGEEYVDGMEWWNFNEEMMDYNVQDVVVTKALLEKLLSDKHYFPPEIDFTDVGYTTFWSESLEAVDIEHRAAWLLAKQERNGFPFDTKAIEELYVELAARRSELLRKLTETFGSWYQPKGGTEMFCHPRTGKPLPKYPRIKTPKVGGIFKKPKNKAQREGREPCELDTREYVAGAPYTPVEHVVFNPSSRDHIQKKLQEAGWVPTKYTDKGAPVVDDEVLEGVRVDDPEKQAAIDLIKEYLMIQKRIGQSAEGDKAWLRYVAEDGKIHGSVNPNGAVTGRATHAFPNLAQIPGVRSPYGEQCRAAFGAEHHLDGITGKPWVQAGIDASGLELRCLAHFMARFDNGEYAHEILNGDIHTKNQIAAELPTRDNAKTFIYGFLYGAGDEKIGQIVGAGKERGKELKKKFLENTPAIAALRESIQQTLVESSQWVAGEQQVKWKRRWIKGLDGRKVHVRSPHAALNTLLQSAGALICKLWIIKTEEMLVEKGLKHGWDGDFAYMAWVHDEIQVGCRTEEIAQVVIETAQEAMRWVGDHWNFRCLLDTEGKMGPNWAICH: 56
+counter deletion: 0
+msa row size :98
+HSSP_Database/Train_AdjustIndex/MSA/1BRN_L.fasta.msa
+Skip 2FO1 : RTRKRRMINASVWMPPMENEESPIKLHTEAAGSYAITEPITRESVNIIDPRHNRTVLHWIASNSSAEKSEDLIVHEAKECIAAGADVNAMDCDENTPLMLAVLARRRRLVAYLMKAGADPTIYNKSERSALHQAAANRDFGMMVYMLNSTKLKGDIEELDRNGMTALMIVAHNEGRDQVASAKLLVEKGAKVDYDGAARKDSEKYKGRTALHYAAQVSNMPIVKYLVGEKGSNKDKQDEDGKTPIMLAAQEGRIEVVMYLIQQGASVEAVDATDHTARQLAQANNHHNIVDIFDRCR: 16
+counter deletion: 16
+msa row size :364
+Skip 3HTS : MARPAFVNKLWSMVNDKSNEKFIHWSTSGESIVVPNRERFVQEVLPKYFKHSNFASFVRQLNMYGWHKVQNNDSRWEFENER: 98
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1BRN
+Null matrix was calculated: 1BRN
+Null matrix 2 was calculated: 1BRN
+HSSP_Database/Train_AdjustIndex/MSA/1F5T_A.fasta.msa
+counter deletion: 37
+msa row size :2465
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1F5T
+Null matrix was calculated: 1F5T
+Null matrix 2 was calculated: 1F5T
+HSSP_Database/Train_AdjustIndex/MSA/1I6H_K.fasta.msa
+counter deletion: 24
+msa row size :286
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1I6H
+Null matrix was calculated: 1I6H
+Null matrix 2 was calculated: 1I6H
+HSSP_Database/Train_AdjustIndex/MSA/1KQQ_A.fasta.msa
+counter deletion: 14
+msa row size :380
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1KQQ
+Null matrix was calculated: 1KQQ
+Null matrix 2 was calculated: 1KQQ
+HSSP_Database/Train_AdjustIndex/MSA/1NKP_A.fasta.msa
+counter deletion: 15
+msa row size :1860
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1NKP
+Null matrix was calculated: 1NKP
+Null matrix 2 was calculated: 1NKP
+HSSP_Database/Train_AdjustIndex/MSA/1R7M_A.fasta.msa
+counter deletion: 4
+msa row size :25
+Skip 1R7M : NIKKNQVMNLGPNSKLLKEYKSQLIELNIEQFEAGIGLILGDAYIRSRDEGKTYCMQFEWKNKAYMDHVCLLYDQWVLSPPHKKERVNHLGNLVITWGAQTFKHQAFNKLANLFIVNNKKTIPNNLVENYLTPMSLAYWFMDDGGKWDYNKNSTNKSIVLNTQSFTFEEVEYLVKGLRNKFQLNCYVKINKNKPIIYIDSMSYLIFYNLIKPYLIPQMMYKLP: 25
+HSSP_Database/Train_AdjustIndex/MSA/1VFC_A.fasta.msa
+counter deletion: 24
+msa row size :429
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1VFC
+Null matrix was calculated: 1VFC
+Null matrix 2 was calculated: 1VFC
+HSSP_Database/Train_AdjustIndex/MSA/2AOQ_A.fasta.msa
+counter deletion: 26
+msa row size :2005
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2AOQ
+Null matrix was calculated: 2AOQ
+Null matrix 2 was calculated: 2AOQ
+HSSP_Database/Train_AdjustIndex/MSA/2FQZ_B.fasta.msa
+counter deletion: 13
+msa row size :18
+HSSP_Database/Train_AdjustIndex/MSA/3KTQ_A.fasta.msa
+Skip 2FQZ : LSPGEFKTLISKERKSHFITPFALVYKTFCDLGYDQKNSDYFLNNPSEYIIAMRKNCWKEFEPFEKEFTTRMLSYLIDEERIKDMSPYDAIRDFTMEYPTHIYDLALSNTQSRRSRAGKEFESILELLMMGAGIPVDVQGAIIGKLVDLVMPGVVQYTSNKRNTMLISAKTTLRERWQEVPEEVNRTGIREMYLATLDDSFSEETINILYEANVVVVTTVENKNFKYKNNNRVLTFEDMLQSAMELSRKWNNVSYTDSEKEEIQQSILKQIEKYSDFPYVVNYYRNRLSALFD: 18
+counter deletion: 3
+msa row size :2499
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 3KTQ
+Null matrix was calculated: 3KTQ
+Null matrix 2 was calculated: 3KTQ
+HSSP_Database/Train_AdjustIndex/MSA/1BVO_A.fasta.msa
+counter deletion: 1
+msa row size :175
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1BVO
+Null matrix was calculated: 1BVO
+Null matrix 2 was calculated: 1BVO
+HSSP_Database/Train_AdjustIndex/MSA/1FIU_A.fasta.msa
+counter deletion: 18
+msa row size :43
+HSSP_Database/Train_AdjustIndex/MSA/1I6H_L.fasta.msa
+Skip 1FIU : MQPLFTQERRIFHKKLLDGNILATNNRGVVSNADGSNTRSFNIAKGIADLLHSETVSERLPGQTSGNAFEAICSEFVQSAFEKLQHIRPGDWNVKQVGSRNRLEIARYQQYAHLTALAKAAEENPELAAALGSDYTITPDIIVTRNLIADAEINRNEFLVDENIATYASLRAGNGNMPLLHASISCKWTIRSDRAQNARSEGLNLVRNRKGRLPHIVVVTAEPTPSRISSIALGTGEIDCVYHFALYELEQILQSLNYEDALDLFYIMVNGKRLKDISDLPLDLAV: 43
+counter deletion: 19
+msa row size :84
+HSSP_Database/Train_AdjustIndex/MSA/1KSY_B.fasta.msa
+Skip 1I6H : ATLKYICAECSSKLSLSRTDAVRCKDCGHRILLKARTKRLVQFEAR: 84
+counter deletion: 10
+msa row size :964
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1KSY
+Null matrix was calculated: 1KSY
+Null matrix 2 was calculated: 1KSY
+HSSP_Database/Train_AdjustIndex/MSA/1NLW_A.fasta.msa
+counter deletion: 39
+msa row size :45
+HSSP_Database/Train_AdjustIndex/MSA/1R8D_A.fasta.msa
+Skip 1NLW : SRSTHNEMEKNRRAHLRLSLEKLKGLVPLGPDSSRHTTLSLLTKAKLHIKKLEDSDRKAVHQIDQLQREQRHLKRQLEK: 45
+counter deletion: 6
+msa row size :2496
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1R8D
+Null matrix was calculated: 1R8D
+Null matrix 2 was calculated: 1R8D
+HSSP_Database/Train_AdjustIndex/MSA/1VRR_A.fasta.msa
+counter deletion: 1
+msa row size :25
+HSSP_Database/Train_AdjustIndex/MSA/2AQ4_A.fasta.msa
+Skip 1VRR : MRIVEVYSHLNGLEYIQVHLPHIWEEIQEIIVSIDAEACRTKESKEKTKQGQILYSPVALNEAFKEKLEAKGWKESRTNYYVTADPKLIRETLSLEPEEQKKVIEAAGKEALKSYNQTDFVKDRVAIEVQFGKYSFVAYDLFVKHMAFYVSDKIDVGVEILPMKELSKEMSSGISYYEGELYNVIRQGRGVPAVPLVLIGIAP: 25
+counter deletion: 9
+msa row size :133
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2AQ4
+Null matrix was calculated: 2AQ4
+Null matrix 2 was calculated: 2AQ4
+HSSP_Database/Train_AdjustIndex/MSA/2G1P_B.fasta.msa
+counter deletion: 1024
+msa row size :1478
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2G1P
+Null matrix was calculated: 2G1P
+Null matrix 2 was calculated: 2G1P
+HSSP_Database/Train_AdjustIndex/MSA/3ORC_A.fasta.msa
+counter deletion: 0
+msa row size :384
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 3ORC
+Null matrix was calculated: 3ORC
+Null matrix 2 was calculated: 3ORC
+HSSP_Database/Train_AdjustIndex/MSA/1C7Y_A.fasta.msa
+counter deletion: 489
+msa row size :2013
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1C7Y
+Null matrix was calculated: 1C7Y
+Null matrix 2 was calculated: 1C7Y
+HSSP_Database/Train_AdjustIndex/MSA/1FJL_A.fasta.msa
+counter deletion: 0
+msa row size :1440
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1FJL
+Null matrix was calculated: 1FJL
+Null matrix 2 was calculated: 1FJL
+HSSP_Database/Train_AdjustIndex/MSA/1I7D_A.fasta.msa
+counter deletion: 1036
+msa row size :1466
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1I7D
+Null matrix was calculated: 1I7D
+Null matrix 2 was calculated: 1I7D
+HSSP_Database/Train_AdjustIndex/MSA/1KU7_A.fasta.msa
+counter deletion: 12
+msa row size :2490
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1KU7
+Null matrix was calculated: 1KU7
+Null matrix 2 was calculated: 1KU7
+HSSP_Database/Train_AdjustIndex/MSA/1NOP_B.fasta.msa
+counter deletion: 21
+msa row size :76
+HSSP_Database/Train_AdjustIndex/MSA/1RC7_A.fasta.msa
+Skip 1NOP : DKGNPFQFYLTRVSGVKPKYNSGALHIKDILSPLFGTLVSSAQFNYCFDVDWLVKQYPPEFRKKPILLVHGDKREAKAHLHAQAKPYENISLCQAKLDIAFGTHHTKMMLLLYEEGLRVVIHTSNLIHADWHQKTQGIWLSPLYPRIADGTHKSGESPTHFKANLISYLTAYNAPSLKEWIDVIHKHDLSETNVYLIGSTPGRFQGSQKDNWGHFRLKKLLKDHASSMPNAESWPVVGQFSSVGSLGADESKWLCSEFKESMLTLGSVPLYLIYPSVENVRTSLEGYPAGGSLPYSIQTAEKQNWLHSYFHKWSAETSGRSNAMPHIKTYMRPSPDFSKIAWFLVTSANLSKAAWGALEKNGTQLMIRSYELGVLFLPSALGLDSFKVKQKFMATFPVPYDLPPELYGSKDRPWIWNIPYVKAPDTHGNMWVP: 76
+counter deletion: 0
+msa row size :2501
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1RC7
+Null matrix was calculated: 1RC7
+Null matrix 2 was calculated: 1RC7
+HSSP_Database/Train_AdjustIndex/MSA/1W36_B.fasta.msa
+counter deletion: 844
+msa row size :1080
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1W36
+Null matrix was calculated: 1W36
+Null matrix 2 was calculated: 1W36
+HSSP_Database/Train_AdjustIndex/MSA/2ASD_A.fasta.msa
+counter deletion: 13
+msa row size :1017
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2ASD
+Null matrix was calculated: 2ASD
+Null matrix 2 was calculated: 2ASD
+HSSP_Database/Train_AdjustIndex/MSA/2GAT_A.fasta.msa
+counter deletion: 1
+msa row size :1253
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2GAT
+Null matrix was calculated: 2GAT
+Null matrix 2 was calculated: 2GAT
+HSSP_Database/Train_AdjustIndex/MSA/3PJR_A.fasta.msa
+counter deletion: 9
+msa row size :2232
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 3PJR
+Null matrix was calculated: 3PJR
+Null matrix 2 was calculated: 3PJR
+HSSP_Database/Train_AdjustIndex/MSA/1C9B_A.fasta.msa
+counter deletion: 72
+msa row size :340
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1C9B
+Null matrix was calculated: 1C9B
+Null matrix 2 was calculated: 1C9B
+HSSP_Database/Train_AdjustIndex/MSA/1FOK_A.fasta.msa
+counter deletion: 1
+msa row size :24
+HSSP_Database/Train_AdjustIndex/MSA/1IAW_A.fasta.msa
+counter deletion: 1
+msa row size :30
+HSSP_Database/Train_AdjustIndex/MSA/1L1M_A.fasta.msa
+Skip 1FOK : KIRTFGWVQNPGKFENLKRVVQVFDRNSKVHNEVKNIKIPTLVKESKIQKELVAIMNQHDLIYTYKELVGTGTSIRSEAPCDAIIQATIADQGNKKGYIDNWSSDGFLRWAHALGFIEYINKSDSFVITDVGLAYSKSADGSAIEKEILIEAISSYPPAIRILTLLEDGQHLTKFDLGKNLGFSGESGFTSLPEGILLDTLANAMPKDKGEIRNNWEGSSDKYARMIGGWLDKLGLVKQGKKEFIIPTPDNKEFISHAFKITGEGLKVLRRAKGSVPKRVYWEMLATNLTDKEYVRTRRALILEILIKAGSLKIEQIQDNLKKLGFDEVIETIENDIKGLINTGIFIEIKGRFYQLKDHILQFVIPNRGVTKQLVKSELEEKKSELRHKLKYVPHEYIELIEIARNSTQDRILEMKVMEFFMKVYGYRGKHLGGSRKPDGAIYTVGSPIDYGVIVDTKAYSGGYNLPIGQADEMQRYVEENQTRNKHINPNEWWKVYPSSVTEFKFLFVSGHFKGNYKAQLTRLNHITNCNGAVLSVEELLIGGEMIKAGTLTLEEVRRKFNNGEINF: 24
+counter deletion: 37
+msa row size :2465
+Skip 1IAW : EPDDDLERVRATLYSLDPDGDRTAGVLRDTLDQLYDGQRTGRWNFDQLHKTEKTHMGTLVEINLHREFQFGDGFETDYEIAGVQVDCKFSMSQGAWMLPPESIGHICLVIWASDQQCAWTAGLVKVIPQFLGTANRDLKRRLTPEGRAQVVKLWPDHGKLQENLLLHIPGDVRDQIFSAKSSRGNQHGQARVNELFRRVHGRLIGRAVIATVAQQDDFMKRVRGSGGARSILRPEGIIILGHQDNDPKVANDLGLPVPRKGQVVAARVVPADEGDQRQTAEIQGRRWAVAVPGDPIVEAPVVPR: 30
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1L1M
+Null matrix was calculated: 1L1M
+Null matrix 2 was calculated: 1L1M
+HSSP_Database/Train_AdjustIndex/MSA/1NOY_A.fasta.msa
+counter deletion: 12
+msa row size :51
+HSSP_Database/Train_AdjustIndex/MSA/1RC8_A.fasta.msa
+counter deletion: 10
+msa row size :40
+HSSP_Database/Train_AdjustIndex/MSA/2AYB_A.fasta.msa
+Skip 1NOY : DEFYISIETVGNNIVERYIDENGKERTREVEYLPTMFRHCKEESKYKDIYGKNCAPQKFPSMKDARDWMKRMEDIGLEALGMNDFKLAYISDTYGSEIVYDRKFVRVANCDIEVTGDKFPDPMKAEYEIDAITHYDSIDDRFYVFDLLNSMYGSVSKWDAKLAAKLDCEGGDEVPQEILDRVIYMPFDNERDMLMEYINLWEQKRPAIFTGWNIEGFDVPYIMNRVKMILGERSMKRFSPIGRVKSKLLQNMYGSKEIYSIDGVSILDYLDLYKKFAFTNLPSFSLESVAQHETKKGKLPYDGPINKLRETNHQRYISYNIIDVESVQAIDKIRGFIDLVLSMSYYAKMPFSGVMSPIKTWDAIIFNSLKGE: 51
+Skip 1RC8 : MKKIILTIGCPGSGKSTWAREFIAKNPGFYNINRDDYRQSIMAHEERDEYKYTKKKEGIVTGMQFDTAKSILYGGDSVKGVIISDTNLNPERRLAWETFAKEYGWKVEHKVFDVPWTELVKRNSKRGTKAVPIDVLRSMYKSMREYLGLPVYNGTPGKPKAVIFDVDGTLAKMTDVINPMVVELSKMYALMGYQIVVVSGRESGTKEDPTKYYRMTRKWVEDIAGVPLVMQCQREQGDTRKDDVVKEEIFWKHIAPHFDVKLAIDDRTQVVEMWRRIGVECWQVASGDF: 40
+counter deletion: 89
+msa row size :410
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2AYB
+Null matrix was calculated: 2AYB
+Null matrix 2 was calculated: 2AYB
+HSSP_Database/Train_AdjustIndex/MSA/2GLI_A.fasta.msa
+counter deletion: 0
+msa row size :182
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2GLI
+Null matrix was calculated: 2GLI
+Null matrix 2 was calculated: 2GLI
+HSSP_Database/Train_AdjustIndex/MSA/4GAT_A.fasta.msa
+counter deletion: 1
+msa row size :1356
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 4GAT
+Null matrix was calculated: 4GAT
+Null matrix 2 was calculated: 4GAT
+HSSP_Database/Train_AdjustIndex/MSA/1CEZ_A.fasta.msa
+counter deletion: 17
+msa row size :43
+HSSP_Database/Train_AdjustIndex/MSA/1FOS_E.fasta.msa
+counter deletion: 54
+msa row size :438
+Skip 1CEZ : IAKNDFSDIELAAIPFNTLADHYGERLAREQLALEHESYEMGEARFRKMFPLITTLLPKMIARINDWFEEVKAKRGKRPTAFQFLQEIKPEAVAYITIKTTLACLTSADNTTVQAVASAIGRAIEDEARFGRIRDLEAKHFKKNVEEQLNKRVGHVYKKAFMQVVEADMLSKGLLGGEAWSSWHKEDSIHVGVRCIEMLIESTGMVSLHRQNAGVVGQDSETIELAPEYAEAIATRAGALAGISPMFQPCVVPPKPWTGITGGGYWANGRRPLALVRTHSKKALMRYEDVYMPEVYKAINIAQNTAWKINKKVLAVANVITKWKHCPVEDIPAIEREELPMKPEDIDMNPEALTAWKRAAAAVYRKDKARKSRRISLEFMLEQANKFANHKAIWFPYNMDWRGRVYAVSMFNPQGNDMTKGLLTLAKGKPIGKEGYYWLKIHGANCAGVDKVPFPERIKFIEENHENIMACAKSPLENTWWAEQDSPFCFLAFCFEYAGVQHHGLSYNCSLPLAFDGSCSGIQHFSAMLRDEVGGRAVNLLPSETVQDIYGIVAKKVNEILQADAINGTDNEVVTVTDENTGEISEKVKLGTKALAGQWLAYGVTRSVTKRSVMTLAYGSKEFGFRQQVLEDTIQPAIDSGKGLMFTQPNQAAGYMAKLIWESVSVTVVAAVEAMNWLKSAAKLLAAEVKDKKTGEILRKRCAVHWVTPDGFPVWQEYKKPIQTRLNLMFLGQFRLQPTINTNKDSEIDAHKQESGIAPNFVHSQDGSHLRKTVVWAHEKYGIESFALIHDSFGTIPADAANLFKAVRETMVDTYESCDVLADFYDQFADQLHESQLDKMPALPAKGNLNLRDILESDFAFA: 43
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1FOS
+Null matrix was calculated: 1FOS
+Null matrix 2 was calculated: 1FOS
+HSSP_Database/Train_AdjustIndex/MSA/1IC8_B.fasta.msa
+counter deletion: 51
+msa row size :118
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1IC8
+Null matrix was calculated: 1IC8
+Null matrix 2 was calculated: 1IC8
+HSSP_Database/Train_AdjustIndex/MSA/1L1T_A.fasta.msa
+counter deletion: 4
+msa row size :2498
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1L1T
+Null matrix was calculated: 1L1T
+Null matrix 2 was calculated: 1L1T
+HSSP_Database/Train_AdjustIndex/MSA/1NWQ_A.fasta.msa
+counter deletion: 33
+msa row size :628
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1NWQ
+Null matrix was calculated: 1NWQ
+Null matrix 2 was calculated: 1NWQ
+HSSP_Database/Train_AdjustIndex/MSA/1REP_C.fasta.msa
+counter deletion: 154
+msa row size :67
+HSSP_Database/Train_AdjustIndex/MSA/1W36_D.fasta.msa
+Skip 1REP : SPRIVQSNDLTEAAYSLSRDQKRMLYLFVDQIRKSHDGICEIHVAKYAEIFGLTSAEASKDIRQALKSFAGKEVVFYESFPWFIKPAHSPSRGLYSVHINPYLIPFFIGLQNRFTQFRLSETKEITNPYAMRLYESLCQYRKPDGSGIVSLKIDWIIERYQLPQSYQRMPDFRRRFLQVCVNEINSRTPMRLSYIEKKKGRQTTHIVFSFRDIT: 67
+counter deletion: 945
+msa row size :983
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1W36
+Null matrix was calculated: 1W36
+Null matrix 2 was calculated: 1W36
+HSSP_Database/Train_AdjustIndex/MSA/2B9S_A.fasta.msa
+counter deletion: 7
+msa row size :287
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2B9S
+Null matrix was calculated: 2B9S
+Null matrix 2 was calculated: 2B9S
+HSSP_Database/Train_AdjustIndex/MSA/2GXA_E.fasta.msa
+counter deletion: 9
+msa row size :520
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2GXA
+Null matrix was calculated: 2GXA
+Null matrix 2 was calculated: 2GXA
+HSSP_Database/Train_AdjustIndex/MSA/6PAX_A.fasta.msa
+counter deletion: 131
+msa row size :267
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 6PAX
+Null matrix was calculated: 6PAX
+Null matrix 2 was calculated: 6PAX
+HSSP_Database/Train_AdjustIndex/MSA/1CF7_A.fasta.msa
+counter deletion: 103
+msa row size :870
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1CF7
+Null matrix was calculated: 1CF7
+Null matrix 2 was calculated: 1CF7
+HSSP_Database/Train_AdjustIndex/MSA/1FZP_B.fasta.msa
+counter deletion: 401
+msa row size :816
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1FZP
+Null matrix was calculated: 1FZP
+Null matrix 2 was calculated: 1FZP
+HSSP_Database/Train_AdjustIndex/MSA/1ID3_C.fasta.msa
+counter deletion: 68
+msa row size :1618
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1ID3
+Null matrix was calculated: 1ID3
+Null matrix 2 was calculated: 1ID3
+HSSP_Database/Train_AdjustIndex/MSA/1L3S_A.fasta.msa
+counter deletion: 3
+msa row size :2499
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1L3S
+Null matrix was calculated: 1L3S
+Null matrix 2 was calculated: 1L3S
+HSSP_Database/Train_AdjustIndex/MSA/1RIO_A.fasta.msa
+counter deletion: 239
+msa row size :419
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1RIO
+Null matrix was calculated: 1RIO
+Null matrix 2 was calculated: 1RIO
+HSSP_Database/Train_AdjustIndex/MSA/1WVL_A.fasta.msa
+counter deletion: 0
+msa row size :35
+HSSP_Database/Train_AdjustIndex/MSA/2B9S_B.fasta.msa
+Skip 1WVL : MVKVKFKYKGEEKEVDTSKIKKVWRVGKMVSFTYDDNGKTGRGAVSEKDAPKELLDMLARAEREKKGVLKKLRAVENELH: 35
+counter deletion: 6
+msa row size :760
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2B9S
+Null matrix was calculated: 2B9S
+Null matrix 2 was calculated: 2B9S
+HSSP_Database/Train_AdjustIndex/MSA/2GZK_A.fasta.msa
+counter deletion: 0
+msa row size :663
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2GZK
+Null matrix was calculated: 2GZK
+Null matrix 2 was calculated: 2GZK
+HSSP_Database/Train_AdjustIndex/MSA/10MH_A.fasta.msa
+counter deletion: 2
+msa row size :334
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 10MH
+Null matrix was calculated: 10MH
+Null matrix 2 was calculated: 10MH
+HSSP_Database/Train_AdjustIndex/MSA/1CF7_B.fasta.msa
+counter deletion: 5
+msa row size :51
+HSSP_Database/Train_AdjustIndex/MSA/1G38_A.fasta.msa
+Skip 1CF7 : GKGLRHFSMKVCEKVQRKGTTSYNEVADELVSEFTNSNNHLAADSAYDQKNIRRRVYDALNVLMAMNIISKEKKEIKWIGLP: 51
+counter deletion: 3
+msa row size :18
+HSSP_Database/Train_AdjustIndex/MSA/1ID3_H.fasta.msa
+Skip 1G38 : VETPPEVVDFMVSLAEAPRGGRVLEPACAHGPFLRAFREAHGTGYRFVGVEIDPKALDLPPWAEGILADFLLWEPGEAFDLILGNPPYGIVGEASKYPIHVFKAVKDLYKKAFSTWKGKYNLYGAFLEKAVRLLKPGGVLVFVVPATWLVLEDFALLREFLAREGKTSVYYLGEVFPQKKVSAVVIRFQKSGKGLSLWDTQESESGFTPILWAEYPHWEGEIIRFETEETRKLEISGMPLGDLFHIRFAARSPEFKKHPAVRKEPGPGLVPVLTGRNLKPGWVDYEKNHSGLWMPKERAKELRDFYATPHLVVAHTKGTRVVAAWDERAYPWREEFHLLPKEGVRLDPSSLVQWLNSEAMQKHVRTLYRDFVPHLTLRMLERLPVRREYGFHT: 18
+counter deletion: 89
+msa row size :1157
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1ID3
+Null matrix was calculated: 1ID3
+Null matrix 2 was calculated: 1ID3
+HSSP_Database/Train_AdjustIndex/MSA/1O4X_B.fasta.msa
+counter deletion: 339
+msa row size :2019
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1O4X
+Null matrix was calculated: 1O4X
+Null matrix 2 was calculated: 1O4X
+HSSP_Database/Train_AdjustIndex/MSA/1RM1_A.fasta.msa
+counter deletion: 126
+msa row size :330
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1RM1
+Null matrix was calculated: 1RM1
+Null matrix 2 was calculated: 1RM1
+HSSP_Database/Train_AdjustIndex/MSA/1X9N_A.fasta.msa
+counter deletion: 42
+msa row size :110
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1X9N
+Null matrix was calculated: 1X9N
+Null matrix 2 was calculated: 1X9N
+HSSP_Database/Train_AdjustIndex/MSA/2BGW_A.fasta.msa
+counter deletion: 1
+msa row size :152
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2BGW
+Null matrix was calculated: 2BGW
+Null matrix 2 was calculated: 2BGW
+HSSP_Database/Train_AdjustIndex/MSA/2H1O_E.fasta.msa
+counter deletion: 16
+msa row size :232
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2H1O
+Null matrix was calculated: 2H1O
+Null matrix 2 was calculated: 2H1O
+HSSP_Database/Train_AdjustIndex/MSA/1CIT_A.fasta.msa
+counter deletion: 82
+msa row size :250
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1CIT
+Null matrix was calculated: 1CIT
+Null matrix 2 was calculated: 1CIT
+HSSP_Database/Train_AdjustIndex/MSA/1G4D_A.fasta.msa
+counter deletion: 8
+msa row size :36
+HSSP_Database/Train_AdjustIndex/MSA/1IF1_A.fasta.msa
+Skip 1G4D : KSIWCSPQEIMAADGMPGSVAGVHYRANVQGWTKRKKEGVKGGKAVEYDVMSMPTKEREQVIAHLGLST: 36
+counter deletion: 8
+msa row size :22
+HSSP_Database/Train_AdjustIndex/MSA/1ODG_A.fasta.msa
+Skip 1IF1 : RMRPWLEMQINSNQIPGLIWINKEEMIFQIPWKHAAKHGWDINKDACLFRSWAIHTGRYKAGEKEPDPKTWKANFRCAMNSLPDIEEVKDQSRNKGSSAVRVYRM: 22
+counter deletion: 944
+msa row size :541
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1ODG
+Null matrix was calculated: 1ODG
+Null matrix 2 was calculated: 1ODG
+HSSP_Database/Train_AdjustIndex/MSA/1RM1_B.fasta.msa
+counter deletion: 20
+msa row size :176
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1RM1
+Null matrix was calculated: 1RM1
+Null matrix 2 was calculated: 1RM1
+HSSP_Database/Train_AdjustIndex/MSA/1XF2_B.fasta.msa
+counter deletion: 0
+msa row size :213
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1XF2
+Null matrix was calculated: 1XF2
+Null matrix 2 was calculated: 1XF2
+HSSP_Database/Train_AdjustIndex/MSA/2BOP_A.fasta.msa
+counter deletion: 6
+msa row size :309
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2BOP
+Null matrix was calculated: 2BOP
+Null matrix 2 was calculated: 2BOP
+HSSP_Database/Train_AdjustIndex/MSA/2H27_A.fasta.msa
+counter deletion: 604
+msa row size :1898
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2H27
+Null matrix was calculated: 2H27
+Null matrix 2 was calculated: 2H27
+HSSP_Database/Train_AdjustIndex/MSA/1CKQ_A.fasta.msa
+counter deletion: 3
+msa row size :69
+HSSP_Database/Train_AdjustIndex/MSA/1GCC_A.fasta.msa
+Skip 1CKQ : SQGVIGIFGDYAKAHDLAVGEVSKLVKKALSNEYPQLSFRYRDSIKKTEINEALKKIDPDLGGTLFVSNSSIKPDGGIVEVKDDYGEWRVVLVAEAKHQGKDIINIRNGLLVGKRGDQDLMAAGNAIERSHKNISEIANFMLSESHFPYVLFLEGSNFLTENISITRPDGRVVNLEYNSGILNRLDRLTAANYGMPINSNLCINKFVNHKDKSIMLQAASIYTQGDGREWDSKIMFEIMFDISTTSLRVLGRDLFEQLTSK: 69
+counter deletion: 33
+msa row size :597
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1GCC
+Null matrix was calculated: 1GCC
+Null matrix 2 was calculated: 1GCC
+HSSP_Database/Train_AdjustIndex/MSA/1IG4_A.fasta.msa
+counter deletion: 2
+msa row size :34
+Skip 1IG4 : MAEDWLDCPALGPGWKRREVFRKSGATCGRSDTYYQSPTGDRIRSKVELTRYLGPACDLTLFDFKQGILCYPAPK: 34
+HSSP_Database/Train_AdjustIndex/MSA/1ODH_A.fasta.msa
+counter deletion: 26
+msa row size :138
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1ODH
+Null matrix was calculated: 1ODH
+Null matrix 2 was calculated: 1ODH
+HSSP_Database/Train_AdjustIndex/MSA/1RM1_C.fasta.msa
+Skip 1RM1 : SNAEASRVYEIIVESVVNEVREDFENAGIDEQTLQDLKNIWQKKLTETKVTTFSWDNQFNDYLISEDGPDENLMLCLYDKVTRTKARWKCSLKDGVVTINRNDYTFQKAQVEAEWV: 77
+counter deletion: 0
+msa row size :77
+HSSP_Database/Train_AdjustIndex/MSA/1XHZ_A.fasta.msa
+counter deletion: 4
+msa row size :11
+HSSP_Database/Train_AdjustIndex/MSA/2BSQ_A.fasta.msa
+counter deletion: 14
+msa row size :788
+Skip 1XHZ : PRKMYSCAFETTTKVEDCRVWAYGYMNIEDHSEYKIGNSLDEFMAWVLKVQADLYFHNLKFAGAFIINWLERNGFKWSADGLPNTYNTIISRMGQWYMIDICLGYKGKRKIHTVIYDSLKKLPFPVKKIAKDFKLTVLKGDIDYHKERPVGYKITPEEYAYIKNDIQIIAEALLIQFKQGLDRMTAGSDSLKGFKDIITTKKFKKVFPTLSLGLDKEVRYAYRGGFTWLNDRFKEKEIGEGMVFDVNSLYPAQMYSRLLPYGEPIVFEGKYVWDEDYPLHIQHIRCEFELKEGYIPTIQIKRSRFYKGNEYLKSSGGEIADLWLSNVDLELMKEHYDLYNVEYISGLKFKATTGLFKDFIDKWTYIKTTSEGAIKQLAKLMLNSLYGKFASNPDVTGKVPYLKENGALGFRLGEEETKDPVYTPMGVFITAWARYTTITAAQACYDRIIYCDTDSIHLTGTEIPDVIKDIVDPKKLGYWAHESTFKRAKYLRQKTYIQDIYMKEVDGKLVEGSPDDYTDIKFSVKCAGMTDKIKKEVTFENFKVGFSRKMKPKPVQVPGGVVLVDDTFTIK: 11
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2BSQ
+Null matrix was calculated: 2BSQ
+Null matrix 2 was calculated: 2BSQ
+HSSP_Database/Train_AdjustIndex/MSA/2H7G_X.fasta.msa
+counter deletion: 39
+msa row size :36
+HSSP_Database/Train_AdjustIndex/MSA/1CMA_A.fasta.msa
+Skip 2H7G : MRALFYKDGKLFTDNNFLNPVSDNNPAYEVLQHVKIPTHLTDVVVYGQTWEEALTRLIFVGSDSKGRRQYFYGKMHVQNRNAKRDRIFVRVYNVMKRINSFINKNIKKSSTDSNYQLAVFMLMETMFFIRFGKMKYLKENETVGLLTLKNKHIEISPDKIVIKFVGKDKVSHEFVVHKSNRLYKPLLKLTDDSSPEEFLFNKLSERKVYESIKQFGIRIKDLRTYGVNYTFLYNFWTNVKSISPLPSPKKLIALTIKQTAEVVGHTPSISKRAYMATTILEMVKDKNFLDVVSKTTFDEFLSIVVDHVKSST: 36
+counter deletion: 1466
+msa row size :535
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1CMA
+Null matrix was calculated: 1CMA
+Null matrix 2 was calculated: 1CMA
+HSSP_Database/Train_AdjustIndex/MSA/1GD2_E.fasta.msa
+Skip 1GD2 : DQEPSSKRKAQNRAAQRAFRKRKEDHLKALETQVVTLKELHSSTTLENDQLRQKVRQLEEELRIL: 53
+counter deletion: 1
+msa row size :53
+HSSP_Database/Train_AdjustIndex/MSA/1IGN_A.fasta.msa
+counter deletion: 0
+msa row size :53
+HSSP_Database/Train_AdjustIndex/MSA/1ORN_A.fasta.msa
+Skip 1IGN : KASFTDEEDEFILDVVRKNPTRRTTHTLYDEISHYVPNHTGNSIRHRFRVYLSKRLEYVYEVDKFGKLVRDDDGNLIKTKVLPPSIKRKFSADEDYTLAIAVKKQFYRDLFQIDPDTGRSLIRTQSRRGPIAREFFKHFAEEHAAHTENAWRDRFRKFLLAYGIDDYISYYEAEEPMKNLTPTPGNYNS: 53
+counter deletion: 3
+msa row size :2499
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1ORN
+Null matrix was calculated: 1ORN
+Null matrix 2 was calculated: 1ORN
+HSSP_Database/Train_AdjustIndex/MSA/1RRQ_A.fasta.msa
+counter deletion: 3
+msa row size :2498
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1RRQ
+Null matrix was calculated: 1RRQ
+Null matrix 2 was calculated: 1RRQ
+HSSP_Database/Train_AdjustIndex/MSA/1XJV_A.fasta.msa
+counter deletion: 35
+msa row size :50
+HSSP_Database/Train_AdjustIndex/MSA/2H8C_A.fasta.msa
+Skip 1XJV : ATNYIYTPLNQLKGGTIVNVYGVVKFFKPPYLSKGTDYCSVVTIVDQTNVKLTCLLFSGNYEALPIIYKNGDIVRFHRLKIQVYKKETQGITSSGFASLTFEGTLGAPIIPRTSSKYFNFTTEDHKMVEALRVWASTHMSTLLKLCDVQPMQYFDLTCQLLGKAEVDGASFLLKVWDGTRTPFPSWRVLIQDLVLEGDLSHIHRLQNLTIDILVYDNHVHVARSLKVGSFLRIYSLHTKLQSMNSENQTMLSLEFHLHGGTSYGRGIRVLPESNSDVDQLKKDLESANLTA: 50
+counter deletion: 579
+msa row size :1923
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2H8C
+Null matrix was calculated: 2H8C
+Null matrix 2 was calculated: 2H8C
+HSSP_Database/Train_AdjustIndex/MSA/1CW0_A.fasta.msa
+counter deletion: 942
+msa row size :622
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1CW0
+Null matrix was calculated: 1CW0
+Null matrix 2 was calculated: 1CW0
+HSSP_Database/Train_AdjustIndex/MSA/1GDT_A.fasta.msa
+counter deletion: 1
+msa row size :2501
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1GDT
+Null matrix was calculated: 1GDT
+Null matrix 2 was calculated: 1GDT
+HSSP_Database/Train_AdjustIndex/MSA/1IHF_A.fasta.msa
+counter deletion: 228
+msa row size :2274
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1IHF
+Null matrix was calculated: 1IHF
+Null matrix 2 was calculated: 1IHF
+HSSP_Database/Train_AdjustIndex/MSA/1OSB_A.fasta.msa
+counter deletion: 6
+msa row size :799
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1OSB
+Null matrix was calculated: 1OSB
+Null matrix 2 was calculated: 1OSB
+HSSP_Database/Train_AdjustIndex/MSA/1RTD_A.fasta.msa
+counter deletion: 1369
+msa row size :621
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1RTD
+Null matrix was calculated: 1RTD
+Null matrix 2 was calculated: 1RTD
+HSSP_Database/Train_AdjustIndex/MSA/1XPX_A.fasta.msa
+counter deletion: 2
+msa row size :140
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1XPX
+Null matrix was calculated: 1XPX
+Null matrix 2 was calculated: 1XPX
+HSSP_Database/Train_AdjustIndex/MSA/2BZF_A.fasta.msa
+counter deletion: 40
+msa row size :165
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2BZF
+Null matrix was calculated: 2BZF
+Null matrix 2 was calculated: 2BZF
+HSSP_Database/Train_AdjustIndex/MSA/2HDC_A.fasta.msa
+counter deletion: 20
+msa row size :198
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 2HDC
+Null matrix was calculated: 2HDC
+Null matrix 2 was calculated: 2HDC
+HSSP_Database/Train_AdjustIndex/MSA/1D02_B.fasta.msa
+counter deletion: 1
+msa row size :9
+HSSP_Database/Train_AdjustIndex/MSA/1GM5_A.fasta.msa
+Skip 1D02 : KSELSGRLNWQALAGLKASGAEQNLYNVFNAVFEGTKYVLYEKPKHLKNLYAQVVLPDDVIKEIFNPLIDLSTTQWGVSPAFAIENTETHKILFGEIKRQDGWVEGKDPSAGRGNAHERSCKLFTPGLLKAYRTIGGINDEEILPFWVVFEGDITRDPKRVREITFWYDHYQDNYFMWRPNESGEKLVQHFNEKLKKYLD: 9
+counter deletion: 2
+msa row size :216
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1GM5
+Null matrix was calculated: 1GM5
+Null matrix 2 was calculated: 1GM5
+HSSP_Database/Train_AdjustIndex/MSA/1IO4_D.fasta.msa
+counter deletion: 33
+msa row size :71
+HSSP_Database/Train_AdjustIndex/MSA/1LAU_E.fasta.msa
+Skip 1IO4 : PRVVPDQRSKFENEEFFRKLSRECEIKYTGFRDRPHEERQTRFQNACRDGRSEIAFVATGTNLSLQFFPSREYVDLEREAGKVYLKAPMILNGVCVIWKGWIDLHRLDGMGCLEFDEERAQQEDALAQ: 71
+counter deletion: 11
+msa row size :2491
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1LAU
+Null matrix was calculated: 1LAU
+Null matrix 2 was calculated: 1LAU
+HSSP_Database/Train_AdjustIndex/MSA/1OUP_A.fasta.msa
+counter deletion: 4
+msa row size :2257
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1OUP
+Null matrix was calculated: 1OUP
+Null matrix 2 was calculated: 1OUP
+HSSP_Database/Train_AdjustIndex/MSA/1RXV_A.fasta.msa
+counter deletion: 1
+msa row size :547
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1RXV
+Null matrix was calculated: 1RXV
+Null matrix 2 was calculated: 1RXV
+HSSP_Database/Train_AdjustIndex/MSA/1XS9_A.fasta.msa
+counter deletion: 369
+msa row size :2133
+Finish calculating indicator and null pair index
+Finish retrieved Column pair
+Signal matrix was calculated: 1XS9
+Null matrix was calculated: 1XS9
+Null matrix 2 was calculated: 1XS9
+HSSP_Database/Train_AdjustIndex/MSA/2C5R_A.fasta.msa
+counter deletion: 4
+msa row size :3
+HSSP_Database/Train_AdjustIndex/MSA/2HVR_A.fasta.msa
+Skip 2C5R : NLSACEVAVLDLYEQSNIRIPSDIIEDLVNQRLQSEQEVLNYIETQRTYWKLENQKKLYRGSLK: 3
+counter deletion: 11
+msa row size :27
+Skip 2HVR : SMFKKYSSLENHYNSKFIEKLYSLGLTGGEWVAREKIHGTNFSLIIERDKVTCAKRTGPILPAEDFFGYEIILKNYADSIKAVQDIMETSAVVSYQVFGEFAGPGIQKNVDYGDKDFYVFDIIVTTESGDVTYVDDYMMESFCNTFKFKMAPLLGRGKFEELIKLPNDLDSVVQDYNFTVDHAGLVDANKCVWNAEAKGEVFTAEGYVLKPCYPSWLRNGNRVAIKCKNSKFELSEADNKLVGILACYVTLNRVNNVISKIGEIGPKDFGKVMGLTVQDILEETSREGITLTQADNPSLIKKELVKMVQDVLRPAWIEL: 27
+# skipped protein: 111
+BUILD SUCCESSFUL (total time: 65 minutes 54 seconds)

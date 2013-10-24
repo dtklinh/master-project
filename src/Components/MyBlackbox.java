@@ -64,6 +64,7 @@ public class MyBlackbox {
 
     public static void CalculateSig_NullMatrix(String filename) throws FileNotFoundException, IOException {
         ArrayList<KeyProtein> lst_prot = MyIO.LoadKeyProteins(filename);
+        String dir = "HSSP_Database/Train_AdjustIndex/";
         String Signal_filename = "SumSignalMatrix.txt";
         String Null_filename = "SumNullMatrix1.txt";
         String Null_filename2 = "SumNullMatrix2.txt";
@@ -78,7 +79,7 @@ public class MyBlackbox {
                 k.LoadingFromPDBFile();
             }
             String fasta = k.getName() + "_" + k.getChain() + ".fasta.msa";
-            ArrayList<String> msa = MsaFilterer.filter("HSSP_Database/Train/MSA/" + fasta);
+            ArrayList<String> msa = MsaFilterer.filter(dir+"MSA/" + fasta);
 //            if (msa.size() < 10) {
 //                System.out.println("Skip protein: " + k.getName() + "_" + k.getChain());
 //            }
@@ -96,7 +97,7 @@ public class MyBlackbox {
 //            ArrayList<int[]> null_indicator2 = k.RetrieveNullIndex2(distance, true);
             //
             ArrayList<String> lst_cols = m.RetrieveColumnPair();
-            ArrayList<int[]> signal_indicator = m.RetrieveIndicatorPair2(distance,lst_cols );
+            ArrayList<int[]> signal_indicator = m.RetrieveIndicatorPair2(distance, lst_cols);
             ArrayList<int[]> null_indicator = m.RetrieveNullIndex2(distance, false, lst_cols);
             ArrayList<int[]> null_indicator2 = m.RetrieveNullIndex2(distance, true, lst_cols);
             
@@ -117,29 +118,30 @@ public class MyBlackbox {
             PairOfPair PoP_signal = new PairOfPair(m, signal_indicator);
             PairOfPair PoP_null = new PairOfPair(m, null_indicator);
             PairOfPair PoP_null2 = new PairOfPair(m, null_indicator2);
-            ArrayList<String> ColumnPair = PoP_signal.RetrieveColumnPair();
+//            ArrayList<String> ColumnPair = PoP_signal.RetrieveColumnPair();
+            ArrayList<String> ColumnPair = m.RetrieveColumnPair();
             System.out.println("Finish retrieved Column pair");
 
             Matrix tmp = PoP_signal.CalculatePoP(ColumnPair, PairIndex);
-            MyIO.WritePoPToFile("HSSP_Database/Train/SignalMatrix/" + k.getName() + "_" + k.getChain() + ".txt", tmp.getArray());
+            MyIO.WritePoPToFile(dir +"SignalMatrix/" + k.getName() + "_" + k.getChain() + ".txt", tmp.getArray());
             SignalMat = SignalMat.plus(tmp);
             System.out.println("Signal matrix was calculated: " + k.getName());
 
             tmp = PoP_null.CalculatePoP(ColumnPair, PairIndex);
-            MyIO.WritePoPToFile("HSSP_Database/Train/NullMatrix1/" + k.getName() + "_" + k.getChain() + ".txt", tmp.getArray());
+            MyIO.WritePoPToFile(dir + "NullMatrix1/" + k.getName() + "_" + k.getChain() + ".txt", tmp.getArray());
             NullMat = NullMat.plus(tmp);
             System.out.println("Null matrix was calculated: " + k.getName());
             //
             tmp = PoP_null2.CalculatePoP(ColumnPair, PairIndex);
-            MyIO.WritePoPToFile("HSSP_Database/Train/NullMatrix2/" + k.getName() + "_" + k.getChain() + ".txt", tmp.getArray());
+            MyIO.WritePoPToFile(dir + "NullMatrix2/" + k.getName() + "_" + k.getChain() + ".txt", tmp.getArray());
             NullMat2 = NullMat2.plus(tmp);
             System.out.println("Null matrix 2 was calculated: " + k.getName());
 
         }
         System.err.println("# skipped protein: " + num_skip);
-        MyIO.WritePoPToFile("HSSP_Database/Train/SignalMatrix/" + Signal_filename, SignalMat.getArray());
-        MyIO.WritePoPToFile("HSSP_Database/Train/NullMatrix1/" + Null_filename, NullMat.getArray());
-        MyIO.WritePoPToFile("HSSP_Database/Train/NullMatrix2/" + Null_filename2, NullMat2.getArray());
+        MyIO.WritePoPToFile(dir + "SignalMatrix/" + Signal_filename, SignalMat.getArray());
+        MyIO.WritePoPToFile(dir + "NullMatrix1/" + Null_filename, NullMat.getArray());
+        MyIO.WritePoPToFile(dir + "NullMatrix2/" + Null_filename2, NullMat2.getArray());
     }
 
     public static void TestSync(String filename) {
@@ -302,28 +304,29 @@ public class MyBlackbox {
     }
 
     public static void CalculateDSM2() throws IOException {
-        String signal = "HSSP_Database/Train/SignalMatrix/SumSignalMatrix.txt";
-        String nul = "HSSP_Database/Train/NullMatrix1/SumNullMatrix1.txt";
-        String nul2 = "HSSP_Database/Train/NullMatrix2/SumNullMatrix2.txt";
+        String dir = "HSSP_Database/Train_AdjustIndex/";
+        String signal = dir + "SignalMatrix/SumSignalMatrix.txt";
+        String nul = dir + "NullMatrix1/SumNullMatrix1.txt";
+        String nul2 = dir + "NullMatrix2/SumNullMatrix2.txt";
         ParseBlosumMatrix pbm = new ParseBlosumMatrix();
         HashMap<String, Integer> PairIndex = AminoAcid.GetPairIndex();
         DSM d = new DSM();
         d.LoadFromFile(signal, nul, 400);
         double[][] m = Dsm.CalcDSM(d.getSignalMat().getArrayCopy(), d.getNullMat().getArrayCopy(),
                 pbm, PairIndex, true);
-        MyIO.WritePoPToFile("HSSP_Database/Train/DSM_0_0", m);
-//        System.exit(0);
+        MyIO.WritePoPToFile(dir + "DSM_0_0", m);
+        
         m = Dsm.CalcDSM(d.getSignalMat().getArrayCopy(), d.getNullMat().getArrayCopy(),
                 pbm, PairIndex, false);
-        MyIO.WritePoPToFile("HSSP_Database/Train/DSM_0_1", m);
+        MyIO.WritePoPToFile(dir + "DSM_0_1", m);
         //
         d.LoadFromFile(signal, nul2, 400);
         m = Dsm.CalcDSM(d.getSignalMat().getArrayCopy(), d.getNullMat().getArrayCopy(),
                 pbm, PairIndex, true);
-        MyIO.WritePoPToFile("HSSP_Database/Train/DSM_1_0", m);
+        MyIO.WritePoPToFile(dir + "DSM_1_0", m);
         m = Dsm.CalcDSM(d.getSignalMat().getArrayCopy(), d.getNullMat().getArrayCopy(),
                 pbm, PairIndex, false);
-        MyIO.WritePoPToFile("HSSP_Database/Train/DSM_1_1", m);
+        MyIO.WritePoPToFile(dir + "DSM_1_1", m);
     }
 
     static public void Test() throws FileNotFoundException, IOException, Exception {
@@ -388,16 +391,16 @@ public class MyBlackbox {
 //        for(int i=0;i<20;i++){
 //            System.out.println(amino.get(i)+": "+binding[i]/sum_binding+" / "+non_binding[i]/sum_non);
 //        }
-        String list_dir = "HSSP_Database/Test/TS75.txt";
+        String list_dir = "BLAST_Database/Test/test.txt";
 //        String signal_dir = "Train/SignalMatrix";
 //        String null_dir = "Train/NullMatrix";
 //        String null_dir2 = "Train/NullMatrix2";
 //        ArrayList<double[]> Pos = new ArrayList<double[]>();
 //        ArrayList<double[]> Neg = new ArrayList<double[]>();
-//        Matrix DSM1 = MyIO.ReadDSM("DSM_0_0");
-//        Matrix DSM2 = MyIO.ReadDSM("DSM_0_1");
-//        Matrix DSM3 = MyIO.ReadDSM("DSM_1_0");
-        Matrix DSM4 = MyIO.ReadDSM("DSM_1_1");
+//        Matrix DSM1 = MyIO.ReadDSM("HSSP_Database/Train/DSM_0_0");
+//        Matrix DSM2 = MyIO.ReadDSM("HSSP_Database/Train/DSM_0_1");
+        Matrix DSM3 = MyIO.ReadDSM("HSSP_Database/Train/DSM_1_0");
+//        Matrix DSM4 = MyIO.ReadDSM("HSSP_Database/Train/DSM_1_1");
 //        Matrix DSM5 = MyIO.ReadDSM("newDSM.out");
         ArrayList<String> amino = AminoAcid.getAA();
 
@@ -407,17 +410,18 @@ public class MyBlackbox {
             if (k.getSequence().equalsIgnoreCase("")) {
                 k.LoadingFromPDBFile();
             }
-            String fasta = k.getName() + "_" + k.getChain() + ".fasta.msa";
-            ArrayList<String> msa = MsaFilterer.filter("HSSP_Database/Test/MSA/" + fasta);
+            String fasta = k.getName() + "_" + k.getChain() + ".msa";
+            ArrayList<String> msa = MsaFilterer.filter("BLAST_Database/Test/MSA/" + fasta);
             if (msa.size() < 100) {
                 System.out.println("Skip protein: " + k.getName() + "_" + k.getChain());
                 continue;
             }
             MSA m = new MSA(k, msa);
             m.AdjustLength();
+            ArrayList<String> lst_cols = m.RetrieveColumnPair();
             System.out.println("Protein: " + k.getName() + ", chain: " + k.getChain());
-            ArrayList<Integer> idx_col = m.ScoreSignificantValueOfPair(msa, 5, DSM4);
-            MyEvaluate e = m.Evaluate(idx_col);
+            ArrayList<Integer> idx_col = m.ScoreSignificantValueOfPair(msa, 5, DSM3, lst_cols);
+            MyEvaluate e = m.Evaluate(idx_col, lst_cols);
             me.Add(e);
             System.out.println("Sensitivity: " + e.Sensitivity());
             System.out.println("Specificity: " + e.Specificity());
@@ -437,17 +441,19 @@ public class MyBlackbox {
 
     public static void TongHop() throws FileNotFoundException, IOException {
 //        String pdb_dir = "pdb_file";
-        String list_dir = "Test/SignalMatrix/list.txt";
+        String dir = "HSSP_Database/Train_AdjustIndex/";
+        String list_dir = dir + "AminoList374_New.txt";
+//        String list_dir = dir + "TS75.txt";
 //        String signal_dir = "Train/SignalMatrix";
 //        String null_dir = "Train/NullMatrix";
 //        String null_dir2 = "Train/NullMatrix2";
         ArrayList<double[]> Pos = new ArrayList<double[]>();
         ArrayList<double[]> Neg = new ArrayList<double[]>();
-        Matrix DSM1 = MyIO.ReadDSM("DSM_0_0");
-        Matrix DSM2 = MyIO.ReadDSM("DSM_0_1");
-        Matrix DSM3 = MyIO.ReadDSM("DSM_1_0");
-        Matrix DSM4 = MyIO.ReadDSM("DSM_1_1");
-        Matrix DSM5 = MyIO.ReadDSM("newDSM.out");
+        Matrix DSM1 = MyIO.ReadDSM("HSSP_Database/Train_AdjustIndex/DSM_0_0");
+//        Matrix DSM2 = MyIO.ReadDSM("HSSP_Database/Train_AdjustIndex/DSM_0_1");
+//        Matrix DSM3 = MyIO.ReadDSM("BLAST_Database/Train/DSM_1_0");
+//        Matrix DSM4 = MyIO.ReadDSM("HSSP_Database/Train/DSM_1_1");
+//        Matrix DSM5 = MyIO.ReadDSM("newDSM.out");
         ArrayList<String> amino = AminoAcid.getAA();
 
         ArrayList<KeyProtein> lst_prot = MyIO.LoadKeyProteins(list_dir);
@@ -456,8 +462,8 @@ public class MyBlackbox {
                 k.LoadingFromPDBFile();
             }
             String fasta = k.getName() + "_" + k.getChain() + ".fasta.msa";
-            ArrayList<String> msa = MsaFilterer.filter("MSA_file/Collection/" + fasta);
-            if (msa.size() < 10) {
+            ArrayList<String> msa = MsaFilterer.filter(dir + "MSA/" + fasta);
+            if (msa.size() < 100) {
                 System.out.println("Skip protein: " + k.getName() + "_" + k.getChain());
                 continue;
             }
@@ -468,10 +474,10 @@ public class MyBlackbox {
 //            Neg.addAll(m.RetrieveSlidingWindow(5, false, DSM1, DSM2, DSM3, DSM4));
 //            Pos.addAll(m.CalculatePSSMAndSS(amino, 11, true));
 //            Neg.addAll(m.CalculatePSSMAndSS(amino, 11, false));
-            Pos.addAll(m.CalculatePSSMandUvalue(amino, 11, true, DSM5));
-            Neg.addAll(m.CalculatePSSMandUvalue(amino, 11, false, DSM5));
+            Pos.addAll(m.CalculatePSSMandUvalue(amino, 11, true, DSM1));
+            Neg.addAll(m.CalculatePSSMandUvalue(amino, 11, false, DSM1));
         }
-        ARRF_Template.WriteToArrfFile("PSSM_Uvalue_DSM_5_Test.arff", "SlidingWindows", Pos, Neg);
+        ARRF_Template.WriteToArrfFile(dir + "PSSM_Uvalue_DSM_0_0_Train.arff", "SlidingWindowsDSM_0_0", Pos, Neg);
     }
 
     public static void FindSafeNeg(String filename, String file_output) throws FileNotFoundException, IOException, Exception {

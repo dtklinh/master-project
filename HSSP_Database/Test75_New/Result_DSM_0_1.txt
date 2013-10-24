@@ -1,0 +1,48 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -I 100 -K 0 -S 1 -num-slots 1
+Relation:     SlidingWindowsDSM_0_1
+Instances:    47222
+Attributes:   276
+              [list of attributes omitted]
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Random forest of 100 trees, each constructed while considering 9 random features.
+Out of bag error: 0.0829
+
+
+
+Time taken to build model: 492.26 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 14.44 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        6123              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0588
+Root mean squared error                  0.1064
+Relative absolute error                 33.0984 %
+Root relative squared error             33.7448 %
+Coverage of cases (0.95 level)         100      %
+Mean rel. region size (0.95 level)      61.22   %
+Total Number of Instances             6123     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     P
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     N
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  680    0 |    a = P
+    0 5443 |    b = N
+

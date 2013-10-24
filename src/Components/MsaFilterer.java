@@ -114,7 +114,7 @@ public class MsaFilterer {
             }
         }
 
-//        System.out.println("counter deletion: " + counter);
+        System.out.println("counter deletion: " + counter);
         for (i = removals.size() - 1; i > 0; i--) {
             int rem;
             rem = ((Integer) removals.elementAt(i)).intValue();
@@ -141,7 +141,7 @@ public class MsaFilterer {
 //        }
 //        }
 
-//        System.out.println("msa row size :" + msa.size());
+        System.out.println("msa row size :" + msa.size());
         return msa;
     }
 }

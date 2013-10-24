@@ -59,14 +59,15 @@ public class PairOfPair {
     public ArrayList<String> RetrieveColumnPair(){
         ArrayList<String> res = new ArrayList<String>();
         ArrayList<String> lst_seq = this.MyMSA.getLstSeqs();
-        int min = 10000;
-        for(String s: lst_seq){
-            s = s.trim();
-            if(s.length()<min){
-                min = s.length();
-            }
-        }
-        for(int i=0;i<min;i++){
+//        int min = 10000;
+//        for(String s: lst_seq){
+//            s = s.trim();
+//            if(s.length()<min){
+//                min = s.length();
+//            }
+//        }
+        int len = lst_seq.get(0).length();
+        for(int i=0;i<len;i++){
             String tmp = "";
             for(String s:lst_seq){
                 tmp = tmp + String.valueOf(s.charAt(i));

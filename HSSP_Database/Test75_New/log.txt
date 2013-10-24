@@ -1,0 +1,782 @@
+run:
+HSSP_Database/Test75_New/MSA/1A6Y_B.fasta.msa
+counter deletion: 127
+msa row size :577
+Protein length: 84
+Lst_Column: 84
+Protein length: 84
+Lst_Column: 84
+HSSP_Database/Test75_New/MSA/1CIT_A.fasta.msa
+counter deletion: 82
+msa row size :250
+Protein length: 89
+Lst_Column: 89
+Protein length: 89
+Lst_Column: 89
+HSSP_Database/Test75_New/MSA/1EMH_A.fasta.msa
+counter deletion: 14
+msa row size :2488
+Protein length: 223
+Lst_Column: 223
+Protein length: 223
+Lst_Column: 223
+HSSP_Database/Test75_New/MSA/1HHT_P.fasta.msa
+counter deletion: 10
+msa row size :3
+Skip protein: 1HHT_P
+HSSP_Database/Test75_New/MSA/1O4X_B.fasta.msa
+counter deletion: 339
+msa row size :2019
+Protein length: 77
+Lst_Column: 77
+Protein length: 77
+Lst_Column: 77
+HSSP_Database/Test75_New/MSA/1RXV_A.fasta.msa
+counter deletion: 1
+msa row size :547
+Protein length: 305
+Lst_Column: 305
+Protein length: 305
+Lst_Column: 305
+HSSP_Database/Test75_New/MSA/1YO5_C.fasta.msa
+counter deletion: 49
+msa row size :387
+Protein length: 88
+Lst_Column: 88
+Protein length: 88
+Lst_Column: 88
+HSSP_Database/Test75_New/MSA/2C6Y_A.fasta.msa
+counter deletion: 5
+msa row size :213
+Protein length: 98
+Lst_Column: 98
+Protein length: 98
+Lst_Column: 98
+HSSP_Database/Test75_New/MSA/2PJR_B.fasta.msa
+counter deletion: 1
+msa row size :2501
+Protein length: 95
+Lst_Column: 95
+Protein length: 95
+Lst_Column: 95
+HSSP_Database/Test75_New/MSA/1AKH_A.fasta.msa
+counter deletion: 7
+msa row size :823
+Protein length: 49
+Lst_Column: 49
+Protein length: 49
+Lst_Column: 49
+HSSP_Database/Test75_New/MSA/1CKQ_A.fasta.msa
+counter deletion: 3
+msa row size :69
+Skip protein: 1CKQ_A
+HSSP_Database/Test75_New/MSA/1EO3_A.fasta.msa
+counter deletion: 2
+msa row size :56
+Skip protein: 1EO3_A
+HSSP_Database/Test75_New/MSA/1I6H_E.fasta.msa
+counter deletion: 21
+msa row size :359
+Protein length: 214
+Lst_Column: 214
+Protein length: 214
+Lst_Column: 214
+HSSP_Database/Test75_New/MSA/1LAU_E.fasta.msa
+counter deletion: 11
+msa row size :2491
+Protein length: 228
+Lst_Column: 228
+Protein length: 228
+Lst_Column: 228
+HSSP_Database/Test75_New/MSA/1QN3_B.fasta.msa
+counter deletion: 60
+msa row size :412
+Protein length: 187
+Lst_Column: 187
+Protein length: 187
+Lst_Column: 187
+HSSP_Database/Test75_New/MSA/1RZ9_A.fasta.msa
+counter deletion: 3
+msa row size :50
+Skip protein: 1RZ9_A
+HSSP_Database/Test75_New/MSA/2EZV_B.fasta.msa
+counter deletion: 1
+msa row size :3
+Skip protein: 2EZV_B
+HSSP_Database/Test75_New/MSA/3PJR_A.fasta.msa
+counter deletion: 9
+msa row size :2232
+Protein length: 646
+Lst_Column: 646
+Protein length: 646
+Lst_Column: 646
+HSSP_Database/Test75_New/MSA/1AKH_B.fasta.msa
+counter deletion: 25
+msa row size :329
+Protein length: 78
+Lst_Column: 78
+Protein length: 78
+Lst_Column: 78
+HSSP_Database/Test75_New/MSA/1CW0_A.fasta.msa
+counter deletion: 942
+msa row size :622
+Protein length: 155
+Lst_Column: 155
+Protein length: 155
+Lst_Column: 155
+HSSP_Database/Test75_New/MSA/1F0V_A.fasta.msa
+counter deletion: 12
+msa row size :655
+Protein length: 124
+Lst_Column: 124
+Protein length: 124
+Lst_Column: 124
+HSSP_Database/Test75_New/MSA/1IAW_A.fasta.msa
+counter deletion: 1
+msa row size :30
+Skip protein: 1IAW_A
+HSSP_Database/Test75_New/MSA/1M06_G.fasta.msa
+counter deletion: 2
+msa row size :15
+Skip protein: 1M06_G
+HSSP_Database/Test75_New/MSA/1QZG_A.fasta.msa
+counter deletion: 1
+msa row size :3
+Skip protein: 1QZG_A
+HSSP_Database/Test75_New/MSA/2A1R_A.fasta.msa
+counter deletion: 38
+msa row size :54
+Skip protein: 2A1R_A
+HSSP_Database/Test75_New/MSA/2FO1_E.fasta.msa
+counter deletion: 1
+msa row size :16
+Skip protein: 2FO1_E
+HSSP_Database/Test75_New/MSA/4GAT_A.fasta.msa
+counter deletion: 1
+msa row size :1356
+Protein length: 66
+Lst_Column: 66
+Protein length: 66
+Lst_Column: 66
+HSSP_Database/Test75_New/MSA/1D2I_A.fasta.msa
+counter deletion: 3
+msa row size :4
+Skip protein: 1D2I_A
+HSSP_Database/Test75_New/MSA/1FIU_A.fasta.msa
+counter deletion: 18
+msa row size :43
+Skip protein: 1FIU_A
+HSSP_Database/Test75_New/MSA/1J4W_A.fasta.msa
+counter deletion: 71
+msa row size :145
+Protein length: 145
+Lst_Column: 145
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+Protein length: 145
+Lst_Column: 145
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+HSSP_Database/Test75_New/MSA/1MJE_B.fasta.msa
+counter deletion: 1
+msa row size :138
+Protein length: 42
+Lst_Column: 42
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+Protein length: 42
+Lst_Column: 42
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+NaN
+HSSP_Database/Test75_New/MSA/1R0N_B.fasta.msa
+counter deletion: 3
+msa row size :68
+Skip protein: 1R0N_B
+HSSP_Database/Test75_New/MSA/1SKN_P.fasta.msa
+counter deletion: 3
+msa row size :458
+Protein length: 74
+Lst_Column: 74
+Protein length: 74
+Lst_Column: 74
+HSSP_Database/Test75_New/MSA/2A66_A.fasta.msa
+counter deletion: 130
+msa row size :111
+Protein length: 95
+Lst_Column: 95
+Protein length: 95
+Lst_Column: 95
+HSSP_Database/Test75_New/MSA/2GZK_A.fasta.msa
+counter deletion: 0
+msa row size :663
+Protein length: 159
+Lst_Column: 159
+Protein length: 159
+Lst_Column: 159
+HSSP_Database/Test75_New/MSA/1AOI_D.fasta.msa
+counter deletion: 555
+msa row size :1129
+Protein length: 99
+Lst_Column: 99
+Protein length: 99
+Lst_Column: 99
+HSSP_Database/Test75_New/MSA/1DC1_B.fasta.msa
+counter deletion: 1
+msa row size :36
+Skip protein: 1DC1_B
+HSSP_Database/Test75_New/MSA/1FOK_A.fasta.msa
+counter deletion: 1
+msa row size :24
+Skip protein: 1FOK_A
+HSSP_Database/Test75_New/MSA/1J5N_A.fasta.msa
+counter deletion: 9
+msa row size :2051
+Protein length: 93
+Lst_Column: 93
+Protein length: 93
+Lst_Column: 93
+HSSP_Database/Test75_New/MSA/1NGM_B.fasta.msa
+counter deletion: 14
+msa row size :37
+Skip protein: 1NGM_B
+HSSP_Database/Test75_New/MSA/1RC8_A.fasta.msa
+counter deletion: 10
+msa row size :40
+Skip protein: 1RC8_A
+HSSP_Database/Test75_New/MSA/1TQE_P.fasta.msa
+counter deletion: 45
+msa row size :2457
+Protein length: 90
+Lst_Column: 90
+Protein length: 90
+Lst_Column: 90
+HSSP_Database/Test75_New/MSA/2ASD_A.fasta.msa
+counter deletion: 13
+msa row size :1017
+Protein length: 341
+Lst_Column: 341
+Protein length: 341
+Lst_Column: 341
+HSSP_Database/Test75_New/MSA/2H7G_X.fasta.msa
+counter deletion: 39
+msa row size :36
+Skip protein: 2H7G_X
+HSSP_Database/Test75_New/MSA/1AWC_A.fasta.msa
+counter deletion: 66
+msa row size :56
+Skip protein: 1AWC_A
+HSSP_Database/Test75_New/MSA/1DNK_A.fasta.msa
+counter deletion: 6
+msa row size :138
+Protein length: 250
+Lst_Column: 250
+Protein length: 250
+Lst_Column: 250
+HSSP_Database/Test75_New/MSA/1GD2_E.fasta.msa
+counter deletion: 1
+msa row size :53
+Skip protein: 1GD2_E
+HSSP_Database/Test75_New/MSA/1JNM_B.fasta.msa
+counter deletion: 69
+msa row size :1537
+Protein length: 57
+Lst_Column: 57
+Protein length: 57
+Lst_Column: 57
+HSSP_Database/Test75_New/MSA/1NK2_P.fasta.msa
+counter deletion: 1
+msa row size :898
+Protein length: 77
+Lst_Column: 77
+Protein length: 77
+Lst_Column: 77
+HSSP_Database/Test75_New/MSA/1RM1_B.fasta.msa
+counter deletion: 20
+msa row size :176
+Protein length: 101
+Lst_Column: 101
+Protein length: 101
+Lst_Column: 101
+HSSP_Database/Test75_New/MSA/1U3E_M.fasta.msa
+counter deletion: 2
+msa row size :93
+Skip protein: 1U3E_M
+HSSP_Database/Test75_New/MSA/2B9S_A.fasta.msa
+counter deletion: 7
+msa row size :287
+Protein length: 426
+Lst_Column: 426
+Protein length: 426
+Lst_Column: 426
+HSSP_Database/Test75_New/MSA/2I0Q_B.fasta.msa
+counter deletion: 1
+msa row size :14
+Skip protein: 2I0Q_B
+HSSP_Database/Test75_New/MSA/1B2M_A.fasta.msa
+counter deletion: 4
+msa row size :97
+Skip protein: 1B2M_A
+HSSP_Database/Test75_New/MSA/1DSZ_A.fasta.msa
+counter deletion: 27
+msa row size :276
+Protein length: 75
+Lst_Column: 75
+Protein length: 75
+Lst_Column: 75
+HSSP_Database/Test75_New/MSA/1HAO_H.fasta.msa
+counter deletion: 26
+msa row size :595
+Protein length: 253
+Lst_Column: 253
+Protein length: 253
+Lst_Column: 253
+HSSP_Database/Test75_New/MSA/1JT0_A.fasta.msa
+counter deletion: 59
+msa row size :41
+Skip protein: 1JT0_A
+HSSP_Database/Test75_New/MSA/1NKP_A.fasta.msa
+counter deletion: 15
+msa row size :1860
+Protein length: 88
+Lst_Column: 88
+Protein length: 88
+Lst_Column: 88
+HSSP_Database/Test75_New/MSA/1RM1_C.fasta.msa
+counter deletion: 0
+msa row size :77
+Skip protein: 1RM1_C
+HSSP_Database/Test75_New/MSA/1Y1W_D.fasta.msa
+counter deletion: 15
+msa row size :24
+Skip protein: 1Y1W_D
+HSSP_Database/Test75_New/MSA/2B9S_B.fasta.msa
+counter deletion: 6
+msa row size :760
+Protein length: 52
+Lst_Column: 52
+Protein length: 52
+Lst_Column: 52
+HSSP_Database/Test75_New/MSA/2JEA_I.fasta.msa
+counter deletion: 11
+msa row size :106
+Protein length: 207
+Lst_Column: 207
+Protein length: 207
+Lst_Column: 207
+HSSP_Database/Test75_New/MSA/1C9B_A.fasta.msa
+counter deletion: 72
+msa row size :340
+Protein length: 207
+Lst_Column: 207
+Protein length: 207
+Lst_Column: 207
+HSSP_Database/Test75_New/MSA/1DUX_C.fasta.msa
+counter deletion: 5
+msa row size :29
+Skip protein: 1DUX_C
+HSSP_Database/Test75_New/MSA/1HBX_E.fasta.msa
+counter deletion: 75
+msa row size :2427
+Protein length: 89
+Lst_Column: 89
+Protein length: 89
+Lst_Column: 89
+HSSP_Database/Test75_New/MSA/1K61_A.fasta.msa
+counter deletion: 28
+msa row size :489
+Protein length: 60
+Lst_Column: 60
+Protein length: 60
+Lst_Column: 60
+HSSP_Database/Test75_New/MSA/1NLW_A.fasta.msa
+counter deletion: 39
+msa row size :45
+Skip protein: 1NLW_A
+HSSP_Database/Test75_New/MSA/1RRQ_A.fasta.msa
+counter deletion: 3
+msa row size :2498
+Protein length: 344
+Lst_Column: 344
+Protein length: 344
+Lst_Column: 344
+HSSP_Database/Test75_New/MSA/1Y1W_G.fasta.msa
+counter deletion: 23
+msa row size :345
+Protein length: 171
+Lst_Column: 171
+Protein length: 171
+Lst_Column: 171
+HSSP_Database/Test75_New/MSA/2OFI_A.fasta.msa
+counter deletion: 158
+msa row size :2344
+Protein length: 184
+Lst_Column: 184
+Protein length: 184
+Lst_Column: 184
+BUILD SUCCESSFUL (total time: 13 minutes 49 seconds)

@@ -26,7 +26,7 @@ public class Dsm {
             }
             check = check(matrix);
             loop++;
-            if (loop > 10000) {
+            if (loop > 1000) {
                 break;
             }
         }

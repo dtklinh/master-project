@@ -96,6 +96,15 @@ public class MyIO {
         writer.flush();
         writer.close();
     }
+    public static void WriteToFile_Double(String filename, ArrayList<Double> lst) throws IOException{
+        BufferedWriter writer = new BufferedWriter(new FileWriter(filename), 32768);
+        String tmp = "";
+        for(Double s:lst){
+            writer.write(s+"\n");
+        }
+        writer.flush();
+        writer.close();
+    }
 
     public static ArrayList<KeyProtein> LoadKeyProteins(String filename) throws FileNotFoundException, IOException {
         ArrayList<KeyProtein> res = new ArrayList<KeyProtein>();
@@ -150,5 +159,32 @@ public class MyIO {
             }
         }
         return new Matrix(tmp);
+    }
+    public static ArrayList<String> ReadMSA(String filename) throws FileNotFoundException, IOException{
+        ArrayList<String> res = new ArrayList<String>();
+        FileInputStream fstream = new FileInputStream(filename);
+        DataInputStream in = new DataInputStream(fstream);
+        BufferedReader br = new BufferedReader(new InputStreamReader(in));
+        String tmp = "";
+        String container = "";
+        while (true) {
+            tmp = br.readLine();
+            if (tmp == null) {
+                break;
+            }
+            if (tmp.isEmpty()) {
+                continue;
+            }
+            if (tmp.indexOf(">") >= 0) {
+                if (!container.isEmpty()) {
+                    res.add(container);
+                }
+                container = "";
+            } else {
+                container = container + tmp.trim();
+            }
+        }
+        br.close();
+        return res;
     }
 }

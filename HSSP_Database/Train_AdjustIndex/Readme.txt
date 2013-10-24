@@ -1,0 +1,1 @@
+In this foder, we take into account of the missing information amino acid in protein. 

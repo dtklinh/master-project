@@ -30,6 +30,7 @@ public class KeyProtein {
     private String Name;
     private String Chain;
     private ArrayList<Integer> BindingIndex;
+    private ArrayList<Integer> AbsoluteIndex;
     private int Offset;
     private String Sequence;
 
@@ -99,6 +100,7 @@ public class KeyProtein {
 
     public KeyProtein(String name, String chain) {
         this.BindingIndex = new ArrayList<Integer>();
+        this.AbsoluteIndex = new ArrayList<Integer>();
         this.Chain = chain;
         this.Name = name;
         this.Offset = 0;
@@ -173,6 +175,7 @@ public class KeyProtein {
                 if (g.getType().equalsIgnoreCase("amino")) {
                     //     List<Atom> atoms = g.getAtoms();
                     ResidueNumber rn = g.getResidueNumber();
+                    this.getAbsoluteIndex().add(rn.getSeqNum());
                     if (flag) {
                         this.setOffset(rn.getSeqNum());
                         flag = false;
@@ -436,5 +439,22 @@ public class KeyProtein {
         }
         return false;
         
+    }
+    public int GetAbsoluteIndex(int i){// i is index of sequence
+        return this.getAbsoluteIndex().get(i);
+    }
+
+    /**
+     * @return the AbsoluteIndex
+     */
+    public ArrayList<Integer> getAbsoluteIndex() {
+        return AbsoluteIndex;
+    }
+
+    /**
+     * @param AbsoluteIndex the AbsoluteIndex to set
+     */
+    public void setAbsoluteIndex(ArrayList<Integer> AbsoluteIndex) {
+        this.AbsoluteIndex = AbsoluteIndex;
     }
 }

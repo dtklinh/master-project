@@ -8,6 +8,7 @@ import Jama.Matrix;
 import Method.MyEvaluate;
 import Method.MyPair;
 import MyDivergence.MyEntropy;
+import SignificantFinder.GlobalVar;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.File;
@@ -357,7 +358,7 @@ public class MSA {
     }
 
     public ArrayList<String> RetrieveColumnPair() {
-        this.AdjustLength();
+//        this.AdjustLength();
         ArrayList<String> res = new ArrayList<String>();
         ArrayList<String> lst_seq = this.getLstSeqs();
 //        int min = 10000;
@@ -557,6 +558,7 @@ public class MSA {
             System.err.println("No binding index");
             System.exit(1);
         }
+        int offset = this.MyKeyProtein.getOffset();
         System.out.println("Protein length: " + this.MyKeyProtein.getSequence().length());
         int radius = (width - 1) / 2;
 //        double[][] m = new double[20][this.MyKeyProtein.getSequence().length()];
@@ -568,23 +570,27 @@ public class MSA {
         
         for (int i = (width - 1) / 2; i < Lst_ColumnPair.size() - (width - 1) / 2 - 1; i++) {
             if (pos) {
-                if (BindingIdx.indexOf(i) < 0) {
+//                if (BindingIdx.indexOf(i+offset) < 0) {
+                if (BindingIdx.indexOf(this.MyKeyProtein.GetAbsoluteIndex(i)) < 0) {
+//                if(this.MyKeyProtein.IsNearBindingResidual(i, (width-1)/2)){
                     continue;
                 }
             } else {
-                if (BindingIdx.indexOf(i) >= 0) {
+//                if (BindingIdx.indexOf(i+offset) >= 0) {
+                if (BindingIdx.indexOf(this.MyKeyProtein.GetAbsoluteIndex(i)) >= 0) {
                     continue;
                 }
             }
             // PSSM
             int len = width*20 + width*(width-1)/2;
+//            int len = width*20;
             double[] feature = new double[len];
 
            
             Matrix pssm = MatPSSM.getMatrix(0, 19, i - radius, i + radius);
             double[][] VecPSSM = pssm.getArrayCopy();
        //     double[] uvalue_null = this.CalculateUvalueForSlidingWin(Lst_ColumnPair, i-radius, i+radius+1, null);
-            double[] uvalue = this.CalculateUvalueForSlidingWin(Lst_ColumnPair, i-radius, i+radius+1, dsm);
+             double[] uvalue = this.CalculateUvalueForSlidingWin(Lst_ColumnPair, i-radius, i+radius+1, dsm);
             int position = 0;
 //            for(int j=0; j<pssm.length;j++){
 //                feature[position] = pssm[j];
@@ -596,8 +602,10 @@ public class MSA {
                     position++;
                 }
             }
+//            Random rd = new Random();
             for(int j=0;j<uvalue.length;j++){
                 feature[position] = uvalue[j];
+//                feature[position] = rd.nextDouble();
                 position++;
             }
 //            for(int j=0;j<uvalue_null.length;j++){
@@ -822,22 +830,36 @@ public class MSA {
         }
         return res;
     }
-    public ArrayList<Integer> ScoreSignificantValueOfPair(ArrayList<String> amino, int width,Matrix dsm){
+    public ArrayList<Integer> ScoreSignificantValueOfPair(ArrayList<String> amino, int width,Matrix dsm, ArrayList<String> lst_cols) throws IOException{
 //        ArrayList<String> msa = this.getLstSeqs();
         ArrayList<String> msa = this.RetrieveColumnPair();
-        double percent_pair = 0.15;
-        double percent_index = 0.60;
+        double percent_pair = 0.20;
+        double percent_index = 0.20;
         this.AdjustLength();
         int seq_len = this.MyKeyProtein.getSequence().length();
         ArrayList<MyPair> lst_pair = new ArrayList<MyPair>();
         ArrayList<Double> lst_score = new ArrayList<Double>();
         for(int i=0;i<seq_len-1; i++){
+            if(IsConservativeOrGap(i, lst_cols)){
+                System.err.println("Conservative or gap: "+ lst_cols.get(i));
+                continue;
+            }
             for(int j=i+1; j<=i+10 && j<seq_len;j++){
+                if(IsConservativeOrGap(j, lst_cols)){
+                    continue;
+                }
                 MyPair m = new MyPair(i, j, msa.get(i), msa.get(j));
                 lst_pair.add(m);
                 lst_score.add(m.CalculateUAlphaValue(dsm));
             }
         }
+        double[] arr = new double[lst_score.size()];
+        for(int i=0;i<lst_score.size();i++){
+            arr[i] = lst_score.get(i);
+        }
+        GlobalVar gv = new GlobalVar();
+        ArrayList<Double> lst_double = SignificantFinder.SignificanceFinder.process(arr, 0.01, "", gv);
+        MyIO.WriteToFile_Double("BLAST_Database/Test/MSA/"+this.MyKeyProtein.getName()+"_"+ this.MyKeyProtein.getChain()+".txt", lst_score);
         // randomize
         int c =0;
         while(c<lst_pair.size()){
@@ -928,7 +950,7 @@ public class MSA {
         }
         return res;
     }
-    public MyEvaluate Evaluate(ArrayList<Integer> lst){ // lst of index without adjusting offset
+    public MyEvaluate Evaluate(ArrayList<Integer> lst, ArrayList<String> lst_cols){ // lst of index without adjusting offset
         ArrayList<Integer> BindingIndex = this.MyKeyProtein.getBindingIndex();
         int offset = this.MyKeyProtein.getOffset();
         // find nearby binding sites, with distance d = 5.
@@ -937,7 +959,7 @@ public class MSA {
         int len = this.MyKeyProtein.getSequence().length();
         System.out.println("Neighbor:");
         for(int i=0; i<len;i++){
-            if(this.MyKeyProtein.IsNearBindingResidual(i+ offset, distance)){
+            if(this.MyKeyProtein.IsNearBindingResidual(i+ offset, distance) && !IsConservativeOrGap(i, lst_cols)){
                 int tmp=i+ offset;
                 Neighbor.add(tmp);
 //                System.out.print(tmp + " , ");
@@ -966,12 +988,15 @@ public class MSA {
         System.out.println("False negative: "+ fn);
         return new MyEvaluate(tp, tn, fp, fn);
     }
-    public ArrayList<int[]> RetrieveIndicatorPair2(int distance, ArrayList<String> lst_cols) { // define the distance of neighborhood
+    public ArrayList<int[]> RetrieveIndicatorPair2(int distance, ArrayList<String> lst_cols) { 
+        // define the distance of neighborhood
         ArrayList<int[]> res = new ArrayList<int[]>();
         
         int offset = this.MyKeyProtein.getOffset();
         for(int i=0;i<this.MyKeyProtein.getSequence().length()-1;i++){
-            if(this.MyKeyProtein.IsNearBindingResidual(i+offset, distance)){
+            int idx_adjust = this.MyKeyProtein.GetAbsoluteIndex(i);
+//            if(this.MyKeyProtein.IsNearBindingResidual(i+offset, distance)){
+            if(this.MyKeyProtein.IsNearBindingResidual(idx_adjust, distance)){
                 if(this.IsConservativeOrGap(i, lst_cols)){
                     continue;
                 }
@@ -980,7 +1005,8 @@ public class MSA {
                         break;
                     }
                     if(this.MyKeyProtein.IsNearBindingResidual(j+offset, distance)){
-                        if(this.IsConservativeOrGap(j, lst_cols)){
+//                        if(this.IsConservativeOrGap(j, lst_cols)){
+                        if(this.IsConservativeOrGap(this.MyKeyProtein.GetAbsoluteIndex(j), lst_cols)){
                             continue;
                         }
                         res.add(new int[]{i,j});
@@ -1020,31 +1046,31 @@ public class MSA {
         return res;
     }
     public boolean IsConservativeOrGap(int idx, ArrayList<String> lst_cols){ // index of column which is tested if conservative
-//        ArrayList<String> lst_cols = this.RetrieveColumnPair();
+  //      ArrayList<String> lst_cols = this.RetrieveColumnPair();
         ArrayList<String> aa = AminoAcid.getAA_Abbr();
         int len = lst_cols.get(0).length();
         
         for(String s: aa){
             int f = Collections.frequency(lst_cols, s);
-            if((double)f/len >=0.85){
+            if((double)f/len >=0.90){
                 return true;
             }
         }
         int g = Collections.frequency(lst_cols, "-");
-        if((double)g/len>=0.75){
+        if((double)g/len>=0.25){
             return true;
         }
         return false;
     }
-    public ArrayList<int[]> RetrieveNullIndex2(int distance, boolean neighbor,
-            ArrayList<String> lst_cols) {
+    public ArrayList<int[]> RetrieveNullIndex2(int distance, boolean neighbor, ArrayList<String> lst_cols) {
 
         ArrayList<int[]> res = new ArrayList<int[]>();
         int offset = this.MyKeyProtein.getOffset();
         ArrayList<Integer> lst_idx = new ArrayList<Integer>();
         for(int i=0;i<this.MyKeyProtein.getSequence().length();i++){
-            if(!this.MyKeyProtein.IsNearBindingResidual(i+offset, distance)){
-                if(this.IsConservativeOrGap(i, lst_cols)){
+//            if(!this.MyKeyProtein.IsNearBindingResidual(i+offset, distance)){
+            if(!this.MyKeyProtein.IsNearBindingResidual(this.MyKeyProtein.GetAbsoluteIndex(i), distance)){
+                if(this.IsConservativeOrGap(i,lst_cols)){
                     continue;
                 }
                 lst_idx.add(i);
