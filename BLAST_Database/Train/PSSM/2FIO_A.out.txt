@@ -1,0 +1,494 @@
+PSIBLAST 2.2.25+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: All non-redundant GenBank CDS translations+PDB+SwissProt+PIR+PRF
+excluding environmental samples from WGS projects
+           32,814,121 sequences; 11,431,176,125 total letters
+
+Results from round 1
+
+
+Query= 2FIO_A
+
+Length=123
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+ref|YP_002004531.1|  late gene transcriptional activator [Bacillu...   234    8e-60
+pdb|2FIO|A  Chain A, Phage Phi29 Transcription Regulator P4-Dna C...   233    2e-59
+sp|P06952.1|VG4_BPPZA  RecName: Full=Late genes activator; AltNam...   228    6e-58
+pdb|2FIP|A  Chain A, Phage Phi29 Transcription Regulator P4 >pdb|...   222    4e-56
+gb|ACH57071.1|  transcriptional regulator [Bacillus phage Nf]          193    2e-47
+ref|NP_690637.1|  late genes activator [Bacillus phage B103] >sp|...   192    4e-47
+sp|P09877.1|VG4_BPNF  RecName: Full=Late genes activator; AltName...   186    2e-45
+ref|NP_073687.1|  protein p4G [Bacillus phage GA-1] >emb|CAC21525...  92.8    3e-17
+gb|EMT68758.1|  hypothetical protein FOC4_g10004843 [Fusarium oxy...  38.1    0.94 
+
+
+>ref|YP_002004531.1| late gene transcriptional activator [Bacillus phage phi29]
+ sp|P03682.1|VG4_BPPH2 RecName: Full=Late genes activator; AltName: Full=Early protein 
+GP4
+ emb|CAA24482.1| unnamed protein product [Bacillus phage phi29]
+ gb|ACE96025.1| late gene transcriptional activator [Bacillus phage phi29]
+Length=125
+
+ Score =  234 bits (596),  Expect = 8e-60, Method: Composition-based stats.
+ Identities = 123/123 (100%), Positives = 123/123 (100%), Gaps = 0/123 (0%)
+
+Query  1    PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN  60
+            PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN
+Sbjct  2    PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN  61
+
+Query  61   MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPRLRERR  120
+            MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPRLRERR
+Sbjct  62   MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPRLRERR  121
+
+Query  121  KSM  123
+            KSM
+Sbjct  122  KSM  124
+
+
+>pdb|2FIO|A Chain A, Phage Phi29 Transcription Regulator P4-Dna Complex
+ pdb|2FIO|B Chain B, Phage Phi29 Transcription Regulator P4-Dna Complex
+Length=123
+
+ Score =  233 bits (594),  Expect = 2e-59, Method: Composition-based stats.
+ Identities = 123/123 (100%), Positives = 123/123 (100%), Gaps = 0/123 (0%)
+
+Query  1    PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN  60
+            PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN
+Sbjct  1    PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN  60
+
+Query  61   MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPRLRERR  120
+            MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPRLRERR
+Sbjct  61   MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPRLRERR  120
+
+Query  121  KSM  123
+            KSM
+Sbjct  121  KSM  123
+
+
+>sp|P06952.1|VG4_BPPZA RecName: Full=Late genes activator; AltName: Full=Early protein 
+GP4
+ gb|AAA88476.1| gene 4 product [Bacillus phage PZA]
+ prf||1112171G ORF 4
+Length=125
+
+ Score =  228 bits (580),  Expect = 6e-58, Method: Composition-based stats.
+ Identities = 119/123 (97%), Positives = 122/123 (99%), Gaps = 0/123 (0%)
+
+Query  1    PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN  60
+            PKTQRGIYHNLKES+YVASN DVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN
+Sbjct  2    PKTQRGIYHNLKESKYVASNNDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN  61
+
+Query  61   MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPRLRERR  120
+            MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKP+TLDWSRIQKP+LRERR
+Sbjct  62   MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPSTLDWSRIQKPKLRERR  121
+
+Query  121  KSM  123
+            KSM
+Sbjct  122  KSM  124
+
+
+>pdb|2FIP|A Chain A, Phage Phi29 Transcription Regulator P4
+ pdb|2FIP|B Chain B, Phage Phi29 Transcription Regulator P4
+ pdb|2FIP|C Chain C, Phage Phi29 Transcription Regulator P4
+ pdb|2FIP|D Chain D, Phage Phi29 Transcription Regulator P4
+ pdb|2FIP|E Chain E, Phage Phi29 Transcription Regulator P4
+ pdb|2FIP|F Chain F, Phage Phi29 Transcription Regulator P4
+Length=115
+
+ Score =  222 bits (565),  Expect = 4e-56, Method: Composition-based stats.
+ Identities = 115/115 (100%), Positives = 115/115 (100%), Gaps = 0/115 (0%)
+
+Query  1    PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN  60
+            PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN
+Sbjct  1    PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN  60
+
+Query  61   MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPR  115
+            MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPR
+Sbjct  61   MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPR  115
+
+
+>gb|ACH57071.1| transcriptional regulator [Bacillus phage Nf]
+Length=125
+
+ Score =  193 bits (490),  Expect = 2e-47, Method: Composition-based stats.
+ Identities = 96/123 (79%), Positives = 108/123 (88%), Gaps = 0/123 (0%)
+
+Query  1    PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN  60
+            P+T RGIYHNLKESEYV SN D TFFFSSE+YLNKFLDGYQ++R++FNKKI R+  TP N
+Sbjct  2    PRTARGIYHNLKESEYVVSNGDATFFFSSEMYLNKFLDGYQKHREEFNKKINRITDTPLN  61
+
+Query  61   MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPRLRERR  120
+            MDMLADITFYS VEKRGFHAWLKG N TW+E+HVYALR MTKP T +WSRI+KP+L ERR
+Sbjct  62   MDMLADITFYSNVEKRGFHAWLKGCNTTWQEIHVYALRTMTKPCTQNWSRIRKPKLVERR  121
+
+Query  121  KSM  123
+            KSM
+Sbjct  122  KSM  124
+
+
+>ref|NP_690637.1| late genes activator [Bacillus phage B103]
+ sp|Q37884.1|VG4_BPB03 RecName: Full=Late genes activator; AltName: Full=Early protein 
+GP4
+ emb|CAA67651.1| late genes activator [Bacillus phage B103]
+Length=125
+
+ Score =  192 bits (487),  Expect = 4e-47, Method: Composition-based stats.
+ Identities = 95/123 (78%), Positives = 108/123 (88%), Gaps = 0/123 (0%)
+
+Query  1    PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN  60
+            P+T RGIYHNLKESEYV SN D TFFFSSELYLNKFLDGYQ++R++FNKKI R+  TP N
+Sbjct  2    PRTARGIYHNLKESEYVVSNGDATFFFSSELYLNKFLDGYQKHREEFNKKINRITDTPLN  61
+
+Query  61   MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPRLRERR  120
+            MDMLADITFYS VEKRGFH WLKG NA+W+E+HVYALR MTKP T +WSRI+KP+L ERR
+Sbjct  62   MDMLADITFYSNVEKRGFHTWLKGCNASWQEIHVYALRTMTKPCTQNWSRIRKPKLAERR  121
+
+Query  121  KSM  123
+            K+M
+Sbjct  122  KNM  124
+
+
+>sp|P09877.1|VG4_BPNF RecName: Full=Late genes activator; AltName: Full=Early protein 
+GP4; AltName: Full=GPF
+ gb|AAA32195.1| gpF (gene activator protein) [Bacillus phage Nf]
+Length=125
+
+ Score =  186 bits (473),  Expect = 2e-45, Method: Composition-based stats.
+ Identities = 94/123 (77%), Positives = 106/123 (87%), Gaps = 0/123 (0%)
+
+Query  1    PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN  60
+            P+T RGIYHNLKESEYV SN D TFFF SE+Y NKFLDGYQ++R++FNKKI R+  TP N
+Sbjct  2    PRTARGIYHNLKESEYVVSNGDATFFFFSEMYQNKFLDGYQKHREEFNKKINRITDTPLN  61
+
+Query  61   MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPRLRERR  120
+            MDMLADITFYS VEKRGFHAWLKG N TW+E+HVYALR MTKP T +WSRI+KP+L ERR
+Sbjct  62   MDMLADITFYSNVEKRGFHAWLKGVNTTWQEIHVYALRTMTKPCTQNWSRIRKPKLVERR  121
+
+Query  121  KSM  123
+            KSM
+Sbjct  122  KSM  124
+
+
+>ref|NP_073687.1| protein p4G [Bacillus phage GA-1]
+ emb|CAC21525.1| protein p4G [Bacillus phage GA-1]
+Length=134
+
+ Score = 92.8 bits (229),  Expect = 3e-17, Method: Composition-based stats.
+ Identities = 52/124 (42%), Positives = 81/124 (66%), Gaps = 3/124 (2%)
+
+Query  3    TQRGIYHNLKESEYVAS--NTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVT-PW  59
+            TQ GIYHNLKES YV +  N  VT+FFSS++Y++KFL+ Y+E R+K N K+ ++      
+Sbjct  4    TQGGIYHNLKESRYVITCENGLVTYFFSSKMYMHKFLNTYKENREKNNIKMSKLLKDFTS  63
+
+Query  60   NMDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPRLRER  119
+            ++D+L+DI +Y +VEKRGF    KGD  TW+E     L+   +  +L++  + + +LR+ 
+Sbjct  64   DIDLLSDICYYKQVEKRGFLVLYKGDEMTWQESQTLGLQRRNEKKSLNYQEVSRLKLRDY  123
+
+Query  120  RKSM  123
+             + M
+Sbjct  124  LRIM  127
+
+
+>gb|EMT68758.1| hypothetical protein FOC4_g10004843 [Fusarium oxysporum f. sp. 
+cubense race 4]
+Length=453
+
+ Score = 38.1 bits (87),  Expect = 0.94, Method: Composition-based stats.
+ Identities = 24/83 (29%), Positives = 40/83 (49%), Gaps = 10/83 (12%)
+
+Query  17   VASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWNMDMLADI------TFY  70
+            V +  D TF       +N  L+ Y +Y +K+ + ++R  +TPWN+  LADI      +  
+Sbjct  123  VQTGFDATF----RAAINLGLEAYVKYGQKYEQVLQRYPLTPWNIPGLADIGPFVDLSVE  178
+
+Query  71   SEVEKRGFHAWLKGDNATWREVH  93
+            +  E +    +L G  A W  V+
+Sbjct  179  ASAEIKTTGQFLMGSTAEWDNVN  201
+
+
+
+Lambda     K      H
+   0.321    0.134    0.414 
+
+Gapped
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+Effective search space used: 279770872755
+Results from round 2
+
+
+Query= 2FIO_A
+
+Length=123
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+ref|YP_002004531.1|  late gene transcriptional activator [Bacillu...   207    8e-52
+gb|ACH57071.1|  transcriptional regulator [Bacillus phage Nf]          207    8e-52
+sp|P06952.1|VG4_BPPZA  RecName: Full=Late genes activator; AltNam...   207    1e-51
+pdb|2FIO|A  Chain A, Phage Phi29 Transcription Regulator P4-Dna C...   206    2e-51
+ref|NP_690637.1|  late genes activator [Bacillus phage B103] >sp|...   202    2e-50
+sp|P09877.1|VG4_BPNF  RecName: Full=Late genes activator; AltName...   199    3e-49
+pdb|2FIP|A  Chain A, Phage Phi29 Transcription Regulator P4 >pdb|...   197    9e-49
+ref|NP_073687.1|  protein p4G [Bacillus phage GA-1] >emb|CAC21525...   166    2e-39
+
+Sequences not found previously or not previously below threshold:
+
+ref|WP_018633220.1|  hypothetical protein [Meganema perideroedes]     38.1    1.1  
+ref|YP_002129266.1|  threonyl-tRNA synthetase [Phenylobacterium z...  36.6    2.7  
+
+
+>ref|YP_002004531.1| late gene transcriptional activator [Bacillus phage phi29]
+ sp|P03682.1|VG4_BPPH2 RecName: Full=Late genes activator; AltName: Full=Early protein 
+GP4
+ emb|CAA24482.1| unnamed protein product [Bacillus phage phi29]
+ gb|ACE96025.1| late gene transcriptional activator [Bacillus phage phi29]
+Length=125
+
+ Score =  207 bits (527),  Expect = 8e-52, Method: Composition-based stats.
+ Identities = 123/123 (100%), Positives = 123/123 (100%), Gaps = 0/123 (0%)
+
+Query  1    PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN  60
+            PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN
+Sbjct  2    PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN  61
+
+Query  61   MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPRLRERR  120
+            MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPRLRERR
+Sbjct  62   MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPRLRERR  121
+
+Query  121  KSM  123
+            KSM
+Sbjct  122  KSM  124
+
+
+>gb|ACH57071.1| transcriptional regulator [Bacillus phage Nf]
+Length=125
+
+ Score =  207 bits (527),  Expect = 8e-52, Method: Composition-based stats.
+ Identities = 96/123 (79%), Positives = 108/123 (88%), Gaps = 0/123 (0%)
+
+Query  1    PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN  60
+            P+T RGIYHNLKESEYV SN D TFFFSSE+YLNKFLDGYQ++R++FNKKI R+  TP N
+Sbjct  2    PRTARGIYHNLKESEYVVSNGDATFFFSSEMYLNKFLDGYQKHREEFNKKINRITDTPLN  61
+
+Query  61   MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPRLRERR  120
+            MDMLADITFYS VEKRGFHAWLKG N TW+E+HVYALR MTKP T +WSRI+KP+L ERR
+Sbjct  62   MDMLADITFYSNVEKRGFHAWLKGCNTTWQEIHVYALRTMTKPCTQNWSRIRKPKLVERR  121
+
+Query  121  KSM  123
+            KSM
+Sbjct  122  KSM  124
+
+
+>sp|P06952.1|VG4_BPPZA RecName: Full=Late genes activator; AltName: Full=Early protein 
+GP4
+ gb|AAA88476.1| gene 4 product [Bacillus phage PZA]
+ prf||1112171G ORF 4
+Length=125
+
+ Score =  207 bits (526),  Expect = 1e-51, Method: Composition-based stats.
+ Identities = 119/123 (97%), Positives = 122/123 (99%), Gaps = 0/123 (0%)
+
+Query  1    PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN  60
+            PKTQRGIYHNLKES+YVASN DVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN
+Sbjct  2    PKTQRGIYHNLKESKYVASNNDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN  61
+
+Query  61   MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPRLRERR  120
+            MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKP+TLDWSRIQKP+LRERR
+Sbjct  62   MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPSTLDWSRIQKPKLRERR  121
+
+Query  121  KSM  123
+            KSM
+Sbjct  122  KSM  124
+
+
+>pdb|2FIO|A Chain A, Phage Phi29 Transcription Regulator P4-Dna Complex
+ pdb|2FIO|B Chain B, Phage Phi29 Transcription Regulator P4-Dna Complex
+Length=123
+
+ Score =  206 bits (525),  Expect = 2e-51, Method: Composition-based stats.
+ Identities = 123/123 (100%), Positives = 123/123 (100%), Gaps = 0/123 (0%)
+
+Query  1    PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN  60
+            PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN
+Sbjct  1    PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN  60
+
+Query  61   MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPRLRERR  120
+            MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPRLRERR
+Sbjct  61   MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPRLRERR  120
+
+Query  121  KSM  123
+            KSM
+Sbjct  121  KSM  123
+
+
+>ref|NP_690637.1| late genes activator [Bacillus phage B103]
+ sp|Q37884.1|VG4_BPB03 RecName: Full=Late genes activator; AltName: Full=Early protein 
+GP4
+ emb|CAA67651.1| late genes activator [Bacillus phage B103]
+Length=125
+
+ Score =  202 bits (515),  Expect = 2e-50, Method: Composition-based stats.
+ Identities = 95/123 (78%), Positives = 108/123 (88%), Gaps = 0/123 (0%)
+
+Query  1    PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN  60
+            P+T RGIYHNLKESEYV SN D TFFFSSELYLNKFLDGYQ++R++FNKKI R+  TP N
+Sbjct  2    PRTARGIYHNLKESEYVVSNGDATFFFSSELYLNKFLDGYQKHREEFNKKINRITDTPLN  61
+
+Query  61   MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPRLRERR  120
+            MDMLADITFYS VEKRGFH WLKG NA+W+E+HVYALR MTKP T +WSRI+KP+L ERR
+Sbjct  62   MDMLADITFYSNVEKRGFHTWLKGCNASWQEIHVYALRTMTKPCTQNWSRIRKPKLAERR  121
+
+Query  121  KSM  123
+            K+M
+Sbjct  122  KNM  124
+
+
+>sp|P09877.1|VG4_BPNF RecName: Full=Late genes activator; AltName: Full=Early protein 
+GP4; AltName: Full=GPF
+ gb|AAA32195.1| gpF (gene activator protein) [Bacillus phage Nf]
+Length=125
+
+ Score =  199 bits (505),  Expect = 3e-49, Method: Composition-based stats.
+ Identities = 94/123 (77%), Positives = 106/123 (87%), Gaps = 0/123 (0%)
+
+Query  1    PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN  60
+            P+T RGIYHNLKESEYV SN D TFFF SE+Y NKFLDGYQ++R++FNKKI R+  TP N
+Sbjct  2    PRTARGIYHNLKESEYVVSNGDATFFFFSEMYQNKFLDGYQKHREEFNKKINRITDTPLN  61
+
+Query  61   MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPRLRERR  120
+            MDMLADITFYS VEKRGFHAWLKG N TW+E+HVYALR MTKP T +WSRI+KP+L ERR
+Sbjct  62   MDMLADITFYSNVEKRGFHAWLKGVNTTWQEIHVYALRTMTKPCTQNWSRIRKPKLVERR  121
+
+Query  121  KSM  123
+            KSM
+Sbjct  122  KSM  124
+
+
+>pdb|2FIP|A Chain A, Phage Phi29 Transcription Regulator P4
+ pdb|2FIP|B Chain B, Phage Phi29 Transcription Regulator P4
+ pdb|2FIP|C Chain C, Phage Phi29 Transcription Regulator P4
+ pdb|2FIP|D Chain D, Phage Phi29 Transcription Regulator P4
+ pdb|2FIP|E Chain E, Phage Phi29 Transcription Regulator P4
+ pdb|2FIP|F Chain F, Phage Phi29 Transcription Regulator P4
+Length=115
+
+ Score =  197 bits (501),  Expect = 9e-49, Method: Composition-based stats.
+ Identities = 115/115 (100%), Positives = 115/115 (100%), Gaps = 0/115 (0%)
+
+Query  1    PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN  60
+            PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN
+Sbjct  1    PKTQRGIYHNLKESEYVASNTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWN  60
+
+Query  61   MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPR  115
+            MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPR
+Sbjct  61   MDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPR  115
+
+
+>ref|NP_073687.1| protein p4G [Bacillus phage GA-1]
+ emb|CAC21525.1| protein p4G [Bacillus phage GA-1]
+Length=134
+
+ Score =  166 bits (421),  Expect = 2e-39, Method: Composition-based stats.
+ Identities = 52/124 (42%), Positives = 81/124 (66%), Gaps = 3/124 (2%)
+
+Query  3    TQRGIYHNLKESEYVAS--NTDVTFFFSSELYLNKFLDGYQEYRKKFNKKIERVAVT-PW  59
+            TQ GIYHNLKES YV +  N  VT+FFSS++Y++KFL+ Y+E R+K N K+ ++      
+Sbjct  4    TQGGIYHNLKESRYVITCENGLVTYFFSSKMYMHKFLNTYKENREKNNIKMSKLLKDFTS  63
+
+Query  60   NMDMLADITFYSEVEKRGFHAWLKGDNATWREVHVYALRIMTKPNTLDWSRIQKPRLRER  119
+            ++D+L+DI +Y +VEKRGF    KGD  TW+E     L+   +  +L++  + + +LR+ 
+Sbjct  64   DIDLLSDICYYKQVEKRGFLVLYKGDEMTWQESQTLGLQRRNEKKSLNYQEVSRLKLRDY  123
+
+Query  120  RKSM  123
+             + M
+Sbjct  124  LRIM  127
+
+
+>ref|WP_018633220.1| hypothetical protein [Meganema perideroedes]
+Length=671
+
+ Score = 38.1 bits (87),  Expect = 1.1, Method: Composition-based stats.
+ Identities = 22/94 (24%), Positives = 41/94 (44%), Gaps = 14/94 (14%)
+
+Query  27   FSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWNMDMLADITFYSEVEKRGFHAWLKGDN  86
+            F ++  L+ FL   +E  K+ ++KI +       MD+     F+ + E  G   W     
+Sbjct  232  FLTKADLDAFLHQREEAEKRDHRKIGK------EMDL-----FHFQEEAPGMVFWHAKGW  280
+
+Query  87   ATWREVHVYALRIMTKPNTLDWSRIQKPRLRERR  120
+            A WR +  Y  R   +     +  ++ P+L +R+
+Sbjct  281  AIWRSLEDYIRRRQNEN---GYQEVRTPQLVDRK  311
+
+
+>ref|YP_002129266.1| threonyl-tRNA synthetase [Phenylobacterium zucineum HLK1]
+ ref|WP_012520985.1| threonyl-tRNA synthetase [Phenylobacterium zucineum]
+ sp|B4RE95.1|SYT_PHEZH RecName: Full=Threonine--tRNA ligase; AltName: Full=Threonyl-tRNA 
+synthetase; Short=ThrRS
+ gb|ACG76837.1| threonyl-tRNA synthetase [Phenylobacterium zucineum HLK1]
+Length=658
+
+ Score = 36.6 bits (83),  Expect = 2.7, Method: Composition-based stats.
+ Identities = 20/93 (22%), Positives = 42/93 (46%), Gaps = 14/93 (15%)
+
+Query  27   FSSELYLNKFLDGYQEYRKKFNKKIERVAVTPWNMDMLADITFYSEVEKRGFHAWLKGDN  86
+            ++SE  L  ++   +E  K+ ++K+ R       MD+     F+ + E +G   W +   
+Sbjct  223  WASEADLEAYIQRLEEAEKRDHRKLGR------QMDL-----FHMQEEGKGMVFWHEKGL  271
+
+Query  87   ATWREVHVYALRIMTKPNTLDWSRIQKPRLRER  119
+              WR V  Y  R + +     +  ++ P++ +R
+Sbjct  272  TLWRTVESYVRRRLDEA---GYQEVRTPQVLDR  301
+
+
+
+Lambda     K      H
+   0.313    0.135    0.384 
+
+Gapped
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+Effective search space used: 279770872755
+
+Search has CONVERGED!
+
+
+  Database: All non-redundant GenBank CDS translations+PDB+SwissProt+PIR+PRF
+excluding environmental samples from WGS projects
+    Posted date:  Sep 26, 2013  6:53 AM
+  Number of letters in database: 11,431,176,125
+  Number of sequences in database:  32,814,121
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

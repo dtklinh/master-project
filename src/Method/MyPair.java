@@ -21,6 +21,7 @@ public class MyPair {
     private String[] Sequences = new String[2];
     private int String1_Index;
     private int String2_Index;
+    private double[] MyArray;
 
     /**
      * @return the Sequences
@@ -412,5 +413,19 @@ public class MyPair {
             return MyPair.CalculateUAlphaValue(vec, dssm);
         }
        
+    }
+
+    /**
+     * @return the MyArray
+     */
+    public double[] getMyArray() {
+        return MyArray;
+    }
+
+    /**
+     * @param MyArray the MyArray to set
+     */
+    public void setMyArray(double[] MyArray) {
+        this.MyArray = MyArray;
     }
 }

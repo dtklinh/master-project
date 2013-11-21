@@ -4,6 +4,7 @@
  */
 package Components;
 
+import CreateMSA.PSSM;
 import Jama.Matrix;
 import Method.MyEvaluate;
 import Method.MyPair;
@@ -21,6 +22,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.List;
@@ -466,6 +468,36 @@ public class MSA {
         return res;
     }
 
+    public double[] CalculateUvalueForSlidingWin(ArrayList<String> ColumnPairs, int begin, int end, Matrix dsm, double thres) {
+        int width = end - begin;
+        double[] res = new double[width * (width - 1) / 2];
+        int position = 0;
+        for (int i = begin; i < end - 1; i++) {
+            for (int j = i + 1; j < end; j++) {
+                MyPair p = new MyPair(ColumnPairs.get(i), ColumnPairs.get(j));
+                Matrix freq = p.CalculatePair();
+                Matrix vec = MyPair.ConverToVector(freq);
+                if (dsm != null) {
+                    double val = MyPair.CalculateUAlphaValue(vec, dsm);
+                    if (val >= thres) {
+                        res[position] = 1.0;
+                    } else {
+                        res[position] = 0.0;
+                    }
+                } else {
+                    double val = freq.CalculateUValue();
+                    if (val >= thres) {
+                        res[position] = 1.0;
+                    } else {
+                        res[position] = 0.0;
+                    }
+                }
+                position++;
+            }
+        }
+        return res;
+    }
+
     public ArrayList<double[]> CalculatePSSMAndSS(ArrayList<String> amino, int width, boolean pos) throws FileNotFoundException, IOException {
 
         ArrayList<double[]> res = new ArrayList<double[]>();
@@ -549,8 +581,9 @@ public class MSA {
         return res;
 
     }
+
     public ArrayList<double[]> CalculatePSSMandUvalue(ArrayList<String> amino, int width, boolean pos,
-            Matrix dsm) throws FileNotFoundException, IOException{
+            Matrix dsm) throws FileNotFoundException, IOException {
         ArrayList<double[]> res = new ArrayList<double[]>();
         this.AdjustLength();
         ArrayList<Integer> BindingIdx = this.MyKeyProtein.getBindingIndex();
@@ -564,10 +597,162 @@ public class MSA {
 //        double[][] m = new double[20][this.MyKeyProtein.getSequence().length()];
 //        int[] TotalCount = new int[20];
         ArrayList<String> Lst_ColumnPair = this.RetrieveColumnPair();
-        System.out.println("Lst_Column: " + Lst_ColumnPair.size());      
-        
+        System.out.println("Lst_Column: " + Lst_ColumnPair.size());
+
+//        Matrix MatPSSM = CreatePSSMList(Lst_ColumnPair, amino);
+
+        for (int i = (width - 1) / 2; i < Lst_ColumnPair.size() - (width - 1) / 2 - 1; i++) {
+            if (pos) {
+//                if (BindingIdx.indexOf(i+offset) < 0) {
+                if (BindingIdx.indexOf(this.MyKeyProtein.GetAbsoluteIndex(i)) < 0) {
+//                if(this.MyKeyProtein.IsNearBindingResidual(i, (width-1)/2)){
+                    continue;
+                }
+            } else {
+//                if (BindingIdx.indexOf(i+offset) >= 0) {
+                if (BindingIdx.indexOf(this.MyKeyProtein.GetAbsoluteIndex(i)) >= 0) {
+                    continue;
+                }
+            }
+            // PSSM
+//            int len = width*20 + width*(width-1)/2;
+            int len = width * 20;
+//            int len = width*(width-1)/2;
+            double[] feature = new double[len];
+
+
+//            Matrix pssm = MatPSSM.getMatrix(0, 19, i - radius, i + radius);
+//            double[][] VecPSSM = pssm.getArrayCopy();
+            //////     double[] uvalue_null = this.CalculateUvalueForSlidingWin(Lst_ColumnPair, i-radius, i+radius+1, null);
+            double thres = this.CalculateThreshold(dsm, 0.1);
+            double[] uvalue = this.CalculateUvalueForSlidingWin(Lst_ColumnPair, i - radius, i + radius + 1, dsm, thres);
+            int position = 0;
+//            for(int j=0; j<pssm.length;j++){
+//                feature[position] = pssm[j];
+//                position++;
+//            }
+//            for (int j = 0; j < VecPSSM[0].length; j++) {
+//                for (int k = 0; k < VecPSSM.length; k++) {
+//                    feature[position] = VecPSSM[k][j];
+//                    position++;
+//                }
+//            }
+//            Random rd = new Random();
+            for (int j = 0; j < uvalue.length; j++) {
+                feature[position] = uvalue[j];
+//                feature[position] = rd.nextDouble();
+                position++;
+            }
+
+//            for(int j=0;j<uvalue_null.length;j++){
+//                feature[position] = uvalue_null[j];
+//                position++;
+//            }
+            res.add(feature);
+        }
+        return res;
+    }
+    public ArrayList<double[]> ExtractBooleanUvalue(ArrayList<String> amino, int width, boolean pos,
+            Matrix dsm, double thres) throws FileNotFoundException, IOException {
+        ArrayList<double[]> res = new ArrayList<double[]>();
+        this.AdjustLength();
+        ArrayList<Integer> BindingIdx = this.MyKeyProtein.getBindingIndex();
+        if (BindingIdx == null) {
+            System.err.println("No binding index");
+            System.exit(1);
+        }
+        int offset = this.MyKeyProtein.getOffset();
+        System.out.println("Protein length: " + this.MyKeyProtein.getSequence().length());
+        int radius = (width - 1) / 2;
+//        double[][] m = new double[20][this.MyKeyProtein.getSequence().length()];
+//        int[] TotalCount = new int[20];
+        ArrayList<String> Lst_ColumnPair = this.RetrieveColumnPair();
+        System.out.println("Lst_Column: " + Lst_ColumnPair.size());
+
         Matrix MatPSSM = CreatePSSMList(Lst_ColumnPair, amino);
         
+
+        for (int i = (width - 1) / 2; i < Lst_ColumnPair.size() - (width - 1) / 2 - 1; i++) {
+            if (pos) {
+//                if (BindingIdx.indexOf(i+offset) < 0) {
+                if (BindingIdx.indexOf(this.MyKeyProtein.GetAbsoluteIndex(i)) < 0) {
+//                if(this.MyKeyProtein.IsNearBindingResidual(i, (width-1)/2)){
+                    continue;
+                }
+            } else {
+//                if (BindingIdx.indexOf(i+offset) >= 0) {
+                if (BindingIdx.indexOf(this.MyKeyProtein.GetAbsoluteIndex(i)) >= 0) {
+                    continue;
+                }
+            }
+            // PSSM
+//            int len = width*20 + width*(width-1)/2;
+//            int len = width * 20;
+            int len = width*(width-1)/2;
+            double[] feature = new double[len];
+
+
+//            Matrix pssm = MatPSSM.getMatrix(0, 19, i - radius, i + radius);
+//            double[][] VecPSSM = pssm.getArrayCopy();
+            //////     double[] uvalue_null = this.CalculateUvalueForSlidingWin(Lst_ColumnPair, i-radius, i+radius+1, null);
+//            double thres = this.CalculateThreshold(dsm, 0.1);
+            double[] uvalue = this.CalculateUvalueForSlidingWin(Lst_ColumnPair, i - radius, i + radius + 1, dsm, thres);
+            int position = 0;
+//            for(int j=0; j<pssm.length;j++){
+//                feature[position] = pssm[j];
+//                position++;
+//            }
+//            for (int j = 0; j < VecPSSM[0].length; j++) {
+//                for (int k = 0; k < VecPSSM.length; k++) {
+//                    feature[position] = VecPSSM[k][j];
+//                    position++;
+//                }
+//            }
+//            Random rd = new Random();
+            for (int j = 0; j < uvalue.length; j++) {
+                feature[position] = uvalue[j];
+//                feature[position] = rd.nextDouble();
+                position++;
+            }
+
+//            for(int j=0;j<uvalue_null.length;j++){
+//                feature[position] = uvalue_null[j];
+//                position++;
+//            }
+            res.add(feature);
+        }
+        return res;
+    }
+    public ArrayList<double[]> ExtractPSSMBooleanUvalue(int width, boolean pos,
+            Matrix dsm, double thres, boolean useNative, String dir_pssm) throws FileNotFoundException, IOException {
+        ArrayList<double[]> res = new ArrayList<double[]>();
+        this.AdjustLength();
+        ArrayList<Integer> BindingIdx = this.MyKeyProtein.getBindingIndex();
+        if (BindingIdx == null) {
+            System.err.println("No binding index");
+            System.exit(1);
+        }
+        int offset = this.MyKeyProtein.getOffset();
+        System.out.println("Protein length: " + this.MyKeyProtein.getSequence().length());
+        int radius = (width - 1) / 2;
+//        double[][] m = new double[20][this.MyKeyProtein.getSequence().length()];
+//        int[] TotalCount = new int[20];
+        ArrayList<String> Lst_ColumnPair = this.RetrieveColumnPair();
+        System.out.println("Lst_Column: " + Lst_ColumnPair.size());
+
+        Matrix MatPSSM;// = CreatePSSMList(Lst_ColumnPair, amino);
+        if (!useNative) {
+
+            ArrayList<String> amino = AminoAcid.getAA();
+            MatPSSM = CreatePSSMList(Lst_ColumnPair, amino);
+
+
+        } else {
+            String name = this.MyKeyProtein.getName() + "_" + this.MyKeyProtein.getChain();
+            PSSM p = new PSSM(name, dir_pssm);
+            MatPSSM = p.GetPSSM_Logistic();
+        }
+
         for (int i = (width - 1) / 2; i < Lst_ColumnPair.size() - (width - 1) / 2 - 1; i++) {
             if (pos) {
 //                if (BindingIdx.indexOf(i+offset) < 0) {
@@ -583,14 +768,16 @@ public class MSA {
             }
             // PSSM
             int len = width*20 + width*(width-1)/2;
-//            int len = width*20;
+//            int len = width * 20;
+//            int len = width*(width-1)/2;
             double[] feature = new double[len];
 
-           
+
             Matrix pssm = MatPSSM.getMatrix(0, 19, i - radius, i + radius);
             double[][] VecPSSM = pssm.getArrayCopy();
-       //     double[] uvalue_null = this.CalculateUvalueForSlidingWin(Lst_ColumnPair, i-radius, i+radius+1, null);
-             double[] uvalue = this.CalculateUvalueForSlidingWin(Lst_ColumnPair, i-radius, i+radius+1, dsm);
+            //////     double[] uvalue_null = this.CalculateUvalueForSlidingWin(Lst_ColumnPair, i-radius, i+radius+1, null);
+//            double thres = this.CalculateThreshold(dsm, 0.1);
+            double[] uvalue = this.CalculateUvalueForSlidingWin(Lst_ColumnPair, i - radius, i + radius + 1, dsm, thres);
             int position = 0;
 //            for(int j=0; j<pssm.length;j++){
 //                feature[position] = pssm[j];
@@ -603,11 +790,12 @@ public class MSA {
                 }
             }
 //            Random rd = new Random();
-            for(int j=0;j<uvalue.length;j++){
+            for (int j = 0; j < uvalue.length; j++) {
                 feature[position] = uvalue[j];
 //                feature[position] = rd.nextDouble();
                 position++;
             }
+
 //            for(int j=0;j<uvalue_null.length;j++){
 //                feature[position] = uvalue_null[j];
 //                position++;
@@ -616,7 +804,100 @@ public class MSA {
         }
         return res;
     }
+    
 
+    public ArrayList<double[]> ExtractPSSM(boolean useNative, int width, String dir_pssm, boolean pos) throws FileNotFoundException, IOException {
+        ArrayList<double[]> res = new ArrayList<double[]>();
+
+        Matrix MatPSSM;
+        ArrayList<String> Lst_ColumnPair = this.RetrieveColumnPair();
+        ArrayList<Integer> BindingIdx = this.MyKeyProtein.getBindingIndex();
+        if (!useNative) {
+
+            ArrayList<String> amino = AminoAcid.getAA();
+            MatPSSM = CreatePSSMList(Lst_ColumnPair, amino);
+
+
+        } else {
+            String name = this.MyKeyProtein.getName() + "_" + this.MyKeyProtein.getChain();
+            PSSM p = new PSSM(name, dir_pssm);
+            MatPSSM = p.getMy_PSSM();
+        }
+//        ArrayList<String> Lst_ColumnPair = this.RetrieveColumnPair();
+        System.out.println("Mat: " + MatPSSM.getRowDimension() + " : " + MatPSSM.getColumnDimension());
+        for (int i = (width - 1) / 2; i < Lst_ColumnPair.size() - (width - 1) / 2 - 1; i++) {
+            if (pos) {
+//                if (BindingIdx.indexOf(i+offset) < 0) {
+                if (BindingIdx.indexOf(this.MyKeyProtein.GetAbsoluteIndex(i)) < 0) {
+//                if(this.MyKeyProtein.IsNearBindingResidual(i, (width-1)/2)){
+                    continue;
+                }
+            } else {
+//                if (BindingIdx.indexOf(i+offset) >= 0) {
+                if (BindingIdx.indexOf(this.MyKeyProtein.GetAbsoluteIndex(i)) >= 0) {
+                    continue;
+                }
+            }
+//            int start = i - (width - 1) / 2;
+//            int end = i + (width - 1) / 2;
+//            System.out.println("start:end: " + start + " : "+end);
+            Matrix pssm = MatPSSM.getMatrix(0, 19, i - (width - 1) / 2, i + (width - 1) / 2);
+            double[][] VecPSSM = pssm.getArrayCopy();
+//            System.out.println("VecPSSM: " + VecPSSM.length + " : " + VecPSSM[0].length);
+            int position = 0;
+            double[] feature = new double[20 * width];
+            for (int j = 0; j < VecPSSM.length; j++) {
+                for (int k = 0; k < VecPSSM[0].length; k++) {
+                    feature[position] = VecPSSM[j][k];
+                    position++;
+                }
+            }
+            res.add(feature);
+        }
+        return res;
+    }
+    public ArrayList<double[]> ExtractPSSM_Pair(int width, boolean pos, ArrayList<String> amino) throws FileNotFoundException, IOException {
+        ArrayList<double[]> res = new ArrayList<double[]>();
+
+        
+        ArrayList<String> Lst_ColumnPair = this.RetrieveColumnPair();
+        ArrayList<Integer> BindingIdx = this.MyKeyProtein.getBindingIndex();
+        int radius = (width - 1) / 2;
+        int len = width*radius*400;
+        ArrayList<MyPair> lst_mp = this.CreatePSSM_Pair(Lst_ColumnPair, amino);
+        for (int i = (width - 1) / 2; i < Lst_ColumnPair.size() - (width - 1) / 2 - 1; i++) {
+            if (pos) {
+//                if (BindingIdx.indexOf(i+offset) < 0) {
+                if (BindingIdx.indexOf(this.MyKeyProtein.GetAbsoluteIndex(i)) < 0) {
+//                if(this.MyKeyProtein.IsNearBindingResidual(i, (width-1)/2)){
+                    continue;
+                }
+            } else {
+//                if (BindingIdx.indexOf(i+offset) >= 0) {
+                if (BindingIdx.indexOf(this.MyKeyProtein.GetAbsoluteIndex(i)) >= 0) {
+                    continue;
+                }
+            }
+//            
+            double[] feature = new double[len];
+            int position =0;
+            for(int j = i-radius;j<i+radius;j++){
+                for(int k=j+1; k<=i+radius;k++){
+                    for(int s =0;s<lst_mp.size();s++){
+                        if(lst_mp.get(s).getString1_Index()==j && lst_mp.get(s).getString2_Index()==k){
+                            double[] val = lst_mp.get(s).getMyArray();
+                            System.arraycopy(val, 0, feature, position, val.length);
+                            position = position + val.length;
+                        }
+                    }
+                }
+            }
+            res.add(feature);
+        }
+        return res;
+    }
+
+//    public ArrayList<double[]> Extract
     public static double[] CreatePSSM(ArrayList<String> ColumnStr, ArrayList<String> amino) {
         int len = ColumnStr.size();
         double[] res = new double[20 * len];
@@ -682,7 +963,7 @@ public class MSA {
 //        int count = 0;
             for (int i = 0; i < 20; i++) {
                 for (int j = 0; j < len; j++) {
-   //                 System.out.println("i/j: " + i + " / " + j);
+                    //                 System.out.println("i/j: " + i + " / " + j);
                     m[i][j] = m[i][j] * len / total[i];
                     m[i][j] = m[i][j] / (m[i][j] + 1);
 //                res[count] = m[i][j];
@@ -700,6 +981,59 @@ public class MSA {
             System.err.println(e.toString());
             return null;
         }
+    }
+    public ArrayList<MyPair> CreatePSSM_Pair(ArrayList<String> ColumnStr, ArrayList<String> amino){
+        // count overall pair occurences
+        double[] overall_freq = new double[amino.size()*amino.size()];
+        int sum =0;
+        for(int i=0;i<ColumnStr.size()-1;i++){
+            String s1 = ColumnStr.get(i);
+            for(int j=i+1; j<ColumnStr.size();j++){
+                String s2 = ColumnStr.get(j);
+                for(int k=0;k<s1.length();k++){
+                    if(amino.indexOf(s1.substring(k, k+1))<0 ||amino.indexOf(s2.substring(k, k+1))<0){
+                        continue;
+                    }
+                    int idx = amino.indexOf(s1.substring(k, k+1))*20 + amino.indexOf(s2.substring(k, k+1));
+                    overall_freq[idx]++;
+                    sum++;
+                }
+            }
+        }
+        sum =0;
+        double epsilon = 0.1;
+        for(int i=0;i<overall_freq.length;i++){
+            overall_freq[i] += epsilon;
+            overall_freq[i] = overall_freq[i]/(sum+ epsilon*400);
+        }
+        // 
+        ArrayList<MyPair> res = new ArrayList<MyPair>();
+        for(int i=0;i<ColumnStr.size()-1;i++){
+            String s1 = ColumnStr.get(i);
+            for(int j=i+1; j<ColumnStr.size();j++){
+                String s2 = ColumnStr.get(j);
+                double[] val = new double[amino.size()*amino.size()];
+                MyPair mp = new MyPair(i, j, s1, s2);
+                sum = 0;
+                for(int k=0;k<s1.length();k++){
+                    
+                    
+                    if(amino.indexOf(s1.substring(k, k+1))<0 ||amino.indexOf(s2.substring(k, k+1))<0){
+                        continue;
+                    }
+                    int idx = amino.indexOf(s1.substring(k, k+1))*20 + amino.indexOf(s2.substring(k, k+1));
+                    val[idx]++;
+                    sum++;
+                }
+                for(int k=0;k<val.length;k++){
+                    val[k] = (val[k] + epsilon)/(sum + epsilon*400);
+                    val[k] = val[k]/overall_freq[k];
+                }
+                mp.setMyArray(val);
+                res.add(mp);
+            }
+        }
+        return res;
     }
 
     public static double[] CreateOBV(String str) {
@@ -830,7 +1164,8 @@ public class MSA {
         }
         return res;
     }
-    public ArrayList<Integer> ScoreSignificantValueOfPair(ArrayList<String> amino, int width,Matrix dsm, ArrayList<String> lst_cols) throws IOException{
+
+    public ArrayList<Integer> ScoreSignificantValueOfPair(ArrayList<String> amino, int width, Matrix dsm, ArrayList<String> lst_cols) throws IOException {
 //        ArrayList<String> msa = this.getLstSeqs();
         ArrayList<String> msa = this.RetrieveColumnPair();
         double percent_pair = 0.20;
@@ -839,13 +1174,13 @@ public class MSA {
         int seq_len = this.MyKeyProtein.getSequence().length();
         ArrayList<MyPair> lst_pair = new ArrayList<MyPair>();
         ArrayList<Double> lst_score = new ArrayList<Double>();
-        for(int i=0;i<seq_len-1; i++){
-            if(IsConservativeOrGap(i, lst_cols)){
-                System.err.println("Conservative or gap: "+ lst_cols.get(i));
+        for (int i = 0; i < seq_len - 1; i++) {
+            if (IsConservativeOrGap(i, lst_cols)) {
+                System.err.println("Conservative or gap: " + lst_cols.get(i));
                 continue;
             }
-            for(int j=i+1; j<=i+10 && j<seq_len;j++){
-                if(IsConservativeOrGap(j, lst_cols)){
+            for (int j = i + 1; j <= i + 10 && j < seq_len; j++) {
+                if (IsConservativeOrGap(j, lst_cols)) {
                     continue;
                 }
                 MyPair m = new MyPair(i, j, msa.get(i), msa.get(j));
@@ -854,28 +1189,28 @@ public class MSA {
             }
         }
         double[] arr = new double[lst_score.size()];
-        for(int i=0;i<lst_score.size();i++){
+        for (int i = 0; i < lst_score.size(); i++) {
             arr[i] = lst_score.get(i);
         }
         GlobalVar gv = new GlobalVar();
         ArrayList<Double> lst_double = SignificantFinder.SignificanceFinder.process(arr, 0.01, "", gv);
-        MyIO.WriteToFile_Double("BLAST_Database/Test/MSA/"+this.MyKeyProtein.getName()+"_"+ this.MyKeyProtein.getChain()+".txt", lst_score);
+        MyIO.WriteToFile_Double("BLAST_Database/Test/MSA/" + this.MyKeyProtein.getName() + "_" + this.MyKeyProtein.getChain() + ".txt", lst_score);
         // randomize
-        int c =0;
-        while(c<lst_pair.size()){
+        int c = 0;
+        while (c < lst_pair.size()) {
             Random a = new Random();
             int idx1 = a.nextInt(lst_pair.size());
             int idx2 = a.nextInt(lst_pair.size());
-            if(idx1!=idx2){
+            if (idx1 != idx2) {
                 Collections.swap(lst_pair, idx1, idx2);
                 Collections.swap(lst_score, idx1, idx2);
                 c++;
             }
         }
         // sort lst according to its U-alpha value
-        for(int i=0;i<lst_pair.size()-1;i++){
-            for(int j=i+1; j<lst_pair.size();j++){
-                if(lst_score.get(i) < lst_score.get(j)){
+        for (int i = 0; i < lst_pair.size() - 1; i++) {
+            for (int j = i + 1; j < lst_pair.size(); j++) {
+                if (lst_score.get(i) < lst_score.get(j)) {
                     Collections.swap(lst_score, i, j);
                     Collections.swap(lst_pair, i, j);
                 }
@@ -885,43 +1220,43 @@ public class MSA {
         ArrayList<Integer> significant_col = new ArrayList<Integer>();
         ArrayList<Integer> significant_count = new ArrayList<Integer>();
         ArrayList<Double> significant_score = new ArrayList<Double>();
-        for(int i=0; i<lst_pair.size()*percent_pair; i++){
+        for (int i = 0; i < lst_pair.size() * percent_pair; i++) {
             Integer tmp1 = lst_pair.get(i).getString1_Index();
             Integer tmp2 = lst_pair.get(i).getString2_Index();
             Double score = lst_score.get(i);
             //
             int idx1 = significant_col.indexOf(tmp1);
             int idx2 = significant_col.indexOf(tmp2);
-            if(idx1 >= 0){
-                if(significant_score.get(idx1)<score){
+            if (idx1 >= 0) {
+                if (significant_score.get(idx1) < score) {
                     significant_score.set(idx1, score);
                 }
                 int count = significant_count.get(idx1) + 1;
                 significant_count.set(idx1, count);
-            } else{
+            } else {
                 significant_col.add(tmp1);
                 significant_score.add(score);
                 significant_count.add(1);
             }
             // idx 2
-            if(idx2 >= 0){
-                if(significant_score.get(idx2)<score){
+            if (idx2 >= 0) {
+                if (significant_score.get(idx2) < score) {
                     significant_score.set(idx2, score);
                 }
                 int count = significant_count.get(idx2) + 1;
                 significant_count.set(idx2, count);
-            } else{
+            } else {
                 significant_col.add(tmp2);
                 significant_score.add(score);
                 significant_count.add(1);
             }
-            
-            
+
+
         }
         // sort according to the occurence
-        for(int i=0;i<significant_count.size()-1;i++){
-            for(int j=i+1 ; j<significant_count.size();j++){
-                if(significant_count.get(i) < significant_count.get(j)){
+        for (int i = 0; i < significant_count.size() - 1; i++) {
+            for (int j = i + 1; j < significant_count.size(); j++) {
+                if (significant_count.get(i) < significant_count.get(j)) {
                     Collections.swap(significant_count, i, j);
                     Collections.swap(significant_col, i, j);
                     Collections.swap(significant_score, i, j);
@@ -937,20 +1272,21 @@ public class MSA {
 //            System.out.println("Col idx: "+ start + " count: "+ count + " score: "+ score);
 //        }
         // print
-        
+
 //        for(int i=0;i<lst_pair.size();i++){
 //            int start = lst_pair.get(i).getString1_Index() + offset;
 //            int end = lst_pair.get(i).getString2_Index() + offset;
 //            System.out.println("["+start+":"+end+"] : " + lst_score.get(i));
 //        }
-        int t = (int)(significant_col.size()*percent_index);
+        int t = (int) (significant_col.size() * percent_index);
         ArrayList<Integer> res = new ArrayList<Integer>();
-        for(int i=0; i<=t; i++){
+        for (int i = 0; i <= t; i++) {
             res.add(significant_col.get(i));
         }
         return res;
     }
-    public MyEvaluate Evaluate(ArrayList<Integer> lst, ArrayList<String> lst_cols){ // lst of index without adjusting offset
+
+    public MyEvaluate Evaluate(ArrayList<Integer> lst, ArrayList<String> lst_cols) { // lst of index without adjusting offset
         ArrayList<Integer> BindingIndex = this.MyKeyProtein.getBindingIndex();
         int offset = this.MyKeyProtein.getOffset();
         // find nearby binding sites, with distance d = 5.
@@ -958,9 +1294,9 @@ public class MSA {
         ArrayList<Integer> Neighbor = new ArrayList<Integer>();
         int len = this.MyKeyProtein.getSequence().length();
         System.out.println("Neighbor:");
-        for(int i=0; i<len;i++){
-            if(this.MyKeyProtein.IsNearBindingResidual(i+ offset, distance) && !IsConservativeOrGap(i, lst_cols)){
-                int tmp=i+ offset;
+        for (int i = 0; i < len; i++) {
+            if (this.MyKeyProtein.IsNearBindingResidual(i + offset, distance) && !IsConservativeOrGap(i, lst_cols)) {
+                int tmp = i + offset;
                 Neighbor.add(tmp);
 //                System.out.print(tmp + " , ");
             }
@@ -968,48 +1304,49 @@ public class MSA {
         System.out.println();
         // 
         // find true positive
-        int tp=0, tn=0, fp=0, fn=0;
-        for(int i=0;i<lst.size();i++){
-            if(Neighbor.indexOf(lst.get(i)+offset)>=0){
+        int tp = 0, tn = 0, fp = 0, fn = 0;
+        for (int i = 0; i < lst.size(); i++) {
+            if (Neighbor.indexOf(lst.get(i) + offset) >= 0) {
                 tp++;
-            } else{
+            } else {
                 fp++;
             }
         }
-        for(int i=0;i<Neighbor.size();i++){
-            if(lst.indexOf(Neighbor.get(i)-offset)<0){
+        for (int i = 0; i < Neighbor.size(); i++) {
+            if (lst.indexOf(Neighbor.get(i) - offset) < 0) {
                 fn++;
             }
         }
         tn = this.MyKeyProtein.getSequence().length() - tp - fn - fp;
-        System.out.println("True positive: "+ tp);
-        System.out.println("True negative: "+ tn);
-        System.out.println("False positive: "+ fp);
-        System.out.println("False negative: "+ fn);
+        System.out.println("True positive: " + tp);
+        System.out.println("True negative: " + tn);
+        System.out.println("False positive: " + fp);
+        System.out.println("False negative: " + fn);
         return new MyEvaluate(tp, tn, fp, fn);
     }
-    public ArrayList<int[]> RetrieveIndicatorPair2(int distance, ArrayList<String> lst_cols) { 
+
+    public ArrayList<int[]> RetrieveIndicatorPair2(int distance, ArrayList<String> lst_cols) {
         // define the distance of neighborhood
         ArrayList<int[]> res = new ArrayList<int[]>();
-        
+
         int offset = this.MyKeyProtein.getOffset();
-        for(int i=0;i<this.MyKeyProtein.getSequence().length()-1;i++){
+        for (int i = 0; i < this.MyKeyProtein.getSequence().length() - 1; i++) {
             int idx_adjust = this.MyKeyProtein.GetAbsoluteIndex(i);
 //            if(this.MyKeyProtein.IsNearBindingResidual(i+offset, distance)){
-            if(this.MyKeyProtein.IsNearBindingResidual(idx_adjust, distance)){
-                if(this.IsConservativeOrGap(i, lst_cols)){
+            if (this.MyKeyProtein.IsNearBindingResidual(idx_adjust, distance)) {
+                if (this.IsConservativeOrGap(i, lst_cols)) {
                     continue;
                 }
-                for(int j=i+1; j<=i+2*distance;j++){
-                    if(j>=this.MyKeyProtein.getSequence().length()-1){
+                for (int j = i + 1; j <= i + 2 * distance; j++) {
+                    if (j >= this.MyKeyProtein.getSequence().length() - 1) {
                         break;
                     }
-                    if(this.MyKeyProtein.IsNearBindingResidual(j+offset, distance)){
+                    if (this.MyKeyProtein.IsNearBindingResidual(j + offset, distance)) {
 //                        if(this.IsConservativeOrGap(j, lst_cols)){
-                        if(this.IsConservativeOrGap(this.MyKeyProtein.GetAbsoluteIndex(j), lst_cols)){
+                        if (this.IsConservativeOrGap(this.MyKeyProtein.GetAbsoluteIndex(j), lst_cols)) {
                             continue;
                         }
-                        res.add(new int[]{i,j});
+                        res.add(new int[]{i, j});
                     }
                 }
             }
@@ -1045,32 +1382,34 @@ public class MSA {
 //        }
         return res;
     }
-    public boolean IsConservativeOrGap(int idx, ArrayList<String> lst_cols){ // index of column which is tested if conservative
-  //      ArrayList<String> lst_cols = this.RetrieveColumnPair();
+
+    public boolean IsConservativeOrGap(int idx, ArrayList<String> lst_cols) { // index of column which is tested if conservative
+        //      ArrayList<String> lst_cols = this.RetrieveColumnPair();
         ArrayList<String> aa = AminoAcid.getAA_Abbr();
         int len = lst_cols.get(0).length();
-        
-        for(String s: aa){
+
+        for (String s : aa) {
             int f = Collections.frequency(lst_cols, s);
-            if((double)f/len >=0.90){
+            if ((double) f / len >= 0.90) {
                 return true;
             }
         }
         int g = Collections.frequency(lst_cols, "-");
-        if((double)g/len>=0.25){
+        if ((double) g / len >= 0.25) {
             return true;
         }
         return false;
     }
+
     public ArrayList<int[]> RetrieveNullIndex2(int distance, boolean neighbor, ArrayList<String> lst_cols) {
 
         ArrayList<int[]> res = new ArrayList<int[]>();
         int offset = this.MyKeyProtein.getOffset();
         ArrayList<Integer> lst_idx = new ArrayList<Integer>();
-        for(int i=0;i<this.MyKeyProtein.getSequence().length();i++){
+        for (int i = 0; i < this.MyKeyProtein.getSequence().length(); i++) {
 //            if(!this.MyKeyProtein.IsNearBindingResidual(i+offset, distance)){
-            if(!this.MyKeyProtein.IsNearBindingResidual(this.MyKeyProtein.GetAbsoluteIndex(i), distance)){
-                if(this.IsConservativeOrGap(i,lst_cols)){
+            if (!this.MyKeyProtein.IsNearBindingResidual(this.MyKeyProtein.GetAbsoluteIndex(i), distance)) {
+                if (this.IsConservativeOrGap(i, lst_cols)) {
                     continue;
                 }
                 lst_idx.add(i);
@@ -1088,7 +1427,73 @@ public class MSA {
         return res;
     }
 
+    public ArrayList<double[]> CreateFeature_PSSM(boolean nativePSSM, int width, String dir) throws FileNotFoundException, IOException {
+        ArrayList<double[]> res = new ArrayList<double[]>();
+        Matrix MatPSSM;
+        if (!nativePSSM) {
+            ArrayList<String> Lst_ColumnPair = this.RetrieveColumnPair();
+            ArrayList<String> amino = AminoAcid.getAA();
+            MatPSSM = CreatePSSMList(Lst_ColumnPair, amino);
+
+        } else {
+            String name = this.MyKeyProtein.getName() + "_" + this.MyKeyProtein.getChain();
+            String dir_pssm = dir + "PSSM/";
+            PSSM p = new PSSM(name, dir_pssm);
+            MatPSSM = p.getMy_PSSM();
+        }
+
+        for (int i = 0; i <= this.MyKeyProtein.getSequence().length() - width; i++) {
+            Matrix pssm = MatPSSM.getMatrix(0, 19, i, i + width - 1);
+            double[][] VecPSSM = pssm.getArrayCopy();
+            double[] d = new double[20 * width];
+            int position = 0;
+            for (int j = 0; j < VecPSSM.length; j++) {
+                for (int k = 0; k < VecPSSM[0].length; k++) {
+                    d[position] = VecPSSM[j][k];
+                    position++;
+                }
+            }
+            res.add(d);
+        }
+        return res;
+    }
+
+    public double CalculateThreshold(Matrix dssm, double percent) {
+        ArrayList<String> lst_col = this.RetrieveColumnPair();
+        ArrayList<Double> lst_uvalue = new ArrayList<Double>();
+        for (int i = 0; i < lst_col.size() - 1; i++) {
+            for (int j = i + 1; j < lst_col.size(); j++) {
+                MyPair mp = new MyPair(lst_col.get(i), lst_col.get(j));
+                double d = mp.CalculateUAlphaValue(dssm);
+                lst_uvalue.add(d);
+            }
+        }
+        //
+        Collections.sort(lst_uvalue);
+        Collections.reverse(lst_uvalue);
+        int idx = (int) (lst_uvalue.size() * percent);
+        return lst_uvalue.get(idx);
+    }
+
+    public double[] CalculateThreshold(Matrix dssm, double[] percent) {
+        ArrayList<String> lst_col = this.RetrieveColumnPair();
+        ArrayList<Double> lst_uvalue = new ArrayList<Double>();
+        for (int i = 0; i < lst_col.size() - 1; i++) {
+            for (int j = i + 1; j < lst_col.size(); j++) {
+                MyPair mp = new MyPair(lst_col.get(i), lst_col.get(j));
+                double d = mp.CalculateUAlphaValue(dssm);
+                lst_uvalue.add(d);
+            }
+        }
+        //
+        Collections.sort(lst_uvalue);
+        Collections.reverse(lst_uvalue);
+        double[] res = new double[percent.length];
+        for (int i = 0; i < percent.length; i++) {
+            int idx = (int) (lst_uvalue.size() * percent[i]);
+            res[i] = lst_uvalue.get(idx);
+        }
+        return res;
+    }
 //    public boolean IsGapped(int idx){
-        
-    
 }

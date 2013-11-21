@@ -4,6 +4,9 @@
  */
 package Method;
 
+import Components.KeyProtein;
+import java.util.ArrayList;
+
 /**
  *
  * @author linh
@@ -81,6 +84,49 @@ public class MyEvaluate {
         this.FalsePositive = 0;
         this.TrueNegative = 0;
         this.TruePositive =0;
+    }
+    public MyEvaluate(ArrayList<Integer> pre_test, KeyProtein k, int width){
+        int radius = (width-1)/2;
+        int len = k.getSequence().length();
+        ArrayList<Integer> condition = k.getBindingIndex();
+        for(int i=len-1; i>=len-radius;i--){
+            int abs = k.GetAbsoluteIndex(i);
+            int index = condition.indexOf(abs);
+            if(index>=0){
+                int cc = condition.remove(index);
+            }
+        }
+        for(int i =radius -1; i>=0;i--){
+            int abs = k.GetAbsoluteIndex(i);
+            int index = condition.indexOf(abs);
+            if(index>=0){
+                int cc = condition.remove(index);
+            }
+        }
+        int tp=0, tn=0, fp=0, fn=0;
+        ArrayList<Integer> test = new ArrayList<Integer>();
+        for(Integer i: pre_test){
+            test.add(k.GetAbsoluteIndex(i));
+        }
+        for(int i=0;i<test.size();i++){
+//            int idx = k.GetAbsoluteIndex(i);
+            if(condition.indexOf(test.get(i))>=0){
+                tp++;
+            }
+            else{
+                fp++;
+            }
+        }
+        for(int i=0;i<condition.size();i++){
+            if(test.indexOf(condition.get(i))<0){
+                fn++;
+            }
+        }
+        tn = len - (width-1) - fn - tp-fp;
+        this.FalseNegative = fn;
+        this.FalsePositive = fp;
+        this.TrueNegative = tn;
+        this.TruePositive = tp;
     }
     public void Add(MyEvaluate e){
         this.TruePositive += e.TruePositive;

@@ -145,5 +145,16 @@ public class AminoAcid {
         }
         return res;
     }
+    public static HashMap<Integer, String> GetIndexPair(){
+        HashMap<Integer, String> res = new HashMap<Integer, String>(400);
+        int count = 0;
+        for(int i=0;i<20;i++){
+            for(int j=0;j<20;j++){
+                res.put(count, AA.get(i)+AA.get(j));
+                count++;
+            }
+        }
+        return res;
+    }
     
 }

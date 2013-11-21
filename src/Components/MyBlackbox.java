@@ -4,10 +4,12 @@
  */
 package Components;
 
+import CreateMSA.AlignedProtein;
 import Jama.Matrix;
 import Method.MyEvaluate;
 import Method.MyRandomForest;
 import Method.PairOfPair;
+import Method.UvalueThreshold;
 import Support.Dsm;
 import Support.MyMatrix;
 import Support.ParseBlosumMatrix;
@@ -79,7 +81,7 @@ public class MyBlackbox {
                 k.LoadingFromPDBFile();
             }
             String fasta = k.getName() + "_" + k.getChain() + ".fasta.msa";
-            ArrayList<String> msa = MsaFilterer.filter(dir+"MSA/" + fasta);
+            ArrayList<String> msa = MsaFilterer.filter(dir + "MSA/" + fasta);
 //            if (msa.size() < 10) {
 //                System.out.println("Skip protein: " + k.getName() + "_" + k.getChain());
 //            }
@@ -100,7 +102,7 @@ public class MyBlackbox {
             ArrayList<int[]> signal_indicator = m.RetrieveIndicatorPair2(distance, lst_cols);
             ArrayList<int[]> null_indicator = m.RetrieveNullIndex2(distance, false, lst_cols);
             ArrayList<int[]> null_indicator2 = m.RetrieveNullIndex2(distance, true, lst_cols);
-            
+
             Collections.shuffle(null_indicator);
             Collections.shuffle(null_indicator);
             Collections.shuffle(null_indicator2);
@@ -123,7 +125,7 @@ public class MyBlackbox {
             System.out.println("Finish retrieved Column pair");
 
             Matrix tmp = PoP_signal.CalculatePoP(ColumnPair, PairIndex);
-            MyIO.WritePoPToFile(dir +"SignalMatrix/" + k.getName() + "_" + k.getChain() + ".txt", tmp.getArray());
+            MyIO.WritePoPToFile(dir + "SignalMatrix/" + k.getName() + "_" + k.getChain() + ".txt", tmp.getArray());
             SignalMat = SignalMat.plus(tmp);
             System.out.println("Signal matrix was calculated: " + k.getName());
 
@@ -315,7 +317,7 @@ public class MyBlackbox {
         double[][] m = Dsm.CalcDSM(d.getSignalMat().getArrayCopy(), d.getNullMat().getArrayCopy(),
                 pbm, PairIndex, true);
         MyIO.WritePoPToFile(dir + "DSM_0_0", m);
-        
+
         m = Dsm.CalcDSM(d.getSignalMat().getArrayCopy(), d.getNullMat().getArrayCopy(),
                 pbm, PairIndex, false);
         MyIO.WritePoPToFile(dir + "DSM_0_1", m);
@@ -427,41 +429,50 @@ public class MyBlackbox {
             System.out.println("Specificity: " + e.Specificity());
             System.out.println("MCC: " + e.MCC());
 //            ArrayList<Integer> binding = m.getMyKeyProtein().getBindingIndex();
-            
+
 //            break;
         }
-        System.out.println("Total tp: "+ me.getTruePositive());
-        System.out.println("Total tn: "+ me.getTrueNegative());
-        System.out.println("Total fp: "+ me.getFalsePositive());
-        System.out.println("Total fn: "+ me.getFalseNegative());
+        System.out.println("Total tp: " + me.getTruePositive());
+        System.out.println("Total tn: " + me.getTrueNegative());
+        System.out.println("Total fp: " + me.getFalsePositive());
+        System.out.println("Total fn: " + me.getFalseNegative());
         System.out.println("Final Sensitivity: " + me.Sensitivity());
         System.out.println("Final Specificity: " + me.Specificity());
         System.out.println("Final MCC: " + me.MCC());
     }
 
-    public static void TongHop() throws FileNotFoundException, IOException {
+    public static void TongHop(String dir, String list_dir, Matrix MyDSM, String out_name) throws FileNotFoundException, IOException {
 //        String pdb_dir = "pdb_file";
-        String dir = "HSSP_Database/Train_AdjustIndex/";
-        String list_dir = dir + "AminoList374_New.txt";
-//        String list_dir = dir + "TS75.txt";
+//        String dir = "HSSP_Database/Test62/";
+//        String list_dir = dir + "AminoList374_New.txt";
+//        String list_dir = dir + "PDNA62.txt";
 //        String signal_dir = "Train/SignalMatrix";
 //        String null_dir = "Train/NullMatrix";
 //        String null_dir2 = "Train/NullMatrix2";
         ArrayList<double[]> Pos = new ArrayList<double[]>();
         ArrayList<double[]> Neg = new ArrayList<double[]>();
-        Matrix DSM1 = MyIO.ReadDSM("HSSP_Database/Train_AdjustIndex/DSM_0_0");
+//        Matrix DSM1 = MyIO.ReadDSM("HSSP_Database/Train_AdjustIndex/DSM_0_0");
 //        Matrix DSM2 = MyIO.ReadDSM("HSSP_Database/Train_AdjustIndex/DSM_0_1");
 //        Matrix DSM3 = MyIO.ReadDSM("BLAST_Database/Train/DSM_1_0");
 //        Matrix DSM4 = MyIO.ReadDSM("HSSP_Database/Train/DSM_1_1");
 //        Matrix DSM5 = MyIO.ReadDSM("newDSM.out");
         ArrayList<String> amino = AminoAcid.getAA();
+        ArrayList<UvalueThreshold> lst_thres = MyIO.LoadUvalueThres(dir + "Threshold.txt");
 
         ArrayList<KeyProtein> lst_prot = MyIO.LoadKeyProteins(list_dir);
         for (KeyProtein k : lst_prot) {
             if (k.getSequence().equalsIgnoreCase("")) {
                 k.LoadingFromPDBFile();
             }
-            String fasta = k.getName() + "_" + k.getChain() + ".fasta.msa";
+            int u_thres_idx=0;
+            String n = k.getName()+"_"+ k.getChain();
+            for(int i=0;i<lst_thres.size();i++){
+                if(lst_thres.get(i).getProtName().equalsIgnoreCase(n)){
+                    u_thres_idx = i;
+                    break;
+                }
+            }
+            String fasta = k.getName() + "_" + k.getChain() + ".msa";
             ArrayList<String> msa = MsaFilterer.filter(dir + "MSA/" + fasta);
             if (msa.size() < 100) {
                 System.out.println("Skip protein: " + k.getName() + "_" + k.getChain());
@@ -474,16 +485,29 @@ public class MyBlackbox {
 //            Neg.addAll(m.RetrieveSlidingWindow(5, false, DSM1, DSM2, DSM3, DSM4));
 //            Pos.addAll(m.CalculatePSSMAndSS(amino, 11, true));
 //            Neg.addAll(m.CalculatePSSMAndSS(amino, 11, false));
-            Pos.addAll(m.CalculatePSSMandUvalue(amino, 11, true, DSM1));
-            Neg.addAll(m.CalculatePSSMandUvalue(amino, 11, false, DSM1));
+
+//            Pos.addAll(m.CalculatePSSMandUvalue(amino, 11, true, MyDSM));
+//            Neg.addAll(m.CalculatePSSMandUvalue(amino, 11, false, MyDSM));
+
+//            Pos.addAll(m.ExtractPSSM(true, 11, dir + "PSSM/", true));
+//            Neg.addAll(m.ExtractPSSM(true, 11, dir + "PSSM/", false));
+            
+//            double thres = lst_thres.get(u_thres_idx).getThres()[1]; // 10%
+//            Pos.addAll(m.ExtractBooleanUvalue(amino, 11, true, MyDSM, thres));
+//            Neg.addAll(m.ExtractBooleanUvalue(amino, 11, false, MyDSM, thres));
+//            Pos.addAll(m.ExtractPSSMBooleanUvalue(11, true, MyDSM, thres, true, dir+"PSSM/"));
+//            Neg.addAll(m.ExtractPSSMBooleanUvalue(11, false, MyDSM, thres, true, dir+"PSSM/"));
+            
+            Pos.addAll(m.ExtractPSSM_Pair(3,true, amino));
+            Neg.addAll(m.ExtractPSSM_Pair(3, false, amino));
         }
-        ARRF_Template.WriteToArrfFile(dir + "PSSM_Uvalue_DSM_0_0_Train.arff", "SlidingWindowsDSM_0_0", Pos, Neg);
+        ARRF_Template.WriteToArrfFile(dir + out_name + ".arff", out_name, Pos, Neg);
     }
 
     public static void FindSafeNeg(String filename, String file_output) throws FileNotFoundException, IOException, Exception {
         MyRandomForest rf = new MyRandomForest(filename);
 
-        Instances neg = rf.DownNeg((double) 1 / 20, (double) 5 / 10);
+        Instances neg = rf.DownNeg((double) 1 / 9, (double) 2 / 9);
         Instances set = rf.GetPosIns();
         set.addAll(neg);
         ARRF_Template.WriteToArffFile(set, file_output);
@@ -530,5 +554,117 @@ public class MyBlackbox {
             System.out.print(i + "  ");
         }
         System.out.println();
+    }
+
+    public static void FromOutFileToMSA(String filelist, String dir) throws FileNotFoundException, IOException {
+        FileInputStream fstream = new FileInputStream(filelist);
+        DataInputStream in = new DataInputStream(fstream);
+        BufferedReader br = new BufferedReader(new InputStreamReader(in));
+        String tmp = "";
+        while (true) {
+            tmp = br.readLine();
+            if (tmp == null) {
+                break;
+            }
+            tmp = tmp.trim();
+            if (!tmp.isEmpty()) {
+                AlignedProtein a = new AlignedProtein(tmp);
+                MyIO.WriteToFile(dir + tmp + ".msa", a.CreateMSA());
+            }
+        }
+        br.close();
+    }
+
+    public static void PredictBindingPosition(String name, String dir, int width) throws FileNotFoundException, IOException, Exception {
+        MyRandomForest rf = new MyRandomForest("BLAST_Database/Train/NativePSSM_MSA_100_Train.arff");
+        int radius = (width-1)/2;
+        ArrayList<String> arr = MsaFilterer.filter(dir + "MSA/" + name + ".msa");
+        if (arr.size() < 100) {
+            System.err.println(name + " : don't have enough info to predict");
+        } else {
+            KeyProtein k = new KeyProtein(name.substring(0, 4), name.substring(5, 6));
+            k.LoadingFromPDBFile();
+
+            MSA m = new MSA(k, arr);
+            ArrayList<double[]> feature = m.CreateFeature_PSSM(true, 11, dir);
+            double[][] val = rf.Predict(feature);
+            //
+            ArrayList<Integer> lst_Binding = k.getBindingIndex();
+            String seq = k.getSequence();
+            System.out.println("Sequence: " + seq);
+            System.out.print("Real idx: ");
+            for (int i = 0; i < seq.length(); i++) {
+                if (lst_Binding.indexOf(k.GetAbsoluteIndex(i)) >= 0) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.print("\n");
+            System.out.print("Calc idx: -----");
+            ArrayList<Integer> prediction = new ArrayList<Integer>();
+            for (int i = 0; i < val.length; i++) {
+                if (val[i][0] >= val[i][1]) {
+                    System.out.print("*");
+                    prediction.add(i+radius);
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.print("-----\n");
+            MyEvaluate me = new MyEvaluate(prediction, k, width);
+                System.out.println("TP: "+ me.getTruePositive());
+                System.out.println("TN: "+ me.getTrueNegative());
+                System.out.println("FP: "+ me.getFalsePositive());
+                System.out.println("FN: "+ me.getFalseNegative());
+        }
+    }
+
+    public static void PredictBindingPosition(ArrayList<String> lst_name, String dir, int width) throws FileNotFoundException, IOException, Exception {
+        MyRandomForest rf = new MyRandomForest("BLAST_Database/Train/NativePSSM_MSA_100_Train.arff");
+        int radius = (width-1)/2;
+        for (String name : lst_name) {
+            ArrayList<String> arr = MsaFilterer.filter(dir + "MSA/" + name + ".msa");
+            if (arr.size() < 0) {
+                System.err.println(name + " : don't have enough info to predict");
+            } else {
+                KeyProtein k = new KeyProtein(name.substring(0, 4), name.substring(5, 6));
+                k.LoadingFromPDBFile();
+
+                MSA m = new MSA(k, arr);
+                ArrayList<double[]> feature = m.CreateFeature_PSSM(true, 11, dir);
+                double[][] val = rf.Predict(feature);
+                //
+                ArrayList<Integer> lst_Binding = k.getBindingIndex();
+                String seq = k.getSequence();
+                System.out.println(name+" :  " + seq);
+                System.out.print("Real idx: ");
+                for (int i = 0; i < seq.length(); i++) {
+                    if (lst_Binding.indexOf(k.GetAbsoluteIndex(i)) >= 0) {
+                        System.out.print("*");
+                    } else {
+                        System.out.print(" ");
+                    }
+                }
+                System.out.print("\n");
+                System.out.print("Calc idx: -----");
+                ArrayList<Integer> prediction = new ArrayList<Integer>();
+                for (int i = 0; i < val.length; i++) {
+                    if (val[i][0] >= val[i][1]) {
+                        System.out.print("*");
+                        prediction.add(i+radius);
+                    } else {
+                        System.out.print(" ");
+                    }
+                }
+                System.out.print("-----\n");
+                MyEvaluate me = new MyEvaluate(prediction, k, width);
+                System.out.println("Number of row: "+ arr.size());
+                System.out.println("TP: "+ me.getTruePositive());
+                System.out.println("TN: "+ me.getTrueNegative());
+                System.out.println("FP: "+ me.getFalsePositive());
+                System.out.println("FN: "+ me.getFalseNegative());
+            }
+        }
     }
 }

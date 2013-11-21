@@ -1,0 +1,3538 @@
+PSIBLAST 2.2.25+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: All non-redundant GenBank CDS translations+PDB+SwissProt+PIR+PRF
+excluding environmental samples from WGS projects
+           32,814,121 sequences; 11,431,176,125 total letters
+
+Results from round 1
+
+
+Query= 1A73_A
+
+Length=162
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+gb|AAB65764.1|  endonuclease [Physarum polycephalum]                   330    9e-89
+sp|Q94702.3|PPO1_PHYPO  RecName: Full=Intron-encoded endonuclease...   326    1e-87
+pdb|1CZ0|A  Chain A, Intron Encoded Homing Endonuclease I-PpoiDNA...   325    2e-87
+pdb|2O6M|A  Chain A, H98q Mutant Of The Homing Endonuclease I-ppo...   325    3e-87
+pdb|1EVW|A  Chain A, L116a Mutant Of The Homing Endonuclease I-Pp...   324    6e-87
+pdb|1CYQ|A  Chain A, Intron Encoded Homing Endonuclease I-Ppoi (H...   323    1e-86
+pir||A35664  PpoI endonuclease - slime mold (Physarum polycephalum)    268    3e-70
+emb|CAC38868.1|  putative endonuclease [Naegleria sp. NG874]          47.0    0.002
+emb|CAC24704.1|  putative endonuclease [Naegleria sp. NG874]          46.6    0.002
+emb|CCO18671.1|  unknown protein [Bathycoccus prasinos]               42.4    0.056
+ref|XP_004998557.1|  hypothetical protein PTSG_01082 [Salpingoeca...  41.6    0.094
+gb|EMS20091.1|  hypothetical protein RHTO_03624 [Rhodosporidium t...  40.4    0.18 
+gb|ABF71480.1|  putative homing endonuclease [Pleopsidium chlorop...  39.3    0.45 
+gb|ABF71493.1|  putative homing endonuclease [Pleopsidium gobiense]   38.9    0.49 
+gb|AAV35433.1|  His-Cys box protein [Porphyra umbilicalis]            38.9    0.50 
+gb|ABF71486.1|  putative homing endonuclease [Pleopsidium flavum]     38.9    0.63 
+gb|ABF71490.1|  putative homing endonuclease [Pleopsidium chlorop...  38.5    0.69 
+gb|ABF71484.1|  putative homing endonuclease [Pleopsidium chlorop...  38.5    0.69 
+gb|ABF71473.1|  putative homing endonuclease [Pleopsidium chlorop...  38.5    0.71 
+gb|ABF71487.1|  putative homing endonuclease [Pleopsidium flavum]     38.5    0.71 
+gb|ABF71491.1|  putative homing endonuclease [Pleopsidium gobiense]   38.5    0.73 
+gb|ABF71483.1|  putative homing endonuclease [Pleopsidium chlorop...  38.5    0.73 
+gb|ABF71489.1|  putative homing endonuclease [Pleopsidium flavum]     38.5    0.75 
+gb|ABF71488.1|  putative homing endonuclease [Pleopsidium chlorop...  38.5    0.75 
+gb|ABF71479.1|  putative homing endonuclease [Pleopsidium flavum]     38.5    0.77 
+gb|AAP73783.1|  intron-encoded I-PpoI type endonuclease [Neoscyta...  38.1    1.1  
+dbj|BAB86285.1|  putative homing endonuclease [Beauveria bassiana...  38.1    1.1  
+dbj|BAE96720.1|  putative homing endonuclease [Paecilomyces javan...  37.7    1.3  
+dbj|BAB87243.1|  His-Cys box homing endonuclease [Coemansia mojav...  36.6    2.5  
+gb|EGU11505.1|  Hypothetical Protein RTG_02675 [Rhodotorula gluti...  36.2    3.2  
+emb|CAI83767.1|  homing endonuclease [Didymium iridis]                36.2    3.9  
+ref|XP_004336245.1|  hypothetical protein ACA1_139690 [Acanthamoe...  36.2    4.0  
+gb|AAQ94052.1|  homing endonuclease I-PchI [Pleopsidium chloropha...  35.8    4.2  
+ref|XP_004309611.1|  PREDICTED: probable E3 ubiquitin-protein lig...  35.4    5.4  
+ref|XP_003052461.1|  hypothetical protein NECHADRAFT_77451 [Nectr...  35.0    7.2  
+gb|EPE32101.1|  His-Me finger endonuclease [Glarea lozoyensis ATC...  35.0    8.3  
+ref|WP_017496710.1|  TonB-denpendent receptor [Flavobacterium sp....  34.7    9.7  
+
+
+>gb|AAB65764.1| endonuclease [Physarum polycephalum]
+Length=185
+
+ Score =  330 bits (846),  Expect = 9e-89, Method: Composition-based stats.
+ Identities = 162/162 (100%), Positives = 162/162 (100%), Gaps = 0/162 (0%)
+
+Query  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+            ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR
+Sbjct  24   ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  83
+
+Query  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG
+Sbjct  84   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  143
+
+Query  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+            RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV
+Sbjct  144  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  185
+
+
+>sp|Q94702.3|PPO1_PHYPO RecName: Full=Intron-encoded endonuclease I-PpoI; Short=I-Ppo
+ pdb|1A74|A Chain A, I-Ppol Homing EndonucleaseDNA COMPLEX
+ pdb|1A74|B Chain B, I-Ppol Homing EndonucleaseDNA COMPLEX
+ pdb|1IPP|A Chain A, Homing EndonucleaseDNA COMPLEX
+ pdb|1IPP|B Chain B, Homing EndonucleaseDNA COMPLEX
+ pdb|1A73|A Chain A, Intron-Encoded Endonuclease I-Ppoi Complexed With Dna
+ pdb|1A73|B Chain B, Intron-Encoded Endonuclease I-Ppoi Complexed With Dna
+ gb|AAB65765.1| endonuclease [Physarum polycephalum]
+ gb|AAB81102.1| I-Ppo endonuclease [Physarum polycephalum]
+Length=163
+
+ Score =  326 bits (836),  Expect = 1e-87, Method: Composition-based stats.
+ Identities = 162/162 (100%), Positives = 162/162 (100%), Gaps = 0/162 (0%)
+
+Query  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+            ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR
+Sbjct  2    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  61
+
+Query  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG
+Sbjct  62   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  121
+
+Query  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+            RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV
+Sbjct  122  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  163
+
+
+>pdb|1CZ0|A Chain A, Intron Encoded Homing Endonuclease I-PpoiDNA COMPLEX 
+Lacking Catalytic Metal Ion
+ pdb|1CZ0|B Chain B, Intron Encoded Homing Endonuclease I-PpoiDNA COMPLEX 
+Lacking Catalytic Metal Ion
+ pdb|1EVX|A Chain A, Apo Crystal Structure Of The Homing Endonuclease, I-Ppoi
+ pdb|1EVX|B Chain B, Apo Crystal Structure Of The Homing Endonuclease, I-Ppoi
+Length=162
+
+ Score =  325 bits (834),  Expect = 2e-87, Method: Composition-based stats.
+ Identities = 162/162 (100%), Positives = 162/162 (100%), Gaps = 0/162 (0%)
+
+Query  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+            ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR
+Sbjct  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+
+Query  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG
+Sbjct  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+
+Query  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+            RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV
+Sbjct  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+
+
+>pdb|2O6M|A Chain A, H98q Mutant Of The Homing Endonuclease I-ppoi Complexed 
+With Dna
+ pdb|2O6M|B Chain B, H98q Mutant Of The Homing Endonuclease I-ppoi Complexed 
+With Dna
+Length=163
+
+ Score =  325 bits (833),  Expect = 3e-87, Method: Composition-based stats.
+ Identities = 161/162 (99%), Positives = 161/162 (99%), Gaps = 0/162 (0%)
+
+Query  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+            ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR
+Sbjct  2    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  61
+
+Query  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTAS LCHNTRCHNPLHLCWESLDDNKG
+Sbjct  62   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASQLCHNTRCHNPLHLCWESLDDNKG  121
+
+Query  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+            RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV
+Sbjct  122  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  163
+
+
+>pdb|1EVW|A Chain A, L116a Mutant Of The Homing Endonuclease I-Ppoi Complexed 
+To Homing Site Dna.
+ pdb|1EVW|B Chain B, L116a Mutant Of The Homing Endonuclease I-Ppoi Complexed 
+To Homing Site Dna.
+ pdb|1EVW|C Chain C, L116a Mutant Of The Homing Endonuclease I-Ppoi Complexed 
+To Homing Site Dna.
+ pdb|1EVW|D Chain D, L116a Mutant Of The Homing Endonuclease I-Ppoi Complexed 
+To Homing Site Dna.
+Length=163
+
+ Score =  324 bits (830),  Expect = 6e-87, Method: Composition-based stats.
+ Identities = 161/162 (99%), Positives = 161/162 (99%), Gaps = 0/162 (0%)
+
+Query  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+            ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR
+Sbjct  2    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  61
+
+Query  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWES DDNKG
+Sbjct  62   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESADDNKG  121
+
+Query  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+            RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV
+Sbjct  122  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  163
+
+
+>pdb|1CYQ|A Chain A, Intron Encoded Homing Endonuclease I-Ppoi (H98a)DNA 
+HOMING Site Complex
+ pdb|1CYQ|B Chain B, Intron Encoded Homing Endonuclease I-Ppoi (H98a)DNA 
+HOMING Site Complex
+Length=162
+
+ Score =  323 bits (829),  Expect = 1e-86, Method: Composition-based stats.
+ Identities = 161/162 (99%), Positives = 161/162 (99%), Gaps = 0/162 (0%)
+
+Query  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+            ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR
+Sbjct  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+
+Query  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTAS LCHNTRCHNPLHLCWESLDDNKG
+Sbjct  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASALCHNTRCHNPLHLCWESLDDNKG  120
+
+Query  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+            RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV
+Sbjct  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+
+
+>pir||A35664 PpoI endonuclease - slime mold (Physarum polycephalum)
+Length=160
+
+ Score =  268 bits (686),  Expect = 3e-70, Method: Composition-based stats.
+ Identities = 128/129 (99%), Positives = 128/129 (99%), Gaps = 0/129 (0%)
+
+Query  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+            ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR
+Sbjct  24   ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  83
+
+Query  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG
+Sbjct  84   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  143
+
+Query  121  RNWCPGPNG  129
+            RNWCPGP G
+Sbjct  144  RNWCPGPTG  152
+
+
+>emb|CAC38868.1| putative endonuclease [Naegleria sp. NG874]
+Length=148
+
+ Score = 47.0 bits (110),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 23/48 (48%), Positives = 26/48 (55%), Gaps = 3/48 (6%)
+
+Query  94   TASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCVHAVVCLRQG  141
+            T SH CHN  C NP HL  E L  N+ RN C    G C+H   C+R G
+Sbjct  84   TVSHRCHNEHCLNPDHLVVEPLQVNQSRNTC---TGVCLHRPKCIRDG  128
+
+
+>emb|CAC24704.1| putative endonuclease [Naegleria sp. NG874]
+Length=143
+
+ Score = 46.6 bits (109),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 23/48 (48%), Positives = 26/48 (55%), Gaps = 3/48 (6%)
+
+Query  94   TASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCVHAVVCLRQG  141
+            T SH CHN  C NP HL  E L  N+ RN C    G C+H   C+R G
+Sbjct  84   TVSHRCHNEHCLNPDHLVVEPLQVNQSRNTC---TGVCLHRPKCIRDG  128
+
+
+>emb|CCO18671.1| unknown protein [Bathycoccus prasinos]
+Length=282
+
+ Score = 42.4 bits (98),  Expect = 0.056, Method: Composition-based stats.
+ Identities = 22/46 (48%), Positives = 27/46 (59%), Gaps = 3/46 (6%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCV--HAVVCLR  139
+            SHLCH + C NP+HL  E    N  RN+C G N GC   + + CLR
+Sbjct  134  SHLCHRSSCINPMHLVAEPKWCNLKRNYC-GKNSGCNCGNTIKCLR  178
+
+
+>ref|XP_004998557.1| hypothetical protein PTSG_01082 [Salpingoeca sp. ATCC 50818]
+ gb|EGD76382.1| hypothetical protein PTSG_01082 [Salpingoeca sp. ATCC 50818]
+Length=262
+
+ Score = 41.6 bits (96),  Expect = 0.094, Method: Composition-based stats.
+ Identities = 25/77 (33%), Positives = 30/77 (39%), Gaps = 23/77 (29%)
+
+Query  95   ASHLCHNTR-----------------CHNPLHLCWESLDDNKGRNWCPGPNGGCVHAVVC  137
+             SHLCH  +                 C  P H C E++  N  R  CPG  GGC+H   C
+Sbjct  182  GSHLCHRGQHRLPVIHPKTGKKLLLECIRPSHCCLEAVHRNNSRQGCPGILGGCIHEPPC  241
+
+Query  138  LRQGPLYGPGATVAGPQ  154
+            L       P   V GP+
+Sbjct  242  LL------PARRVHGPE  252
+
+
+>gb|EMS20091.1| hypothetical protein RHTO_03624 [Rhodosporidium toruloides NP11]
+Length=435
+
+ Score = 40.4 bits (93),  Expect = 0.18, Method: Composition-based stats.
+ Identities = 24/73 (33%), Positives = 35/73 (48%), Gaps = 5/73 (6%)
+
+Query  85   PDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNG-GCVHAVVCLRQGPL  143
+            PD++  +   ASH C + RC  P H+ WE    N  R+ C G +   C H+  C+R   +
+Sbjct  108  PDDM--RNLDASHRCGDARCFAPGHIAWEDHALNTNRDACIGDSQMTCNHSPSCIRGAIV  165
+
+Query  144  YGPGATVAGPQQR  156
+            +    TV G   R
+Sbjct  166  H--QVTVKGTSTR  176
+
+
+>gb|ABF71480.1| putative homing endonuclease [Pleopsidium chlorophanum]
+Length=256
+
+ Score = 39.3 bits (90),  Expect = 0.45, Method: Composition-based stats.
+ Identities = 18/35 (52%), Positives = 19/35 (55%), Gaps = 0/35 (0%)
+
+Query  92   TCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            T   SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  182  TMECSHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71493.1| putative homing endonuclease [Pleopsidium gobiense]
+Length=256
+
+ Score = 38.9 bits (89),  Expect = 0.49, Method: Composition-based stats.
+ Identities = 17/31 (55%), Positives = 18/31 (59%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHNGRCFRPTHLVVEPRAENKERQTCNG  216
+
+
+>gb|AAV35433.1| His-Cys box protein [Porphyra umbilicalis]
+Length=150
+
+ Score = 38.9 bits (89),  Expect = 0.50, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 33/71 (47%), Gaps = 4/71 (5%)
+
+Query  73   RWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWC----PGPN  128
+            ++  H V  +     +  +   ASH CH   C NP HL +E+   NK R +C      P+
+Sbjct  63   KYYGHVVACIFNAGRVPVEGEQASHRCHRGACVNPQHLVFETERVNKTRQYCDHFKDHPD  122
+
+Query  129  GGCVHAVVCLR  139
+              C+H   C+R
+Sbjct  123  HNCLHQPQCIR  133
+
+
+>gb|ABF71486.1| putative homing endonuclease [Pleopsidium flavum]
+Length=256
+
+ Score = 38.9 bits (89),  Expect = 0.63, Method: Composition-based stats.
+ Identities = 17/31 (55%), Positives = 18/31 (59%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71490.1| putative homing endonuclease [Pleopsidium chlorophanum]
+Length=256
+
+ Score = 38.5 bits (88),  Expect = 0.69, Method: Composition-based stats.
+ Identities = 17/31 (55%), Positives = 18/31 (59%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71484.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71485.1| putative homing endonuclease [Pleopsidium chlorophanum]
+Length=256
+
+ Score = 38.5 bits (88),  Expect = 0.69, Method: Composition-based stats.
+ Identities = 17/31 (55%), Positives = 18/31 (59%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71473.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71474.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71475.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71476.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71477.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71478.1| putative homing endonuclease [Pleopsidium flavum]
+ gb|ABF71481.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71482.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71492.1| putative homing endonuclease [Pleopsidium chlorophanum]
+Length=256
+
+ Score = 38.5 bits (88),  Expect = 0.71, Method: Composition-based stats.
+ Identities = 17/31 (55%), Positives = 18/31 (59%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71487.1| putative homing endonuclease [Pleopsidium flavum]
+Length=256
+
+ Score = 38.5 bits (88),  Expect = 0.71, Method: Composition-based stats.
+ Identities = 17/31 (55%), Positives = 18/31 (59%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71491.1| putative homing endonuclease [Pleopsidium gobiense]
+Length=256
+
+ Score = 38.5 bits (88),  Expect = 0.73, Method: Composition-based stats.
+ Identities = 17/31 (55%), Positives = 18/31 (59%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71483.1| putative homing endonuclease [Pleopsidium chlorophanum]
+Length=256
+
+ Score = 38.5 bits (88),  Expect = 0.73, Method: Composition-based stats.
+ Identities = 17/31 (55%), Positives = 18/31 (59%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71489.1| putative homing endonuclease [Pleopsidium flavum]
+Length=256
+
+ Score = 38.5 bits (88),  Expect = 0.75, Method: Composition-based stats.
+ Identities = 17/31 (55%), Positives = 18/31 (59%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71488.1| putative homing endonuclease [Pleopsidium chlorophanum]
+Length=256
+
+ Score = 38.5 bits (88),  Expect = 0.75, Method: Composition-based stats.
+ Identities = 17/31 (55%), Positives = 18/31 (59%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71479.1| putative homing endonuclease [Pleopsidium flavum]
+Length=256
+
+ Score = 38.5 bits (88),  Expect = 0.77, Method: Composition-based stats.
+ Identities = 17/31 (55%), Positives = 18/31 (59%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|AAP73783.1| intron-encoded I-PpoI type endonuclease [Neoscytalidium dimidiatum]
+Length=290
+
+ Score = 38.1 bits (87),  Expect = 1.1, Method: Composition-based stats.
+ Identities = 28/74 (38%), Positives = 33/74 (45%), Gaps = 22/74 (29%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG------PNGGCV---------HAVVC---  137
+            SHLC N  C NP HL  E+   N+ R  C G      PNG            HA +C   
+Sbjct  213  SHLCGNGECFNPDHLVIETAGLNQRRKTCQGHAQVRLPNGSVYHPCQHGTEEHAKLCILP  272
+
+Query  138  LRQGPL----YGPG  147
+            LR+ PL    +GPG
+Sbjct  273  LRRAPLGRQFFGPG  286
+
+
+>dbj|BAB86285.1| putative homing endonuclease [Beauveria bassiana]
+ dbj|BAE46602.1| putative homing endonuclease [Beauveria bassiana]
+ gb|ADY86113.1| putative homing endonuclease [Isaria farinosa]
+Length=294
+
+ Score = 38.1 bits (87),  Expect = 1.1, Method: Composition-based stats.
+ Identities = 22/62 (36%), Positives = 28/62 (46%), Gaps = 0/62 (0%)
+
+Query  63   YKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRN  122
+            Y   +  V  R G+  +  L    + NG     SHLCHN +C NP H   E   +N  RN
+Sbjct  214  YYHHLAVVAKREGATLLLVLPGRKDSNGIAYEVSHLCHNGQCFNPDHCVVEPRHENHRRN  273
+
+Query  123  WC  124
+             C
+Sbjct  274  EC  275
+
+
+>dbj|BAE96720.1| putative homing endonuclease [Paecilomyces javanicus]
+Length=295
+
+ Score = 37.7 bits (86),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 17/36 (48%), Positives = 19/36 (53%), Gaps = 0/36 (0%)
+
+Query  89   NGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWC  124
+            NG     SHLCHN +C NP H   E   +N  RN C
+Sbjct  241  NGYAYEVSHLCHNRQCFNPDHCVVEPRHENHRRNEC  276
+
+
+>dbj|BAB87243.1| His-Cys box homing endonuclease [Coemansia mojavensis]
+Length=171
+
+ Score = 36.6 bits (83),  Expect = 2.5, Method: Composition-based stats.
+ Identities = 20/42 (48%), Positives = 20/42 (48%), Gaps = 0/42 (0%)
+
+Query  87   NINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPN  128
+            N   K    SHLCH   C NP HL  ES   N  RN C G N
+Sbjct  88   NAGKKRLQVSHLCHRGWCFNPEHLVVESQRLNAKRNNCKGNN  129
+
+
+>gb|EGU11505.1| Hypothetical Protein RTG_02675 [Rhodotorula glutinis ATCC 204091]
+Length=438
+
+ Score = 36.2 bits (82),  Expect = 3.2, Method: Composition-based stats.
+ Identities = 18/52 (35%), Positives = 23/52 (45%), Gaps = 1/52 (1%)
+
+Query  89   NGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWC-PGPNGGCVHAVVCLR  139
+            N     ASH C   RC  P H+ WE    N  R+ C       C+H+  C+R
+Sbjct  110  NSADLDASHRCGEPRCFAPGHIAWEDHTLNTNRDACFRNLRTTCLHSPSCIR  161
+
+
+>emb|CAI83767.1| homing endonuclease [Didymium iridis]
+Length=209
+
+ Score = 36.2 bits (82),  Expect = 3.9, Method: Composition-based stats.
+ Identities = 18/54 (34%), Positives = 23/54 (43%), Gaps = 7/54 (12%)
+
+Query  95   ASHLCHNTRCHNPLHLCWESLDDNKGRNWCPG-------PNGGCVHAVVCLRQG  141
+            A H CHN RC    H+ + S D N+  ++CP            C H   CL  G
+Sbjct  149  AIHRCHNKRCFTKGHVYFGSKDQNRSTDFCPAYVVINGVVVHVCTHTPSCLVPG  202
+
+
+>ref|XP_004336245.1| hypothetical protein ACA1_139690 [Acanthamoeba castellanii str. 
+Neff]
+ gb|ELR14232.1| hypothetical protein ACA1_139690 [Acanthamoeba castellanii str. 
+Neff]
+Length=167
+
+ Score = 36.2 bits (82),  Expect = 4.0, Method: Composition-based stats.
+ Identities = 16/38 (43%), Positives = 24/38 (64%), Gaps = 1/38 (2%)
+
+Query  73   RWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHL  110
+            ++ +HT+  LL    I+G+    SHLCH ++C NP HL
+Sbjct  72   KYMAHTISLLLWKRKIDGQL-PVSHLCHQSKCVNPQHL  108
+
+
+>gb|AAQ94052.1| homing endonuclease I-PchI [Pleopsidium chlorophanum]
+Length=256
+
+ Score = 35.8 bits (81),  Expect = 4.2, Method: Composition-based stats.
+ Identities = 16/31 (52%), Positives = 17/31 (55%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCH  RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHXGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>ref|XP_004309611.1| PREDICTED: probable E3 ubiquitin-protein ligase ARI7-like [Fragaria 
+vesca subsp. vesca]
+Length=563
+
+ Score = 35.4 bits (80),  Expect = 5.4, Method: Composition-based stats.
+ Identities = 15/37 (41%), Positives = 20/37 (55%), Gaps = 2/37 (5%)
+
+Query  99   CHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCVHAV  135
+            C + +C    +L    ++DNK   WCP P  GC HAV
+Sbjct  209  CDDDKCKYSKYLLRSFVEDNKKTKWCPAP--GCEHAV  243
+
+
+>ref|XP_003052461.1| hypothetical protein NECHADRAFT_77451 [Nectria haematococca mpVI 
+77-13-4]
+ gb|EEU46748.1| hypothetical protein NECHADRAFT_77451 [Nectria haematococca mpVI 
+77-13-4]
+Length=1090
+
+ Score = 35.0 bits (79),  Expect = 7.2, Method: Composition-based stats.
+ Identities = 17/39 (44%), Positives = 23/39 (59%), Gaps = 1/39 (2%)
+
+Query  86   DNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWC  124
+            D++ G T T SH+C+   C NPLH+  E    N+ RN C
+Sbjct  931  DSLTGYTAT-SHICNWALCINPLHVASEQKSANRERNKC  968
+
+
+>gb|EPE32101.1| His-Me finger endonuclease [Glarea lozoyensis ATCC 20868]
+Length=162
+
+ Score = 35.0 bits (79),  Expect = 8.3, Method: Composition-based stats.
+ Identities = 19/46 (42%), Positives = 22/46 (48%), Gaps = 0/46 (0%)
+
+Query  95   ASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCVHAVVCLRQ  140
+            ASHLC N  C N  H+  E    N GRN C      C H   CL++
+Sbjct  16   ASHLCGNWSCVNAKHIYVEEGRVNAGRNACFMHRDECRHDPRCLKE  61
+
+
+>ref|WP_017496710.1| TonB-denpendent receptor [Flavobacterium sp. WG21]
+Length=1033
+
+ Score = 34.7 bits (78),  Expect = 9.7, Method: Composition-based stats.
+ Identities = 25/89 (29%), Positives = 38/89 (43%), Gaps = 2/89 (2%)
+
+Query  14   WEETV-GQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTRWQYKRTINQVVH  72
+            W+  V    P +TH++   GG   T +   +      G+  A NG  R+  +  I+Q V+
+Sbjct  295  WQSAVLRNAPQMTHNLSFSGGSDKTKYYLSLGYTDQEGINLA-NGMKRYSVRANIDQDVN  353
+
+Query  73   RWGSHTVPFLLEPDNINGKTCTASHLCHN  101
+            RW S      +     NG   +AS L  N
+Sbjct  354  RWLSVGTNLSVTRTEYNGLNTSASGLSGN  382
+
+
+
+Lambda     K      H
+   0.322    0.140    0.489 
+
+Gapped
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+Effective search space used: 279764554598
+Results from round 2
+
+
+Query= 1A73_A
+
+Length=162
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+gb|AAB65764.1|  endonuclease [Physarum polycephalum]                   326    2e-87
+sp|Q94702.3|PPO1_PHYPO  RecName: Full=Intron-encoded endonuclease...   321    3e-86
+pdb|2O6M|A  Chain A, H98q Mutant Of The Homing Endonuclease I-ppo...   321    5e-86
+pdb|1CZ0|A  Chain A, Intron Encoded Homing Endonuclease I-PpoiDNA...   321    6e-86
+pdb|1EVW|A  Chain A, L116a Mutant Of The Homing Endonuclease I-Pp...   319    2e-85
+pdb|1CYQ|A  Chain A, Intron Encoded Homing Endonuclease I-Ppoi (H...   319    2e-85
+pir||A35664  PpoI endonuclease - slime mold (Physarum polycephalum)    268    5e-70
+emb|CAC38868.1|  putative endonuclease [Naegleria sp. NG874]          83.5    2e-14
+
+Sequences not found previously or not previously below threshold:
+
+emb|CAC24704.1|  putative endonuclease [Naegleria sp. NG874]          83.1    3e-14
+gb|AAV35433.1|  His-Cys box protein [Porphyra umbilicalis]            49.6    4e-04
+gb|EMS20091.1|  hypothetical protein RHTO_03624 [Rhodosporidium t...  48.4    7e-04
+emb|CCO18671.1|  unknown protein [Bathycoccus prasinos]               48.4    7e-04
+dbj|BAB86285.1|  putative homing endonuclease [Beauveria bassiana...  47.3    0.002
+dbj|BAE96720.1|  putative homing endonuclease [Paecilomyces javan...  46.9    0.002
+ref|XP_004998557.1|  hypothetical protein PTSG_01082 [Salpingoeca...  46.1    0.003
+gb|ABF71480.1|  putative homing endonuclease [Pleopsidium chlorop...  45.7    0.005
+gb|AAP73783.1|  intron-encoded I-PpoI type endonuclease [Neoscyta...  45.7    0.005
+gb|EPE32101.1|  His-Me finger endonuclease [Glarea lozoyensis ATC...  45.4    0.006
+gb|ABF71486.1|  putative homing endonuclease [Pleopsidium flavum]     45.4    0.006
+gb|ABF71493.1|  putative homing endonuclease [Pleopsidium gobiense]   45.4    0.006
+gb|EGU11505.1|  Hypothetical Protein RTG_02675 [Rhodotorula gluti...  45.4    0.006
+gb|ABF71490.1|  putative homing endonuclease [Pleopsidium chlorop...  45.4    0.006
+gb|ABF71473.1|  putative homing endonuclease [Pleopsidium chlorop...  45.4    0.007
+gb|ABF71484.1|  putative homing endonuclease [Pleopsidium chlorop...  45.4    0.007
+gb|ABF71487.1|  putative homing endonuclease [Pleopsidium flavum]     45.4    0.007
+gb|ABF71483.1|  putative homing endonuclease [Pleopsidium chlorop...  45.4    0.007
+gb|ABF71491.1|  putative homing endonuclease [Pleopsidium gobiense]   45.0    0.007
+gb|ABF71488.1|  putative homing endonuclease [Pleopsidium chlorop...  45.0    0.007
+gb|ABF71489.1|  putative homing endonuclease [Pleopsidium flavum]     45.0    0.007
+gb|ABF71479.1|  putative homing endonuclease [Pleopsidium flavum]     45.0    0.008
+ref|XP_646838.1|  hypothetical protein DDB_G0268654 [Dictyosteliu...  43.4    0.023
+gb|AAQ94053.1|  homing endonuclease I-CpiI [Capronia pilosella]       43.0    0.033
+gb|AAQ94052.1|  homing endonuclease I-PchI [Pleopsidium chloropha...  42.7    0.041
+dbj|BAB87243.1|  His-Cys box homing endonuclease [Coemansia mojav...  42.7    0.041
+gb|EKC34113.1|  hypothetical protein CGI_10014951 [Crassostrea gi...  41.5    0.088
+emb|CAI83767.1|  homing endonuclease [Didymium iridis]                40.7    0.15 
+ref|XP_004996557.1|  hypothetical protein PTSG_02071 [Salpingoeca...  40.3    0.19 
+gb|EON68322.1|  hypothetical protein W97_07580 [Coniosporium apol...  40.3    0.21 
+gb|EKC41987.1|  hypothetical protein CGI_10028169 [Crassostrea gi...  40.0    0.28 
+ref|XP_003045694.1|  predicted protein [Nectria haematococca mpVI...  40.0    0.30 
+gb|EHK48539.1|  hypothetical protein TRIATDRAFT_18900, partial [T...  39.2    0.43 
+gb|EKC31613.1|  hypothetical protein CGI_10009858 [Crassostrea gi...  38.8    0.53 
+gb|EKG11720.1|  Endonuclease His-metal-binding finger [Macrophomi...  38.8    0.66 
+ref|XP_002603528.1|  hypothetical protein BRAFLDRAFT_79063 [Branc...  38.0    0.88 
+ref|XP_004336245.1|  hypothetical protein ACA1_139690 [Acanthamoe...  37.7    1.2  
+gb|EKC26688.1|  hypothetical protein CGI_10012873 [Crassostrea gi...  37.7    1.5  
+gb|AAL69647.1|  I2EP [Beauveria bassiana]                             37.3    1.5  
+ref|XP_003031013.1|  hypothetical protein SCHCODRAFT_109940 [Schi...  37.3    1.7  
+emb|CCT63385.1|  uncharacterized protein FFUJ_01884 [Fusarium fuj...  37.3    1.9  
+ref|XP_003052461.1|  hypothetical protein NECHADRAFT_77451 [Nectr...  36.9    2.1  
+ref|WP_006519222.1|  hypothetical protein [Leptolyngbya sp. PCC 7...  36.1    3.4  
+ref|XP_002603475.1|  hypothetical protein BRAFLDRAFT_79008 [Branc...  36.1    3.6  
+ref|YP_004109297.1|  hypothetical protein [Rhodopseudomonas palus...  36.1    4.1  
+ref|YP_003347681.1|  hypothetical protein [Klebsiella phage KP34]...  36.1    4.2  
+ref|YP_008059098.1|  HNH protein [Halovirus HCTV-5] >gb|AGM11666....  35.7    4.8  
+ref|YP_007378959.1|  hypothetical protein HVTV1_53 [Halovirus HVT...  35.7    4.8  
+ref|XP_001694410.1|  hypothetical protein CHLREDRAFT_181746 [Chla...  35.7    4.9  
+ref|XP_002609854.1|  hypothetical protein BRAFLDRAFT_90782 [Branc...  35.7    5.1  
+ref|XP_003052457.1|  predicted protein [Nectria haematococca mpVI...  35.7    5.6  
+ref|XP_002595500.1|  hypothetical protein BRAFLDRAFT_69099 [Branc...  35.3    6.5  
+gb|EON67715.1|  hypothetical protein W97_06858 [Coniosporium apol...  35.0    7.4  
+ref|YP_003659626.1|  HNH endonuclease [Segniliparus rotundus DSM ...  35.0    8.0  
+emb|CCE41148.1|  hypothetical protein CPAR2_301370 [Candida parap...  35.0    8.9  
+
+
+>gb|AAB65764.1| endonuclease [Physarum polycephalum]
+Length=185
+
+ Score =  326 bits (835),  Expect = 2e-87, Method: Composition-based stats.
+ Identities = 162/162 (100%), Positives = 162/162 (100%), Gaps = 0/162 (0%)
+
+Query  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+            ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR
+Sbjct  24   ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  83
+
+Query  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG
+Sbjct  84   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  143
+
+Query  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+            RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV
+Sbjct  144  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  185
+
+
+>sp|Q94702.3|PPO1_PHYPO RecName: Full=Intron-encoded endonuclease I-PpoI; Short=I-Ppo
+ pdb|1A74|A Chain A, I-Ppol Homing EndonucleaseDNA COMPLEX
+ pdb|1A74|B Chain B, I-Ppol Homing EndonucleaseDNA COMPLEX
+ pdb|1IPP|A Chain A, Homing EndonucleaseDNA COMPLEX
+ pdb|1IPP|B Chain B, Homing EndonucleaseDNA COMPLEX
+ pdb|1A73|A Chain A, Intron-Encoded Endonuclease I-Ppoi Complexed With Dna
+ pdb|1A73|B Chain B, Intron-Encoded Endonuclease I-Ppoi Complexed With Dna
+ gb|AAB65765.1| endonuclease [Physarum polycephalum]
+ gb|AAB81102.1| I-Ppo endonuclease [Physarum polycephalum]
+Length=163
+
+ Score =  321 bits (824),  Expect = 3e-86, Method: Composition-based stats.
+ Identities = 162/162 (100%), Positives = 162/162 (100%), Gaps = 0/162 (0%)
+
+Query  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+            ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR
+Sbjct  2    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  61
+
+Query  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG
+Sbjct  62   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  121
+
+Query  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+            RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV
+Sbjct  122  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  163
+
+
+>pdb|2O6M|A Chain A, H98q Mutant Of The Homing Endonuclease I-ppoi Complexed 
+With Dna
+ pdb|2O6M|B Chain B, H98q Mutant Of The Homing Endonuclease I-ppoi Complexed 
+With Dna
+Length=163
+
+ Score =  321 bits (823),  Expect = 5e-86, Method: Composition-based stats.
+ Identities = 161/162 (99%), Positives = 161/162 (99%), Gaps = 0/162 (0%)
+
+Query  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+            ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR
+Sbjct  2    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  61
+
+Query  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTAS LCHNTRCHNPLHLCWESLDDNKG
+Sbjct  62   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASQLCHNTRCHNPLHLCWESLDDNKG  121
+
+Query  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+            RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV
+Sbjct  122  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  163
+
+
+>pdb|1CZ0|A Chain A, Intron Encoded Homing Endonuclease I-PpoiDNA COMPLEX 
+Lacking Catalytic Metal Ion
+ pdb|1CZ0|B Chain B, Intron Encoded Homing Endonuclease I-PpoiDNA COMPLEX 
+Lacking Catalytic Metal Ion
+ pdb|1EVX|A Chain A, Apo Crystal Structure Of The Homing Endonuclease, I-Ppoi
+ pdb|1EVX|B Chain B, Apo Crystal Structure Of The Homing Endonuclease, I-Ppoi
+Length=162
+
+ Score =  321 bits (822),  Expect = 6e-86, Method: Composition-based stats.
+ Identities = 162/162 (100%), Positives = 162/162 (100%), Gaps = 0/162 (0%)
+
+Query  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+            ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR
+Sbjct  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+
+Query  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG
+Sbjct  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+
+Query  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+            RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV
+Sbjct  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+
+
+>pdb|1EVW|A Chain A, L116a Mutant Of The Homing Endonuclease I-Ppoi Complexed 
+To Homing Site Dna.
+ pdb|1EVW|B Chain B, L116a Mutant Of The Homing Endonuclease I-Ppoi Complexed 
+To Homing Site Dna.
+ pdb|1EVW|C Chain C, L116a Mutant Of The Homing Endonuclease I-Ppoi Complexed 
+To Homing Site Dna.
+ pdb|1EVW|D Chain D, L116a Mutant Of The Homing Endonuclease I-Ppoi Complexed 
+To Homing Site Dna.
+Length=163
+
+ Score =  319 bits (818),  Expect = 2e-85, Method: Composition-based stats.
+ Identities = 161/162 (99%), Positives = 161/162 (99%), Gaps = 0/162 (0%)
+
+Query  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+            ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR
+Sbjct  2    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  61
+
+Query  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWES DDNKG
+Sbjct  62   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESADDNKG  121
+
+Query  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+            RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV
+Sbjct  122  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  163
+
+
+>pdb|1CYQ|A Chain A, Intron Encoded Homing Endonuclease I-Ppoi (H98a)DNA 
+HOMING Site Complex
+ pdb|1CYQ|B Chain B, Intron Encoded Homing Endonuclease I-Ppoi (H98a)DNA 
+HOMING Site Complex
+Length=162
+
+ Score =  319 bits (818),  Expect = 2e-85, Method: Composition-based stats.
+ Identities = 161/162 (99%), Positives = 161/162 (99%), Gaps = 0/162 (0%)
+
+Query  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+            ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR
+Sbjct  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+
+Query  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTAS LCHNTRCHNPLHLCWESLDDNKG
+Sbjct  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASALCHNTRCHNPLHLCWESLDDNKG  120
+
+Query  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+            RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV
+Sbjct  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+
+
+>pir||A35664 PpoI endonuclease - slime mold (Physarum polycephalum)
+Length=160
+
+ Score =  268 bits (684),  Expect = 5e-70, Method: Composition-based stats.
+ Identities = 128/129 (99%), Positives = 128/129 (99%), Gaps = 0/129 (0%)
+
+Query  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+            ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR
+Sbjct  24   ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  83
+
+Query  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG
+Sbjct  84   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  143
+
+Query  121  RNWCPGPNG  129
+            RNWCPGP G
+Sbjct  144  RNWCPGPTG  152
+
+
+>emb|CAC38868.1| putative endonuclease [Naegleria sp. NG874]
+Length=148
+
+ Score = 83.5 bits (205),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 23/48 (48%), Positives = 26/48 (55%), Gaps = 3/48 (6%)
+
+Query  94   TASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCVHAVVCLRQG  141
+            T SH CHN  C NP HL  E L  N+ RN C    G C+H   C+R G
+Sbjct  84   TVSHRCHNEHCLNPDHLVVEPLQVNQSRNTC---TGVCLHRPKCIRDG  128
+
+
+>emb|CAC24704.1| putative endonuclease [Naegleria sp. NG874]
+Length=143
+
+ Score = 83.1 bits (204),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 23/48 (48%), Positives = 26/48 (55%), Gaps = 3/48 (6%)
+
+Query  94   TASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCVHAVVCLRQG  141
+            T SH CHN  C NP HL  E L  N+ RN C    G C+H   C+R G
+Sbjct  84   TVSHRCHNEHCLNPDHLVVEPLQVNQSRNTC---TGVCLHRPKCIRDG  128
+
+
+>gb|AAV35433.1| His-Cys box protein [Porphyra umbilicalis]
+Length=150
+
+ Score = 49.6 bits (117),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 27/85 (32%), Positives = 38/85 (45%), Gaps = 10/85 (11%)
+
+Query  73   RWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWC----PGPN  128
+            ++  H V  +     +  +   ASH CH   C NP HL +E+   NK R +C      P+
+Sbjct  63   KYYGHVVACIFNAGRVPVEGEQASHRCHRGACVNPQHLVFETERVNKTRQYCDHFKDHPD  122
+
+Query  129  GGCVHAVVCLR-----QGPLYG-PG  147
+              C+H   C+R       PL G PG
+Sbjct  123  HNCLHQPQCIRVHGNIDTPLEGEPG  147
+
+
+>gb|EMS20091.1| hypothetical protein RHTO_03624 [Rhodosporidium toruloides NP11]
+Length=435
+
+ Score = 48.4 bits (114),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 24/73 (33%), Positives = 35/73 (48%), Gaps = 5/73 (6%)
+
+Query  85   PDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGG-CVHAVVCLRQGPL  143
+            PD++  +   ASH C + RC  P H+ WE    N  R+ C G +   C H+  C+R   +
+Sbjct  108  PDDM--RNLDASHRCGDARCFAPGHIAWEDHALNTNRDACIGDSQMTCNHSPSCIRGAIV  165
+
+Query  144  YGPGATVAGPQQR  156
+            +    TV G   R
+Sbjct  166  H--QVTVKGTSTR  176
+
+
+>emb|CCO18671.1| unknown protein [Bathycoccus prasinos]
+Length=282
+
+ Score = 48.4 bits (114),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 20/46 (44%), Positives = 26/46 (57%), Gaps = 1/46 (2%)
+
+Query  95   ASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNG-GCVHAVVCLR  139
+             SHLCH + C NP+HL  E    N  RN+C   +G  C + + CLR
+Sbjct  133  VSHLCHRSSCINPMHLVAEPKWCNLKRNYCGKNSGCNCGNTIKCLR  178
+
+
+>dbj|BAB86285.1| putative homing endonuclease [Beauveria bassiana]
+ dbj|BAE46602.1| putative homing endonuclease [Beauveria bassiana]
+ gb|ADY86113.1| putative homing endonuclease [Isaria farinosa]
+Length=294
+
+ Score = 47.3 bits (111),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 22/62 (36%), Positives = 28/62 (46%), Gaps = 0/62 (0%)
+
+Query  63   YKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRN  122
+            Y   +  V  R G+  +  L    + NG     SHLCHN +C NP H   E   +N  RN
+Sbjct  214  YYHHLAVVAKREGATLLLVLPGRKDSNGIAYEVSHLCHNGQCFNPDHCVVEPRHENHRRN  273
+
+Query  123  WC  124
+             C
+Sbjct  274  EC  275
+
+
+>dbj|BAE96720.1| putative homing endonuclease [Paecilomyces javanicus]
+Length=295
+
+ Score = 46.9 bits (110),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 17/36 (48%), Positives = 19/36 (53%), Gaps = 0/36 (0%)
+
+Query  89   NGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWC  124
+            NG     SHLCHN +C NP H   E   +N  RN C
+Sbjct  241  NGYAYEVSHLCHNRQCFNPDHCVVEPRHENHRRNEC  276
+
+
+>ref|XP_004998557.1| hypothetical protein PTSG_01082 [Salpingoeca sp. ATCC 50818]
+ gb|EGD76382.1| hypothetical protein PTSG_01082 [Salpingoeca sp. ATCC 50818]
+Length=262
+
+ Score = 46.1 bits (108),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 25/76 (33%), Positives = 30/76 (40%), Gaps = 23/76 (30%)
+
+Query  96   SHLCHNTR-----------------CHNPLHLCWESLDDNKGRNWCPGPNGGCVHAVVCL  138
+            SHLCH  +                 C  P H C E++  N  R  CPG  GGC+H   CL
+Sbjct  183  SHLCHRGQHRLPVIHPKTGKKLLLECIRPSHCCLEAVHRNNSRQGCPGILGGCIHEPPCL  242
+
+Query  139  RQGPLYGPGATVAGPQ  154
+                   P   V GP+
+Sbjct  243  L------PARRVHGPE  252
+
+
+>gb|ABF71480.1| putative homing endonuclease [Pleopsidium chlorophanum]
+Length=256
+
+ Score = 45.7 bits (107),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 18/35 (52%), Positives = 19/35 (55%), Gaps = 0/35 (0%)
+
+Query  92   TCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            T   SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  182  TMECSHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|AAP73783.1| intron-encoded I-PpoI type endonuclease [Neoscytalidium dimidiatum]
+Length=290
+
+ Score = 45.7 bits (107),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 22/52 (43%), Positives = 25/52 (49%), Gaps = 6/52 (11%)
+
+Query  95   ASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCVHAVVCLRQGPLYGP  146
+             SHLC N  C NP HL  E+   N+ R  C G      HA V L  G +Y P
+Sbjct  212  VSHLCGNGECFNPDHLVIETAGLNQRRKTCQG------HAQVRLPNGSVYHP  257
+
+
+>gb|EPE32101.1| His-Me finger endonuclease [Glarea lozoyensis ATCC 20868]
+Length=162
+
+ Score = 45.4 bits (106),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 19/46 (42%), Positives = 22/46 (48%), Gaps = 0/46 (0%)
+
+Query  95   ASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCVHAVVCLRQ  140
+            ASHLC N  C N  H+  E    N GRN C      C H   CL++
+Sbjct  16   ASHLCGNWSCVNAKHIYVEEGRVNAGRNACFMHRDECRHDPRCLKE  61
+
+
+>gb|ABF71486.1| putative homing endonuclease [Pleopsidium flavum]
+Length=256
+
+ Score = 45.4 bits (106),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 17/31 (55%), Positives = 18/31 (59%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71493.1| putative homing endonuclease [Pleopsidium gobiense]
+Length=256
+
+ Score = 45.4 bits (106),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 17/31 (55%), Positives = 18/31 (59%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHNGRCFRPTHLVVEPRAENKERQTCNG  216
+
+
+>gb|EGU11505.1| Hypothetical Protein RTG_02675 [Rhodotorula glutinis ATCC 204091]
+Length=438
+
+ Score = 45.4 bits (106),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 18/52 (35%), Positives = 23/52 (45%), Gaps = 1/52 (1%)
+
+Query  89   NGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWC-PGPNGGCVHAVVCLR  139
+            N     ASH C   RC  P H+ WE    N  R+ C       C+H+  C+R
+Sbjct  110  NSADLDASHRCGEPRCFAPGHIAWEDHTLNTNRDACFRNLRTTCLHSPSCIR  161
+
+
+>gb|ABF71490.1| putative homing endonuclease [Pleopsidium chlorophanum]
+Length=256
+
+ Score = 45.4 bits (106),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 17/31 (55%), Positives = 18/31 (59%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71473.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71474.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71475.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71476.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71477.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71478.1| putative homing endonuclease [Pleopsidium flavum]
+ gb|ABF71481.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71482.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71492.1| putative homing endonuclease [Pleopsidium chlorophanum]
+Length=256
+
+ Score = 45.4 bits (106),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 17/31 (55%), Positives = 18/31 (59%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71484.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71485.1| putative homing endonuclease [Pleopsidium chlorophanum]
+Length=256
+
+ Score = 45.4 bits (106),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 17/31 (55%), Positives = 18/31 (59%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71487.1| putative homing endonuclease [Pleopsidium flavum]
+Length=256
+
+ Score = 45.4 bits (106),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 17/31 (55%), Positives = 18/31 (59%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71483.1| putative homing endonuclease [Pleopsidium chlorophanum]
+Length=256
+
+ Score = 45.4 bits (106),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 17/31 (55%), Positives = 18/31 (59%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71491.1| putative homing endonuclease [Pleopsidium gobiense]
+Length=256
+
+ Score = 45.0 bits (105),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 17/31 (55%), Positives = 18/31 (59%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71488.1| putative homing endonuclease [Pleopsidium chlorophanum]
+Length=256
+
+ Score = 45.0 bits (105),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 17/31 (55%), Positives = 18/31 (59%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71489.1| putative homing endonuclease [Pleopsidium flavum]
+Length=256
+
+ Score = 45.0 bits (105),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 17/31 (55%), Positives = 18/31 (59%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71479.1| putative homing endonuclease [Pleopsidium flavum]
+Length=256
+
+ Score = 45.0 bits (105),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 17/31 (55%), Positives = 18/31 (59%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>ref|XP_646838.1| hypothetical protein DDB_G0268654 [Dictyostelium discoideum AX4]
+ gb|EAL72916.1| hypothetical protein DDB_G0268654 [Dictyostelium discoideum AX4]
+Length=167
+
+ Score = 43.4 bits (101),  Expect = 0.023, Method: Composition-based stats.
+ Identities = 23/64 (36%), Positives = 31/64 (49%), Gaps = 5/64 (7%)
+
+Query  80   PFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGP--NGGCVHAVVC  137
+            P  ++ D  +G     S LC+N +C NP HL  E  D    R+ C  P  NG C H+  C
+Sbjct  81   PSCIDSDG-HGHGYVISFLCNNRKCLNPNHLYCE--DRLTKRDNCHSPKINGVCNHSPKC  137
+
+Query  138  LRQG  141
+              +G
+Sbjct  138  FIKG  141
+
+
+>gb|AAQ94053.1| homing endonuclease I-CpiI [Capronia pilosella]
+Length=307
+
+ Score = 43.0 bits (100),  Expect = 0.033, Method: Composition-based stats.
+ Identities = 18/53 (34%), Positives = 23/53 (44%), Gaps = 6/53 (11%)
+
+Query  95   ASHLCHNTRCHNPLHLCWESLDDNKGRNWCPG------PNGGCVHAVVCLRQG  141
+             SHLCHN  C NP H+  E    N+ R +C        P+G  +    C   G
+Sbjct  223  VSHLCHNAGCINPDHVIIEPAWINEFRKFCAKAWAVRFPDGSFLDPCRCHVDG  275
+
+
+>gb|AAQ94052.1| homing endonuclease I-PchI [Pleopsidium chlorophanum]
+Length=256
+
+ Score = 42.7 bits (99),  Expect = 0.041, Method: Composition-based stats.
+ Identities = 16/31 (52%), Positives = 17/31 (55%), Gaps = 0/31 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            SHLCH  RC  P HL  E   +NK R  C G
+Sbjct  186  SHLCHXGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>dbj|BAB87243.1| His-Cys box homing endonuclease [Coemansia mojavensis]
+Length=171
+
+ Score = 42.7 bits (99),  Expect = 0.041, Method: Composition-based stats.
+ Identities = 20/42 (48%), Positives = 20/42 (48%), Gaps = 0/42 (0%)
+
+Query  87   NINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPN  128
+            N   K    SHLCH   C NP HL  ES   N  RN C G N
+Sbjct  88   NAGKKRLQVSHLCHRGWCFNPEHLVVESQRLNAKRNNCKGNN  129
+
+
+>gb|EKC34113.1| hypothetical protein CGI_10014951 [Crassostrea gigas]
+Length=125
+
+ Score = 41.5 bits (96),  Expect = 0.088, Method: Composition-based stats.
+ Identities = 18/50 (36%), Positives = 22/50 (44%), Gaps = 1/50 (2%)
+
+Query  90   GKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGC-VHAVVCL  138
+            G     SHLCH   C N  HL  E+ + N+ RN C      C  H   C+
+Sbjct  72   GGNLEVSHLCHKKLCVNAAHLVLETHEVNQERNHCKAQGFCCRAHHPHCI  121
+
+
+>emb|CAI83767.1| homing endonuclease [Didymium iridis]
+Length=209
+
+ Score = 40.7 bits (94),  Expect = 0.15, Method: Composition-based stats.
+ Identities = 18/54 (34%), Positives = 23/54 (43%), Gaps = 7/54 (12%)
+
+Query  95   ASHLCHNTRCHNPLHLCWESLDDNKGRNWCPG-------PNGGCVHAVVCLRQG  141
+            A H CHN RC    H+ + S D N+  ++CP            C H   CL  G
+Sbjct  149  AIHRCHNKRCFTKGHVYFGSKDQNRSTDFCPAYVVINGVVVHVCTHTPSCLVPG  202
+
+
+>ref|XP_004996557.1| hypothetical protein PTSG_02071 [Salpingoeca sp. ATCC 50818]
+ gb|EGD81353.1| hypothetical protein PTSG_02071 [Salpingoeca sp. ATCC 50818]
+Length=280
+
+ Score = 40.3 bits (93),  Expect = 0.19, Method: Composition-based stats.
+ Identities = 17/38 (45%), Positives = 17/38 (45%), Gaps = 0/38 (0%)
+
+Query  104  CHNPLHLCWESLDDNKGRNWCPGPNGGCVHAVVCLRQG  141
+            C NP H   E    N  R  CPGP  GC H   CLR  
+Sbjct  227  CINPAHHVLEPGHYNSSRIGCPGPLLGCEHIPPCLRHA  264
+
+
+>gb|EON68322.1| hypothetical protein W97_07580 [Coniosporium apollinis CBS 100218]
+Length=250
+
+ Score = 40.3 bits (93),  Expect = 0.21, Method: Composition-based stats.
+ Identities = 15/30 (50%), Positives = 18/30 (60%), Gaps = 0/30 (0%)
+
+Query  95   ASHLCHNTRCHNPLHLCWESLDDNKGRNWC  124
+            ASHLCH+  C NP H+  ES   N+ R  C
+Sbjct  203  ASHLCHHPVCINPDHIVVESKALNEARKPC  232
+
+
+>gb|EKC41987.1| hypothetical protein CGI_10028169 [Crassostrea gigas]
+Length=161
+
+ Score = 40.0 bits (92),  Expect = 0.28, Method: Composition-based stats.
+ Identities = 19/44 (44%), Positives = 21/44 (48%), Gaps = 1/44 (2%)
+
+Query  90   GKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCVH  133
+            G     SHLCH   C NP+HL  E    N+ R  C    GG VH
+Sbjct  73   GANLEVSHLCHEKLCVNPMHLSLEPHATNQERIHCMQL-GGLVH  115
+
+
+>ref|XP_003045694.1| predicted protein [Nectria haematococca mpVI 77-13-4]
+ gb|EEU39981.1| predicted protein [Nectria haematococca mpVI 77-13-4]
+Length=653
+
+ Score = 40.0 bits (92),  Expect = 0.30, Method: Composition-based stats.
+ Identities = 15/29 (52%), Positives = 19/29 (66%), Gaps = 0/29 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWC  124
+            SHLC+ +RC NPLH+  E  D N  R+ C
+Sbjct  500  SHLCNFSRCMNPLHMTAEPHDTNIQRSAC  528
+
+
+>gb|EHK48539.1| hypothetical protein TRIATDRAFT_18900, partial [Trichoderma atroviride 
+IMI 206040]
+Length=126
+
+ Score = 39.2 bits (90),  Expect = 0.43, Method: Composition-based stats.
+ Identities = 20/53 (38%), Positives = 25/53 (48%), Gaps = 6/53 (11%)
+
+Query  87   NINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPG------PNGGCVH  133
+            +I  KT   SHLC N  C  P H+  E  + N  R+ C G      PN G +H
+Sbjct  51   SITSKTWQISHLCRNKGCFRPEHVEMEPAELNAARDECRGKSIFMLPNCGVLH  103
+
+
+>gb|EKC31613.1| hypothetical protein CGI_10009858 [Crassostrea gigas]
+Length=125
+
+ Score = 38.8 bits (89),  Expect = 0.53, Method: Composition-based stats.
+ Identities = 17/50 (34%), Positives = 21/50 (42%), Gaps = 1/50 (2%)
+
+Query  90   GKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGC-VHAVVCL  138
+            G     SHLC    C N  HL  E+ + N+ RN C      C  H   C+
+Sbjct  72   GGNLEVSHLCRKKLCVNATHLVLETHEVNQERNHCKAQGFCCRAHHPHCI  121
+
+
+>gb|EKG11720.1| Endonuclease His-metal-binding finger [Macrophomina phaseolina 
+MS6]
+Length=638
+
+ Score = 38.8 bits (89),  Expect = 0.66, Method: Composition-based stats.
+ Identities = 18/47 (39%), Positives = 21/47 (45%), Gaps = 4/47 (8%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGG----CVHAVVCL  138
+            SHLC N+ C  P HL  E  + N  R  C     G    C H+  CL
+Sbjct  385  SHLCGNSSCIYPPHLTMEPHEINIERIGCHRVRTGAYFLCTHSPRCL  431
+
+
+>ref|XP_002603528.1| hypothetical protein BRAFLDRAFT_79063 [Branchiostoma floridae]
+ gb|EEN59539.1| hypothetical protein BRAFLDRAFT_79063 [Branchiostoma floridae]
+Length=338
+
+ Score = 38.0 bits (87),  Expect = 0.88, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 25/50 (50%), Gaps = 3/50 (6%)
+
+Query  77   HTVPFLLEP--DNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWC  124
+            H + + L+   DN++  T   SHLCH  RC N  HL  E    N+ R  C
+Sbjct  271  HRLLYFLDSGLDNLD-PTMQVSHLCHEKRCVNLAHLSLEQNVVNQQRKNC  319
+
+
+>ref|XP_004336245.1| hypothetical protein ACA1_139690 [Acanthamoeba castellanii str. 
+Neff]
+ gb|ELR14232.1| hypothetical protein ACA1_139690 [Acanthamoeba castellanii str. 
+Neff]
+Length=167
+
+ Score = 37.7 bits (86),  Expect = 1.2, Method: Composition-based stats.
+ Identities = 16/39 (42%), Positives = 24/39 (62%), Gaps = 1/39 (2%)
+
+Query  73   RWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLC  111
+            ++ +HT+  LL    I+G+    SHLCH ++C NP HL 
+Sbjct  72   KYMAHTISLLLWKRKIDGQL-PVSHLCHQSKCVNPQHLI  109
+
+
+>gb|EKC26688.1| hypothetical protein CGI_10012873 [Crassostrea gigas]
+Length=122
+
+ Score = 37.7 bits (86),  Expect = 1.5, Method: Composition-based stats.
+ Identities = 19/46 (42%), Positives = 22/46 (48%), Gaps = 3/46 (6%)
+
+Query  95   ASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCV--HAVVCL  138
+             SHLCHN  C N  HL  E    N+ R  C    G C   H+ +CL
+Sbjct  77   VSHLCHNKLCVNTAHLVIEQHCINQERIHC-FLLGRCTEAHSPLCL  121
+
+
+>gb|AAL69647.1| I2EP [Beauveria bassiana]
+Length=244
+
+ Score = 37.3 bits (85),  Expect = 1.5, Method: Composition-based stats.
+ Identities = 17/56 (31%), Positives = 19/56 (34%), Gaps = 11/56 (19%)
+
+Query  95   ASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGG-----------CVHAVVCLR  139
+             SHLC N RC    HL  E    N+ R  C                 C H   C+R
+Sbjct  171  ISHLCANPRCMTLGHLVVEDAAINQSRKGCGKIKACRHAGCSKWVYFCDHKPRCIR  226
+
+
+>ref|XP_003031013.1| hypothetical protein SCHCODRAFT_109940 [Schizophyllum commune 
+H4-8]
+ gb|EFI96110.1| hypothetical protein SCHCODRAFT_109940, partial [Schizophyllum 
+commune H4-8]
+Length=334
+
+ Score = 37.3 bits (85),  Expect = 1.7, Method: Composition-based stats.
+ Identities = 30/120 (25%), Positives = 43/120 (36%), Gaps = 16/120 (13%)
+
+Query  20   QFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTRWQYKRTINQVVHRWGSHTV  79
+            ++P  T  V L    +     YE PL      GF K+G      KR    +++      +
+Sbjct  223  EYPDKTEGVTLACAKRQEAATYEDPLGVARAYGFLKHG-----VKRVPTHIIYGAVDDYL  277
+
+Query  80   PFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCVHAVVCLR  139
+            P  ++ D IN       HL   +R  N  HL  +           P    G +H   CLR
+Sbjct  278  PAFVKDDVINNAIGGVQHLASLSRVENAGHLVVQ---------TSPKELAGAIHR--CLR  326
+
+
+>emb|CCT63385.1| uncharacterized protein FFUJ_01884 [Fusarium fujikuroi IMI 58289]
+Length=356
+
+ Score = 37.3 bits (85),  Expect = 1.9, Method: Composition-based stats.
+ Identities = 21/63 (34%), Positives = 24/63 (39%), Gaps = 14/63 (22%)
+
+Query  92   TCTA--SHLCHNTRCHNPLHLCWESLDDNKGRNWC------------PGPNGGCVHAVVC  137
+            TC    SHLC+  RC NP H+  ES   N  R  C            P      +H   C
+Sbjct  207  TCEVEISHLCNWRRCINPDHVTLESHTTNISRKSCFTQAQGHFSAGLPVKVSCDIHNPPC  266
+
+Query  138  LRQ  140
+            L Q
+Sbjct  267  LLQ  269
+
+
+>ref|XP_003052461.1| hypothetical protein NECHADRAFT_77451 [Nectria haematococca mpVI 
+77-13-4]
+ gb|EEU46748.1| hypothetical protein NECHADRAFT_77451 [Nectria haematococca mpVI 
+77-13-4]
+Length=1090
+
+ Score = 36.9 bits (84),  Expect = 2.1, Method: Composition-based stats.
+ Identities = 22/67 (33%), Positives = 29/67 (44%), Gaps = 13/67 (19%)
+
+Query  86   DNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWC------------PGPNGGCVH  133
+            D++ G T T SH+C+   C NPLH+  E    N+ RN C            P      +H
+Sbjct  931  DSLTGYTAT-SHICNWALCINPLHVASEQKSANRERNKCFQRAKENANKGQPVARHCNMH  989
+
+Query  134  AVVCLRQ  140
+               CL Q
+Sbjct  990  TPPCLLQ  996
+
+
+>ref|WP_006519222.1| hypothetical protein [Leptolyngbya sp. PCC 7375]
+ gb|EKU98059.1| hypothetical protein Lepto7375DRAFT_7318 [Leptolyngbya sp. PCC 
+7375]
+Length=257
+
+ Score = 36.1 bits (82),  Expect = 3.4, Method: Composition-based stats.
+ Identities = 15/48 (32%), Positives = 23/48 (48%), Gaps = 1/48 (2%)
+
+Query  73   RWGSHTVPFLLEPDN-INGKTCTASHLCHNTRCHNPLHLCWESLDDNK  119
+            RW +H + + +   N I+       H C N  C NP HL   +L +N+
+Sbjct  155  RWMAHRLAYKISYKNFIDDSKLPVCHRCDNPSCVNPYHLFQGTLSENQ  202
+
+
+>ref|XP_002603475.1| hypothetical protein BRAFLDRAFT_79008 [Branchiostoma floridae]
+ gb|EEN59486.1| hypothetical protein BRAFLDRAFT_79008 [Branchiostoma floridae]
+Length=128
+
+ Score = 36.1 bits (82),  Expect = 3.6, Method: Composition-based stats.
+ Identities = 17/39 (44%), Positives = 20/39 (52%), Gaps = 1/39 (2%)
+
+Query  86   DNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWC  124
+            DN++  T   SHLCH  RC N  HL  E    N+ R  C
+Sbjct  72   DNLD-PTMQVSHLCHEKRCVNLAHLSLEQNVVNQQRKNC  109
+
+
+>ref|YP_004109297.1| hypothetical protein [Rhodopseudomonas palustris DX-1]
+ ref|WP_013502681.1| hypothetical protein [Rhodopseudomonas palustris]
+ gb|ADU44564.1| hypothetical protein Rpdx1_2983 [Rhodopseudomonas palustris DX-1]
+Length=162
+
+ Score = 36.1 bits (82),  Expect = 4.1, Method: Composition-based stats.
+ Identities = 22/78 (29%), Positives = 29/78 (38%), Gaps = 12/78 (15%)
+
+Query  49   YGVGFAKNGPTRWQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPL  108
+            YG+ + K+   RW+            G+H V   L   N+ G+     H C N  C  P 
+Sbjct  35   YGLMWVKDREGRWR----------NLGAHRVALALSGKNVVGRF--VLHRCDNPSCVRPD  82
+
+Query  109  HLCWESLDDNKGRNWCPG  126
+            HL   S  DN       G
+Sbjct  83   HLRRGSHKDNMADMTSKG  100
+
+
+>ref|YP_003347681.1| hypothetical protein [Klebsiella phage KP34]
+ gb|ACY66761.1| conserved hypothetical protein [Klebsiella phage KP34]
+Length=144
+
+ Score = 36.1 bits (82),  Expect = 4.2, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 24/50 (48%), Gaps = 6/50 (12%)
+
+Query  73   RWGSHTVPFL----LEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDN  118
+            R G+H   +L    L PD++ GK     H C N  C NP HL   +  DN
+Sbjct  26   RVGAHVAAYLIANNLTPDDVVGKV--VMHKCDNRACVNPEHLELGTQSDN  73
+
+
+>ref|YP_008059098.1| HNH protein [Halovirus HCTV-5]
+ gb|AGM11666.1| HNH protein [Halovirus HCTV-5]
+Length=158
+
+ Score = 35.7 bits (81),  Expect = 4.8, Method: Composition-based stats.
+ Identities = 19/64 (30%), Positives = 28/64 (44%), Gaps = 2/64 (3%)
+
+Query  55   KNGPTRWQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWES  114
+            K     + Y R   +     G+H V + LE ++ +G      H C N  C NP HL   +
+Sbjct  23   KGAEDEYGYGRIRTERSSAEGAHRVAYRLEVEDPDGSN--VLHKCDNRSCVNPNHLYLGT  80
+
+Query  115  LDDN  118
+             +DN
+Sbjct  81   QEDN  84
+
+
+>ref|YP_007378959.1| hypothetical protein HVTV1_53 [Halovirus HVTV-1]
+ gb|AGC34423.1| hypothetical protein HVTV1_53 [Halovirus HVTV-1]
+Length=158
+
+ Score = 35.7 bits (81),  Expect = 4.8, Method: Composition-based stats.
+ Identities = 19/64 (30%), Positives = 28/64 (44%), Gaps = 2/64 (3%)
+
+Query  55   KNGPTRWQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWES  114
+            K     + Y R   +     G+H V + LE ++ +G      H C N  C NP HL   +
+Sbjct  23   KGAEDEYGYGRIRTERSSAEGAHRVAYRLEVEDPDGSN--VLHKCDNRSCVNPNHLYLGT  80
+
+Query  115  LDDN  118
+             +DN
+Sbjct  81   QEDN  84
+
+
+>ref|XP_001694410.1| hypothetical protein CHLREDRAFT_181746 [Chlamydomonas reinhardtii]
+ gb|EDO95664.1| predicted protein [Chlamydomonas reinhardtii]
+Length=118
+
+ Score = 35.7 bits (81),  Expect = 4.9, Method: Composition-based stats.
+ Identities = 13/29 (45%), Positives = 16/29 (56%), Gaps = 0/29 (0%)
+
+Query  95   ASHLCHNTRCHNPLHLCWESLDDNKGRNW  123
+            A HLCHN +C NP+HL W     N   + 
+Sbjct  31   ALHLCHNAKCLNPMHLAWGPKAVNLSPST  59
+
+
+>ref|XP_002609854.1| hypothetical protein BRAFLDRAFT_90782 [Branchiostoma floridae]
+ gb|EEN65864.1| hypothetical protein BRAFLDRAFT_90782 [Branchiostoma floridae]
+Length=127
+
+ Score = 35.7 bits (81),  Expect = 5.1, Method: Composition-based stats.
+ Identities = 13/45 (29%), Positives = 15/45 (34%), Gaps = 0/45 (0%)
+
+Query  91   KTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCVHAV  135
+            K    SH C+N  C    HL +E    N  R  C        H  
+Sbjct  77   KNIHVSHRCNNKLCLRVDHLSYEPACINAQRTSCQDQGACFTHTP  121
+
+
+>ref|XP_003052457.1| predicted protein [Nectria haematococca mpVI 77-13-4]
+ gb|EEU46744.1| predicted protein [Nectria haematococca mpVI 77-13-4]
+Length=586
+
+ Score = 35.7 bits (81),  Expect = 5.6, Method: Composition-based stats.
+ Identities = 15/35 (43%), Positives = 17/35 (49%), Gaps = 2/35 (5%)
+
+Query  92   TCT--ASHLCHNTRCHNPLHLCWESLDDNKGRNWC  124
+            TCT   SH C  + C NP+H   E   DN  R  C
+Sbjct  429  TCTRETSHRCDFSYCINPMHGVAEPHADNMNRARC  463
+
+
+>ref|XP_002595500.1| hypothetical protein BRAFLDRAFT_69099 [Branchiostoma floridae]
+ ref|XP_002613864.1| hypothetical protein BRAFLDRAFT_72016 [Branchiostoma floridae]
+ gb|EEN51512.1| hypothetical protein BRAFLDRAFT_69099 [Branchiostoma floridae]
+ gb|EEN69873.1| hypothetical protein BRAFLDRAFT_72016 [Branchiostoma floridae]
+Length=128
+
+ Score = 35.3 bits (80),  Expect = 6.5, Method: Composition-based stats.
+ Identities = 15/33 (46%), Positives = 16/33 (49%), Gaps = 0/33 (0%)
+
+Query  92   TCTASHLCHNTRCHNPLHLCWESLDDNKGRNWC  124
+            T   SHLCH  RC N  HL  E    N+ R  C
+Sbjct  77   TMQVSHLCHEKRCVNLAHLSLEQNVVNQQRKNC  109
+
+
+>gb|EON67715.1| hypothetical protein W97_06858 [Coniosporium apollinis CBS 100218]
+Length=218
+
+ Score = 35.0 bits (79),  Expect = 7.4, Method: Composition-based stats.
+ Identities = 16/43 (38%), Positives = 17/43 (40%), Gaps = 0/43 (0%)
+
+Query  96   SHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCVHAVVCL  138
+            SHLC N  C N  H   E    N  RN C      C H   C+
+Sbjct  139  SHLCGNWTCCNWRHFTIEDHSTNVNRNRCFRHRQRCQHTPRCM  181
+
+
+>ref|YP_003659626.1| HNH endonuclease [Segniliparus rotundus DSM 44985]
+ ref|WP_013139245.1| HNH endonuclease [Segniliparus rotundus]
+ gb|ADG98795.1| HNH endonuclease [Segniliparus rotundus DSM 44985]
+Length=164
+
+ Score = 35.0 bits (79),  Expect = 8.0, Method: Composition-based stats.
+ Identities = 18/44 (41%), Positives = 22/44 (50%), Gaps = 7/44 (15%)
+
+Query  94   TASHLCHNTRCHNPLHL----CWESLDDNKGRNWCPGPNGGCVH  133
+            T  H C N RC NP HL     +E+    +GR+W   P G C H
+Sbjct  92   TVDHRCKNRRCVNPEHLRLLTNFENARRTRGRDW---PIGECAH  132
+
+
+>emb|CCE41148.1| hypothetical protein CPAR2_301370 [Candida parapsilosis]
+Length=374
+
+ Score = 35.0 bits (79),  Expect = 8.9, Method: Composition-based stats.
+ Identities = 23/84 (28%), Positives = 37/84 (45%), Gaps = 9/84 (10%)
+
+Query  42   EIPLAAPYGVGFAKNGPTRWQYKRTINQVVHRWGSHTVPFLLE--PDNINGKTCTASHLC  99
+            ++PLAAP      K  PT  Q+      V+H   S  +P++L+  P N+  ++   + LC
+Sbjct  162  DLPLAAPSANSSTKPSPTMAQH------VMHDL-SGKIPYVLDGGPSNVGVESTVVNGLC  214
+
+Query  100  HNTRCHNPLHLCWESLDDNKGRNW  123
+                   P  +  E L    G+ W
+Sbjct  215  SPPMLLRPGGISVEELKRVGGKEW  238
+
+
+
+Lambda     K      H
+   0.315    0.142    0.496 
+
+Gapped
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+Effective search space used: 279764554598
+Results from round 3
+
+
+Query= 1A73_A
+
+Length=162
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+gb|AAB65764.1|  endonuclease [Physarum polycephalum]                   293    1e-77
+sp|Q94702.3|PPO1_PHYPO  RecName: Full=Intron-encoded endonuclease...   289    2e-76
+pdb|2O6M|A  Chain A, H98q Mutant Of The Homing Endonuclease I-ppo...   288    3e-76
+pdb|1CZ0|A  Chain A, Intron Encoded Homing Endonuclease I-PpoiDNA...   288    4e-76
+pdb|1EVW|A  Chain A, L116a Mutant Of The Homing Endonuclease I-Pp...   287    6e-76
+pdb|1CYQ|A  Chain A, Intron Encoded Homing Endonuclease I-Ppoi (H...   286    1e-75
+pir||A35664  PpoI endonuclease - slime mold (Physarum polycephalum)    244    7e-63
+dbj|BAB86285.1|  putative homing endonuclease [Beauveria bassiana...  98.6    6e-19
+gb|EMS20091.1|  hypothetical protein RHTO_03624 [Rhodosporidium t...  98.2    8e-19
+dbj|BAE96720.1|  putative homing endonuclease [Paecilomyces javan...  94.7    9e-18
+gb|AAV35433.1|  His-Cys box protein [Porphyra umbilicalis]            94.7    9e-18
+emb|CAC38868.1|  putative endonuclease [Naegleria sp. NG874]          79.3    4e-13
+emb|CAC24704.1|  putative endonuclease [Naegleria sp. NG874]          78.5    7e-13
+emb|CCO18671.1|  unknown protein [Bathycoccus prasinos]               77.8    1e-12
+
+Sequences not found previously or not previously below threshold:
+
+gb|EGU11505.1|  Hypothetical Protein RTG_02675 [Rhodotorula gluti...  77.4    2e-12
+gb|AAP73783.1|  intron-encoded I-PpoI type endonuclease [Neoscyta...  59.7    3e-07
+gb|ABF71486.1|  putative homing endonuclease [Pleopsidium flavum]     58.5    7e-07
+gb|ABF71480.1|  putative homing endonuclease [Pleopsidium chlorop...  58.5    8e-07
+gb|ABF71490.1|  putative homing endonuclease [Pleopsidium chlorop...  58.1    8e-07
+gb|ABF71473.1|  putative homing endonuclease [Pleopsidium chlorop...  58.1    8e-07
+gb|ABF71487.1|  putative homing endonuclease [Pleopsidium flavum]     58.1    9e-07
+gb|ABF71483.1|  putative homing endonuclease [Pleopsidium chlorop...  58.1    9e-07
+gb|ABF71491.1|  putative homing endonuclease [Pleopsidium gobiense]   58.1    9e-07
+gb|ABF71489.1|  putative homing endonuclease [Pleopsidium flavum]     58.1    9e-07
+gb|ABF71488.1|  putative homing endonuclease [Pleopsidium chlorop...  58.1    9e-07
+gb|ABF71479.1|  putative homing endonuclease [Pleopsidium flavum]     57.7    1e-06
+gb|ABF71493.1|  putative homing endonuclease [Pleopsidium gobiense]   57.3    1e-06
+gb|ABF71484.1|  putative homing endonuclease [Pleopsidium chlorop...  57.0    2e-06
+gb|AAV35434.1|  His-Cys box protein [Porphyra umbilicalis] >gb|AA...  56.6    3e-06
+gb|AAQ94052.1|  homing endonuclease I-PchI [Pleopsidium chloropha...  56.2    4e-06
+dbj|BAB87243.1|  His-Cys box homing endonuclease [Coemansia mojav...  54.7    1e-05
+gb|EPE32101.1|  His-Me finger endonuclease [Glarea lozoyensis ATC...  53.5    2e-05
+gb|AAQ94053.1|  homing endonuclease I-CpiI [Capronia pilosella]       52.3    5e-05
+ref|XP_646838.1|  hypothetical protein DDB_G0268654 [Dictyosteliu...  52.0    7e-05
+ref|XP_004998557.1|  hypothetical protein PTSG_01082 [Salpingoeca...  51.6    7e-05
+gb|EKC34113.1|  hypothetical protein CGI_10014951 [Crassostrea gi...  51.6    8e-05
+gb|EON67715.1|  hypothetical protein W97_06858 [Coniosporium apol...  50.8    1e-04
+gb|EKC41987.1|  hypothetical protein CGI_10028169 [Crassostrea gi...  50.8    2e-04
+ref|XP_004996557.1|  hypothetical protein PTSG_02071 [Salpingoeca...  49.6    3e-04
+gb|EKG11720.1|  Endonuclease His-metal-binding finger [Macrophomi...  48.9    5e-04
+gb|EKC31613.1|  hypothetical protein CGI_10009858 [Crassostrea gi...  48.9    5e-04
+emb|CAI83767.1|  homing endonuclease [Didymium iridis]                48.5    6e-04
+ref|XP_003045694.1|  predicted protein [Nectria haematococca mpVI...  48.1    0.001
+gb|EON68322.1|  hypothetical protein W97_07580 [Coniosporium apol...  46.9    0.002
+ref|XP_002505804.1|  predicted protein [Micromonas sp. RCC299] >g...  46.9    0.002
+ref|XP_002603528.1|  hypothetical protein BRAFLDRAFT_79063 [Branc...  46.2    0.003
+ref|XP_001694410.1|  hypothetical protein CHLREDRAFT_181746 [Chla...  45.8    0.004
+gb|ABD62811.1|  His-Cys box homing endonuclease [Heterolobosea sp...  45.4    0.007
+emb|CAJ44450.1|  homing endonuclease [Naegleria sp. NG393] >emb|C...  45.0    0.009
+gb|AAL69647.1|  I2EP [Beauveria bassiana]                             44.6    0.009
+gb|AGJ76538.1|  His-Cys box homing endonuclease [Botryosphaeria d...  44.6    0.009
+emb|CAJ44448.1|  homing endonuclease [Naegleria pringsheimi]          44.3    0.015
+emb|CAA55084.1|  small subunit ribosomal RNA [Naegleria gruberi] ...  44.3    0.015
+emb|CCT63385.1|  uncharacterized protein FFUJ_01884 [Fusarium fuj...  44.3    0.015
+emb|CAJ44445.1|  homing endonuclease [Naegleria clarki]               43.9    0.016
+emb|CAJ44449.1|  homing endonuclease [Naegleria sp. NG358] >emb|C...  43.9    0.016
+emb|CAJ44446.1|  homing endonuclease [Naegleria clarki]               43.9    0.016
+gb|EHK48539.1|  hypothetical protein TRIATDRAFT_18900, partial [T...  43.9    0.016
+gb|EKC26688.1|  hypothetical protein CGI_10012873 [Crassostrea gi...  43.9    0.019
+ref|XP_003052457.1|  predicted protein [Nectria haematococca mpVI...  43.5    0.025
+emb|CAA55087.1|  small subunit ribosomal RNA [Naegleria clarki] >...  43.1    0.028
+ref|XP_002603475.1|  hypothetical protein BRAFLDRAFT_79008 [Branc...  43.1    0.028
+ref|XP_002595500.1|  hypothetical protein BRAFLDRAFT_69099 [Branc...  43.1    0.031
+emb|CAA55083.1|  small subunit ribosomal RNA [Naegleria italica] ...  42.7    0.035
+emb|CAJ44447.1|  homing endonuclease [Naegleria philippinensis]       42.7    0.037
+ref|XP_004336245.1|  hypothetical protein ACA1_139690 [Acanthamoe...  42.7    0.042
+gb|AAB71746.1|  putative homing endonuclease [Naegleria italica]      42.3    0.058
+emb|CAJ44444.1|  homing endonuclease [Naegleria carteri]              41.9    0.060
+emb|CAA71257.1|  hypothetical protein [Naegleria sp. NG055]           41.9    0.064
+ref|WP_003979864.1|  HNH endonuclease [Streptomyces rimosus] >gb|...  41.9    0.071
+gb|AAB71747.1|  putative homing endonuclease [Naegleria jamiesoni]    41.6    0.096
+emb|CAA55085.1|  small subunit ribosomal RNA [Naegleria jamiesoni...  41.6    0.097
+ref|XP_003052461.1|  hypothetical protein NECHADRAFT_77451 [Nectr...  41.2    0.11 
+emb|CAA55086.1|  small subunit ribosomal RNA [Naegleria andersoni...  40.8    0.15 
+gb|AER08052.1|  putative His-Cys homing endonuclease [Acrasis rosea]  40.8    0.17 
+ref|NP_848276.1|  protein 3.3 [Yersinia phage phiA1122] >gb|AAP20...  39.6    0.33 
+ref|YP_008059098.1|  HNH protein [Halovirus HCTV-5] >gb|AGM11666....  39.6    0.35 
+ref|XP_002508059.1|  predicted protein [Micromonas sp. RCC299] >g...  39.6    0.35 
+ref|YP_007378959.1|  hypothetical protein HVTV1_53 [Halovirus HVT...  39.6    0.37 
+ref|YP_007511242.1|  hypothetical protein S58_16470 [Bradyrhizobi...  38.9    0.53 
+ref|XP_002957024.1|  hypothetical protein VOLCADRAFT_107501 [Volv...  38.9    0.57 
+ref|YP_004109297.1|  hypothetical protein [Rhodopseudomonas palus...  38.9    0.60 
+ref|YP_003347681.1|  hypothetical protein [Klebsiella phage KP34]...  38.5    0.71 
+ref|XP_002609854.1|  hypothetical protein BRAFLDRAFT_90782 [Branc...  38.5    0.75 
+ref|WP_004121170.1|  hypothetical protein [Rhizobium freirei] >gb...  38.5    0.82 
+ref|YP_006906237.1|  putative HNH endonuclease [Streptomyces phag...  38.1    0.96 
+gb|EMR83547.1|  hypothetical protein BcDW1_7813 [Botryotinia fuck...  37.7    1.2  
+ref|YP_001648076.1|  hypothetical protein [Naegleria gruberi] >db...  37.7    1.2  
+ref|XP_004354224.1|  hypothetical protein DFA_10321 [Dictyosteliu...  37.7    1.2  
+ref|XP_001546656.1|  predicted protein [Botryotinia fuckeliana B0...  37.7    1.2  
+ref|YP_003113795.1|  hypothetical protein Caci_3045 [Catenulispor...  37.7    1.4  
+gb|AER47897.1|  gp46 [Mycobacterium phage Courthouse]                 37.3    1.5  
+ref|WP_003979866.1|  endonuclease (modular protein) [Streptomyces...  37.3    1.5  
+ref|WP_010337789.1|  bacteriophage T7-like gene protein [Sphingob...  37.3    1.5  
+ref|XP_002959958.1|  hypothetical protein VOLCADRAFT_101477 [Volv...  37.3    1.6  
+ref|XP_001797525.1|  hypothetical protein SNOG_07172 [Phaeosphaer...  37.3    1.7  
+ref|WP_008134194.1|  hypothetical protein [Pseudoalteromonas sp. ...  37.3    1.7  
+ref|YP_003659626.1|  HNH endonuclease [Segniliparus rotundus DSM ...  37.3    1.7  
+ref|XP_001587714.1|  hypothetical protein SS1G_11707 [Sclerotinia...  37.3    1.7  
+ref|XP_002952107.1|  hypothetical protein VOLCADRAFT_92675 [Volvo...  37.3    1.8  
+ref|XP_002959164.1|  hypothetical protein VOLCADRAFT_108505 [Volv...  37.3    1.8  
+ref|WP_006519222.1|  hypothetical protein [Leptolyngbya sp. PCC 7...  36.9    1.9  
+ref|WP_001124954.1|  hypothetical protein [Salmonella enterica] >...  36.9    1.9  
+ref|YP_002898971.1|  N4 gp22-like protein [Roseophage EE36P1] >gb...  36.9    2.0  
+ref|YP_672801.1|  hypothetical protein Meso_0232 [Chelativorans s...  36.9    2.0  
+ref|WP_008476121.1|  putative phage integrase protein [Nitrolance...  36.9    2.1  
+ref|XP_002952150.1|  hypothetical protein VOLCADRAFT_92762 [Volvo...  36.5    2.7  
+gb|AER48013.1|  gp162 [Mycobacterium phage Courthouse]                36.5    2.8  
+ref|YP_007703638.1|  hypothetical protein OAN307_c13110 [Octadeca...  36.5    3.0  
+ref|YP_004934341.1|  g107 [Yersinia phage phiR1-37] >emb|CCE26131...  36.2    3.2  
+ref|WP_009616744.1|  hypothetical protein [Pseudomonas sp. M1] >g...  36.2    3.5  
+ref|YP_005098368.1|  unnamed protein product [Synechococcus phage...  36.2    3.8  
+ref|WP_009048000.1|  hypothetical protein [Pseudomonas chlororaph...  35.8    4.5  
+ref|WP_003596299.1|  hypothetical protein [Methylobacterium extor...  35.8    5.1  
+ref|WP_016644727.1|  hypothetical protein [Streptomyces aurantiac...  35.4    5.9  
+ref|YP_003359141.1|  endonuclease [Clavibacter phage CMP1] >gb|AC...  35.4    6.7  
+ref|WP_007051861.1|  phage protein [Bifidobacterium longum] >gb|E...  35.4    6.8  
+ref|XP_004353325.1|  hypothetical protein ACA1_023100 [Acanthamoe...  35.0    7.7  
+ref|XP_002957025.1|  hypothetical protein VOLCADRAFT_98075 [Volvo...  35.0    7.8  
+emb|CBW47035.1|  N4 gp22-like protein [Roseovarius sp. 217 phage ...  35.0    8.4  
+ref|WP_020486964.1|  hypothetical protein [Rhizobium leguminosarum]   34.6    9.4  
+ref|YP_640078.1|  HNH endonuclease [Mycobacterium sp. MCS] >ref|Y...  34.6    9.9  
+
+
+>gb|AAB65764.1| endonuclease [Physarum polycephalum]
+Length=185
+
+ Score =  293 bits (750),  Expect = 1e-77, Method: Composition-based stats.
+ Identities = 162/162 (100%), Positives = 162/162 (100%), Gaps = 0/162 (0%)
+
+Query  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+            ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR
+Sbjct  24   ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  83
+
+Query  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG
+Sbjct  84   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  143
+
+Query  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+            RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV
+Sbjct  144  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  185
+
+
+>sp|Q94702.3|PPO1_PHYPO RecName: Full=Intron-encoded endonuclease I-PpoI; Short=I-Ppo
+ pdb|1A74|A Chain A, I-Ppol Homing EndonucleaseDNA COMPLEX
+ pdb|1A74|B Chain B, I-Ppol Homing EndonucleaseDNA COMPLEX
+ pdb|1IPP|A Chain A, Homing EndonucleaseDNA COMPLEX
+ pdb|1IPP|B Chain B, Homing EndonucleaseDNA COMPLEX
+ pdb|1A73|A Chain A, Intron-Encoded Endonuclease I-Ppoi Complexed With Dna
+ pdb|1A73|B Chain B, Intron-Encoded Endonuclease I-Ppoi Complexed With Dna
+ gb|AAB65765.1| endonuclease [Physarum polycephalum]
+ gb|AAB81102.1| I-Ppo endonuclease [Physarum polycephalum]
+Length=163
+
+ Score =  289 bits (740),  Expect = 2e-76, Method: Composition-based stats.
+ Identities = 162/162 (100%), Positives = 162/162 (100%), Gaps = 0/162 (0%)
+
+Query  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+            ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR
+Sbjct  2    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  61
+
+Query  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG
+Sbjct  62   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  121
+
+Query  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+            RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV
+Sbjct  122  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  163
+
+
+>pdb|2O6M|A Chain A, H98q Mutant Of The Homing Endonuclease I-ppoi Complexed 
+With Dna
+ pdb|2O6M|B Chain B, H98q Mutant Of The Homing Endonuclease I-ppoi Complexed 
+With Dna
+Length=163
+
+ Score =  288 bits (738),  Expect = 3e-76, Method: Composition-based stats.
+ Identities = 161/162 (99%), Positives = 161/162 (99%), Gaps = 0/162 (0%)
+
+Query  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+            ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR
+Sbjct  2    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  61
+
+Query  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTAS LCHNTRCHNPLHLCWESLDDNKG
+Sbjct  62   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASQLCHNTRCHNPLHLCWESLDDNKG  121
+
+Query  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+            RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV
+Sbjct  122  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  163
+
+
+>pdb|1CZ0|A Chain A, Intron Encoded Homing Endonuclease I-PpoiDNA COMPLEX 
+Lacking Catalytic Metal Ion
+ pdb|1CZ0|B Chain B, Intron Encoded Homing Endonuclease I-PpoiDNA COMPLEX 
+Lacking Catalytic Metal Ion
+ pdb|1EVX|A Chain A, Apo Crystal Structure Of The Homing Endonuclease, I-Ppoi
+ pdb|1EVX|B Chain B, Apo Crystal Structure Of The Homing Endonuclease, I-Ppoi
+Length=162
+
+ Score =  288 bits (738),  Expect = 4e-76, Method: Composition-based stats.
+ Identities = 162/162 (100%), Positives = 162/162 (100%), Gaps = 0/162 (0%)
+
+Query  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+            ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR
+Sbjct  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+
+Query  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG
+Sbjct  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+
+Query  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+            RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV
+Sbjct  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+
+
+>pdb|1EVW|A Chain A, L116a Mutant Of The Homing Endonuclease I-Ppoi Complexed 
+To Homing Site Dna.
+ pdb|1EVW|B Chain B, L116a Mutant Of The Homing Endonuclease I-Ppoi Complexed 
+To Homing Site Dna.
+ pdb|1EVW|C Chain C, L116a Mutant Of The Homing Endonuclease I-Ppoi Complexed 
+To Homing Site Dna.
+ pdb|1EVW|D Chain D, L116a Mutant Of The Homing Endonuclease I-Ppoi Complexed 
+To Homing Site Dna.
+Length=163
+
+ Score =  287 bits (735),  Expect = 6e-76, Method: Composition-based stats.
+ Identities = 161/162 (99%), Positives = 161/162 (99%), Gaps = 0/162 (0%)
+
+Query  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+            ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR
+Sbjct  2    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  61
+
+Query  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWES DDNKG
+Sbjct  62   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESADDNKG  121
+
+Query  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+            RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV
+Sbjct  122  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  163
+
+
+>pdb|1CYQ|A Chain A, Intron Encoded Homing Endonuclease I-Ppoi (H98a)DNA 
+HOMING Site Complex
+ pdb|1CYQ|B Chain B, Intron Encoded Homing Endonuclease I-Ppoi (H98a)DNA 
+HOMING Site Complex
+Length=162
+
+ Score =  286 bits (733),  Expect = 1e-75, Method: Composition-based stats.
+ Identities = 161/162 (99%), Positives = 161/162 (99%), Gaps = 0/162 (0%)
+
+Query  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+            ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR
+Sbjct  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+
+Query  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTAS LCHNTRCHNPLHLCWESLDDNKG
+Sbjct  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASALCHNTRCHNPLHLCWESLDDNKG  120
+
+Query  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+            RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV
+Sbjct  121  RNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHFVV  162
+
+
+>pir||A35664 PpoI endonuclease - slime mold (Physarum polycephalum)
+Length=160
+
+ Score =  244 bits (623),  Expect = 7e-63, Method: Composition-based stats.
+ Identities = 128/129 (99%), Positives = 128/129 (99%), Gaps = 0/129 (0%)
+
+Query  1    ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  60
+            ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR
+Sbjct  24   ALTNAQILAVIDSWEETVGQFPVITHHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTR  83
+
+Query  61   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG
+Sbjct  84   WQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  143
+
+Query  121  RNWCPGPNG  129
+            RNWCPGP G
+Sbjct  144  RNWCPGPTG  152
+
+
+>dbj|BAB86285.1| putative homing endonuclease [Beauveria bassiana]
+ dbj|BAE46602.1| putative homing endonuclease [Beauveria bassiana]
+ gb|ADY86113.1| putative homing endonuclease [Isaria farinosa]
+Length=294
+
+ Score = 98.6 bits (244),  Expect = 6e-19, Method: Composition-based stats.
+ Identities = 22/62 (36%), Positives = 28/62 (46%), Gaps = 0/62 (0%)
+
+Query  63   YKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRN  122
+            Y   +  V  R G+  +  L    + NG     SHLCHN +C NP H   E   +N  RN
+Sbjct  214  YYHHLAVVAKREGATLLLVLPGRKDSNGIAYEVSHLCHNGQCFNPDHCVVEPRHENHRRN  273
+
+Query  123  WC  124
+             C
+Sbjct  274  EC  275
+
+
+>gb|EMS20091.1| hypothetical protein RHTO_03624 [Rhodosporidium toruloides NP11]
+Length=435
+
+ Score = 98.2 bits (243),  Expect = 8e-19, Method: Composition-based stats.
+ Identities = 24/73 (33%), Positives = 35/73 (48%), Gaps = 5/73 (6%)
+
+Query  85   PDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGG-CVHAVVCLRQGPL  143
+            PD++  +   ASH C + RC  P H+ WE    N  R+ C G +   C H+  C+R   +
+Sbjct  108  PDDM--RNLDASHRCGDARCFAPGHIAWEDHALNTNRDACIGDSQMTCNHSPSCIRGAIV  165
+
+Query  144  YGPGATVAGPQQR  156
+            +    TV G   R
+Sbjct  166  H--QVTVKGTSTR  176
+
+
+>dbj|BAE96720.1| putative homing endonuclease [Paecilomyces javanicus]
+Length=295
+
+ Score = 94.7 bits (234),  Expect = 9e-18, Method: Composition-based stats.
+ Identities = 21/62 (34%), Positives = 27/62 (44%), Gaps = 0/62 (0%)
+
+Query  63   YKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRN  122
+            Y   +  V  R G+  +       + NG     SHLCHN +C NP H   E   +N  RN
+Sbjct  215  YYHHMAVVAKREGNTLLLVFPGRHDSNGYAYEVSHLCHNRQCFNPDHCVVEPRHENHRRN  274
+
+Query  123  WC  124
+             C
+Sbjct  275  EC  276
+
+
+>gb|AAV35433.1| His-Cys box protein [Porphyra umbilicalis]
+Length=150
+
+ Score = 94.7 bits (234),  Expect = 9e-18, Method: Composition-based stats.
+ Identities = 33/128 (26%), Positives = 49/128 (39%), Gaps = 21/128 (16%)
+
+Query  27   HVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTRWQYKRTINQVVHRWGSHTVPFLLEPD  86
+            H P+   + GT  CY    A     G+ +           +     ++  H V  +    
+Sbjct  29   HTPMAFRI-GTFSCYRTNYAVVKPAGYVQ-----------LRLHGRKYYGHVVACIFNAG  76
+
+Query  87   NINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWC----PGPNGGCVHAVVCLR---  139
+             +  +   ASH CH   C NP HL +E+   NK R +C      P+  C+H   C+R   
+Sbjct  77   RVPVEGEQASHRCHRGACVNPQHLVFETERVNKTRQYCDHFKDHPDHNCLHQPQCIRVHG  136
+
+Query  140  --QGPLYG  145
+                PL G
+Sbjct  137  NIDTPLEG  144
+
+
+>emb|CAC38868.1| putative endonuclease [Naegleria sp. NG874]
+Length=148
+
+ Score = 79.3 bits (194),  Expect = 4e-13, Method: Composition-based stats.
+ Identities = 23/50 (46%), Positives = 26/50 (52%), Gaps = 3/50 (6%)
+
+Query  92   TCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCVHAVVCLRQG  141
+              T SH CHN  C NP HL  E L  N+ RN C    G C+H   C+R G
+Sbjct  82   NATVSHRCHNEHCLNPDHLVVEPLQVNQSRNTC---TGVCLHRPKCIRDG  128
+
+
+>emb|CAC24704.1| putative endonuclease [Naegleria sp. NG874]
+Length=143
+
+ Score = 78.5 bits (192),  Expect = 7e-13, Method: Composition-based stats.
+ Identities = 23/50 (46%), Positives = 26/50 (52%), Gaps = 3/50 (6%)
+
+Query  92   TCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCVHAVVCLRQG  141
+              T SH CHN  C NP HL  E L  N+ RN C    G C+H   C+R G
+Sbjct  82   NATVSHRCHNEHCLNPDHLVVEPLQVNQSRNTC---TGVCLHRPKCIRDG  128
+
+
+>emb|CCO18671.1| unknown protein [Bathycoccus prasinos]
+Length=282
+
+ Score = 77.8 bits (190),  Expect = 1e-12, Method: Composition-based stats.
+ Identities = 27/79 (35%), Positives = 38/79 (49%), Gaps = 4/79 (5%)
+
+Query  63   YKRTINQVVHRWGSHTVPFLLEPD-NINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGR  121
+            YK ++       G+H  P   E D +    +   SHLCH + C NP+HL  E    N  R
+Sbjct  102  YKTSMGFFTGLIGNH--PSAPERDTDGRPISLEVSHLCHRSSCINPMHLVAEPKWCNLKR  159
+
+Query  122  NWCPGPNG-GCVHAVVCLR  139
+            N+C   +G  C + + CLR
+Sbjct  160  NYCGKNSGCNCGNTIKCLR  178
+
+
+>gb|EGU11505.1| Hypothetical Protein RTG_02675 [Rhodotorula glutinis ATCC 204091]
+Length=438
+
+ Score = 77.4 bits (189),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 22/69 (32%), Positives = 28/69 (41%), Gaps = 3/69 (4%)
+
+Query  89   NGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGP-NGGCVHAVVCLRQGPLYGPG  147
+            N     ASH C   RC  P H+ WE    N  R+ C       C+H+  C+R   +    
+Sbjct  110  NSADLDASHRCGEPRCFAPGHIAWEDHTLNTNRDACFRNLRTTCLHSPSCIRGAVIK--R  167
+
+Query  148  ATVAGPQQR  156
+             TV G   R
+Sbjct  168  VTVKGTSAR  176
+
+
+>gb|AAP73783.1| intron-encoded I-PpoI type endonuclease [Neoscytalidium dimidiatum]
+Length=290
+
+ Score = 59.7 bits (143),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 27/84 (33%), Positives = 33/84 (40%), Gaps = 11/84 (13%)
+
+Query  63   YKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRN  122
+            Y   I  V   +G+H         +        SHLC N  C NP HL  E+   N+ R 
+Sbjct  185  YAHHIGAVAAGYGNHLSLI-----SGAHAAYNVSHLCGNGECFNPDHLVIETAGLNQRRK  239
+
+Query  123  WCPGPNGGCVHAVVCLRQGPLYGP  146
+             C G      HA V L  G +Y P
+Sbjct  240  TCQG------HAQVRLPNGSVYHP  257
+
+
+>gb|ABF71486.1| putative homing endonuclease [Pleopsidium flavum]
+Length=256
+
+ Score = 58.5 bits (140),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 29/103 (29%), Positives = 39/103 (38%), Gaps = 14/103 (13%)
+
+Query  34   LQGTLHCYEIPLAAPYGVGFAK--------NGPTR--WQYKRTINQVVHRWGSHTVPFLL  83
+            + G L C+E  LA     G+ +        NG       Y   +  +        +  +L
+Sbjct  118  VMGPLGCWESNLAGRPNSGYQRVNLRNTVINGRKAEVQIYLHQLTLIADNRRGELMAAVL  177
+
+Query  84   EPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            E +         SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  178  ESE----LAMECSHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71480.1| putative homing endonuclease [Pleopsidium chlorophanum]
+Length=256
+
+ Score = 58.5 bits (140),  Expect = 8e-07, Method: Composition-based stats.
+ Identities = 30/103 (30%), Positives = 40/103 (39%), Gaps = 14/103 (13%)
+
+Query  34   LQGTLHCYEIPLAAPYGVGFAK--------NGPTR--WQYKRTINQVVHRWGSHTVPFLL  83
+            + G L C+E  LA     G+ +        NG       Y   +  +        +  +L
+Sbjct  118  VMGPLGCWESNLAGRPNSGYQRVNLRNTVINGRKAEVQIYLHQLTLIADNRRGELMAAVL  177
+
+Query  84   EPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            E +     T   SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  178  ESE----LTMECSHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71490.1| putative homing endonuclease [Pleopsidium chlorophanum]
+Length=256
+
+ Score = 58.1 bits (139),  Expect = 8e-07, Method: Composition-based stats.
+ Identities = 20/64 (32%), Positives = 26/64 (41%), Gaps = 4/64 (6%)
+
+Query  63   YKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRN  122
+            Y   +  +        +  +LE +         SHLCHN RC  P HL  E   +NK R 
+Sbjct  157  YLHQLTLIADNRRGELMAAVLESE----LAMECSHLCHNGRCFRPSHLVVEPRAENKERQ  212
+
+Query  123  WCPG  126
+             C G
+Sbjct  213  TCNG  216
+
+
+>gb|ABF71473.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71474.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71475.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71476.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71477.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71478.1| putative homing endonuclease [Pleopsidium flavum]
+ gb|ABF71481.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71482.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71492.1| putative homing endonuclease [Pleopsidium chlorophanum]
+Length=256
+
+ Score = 58.1 bits (139),  Expect = 8e-07, Method: Composition-based stats.
+ Identities = 29/103 (29%), Positives = 39/103 (38%), Gaps = 14/103 (13%)
+
+Query  34   LQGTLHCYEIPLAAPYGVGFAK--------NGPTR--WQYKRTINQVVHRWGSHTVPFLL  83
+            + G L C+E  LA     G+ +        NG       Y   +  +        +  +L
+Sbjct  118  VMGPLGCWESNLAGRPNSGYQRVNLRNTVINGRKAEVQIYLHQLTLIADNRRGELMAAVL  177
+
+Query  84   EPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            E +         SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  178  ESE----LAMECSHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71487.1| putative homing endonuclease [Pleopsidium flavum]
+Length=256
+
+ Score = 58.1 bits (139),  Expect = 9e-07, Method: Composition-based stats.
+ Identities = 29/103 (29%), Positives = 39/103 (38%), Gaps = 14/103 (13%)
+
+Query  34   LQGTLHCYEIPLAAPYGVGFAK--------NGPTR--WQYKRTINQVVHRWGSHTVPFLL  83
+            + G L C+E  LA     G+ +        NG       Y   +  +        +  +L
+Sbjct  118  VMGPLGCWESNLAGRPNSGYQRVNLRNTVINGRKAEVQIYLHQLTLIADNRRGELMAAVL  177
+
+Query  84   EPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            E +         SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  178  ESE----LAMECSHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71483.1| putative homing endonuclease [Pleopsidium chlorophanum]
+Length=256
+
+ Score = 58.1 bits (139),  Expect = 9e-07, Method: Composition-based stats.
+ Identities = 29/103 (29%), Positives = 39/103 (38%), Gaps = 14/103 (13%)
+
+Query  34   LQGTLHCYEIPLAAPYGVGFAK--------NGPTR--WQYKRTINQVVHRWGSHTVPFLL  83
+            + G L C+E  LA     G+ +        NG       Y   +  +        +  +L
+Sbjct  118  VMGPLGCWESNLAGRPNSGYQRVNLRNTVINGRKAEVQIYLHQLTLIADNRRGELMAAVL  177
+
+Query  84   EPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            E +         SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  178  ESE----LAMECSHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71491.1| putative homing endonuclease [Pleopsidium gobiense]
+Length=256
+
+ Score = 58.1 bits (139),  Expect = 9e-07, Method: Composition-based stats.
+ Identities = 29/103 (29%), Positives = 39/103 (38%), Gaps = 14/103 (13%)
+
+Query  34   LQGTLHCYEIPLAAPYGVGFAK--------NGPTR--WQYKRTINQVVHRWGSHTVPFLL  83
+            + G L C+E  LA     G+ +        NG       Y   +  +        +  +L
+Sbjct  118  VMGPLGCWESNLAGRPNSGYQRVNLRNTVINGRKAEVQIYLHQLTLIADNRRGELMAAVL  177
+
+Query  84   EPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            E +         SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  178  ESE----LAMECSHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71489.1| putative homing endonuclease [Pleopsidium flavum]
+Length=256
+
+ Score = 58.1 bits (139),  Expect = 9e-07, Method: Composition-based stats.
+ Identities = 29/103 (29%), Positives = 39/103 (38%), Gaps = 14/103 (13%)
+
+Query  34   LQGTLHCYEIPLAAPYGVGFAK--------NGPTR--WQYKRTINQVVHRWGSHTVPFLL  83
+            + G L C+E  LA     G+ +        NG       Y   +  +        +  +L
+Sbjct  118  VMGPLGCWESNLAGRPNSGYQRVNLRNTVINGRKAEVQIYLHQLTLIADNRRGELMAAVL  177
+
+Query  84   EPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            E +         SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  178  ESE----LAMECSHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71488.1| putative homing endonuclease [Pleopsidium chlorophanum]
+Length=256
+
+ Score = 58.1 bits (139),  Expect = 9e-07, Method: Composition-based stats.
+ Identities = 29/103 (29%), Positives = 39/103 (38%), Gaps = 14/103 (13%)
+
+Query  34   LQGTLHCYEIPLAAPYGVGFAK--------NGPTR--WQYKRTINQVVHRWGSHTVPFLL  83
+            + G L C+E  LA     G+ +        NG       Y   +  +        +  +L
+Sbjct  118  VMGPLGCWESNLAGRPNSGYQRVNLRNTVINGRKAEVQIYLHQLTLIADNRRGELMAAVL  177
+
+Query  84   EPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            E +         SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  178  ESE----LAMECSHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71479.1| putative homing endonuclease [Pleopsidium flavum]
+Length=256
+
+ Score = 57.7 bits (138),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 29/103 (29%), Positives = 39/103 (38%), Gaps = 14/103 (13%)
+
+Query  34   LQGTLHCYEIPLAAPYGVGFAK--------NGPTR--WQYKRTINQVVHRWGSHTVPFLL  83
+            + G L C+E  LA     G+ +        NG       Y   +  +        +  +L
+Sbjct  118  VMGPLGCWESNLAGRPNSGYQRVNLRNTVINGRKAEVQIYLHQLTLIADNRRGELMAAVL  177
+
+Query  84   EPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            E +         SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  178  ESE----LAMECSHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|ABF71493.1| putative homing endonuclease [Pleopsidium gobiense]
+Length=256
+
+ Score = 57.3 bits (137),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 21/64 (33%), Positives = 26/64 (41%), Gaps = 4/64 (6%)
+
+Query  63   YKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRN  122
+            Y   +  +        +  +LE D         SHLCHN RC  P HL  E   +NK R 
+Sbjct  157  YLHQLTLIADGRRDELMAAVLESD----LAMECSHLCHNGRCFRPTHLVVEPRAENKERQ  212
+
+Query  123  WCPG  126
+             C G
+Sbjct  213  TCNG  216
+
+
+>gb|ABF71484.1| putative homing endonuclease [Pleopsidium chlorophanum]
+ gb|ABF71485.1| putative homing endonuclease [Pleopsidium chlorophanum]
+Length=256
+
+ Score = 57.0 bits (136),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 28/103 (28%), Positives = 39/103 (38%), Gaps = 14/103 (13%)
+
+Query  34   LQGTLHCYEIPLAAPYGVGFAK--------NGPTR--WQYKRTINQVVHRWGSHTVPFLL  83
+            + G L C+E  LA     G+ +        NG       Y   +  +        +  +L
+Sbjct  118  VMGPLGCWESNLAGRPNSGYQRVNLRNTVINGRKAEVQIYLHQLTLIADNRRGELMAAVL  177
+
+Query  84   EPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            + +         SHLCHN RC  P HL  E   +NK R  C G
+Sbjct  178  KSE----LAMECSHLCHNGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>gb|AAV35434.1| His-Cys box protein [Porphyra umbilicalis]
+ gb|AAV35435.1| His-Cys box protein [Porphyra umbilicalis]
+ gb|AAV35436.1| His-Cys box protein [Porphyra umbilicalis]
+Length=104
+
+ Score = 56.6 bits (135),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 11/41 (27%), Positives = 17/41 (42%), Gaps = 0/41 (0%)
+
+Query  74   WGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWES  114
+            +  H V  +     +  +    SH CH   C NP  L +E+
+Sbjct  64   YYGHVVACIFNAGRVPLEREQVSHRCHRGACVNPQLLVFET  104
+
+
+>gb|AAQ94052.1| homing endonuclease I-PchI [Pleopsidium chlorophanum]
+Length=256
+
+ Score = 56.2 bits (134),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 28/103 (28%), Positives = 38/103 (37%), Gaps = 14/103 (13%)
+
+Query  34   LQGTLHCYEIPLAAPYGVGFAK--------NGPTR--WQYKRTINQVVHRWGSHTVPFLL  83
+            + G L C+E  LA     G+ +        NG       Y   +  +        +  +L
+Sbjct  118  VMGPLGCWESNLAGRPNSGYQRVNLRNTVINGRKAEVQIYLHQLTLIADNRRGELMAAVL  177
+
+Query  84   EPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPG  126
+            E +         SHLCH  RC  P HL  E   +NK R  C G
+Sbjct  178  ESE----LAMECSHLCHXGRCFRPSHLVVEPRAENKERQTCNG  216
+
+
+>dbj|BAB87243.1| His-Cys box homing endonuclease [Coemansia mojavensis]
+Length=171
+
+ Score = 54.7 bits (130),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 25/69 (37%), Positives = 29/69 (43%), Gaps = 5/69 (7%)
+
+Query  60   RWQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNK  119
+            R  Y   ++ V     +H +  L    N   K    SHLCH   C NP HL  ES   N 
+Sbjct  66   RCIYLHHLSLVAANK-AHELTRL----NAGKKRLQVSHLCHRGWCFNPEHLVVESQRLNA  120
+
+Query  120  GRNWCPGPN  128
+             RN C G N
+Sbjct  121  KRNNCKGNN  129
+
+
+>gb|EPE32101.1| His-Me finger endonuclease [Glarea lozoyensis ATCC 20868]
+Length=162
+
+ Score = 53.5 bits (127),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 20/50 (40%), Positives = 23/50 (46%), Gaps = 0/50 (0%)
+
+Query  91   KTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCVHAVVCLRQ  140
+            K   ASHLC N  C N  H+  E    N GRN C      C H   CL++
+Sbjct  12   KKWHASHLCGNWSCVNAKHIYVEEGRVNAGRNACFMHRDECRHDPRCLKE  61
+
+
+>gb|AAQ94053.1| homing endonuclease I-CpiI [Capronia pilosella]
+Length=307
+
+ Score = 52.3 bits (124),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 26/93 (28%), Positives = 34/93 (37%), Gaps = 15/93 (16%)
+
+Query  55   KNGPTRWQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWES  114
+            K G + W     +  V    GS        P    G+    SHLCHN  C NP H+  E 
+Sbjct  192  KIGVSPWA--HQLAAVAAGQGSQL------PLTTKGE-YHVSHLCHNAGCINPDHVIIEP  242
+
+Query  115  LDDNKGRNWCPG------PNGGCVHAVVCLRQG  141
+               N+ R +C        P+G  +    C   G
+Sbjct  243  AWINEFRKFCAKAWAVRFPDGSFLDPCRCHVDG  275
+
+
+>ref|XP_646838.1| hypothetical protein DDB_G0268654 [Dictyostelium discoideum AX4]
+ gb|EAL72916.1| hypothetical protein DDB_G0268654 [Dictyostelium discoideum AX4]
+Length=167
+
+ Score = 52.0 bits (123),  Expect = 7e-05, Method: Composition-based stats.
+ Identities = 20/58 (35%), Positives = 27/58 (47%), Gaps = 4/58 (6%)
+
+Query  87   NINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGP--NGGCVHAVVCLRQGP  142
+            + +G     S LC+N +C NP HL  E       R+ C  P  NG C H+  C  +G 
+Sbjct  87   DGHGHGYVISFLCNNRKCLNPNHLYCEDRL--TKRDNCHSPKINGVCNHSPKCFIKGI  142
+
+
+>ref|XP_004998557.1| hypothetical protein PTSG_01082 [Salpingoeca sp. ATCC 50818]
+ gb|EGD76382.1| hypothetical protein PTSG_01082 [Salpingoeca sp. ATCC 50818]
+Length=262
+
+ Score = 51.6 bits (122),  Expect = 7e-05, Method: Composition-based stats.
+ Identities = 23/73 (32%), Positives = 29/73 (40%), Gaps = 18/73 (24%)
+
+Query  92   TCTASHLCHNTR-----------------CHNPLHLCWESLDDNKGRNWCPGPNGGCVHA  134
+                SHLCH  +                 C  P H C E++  N  R  CPG  GGC+H 
+Sbjct  179  AMNGSHLCHRGQHRLPVIHPKTGKKLLLECIRPSHCCLEAVHRNNSRQGCPGILGGCIHE  238
+
+Query  135  VVCLRQG-PLYGP  146
+              CL     ++GP
+Sbjct  239  PPCLLPARRVHGP  251
+
+
+>gb|EKC34113.1| hypothetical protein CGI_10014951 [Crassostrea gigas]
+Length=125
+
+ Score = 51.6 bits (122),  Expect = 8e-05, Method: Composition-based stats.
+ Identities = 19/57 (34%), Positives = 23/57 (41%), Gaps = 1/57 (1%)
+
+Query  83   LEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGC-VHAVVCL  138
+            L      G     SHLCH   C N  HL  E+ + N+ RN C      C  H   C+
+Sbjct  65   LTRSQFPGGNLEVSHLCHKKLCVNAAHLVLETHEVNQERNHCKAQGFCCRAHHPHCI  121
+
+
+>gb|EON67715.1| hypothetical protein W97_06858 [Coniosporium apollinis CBS 100218]
+Length=218
+
+ Score = 50.8 bits (120),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 29/107 (28%), Positives = 38/107 (36%), Gaps = 12/107 (11%)
+
+Query  40   CYEIPLAAPYGVGFAKNGPTRWQYKRTINQVVHRWGSH--TVPFLL------EPDNINGK  91
+            C+  P+  PY   +   G  R  +  T  +V ++ G     V  L+      E      K
+Sbjct  79   CWLYPM--PYKKKY--QGTIRKTFAHTDEKVSYKAGLPFGIVALLIRYQLTREQKKNIVK  134
+
+Query  92   TCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCVHAVVCL  138
+                SHLC N  C N  H   E    N  RN C      C H   C+
+Sbjct  135  GWELSHLCGNWTCCNWRHFTIEDHSTNVNRNRCFRHRQRCQHTPRCM  181
+
+
+>gb|EKC41987.1| hypothetical protein CGI_10028169 [Crassostrea gigas]
+Length=161
+
+ Score = 50.8 bits (120),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 24/89 (27%), Positives = 31/89 (35%), Gaps = 14/89 (15%)
+
+Query  83   LEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCP-------------GPNG  129
+            L      G     SHLCH   C NP+HL  E    N+ R  C              G + 
+Sbjct  66   LTRSQFPGANLEVSHLCHEKLCVNPMHLSLEPHATNQERIHCMQLGGLVHLATRGYGSSN  125
+
+Query  130  GCVHAVVCLRQGPLYGPGATVAGPQQRGS  158
+             C  +        + G  +TV GP  + S
+Sbjct  126  PCAESSEGAAGTVVTGVSSTV-GPASKVS  153
+
+
+>ref|XP_004996557.1| hypothetical protein PTSG_02071 [Salpingoeca sp. ATCC 50818]
+ gb|EGD81353.1| hypothetical protein PTSG_02071 [Salpingoeca sp. ATCC 50818]
+Length=280
+
+ Score = 49.6 bits (117),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 23/68 (34%), Positives = 23/68 (34%), Gaps = 18/68 (26%)
+
+Query  92   TCTASHLCHNT------------------RCHNPLHLCWESLDDNKGRNWCPGPNGGCVH  133
+               ASHLCH                     C NP H   E    N  R  CPGP  GC H
+Sbjct  197  NYHASHLCHRGVDNPLIFVCPRTNKQFELPCINPAHHVLEPGHYNSSRIGCPGPLLGCEH  256
+
+Query  134  AVVCLRQG  141
+               CLR  
+Sbjct  257  IPPCLRHA  264
+
+
+>gb|EKG11720.1| Endonuclease His-metal-binding finger [Macrophomina phaseolina 
+MS6]
+Length=638
+
+ Score = 48.9 bits (115),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 18/51 (36%), Positives = 21/51 (42%), Gaps = 4/51 (7%)
+
+Query  92   TCTASHLCHNTRCHNPLHLCWESLDDNKGRNWC----PGPNGGCVHAVVCL  138
+                SHLC N+ C  P HL  E  + N  R  C     G    C H+  CL
+Sbjct  381  GWDLSHLCGNSSCIYPPHLTMEPHEINIERIGCHRVRTGAYFLCTHSPRCL  431
+
+
+>gb|EKC31613.1| hypothetical protein CGI_10009858 [Crassostrea gigas]
+Length=125
+
+ Score = 48.9 bits (115),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 18/57 (32%), Positives = 22/57 (39%), Gaps = 1/57 (1%)
+
+Query  83   LEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGC-VHAVVCL  138
+            L      G     SHLC    C N  HL  E+ + N+ RN C      C  H   C+
+Sbjct  65   LTRSQFPGGNLEVSHLCRKKLCVNATHLVLETHEVNQERNHCKAQGFCCRAHHPHCI  121
+
+
+>emb|CAI83767.1| homing endonuclease [Didymium iridis]
+Length=209
+
+ Score = 48.5 bits (114),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 18/63 (29%), Positives = 26/63 (42%), Gaps = 7/63 (11%)
+
+Query  83   LEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPG-------PNGGCVHAV  135
+            +E ++       A H CHN RC    H+ + S D N+  ++CP            C H  
+Sbjct  137  MEENDWEMIDDDAIHRCHNKRCFTKGHVYFGSKDQNRSTDFCPAYVVINGVVVHVCTHTP  196
+
+Query  136  VCL  138
+             CL
+Sbjct  197  SCL  199
+
+
+>ref|XP_003045694.1| predicted protein [Nectria haematococca mpVI 77-13-4]
+ gb|EEU39981.1| predicted protein [Nectria haematococca mpVI 77-13-4]
+Length=653
+
+ Score = 48.1 bits (113),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 15/32 (47%), Positives = 19/32 (60%), Gaps = 0/32 (0%)
+
+Query  93   CTASHLCHNTRCHNPLHLCWESLDDNKGRNWC  124
+               SHLC+ +RC NPLH+  E  D N  R+ C
+Sbjct  497  YETSHLCNFSRCMNPLHMTAEPHDTNIQRSAC  528
+
+
+>gb|EON68322.1| hypothetical protein W97_07580 [Coniosporium apollinis CBS 100218]
+Length=250
+
+ Score = 46.9 bits (110),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 15/33 (46%), Positives = 18/33 (55%), Gaps = 0/33 (0%)
+
+Query  92   TCTASHLCHNTRCHNPLHLCWESLDDNKGRNWC  124
+               ASHLCH+  C NP H+  ES   N+ R  C
+Sbjct  200  GDQASHLCHHPVCINPDHIVVESKALNEARKPC  232
+
+
+>ref|XP_002505804.1| predicted protein [Micromonas sp. RCC299]
+ gb|ACO67062.1| predicted protein [Micromonas sp. RCC299]
+Length=598
+
+ Score = 46.9 bits (110),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 25/72 (35%), Positives = 30/72 (42%), Gaps = 18/72 (25%)
+
+Query  90   GKTCTASHLCHNTR-----CHNPLHLCWESLDDNKGRNWCPG-------PNGGCVH----  133
+            G     SHLCH +R     C+NP HL  E+   N  R  C G       P+  C H    
+Sbjct  456  GDELETSHLCHPSRGGYLWCYNPAHLVPETHTQNMDRQRCLGTLWIDGIPHSACDHGKDG  515
+
+Query  134  AVVCL--RQGPL  143
+               CL  RQ P+
+Sbjct  516  RDRCLGWRQTPI  527
+
+
+>ref|XP_002603528.1| hypothetical protein BRAFLDRAFT_79063 [Branchiostoma floridae]
+ gb|EEN59539.1| hypothetical protein BRAFLDRAFT_79063 [Branchiostoma floridae]
+Length=338
+
+ Score = 46.2 bits (108),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 19/65 (30%), Positives = 25/65 (39%), Gaps = 3/65 (4%)
+
+Query  77   HTVPFLLEPD-NINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCVH--  133
+            H + + L+   +    T   SHLCH  RC N  HL  E    N+ R  C        H  
+Sbjct  271  HRLLYFLDSGLDNLDPTMQVSHLCHEKRCVNLAHLSLEQNVVNQQRKNCFAEKHCMGHPQ  330
+
+Query  134  AVVCL  138
+               C+
+Sbjct  331  HPDCI  335
+
+
+>ref|XP_001694410.1| hypothetical protein CHLREDRAFT_181746 [Chlamydomonas reinhardtii]
+ gb|EDO95664.1| predicted protein [Chlamydomonas reinhardtii]
+Length=118
+
+ Score = 45.8 bits (107),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 16/47 (35%), Positives = 20/47 (43%), Gaps = 1/47 (2%)
+
+Query  74   WGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+              +H +  L   D        A HLCHN +C NP+HL W     N  
+Sbjct  11   EYAHRL-VLWAADGPPAPGEEALHLCHNAKCLNPMHLAWGPKAVNLS  56
+
+
+>gb|ABD62811.1| His-Cys box homing endonuclease [Heterolobosea sp. BA]
+Length=252
+
+ Score = 45.4 bits (106),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 18/93 (20%), Positives = 27/93 (30%), Gaps = 18/93 (19%)
+
+Query  63   YKRTINQVVHRWGS---HTVPFL--LEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDD  117
+            Y   ++ + +   S   H +  +  +          + SHLC N  C  P H+  E    
+Sbjct  148  YVHHVSILANSRSSDPIHKLALIKKVSQRKKEKNAYSVSHLCGNGGCARPGHIIIEPKTV  207
+
+Query  118  NKGRNWCPG-------------PNGGCVHAVVC  137
+            N  R  C                   C H   C
+Sbjct  208  NDERVACHRFLRSCKCKWDARVIRRLCPHKPKC  240
+
+
+>emb|CAJ44450.1| homing endonuclease [Naegleria sp. NG393]
+ emb|CAJ44452.1| homing endonuclease [Naegleria sp. NG647]
+Length=245
+
+ Score = 45.0 bits (105),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 18/57 (32%), Positives = 20/57 (36%), Gaps = 13/57 (22%)
+
+Query  94   TASHLCHNTRCHNPLHLCWESLDDNKGRNWCP---------GPNGG----CVHAVVC  137
+            T SHLC N  C  P HL  E    N  RN C            +      C H+  C
+Sbjct  177  TISHLCGNGGCARPGHLRIEKKSVNDERNHCHFLLRRSQSRHQSEMIRLACPHSPRC  233
+
+
+>gb|AAL69647.1| I2EP [Beauveria bassiana]
+Length=244
+
+ Score = 44.6 bits (104),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 17/59 (29%), Positives = 19/59 (33%), Gaps = 11/59 (18%)
+
+Query  92   TCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNG-----------GCVHAVVCLR  139
+                SHLC N RC    HL  E    N+ R  C                 C H   C+R
+Sbjct  168  GQHISHLCANPRCMTLGHLVVEDAAINQSRKGCGKIKACRHAGCSKWVYFCDHKPRCIR  226
+
+
+>gb|AGJ76538.1| His-Cys box homing endonuclease [Botryosphaeria dothidea]
+Length=259
+
+ Score = 44.6 bits (104),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 16/70 (23%), Positives = 19/70 (28%), Gaps = 20/70 (28%)
+
+Query  90   GKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWC--------------------PGPNG  129
+            G     SHLC    C    H+  ES   N+ R  C                         
+Sbjct  182  GGGSEVSHLCGRGNCIEASHVVVESRAMNESRKLCQQNGKLVRASLELKDGTFVSIKSPH  241
+
+Query  130  GCVHAVVCLR  139
+             C H   C+R
+Sbjct  242  ECPHVPPCVR  251
+
+
+>emb|CAJ44448.1| homing endonuclease [Naegleria pringsheimi]
+Length=245
+
+ Score = 44.3 bits (103),  Expect = 0.015, Method: Composition-based stats.
+ Identities = 17/62 (28%), Positives = 20/62 (33%), Gaps = 13/62 (20%)
+
+Query  89   NGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWC---------PGPNGG----CVHAV  135
+            + +  T SHLC N  C  P HL  E    N  R  C            +      C H  
+Sbjct  172  DSEARTISHLCGNGGCSRPGHLRIEKKSVNDERTHCHFLLRRSQSLHQSEMIRLACPHTP  231
+
+Query  136  VC  137
+             C
+Sbjct  232  KC  233
+
+
+>emb|CAA55084.1| small subunit ribosomal RNA [Naegleria gruberi]
+ prf||2114357B group I intron ORF in SSUrDNA
+Length=245
+
+ Score = 44.3 bits (103),  Expect = 0.015, Method: Composition-based stats.
+ Identities = 17/62 (28%), Positives = 20/62 (33%), Gaps = 13/62 (20%)
+
+Query  89   NGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWC---------PGPNGG----CVHAV  135
+            + +  T SHLC N  C  P HL  E    N  R  C            +      C H  
+Sbjct  172  DSEARTISHLCGNGGCSRPGHLRIEKKSVNDERTHCHFLLRRSQSLHQSEMIRLACPHTP  231
+
+Query  136  VC  137
+             C
+Sbjct  232  KC  233
+
+
+>emb|CCT63385.1| uncharacterized protein FFUJ_01884 [Fusarium fujikuroi IMI 58289]
+Length=356
+
+ Score = 44.3 bits (103),  Expect = 0.015, Method: Composition-based stats.
+ Identities = 20/59 (34%), Positives = 23/59 (39%), Gaps = 12/59 (20%)
+
+Query  94   TASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGG-----------C-VHAVVCLRQ  140
+              SHLC+  RC NP H+  ES   N  R  C     G           C +H   CL Q
+Sbjct  211  EISHLCNWRRCINPDHVTLESHTTNISRKSCFTQAQGHFSAGLPVKVSCDIHNPPCLLQ  269
+
+
+>emb|CAJ44445.1| homing endonuclease [Naegleria clarki]
+Length=245
+
+ Score = 43.9 bits (102),  Expect = 0.016, Method: Composition-based stats.
+ Identities = 21/93 (23%), Positives = 29/93 (32%), Gaps = 18/93 (19%)
+
+Query  63   YKRTINQVVHRWGS---HTVPFL--LEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDD  117
+            Y   ++   +       H+V  L  +     + +  T SHLC N  C  P HL  E    
+Sbjct  141  YVHHVSAFANSTAENCIHSVEMLETVSSSKKDNEARTISHLCGNGGCARPGHLRIEKKSV  200
+
+Query  118  NKGRNWC---------PGPNGG----CVHAVVC  137
+            N  R  C            +      C H   C
+Sbjct  201  NDERTHCHFLLRRSQSINQSEMIRLACPHTPKC  233
+
+
+>emb|CAJ44449.1| homing endonuclease [Naegleria sp. NG358]
+ emb|CAJ44451.1| homing endonuclease [Naegleria sp. NG498]
+Length=245
+
+ Score = 43.9 bits (102),  Expect = 0.016, Method: Composition-based stats.
+ Identities = 17/62 (28%), Positives = 20/62 (33%), Gaps = 13/62 (20%)
+
+Query  89   NGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWC---------PGPNGG----CVHAV  135
+            + +  T SHLC N  C  P HL  E    N  R  C            +      C H  
+Sbjct  172  DSEARTISHLCGNGGCARPGHLRIEKKSVNDERTHCHFLLRRSQSINQSEMIRLACPHTP  231
+
+Query  136  VC  137
+             C
+Sbjct  232  KC  233
+
+
+>emb|CAJ44446.1| homing endonuclease [Naegleria clarki]
+Length=245
+
+ Score = 43.9 bits (102),  Expect = 0.016, Method: Composition-based stats.
+ Identities = 17/60 (29%), Positives = 19/60 (32%), Gaps = 13/60 (21%)
+
+Query  91   KTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWC---------PGPNGG----CVHAVVC  137
+            +  T SHLC N  C  P HL  E    N  R  C            +      C H   C
+Sbjct  174  EARTISHLCGNGGCARPGHLRIEKKSVNDERTHCHFLLRRSQSINQSEMIRLACPHTPKC  233
+
+
+>gb|EHK48539.1| hypothetical protein TRIATDRAFT_18900, partial [Trichoderma atroviride 
+IMI 206040]
+Length=126
+
+ Score = 43.9 bits (102),  Expect = 0.016, Method: Composition-based stats.
+ Identities = 19/66 (29%), Positives = 27/66 (41%), Gaps = 8/66 (12%)
+
+Query  63   YKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRN  122
+            Y+  +  V    G   +       +I  KT   SHLC N  C  P H+  E  + N  R+
+Sbjct  35   YRHRLAMVAK--GEALLL------SITSKTWQISHLCRNKGCFRPEHVEMEPAELNAARD  86
+
+Query  123  WCPGPN  128
+             C G +
+Sbjct  87   ECRGKS  92
+
+
+>gb|EKC26688.1| hypothetical protein CGI_10012873 [Crassostrea gigas]
+Length=122
+
+ Score = 43.9 bits (102),  Expect = 0.019, Method: Composition-based stats.
+ Identities = 19/47 (41%), Positives = 22/47 (47%), Gaps = 3/47 (6%)
+
+Query  94   TASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCV--HAVVCL  138
+              SHLCHN  C N  HL  E    N+ R  C    G C   H+ +CL
+Sbjct  76   EVSHLCHNKLCVNTAHLVIEQHCINQERIHCF-LLGRCTEAHSPLCL  121
+
+
+>ref|XP_003052457.1| predicted protein [Nectria haematococca mpVI 77-13-4]
+ gb|EEU46744.1| predicted protein [Nectria haematococca mpVI 77-13-4]
+Length=586
+
+ Score = 43.5 bits (101),  Expect = 0.025, Method: Composition-based stats.
+ Identities = 13/33 (40%), Positives = 15/33 (46%), Gaps = 0/33 (0%)
+
+Query  92   TCTASHLCHNTRCHNPLHLCWESLDDNKGRNWC  124
+            T   SH C  + C NP+H   E   DN  R  C
+Sbjct  431  TRETSHRCDFSYCINPMHGVAEPHADNMNRARC  463
+
+
+>emb|CAA55087.1| small subunit ribosomal RNA [Naegleria clarki]
+ prf||2114357E group I intron ORF in SSUrDNA
+Length=245
+
+ Score = 43.1 bits (100),  Expect = 0.028, Method: Composition-based stats.
+ Identities = 21/93 (23%), Positives = 29/93 (32%), Gaps = 18/93 (19%)
+
+Query  63   YKRTINQVVHRWGS---HTVPFL--LEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDD  117
+            Y   ++   +       H+V  L  +     + +  T SHLC N  C  P HL  E    
+Sbjct  141  YVHHVSAFANSTAENCIHSVEMLETVSSSKKDNEARTISHLCGNGGCARPGHLRIEKKSV  200
+
+Query  118  NKGRNWC---------PGPNGG----CVHAVVC  137
+            N  R  C            +      C H   C
+Sbjct  201  NDERTHCHFLLRRSQSINQSEMIRLACPHTPRC  233
+
+
+>ref|XP_002603475.1| hypothetical protein BRAFLDRAFT_79008 [Branchiostoma floridae]
+ gb|EEN59486.1| hypothetical protein BRAFLDRAFT_79008 [Branchiostoma floridae]
+Length=128
+
+ Score = 43.1 bits (100),  Expect = 0.028, Method: Composition-based stats.
+ Identities = 17/49 (35%), Positives = 19/49 (39%), Gaps = 2/49 (4%)
+
+Query  92   TCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCVH--AVVCL  138
+            T   SHLCH  RC N  HL  E    N+ R  C        H     C+
+Sbjct  77   TMQVSHLCHEKRCVNLAHLSLEQNVVNQQRKNCFAEKHCMGHPQHPDCI  125
+
+
+>ref|XP_002595500.1| hypothetical protein BRAFLDRAFT_69099 [Branchiostoma floridae]
+ ref|XP_002613864.1| hypothetical protein BRAFLDRAFT_72016 [Branchiostoma floridae]
+ gb|EEN51512.1| hypothetical protein BRAFLDRAFT_69099 [Branchiostoma floridae]
+ gb|EEN69873.1| hypothetical protein BRAFLDRAFT_72016 [Branchiostoma floridae]
+Length=128
+
+ Score = 43.1 bits (100),  Expect = 0.031, Method: Composition-based stats.
+ Identities = 17/49 (35%), Positives = 19/49 (39%), Gaps = 2/49 (4%)
+
+Query  92   TCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCVH--AVVCL  138
+            T   SHLCH  RC N  HL  E    N+ R  C        H     C+
+Sbjct  77   TMQVSHLCHEKRCVNLAHLSLEQNVVNQQRKNCFAEKHCMGHPQHPDCI  125
+
+
+>emb|CAA55083.1| small subunit ribosomal RNA [Naegleria italica]
+ prf||2114357A group I intron ORF in SSUrDNA
+Length=245
+
+ Score = 42.7 bits (99),  Expect = 0.035, Method: Composition-based stats.
+ Identities = 17/60 (29%), Positives = 20/60 (34%), Gaps = 13/60 (21%)
+
+Query  91   KTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCP-----GPNGG--------CVHAVVC  137
+            +  T SHLC N  C  P HL  E    N  R  C        +          C H+  C
+Sbjct  174  EARTISHLCGNGGCARPGHLRIEKKSVNDERTHCLFLLRRSQSRNQSEMIRLACPHSPKC  233
+
+
+>emb|CAJ44447.1| homing endonuclease [Naegleria philippinensis]
+Length=245
+
+ Score = 42.7 bits (99),  Expect = 0.037, Method: Composition-based stats.
+ Identities = 22/93 (24%), Positives = 29/93 (32%), Gaps = 18/93 (19%)
+
+Query  63   YKRTINQVVHRWGS---HTVPFL--LEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDD  117
+            Y   ++   +       HTV  L  +     +    T SHLC N  C  P HL  E    
+Sbjct  141  YVHHVSAFANSTNENCIHTVEMLETVSSSKKDTDARTISHLCGNGGCARPGHLRIEKKSV  200
+
+Query  118  NKGRNWCP-----GPNGG--------CVHAVVC  137
+            N  R  C        +          C H+  C
+Sbjct  201  NDERTHCHFLLRRSQSRNQSEMIRLACPHSPKC  233
+
+
+>ref|XP_004336245.1| hypothetical protein ACA1_139690 [Acanthamoeba castellanii str. 
+Neff]
+ gb|ELR14232.1| hypothetical protein ACA1_139690 [Acanthamoeba castellanii str. 
+Neff]
+Length=167
+
+ Score = 42.7 bits (99),  Expect = 0.042, Method: Composition-based stats.
+ Identities = 16/48 (34%), Positives = 26/48 (55%), Gaps = 1/48 (2%)
+
+Query  64   KRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLC  111
+               ++    ++ +HT+  LL    I+G+    SHLCH ++C NP HL 
+Sbjct  63   YSQVSIKSTKYMAHTISLLLWKRKIDGQ-LPVSHLCHQSKCVNPQHLI  109
+
+
+>gb|AAB71746.1| putative homing endonuclease [Naegleria italica]
+Length=245
+
+ Score = 42.3 bits (98),  Expect = 0.058, Method: Composition-based stats.
+ Identities = 17/60 (29%), Positives = 20/60 (34%), Gaps = 13/60 (21%)
+
+Query  91   KTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCP-----GPNGG--------CVHAVVC  137
+            +  T SHLC N  C  P HL  E    N  R  C        +          C H+  C
+Sbjct  174  EARTISHLCGNGGCARPGHLRIEKKSVNDERTHCHFLLRRSQSRNQSEMIRLACPHSPKC  233
+
+
+>emb|CAJ44444.1| homing endonuclease [Naegleria carteri]
+Length=245
+
+ Score = 41.9 bits (97),  Expect = 0.060, Method: Composition-based stats.
+ Identities = 17/57 (30%), Positives = 18/57 (32%), Gaps = 13/57 (22%)
+
+Query  94   TASHLCHNTRCHNPLHLCWESLDDNKGRNWC---------PGPNGG----CVHAVVC  137
+            T SHLC N  C  P HL  E    N  R  C            +      C H   C
+Sbjct  177  TISHLCGNGGCARPGHLRIEKKSVNDERCHCHFLLRRSQSLHQSEMIRMACPHTPRC  233
+
+
+>emb|CAA71257.1| hypothetical protein [Naegleria sp. NG055]
+Length=245
+
+ Score = 41.9 bits (97),  Expect = 0.064, Method: Composition-based stats.
+ Identities = 17/57 (30%), Positives = 18/57 (32%), Gaps = 13/57 (22%)
+
+Query  94   TASHLCHNTRCHNPLHLCWESLDDNKGRNWC---------PGPNGG----CVHAVVC  137
+            T SHLC N  C  P HL  E    N  R  C            +      C H   C
+Sbjct  177  TISHLCGNGGCARPGHLRIEKKSVNDERCHCHFLLRRSQSLHQSEMIRMACPHTPRC  233
+
+
+>ref|WP_003979864.1| HNH endonuclease [Streptomyces rimosus]
+ gb|ELQ84453.1| HNH endonuclease [Streptomyces rimosus subsp. rimosus ATCC 10970]
+Length=144
+
+ Score = 41.9 bits (97),  Expect = 0.071, Method: Composition-based stats.
+ Identities = 31/105 (30%), Positives = 41/105 (40%), Gaps = 11/105 (10%)
+
+Query  54   AKNGPTRWQYKRTINQVVHRW-GSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCW  112
+            A NG  R+ Y    N + HRW   +    + E       +    HLC N +C NP HL  
+Sbjct  10   AGNGYGRF-YASGRNVLAHRWAYEYLRASIPE-------SLVLDHLCRNAQCVNPWHLEP  61
+
+Query  113  ESLDDNKGRNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRG  157
+             S  +N  R    G +G       C R  PL G  + +A    R 
+Sbjct  62   VSQAENLRRG--NGFSGRNARKTHCPRGHPLTGMNSYLAPSGGRA  104
+
+
+>gb|AAB71747.1| putative homing endonuclease [Naegleria jamiesoni]
+Length=245
+
+ Score = 41.6 bits (96),  Expect = 0.096, Method: Composition-based stats.
+ Identities = 17/57 (30%), Positives = 18/57 (32%), Gaps = 13/57 (22%)
+
+Query  94   TASHLCHNTRCHNPLHLCWESLDDNKGRNWC---------PGPNGG----CVHAVVC  137
+            T SHLC N  C  P HL  E    N  R  C            +      C H   C
+Sbjct  177  TISHLCGNGGCARPGHLRIEKKSVNDERTHCHFLLRRSQSVAQSEMIRLACPHTPRC  233
+
+
+>emb|CAA55085.1| small subunit ribosomal RNA [Naegleria jamiesoni]
+ prf||2114357C group I intron ORF in SSUrDNA
+Length=245
+
+ Score = 41.6 bits (96),  Expect = 0.097, Method: Composition-based stats.
+ Identities = 17/57 (30%), Positives = 18/57 (32%), Gaps = 13/57 (22%)
+
+Query  94   TASHLCHNTRCHNPLHLCWESLDDNKGRNWC---------PGPNGG----CVHAVVC  137
+            T SHLC N  C  P HL  E    N  R  C            +      C H   C
+Sbjct  177  TISHLCGNGGCARPGHLRIEKKSVNDERTHCHFLLRRSQSVAQSEMIRLACPHTPRC  233
+
+
+>ref|XP_003052461.1| hypothetical protein NECHADRAFT_77451 [Nectria haematococca mpVI 
+77-13-4]
+ gb|EEU46748.1| hypothetical protein NECHADRAFT_77451 [Nectria haematococca mpVI 
+77-13-4]
+Length=1090
+
+ Score = 41.2 bits (95),  Expect = 0.11, Method: Composition-based stats.
+ Identities = 22/67 (33%), Positives = 29/67 (44%), Gaps = 13/67 (19%)
+
+Query  86   DNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWC------------PGPNGGCVH  133
+            D++ G T T SH+C+   C NPLH+  E    N+ RN C            P      +H
+Sbjct  931  DSLTGYTAT-SHICNWALCINPLHVASEQKSANRERNKCFQRAKENANKGQPVARHCNMH  989
+
+Query  134  AVVCLRQ  140
+               CL Q
+Sbjct  990  TPPCLLQ  996
+
+
+>emb|CAA55086.1| small subunit ribosomal RNA [Naegleria andersoni]
+ emb|CAA78907.1| putative homing endonuclease [Naegleria andersoni]
+ prf||2114357D group I intron ORF in SSUrDNA
+Length=245
+
+ Score = 40.8 bits (94),  Expect = 0.15, Method: Composition-based stats.
+ Identities = 17/57 (30%), Positives = 18/57 (32%), Gaps = 13/57 (22%)
+
+Query  94   TASHLCHNTRCHNPLHLCWESLDDNKGRNWC---------PGPNGG----CVHAVVC  137
+            T SHLC N  C  P HL  E    N  R  C            +      C H   C
+Sbjct  177  TISHLCGNGGCARPGHLRIEKKTVNDERTHCHFLLRRSQSLAQSEMIRLACPHTPRC  233
+
+
+>gb|AER08052.1| putative His-Cys homing endonuclease [Acrasis rosea]
+Length=185
+
+ Score = 40.8 bits (94),  Expect = 0.17, Method: Composition-based stats.
+ Identities = 16/73 (22%), Positives = 20/73 (28%), Gaps = 22/73 (30%)
+
+Query  87   NINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGR-------------NWCPGPN-----  128
+             + G+  T SHLC    C    H+  E    N  R             N C   +     
+Sbjct  94   KVGGEALTISHLCGVRNCCERDHIIIEPKKVNDDRTHHHGTVFHAFHNNKCGQKSFLDLL  153
+
+Query  129  ----GGCVHAVVC  137
+                  C H   C
+Sbjct  154  GLVRDTCGHEPKC  166
+
+
+>ref|NP_848276.1| protein 3.3 [Yersinia phage phiA1122]
+ gb|AAP20512.1| protein 3.3 [Yersinia phage phiA1122]
+ gb|AFK13356.1| hypothetical protein [Yersinia phage YpP-Y]
+ gb|AFK13409.1| hypothetical protein [Yersinia phage YpP-R]
+ gb|AFK13504.1| hypothetical protein [Yersinia phage YpsP-G]
+ gb|AGB07337.1| putative HNH endonuclease [Yersinia phage R]
+ gb|AGC35476.1| putative HNH endonuclease [Yersinia phage Y]
+Length=152
+
+ Score = 39.6 bits (91),  Expect = 0.33, Method: Composition-based stats.
+ Identities = 20/65 (31%), Positives = 26/65 (40%), Gaps = 13/65 (20%)
+
+Query  54   AKNGPTRWQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWE  113
+            AK G  R Q+    + + H+           P    G      HLCHN +C NP HL   
+Sbjct  37   AKLGIPRVQFVHRASYIQHK----------GP---IGAGLVVRHLCHNRKCFNPAHLEVG  83
+
+Query  114  SLDDN  118
+            +  DN
+Sbjct  84   TQYDN  88
+
+
+>ref|YP_008059098.1| HNH protein [Halovirus HCTV-5]
+ gb|AGM11666.1| HNH protein [Halovirus HCTV-5]
+Length=158
+
+ Score = 39.6 bits (91),  Expect = 0.35, Method: Composition-based stats.
+ Identities = 21/70 (30%), Positives = 31/70 (45%), Gaps = 3/70 (4%)
+
+Query  55   KNGPTRWQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWES  114
+            K     + Y R   +     G+H V + LE ++ +G      H C N  C NP HL   +
+Sbjct  23   KGAEDEYGYGRIRTERSSAEGAHRVAYRLEVEDPDGSN--VLHKCDNRSCVNPNHLYLGT  80
+
+Query  115  LDDN-KGRNW  123
+             +DN K R+ 
+Sbjct  81   QEDNIKDRDE  90
+
+
+>ref|XP_002508059.1| predicted protein [Micromonas sp. RCC299]
+ gb|ACO69317.1| predicted protein [Micromonas sp. RCC299]
+Length=392
+
+ Score = 39.6 bits (91),  Expect = 0.35, Method: Composition-based stats.
+ Identities = 16/43 (38%), Positives = 18/43 (42%), Gaps = 9/43 (20%)
+
+Query  93   CTASHLC---------HNTRCHNPLHLCWESLDDNKGRNWCPG  126
+               SHLC          + RC+NP HL  ES   N  R  C G
+Sbjct  254  LQTSHLCEPVHANTLGGHRRCYNPAHLIAESSQQNNRRKNCLG  296
+
+
+>ref|YP_007378959.1| hypothetical protein HVTV1_53 [Halovirus HVTV-1]
+ gb|AGC34423.1| hypothetical protein HVTV1_53 [Halovirus HVTV-1]
+Length=158
+
+ Score = 39.6 bits (91),  Expect = 0.37, Method: Composition-based stats.
+ Identities = 21/70 (30%), Positives = 31/70 (45%), Gaps = 3/70 (4%)
+
+Query  55   KNGPTRWQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWES  114
+            K     + Y R   +     G+H V + LE ++ +G      H C N  C NP HL   +
+Sbjct  23   KGAEDEYGYGRIRTERSSAEGAHRVAYRLEVEDPDGSN--VLHKCDNRSCVNPNHLYLGT  80
+
+Query  115  LDDN-KGRNW  123
+             +DN K R+ 
+Sbjct  81   QEDNIKDRDE  90
+
+
+>ref|YP_007511242.1| hypothetical protein S58_16470 [Bradyrhizobium oligotrophicum 
+S58]
+ ref|WP_015664784.1| hypothetical protein [Bradyrhizobium oligotrophicum]
+ dbj|BAM87655.1| hypothetical protein S58_16470 [Bradyrhizobium oligotrophicum 
+S58]
+Length=115
+
+ Score = 38.9 bits (89),  Expect = 0.53, Method: Composition-based stats.
+ Identities = 14/45 (32%), Positives = 20/45 (45%), Gaps = 1/45 (2%)
+
+Query  77   HTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGR  121
+            H V +++E   I  +     H C   RC NP HL   +   N+ R
+Sbjct  58   HIVMYVIEHGPIPPRK-QLDHRCRTRRCVNPDHLEMVTHKQNQRR  101
+
+
+>ref|XP_002957024.1| hypothetical protein VOLCADRAFT_107501 [Volvox carteri f. nagariensis]
+ gb|EFJ41987.1| hypothetical protein VOLCADRAFT_107501 [Volvox carteri f. nagariensis]
+Length=326
+
+ Score = 38.9 bits (89),  Expect = 0.57, Method: Composition-based stats.
+ Identities = 9/33 (28%), Positives = 14/33 (43%), Gaps = 0/33 (0%)
+
+Query  88   INGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            +        H+C    C NP HL W +  +N+ 
+Sbjct  236  LPHTQYDVMHICDERACINPFHLVWGTRAENRR  268
+
+
+>ref|YP_004109297.1| hypothetical protein [Rhodopseudomonas palustris DX-1]
+ ref|WP_013502681.1| hypothetical protein [Rhodopseudomonas palustris]
+ gb|ADU44564.1| hypothetical protein Rpdx1_2983 [Rhodopseudomonas palustris DX-1]
+Length=162
+
+ Score = 38.9 bits (89),  Expect = 0.60, Method: Composition-based stats.
+ Identities = 21/70 (30%), Positives = 28/70 (40%), Gaps = 12/70 (17%)
+
+Query  49   YGVGFAKNGPTRWQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPL  108
+            YG+ + K+   RW+            G+H V   L   N+ G+     H C N  C  P 
+Sbjct  35   YGLMWVKDREGRWR----------NLGAHRVALALSGKNVVGRF--VLHRCDNPSCVRPD  82
+
+Query  109  HLCWESLDDN  118
+            HL   S  DN
+Sbjct  83   HLRRGSHKDN  92
+
+
+>ref|YP_003347681.1| hypothetical protein [Klebsiella phage KP34]
+ gb|ACY66761.1| conserved hypothetical protein [Klebsiella phage KP34]
+Length=144
+
+ Score = 38.5 bits (88),  Expect = 0.71, Method: Composition-based stats.
+ Identities = 19/51 (38%), Positives = 24/51 (48%), Gaps = 6/51 (11%)
+
+Query  72   HRWGSHTVPFL----LEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDN  118
+             R G+H   +L    L PD++ GK     H C N  C NP HL   +  DN
+Sbjct  25   KRVGAHVAAYLIANNLTPDDVVGKV--VMHKCDNRACVNPEHLELGTQSDN  73
+
+
+>ref|XP_002609854.1| hypothetical protein BRAFLDRAFT_90782 [Branchiostoma floridae]
+ gb|EEN65864.1| hypothetical protein BRAFLDRAFT_90782 [Branchiostoma floridae]
+Length=127
+
+ Score = 38.5 bits (88),  Expect = 0.75, Method: Composition-based stats.
+ Identities = 15/53 (29%), Positives = 17/53 (33%), Gaps = 2/53 (3%)
+
+Query  91   KTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCVHAVVCLRQGPL  143
+            K    SH C+N  C    HL +E    N  R  C        H     R   L
+Sbjct  77   KNIHVSHRCNNKLCLRVDHLSYEPACINAQRTSCQDQGACFTHTP--FRDCIL  127
+
+
+>ref|WP_004121170.1| hypothetical protein [Rhizobium freirei]
+ gb|ENN86046.1| hypothetical protein RHSP_31820 [Rhizobium freirei PRF 81]
+Length=175
+
+ Score = 38.5 bits (88),  Expect = 0.82, Method: Composition-based stats.
+ Identities = 17/73 (24%), Positives = 25/73 (35%), Gaps = 22/73 (30%)
+
+Query  61   WQYKR--------------TINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHN  106
+            W Y R               +   V    +H VP   +          A+H C N  C N
+Sbjct  49   WPYYRMDNGYGQVGLHDGMHLAHRVVCEKAHGVPSFPDA--------QAAHRCGNNSCVN  100
+
+Query  107  PLHLCWESLDDNK  119
+            P H+ W +  +N+
+Sbjct  101  PNHVRWATQAENE  113
+
+
+>ref|YP_006906237.1| putative HNH endonuclease [Streptomyces phage phiHau3]
+ gb|AFU62039.1| putative HNH endonuclease [Streptomyces phage phiHau3]
+Length=158
+
+ Score = 38.1 bits (87),  Expect = 0.96, Method: Composition-based stats.
+ Identities = 14/62 (23%), Positives = 22/62 (36%), Gaps = 8/62 (12%)
+
+Query  71   VHRW-GSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNG  129
+             HRW  +  V       ++  +     H C    C NP HL   +  +N  R+     + 
+Sbjct  53   AHRWLYAALV------GDVPAE-MDLDHRCKVRHCVNPDHLELVTRQENLHRSAAVVTSD  105
+
+Query  130  GC  131
+             C
+Sbjct  106  FC  107
+
+
+>gb|EMR83547.1| hypothetical protein BcDW1_7813 [Botryotinia fuckeliana BcDW1]
+Length=739
+
+ Score = 37.7 bits (86),  Expect = 1.2, Method: Composition-based stats.
+ Identities = 19/86 (23%), Positives = 26/86 (31%), Gaps = 13/86 (15%)
+
+Query  60   RWQYKRTINQVVHRWGSHTVPFLLEPDNIN-----GKTCTASHLCHNTRCHNPLHLCWES  114
+            +W     +      +    V   L   +IN      +  + SHLC    C    HL  E 
+Sbjct  402  KWVMYFHVAI----YYG--VQLHLNRLDINEVAWLLENLSISHLCGTEHCLVATHLIPEI  455
+
+Query  115  LDDNKGRNWC--PGPNGGCVHAVVCL  138
+               +  R  C        C H   CL
+Sbjct  456  FSHSWDRRACHEIDFTKPCYHLPTCL  481
+
+
+>ref|YP_001648076.1| hypothetical protein [Naegleria gruberi]
+ dbj|BAF74739.1| hypothetical protein [Naegleria gruberi]
+Length=376
+
+ Score = 37.7 bits (86),  Expect = 1.2, Method: Composition-based stats.
+ Identities = 15/58 (26%), Positives = 20/58 (35%), Gaps = 12/58 (20%)
+
+Query  92   TCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPG-----PNGG-------CVHAVVC  137
+                +H+C +T C  P H+ +     N  R  CPG      N         C H   C
+Sbjct  136  GKEHTHICGDTNCCRPSHVIYAPKGTNISRTNCPGYVRWKDNNNKEIFYKVCKHDPPC  193
+
+
+>ref|XP_004354224.1| hypothetical protein DFA_10321 [Dictyostelium fasciculatum]
+ gb|EGG15482.1| hypothetical protein DFA_10321 [Dictyostelium fasciculatum]
+Length=338
+
+ Score = 37.7 bits (86),  Expect = 1.2, Method: Composition-based stats.
+ Identities = 19/95 (20%), Positives = 29/95 (31%), Gaps = 26/95 (27%)
+
+Query  65   RTINQVVHR--WGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRN  122
+            + +  + HR    +  +P    PDN+       S LC    C N  H+  E+   +K R 
+Sbjct  142  QHVAFMAHRGRLETGLIPKTKSPDNMC-----ISKLCCTAGCINKDHILSETHKISKSRG  196
+
+Query  123  WC-------------------PGPNGGCVHAVVCL  138
+             C                         C H   C+
+Sbjct  197  ECHTTIKDILKKQLKTQDRKISATIKLCPHEPKCI  231
+
+
+>ref|XP_001546656.1| predicted protein [Botryotinia fuckeliana B05.10]
+Length=674
+
+ Score = 37.7 bits (86),  Expect = 1.2, Method: Composition-based stats.
+ Identities = 19/86 (23%), Positives = 26/86 (31%), Gaps = 13/86 (15%)
+
+Query  60   RWQYKRTINQVVHRWGSHTVPFLLEPDNIN-----GKTCTASHLCHNTRCHNPLHLCWES  114
+            +W     +      +    V   L   +IN      +  + SHLC    C    HL  E 
+Sbjct  392  KWVMYFHVAI----YYG--VQLHLNRLDINEVAWLLENLSISHLCGTEHCLVATHLIPEI  445
+
+Query  115  LDDNKGRNWC--PGPNGGCVHAVVCL  138
+               +  R  C        C H   CL
+Sbjct  446  FSHSWDRRACHEIDFTKPCYHLPTCL  471
+
+
+>ref|YP_003113795.1| hypothetical protein Caci_3045 [Catenulispora acidiphila DSM 
+44928]
+ ref|WP_012787247.1| hypothetical protein [Catenulispora acidiphila]
+ gb|ACU71954.1| hypothetical protein Caci_3045 [Catenulispora acidiphila DSM 
+44928]
+Length=131
+
+ Score = 37.7 bits (86),  Expect = 1.4, Method: Composition-based stats.
+ Identities = 20/64 (32%), Positives = 25/64 (40%), Gaps = 1/64 (1%)
+
+Query  93   CTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNGGCVHAVVCLRQGPLYGPGATVAG  152
+                HLC N  C NP HL   +  +N  R            A VC R G  Y P   +A 
+Sbjct  47   LQLDHLCRNRLCVNPAHLEQVTTAENLRRARASRDGQMAYRAAVC-RNGHEYTPKDVLAN  105
+
+Query  153  PQQR  156
+             Q++
+Sbjct  106  GQRK  109
+
+
+>gb|AER47897.1| gp46 [Mycobacterium phage Courthouse]
+Length=181
+
+ Score = 37.3 bits (85),  Expect = 1.5, Method: Composition-based stats.
+ Identities = 14/59 (24%), Positives = 22/59 (38%), Gaps = 2/59 (3%)
+
+Query  72   HRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHL-CWESLDDNKGRNWCPGPNG  129
+              + +H + + L    I  +  T  HLCH   C NP HL       + + R      + 
+Sbjct  69   KAYLAHRIAYELAYGPIP-EGMTVDHLCHTRLCVNPDHLRVITPAQNQQNRKGANANSQ  126
+
+
+>ref|WP_003979866.1| endonuclease (modular protein) [Streptomyces rimosus]
+ gb|ELQ84455.1| endonuclease (modular protein) [Streptomyces rimosus subsp. rimosus 
+ATCC 10970]
+Length=138
+
+ Score = 37.3 bits (85),  Expect = 1.5, Method: Composition-based stats.
+ Identities = 17/70 (25%), Positives = 24/70 (35%), Gaps = 7/70 (10%)
+
+Query  71   VHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRN------WC  124
+                 +H V ++L    I        HLCH   C NP HL   +  +N   +       C
+Sbjct  41   ARTEKAHRVAYMLTFGKIPN-GYEIDHLCHRRGCVNPWHLRAIAHAENLRSSRPATATHC  99
+
+Query  125  PGPNGGCVHA  134
+            P  +    H 
+Sbjct  100  PHGHAYTGHR  109
+
+
+>ref|WP_010337789.1| bacteriophage T7-like gene protein [Sphingobium yanoikuyae]
+Length=173
+
+ Score = 37.3 bits (85),  Expect = 1.5, Method: Composition-based stats.
+ Identities = 23/77 (30%), Positives = 35/77 (46%), Gaps = 9/77 (11%)
+
+Query  55   KNGPTRWQYKRTINQVVH---RWG-----SHTVPFLLEPDNINGKTCTASHLCHNTRCHN  106
+            + GP+ W +  T+N++ +   R G     S  V   LE      +   A H C N  C N
+Sbjct  28   EKGPSCWTWTGTVNRLGYGHIRVGLGMKKSTHVALFLETGEWLPEGSMACHRCDNPSCVN  87
+
+Query  107  PLHL-CWESLDDNKGRN  122
+            P HL   ++L +N+ R 
+Sbjct  88   PAHLFIGDALANNRDRQ  104
+
+
+>ref|XP_002959958.1| hypothetical protein VOLCADRAFT_101477 [Volvox carteri f. nagariensis]
+ gb|EFJ38977.1| hypothetical protein VOLCADRAFT_101477 [Volvox carteri f. nagariensis]
+Length=211
+
+ Score = 37.3 bits (85),  Expect = 1.6, Method: Composition-based stats.
+ Identities = 10/33 (31%), Positives = 15/33 (46%), Gaps = 0/33 (0%)
+
+Query  88   INGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            +      A H+C    C NP HL W +  +N+ 
+Sbjct  121  LPHTQYDAMHICDERACINPFHLVWGTRAENRR  153
+
+
+>ref|XP_001797525.1| hypothetical protein SNOG_07172 [Phaeosphaeria nodorum SN15]
+ gb|EAT85823.1| hypothetical protein SNOG_07172 [Phaeosphaeria nodorum SN15]
+Length=317
+
+ Score = 37.3 bits (85),  Expect = 1.7, Method: Composition-based stats.
+ Identities = 13/31 (42%), Positives = 16/31 (52%), Gaps = 0/31 (0%)
+
+Query  94   TASHLCHNTRCHNPLHLCWESLDDNKGRNWC  124
+              SHLCH   C +PLH   E+   N+ R  C
+Sbjct  105  ERSHLCHKNACDSPLHFNKETERQNRARATC  135
+
+
+>ref|WP_008134194.1| hypothetical protein [Pseudoalteromonas sp. BSi20495]
+ dbj|GAA78181.1| hypothetical protein P20495_0672 [Pseudoalteromonas sp. BSi20495]
+Length=201
+
+ Score = 37.3 bits (85),  Expect = 1.7, Method: Composition-based stats.
+ Identities = 19/66 (29%), Positives = 30/66 (46%), Gaps = 7/66 (10%)
+
+Query  55   KNGPTRWQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWES  114
+            KN P    Y+  +++V++   + T         +N      +H C NT+C NP HL   S
+Sbjct  83   KNRPQNNHYQFYMHRVMYSIKNIT-------KTLNNNNLQVNHKCSNTQCCNPNHLELIS  135
+
+Query  115  LDDNKG  120
+              DN+ 
+Sbjct  136  TYDNQR  141
+
+
+>ref|YP_003659626.1| HNH endonuclease [Segniliparus rotundus DSM 44985]
+ ref|WP_013139245.1| HNH endonuclease [Segniliparus rotundus]
+ gb|ADG98795.1| HNH endonuclease [Segniliparus rotundus DSM 44985]
+Length=164
+
+ Score = 37.3 bits (85),  Expect = 1.7, Method: Composition-based stats.
+ Identities = 20/62 (33%), Positives = 27/62 (44%), Gaps = 8/62 (12%)
+
+Query  76   SHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLC----WESLDDNKGRNWCPGPNGGC  131
+            +H   ++     I     T  H C N RC NP HL     +E+    +GR+W   P G C
+Sbjct  75   AHRAAWVFFHGQIPL-GMTVDHRCKNRRCVNPEHLRLLTNFENARRTRGRDW---PIGEC  130
+
+Query  132  VH  133
+             H
+Sbjct  131  AH  132
+
+
+>ref|XP_001587714.1| hypothetical protein SS1G_11707 [Sclerotinia sclerotiorum 1980]
+ gb|EDN95828.1| hypothetical protein SS1G_11707 [Sclerotinia sclerotiorum 1980 
+UF-70]
+Length=280
+
+ Score = 37.3 bits (85),  Expect = 1.7, Method: Composition-based stats.
+ Identities = 21/82 (26%), Positives = 27/82 (33%), Gaps = 5/82 (6%)
+
+Query  50   GVGFAKNGPTRWQYKRTINQV--VHRWGSHTVPFLL---EPDNINGKTCTASHLCHNTRC  104
+            GV   K   T+      +  V  +   G    P LL     +       T  HLC +  C
+Sbjct  163  GVILTKGSRTKVYVYHIVALVTAIRNPGPRLTPDLLRSVSQEKSEKNAQTILHLCGHHWC  222
+
+Query  105  HNPLHLCWESLDDNKGRNWCPG  126
+              P HL   S   N  +  C G
+Sbjct  223  LTPGHLAVGSKVLNDEQTACHG  244
+
+
+>ref|XP_002952107.1| hypothetical protein VOLCADRAFT_92675 [Volvox carteri f. nagariensis]
+ gb|EFJ46898.1| hypothetical protein VOLCADRAFT_92675 [Volvox carteri f. nagariensis]
+Length=462
+
+ Score = 37.3 bits (85),  Expect = 1.8, Method: Composition-based stats.
+ Identities = 10/33 (31%), Positives = 15/33 (46%), Gaps = 0/33 (0%)
+
+Query  88   INGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            +      A H+C    C NP HL W +  +N+ 
+Sbjct  372  LPHTQYDAMHICDERACINPFHLVWGTRAENRR  404
+
+
+>ref|XP_002959164.1| hypothetical protein VOLCADRAFT_108505 [Volvox carteri f. nagariensis]
+ gb|EFJ39787.1| hypothetical protein VOLCADRAFT_108505 [Volvox carteri f. nagariensis]
+Length=412
+
+ Score = 37.3 bits (85),  Expect = 1.8, Method: Composition-based stats.
+ Identities = 10/33 (31%), Positives = 15/33 (46%), Gaps = 0/33 (0%)
+
+Query  88   INGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            +      A H+C    C NP HL W +  +N+ 
+Sbjct  322  LPHTQYDAMHICDERACINPFHLVWGTRAENRR  354
+
+
+>ref|WP_006519222.1| hypothetical protein [Leptolyngbya sp. PCC 7375]
+ gb|EKU98059.1| hypothetical protein Lepto7375DRAFT_7318 [Leptolyngbya sp. PCC 
+7375]
+Length=257
+
+ Score = 36.9 bits (84),  Expect = 1.9, Method: Composition-based stats.
+ Identities = 15/49 (31%), Positives = 23/49 (47%), Gaps = 1/49 (2%)
+
+Query  72   HRWGSHTVPFLLEPDN-INGKTCTASHLCHNTRCHNPLHLCWESLDDNK  119
+             RW +H + + +   N I+       H C N  C NP HL   +L +N+
+Sbjct  154  RRWMAHRLAYKISYKNFIDDSKLPVCHRCDNPSCVNPYHLFQGTLSENQ  202
+
+
+>ref|WP_001124954.1| hypothetical protein [Salmonella enterica]
+ gb|EHL52963.1| bacteriophage T7-like protein [Salmonella enterica subsp. enterica 
+serovar Montevideo str. SARB30]
+Length=172
+
+ Score = 36.9 bits (84),  Expect = 1.9, Method: Composition-based stats.
+ Identities = 16/50 (32%), Positives = 23/50 (46%), Gaps = 2/50 (4%)
+
+Query  74   WGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHL-CWESLDDNKGRN  122
+            W SH + + L+  +I        H CHNT C NP HL       +++ R 
+Sbjct  59   WSSHRLSWFLKYGDIPP-GMLVDHKCHNTLCVNPSHLRLVTPKQNSENRE  107
+
+
+>ref|YP_002898971.1| N4 gp22-like protein [Roseophage EE36P1]
+ gb|ACL81389.1| N4 gp22-like protein [Sulfitobacter phage EE36phi1]
+Length=102
+
+ Score = 36.9 bits (84),  Expect = 2.0, Method: Composition-based stats.
+ Identities = 14/45 (32%), Positives = 21/45 (47%), Gaps = 1/45 (2%)
+
+Query  77   HTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGR  121
+            H V ++ +   + GK     H C N  C NP HL   +  +N+ R
+Sbjct  55   HRVMYVNQNGYVPGKK-QIDHKCRNRMCVNPDHLEMVTHKENQRR  98
+
+
+>ref|YP_672801.1| hypothetical protein Meso_0232 [Chelativorans sp. BNC1]
+ ref|WP_011579579.1| hypothetical protein [Chelativorans sp. BNC1]
+ gb|ABG61636.1| hypothetical protein Meso_0232 [Chelativorans sp. BNC1]
+Length=194
+
+ Score = 36.9 bits (84),  Expect = 2.0, Method: Composition-based stats.
+ Identities = 25/103 (25%), Positives = 37/103 (36%), Gaps = 12/103 (11%)
+
+Query  26   HHVPLGGGLQGTLHCYEIPLAAPYGVGFAKNGPTRWQYKRTINQVVHRWGS------HTV  79
+            H  PLGGG           L A     + K     W Y +  +   + W S      H  
+Sbjct  32   HGDPLGGGTPKGAAL----LFAQEAASYQKAACLFWPYAKNSDGYGNLWVSGAPTLAHRY  87
+
+Query  80   PFLLEPDNINGKTCTASHLCHNTR--CHNPLHLCWESLDDNKG  120
+               L   +   +   A+H C N    C NP H+ W++  +N+ 
+Sbjct  88   VCKLAHGSAPSELHEAAHSCGNGHLGCVNPAHISWKTRTENEK  130
+
+
+>ref|WP_008476121.1| putative phage integrase protein [Nitrolancetus hollandicus]
+ emb|CCF83207.1| putative phage integrase protein [Nitrolancetus hollandicus Lb]
+Length=172
+
+ Score = 36.9 bits (84),  Expect = 2.1, Method: Composition-based stats.
+ Identities = 10/60 (17%), Positives = 19/60 (32%), Gaps = 0/60 (0%)
+
+Query  64   KRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNW  123
+              ++      W  H +  ++        + +  H C    C NP H    +  DN    +
+Sbjct  44   YGSLGLAGKHWYVHRLAAMIWLGLDPVSSLSVCHRCDIPACFNPAHQFLGTHADNIRDAY  103
+
+
+>ref|XP_002952150.1| hypothetical protein VOLCADRAFT_92762 [Volvox carteri f. nagariensis]
+ gb|EFJ46621.1| hypothetical protein VOLCADRAFT_92762 [Volvox carteri f. nagariensis]
+Length=206
+
+ Score = 36.5 bits (83),  Expect = 2.7, Method: Composition-based stats.
+ Identities = 10/33 (31%), Positives = 15/33 (46%), Gaps = 0/33 (0%)
+
+Query  88   INGKTCTASHLCHNTRCHNPLHLCWESLDDNKG  120
+            +      A H+C    C NP HL W +  +N+ 
+Sbjct  116  LPHTQYDAMHICDERACINPFHLVWGTCAENRR  148
+
+
+>gb|AER48013.1| gp162 [Mycobacterium phage Courthouse]
+Length=189
+
+ Score = 36.5 bits (83),  Expect = 2.8, Method: Composition-based stats.
+ Identities = 23/88 (27%), Positives = 27/88 (31%), Gaps = 10/88 (11%)
+
+Query  71   VHRW-GSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGRNWCPGPNG  129
+             HRW   H V  + E            HLC N  C NP HL      +N  R        
+Sbjct  77   AHRWIYEHVVGAIPE-------GFVIDHLCRNRACVNPEHLEPVENRENLMRGETRARRN  129
+
+Query  130  GCVHAVVCLRQGPLYGPGATVAGPQQRG  157
+                 V C +  P  G    V+    R 
+Sbjct  130  A--EKVECPQGHPYSGDNLYVSPTGGRA  155
+
+
+>ref|YP_007703638.1| hypothetical protein OAN307_c13110 [Octadecabacter antarcticus 
+307]
+ ref|WP_015499044.1| hypothetical protein [Octadecabacter antarcticus]
+ gb|AGI67004.1| hypothetical protein OAN307_c13110 [Octadecabacter antarcticus 
+307]
+Length=189
+
+ Score = 36.5 bits (83),  Expect = 3.0, Method: Composition-based stats.
+ Identities = 23/93 (25%), Positives = 40/93 (44%), Gaps = 16/93 (17%)
+
+Query  34   LQGTLHCYEI-PLAAPYGVGFA-KNGPTRWQYKRTINQVVHRWGSHTV-PFLLEPDNING  90
+            +Q  L C+E+     P+GV F    G +        +++ +R+    V   LL P+++  
+Sbjct  72   IQAPLGCWELGKQKDPHGVRFVLSTGESD-------DEIAYRFVFMVVNARLLNPEDV--  122
+
+Query  91   KTCTASHLCHNTRCHNPLHLCWESLDDNKGRNW  123
+                  H C N +C  P HL   S  +N+  + 
+Sbjct  123  ----IRHTCDNRKCLRPDHLIVGSAKENRQDDE  151
+
+
+>ref|YP_004934341.1| g107 [Yersinia phage phiR1-37]
+ emb|CCE26131.1| g107 [Yersinia phage phiR1-37]
+Length=175
+
+ Score = 36.2 bits (82),  Expect = 3.2, Method: Composition-based stats.
+ Identities = 15/34 (45%), Positives = 17/34 (50%), Gaps = 3/34 (8%)
+
+Query  88   INGK---TCTASHLCHNTRCHNPLHLCWESLDDN  118
+            INGK        H CHN +C NP HL   +  DN
+Sbjct  51   INGKVPNKYVVRHKCHNRKCCNPDHLLSGTNKDN  84
+
+
+>ref|WP_009616744.1| hypothetical protein [Pseudomonas sp. M1]
+ gb|EKX03358.1| hypothetical protein PM1_02236 [Pseudomonas sp. M1]
+Length=152
+
+ Score = 36.2 bits (82),  Expect = 3.5, Method: Composition-based stats.
+ Identities = 24/99 (25%), Positives = 36/99 (37%), Gaps = 13/99 (13%)
+
+Query  52   GFAKNGPTRWQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLC  111
+            G  + G  R QYK     + HR  ++ +   +EP+ I  K     H C N  C NP HL 
+Sbjct  16   GKMRTGYGRTQYKGR-QILAHRL-AYCMASGIEPEQI--KGVVIRHKCDNPSCVNPDHLE  71
+
+Query  112  WESLDDNKG---------RNWCPGPNGGCVHAVVCLRQG  141
+              +  +N           R    G +      +  +R  
+Sbjct  72   PGTTQENMNDMTDRGRRVRGELVGNSKLTEEQINAIRDA  110
+
+
+>ref|YP_005098368.1| unnamed protein product [Synechococcus phage S-CBS4]
+ gb|AEX56036.1| HNH endonuclease [Synechococcus phage S-CBS4]
+ gb|AGN30486.1| hypothetical protein SXAG_00039 [Synechococcus phage S-CBS4]
+Length=168
+
+ Score = 36.2 bits (82),  Expect = 3.8, Method: Composition-based stats.
+ Identities = 19/73 (27%), Positives = 27/73 (37%), Gaps = 3/73 (4%)
+
+Query  48   PYGVGFAKNGPTRWQYKRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNP  107
+            P+   F  NG    Q    +N       +H + +      I  +     H+CHN  C NP
+Sbjct  31   PWCGAFRGNG--YGQITEFVNGKRRTRATHRLAWEFAFGQIP-EGLVVRHMCHNPACCNP  87
+
+Query  108  LHLCWESLDDNKG  120
+             HL   +  DN  
+Sbjct  88   THLLLGTHKDNFN  100
+
+
+>ref|WP_009048000.1| hypothetical protein [Pseudomonas chlororaphis]
+ gb|EIM13852.1| hypothetical protein PchlO6_2104 [Pseudomonas chlororaphis O6]
+Length=159
+
+ Score = 35.8 bits (81),  Expect = 4.5, Method: Composition-based stats.
+ Identities = 15/55 (28%), Positives = 20/55 (37%), Gaps = 7/55 (12%)
+
+Query  75   GSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDN------KGRNW  123
+             +H + + L    I        H C    C NP HL   +  +N      KGRN 
+Sbjct  46   YAHRLSYELSKGKIP-DGMVVMHTCDRPACINPDHLVLGTQKENMEDMYSKGRNA  99
+
+
+>ref|WP_003596299.1| hypothetical protein [Methylobacterium extorquens]
+ gb|EHP94870.1| hypothetical protein MetexDRAFT_0215 [Methylobacterium extorquens 
+DSM 13060]
+Length=220
+
+ Score = 35.8 bits (81),  Expect = 5.1, Method: Composition-based stats.
+ Identities = 14/47 (30%), Positives = 19/47 (41%), Gaps = 2/47 (4%)
+
+Query  75   GSHTVPFLLEPDNINGKTCTASHLCHNTR--CHNPLHLCWESLDDNK  119
+             +H V   L           A+H C N    C NP HL W +  +N+
+Sbjct  83   FAHRVVCELAHGAAPSSRHEAAHSCGNGHVGCVNPRHLRWATRQENE  129
+
+
+>ref|WP_016644727.1| hypothetical protein [Streptomyces aurantiacus]
+ gb|EPH40345.1| hypothetical protein STRAU_6608 [Streptomyces aurantiacus JA 
+4570]
+Length=147
+
+ Score = 35.4 bits (80),  Expect = 5.9, Method: Composition-based stats.
+ Identities = 17/69 (25%), Positives = 21/69 (31%), Gaps = 9/69 (13%)
+
+Query  61   WQYKRTINQVV--------HRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCW  112
+            WQ+   I                +H V +      I  +     HLC N  C NP HL  
+Sbjct  21   WQWTGHIAANGYGQFWLDGRTQYAHRVAYTAVRGLIPAE-LELDHLCRNRACANPDHLEA  79
+
+Query  113  ESLDDNKGR  121
+                 N  R
+Sbjct  80   VPHRTNVLR  88
+
+
+>ref|YP_003359141.1| endonuclease [Clavibacter phage CMP1]
+ gb|ACY35946.1| endonuclease [Clavibacter phage CMP1]
+Length=143
+
+ Score = 35.4 bits (80),  Expect = 6.7, Method: Composition-based stats.
+ Identities = 24/94 (26%), Positives = 30/94 (32%), Gaps = 18/94 (19%)
+
+Query  46   AAPYGVGFAKNGPTRWQYKRTINQVVHRWGSHTVPFLLEPDNINGK---TCTASHLCHNT  102
+             AP G G+A      + Y        HR         L  + +NGK        HLC N 
+Sbjct  23   GAPNGDGYA------YFYTHNKGFSAHR---------LSYEAVNGKIPDGLQIDHLCRNR  67
+
+Query  103  RCHNPLHLCWESLDDNKGRNWCPGPNGGCVHAVV  136
+             C  P HL   +  +N  R      N    H   
+Sbjct  68   MCVRPDHLEAVTQQENIKRGGVGWKNKRKTHCPK  101
+
+
+>ref|WP_007051861.1| phage protein [Bifidobacterium longum]
+ gb|EEQ54801.1| HNH endonuclease domain protein [Bifidobacterium longum subsp. 
+infantis CCUG 52486]
+Length=139
+
+ Score = 35.4 bits (80),  Expect = 6.8, Method: Composition-based stats.
+ Identities = 24/109 (23%), Positives = 36/109 (34%), Gaps = 10/109 (9%)
+
+Query  61   WQYKRTIN--------QVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHL-C  111
+            W++  TIN               ++ V ++L    I        H+CHN  C NP HL  
+Sbjct  6    WEWTSTINRKGYGVLSVHGKPVAAYRVSYMLFRGEIPP-AMQIDHICHNRACVNPNHLRL  64
+
+Query  112  WESLDDNKGRNWCPGPNGGCVHAVVCLRQGPLYGPGATVAGPQQRGSHF  160
+              +  +N+        +G  V  V        Y       G + R   F
+Sbjct  65   ATTTQNNENHTGANRNSGTGVRGVYWEADRQKYRVEVISKGKRHRKGGF  113
+
+
+>ref|XP_004353325.1| hypothetical protein ACA1_023100 [Acanthamoeba castellanii str. 
+Neff]
+ gb|ELR23797.1| hypothetical protein ACA1_023100 [Acanthamoeba castellanii str. 
+Neff]
+Length=223
+
+ Score = 35.0 bits (79),  Expect = 7.7, Method: Composition-based stats.
+ Identities = 18/63 (29%), Positives = 25/63 (40%), Gaps = 18/63 (28%)
+
+Query  94   TASHLCH-------------NTRCHNPLHLCWESLDDNKGRNWCPG-----PNGGCVHAV  135
+             +SHLC              ++RC NP H+ +E    N+ R+ C          GC  A 
+Sbjct  113  QSSHLCECFWRLIGGTGNKIHSRCVNPWHIKFELSTLNQLRSTCTKLSKKYDACGCGAAP  172
+
+Query  136  VCL  138
+             CL
+Sbjct  173  ACL  175
+
+
+>ref|XP_002957025.1| hypothetical protein VOLCADRAFT_98075 [Volvox carteri f. nagariensis]
+ gb|EFJ41988.1| hypothetical protein VOLCADRAFT_98075 [Volvox carteri f. nagariensis]
+Length=215
+
+ Score = 35.0 bits (79),  Expect = 7.8, Method: Composition-based stats.
+ Identities = 10/28 (36%), Positives = 14/28 (50%), Gaps = 0/28 (0%)
+
+Query  93   CTASHLCHNTRCHNPLHLCWESLDDNKG  120
+              A H+C    C NP HL W +  +N+ 
+Sbjct  130  YDAMHICDERACINPFHLVWGTCAENRR  157
+
+
+>emb|CBW47035.1| N4 gp22-like protein [Roseovarius sp. 217 phage 1]
+ emb|CBX87972.1| N4 gp22-like protein [Roseovarius Plymouth podovirus 1]
+Length=99
+
+ Score = 35.0 bits (79),  Expect = 8.4, Method: Composition-based stats.
+ Identities = 15/54 (28%), Positives = 22/54 (41%), Gaps = 8/54 (14%)
+
+Query  69   QVVHR-WGSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWESLDDNKGR  121
+              VHR   +H   ++     I+       H C N  C NP HL   +  +N+ R
+Sbjct  49   VAVHRVMYTHVHGYIPGKKQID-------HKCRNRMCVNPDHLEMVTHKENQRR  95
+
+
+>ref|WP_020486964.1| hypothetical protein [Rhizobium leguminosarum]
+Length=147
+
+ Score = 34.6 bits (78),  Expect = 9.4, Method: Composition-based stats.
+ Identities = 14/58 (25%), Positives = 21/58 (37%), Gaps = 2/58 (3%)
+
+Query  64   KRTINQVVHRWGSHTVPFLLEPDNINGKTCTASHLCHNTR--CHNPLHLCWESLDDNK  119
+               +      W ++     L     +     A+H C N    C NP HL W S  +N+
+Sbjct  31   YGAVKVDGKTWAANRYVCFLAHGEPSSAKLHAAHSCGNGHLGCVNPRHLRWASPSENQ  88
+
+
+>ref|YP_640078.1| HNH endonuclease [Mycobacterium sp. MCS]
+ ref|YP_938943.1| HNH endonuclease [Mycobacterium sp. KMS]
+ ref|WP_011560308.1| HNH endonuclease [Mycobacterium]
+ gb|ABG09022.1| HNH endonuclease [Mycobacterium sp. MCS]
+ gb|ABL92153.1| HNH endonuclease [Mycobacterium sp. KMS]
+Length=124
+
+ Score = 34.6 bits (78),  Expect = 9.9, Method: Composition-based stats.
+ Identities = 19/70 (28%), Positives = 26/70 (38%), Gaps = 8/70 (11%)
+
+Query  55   KNGPTRWQYKRTINQVVHRW-GSHTVPFLLEPDNINGKTCTASHLCHNTRCHNPLHLCWE  113
+            K+G  R     +     HRW     V  + +            HLC+N  C NP HL   
+Sbjct  56   KDGYGRKSIDHSREIPAHRWVYEQHVGPIPD-------GLEIDHLCNNPPCVNPGHLEPV  108
+
+Query  114  SLDDNKGRNW  123
+            +  +N  R W
+Sbjct  109  THVENMLRQW  118
+
+
+
+Lambda     K      H
+   0.313    0.137    0.442 
+
+Gapped
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+Effective search space used: 279764554598
+
+
+  Database: All non-redundant GenBank CDS translations+PDB+SwissProt+PIR+PRF
+excluding environmental samples from WGS projects
+    Posted date:  Sep 26, 2013  6:53 AM
+  Number of letters in database: 11,431,176,125
+  Number of sequences in database:  32,814,121
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

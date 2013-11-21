@@ -4,15 +4,22 @@
  */
 package Support;
 
+import Components.AminoAcid;
 import Components.KeyProtein;
+import Components.MSA;
+import Components.MsaFilterer;
 import Components.MyIO;
+import Jama.Matrix;
+import Method.MyPair;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  *
@@ -120,6 +127,82 @@ public class StaticSupportMethod {
                 lst.add(k.getSequence());
                 MyIO.WriteToFile(dir+name+"_"+chain+".txt", lst);
             }
+        }
+    }
+    public static void ChangeFileName(String dir, String path) throws FileNotFoundException, IOException{
+        FileInputStream fstream = new FileInputStream(path);
+        DataInputStream in = new DataInputStream(fstream);
+        BufferedReader br = new BufferedReader(new InputStreamReader(in));
+        String line = "";
+        while(true){
+            line = br.readLine();
+            if(line==null){
+                break;
+            }
+            if(!line.isEmpty()){
+                String filename = line.substring(0, 6) + ".pssm.txt";
+                File file = new File(dir + filename);
+                file.renameTo(new File(dir + line.substring(0, 6)+".pssm"));
+            }
+        }
+        br.close();
+    }
+    public static void GetThreshold(String dir, String filename, String fileout, Matrix dssm) throws FileNotFoundException, IOException{
+        ArrayList<KeyProtein> lst_prot = MyIO.LoadKeyProteins(dir + filename);
+        ArrayList<String> res = new ArrayList<String>();
+        for(KeyProtein k: lst_prot){
+            String tmp = k.getName()+"_"+k.getChain() +"\t";
+            String fasta = dir + "MSA/"+ k.getName()+"_"+k.getChain()+".msa";
+            ArrayList<String> msa = MsaFilterer.filter(fasta);
+            MSA m = new MSA(k, msa);
+            // calculate threshold at 5, 10, 15, 20, 25, 30 percent
+            double[] percent = new double[]{0.05, 0.1, 0.15, 0.2, 0.25, 0.3};
+           double[] v = m.CalculateThreshold(dssm, percent);
+           
+           tmp = tmp + v[0]+"\t" + v[1]+"\t" + v[2]+"\t" + v[3]+"\t" + v[4]+"\t" + v[5];
+           res.add(tmp);
+            System.out.println(tmp + "\t : done");
+        }
+        MyIO.WriteToFile(dir+fileout, res);
+    }
+    public static void WritePairFile(String filename, String dir) throws FileNotFoundException, IOException{
+        FileInputStream fstream = new FileInputStream(filename);
+        DataInputStream in = new DataInputStream(fstream);
+        BufferedReader br = new BufferedReader(new InputStreamReader(in));
+        String line = "";
+        ArrayList<String> amino = AminoAcid.getAA();
+        HashMap<Integer, String> map = AminoAcid.GetIndexPair();
+        while(true){
+            line = br.readLine();
+            if(line==null){
+                break;
+            }
+            line = line.trim();
+            if(line.isEmpty()){
+                continue;
+            }
+            
+            KeyProtein k = new KeyProtein(line.substring(0, 4), line.substring(5, 6));
+            k.LoadingFromPDBFile();
+            String fasta = dir + "MSA/" + line + ".msa";
+            ArrayList<String> msa = MsaFilterer.filter(fasta);
+            MSA m = new MSA(k, msa);
+            ArrayList<String> ColumnStr = m.RetrieveColumnPair();
+            ArrayList<MyPair> lst_mp = m.CreatePSSM_Pair(ColumnStr, amino);
+            //
+            String[][] tmp = new String[401][lst_mp.size()+1];
+            tmp[0][0] = "STT";
+            for(int i=1;i<=400;i++){
+                tmp[i][0] = map.get(i-1);
+            }
+            for(int i=1;i<=lst_mp.size();i++){
+                tmp[0][i] = lst_mp.get(i-1).getString1_Index() + ":" + lst_mp.get(i-1).getString2_Index();
+                double[] val = lst_mp.get(i-1).getMyArray();
+                for(int j=1;j<=400;j++){
+                    tmp[j][i] = String.valueOf(val[j-1]);
+                }
+            }
+            MyIO.WriteAlignedRowFile(dir + "PSSM_PAIR/"+line+".pair", tmp);
         }
     }
 }

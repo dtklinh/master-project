@@ -51,7 +51,7 @@ public class AlignedProtein {
     }
 
     public AlignedProtein(String filename) throws FileNotFoundException, IOException { // filename e.g 2HAN_A
-        FileInputStream fstream = new FileInputStream(filename + ".out.txt");
+        FileInputStream fstream = new FileInputStream("BLAST_Database/Test62/out_file/"+filename + ".out");
         DataInputStream in = new DataInputStream(fstream);
         BufferedReader br = new BufferedReader(new InputStreamReader(in));
         this.Protein = new KeyProtein(filename.substring(0, 4), filename.substring(5, 6));
@@ -67,7 +67,7 @@ public class AlignedProtein {
             if (line == null) {
                 break;
             }
-            if (line.startsWith(">")) {
+            if (line.startsWith(" Score =")) {
                 isblock = true;
                 if (b != null) {
                     b.setQuery_str(query);
@@ -79,21 +79,33 @@ public class AlignedProtein {
                 query = "";
                 subject = "";
             }
-            if (line.startsWith("Query")) {
-                int query_start_idx = Integer.parseInt(line.substring(7, 11).trim());
-                if (b.getQuery_start() > query_start_idx) {
+            if (line.startsWith("Query ")) {
+//                int query_start_idx = Integer.parseInt(line.substring(7, 11).trim());
+//                if (b.getQuery_start() > query_start_idx) {
+//                    b.setQuery_start(query_start_idx);
+//                }
+//                String query_tmp = line.substring(11, 73).trim();
+//                query = query + query_tmp;
+//                int query_end_idx = Integer.parseInt(line.substring(73).trim());
+//                if (b.getQuery_end() < query_end_idx) {
+//                    b.setQuery_end(query_end_idx);
+//                }
+                String[] lst_tmp = line.trim().split("\\s+");
+                int query_start_idx = Integer.parseInt(lst_tmp[1]);
+                if(b.getQuery_start() > query_start_idx){
                     b.setQuery_start(query_start_idx);
                 }
-                String query_tmp = line.substring(11, 73).trim();
+                String query_tmp = lst_tmp[2];
                 query = query + query_tmp;
-                int query_end_idx = Integer.parseInt(line.substring(73).trim());
-                if (b.getQuery_end() < query_end_idx) {
+                int query_end_idx = Integer.parseInt(lst_tmp[3]);
+                if(b.getQuery_end() < query_end_idx){
                     b.setQuery_end(query_end_idx);
                 }
-
             }
-            if (line.startsWith("Sbjct")) {
-                subject = subject + line.substring(11, 73).trim();
+            if (line.startsWith("Sbjct ")) {
+                String[] lst_tmp = line.trim().split("\\s+");
+                subject = subject + lst_tmp[2];
+//                subject = subject + line.substring(11, 73).trim();
             }
         }
     }

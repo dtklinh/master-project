@@ -31,8 +31,13 @@ import javax.swing.DebugGraphics;
 //import org.apache.pdfbox.pdmodel.PDDocument;
 //import org.apache.pdfbox.util.PDFTextStripper;
 import Components.MsaFilterer;
+import Components.MyIO;
 import Jama.Matrix;
+import Support.Dsm;
 import Support.StaticSupportMethod;
+import weka.core.DenseInstance;
+import weka.core.Instance;
+import weka.core.Instances;
 
 /**
  *
@@ -116,11 +121,24 @@ public class GetProteinName {
 //        MyBlackbox.PrepareDataSet("CompletePosList_2.txt");
 //        MyBlackbox.CalculateDSM2();
 //        MyBlackbox.Test();
-        MyBlackbox.TongHop();
+        String dir = "BLAST_Database/Train/";
+        String list_dir = dir + "TR299.txt";
+//        StaticSupportMethod.WritePairFile(list_dir, dir);
+//        Matrix DSM1 = MyIO.ReadDSM("HSSP_Database/Train_AdjustIndex/DSM_Rnd");
+//        Matrix DSM2 = MyIO.ReadDSM("HSSP_Database/Train_AdjustIndex/DSM_0_1");
+//        Matrix DSM3 = MyIO.ReadDSM("HSSP_Database/Train_AdjustIndex/DSM_1_0");
+//        Matrix DSM4 = MyIO.ReadDSM("HSSP_Database/Train_AdjustIndex/DSM_1_1");
+//        Matrix DSM5 = MyIO.ReadDSM("newDSM.out");
+        MyBlackbox.TongHop(dir, list_dir,null, "PSSM_Pair_MSA_100_width_3_TR299");
+//        MyBlackbox.TongHop(dir, list_dir,null, "NativePSSM_MSA_100_width_11_Train_TR299");
+//        MyBlackbox.TongHop(dir, list_dir,DSM2, "PSSM_Uvalue_DSM_0_1_Test");
+//        MyBlackbox.TongHop(dir, list_dir,DSM3, "PSSM_Uvalue_DSM_1_0_Test");
+//        MyBlackbox.TongHop(dir, list_dir,DSM4, "PSSM_Uvalue_DSM_1_1_Test");
+//        MyBlackbox.TongHop(dir, list_dir,DSM5, "PSSM_Uvalue_DSM_5_Test");
 //        Matrix m = new Matrix(10, 10, 1.0);
 //        m = m.getMatrix(0, 1, 2, 4);
 //        m.PrintToScreen();
-//        MyBlackbox.FindSafeNeg("PSSM_Uvalue_DSM_1_Train.arff", "DownNeg_PSSM_Uvalue_DSM_1_Train.arff");
+//        MyBlackbox.FindSafeNeg("BLAST_Database/Train/NativePSSM_MSA_100_Train.arff", "BLAST_Database/Train/NativePSSM_MSA_100_Train_FindSafeNeg.arff");
 //        MyBlackbox.GetProteinSequence("Train/AminoList374.txt", "Train/AminoList374_Sequence.txt");
 //        MyBlackbox.EachProteinEachFile("Train/AminoList374_Sequence.txt");
 //        StaticSupportMethod.PSIBlast("Train/AminoList374.txt");
@@ -129,7 +147,13 @@ public class GetProteinName {
 //        MyBlackbox.GetBindingIdx("1A6Y", "A");
 //        MyBlackbox.CalculateDSM("DSM.txt");
 //        StaticSupportMethod.ModifyMSA("HSSP_Database/Test75_New/TS75.txt", "HSSP_Database/Test75_New/MSA/");
-        
+//        double[][] m = Dsm.CreateRandomDSM();
+//        MyIO.WritePoPToFile("HSSP_Database/Train_AdjustIndex/DSM_Rnd", m);
+//        MyBlackbox.FromOutFileToMSA("BLAST_Database/Test62/PDNA62.txt", "BLAST_Database/Test62/MSA/");
+//        StaticSupportMethod.ChangeFileName("BLAST_Database/Test75/PSSM/", "BLAST_Database/Test75/PSSM/TS75.txt");
+//        ArrayList<String> lst_name = MyIO.ReadLines("BLAST_Database/Test75/TS75.txt");
+//        MyBlackbox.PredictBindingPosition(lst_name, "BLAST_Database/Test75/", 11);
+//        StaticSupportMethod.GetThreshold("BLAST_Database/Test62/", "PDNA62.txt", "Threshold.txt", null);
   /*      
         PDDocument pddDocument = PDDocument.load(new File("2FQZ.pdf"));
         PDFTextStripper textStripper = new PDFTextStripper();
@@ -183,5 +207,7 @@ public class GetProteinName {
 //        }
 //        int[] aa = new int[2]; aa[0] = 0; aa[1] = 1;
 //        System.out.println(lst.indexOf(aa));
+        
+        
     }
 }

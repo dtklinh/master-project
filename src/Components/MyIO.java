@@ -5,6 +5,7 @@
 package Components;
 
 import Jama.Matrix;
+import Method.UvalueThreshold;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.DataInputStream;
@@ -186,5 +187,73 @@ public class MyIO {
         }
         br.close();
         return res;
+    }
+    public static ArrayList<String> ReadLines(String filename) throws FileNotFoundException, IOException{
+        ArrayList<String> res = new ArrayList<String>();
+        FileInputStream fstream = new FileInputStream(filename);
+        DataInputStream in = new DataInputStream(fstream);
+        BufferedReader br = new BufferedReader(new InputStreamReader(in));
+        String tmp = "";
+        while(true){
+            tmp = br.readLine();
+            if(tmp==null){
+                break;
+            }
+            tmp = tmp.trim();
+            if(!tmp.isEmpty()){
+                res.add(tmp);
+            }
+        }
+        return res;
+    }
+    public static ArrayList<UvalueThreshold> LoadUvalueThres(String filename) throws FileNotFoundException, IOException{
+        FileInputStream fstream = new FileInputStream(filename);
+        DataInputStream in = new DataInputStream(fstream);
+        BufferedReader br = new BufferedReader(new InputStreamReader(in));
+        String line = "";
+        ArrayList<UvalueThreshold> res = new ArrayList<UvalueThreshold>();
+        while(true){
+            line = br.readLine();
+            if(line==null){
+                break;
+            }
+            
+            else{
+                line = line.trim();
+                if(!line.isEmpty()){
+                    String[] lst_tmp = line.split("\t");
+                    String name = lst_tmp[0];
+                    double[] d = new double[lst_tmp.length-1];
+                    for(int i=0;i<lst_tmp.length-1;i++){
+                        d[i] = Double.parseDouble(lst_tmp[i+1]);
+                    }
+                    UvalueThreshold u = new UvalueThreshold(name, d);
+                    res.add(u);
+                }
+            }
+        }
+        return res;
+    }
+    public static void WriteAlignedRowFile(String filename, String[][] str) throws IOException{
+        BufferedWriter writer = new BufferedWriter(new FileWriter(filename), 32768);
+        for(int i=0;i<str.length;i++){
+            for(int j=0;j<str[0].length;j++){
+                writer.write(String.format("%-30s", str[i][j]));
+            }
+            writer.write("\n");
+        }
+        writer.flush();
+        writer.close();
+    }
+    public static void WriteAlignedColumnFile(String filename, ArrayList<String[]> str) throws IOException{
+        BufferedWriter writer = new BufferedWriter(new FileWriter(filename), 32768);
+        for(int i=0;i<str.get(0).length;i++){
+            for(int j=0;j<str.size();j++){
+                writer.write(String.format("%-25s", str.get(j)[i]));
+            }
+            writer.write("\n");
+        }
+        writer.flush();
+        writer.close();
     }
 }

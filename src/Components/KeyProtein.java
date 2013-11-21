@@ -186,6 +186,7 @@ public class KeyProtein {
                     }
                 }
             }
+            cache.notifyShutdown();
         } catch (Exception e) {
             //    System.out.println("Error: "+ e);
             System.err.println("Error: " + e);

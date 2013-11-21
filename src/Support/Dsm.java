@@ -1,6 +1,7 @@
 package Support;
 
 import java.util.HashMap;
+import java.util.Random;
 
 public class Dsm {
 
@@ -135,5 +136,15 @@ public class Dsm {
         SignalMat = CalculateSimMatrix.process(SignalMat, pairIndex);
         SignalMat=Dsm.processMatrix(SignalMat);
         return SignalMat;
+    }
+    public static double[][] CreateRandomDSM(){
+        double[][] m = new double[400][400];
+        Random rnd = new Random();
+        for(int i=0;i<400;i++){
+            for(int j=0; j<400; j++){
+                m[i][j] = rnd.nextDouble();
+            }
+        }
+        return Dsm.processMatrix(m);
     }
 }

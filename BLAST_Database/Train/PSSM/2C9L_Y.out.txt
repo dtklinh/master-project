@@ -1,0 +1,989 @@
+PSIBLAST 2.2.25+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: All non-redundant GenBank CDS translations+PDB+SwissProt+PIR+PRF
+excluding environmental samples from WGS projects
+           32,814,121 sequences; 11,431,176,125 total letters
+
+Results from round 1
+
+
+Query= 2C9L_Y
+
+Length=63
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+ref|YP_401673.1|  BZLF1 [Human herpesvirus 4] >sp|P03206.2|BZLF1_...   117    1e-24
+gb|ABY56266.1|  ZEBRA [Human herpesvirus 4]                            114    1e-23
+sp|Q3KSS8.1|BZLF1_EBVG  RecName: Full=Trans-activator protein BZL...   114    1e-23
+gb|ABY56267.1|  ZEBRA [Human herpesvirus 4]                            114    1e-23
+ref|YP_001129467.1|  BZLF1 [Human herpesvirus 4 type 2] >sp|Q1HVG...   113    2e-23
+gb|AAA66529.1|  BZLF1 [Human herpesvirus 4]                            113    2e-23
+gb|ABY56265.1|  ZEBRA [Human herpesvirus 4]                            113    3e-23
+gb|ABY56268.1|  ZEBRA [Human herpesvirus 4]                            110    1e-22
+ref|YP_067969.1|  BZLF1 [Macacine herpesvirus 4] >gb|AAK95436.1| ...   108    5e-22
+pdb|2C9L|Y  Chain Y, Structure Of The Epstein-Barr Virus Zebra Pr...  98.6    5e-19
+pdb|2C9N|Y  Chain Y, Structure Of The Epstein-Barr Virus Zebra Pr...  98.2    8e-19
+ref|NP_733896.1|  ORF43 [callitrichine herpesvirus 3] >gb|AAK3825...  87.0    2e-15
+ref|XP_004474466.1|  PREDICTED: CCAAT/enhancer-binding protein al...  36.6    3.2  
+ref|XP_004595068.1|  PREDICTED: CCAAT/enhancer-binding protein al...  36.2    3.3  
+ref|XP_001379981.1|  PREDICTED: CCAAT/enhancer-binding protein ep...  36.2    3.8  
+ref|XP_003416375.1|  PREDICTED: CCAAT/enhancer-binding protein al...  35.8    4.4  
+ref|XP_002711561.1|  PREDICTED: CCAAT/enhancer-binding protein al...  35.8    4.7  
+ref|XP_004765328.1|  PREDICTED: CCAAT/enhancer-binding protein al...  35.8    4.7  
+ref|XP_003755917.1|  PREDICTED: CCAAT/enhancer-binding protein ep...  35.8    4.9  
+ref|XP_004371667.1|  PREDICTED: CCAAT/enhancer-binding protein al...  35.8    5.0  
+ref|XP_004810672.1|  PREDICTED: CCAAT/enhancer-binding protein al...  35.4    5.6  
+gb|ELK00528.1|  CCAAT/enhancer-binding protein alpha [Pteropus al...  35.4    5.6  
+ref|XP_003127063.1|  PREDICTED: CCAAT/enhancer-binding protein al...  35.4    5.6  
+ref|XP_003798483.1|  PREDICTED: CCAAT/enhancer-binding protein al...  35.4    5.7  
+ref|XP_004659883.1|  PREDICTED: CCAAT/enhancer-binding protein al...  35.4    5.8  
+ref|XP_004690594.1|  PREDICTED: CCAAT/enhancer-binding protein al...  35.4    6.2  
+ref|XP_004636790.1|  PREDICTED: CCAAT/enhancer-binding protein al...  35.4    6.5  
+ref|XP_001154519.2|  PREDICTED: CCAAT/enhancer-binding protein al...  35.4    6.6  
+gb|AAC50235.1|  CCAAT/enhancer binding protein alpha [Homo sapiens]   35.4    6.8  
+ref|XP_005368482.1|  PREDICTED: CCAAT/enhancer-binding protein al...  35.4    6.9  
+dbj|BAE33162.1|  unnamed protein product [Mus musculus]               35.4    6.9  
+ref|NP_004355.2|  CCAAT/enhancer-binding protein alpha [Homo sapi...  35.4    6.9  
+ref|XP_004284189.1|  PREDICTED: CCAAT/enhancer-binding protein al...  35.0    7.2  
+ref|NP_031704.2|  CCAAT/enhancer-binding protein alpha [Mus muscu...  35.0    7.2  
+ref|XP_004858973.1|  PREDICTED: CCAAT/enhancer-binding protein al...  35.0    7.4  
+ref|NP_036656.1|  CCAAT/enhancer-binding protein alpha [Rattus no...  35.0    7.4  
+gb|AAA37374.1|  CCAAT/enhancer binding protein [Mus musculus]         35.0    7.5  
+emb|CAA72289.1|  CCAAT/enhancer binding protein alpha [Homo sapiens]  35.0    8.2  
+ref|XP_005081828.1|  PREDICTED: CCAAT/enhancer-binding protein al...  35.0    8.4  
+ref|XP_005008689.1|  PREDICTED: LOW QUALITY PROTEIN: CCAAT/enhanc...  35.0    8.7  
+sp|O02754.1|CEBPA_BOVIN  RecName: Full=CCAAT/enhancer-binding pro...  35.0    8.9  
+gb|AAY79353.1|  C/EBP alpha protein [Bos taurus] >tpg|DAA19893.1|...  34.7    9.5  
+
+
+>ref|YP_401673.1| BZLF1 [Human herpesvirus 4]
+ sp|P03206.2|BZLF1_EBVB9 RecName: Full=Trans-activator protein BZLF1; Short=EB1; AltName: 
+Full=Zebra
+ emb|CAA24861.1| unnamed protein product [Human herpesvirus 4]
+ emb|CAD53423.1| BZLF1 [Human herpesvirus 4]
+ gb|AFY97941.1| BZLF1 [Human herpesvirus 4]
+ prf||1512292A BZLF1 gene
+Length=245
+
+ Score =  117 bits (294),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 60/62 (97%), Positives = 61/62 (99%), Gaps = 0/62 (0%)
+
+Query  2    LEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT  61
+            LEIKRYKNRVA+RK RAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT
+Sbjct  175  LEIKRYKNRVASRKCRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT  234
+
+Query  62   PD  63
+            PD
+Sbjct  235  PD  236
+
+
+>gb|ABY56266.1| ZEBRA [Human herpesvirus 4]
+Length=245
+
+ Score =  114 bits (285),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 58/62 (94%), Positives = 60/62 (97%), Gaps = 0/62 (0%)
+
+Query  2    LEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT  61
+            LEIKRYKNRVA+RK RAKFK LLQHYREVA+AKSSENDRLRLLLKQMCPSLDVDSIIPRT
+Sbjct  175  LEIKRYKNRVASRKCRAKFKHLLQHYREVASAKSSENDRLRLLLKQMCPSLDVDSIIPRT  234
+
+Query  62   PD  63
+            PD
+Sbjct  235  PD  236
+
+
+>sp|Q3KSS8.1|BZLF1_EBVG RecName: Full=Trans-activator protein BZLF1; Short=EB1; AltName: 
+Full=Zebra
+ gb|ABA06392.1| Z protein [Human herpesvirus 4]
+ gb|ABY56269.1| ZEBRA [Human herpesvirus 4]
+ gb|AEM00641.1| BZLF1 [Human herpesvirus 4]
+ gb|AFJ06860.1| BZLF1 [Human herpesvirus 4]
+ gb|AFY97859.1| BZLF1 [Human herpesvirus 4]
+ gb|AGL80703.1| BZLF1 [Human herpesvirus 4]
+Length=245
+
+ Score =  114 bits (285),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 58/62 (94%), Positives = 60/62 (97%), Gaps = 0/62 (0%)
+
+Query  2    LEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT  61
+            LEIKRYKNRVA+RK RAKFK LLQHYREVA+AKSSENDRLRLLLKQMCPSLDVDSIIPRT
+Sbjct  175  LEIKRYKNRVASRKCRAKFKHLLQHYREVASAKSSENDRLRLLLKQMCPSLDVDSIIPRT  234
+
+Query  62   PD  63
+            PD
+Sbjct  235  PD  236
+
+
+>gb|ABY56267.1| ZEBRA [Human herpesvirus 4]
+Length=245
+
+ Score =  114 bits (284),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 57/62 (92%), Positives = 60/62 (97%), Gaps = 0/62 (0%)
+
+Query  2    LEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT  61
+            LEIKRY+NRVA+RK RAKFK LLQHYREVA+AKSSENDRLRLLLKQMCPSLDVDSIIPRT
+Sbjct  175  LEIKRYRNRVASRKCRAKFKHLLQHYREVASAKSSENDRLRLLLKQMCPSLDVDSIIPRT  234
+
+Query  62   PD  63
+            PD
+Sbjct  235  PD  236
+
+
+>ref|YP_001129467.1| BZLF1 [Human herpesvirus 4 type 2]
+ sp|Q1HVG1.1|BZLF1_EBVA8 RecName: Full=Trans-activator protein BZLF1; Short=EB1; AltName: 
+Full=Zebra
+ gb|ABB89248.1| BZLF1 [Human herpesvirus 4]
+Length=245
+
+ Score =  113 bits (283),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 57/62 (92%), Positives = 60/62 (97%), Gaps = 0/62 (0%)
+
+Query  2    LEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT  61
+            L+IKRYKNRVA+RK RAKFK LLQHYREVA+AKSSENDRLRLLLKQMCPSLDVDSIIPRT
+Sbjct  175  LDIKRYKNRVASRKCRAKFKHLLQHYREVASAKSSENDRLRLLLKQMCPSLDVDSIIPRT  234
+
+Query  62   PD  63
+            PD
+Sbjct  235  PD  236
+
+
+>gb|AAA66529.1| BZLF1 [Human herpesvirus 4]
+Length=245
+
+ Score =  113 bits (283),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 59/62 (96%), Positives = 60/62 (97%), Gaps = 0/62 (0%)
+
+Query  2    LEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT  61
+            LEIKRYKNRVA+RK RAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSII RT
+Sbjct  175  LEIKRYKNRVASRKCRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIRRT  234
+
+Query  62   PD  63
+            PD
+Sbjct  235  PD  236
+
+
+>gb|ABY56265.1| ZEBRA [Human herpesvirus 4]
+Length=245
+
+ Score =  113 bits (282),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 57/62 (92%), Positives = 60/62 (97%), Gaps = 0/62 (0%)
+
+Query  2    LEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT  61
+            LEIKRY+NRVA+RK RAKFK LLQHYREVA+AKSSENDRLRLLLKQMCPSLDVDSIIPRT
+Sbjct  175  LEIKRYRNRVASRKCRAKFKHLLQHYREVASAKSSENDRLRLLLKQMCPSLDVDSIIPRT  234
+
+Query  62   PD  63
+            PD
+Sbjct  235  PD  236
+
+
+>gb|ABY56268.1| ZEBRA [Human herpesvirus 4]
+Length=245
+
+ Score =  110 bits (276),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 57/62 (92%), Positives = 59/62 (96%), Gaps = 0/62 (0%)
+
+Query  2    LEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT  61
+            LEIKRYKNRVA+RK RAKFK LLQH REVA+AKSSENDRLRLLLKQMCPSLDVDSIIPRT
+Sbjct  175  LEIKRYKNRVASRKCRAKFKHLLQHCREVASAKSSENDRLRLLLKQMCPSLDVDSIIPRT  234
+
+Query  62   PD  63
+            PD
+Sbjct  235  PD  236
+
+
+>ref|YP_067969.1| BZLF1 [Macacine herpesvirus 4]
+ gb|AAK95436.1| BZLF1 [Macacine herpesvirus 4]
+Length=247
+
+ Score =  108 bits (270),  Expect = 5e-22, Method: Composition-based stats.
+ Identities = 54/62 (88%), Positives = 60/62 (97%), Gaps = 0/62 (0%)
+
+Query  2    LEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT  61
+            LEIKRYKNRVA+RK RA+FK LLQHYREVAA+KSSEN+RLR+L+KQMCPSLDVDSIIPRT
+Sbjct  179  LEIKRYKNRVASRKCRARFKNLLQHYREVAASKSSENERLRILMKQMCPSLDVDSIIPRT  238
+
+Query  62   PD  63
+            PD
+Sbjct  239  PD  240
+
+
+>pdb|2C9L|Y Chain Y, Structure Of The Epstein-Barr Virus Zebra Protein
+ pdb|2C9L|Z Chain Z, Structure Of The Epstein-Barr Virus Zebra Protein
+Length=63
+
+ Score = 98.6 bits (244),  Expect = 5e-19, Method: Composition-based stats.
+ Identities = 63/63 (100%), Positives = 63/63 (100%), Gaps = 0/63 (0%)
+
+Query  1   MLEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPR  60
+           MLEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPR
+Sbjct  1   MLEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPR  60
+
+Query  61  TPD  63
+           TPD
+Sbjct  61  TPD  63
+
+
+>pdb|2C9N|Y Chain Y, Structure Of The Epstein-Barr Virus Zebra Protein At 
+Approximately 3.5 Angstrom Resolution
+ pdb|2C9N|Z Chain Z, Structure Of The Epstein-Barr Virus Zebra Protein At 
+Approximately 3.5 Angstrom Resolution
+Length=63
+
+ Score = 98.2 bits (243),  Expect = 8e-19, Method: Composition-based stats.
+ Identities = 61/63 (97%), Positives = 62/63 (99%), Gaps = 0/63 (0%)
+
+Query  1   MLEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPR  60
+           MLEIKRYKNRVA+RK RAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPR
+Sbjct  1   MLEIKRYKNRVASRKCRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPR  60
+
+Query  61  TPD  63
+           TPD
+Sbjct  61  TPD  63
+
+
+>ref|NP_733896.1| ORF43 [callitrichine herpesvirus 3]
+ gb|AAK38251.1|AF319782_45 ORF43 [callitrichine herpesvirus 3]
+Length=252
+
+ Score = 87.0 bits (214),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 37/59 (63%), Positives = 52/59 (89%), Gaps = 0/59 (0%)
+
+Query  3    EIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT  61
+            E KRY+NR+A+R+ RAKF+  L+H+R VAAAK+ EN+RLR+L++QMCP+LDV+SI+P T
+Sbjct  181  ERKRYRNRLASRRCRAKFRNQLEHFRTVAAAKTEENNRLRVLIRQMCPTLDVESIVPST  239
+
+
+>ref|XP_004474466.1| PREDICTED: CCAAT/enhancer-binding protein alpha [Dasypus novemcinctus]
+Length=353
+
+ Score = 36.6 bits (83),  Expect = 3.2, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  282  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  331
+
+
+>ref|XP_004595068.1| PREDICTED: CCAAT/enhancer-binding protein alpha [Ochotona princeps]
+Length=364
+
+ Score = 36.2 bits (82),  Expect = 3.3, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  293  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  342
+
+
+>ref|XP_001379981.1| PREDICTED: CCAAT/enhancer-binding protein epsilon-like [Monodelphis 
+domestica]
+Length=278
+
+ Score = 36.2 bits (82),  Expect = 3.8, Method: Composition-based stats.
+ Identities = 18/50 (36%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K K+ +Q  ++      +EN+RLR  + Q+   LD
+Sbjct  207  LRRERNNIAVRKSRDKAKRRIQETQQKVLEYMAENERLRSRVDQLTQELD  256
+
+
+>ref|XP_003416375.1| PREDICTED: CCAAT/enhancer-binding protein alpha-like [Loxodonta 
+africana]
+Length=360
+
+ Score = 35.8 bits (81),  Expect = 4.4, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  289  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  338
+
+
+>ref|XP_002711561.1| PREDICTED: CCAAT/enhancer-binding protein alpha-like [Oryctolagus 
+cuniculus]
+Length=358
+
+ Score = 35.8 bits (81),  Expect = 4.7, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  287  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  336
+
+
+>ref|XP_004765328.1| PREDICTED: CCAAT/enhancer-binding protein alpha [Mustela putorius 
+furo]
+Length=265
+
+ Score = 35.8 bits (81),  Expect = 4.7, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  194  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  243
+
+
+>ref|XP_003755917.1| PREDICTED: CCAAT/enhancer-binding protein epsilon [Sarcophilus 
+harrisii]
+Length=280
+
+ Score = 35.8 bits (81),  Expect = 4.9, Method: Composition-based stats.
+ Identities = 18/50 (36%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K K+ +Q  ++      +EN+RLR  + Q+   LD
+Sbjct  209  LRRERNNIAVRKSRDKAKRRIQETQQKVLEYMAENERLRSRVDQLTQELD  258
+
+
+>ref|XP_004371667.1| PREDICTED: CCAAT/enhancer-binding protein alpha [Trichechus manatus 
+latirostris]
+Length=352
+
+ Score = 35.8 bits (81),  Expect = 5.0, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  281  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  330
+
+
+>ref|XP_004810672.1| PREDICTED: CCAAT/enhancer-binding protein alpha [Mustela putorius 
+furo]
+Length=238
+
+ Score = 35.4 bits (80),  Expect = 5.6, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  167  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  216
+
+
+>gb|ELK00528.1| CCAAT/enhancer-binding protein alpha [Pteropus alecto]
+Length=356
+
+ Score = 35.4 bits (80),  Expect = 5.6, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  285  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  334
+
+
+>ref|XP_003127063.1| PREDICTED: CCAAT/enhancer-binding protein alpha [Sus scrofa]
+Length=354
+
+ Score = 35.4 bits (80),  Expect = 5.6, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  283  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  332
+
+
+>ref|XP_003798483.1| PREDICTED: CCAAT/enhancer-binding protein alpha [Otolemur garnettii]
+Length=352
+
+ Score = 35.4 bits (80),  Expect = 5.7, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  281  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  330
+
+
+>ref|XP_004659883.1| PREDICTED: CCAAT/enhancer-binding protein alpha [Jaculus jaculus]
+Length=367
+
+ Score = 35.4 bits (80),  Expect = 5.8, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  296  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  345
+
+
+>ref|XP_004690594.1| PREDICTED: CCAAT/enhancer-binding protein alpha [Condylura cristata]
+Length=365
+
+ Score = 35.4 bits (80),  Expect = 6.2, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  294  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  343
+
+
+>ref|XP_004636790.1| PREDICTED: CCAAT/enhancer-binding protein alpha [Octodon degus]
+Length=350
+
+ Score = 35.4 bits (80),  Expect = 6.5, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  279  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  328
+
+
+>ref|XP_001154519.2| PREDICTED: CCAAT/enhancer-binding protein alpha [Pan troglodytes]
+Length=255
+
+ Score = 35.4 bits (80),  Expect = 6.6, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  184  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  233
+
+
+>gb|AAC50235.1| CCAAT/enhancer binding protein alpha [Homo sapiens]
+Length=358
+
+ Score = 35.4 bits (80),  Expect = 6.8, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  287  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  336
+
+
+>ref|XP_005368482.1| PREDICTED: CCAAT/enhancer-binding protein alpha [Microtus ochrogaster]
+Length=357
+
+ Score = 35.4 bits (80),  Expect = 6.9, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  286  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  335
+
+
+>dbj|BAE33162.1| unnamed protein product [Mus musculus]
+Length=359
+
+ Score = 35.4 bits (80),  Expect = 6.9, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  288  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  337
+
+
+>ref|NP_004355.2| CCAAT/enhancer-binding protein alpha [Homo sapiens]
+ sp|P49715.3|CEBPA_HUMAN RecName: Full=CCAAT/enhancer-binding protein alpha; Short=C/EBP 
+alpha
+ gb|ABS82765.1| CCAAT/enhancer binding protein (C/EBP), alpha [Homo sapiens]
+ gb|AAI60133.1| CCAAT/enhancer binding protein (C/EBP), alpha [synthetic construct]
+ dbj|BAJ20622.1| CCAAT/enhancer binding protein (C/EBP), alpha [synthetic construct]
+Length=358
+
+ Score = 35.4 bits (80),  Expect = 6.9, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  287  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  336
+
+
+>ref|XP_004284189.1| PREDICTED: CCAAT/enhancer-binding protein alpha [Orcinus orca]
+Length=356
+
+ Score = 35.0 bits (79),  Expect = 7.2, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  285  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  334
+
+
+>ref|NP_031704.2| CCAAT/enhancer-binding protein alpha [Mus musculus]
+ sp|P53566.2|CEBPA_MOUSE RecName: Full=CCAAT/enhancer-binding protein alpha; Short=C/EBP 
+alpha
+ gb|AAH11118.1| CCAAT/enhancer binding protein (C/EBP), alpha [Mus musculus]
+ gb|AAH28890.1| CCAAT/enhancer binding protein (C/EBP), alpha [Mus musculus]
+ gb|AAH58161.1| CCAAT/enhancer binding protein (C/EBP), alpha [Mus musculus]
+ gb|AAH51102.1| CCAAT/enhancer binding protein (C/EBP), alpha [Mus musculus]
+ gb|EDL03027.1| CCAAT/enhancer binding protein (C/EBP), alpha [Mus musculus]
+Length=359
+
+ Score = 35.0 bits (79),  Expect = 7.2, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  288  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  337
+
+
+>ref|XP_004858973.1| PREDICTED: CCAAT/enhancer-binding protein alpha-like [Heterocephalus 
+glaber]
+Length=486
+
+ Score = 35.0 bits (79),  Expect = 7.4, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  415  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  464
+
+
+>ref|NP_036656.1| CCAAT/enhancer-binding protein alpha [Rattus norvegicus]
+ sp|P05554.3|CEBPA_RAT RecName: Full=CCAAT/enhancer-binding protein alpha; Short=C/EBP 
+alpha
+ emb|CAA31242.1| unnamed protein product [Rattus norvegicus]
+ gb|EDM07633.1| CCAAT/enhancer binding protein (C/EBP), alpha [Rattus norvegicus]
+Length=358
+
+ Score = 35.0 bits (79),  Expect = 7.4, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  287  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  336
+
+
+>gb|AAA37374.1| CCAAT/enhancer binding protein [Mus musculus]
+Length=395
+
+ Score = 35.0 bits (79),  Expect = 7.5, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  288  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  337
+
+
+>emb|CAA72289.1| CCAAT/enhancer binding protein alpha [Homo sapiens]
+Length=357
+
+ Score = 35.0 bits (79),  Expect = 8.2, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  286  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  335
+
+
+>ref|XP_005081828.1| PREDICTED: CCAAT/enhancer-binding protein alpha [Mesocricetus 
+auratus]
+Length=369
+
+ Score = 35.0 bits (79),  Expect = 8.4, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  298  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  347
+
+
+>ref|XP_005008689.1| PREDICTED: LOW QUALITY PROTEIN: CCAAT/enhancer binding protein 
+(C/EBP), alpha [Cavia porcellus]
+Length=350
+
+ Score = 35.0 bits (79),  Expect = 8.7, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  279  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  328
+
+
+>sp|O02754.1|CEBPA_BOVIN RecName: Full=CCAAT/enhancer-binding protein alpha; Short=C/EBP 
+alpha
+ dbj|BAA20095.1| C/EBP alpha protein [Bos taurus]
+Length=353
+
+ Score = 35.0 bits (79),  Expect = 8.9, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  282  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  331
+
+
+>gb|AAY79353.1| C/EBP alpha protein [Bos taurus]
+ tpg|DAA19893.1| TPA: CCAAT/enhancer-binding protein alpha [Bos taurus]
+Length=353
+
+ Score = 34.7 bits (78),  Expect = 9.5, Method: Composition-based stats.
+ Identities = 19/50 (38%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K KQ     ++     +S+NDRLR  ++Q+   LD
+Sbjct  282  VRRERNNIAVRKSRDKAKQRNVETQQKVLELTSDNDRLRKRVEQLSRELD  331
+
+
+
+Lambda     K      H
+   0.321    0.132    0.363 
+
+Gapped
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+Effective search space used: 287915092920
+Results from round 2
+
+
+Query= 2C9L_Y
+
+Length=63
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+ref|YP_401673.1|  BZLF1 [Human herpesvirus 4] >sp|P03206.2|BZLF1_...   118    7e-25
+gb|ABY56267.1|  ZEBRA [Human herpesvirus 4]                            116    3e-24
+gb|ABY56266.1|  ZEBRA [Human herpesvirus 4]                            115    4e-24
+sp|Q3KSS8.1|BZLF1_EBVG  RecName: Full=Trans-activator protein BZL...   115    5e-24
+ref|YP_001129467.1|  BZLF1 [Human herpesvirus 4 type 2] >sp|Q1HVG...   115    6e-24
+gb|ABY56265.1|  ZEBRA [Human herpesvirus 4]                            115    7e-24
+ref|YP_067969.1|  BZLF1 [Macacine herpesvirus 4] >gb|AAK95436.1| ...   115    7e-24
+gb|AAA66529.1|  BZLF1 [Human herpesvirus 4]                            113    1e-23
+gb|ABY56268.1|  ZEBRA [Human herpesvirus 4]                            112    5e-23
+ref|NP_733896.1|  ORF43 [callitrichine herpesvirus 3] >gb|AAK3825...   109    4e-22
+pdb|2C9N|Y  Chain Y, Structure Of The Epstein-Barr Virus Zebra Pr...  96.6    2e-18
+pdb|2C9L|Y  Chain Y, Structure Of The Epstein-Barr Virus Zebra Pr...  93.5    2e-17
+
+Sequences not found previously or not previously below threshold:
+
+ref|XP_002958171.1|  hypothetical protein VOLCADRAFT_99359 [Volvo...  38.8    0.59 
+emb|CBN74167.1|  aureochrome 2 [Ectocarpus siliculosus]               36.1    4.0  
+gb|AFD29623.1|  JUNLI-1 [Schmidtea mediterranea]                      35.8    4.6  
+ref|XP_002172971.1|  transcription factor atf21 [Schizosaccharomy...  35.8    4.9  
+ref|XP_001379981.1|  PREDICTED: CCAAT/enhancer-binding protein ep...  35.0    8.6  
+ref|NP_001183215.1|  uncharacterized protein LOC100501601 [Zea ma...  35.0    8.9  
+gb|EME47481.1|  hypothetical protein DOTSEDRAFT_69427 [Dothistrom...  35.0    9.1  
+
+
+>ref|YP_401673.1| BZLF1 [Human herpesvirus 4]
+ sp|P03206.2|BZLF1_EBVB9 RecName: Full=Trans-activator protein BZLF1; Short=EB1; AltName: 
+Full=Zebra
+ emb|CAA24861.1| unnamed protein product [Human herpesvirus 4]
+ emb|CAD53423.1| BZLF1 [Human herpesvirus 4]
+ gb|AFY97941.1| BZLF1 [Human herpesvirus 4]
+ prf||1512292A BZLF1 gene
+Length=245
+
+ Score =  118 bits (295),  Expect = 7e-25, Method: Composition-based stats.
+ Identities = 60/62 (97%), Positives = 61/62 (99%), Gaps = 0/62 (0%)
+
+Query  2    LEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT  61
+            LEIKRYKNRVA+RK RAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT
+Sbjct  175  LEIKRYKNRVASRKCRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT  234
+
+Query  62   PD  63
+            PD
+Sbjct  235  PD  236
+
+
+>gb|ABY56267.1| ZEBRA [Human herpesvirus 4]
+Length=245
+
+ Score =  116 bits (290),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 57/62 (92%), Positives = 60/62 (97%), Gaps = 0/62 (0%)
+
+Query  2    LEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT  61
+            LEIKRY+NRVA+RK RAKFK LLQHYREVA+AKSSENDRLRLLLKQMCPSLDVDSIIPRT
+Sbjct  175  LEIKRYRNRVASRKCRAKFKHLLQHYREVASAKSSENDRLRLLLKQMCPSLDVDSIIPRT  234
+
+Query  62   PD  63
+            PD
+Sbjct  235  PD  236
+
+
+>gb|ABY56266.1| ZEBRA [Human herpesvirus 4]
+Length=245
+
+ Score =  115 bits (289),  Expect = 4e-24, Method: Composition-based stats.
+ Identities = 58/62 (94%), Positives = 60/62 (97%), Gaps = 0/62 (0%)
+
+Query  2    LEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT  61
+            LEIKRYKNRVA+RK RAKFK LLQHYREVA+AKSSENDRLRLLLKQMCPSLDVDSIIPRT
+Sbjct  175  LEIKRYKNRVASRKCRAKFKHLLQHYREVASAKSSENDRLRLLLKQMCPSLDVDSIIPRT  234
+
+Query  62   PD  63
+            PD
+Sbjct  235  PD  236
+
+
+>sp|Q3KSS8.1|BZLF1_EBVG RecName: Full=Trans-activator protein BZLF1; Short=EB1; AltName: 
+Full=Zebra
+ gb|ABA06392.1| Z protein [Human herpesvirus 4]
+ gb|ABY56269.1| ZEBRA [Human herpesvirus 4]
+ gb|AEM00641.1| BZLF1 [Human herpesvirus 4]
+ gb|AFJ06860.1| BZLF1 [Human herpesvirus 4]
+ gb|AFY97859.1| BZLF1 [Human herpesvirus 4]
+ gb|AGL80703.1| BZLF1 [Human herpesvirus 4]
+Length=245
+
+ Score =  115 bits (288),  Expect = 5e-24, Method: Composition-based stats.
+ Identities = 58/62 (94%), Positives = 60/62 (97%), Gaps = 0/62 (0%)
+
+Query  2    LEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT  61
+            LEIKRYKNRVA+RK RAKFK LLQHYREVA+AKSSENDRLRLLLKQMCPSLDVDSIIPRT
+Sbjct  175  LEIKRYKNRVASRKCRAKFKHLLQHYREVASAKSSENDRLRLLLKQMCPSLDVDSIIPRT  234
+
+Query  62   PD  63
+            PD
+Sbjct  235  PD  236
+
+
+>ref|YP_001129467.1| BZLF1 [Human herpesvirus 4 type 2]
+ sp|Q1HVG1.1|BZLF1_EBVA8 RecName: Full=Trans-activator protein BZLF1; Short=EB1; AltName: 
+Full=Zebra
+ gb|ABB89248.1| BZLF1 [Human herpesvirus 4]
+Length=245
+
+ Score =  115 bits (287),  Expect = 6e-24, Method: Composition-based stats.
+ Identities = 57/62 (92%), Positives = 60/62 (97%), Gaps = 0/62 (0%)
+
+Query  2    LEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT  61
+            L+IKRYKNRVA+RK RAKFK LLQHYREVA+AKSSENDRLRLLLKQMCPSLDVDSIIPRT
+Sbjct  175  LDIKRYKNRVASRKCRAKFKHLLQHYREVASAKSSENDRLRLLLKQMCPSLDVDSIIPRT  234
+
+Query  62   PD  63
+            PD
+Sbjct  235  PD  236
+
+
+>gb|ABY56265.1| ZEBRA [Human herpesvirus 4]
+Length=245
+
+ Score =  115 bits (287),  Expect = 7e-24, Method: Composition-based stats.
+ Identities = 57/62 (92%), Positives = 60/62 (97%), Gaps = 0/62 (0%)
+
+Query  2    LEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT  61
+            LEIKRY+NRVA+RK RAKFK LLQHYREVA+AKSSENDRLRLLLKQMCPSLDVDSIIPRT
+Sbjct  175  LEIKRYRNRVASRKCRAKFKHLLQHYREVASAKSSENDRLRLLLKQMCPSLDVDSIIPRT  234
+
+Query  62   PD  63
+            PD
+Sbjct  235  PD  236
+
+
+>ref|YP_067969.1| BZLF1 [Macacine herpesvirus 4]
+ gb|AAK95436.1| BZLF1 [Macacine herpesvirus 4]
+Length=247
+
+ Score =  115 bits (287),  Expect = 7e-24, Method: Composition-based stats.
+ Identities = 54/62 (88%), Positives = 60/62 (97%), Gaps = 0/62 (0%)
+
+Query  2    LEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT  61
+            LEIKRYKNRVA+RK RA+FK LLQHYREVAA+KSSEN+RLR+L+KQMCPSLDVDSIIPRT
+Sbjct  179  LEIKRYKNRVASRKCRARFKNLLQHYREVAASKSSENERLRILMKQMCPSLDVDSIIPRT  238
+
+Query  62   PD  63
+            PD
+Sbjct  239  PD  240
+
+
+>gb|AAA66529.1| BZLF1 [Human herpesvirus 4]
+Length=245
+
+ Score =  113 bits (284),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 59/62 (96%), Positives = 60/62 (97%), Gaps = 0/62 (0%)
+
+Query  2    LEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT  61
+            LEIKRYKNRVA+RK RAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSII RT
+Sbjct  175  LEIKRYKNRVASRKCRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIRRT  234
+
+Query  62   PD  63
+            PD
+Sbjct  235  PD  236
+
+
+>gb|ABY56268.1| ZEBRA [Human herpesvirus 4]
+Length=245
+
+ Score =  112 bits (279),  Expect = 5e-23, Method: Composition-based stats.
+ Identities = 57/62 (92%), Positives = 59/62 (96%), Gaps = 0/62 (0%)
+
+Query  2    LEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT  61
+            LEIKRYKNRVA+RK RAKFK LLQH REVA+AKSSENDRLRLLLKQMCPSLDVDSIIPRT
+Sbjct  175  LEIKRYKNRVASRKCRAKFKHLLQHCREVASAKSSENDRLRLLLKQMCPSLDVDSIIPRT  234
+
+Query  62   PD  63
+            PD
+Sbjct  235  PD  236
+
+
+>ref|NP_733896.1| ORF43 [callitrichine herpesvirus 3]
+ gb|AAK38251.1|AF319782_45 ORF43 [callitrichine herpesvirus 3]
+Length=252
+
+ Score =  109 bits (272),  Expect = 4e-22, Method: Composition-based stats.
+ Identities = 37/59 (63%), Positives = 52/59 (89%), Gaps = 0/59 (0%)
+
+Query  3    EIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPRT  61
+            E KRY+NR+A+R+ RAKF+  L+H+R VAAAK+ EN+RLR+L++QMCP+LDV+SI+P T
+Sbjct  181  ERKRYRNRLASRRCRAKFRNQLEHFRTVAAAKTEENNRLRVLIRQMCPTLDVESIVPST  239
+
+
+>pdb|2C9N|Y Chain Y, Structure Of The Epstein-Barr Virus Zebra Protein At 
+Approximately 3.5 Angstrom Resolution
+ pdb|2C9N|Z Chain Z, Structure Of The Epstein-Barr Virus Zebra Protein At 
+Approximately 3.5 Angstrom Resolution
+Length=63
+
+ Score = 96.6 bits (239),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 61/63 (97%), Positives = 62/63 (99%), Gaps = 0/63 (0%)
+
+Query  1   MLEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPR  60
+           MLEIKRYKNRVA+RK RAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPR
+Sbjct  1   MLEIKRYKNRVASRKCRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPR  60
+
+Query  61  TPD  63
+           TPD
+Sbjct  61  TPD  63
+
+
+>pdb|2C9L|Y Chain Y, Structure Of The Epstein-Barr Virus Zebra Protein
+ pdb|2C9L|Z Chain Z, Structure Of The Epstein-Barr Virus Zebra Protein
+Length=63
+
+ Score = 93.5 bits (231),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 63/63 (100%), Positives = 63/63 (100%), Gaps = 0/63 (0%)
+
+Query  1   MLEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPR  60
+           MLEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPR
+Sbjct  1   MLEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLDVDSIIPR  60
+
+Query  61  TPD  63
+           TPD
+Sbjct  61  TPD  63
+
+
+>ref|XP_002958171.1| hypothetical protein VOLCADRAFT_99359 [Volvox carteri f. nagariensis]
+ gb|EFJ40796.1| hypothetical protein VOLCADRAFT_99359 [Volvox carteri f. nagariensis]
+Length=1410
+
+ Score = 38.8 bits (89),  Expect = 0.59, Method: Composition-based stats.
+ Identities = 16/41 (40%), Positives = 26/41 (64%), Gaps = 0/41 (0%)
+
+Query  5    KRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLL  45
+            +R +NR+AARK RAK  + + H +    A ++ N+ LR+ L
+Sbjct  794  RRERNRLAARKCRAKKMEFIAHMQAQLDAMAARNEELRVQL  834
+
+
+>emb|CBN74167.1| aureochrome 2 [Ectocarpus siliculosus]
+Length=441
+
+ Score = 36.1 bits (82),  Expect = 4.0, Method: Composition-based stats.
+ Identities = 16/48 (34%), Positives = 28/48 (59%), Gaps = 0/48 (0%)
+
+Query  3    EIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCP  50
+            + +R +NRV AR++R + K   Q  ++  A    EN+RL+ ++   CP
+Sbjct  188  KKRRERNRVLARRTRLRKKFFFQSLQQQVARLQRENERLKGIVTTRCP  235
+
+
+>gb|AFD29623.1| JUNLI-1 [Schmidtea mediterranea]
+Length=490
+
+ Score = 35.8 bits (81),  Expect = 4.6, Method: Composition-based stats.
+ Identities = 15/41 (37%), Positives = 24/41 (59%), Gaps = 0/41 (0%)
+
+Query  2    LEIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLR  42
+            LE KR +NR AARK R +   L+ +  +  A ++ E + +R
+Sbjct  398  LERKRARNRDAARKCRDRKNNLILNLEQKYAKQTVEKELIR  438
+
+
+>ref|XP_002172971.1| transcription factor atf21 [Schizosaccharomyces japonicus yFS275]
+ gb|EEB06678.1| transcription factor Atf21 [Schizosaccharomyces japonicus yFS275]
+Length=398
+
+ Score = 35.8 bits (81),  Expect = 4.9, Method: Composition-based stats.
+ Identities = 16/41 (40%), Positives = 24/41 (59%), Gaps = 0/41 (0%)
+
+Query  8    KNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQM  48
+            +NR+AA K R K KQ  Q     A + S ++  L+LL+ Q+
+Sbjct  318  RNRIAASKCRQKKKQWTQELEATARSASEQSRSLKLLVSQL  358
+
+
+>ref|XP_001379981.1| PREDICTED: CCAAT/enhancer-binding protein epsilon-like [Monodelphis 
+domestica]
+Length=278
+
+ Score = 35.0 bits (79),  Expect = 8.6, Method: Composition-based stats.
+ Identities = 18/50 (36%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    IKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQMCPSLD  53
+            ++R +N +A RKSR K K+ +Q  ++      +EN+RLR  + Q+   LD
+Sbjct  207  LRRERNNIAVRKSRDKAKRRIQETQQKVLEYMAENERLRSRVDQLTQELD  256
+
+
+>ref|NP_001183215.1| uncharacterized protein LOC100501601 [Zea mays]
+ gb|ACR36092.1| unknown [Zea mays]
+Length=587
+
+ Score = 35.0 bits (79),  Expect = 8.9, Method: Composition-based stats.
+ Identities = 15/41 (37%), Positives = 27/41 (66%), Gaps = 0/41 (0%)
+
+Query  3    EIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRL  43
+            E ++ +N+V+AR  R++ K+ +       A+K+SEN+ LRL
+Sbjct  309  ERRQLRNKVSARAFRSRRKEYITQLEGEVASKTSENNELRL  349
+
+
+>gb|EME47481.1| hypothetical protein DOTSEDRAFT_69427 [Dothistroma septosporum 
+NZE10]
+Length=401
+
+ Score = 35.0 bits (79),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 17/46 (37%), Positives = 26/46 (57%), Gaps = 0/46 (0%)
+
+Query  3    EIKRYKNRVAARKSRAKFKQLLQHYREVAAAKSSENDRLRLLLKQM  48
+            E  R KNR+AA K R K K   +   E A   ++EN++LR   +++
+Sbjct  214  ERYREKNRLAAAKCRQKKKINTEDLEESARMATAENNKLRAEEREL  259
+
+
+
+Lambda     K      H
+   0.315    0.138    0.402 
+
+Gapped
+Lambda     K      H
+   0.267   0.0396    0.140 
+
+Effective search space used: 287915092920
+
+Search has CONVERGED!
+
+
+  Database: All non-redundant GenBank CDS translations+PDB+SwissProt+PIR+PRF
+excluding environmental samples from WGS projects
+    Posted date:  Sep 26, 2013  6:53 AM
+  Number of letters in database: 11,431,176,125
+  Number of sequences in database:  32,814,121
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40
